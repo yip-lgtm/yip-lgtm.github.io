@@ -6,17 +6,20 @@
   <script>
   (function () {
     var p = location.pathname || "";
-    if (p.indexOf("/mma") === 0 && p.indexOf("/yipmma") !== 0) return;
-    if (/\/yipmma\/weight/.test(p)) {
-      location.replace("/yipmma/weight/");
-      return;
-    }
     if (p.indexOf("/yipmma") === 0) {
+      if (/weight/.test(p)) {
+        location.replace("/yipmma/weight/");
+        return;
+      }
       var rest = p.replace(/^\/yipmma\/?/, "").replace(/\/$/, "");
-      location.replace("/yipmma/" + (rest ? "#/" + rest : "") + location.hash);
+      location.replace("/yipmma/" + (rest ? "#/" + rest : ""));
       return;
     }
-    location.replace("/yipmma/");
+    if (p.indexOf("/mma") === 0) {
+      location.replace("/mma/");
+      return;
+    }
+    location.replace("/");
   })();
   </script>
 </head>
