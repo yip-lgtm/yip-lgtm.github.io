@@ -52,8 +52,6 @@ function state(){
   const s=load();
   s.profile=Object.assign({heightCm:"",targetKg:""}, s.profile||{});
   delete s.profile.ceilingKg;
-  delete s.profile.height;
-  delete s.profile.target;
   s.weights=s.weights||[]; s.foods=s.foods||[];
   return s;
 }
@@ -69,49 +67,43 @@ function profileLine(st){
   if(!h&&!t) return "自己輸入身高同目標";
   return [h?h+" cm":"", t?"目標 "+t+" kg":""].filter(Boolean).join(" · ");
 }
-function header(k,t){ return `<p class=\"kicker\">${k}</p><h1>${t}</h1><p class=\"sub\">${SUB}</p><p class=\"thanks\">${THANKS}</p>`; }
+function header(k,t){ return '<p class="kicker">'+k+'</p><h1>'+t+'</h1><p class="sub">'+SUB+'</p><p class="thanks">'+THANKS+'</p>'; }
 function home(){
   const st=state(), last=st.weights.at(-1);
-  return header("OUTBOXING","outboxing stance")+`
-    <div class=\"card\"><p class=\"muted\">康文署 30 分鐘</p><h2>今日課</h2><p class=\"body\">外圍移動 + 背胸二頭腹 + 2合1 大腿（超哥深蹲＋保加利亞蹲）</p>
-    <button class=\"btn\" onclick=\"location.hash='#/session'\">開始訓練</button></div>
-    <div class=\"grid2\">
-      <div class=\"chip\"><b>晨秤</b><div class=\"big\">${last?last.kg:"—"}</div></div>
-      <div class=\"chip\"><b>設定</b><div class=\"body\">${profileLine(st)}</div></div>
-    </div>
-    <div class=\"card\"><h2>超哥：練完即食小米粥</h2><p class=\"body\">小米健脾，脾主肌肉及統血。</p></div>`;
+  return header("OUTBOXING","outboxing stance")+
+    '<div class="card"><p class="muted">康文署 30 分鐘</p><h2>今日課</h2><p class="body">外圍移動 + 背胸二頭腹 + 2合1 大腿（超哥深蹲＋保加利亞蹲）</p>'+
+    '<button class="btn" onclick="location.href=\'/yipmma/#/session\'">開始訓練</button></div>'+
+    '<div class="grid2"><div class="chip"><b>晨秤</b><div class="big">'+(last?last.kg:"—")+'</div></div>'+
+    '<div class="chip"><b>設定</b><div class="body">'+profileLine(st)+'</div></div></div>'+
+    '<div class="card"><h2>超哥：練完即食小米粥</h2><p class="body">小米健脾，脾主肌肉及統血。</p></div>';
 }
 function weightView(){
   const st=state(), last=st.weights.at(-1), foods=st.foods.slice(-8).reverse();
-  return header("體重","體重 · 飲食")+`
-    <div class=\"card\">
-      <p class=\"muted\">自己輸入身高／目標（唔寫死數字）</p>
-      <div class=\"grid2\">
-        <input id=\"height\" inputmode=\"decimal\" placeholder=\"身高 cm\" value=\"${st.profile.heightCm||\"\"}\">
-        <input id=\"target\" inputmode=\"decimal\" placeholder=\"目標 kg\" value=\"${st.profile.targetKg||\"\"}\">
-      </div>
-      <button class=\"btn2\" onclick=\"saveProfile()\">保存身高／目標</button>
-      <p class=\"body\" id=\"profmsg\">${profileLine(st)}</p>
-    </div>
-    <div class=\"card\">
-      <p class=\"muted\">記入體脂磅</p>
-      <div class=\"grid2\">
-        <input id=\"kg\" inputmode=\"decimal\" placeholder=\"體重 kg\" value=\"${last&&last.kg!=null?last.kg:\"\"}\">
-        <input id=\"fat\" inputmode=\"decimal\" placeholder=\"體脂 %\" value=\"${last&&last.fat!=null?last.fat:\"\"}\">
-        <input id=\"muscle\" inputmode=\"decimal\" placeholder=\"肌肉 kg\" value=\"${last&&last.muscle!=null?last.muscle:\"\"}\">
-        <input id=\"bmr\" inputmode=\"decimal\" placeholder=\"BMR\" value=\"${last&&last.bmr!=null?last.bmr:\"\"}\">
-      </div>
-      <button class=\"btn\" onclick=\"addWeight()\">保存今日磅數</button>
-    </div>
-    <div class=\"card\">
-      <p class=\"muted\">已吃食物</p>
-      <textarea id=\"food\" rows=\"2\" placeholder=\"例如：熱小米粥\"></textarea>
-      <button class=\"btn2\" onclick=\"addFood()\">加入</button>
-      <ul>${foods.map(f=>`<li class=\"body\">${f.date} · ${f.text}</li>`).join("")||"<li class='body'>未有記錄</li>"}</ul>
-    </div>`;
+  const hv=st.profile.heightCm||"";
+  const tv=st.profile.targetKg||"";
+  const kg=last&&last.kg!=null?last.kg:"";
+  const fat=last&&last.fat!=null?last.fat:"";
+  const muscle=last&&last.muscle!=null?last.muscle:"";
+  const bmr=last&&last.bmr!=null?last.bmr:"";
+  const foodLis=foods.map(function(f){return '<li class="body">'+f.date+' · '+f.text+'</li>';}).join("")||'<li class="body">未有記錄</li>';
+  return header("體重","體重 · 飲食")+
+    '<div class="card"><p class="muted">自己輸入身高／目標（唔寫死數字）</p>'+
+    '<div class="grid2"><input id="height" inputmode="decimal" placeholder="身高 cm" value="'+hv+'">'+
+    '<input id="target" inputmode="decimal" placeholder="目標 kg" value="'+tv+'"></div>'+
+    '<button class="btn2" onclick="saveProfile()">保存身高／目標</button>'+
+    '<p class="body" id="profmsg">'+profileLine(st)+'</p></div>'+
+    '<div class="card"><p class="muted">記入體脂磅</p><div class="grid2">'+
+    '<input id="kg" inputmode="decimal" placeholder="體重 kg" value="'+kg+'">'+
+    '<input id="fat" inputmode="decimal" placeholder="體脂 %" value="'+fat+'">'+
+    '<input id="muscle" inputmode="decimal" placeholder="肌肉 kg" value="'+muscle+'">'+
+    '<input id="bmr" inputmode="decimal" placeholder="BMR" value="'+bmr+'"></div>'+
+    '<button class="btn" onclick="addWeight()">保存今日磅數</button></div>'+
+    '<div class="card"><p class="muted">已吃食物</p>'+
+    '<textarea id="food" rows="2" placeholder="例如：熱小米粥"></textarea>'+
+    '<button class="btn2" onclick="addFood()">加入</button><ul>'+foodLis+'</ul></div>';
 }
-function weekView(){ return header("週期","七日外圍")+`<div class=\"card\"><p class=\"body\">日恢復 · 一速度 · 二旋轉 · 三單腳 · 四有氧 · 五刺拳 · 六移動。</p></div>`; }
-function skillsView(){ return header("技術","outboxing stance")+`<div class=\"card\"><h2>站距</h2><p class=\"body\">可隨時移動，唔鎖死。</p></div><div class=\"card\"><h2>2合1 大腿</h2><p class=\"body\">深蹲（超哥）接保加利亞蹲。</p></div>`; }
+function weekView(){ return header("週期","七日外圍")+'<div class="card"><p class="body">日恢復 · 一速度 · 二旋轉 · 三單腳 · 四有氧 · 五刺拳 · 六移動。</p></div>'; }
+function skillsView(){ return header("技術","outboxing stance")+'<div class="card"><h2>站距</h2><p class="body">可隨時移動，唔鎖死。</p></div><div class="card"><h2>2合1 大腿</h2><p class="body">深蹲（超哥）接保加利亞蹲。</p></div>'; }
 window.saveProfile=function(){
   const st=state();
   st.profile.heightCm=(document.getElementById("height").value||"").trim();
@@ -136,7 +128,7 @@ window.addFood=function(){
 };
 function render(){
   const r=route();
-  document.querySelectorAll(".nav a").forEach(a=>a.classList.toggle("on", a.dataset.r===r));
+  document.querySelectorAll(".nav a").forEach(function(a){a.classList.toggle("on", a.dataset.r===r);});
   document.getElementById("app").innerHTML = r==="weight"?weightView(): r==="week"?weekView(): r==="skills"?skillsView(): home();
 }
 window.addEventListener("hashchange", render);
