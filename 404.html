@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>outboxing stance</title>
     <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" crossorigin href="/assets/index-FTq0VT2e.css" />
-    <script type="module" crossorigin src="/assets/index-z4RBCS94.js"></script>
-    <script>location.replace("/?from=404");</script>
+    <style>
+      html, body { margin: 0; min-height: 100%; background: #000; color: #fff; }
+      iframe { border: 0; width: 100%; height: 100vh; display: block; }
+    </style>
+    <script>
+      if (location.pathname === "/mma" || location.pathname === "/mma/") {
+        document.write('<iframe src="/" title="outboxing stance"></iframe>');
+      }
+    </script>
+    <script type="module" src="/assets/index-z4RBCS94.js"></script>
   </head>
-  <body style="background:#000;color:#fff"><div id="root"></div></body>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
