@@ -1,13 +1,20 @@
 <!doctype html>
 <html lang="zh-HK">
-<head>
-<meta charset="utf-8" />
-<title>outboxing stance</title>
-<script>
-  var p = location.pathname || "/";
-  if (p === "/mma" || p.indexOf("/mma/") === 0) location.replace("/mma/");
-  else location.replace("/");
-</script>
-</head>
-<body style="background:#000;color:#fff"></body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>outboxing stance</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-FTq0VT2e.css" />
+    <style>html,body{margin:0;background:#000;color:#fff;}</style>
+    <script>
+      var p = location.pathname || "/";
+      if (p.indexOf("/mma") === 0) {
+        try { history.replaceState(null, "", "/"); } catch (e) {}
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-z4RBCS94.js"></script>
+  </head>
+  <body style="background:#000;color:#fff">
+    <div id="root"></div>
+  </body>
 </html>

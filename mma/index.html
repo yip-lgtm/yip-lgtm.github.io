@@ -8,62 +8,13 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" />
     <link rel="stylesheet" crossorigin href="/assets/index-FTq0VT2e.css" />
-    <style>
-      html, body { background: #000 !important; color: #fff !important; }
-      .x-card { border: 1px solid #2c2d26; background: #1a1b17; border-radius: 16px; padding: 16px; margin: 12px 0; }
-      .x-card h2 { margin: 0 0 8px; font-size: 18px; }
-      .x-card p, .x-card a, .x-card li { font-size: 14px; line-height: 1.65; color: #c5c2b6; }
-      .x-card a { color: #fff; }
-    </style>
+    <style>html,body{margin:0;background:#000;color:#fff;}</style>
     <script>
-      (function () {
-        var p = location.pathname || "";
-        if (p.indexOf("/mma") === 0) {
-          try { history.replaceState(null, "", "/" + location.search + location.hash); } catch (e) {}
-        }
-      })();
+      if ((location.pathname || "").indexOf("/mma") === 0) {
+        try { history.replaceState(null, "", "/" + location.search + location.hash); } catch (e) {}
+      }
     </script>
     <script type="module" crossorigin src="/assets/index-z4RBCS94.js"></script>
-    <script>
-      var SHORTS = [
-        ["qpgtrzJpSIE", "今日練腳 3 個動作"],
-        ["9g8fGj_fO_g", "每日健身 1"],
-        ["8tTcdROhKk4", "每日健身 2"],
-        ["sJbZVqZc7KA", "每日健身 3"],
-        ["dDMEsWZW6yg", "每日健身 4"]
-      ];
-      function apply() {
-        document.title = "outboxing stance";
-        document.querySelectorAll("h1,p,span,li").forEach(function (el) {
-          var t = (el.textContent || "").replace(/\s+/g, " ").trim();
-          if (t === "蝶刺") el.textContent = "outboxing stance";
-          if (t.indexOf("康文署") !== -1 && t.length < 18) el.textContent = "OUTBOXING";
-          if (t.indexOf("外圍移動") !== -1) el.textContent = "練拳不練功到老一場空";
-          if (t.indexOf("引體 → 胸 → 二頭 → 腹") !== -1) {
-            el.textContent = "每日後半固定：引體 → 胸 → 二頭 → 腹 → 2合1大腿（深蹟+保加利亞蹟），三輪。";
-          }
-        });
-        if (document.querySelector(".x-injected")) return;
-        var grids = [].slice.call(document.querySelectorAll("div")).filter(function (d) {
-          return d.className && String(d.className).indexOf("grid-cols-4") !== -1 && (d.textContent || "").indexOf("引體") !== -1;
-        });
-        var grid = grids[0];
-        if (!grid) return;
-        var extra = document.createElement("div");
-        extra.className = "x-injected";
-        extra.innerHTML =
-          '<div class="x-card"><p style="margin:0 0 6px;font-size:12px;color:#9a978c">2合1 大腿</p><p style="margin:0">深蹟（超哥） 8–12 下 ＋ 保加利亞蹟左右各 8–10。同一組做完，三輪。</p></div>' +
-          '<div class="x-card"><p style="margin:0 0 6px;font-size:12px;color:#9a978c">超哥 · 梁功超</p><h2>跟住我做保證不會翻車</h2><ul>' +
-          SHORTS.map(function (v) {
-            return '<li><a href="https://youtube.com/shorts/' + v[0] + '" target="_blank" rel="noreferrer">' + v[1] + '</a></li>';
-          }).join("") +
-          '</ul></div>' +
-          '<div class="x-card"><h2>超哥：練完即食小米粥</h2><p>練完立即食熱小米粥。小米健脾，脾主肌肉及統血。粥要淡、熱、易消化，再補蛋白。</p></div>';
-        grid.parentNode.insertBefore(extra, grid.nextSibling);
-      }
-      setInterval(apply, 500);
-      new MutationObserver(apply).observe(document.documentElement, { childList: true, subtree: true });
-    </script>
   </head>
   <body style="background:#000;color:#fff">
     <div id="root"></div>
