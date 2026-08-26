@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>outboxing stance</title>
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="outboxing stance · 康文署 30 分鐘外圍拳擊自學" />
+  <link rel="icon" href="./favicon.svg" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@600&display=swap" />
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #f4f1e8;
+      --muted: #9a978c;
+      --line: #2c2d26;
+      --card: #1a1b17;
+      --btn: #e8e4d8;
+      --ink: #111;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--fg); font-family: "Noto Sans TC", "IBM Plex Sans", sans-serif; }
+    button, [role="button"] { cursor: pointer; font: inherit; }
+    a { color: inherit; }
+    #app { max-width: 26rem; margin: 0 auto; padding: 24px 16px 96px; min-height: 100dvh; }
+    .kicker { font-size: 11px; letter-spacing: .22em; text-transform: uppercase; }
+    h1 { font-family: "Noto Serif TC", serif; font-size: 2rem; font-weight: 600; margin: 8px 0 0; }
+    h2 { font-size: 1.15rem; margin: 0; font-weight: 600; }
+    .sub { margin: 8px 0 20px; color: var(--muted); font-size: 14px; }
+    .card { border: 1px solid var(--line); background: var(--card); border-radius: 16px; padding: 16px; margin-bottom: 12px; }
+    .muted { color: var(--muted); font-size: 12px; margin: 0 0 6px; }
+    .body { margin: 8px 0 0; font-size: 14px; line-height: 1.65; color: var(--muted); }
+    .row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+    .chip { border: 1px solid var(--line); background: var(--card); border-radius: 14px; padding: 12px 8px; text-align: center; }
+    .chip b { display: block; color: var(--muted); font-size: 12px; font-weight: 500; }
+    .chip span { display: block; margin-top: 4px; font-size: 13px; }
+    .wide { grid-column: 1 / -1; }
+    .btn { display: block; width: 100%; text-align: center; background: var(--btn); color: var(--ink); border: 0; border-radius: 999px; padding: 13px; font-size: 15px; font-weight: 600; margin-top: 14px; text-decoration: none; }
+    .btn2 { display: block; width: 100%; text-align: center; background: transparent; color: var(--fg); border: 1px solid var(--line); border-radius: 999px; padding: 13px; font-size: 15px; margin-top: 10px; }
+    .nav { position: fixed; left: 0; right: 0; bottom: 0; background: #0b0b0b; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(4, 1fr); padding: 8px 8px calc(8px + env(safe-area-inset-bottom)); }
+    .nav a { text-align: center; text-decoration: none; color: var(--muted); font-size: 11px; padding: 8px 4px; }
+    .nav a.on { color: var(--fg); }
+    .week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .week div { text-align: center; border-radius: 999px; padding: 8px 0; font-size: 11px; color: var(--muted); border: 1px solid transparent; }
+    .week div.on { background: var(--btn); color: var(--ink); }
+    input, textarea { width: 100%; background: #111; color: var(--fg); border: 1px solid var(--line); border-radius: 12px; padding: 12px; font: inherit; }
+    ul { margin: 8px 0 0; padding-left: 18px; }
+    li { margin: 6px 0; }
+    .clock { font-family: "IBM Plex Sans", sans-serif; font-size: 4rem; font-weight: 600; letter-spacing: -0.04em; text-align: center; margin: 24px 0 8px; }
+    .cue { text-align: center; color: var(--muted); font-size: 14px; line-height: 1.6; min-height: 3.2em; }
+    .hidden { display: none !important; }
+    .big { font-family: "Noto Serif TC", serif; font-size: 1.8rem; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <nav class="nav">
+    <a href="#/" data-r="">今日</a>
+    <a href="#/week" data-r="week">週期</a>
+    <a href="#/weight" data-r="weight">體重</a>
+    <a href="#/skills" data-r="skills">技術</a>
+  </nav>
+<script>
+const KEY = "yipmma-v1";
+const DAYS = [
+  { id: 0, name: "恢復＋塑形", intent: "慢走同呼吸後，做每日塑形。", focus: "步行 → 單槓" },
+  { id: 1, name: "速度＋塑形", intent: "四個回合練步頻，之後塑形。", focus: "跑步機 → 單槓／啞鈴" },
+  { id: 2, name: "旋轉＋塑形", intent: "側移底盤之後，上肢塑形。", focus: "空地 → 單槓" },
+  { id: 3, name: "單腳＋塑形", intent: "側移底盤之後，上肢塑形四件套＋2合1大腿。", focus: "啞鈴 → 單槓" },
+  { id: 4, name: "有氧＋塑形", intent: "Zone 2 堆恢復，下機即塑形。", focus: "單車／橢圓機 → 單槓" },
+  { id: 5, name: "刺拳＋塑形", intent: "空拳節奏後用真重量塑形。", focus: "空地 → 單槓／啞鈴" },
+  { id: 6, name: "移動＋塑形", intent: "外圍弧線移動後塑形。", focus: "跑步機／空地 → 單槓" },
+];
+const SCULPT = [
+  { part: "背", move: "引體向上" },
+  { part: "胸", move: "伏地／推胸" },
+  { part: "二頭", move: "啞鈴彎舉" },
+  { part: "腹", move: "單槓提膝" },
+  { part: "2合1 大腿", move: "深蹲（超哥）＋保加利亞蹲" },
+];
+const SHORTS = [
+  ["qpgtrzJpSIE", "今日練腳 3 個動作"],
+  ["9g8fGj_fO_g", "每日健身 1"],
+  ["8tTcdROhKk4", "每日健身 2"],
+  ["sJbZVqZc7KA", "每日健身 3"],
+  ["dDMEsWZW6yg", "每日健身 4"],
+];
+const NOTES = [
+  "多數健身室需 SmartPLAY 預約，準時到。",
+  "每月第一及第三個星期二通常封閉保養。",
+  "每日後半固定：引體 → 胸 → 二頭 → 腹 → 2合1大腿（深蹲＋保加利亞蹲），三輪。",
+  "引體做唔到：助力機，或跳上慢落 5 下。唔好猛擺。",
+  "每週任一日加一次 9 分鐘耐力跑。只測有氧，唔取代當日主課。",
+  "請勿佔用器械做長空拳。手機只開計時。",
+];
+function sculptBlocks() {
+  const out = [];
+  const moves = [
+    ["引體", "正手引體 5–8，頂停 1 秒，3 秒慢落。做唔到就跳上慢落。"],
+    ["胸", "伏地或推胸 8–15。胸帶動，頸放鬆。"],
+    ["二頭", "啞鈴彎舉 8–12。肘貼腰。"],
+    ["腹", "單槓提膝 8–12，唔擺盪。"],
+    ["2合1", "深蹲（超哥）8–12，即接保加利亞蹲左右各 8–10。後腳踏凳，腰直。"],
+  ];
+  for (let r = 1; r <= 3; r++) {
+    moves.forEach(([lab, cue], i) => {
+      out.push({ label: lab + " " + r + "/3", sec: lab === "2合1" ? 50 : 45, cue, kind: "work" });
+      out.push({ label: "轉項", sec: 15, cue: i < moves.length - 1 ? "轉下一項。" : (r < 3 ? "飲水，下一輪引體。" : "完成。跟住食小米粥。"), kind: "rest" });
+    });
+  }
+  return out;
+}
+function dayBlocks(id) {
+  const head = [
+    [
+      { label: "熱身步行", sec: 180, cue: "輕行，鼻吸口呼。", kind: "warmup" },
+    ],
+    [
+      { label: "熱身步行", sec: 180, cue: "坡度 1%。之後要引體，肩先活動。", kind: "warmup" },
+      { label: "第 1 回合", sec: 180, cue: "60 秒輕快 → 20 秒加快 → 40 秒中。跨步細。", kind: "work" },
+      { label: "休息", sec: 60, cue: "行兩步。", kind: "rest" },
+      { label: "第 2 回合", sec: 180, cue: "想像對手，唔直線衝。", kind: "work" },
+      { label: "休息", sec: 60, cue: "行兩步。", kind: "rest" },
+    ],
+    [
+      { label: "熱身", sec: 120, cue: "轉髖、側步。", kind: "warmup" },
+      { label: "側移", sec: 180, cue: "左右側滑，重心低。", kind: "work" },
+      { label: "休息", sec: 45, cue: "抖腿。", kind: "rest" },
+    ],
+    [
+      { label: "熱身", sec: 120, cue: "單腳平衡。", kind: "warmup" },
+      { label: "單腳底盤", sec: 180, cue: "單腳站 + 細步移動。", kind: "work" },
+      { label: "休息", sec: 45, cue: "換腳。", kind: "rest" },
+    ],
+    [
+      { label: "Zone 2", sec: 480, cue: "可以輕鬆講話。心率唔衝。", kind: "work" },
+    ],
+    [
+      { label: "熱身", sec: 120, cue: "碎步、轉腕。", kind: "warmup" },
+      { label: "空拳 1", sec: 120, cue: "刺拳即收。細動作。", kind: "skill" },
+      { label: "休息", sec: 30, cue: "抖手。", kind: "rest" },
+      { label: "空拳 2", sec: 120, cue: "1–2 再側步。", kind: "skill" },
+      { label: "休息", sec: 30, cue: "抖手。", kind: "rest" },
+    ],
+    [
+      { label: "熱身", sec: 120, cue: "碎步環繞。", kind: "warmup" },
+      { label: "外圍移動", sec: 240, cue: "走弧，保持距離。", kind: "work" },
+      { label: "休息", sec: 45, cue: "行兩步。", kind: "rest" },
+    ],
+  ];
+  return (head[id] || head[0]).concat(sculptBlocks());
+}
+const RUN = [
+  { label: "熱身", sec: 60, cue: "步行 1% 坡，唔扶手。", kind: "warmup" },
+  { label: "9 分鐘耐力跑", sec: 540, cue: "勻速。最後一分鐘可以加快。", kind: "work" },
+  { label: "緩走", sec: 60, cue: "行完先停錶。", kind: "cooldown" },
+];
+
+function load() {
+  try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
+}
+function save(s) { localStorage.setItem(KEY, JSON.stringify(s)); }
+function state() {
+  const s = load();
+  s.profile = s.profile || { heightCm: 168, targetKg: 54.5, ceilingKg: 55 };
+  s.weights = s.weights || [];
+  s.foods = s.foods || [];
+  s.sessions = s.sessions || [];
+  s.runs = s.runs || [];
+  return s;
+}
+function hkt() {
+  const p = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Hong_Kong", weekday: "short", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(new Date());
+  const g = (t) => p.find((x) => x.type === t).value;
+  const map = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  return { wd: map[g("weekday")] || 0, key: g("year") + "-" + g("month") + "-" + g("day") };
+}
+function route() {
+  const h = (location.hash || "#/").replace(/^#\/?/, "");
+  return h.split("?")[0];
+}
+function fmt(sec) {
+  const m = Math.floor(sec / 60), s = sec % 60;
+  return String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+}
+function bmi(kg, cm) { return kg / ((cm / 100) ** 2); }
+
+let timer = null;
+let session = null;
+
+function stopTimer() { if (timer) { clearInterval(timer); timer = null; } }
+
+function startSession(blocks, kind) {
+  session = { blocks, i: 0, left: blocks[0].sec, kind, running: true };
+  stopTimer();
+  timer = setInterval(tick, 1000);
+}
+function tick() {
+  if (!session || !session.running) return;
+  session.left -= 1;
+  if (session.left <= 0) {
+    session.i += 1;
+    if (session.i >= session.blocks.length) {
+      finishSession();
+      return;
+    }
+    session.left = session.blocks[session.i].sec;
+    try { navigator.vibrate && navigator.vibrate(80); } catch {}
+  }
+  render();
+}
+function finishSession() {
+  stopTimer();
+  const st = state();
+  const { key } = hkt();
+  if (session.kind === "run") st.runs.push({ date: key, meters: 1800 });
+  else st.sessions.push({ date: key, dayId: session.kind });
+  save(st);
+  session = { done: true };
+  render();
+}
+
+function home() {
+  const { wd, key } = hkt();
+  const day = DAYS[wd];
+  const st = state();
+  const last = st.weights.at(-1);
+  const kg = last ? last.kg : null;
+  const fat = last ? last.fat : null;
+  const names = ["日", "一", "二", "三", "四", "五", "六"];
+  const labels = ["恢復", "速度", "旋轉", "單腳", "有氧", "刺拳", "移動"];
+  return `
+    <p class="kicker">OUTBOXING</p>
+    <h1>outboxing stance</h1>
+    <p class="sub">練拳不練功到老一場空</p>
+    <div class="card">
+      <p class="muted">星期${names[wd]} · 康文署 30 分鐘</p>
+      <h2>${day.name}</h2>
+      <p class="body">${day.intent}</p>
+      <p class="body">${day.focus}</p>
+      <button class="btn" onclick="goSession()">開始訓練</button>
+    </div>
+    <div class="card">
+      <p class="muted">每週一次 · 隨意一日</p>
+      <h2>9 分鐘耐力跑</h2>
+      <p class="body">香港體適能跑。測完先有有氧分析。唔取代今日主課。</p>
+      <button class="btn2" onclick="goRun()">開始 9 分鐘</button>
+    </div>
+    <div class="grid2">
+      ${SCULPT.map((s) => `<div class="chip${s.part.startsWith("2合1") ? " wide" : ""}"><b>${s.part}</b><span>${s.move}</span></div>`).join("")}
+    </div>
+    <div class="card">
+      <p class="muted">超哥 · 梁功超</p>
+      <h2>跟住我做保證不會翻車</h2>
+      <p class="body">每日健身系列。大腿用 2合1：深蹲接保加利亞蹲。跟住做，唔好自己加花。</p>
+      <ul>${SHORTS.map(([id, t]) => `<li><a href="https://youtube.com/shorts/${id}" target="_blank" rel="noreferrer">${t}</a></li>`).join("")}</ul>
+    </div>
+    <div class="card">
+      <h2>超哥：練完即食小米粥</h2>
+      <p class="body">練完立即食熱小米粥。小米健脾，脾主肌肉及統血——肌肉靠脾運化，血靠脾統攝。粥要淡、熱、易消化，再補蛋白。</p>
+    </div>
+    <div class="grid2">
+      <div class="card"><p class="muted">晨秤</p><p class="big">${kg != null ? kg.toFixed(2) : "—"} <span style="font-size:14px">kg</span></p><p class="body">${fat != null ? "體脂 " + fat + "% · " : ""}上限 55 · 目標 54.5</p></div>
+      <div class="card"><p class="muted">BMI · 168 cm</p><p class="big">${kg != null ? bmi(kg, 168).toFixed(1) : "—"}</p><p class="body">外圍型保持輕盈</p></div>
+    </div>
+    <div class="week">
+      ${names.map((n, i) => `<div class="${i === wd ? "on" : ""}">${n}<br>${labels[i]}</div>`).join("")}
+    </div>
+    <div class="card" style="margin-top:12px">
+      <h2>場地備註</h2>
+      <ul>${NOTES.map((n) => `<li class="body" style="color:var(--muted)">${n}</li>`).join("")}</ul>
+    </div>
+  `;
+}
+
+function sessionView() {
+  if (session && session.done) {
+    return `<div class="card"><h2>完成</h2><p class="body">今日課記咗。跟住食熱小米粥。</p><button class="btn" onclick="location.hash='#/'">返今日</button></div>`;
+  }
+  if (!session) {
+    const { wd } = hkt();
+    startSession(dayBlocks(wd), wd);
+  }
+  const b = session.blocks[session.i];
+  const n = session.blocks[session.i + 1];
+  return `
+    <p class="kicker">${session.kind === "run" ? "9 分鐘跑" : "今日課"}</p>
+    <h1>${b.label}</h1>
+    <div class="clock">${fmt(session.left)}</div>
+    <p class="cue">${b.cue}</p>
+    <p class="muted" style="text-align:center">${session.i + 1} / ${session.blocks.length}${n ? " · 下： " + n.label : ""}</p>
+    <button class="btn" onclick="toggleRun()">${session.running ? "暫停" : "繼續"}</button>
+    <button class="btn2" onclick="skip()">跳過</button>
+    <button class="btn2" onclick="abortSession()">結束</button>
+  `;
+}
+function weekView() {
+  const names = ["日", "一", "二", "三", "四", "五", "六"];
+  return `<p class="kicker">週期</p><h1>七日外圍</h1><p class="sub">每日後半都係塑形 2合1。</p>` +
+    DAYS.map((d, i) => `<div class="card"><p class="muted">星期${names[i]}</p><h2>${d.name}</h2><p class="body">${d.intent}</p></div>`).join("");
+}
+function weightView() {
+  const st = state();
+  const last = st.weights.at(-1);
+  const foods = st.foods.slice(-8).reverse();
+  return `
+    <p class="kicker">體重</p>
+    <h1>168 cm · 55 kg 以下</h1>
+    <p class="sub">上限 55 · 目標 54.5 · 外圍型保持輕盈</p>
+    <div class="card">
+      <p class="muted">輸入晨秤</p>
+      <input id="kg" type="number" step="0.01" placeholder="kg" value="${last ? last.kg : ""}" />
+      <div style="height:8px"></div>
+      <input id="fat" type="number" step="0.1" placeholder="體脂 %" value="${last && last.fat != null ? last.fat : ""}" />
+      <button class="btn" onclick="addWeight()">記錄</button>
+    </div>
+    <div class="card">
+      <p class="muted">已吃食物</p>
+      <textarea id="food" rows="2" placeholder="例如：熱小米粥、雞蛋"></textarea>
+      <button class="btn2" onclick="addFood()">加入</button>
+      <ul>${foods.map((f) => `<li class="body">${f.date} · ${f.text}</li>`).join("") || "<li class='body'>未有記錄</li>"}</ul>
+    </div>
+    <div class="card">
+      <h2>超哥：練完即食小米粥</h2>
+      <p class="body">小米健脾，脾主肌肉及統血。粥要淡、熱、易消化，再補蛋白。</p>
+    </div>
+  `;
+}
+function skillsView() {
+  return `
+    <p class="kicker">技術</p>
+    <h1>outboxing stance</h1>
+    <p class="sub">浮如蝶、刺如蜂。距離先，出手後即走。</p>
+    <div class="card"><h2>站距</h2><p class="body">前腳微內扣，後腳隨時推開。重量 50/50，隨時側移。</p></div>
+    <div class="card"><h2>刺拳</h2><p class="body">肩先、拳後、即收。唔劈、唔 rap。最多 1 kg。</p></div>
+    <div class="card"><h2>移動</h2><p class="body">走弧唔走直線。對手進，你側；對手停，你刺完即離開。</p></div>
+    <div class="card"><h2>2合1 大腿</h2><p class="body">深蹲（超哥）8–12 下，即接保加利亞蹲左右各 8–10。三輪。搏擊底盤靠單腳穩定。</p></div>
+  `;
+}
+
+window.goSession = () => { session = null; location.hash = "#/session"; };
+window.goRun = () => { startSession(RUN, "run"); location.hash = "#/session"; };
+window.toggleRun = () => { if (!session) return; session.running = !session.running; render(); };
+window.skip = () => { if (!session) return; session.left = 0; tick(); };
+window.abortSession = () => { stopTimer(); session = null; location.hash = "#/"; };
+window.addWeight = () => {
+  const kg = parseFloat(document.getElementById("kg").value);
+  const fat = parseFloat(document.getElementById("fat").value);
+  if (!kg) return;
+  const st = state();
+  st.weights.push({ date: hkt().key, kg, fat: isNaN(fat) ? null : fat });
+  save(st); render();
+};
+window.addFood = () => {
+  const text = (document.getElementById("food").value || "").trim();
+  if (!text) return;
+  const st = state();
+  st.foods.push({ date: hkt().key, text });
+  save(st); render();
+};
+
+function render() {
+  const r = route();
+  document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("on", a.dataset.r === r || (r === "session" && a.dataset.r === "")));
+  const root = document.getElementById("app");
+  if (r === "session") root.innerHTML = sessionView();
+  else if (r === "week") root.innerHTML = weekView();
+  else if (r === "weight") root.innerHTML = weightView();
+  else if (r === "skills") root.innerHTML = skillsView();
+  else { stopTimer(); if (session && !session.done) session = null; root.innerHTML = home(); }
+}
+window.addEventListener("hashchange", render);
+render();
+</script>
+</body>
+</html>
