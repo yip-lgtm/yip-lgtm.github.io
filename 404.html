@@ -1,23 +1,24 @@
 <!doctype html>
-<html lang="zh-HK" class="antialiased">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>outboxing stance</title>
-    <meta
-      name="description"
-      content="outboxing stance · 康文署 30 分鐘外圍拳擊自學"
-    />
-    <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap"
-    />
-    <script type="module" crossorigin src="/yipmma/assets/index-CyS7AD4J.js"></script>
-    <link rel="stylesheet" crossorigin href="/yipmma/assets/index-Cl8kxqPO.css">
-  </head>
-  <body class="bg-bg text-fg">
-    <div id="root"></div>
-  </body>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <title>outboxing stance</title>
+  <script>
+  (function () {
+    var p = location.pathname || "";
+    if (p.indexOf("/mma") === 0 && p.indexOf("/yipmma") !== 0) return;
+    if (/\/yipmma\/weight/.test(p)) {
+      location.replace("/yipmma/weight/");
+      return;
+    }
+    if (p.indexOf("/yipmma") === 0) {
+      var rest = p.replace(/^\/yipmma\/?/, "").replace(/\/$/, "");
+      location.replace("/yipmma/" + (rest ? "#/" + rest : "") + location.hash);
+      return;
+    }
+    location.replace("/yipmma/");
+  })();
+  </script>
+</head>
+<body></body>
 </html>
