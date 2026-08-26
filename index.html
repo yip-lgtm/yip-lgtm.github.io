@@ -4,75 +4,84 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>outboxing stance</title>
-    <meta name="description" content="outboxing stance" />
     <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" />
     <link rel="stylesheet" crossorigin href="/assets/index-FTq0VT2e.css" />
     <style>
-      html, body { background: #000 !important; color: #fff !important; }
+      html, body { background: #000 !important; color: #fff !important; margin: 0; }
+      #pin {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 20px 16px 0;
+        font-family: "Noto Sans TC", "IBM Plex Sans", sans-serif;
+      }
+      #pin h1 { font-family: "Noto Serif TC", serif; font-size: 2rem; margin: 4px 0 0; font-weight: 600; }
+      #pin .sub { font-size: 14px; margin: 6px 0 16px; }
+      #pin .row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+      #pin .chip, #pin .box {
+        border: 1px solid #2c2d26;
+        background: #1a1b17;
+        border-radius: 16px;
+        padding: 12px;
+      }
+      #pin .chip { text-align: center; }
+      #pin .chip b { display: block; font-size: 12px; color: #9a978c; font-weight: 500; }
+      #pin .chip span { display: block; margin-top: 4px; font-size: 13px; }
+      #pin .box h2 { font-size: 18px; margin: 0 0 8px; }
+      #pin .box p, #pin .box a { font-size: 14px; color: #c5c2b6; line-height: 1.6; }
+      #pin .box a { color: #fff; }
+      #pin .box ul { margin: 8px 0 0; padding-left: 18px; }
     </style>
     <script type="module" crossorigin src="/assets/index-z4RBCS94.js"></script>
     <script>
-      const SHORTS = [
-        ["qpgtrzJpSIE", "今日練腳 3 個動作"],
-        ["9g8fGj_fO_g", "每日健身 1"],
-        ["8tTcdROhKk4", "每日健身 2"],
-        ["sJbZVqZc7KA", "每日健身 3"],
-        ["dDMEsWZW6yg", "每日健身 4"],
-      ];
-      function card(html) {
-        const el = document.createElement("div");
-        el.className = "rounded-[16px] border border-[#2c2d26] bg-[#1a1b17] p-4 mb-4";
-        el.innerHTML = html;
-        return el;
-      }
-      function apply() {
+      function wipeOldBrand() {
         document.title = "outboxing stance";
-        document.querySelectorAll("p,h1").forEach((el) => {
-          const t = (el.textContent || "").trim();
-          if (t === "康文署 · 30 分鐘" || t === "OUTBOXING STANCE") el.textContent = "OUTBOXING";
-          if (t === "蝶刺") el.textContent = "outboxing stance";
-          if (t === "外圍移動 · 每日塑形" || t === "stance") el.textContent = "練拳不練功到老一場空";
+        document.querySelectorAll("h1,p,span").forEach(function (el) {
+          var t = (el.textContent || "").replace(/\s+/g, " ").trim();
+          if (t === "蝶刺" || t.indexOf("蝶刺") === 0 && t.length < 8) el.textContent = "outboxing stance";
+          if (t.indexOf("康文署") !== -1 && t.length < 20) el.textContent = "OUTBOXING";
+          if (t.indexOf("外圍移動") !== -1) el.textContent = "練拳不練功到老一場空";
         });
-        if (document.querySelector(".chao-injected")) return;
-        const grids = [...document.querySelectorAll("div")].filter((d) =>
-          d.className && String(d.className).includes("grid-cols-4")
-        );
-        const grid = grids.find((g) => (g.textContent || "").includes("引體"));
-        if (!grid) return;
-        grid.classList.remove("grid-cols-4");
-        grid.classList.add("grid-cols-5");
-        const thigh = document.createElement("div");
-        thigh.className = grid.firstElementChild ? grid.firstElementChild.className : "";
-        thigh.innerHTML = '<p class="text-xs text-muted">大腿</p><p class="mt-1 text-sm leading-tight text-fg">深蹟（超哥）</p>';
-        grid.appendChild(thigh);
-        const wrap = grid.parentElement;
-        if (!wrap) return;
-        const videos = card(
-          '<p class="text-xs" style="color:#9a978c">超哥 · 梁功超</p>' +
-          '<h2 class="mt-1 font-display text-xl">跟住我做保證不會翻車</h2>' +
-          '<p class="mt-2 text-sm" style="color:#9a978c">每日健身系列。今日加大腿。跟住做，唔好自己加花。</p>' +
-          "<ul class='mt-3 space-y-2'>" +
-          SHORTS.map(([id, title]) =>
-            `<li><a href="https://youtube.com/shorts/${id}" target="_blank" rel="noreferrer" class="text-sm underline underline-offset-4" style="color:#fff">${title} →</a></li>`
-          ).join("") +
-          "</ul>"
-        );
-        videos.classList.add("chao-injected");
-        const diet = card(
-          '<h2 class="font-display text-xl">超哥：練完即食小米粥</h2>' +
-          '<p class="mt-2 text-sm leading-relaxed" style="color:#9a978c">練完立即食小米粥。小米健脾，脾主肌肉及統血——肌肉靠脾運化，血靠脾統攝。外圍型唔好練完只飲蛋白、唔養脾。粥要淡、熱、易消化，再補蛋白。</p>'
-        );
-        wrap.insertBefore(diet, grid.nextSibling);
-        wrap.insertBefore(videos, grid.nextSibling);
       }
-      const obs = new MutationObserver(apply);
-      obs.observe(document.documentElement, { childList: true, subtree: true });
-      apply();
+      setInterval(wipeOldBrand, 400);
+      new MutationObserver(wipeOldBrand).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
     </script>
   </head>
-  <body style="background:#000;color:#fff">
+  <body>
+    <div id="pin">
+      <div style="font-size:12px;letter-spacing:.22em">OUTBOXING</div>
+      <h1>outboxing stance</h1>
+      <p class="sub">練拳不練功到老一場空</p>
+      <div class="row">
+        <div class="chip"><b>背</b><span>引體向上</span></div>
+        <div class="chip"><b>胸</b><span>伏地／推胸</span></div>
+        <div class="chip"><b>二頭</b><span>啞鈴彎舉</span></div>
+        <div class="chip"><b>腹</b><span>單樇提膝</span></div>
+        <div class="chip"><b>大腿</b><span>深蹟（超哥）</span></div>
+        <div class="chip"><b>單腳</b><span>保加利亞蹟</span></div>
+      </div>
+      <div class="box" style="margin-bottom:12px">
+        <p style="font-size:12px;color:#9a978c;margin:0">超哥 · 梁功超</p>
+        <h2>跟住我做保證不會翻車</h2>
+        <p>每日健身系列。今日加大腿。跟住做，唔好自己加花。</p>
+        <ul>
+          <li><a href="https://youtube.com/shorts/qpgtrzJpSIE" target="_blank" rel="noreferrer">今日練腳 3 個動作</a></li>
+          <li><a href="https://youtube.com/shorts/9g8fGj_fO_g" target="_blank" rel="noreferrer">每日健身 1</a></li>
+          <li><a href="https://youtube.com/shorts/8tTcdROhKk4" target="_blank" rel="noreferrer">每日健身 2</a></li>
+          <li><a href="https://youtube.com/shorts/sJbZVqZc7KA" target="_blank" rel="noreferrer">每日健身 3</a></li>
+          <li><a href="https://youtube.com/shorts/dDMEsWZW6yg" target="_blank" rel="noreferrer">每日健身 4</a></li>
+        </ul>
+      </div>
+      <div class="box" style="margin-bottom:12px">
+        <h2>超哥：練完即食小米粥</h2>
+        <p>練完立即食熱小米粥。小米健脾，脾主肌肉及統血——肌肉靠脾運化，血靠脾統攝。餘粥淡、熱、易消化，再補蛋白。</p>
+      </div>
+      <div class="box" style="margin-bottom:16px">
+        <h2>保加利亞蹟</h2>
+        <p>提升搏擊能力加呢一條。後腳踏凳，前腳蹟落，踪跟腳尖，腰直，左右各 8–10 下 × 3 組。康文署用長椅或平椅做支點。</p>
+      </div>
+    </div>
     <div id="root"></div>
   </body>
 </html>
