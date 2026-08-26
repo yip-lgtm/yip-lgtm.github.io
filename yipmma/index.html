@@ -4,20 +4,58 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>outboxing stance</title>
-    <meta
-      name="description"
-      content="outboxing stance · 康文署 30 分鐘外圍拳擊自學"
-    />
+    <meta name="description" content="outboxing stance · 康文署 30 分鐘外圍拳擊自學" />
     <meta name="theme-color" content="#000000" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" />
     <script type="module" crossorigin src="/yipmma/assets/index-CyS7AD4J.js"></script>
     <link rel="stylesheet" crossorigin href="/yipmma/assets/index-Cl8kxqPO.css">
   </head>
   <body class="bg-bg text-fg">
     <div id="root"></div>
+    <script>
+      const MAP = [
+        [/\u5206\u817f|\u4fdd\u52a0\u5229\u4e9e|\u6df1\u8e74|RDL|\u5f13\u6b65/, "./moves/split.svg"],
+        [/\u5f15\u9ad4|\u8179/, "./moves/pull.svg"],
+        [/^\u80f8|\u4f0f\u5730/, "./moves/push.svg"],
+        [/\u4e8c\u982d/, "./moves/curl.svg"],
+        [/\u7a7a\u62f3|\u523a\u62f3/, "./skills/jab.gif"],
+        [/\u6b65\u983b|\u71b1\u8eab|\u56de\u5408|Zone|\u659c\u884c/, "./skills/shuffle.gif"],
+        [/Pallof|\u6728\u65ac|\u9762\u62c9|Pivot/, "./skills/pivot.gif"],
+      ];
+      function pick(t) {
+        for (const [re, src] of MAP) if (re.test(t)) return src;
+        return "./skills/stance.gif";
+      }
+      const obs = new MutationObserver(() => {
+        const titles = [...document.querySelectorAll("h1")];
+        const h = titles.find((el) => el.textContent && el.textContent.length <= 16);
+        if (!h) return;
+        const t = (h.textContent || "").trim();
+        if (!t || /\u5b8c\u6210|\u9ad4\u91cd|outboxing|\u9031\u671f|\u6280\u8853/.test(t)) {
+          document.getElementById("demo-gif")?.remove();
+          return;
+        }
+        if (/\u4f11\u606f/.test(t)) {
+          document.getElementById("demo-gif")?.remove();
+          return;
+        }
+        let img = document.getElementById("demo-gif");
+        if (!img) {
+          img = document.createElement("img");
+          img.id = "demo-gif";
+          img.alt = t;
+          img.style.cssText =
+            "display:block;margin:16px auto 0;height:176px;width:auto;border-radius:12px;border:1px solid #2a2a2a;background:#000;object-fit:cover";
+          h.insertAdjacentElement("afterend", img);
+        }
+        const src = pick(t);
+        if (img.getAttribute("data-t") !== t) {
+          img.src = src;
+          img.setAttribute("data-t", t);
+        }
+      });
+      obs.observe(document.documentElement, { subtree: true, childList: true, characterData: true });
+    </script>
   </body>
 </html>
