@@ -1,138 +1,23 @@
 <!doctype html>
-<html lang="zh-HK">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>outboxing stance</title>
-  <meta name="theme-color" content="#000000" />
-  <link rel="icon" href="/yipmma/favicon.svg" />
-  <style>
-    :root { --bg:#000; --fg:#f4f1e8; --muted:#9a978c; --line:#2c2d26; --card:#1a1b17; --btn:#e8e4d8; --ink:#111; }
-    * { box-sizing: border-box; }
-    html, body { margin:0; background:var(--bg); color:var(--fg); font-family:"Noto Sans TC",system-ui,sans-serif; }
-    button { cursor:pointer; font:inherit; }
-    a { color:inherit; }
-    #app { max-width:26rem; margin:0 auto; padding:24px 16px 96px; min-height:100dvh; }
-    .kicker { font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); }
-    h1 { font-size:2rem; font-weight:600; margin:8px 0 0; }
-    h2 { font-size:1.15rem; margin:0; }
-    .sub { margin:8px 0 4px; color:#ddd; font-size:14px; }
-    .thanks { margin:0 0 20px; color:var(--muted); font-size:12px; }
-    .card { border:1px solid var(--line); background:var(--card); border-radius:16px; padding:16px; margin-bottom:12px; }
-    .muted { color:var(--muted); font-size:12px; margin:0 0 6px; }
-    .body { margin:8px 0 0; font-size:14px; line-height:1.65; color:var(--muted); }
-    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-    .btn, .btn2 { display:block; width:100%; text-align:center; border-radius:999px; padding:13px; font-size:15px; margin-top:12px; }
-    .btn { background:var(--btn); color:var(--ink); border:0; font-weight:600; }
-    .btn2 { background:transparent; color:var(--fg); border:1px solid var(--line); }
-    .nav { position:fixed; left:0; right:0; bottom:0; background:#0b0b0b; border-top:1px solid var(--line); display:grid; grid-template-columns:repeat(4,1fr); padding:8px 8px calc(8px + env(safe-area-inset-bottom)); }
-    .nav a { text-align:center; text-decoration:none; color:var(--muted); font-size:11px; padding:8px 4px; }
-    .nav a.on { color:var(--fg); }
-    input, textarea { width:100%; background:#111; color:var(--fg); border:1px solid var(--line); border-radius:12px; padding:12px; font:inherit; }
-    .big { font-size:1.8rem; }
-    .chip { border:1px solid var(--line); border-radius:14px; padding:12px 8px; text-align:center; }
-    .chip b { display:block; color:var(--muted); font-size:12px; }
-  </style>
-</head>
-<body>
-  <div id="app"></div>
-  <nav class="nav">
-    <a href="/yipmma/" data-r="">今日</a>
-    <a href="/yipmma/#/week" data-r="week">週期</a>
-    <a href="/yipmma/weight/" data-r="weight">體重</a>
-    <a href="/yipmma/#/skills" data-r="skills">技術</a>
-  </nav>
-<script>
-const KEY="yipmma-v1";
-const SUB="練拳不練功到老一場空";
-const THANKS="(特別嗚謝 超哥)";
-function load(){ try{return JSON.parse(localStorage.getItem(KEY))||{};}catch(e){return{};} }
-function save(s){ localStorage.setItem(KEY, JSON.stringify(s)); }
-function state(){
-  const s=load();
-  s.profile=Object.assign({heightCm:"",targetKg:""}, s.profile||{});
-  delete s.profile.ceilingKg;
-  s.weights=s.weights||[]; s.foods=s.foods||[];
-  return s;
-}
-function hkt(){ return new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Hong_Kong"}); }
-function route(){
-  const hash=(location.hash||"").replace(/^#\/?/,"").split("?")[0];
-  if(hash) return hash;
-  const path=location.pathname.replace(/\/yipmma\/?/,"").replace(/^\/+/,"").replace(/\/$/,"");
-  return path;
-}
-function profileLine(st){
-  const h=st.profile.heightCm, t=st.profile.targetKg;
-  if(!h&&!t) return "自己輸入身高同目標";
-  return [h?h+" cm":"", t?"目標 "+t+" kg":""].filter(Boolean).join(" · ");
-}
-function header(k,t){ return '<p class="kicker">'+k+'</p><h1>'+t+'</h1><p class="sub">'+SUB+'</p><p class="thanks">'+THANKS+'</p>'; }
-function home(){
-  const st=state(), last=st.weights.at(-1);
-  return header("OUTBOXING","outboxing stance")+
-    '<div class="card"><p class="muted">康文署 30 分鐘</p><h2>今日課</h2><p class="body">外圍移動 + 背胸二頭腹 + 2合1 大腿（超哥深蹲＋保加利亞蹲）</p>'+
-    '<button class="btn" onclick="location.href=\'/yipmma/#/session\'">開始訓練</button></div>'+
-    '<div class="grid2"><div class="chip"><b>晨秤</b><div class="big">'+(last?last.kg:"—")+'</div></div>'+
-    '<div class="chip"><b>設定</b><div class="body">'+profileLine(st)+'</div></div></div>'+
-    '<div class="card"><h2>超哥：練完即食小米粥</h2><p class="body">小米健脾，脾主肌肉及統血。</p></div>';
-}
-function weightView(){
-  const st=state(), last=st.weights.at(-1), foods=st.foods.slice(-8).reverse();
-  const hv=st.profile.heightCm||"";
-  const tv=st.profile.targetKg||"";
-  const kg=last&&last.kg!=null?last.kg:"";
-  const fat=last&&last.fat!=null?last.fat:"";
-  const muscle=last&&last.muscle!=null?last.muscle:"";
-  const bmr=last&&last.bmr!=null?last.bmr:"";
-  const foodLis=foods.map(function(f){return '<li class="body">'+f.date+' · '+f.text+'</li>';}).join("")||'<li class="body">未有記錄</li>';
-  return header("體重","體重 · 飲食")+
-    '<div class="card"><p class="muted">自己輸入身高／目標（唔寫死數字）</p>'+
-    '<div class="grid2"><input id="height" inputmode="decimal" placeholder="身高 cm" value="'+hv+'">'+
-    '<input id="target" inputmode="decimal" placeholder="目標 kg" value="'+tv+'"></div>'+
-    '<button class="btn2" onclick="saveProfile()">保存身高／目標</button>'+
-    '<p class="body" id="profmsg">'+profileLine(st)+'</p></div>'+
-    '<div class="card"><p class="muted">記入體脂磅</p><div class="grid2">'+
-    '<input id="kg" inputmode="decimal" placeholder="體重 kg" value="'+kg+'">'+
-    '<input id="fat" inputmode="decimal" placeholder="體脂 %" value="'+fat+'">'+
-    '<input id="muscle" inputmode="decimal" placeholder="肌肉 kg" value="'+muscle+'">'+
-    '<input id="bmr" inputmode="decimal" placeholder="BMR" value="'+bmr+'"></div>'+
-    '<button class="btn" onclick="addWeight()">保存今日磅數</button></div>'+
-    '<div class="card"><p class="muted">已吃食物</p>'+
-    '<textarea id="food" rows="2" placeholder="例如：熱小米粥"></textarea>'+
-    '<button class="btn2" onclick="addFood()">加入</button><ul>'+foodLis+'</ul></div>';
-}
-function weekView(){ return header("週期","七日外圍")+'<div class="card"><p class="body">日恢復 · 一速度 · 二旋轉 · 三單腳 · 四有氧 · 五刺拳 · 六移動。</p></div>'; }
-function skillsView(){ return header("技術","outboxing stance")+'<div class="card"><h2>站距</h2><p class="body">可隨時移動，唔鎖死。</p></div><div class="card"><h2>2合1 大腿</h2><p class="body">深蹲（超哥）接保加利亞蹲。</p></div>'; }
-window.saveProfile=function(){
-  const st=state();
-  st.profile.heightCm=(document.getElementById("height").value||"").trim();
-  st.profile.targetKg=(document.getElementById("target").value||"").trim();
-  save(st);
-  document.getElementById("profmsg").textContent="已保存 · "+profileLine(st);
-};
-window.addWeight=function(){
-  const kg=parseFloat(document.getElementById("kg").value);
-  if(!kg) return;
-  const fat=parseFloat(document.getElementById("fat").value);
-  const muscle=parseFloat(document.getElementById("muscle").value);
-  const bmr=parseFloat(document.getElementById("bmr").value);
-  const st=state();
-  st.weights.push({date:hkt(),kg,fat:isNaN(fat)?null:fat,muscle:isNaN(muscle)?null:muscle,bmr:isNaN(bmr)?null:bmr});
-  save(st); render();
-};
-window.addFood=function(){
-  const text=(document.getElementById("food").value||"").trim();
-  if(!text) return;
-  const st=state(); st.foods.push({date:hkt(),text}); save(st); render();
-};
-function render(){
-  const r=route();
-  document.querySelectorAll(".nav a").forEach(function(a){a.classList.toggle("on", a.dataset.r===r);});
-  document.getElementById("app").innerHTML = r==="weight"?weightView(): r==="week"?weekView(): r==="skills"?skillsView(): home();
-}
-window.addEventListener("hashchange", render);
-render();
-</script>
-</body>
+<html lang="zh-HK" class="antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>outboxing stance</title>
+    <meta
+      name="description"
+      content="outboxing stance · 康文署 30 分鐘外圍拳擊自學"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap"
+    />
+    <script type="module" crossorigin src="/yipmma/assets/index-8b2_2xI8.js"></script>
+    <link rel="stylesheet" crossorigin href="/yipmma/assets/index-B2LaUoBQ.css">
+  </head>
+  <body class="bg-bg text-fg">
+    <div id="root"></div>
+  </body>
 </html>

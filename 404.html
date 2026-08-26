@@ -4,24 +4,27 @@
   <meta charset="utf-8" />
   <title>outboxing stance</title>
   <script>
-  (function () {
-    var p = location.pathname || "";
-    if (p.indexOf("/yipmma") === 0) {
-      if (/weight/.test(p)) {
-        location.replace("/yipmma/weight/");
+    (function () {
+      var p = location.pathname || "/";
+      var q = location.search || "";
+      var h = location.hash || "";
+      if (p.indexOf("/yipmma") === 0) {
+        var rest = p.replace(/^\/yipmma\/?/, "").split("/")[0];
+        var known = { weight: 1, session: 1, week: 1, skills: 1 };
+        if (known[rest]) {
+          location.replace("/yipmma/" + rest + "/" + q + h);
+        } else {
+          location.replace("/yipmma/" + q + h);
+        }
         return;
       }
-      var rest = p.replace(/^\/yipmma\/?/, "").replace(/\/$/, "");
-      location.replace("/yipmma/" + (rest ? "#/" + rest : ""));
-      return;
-    }
-    if (p.indexOf("/mma") === 0) {
-      location.replace("/mma/");
-      return;
-    }
-    location.replace("/");
-  })();
+      if (p.indexOf("/mma") === 0) {
+        location.replace("/mma/");
+        return;
+      }
+      location.replace("/");
+    })();
   </script>
 </head>
-<body></body>
+<body style="background:#000;color:#fff;font-family:sans-serif;padding:24px">載入中…</body>
 </html>
