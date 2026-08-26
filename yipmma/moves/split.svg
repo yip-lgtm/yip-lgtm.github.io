@@ -1,7 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 228" width="200" height="228">
-<rect width="200" height="228" rx="12" fill="#000"/>
-<clipPath id="r"><rect x="6" y="6" width="188" height="188" rx="10"/></clipPath>
-<g clip-path="url(#r)">
-<image x="6" y="6" width="188" height="188" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoACgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGf/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAwEBPwB//9k="/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300" width="260" height="300">
+  <rect width="260" height="300" rx="14" fill="#000"/>
+  <text x="130" y="22" text-anchor="middle" fill="#888" font-family="system-ui,Noto Sans TC,sans-serif" font-size="11">分腿蹴 左前</text>
+  <g fill="#222" stroke="#fff" stroke-width="2">
+    <rect x="138" y="168" width="100" height="16" rx="2"/>
+    <path d="M150 184v32M222 184v32" fill="none"/>
+    <path d="M140 216h96" fill="none" stroke="#555"/>
+  </g>
+  <path d="M24 248h212" stroke="#333" stroke-width="2"/>
+  <g fill="#fff">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.38;0.5;0.88;1" dur="1.7s" repeatCount="indefinite"/>
+    <ellipse cx="102" cy="56" rx="13" ry="14"/>
+    <rect x="94" y="70" width="16" height="48" rx="8"/>
+    <rect x="74" y="78" width="12" height="36" rx="6" transform="rotate(18 80 96)"/>
+    <rect x="108" y="80" width="12" height="32" rx="6" transform="rotate(-16 114 96)"/>
+    <rect x="86" y="112" width="16" height="58" rx="8" transform="rotate(22 94 141)"/>
+    <rect x="58" y="162" width="14" height="78" rx="7"/>
+    <rect x="108" y="116" width="16" height="52" rx="8" transform="rotate(-38 116 142)"/>
+    <rect x="148" y="148" width="14" height="28" rx="7" transform="rotate(-12 155 162)"/>
+    <ellipse cx="58" cy="248" rx="16" ry="6"/>
+    <ellipse cx="196" cy="166" rx="14" ry="7"/>
+  </g>
+  <g fill="#fff">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.38;0.5;0.88;1" dur="1.7s" repeatCount="indefinite"/>
+    <ellipse cx="86" cy="78" rx="13" ry="14"/>
+    <rect x="78" y="92" width="16" height="44" rx="8"/>
+    <rect x="58" y="100" width="12" height="34" rx="6" transform="rotate(22 64 117)"/>
+    <rect x="94" y="102" width="12" height="30" rx="6" transform="rotate(-12 100 117)"/>
+    <rect x="58" y="128" width="16" height="46" rx="8" transform="rotate(48 66 151)"/>
+    <rect x="42" y="168" width="14" height="72" rx="7"/>
+    <rect x="86" y="132" width="16" height="46" rx="8" transform="rotate(-52 94 155)"/>
+    <rect x="132" y="164" width="14" height="22" rx="7" transform="rotate(-8 139 175)"/>
+    <ellipse cx="46" cy="248" rx="16" ry="6"/>
+    <ellipse cx="198" cy="166" rx="14" ry="7"/>
+  </g>
+  <text x="56" y="270" text-anchor="middle" fill="#777" font-size="10" font-family="system-ui,sans-serif">前腳</text>
+  <text x="188" y="156" text-anchor="middle" fill="#777" font-size="10" font-family="system-ui,sans-serif">後腳上出</text>
+  <text x="130" y="290" text-anchor="middle" fill="#c4c4c4" font-size="11" font-family="system-ui,Noto Sans TC,sans-serif">6–8下 · 膝跟腳尖同向 · 軀幹直</text>
 </svg>
