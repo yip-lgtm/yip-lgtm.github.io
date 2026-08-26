@@ -15,7 +15,7 @@
     <div id="root"></div>
     <script>
       const MAP = [
-        [/\u5206\u817f|\u4fdd\u52a0\u5229\u4e9e|\u6df1\u8e74|RDL|\u5f13\u6b65/, "./moves/split.svg"],
+        [/\u5206\u817f|\u4fdd\u52a0\u5229\u4e9e|\u6df1\u8e74|RDL|\u5f13\u6b65|\u8d85\u54e5/, "./moves/split.svg?v=photo"],
         [/\u5f15\u9ad4|\u8179/, "./moves/pull.svg"],
         [/^\u80f8|\u4f0f\u5730/, "./moves/push.svg"],
         [/\u4e8c\u982d/, "./moves/curl.svg"],
@@ -36,7 +36,7 @@
           document.getElementById("demo-gif")?.remove();
           return;
         }
-        if (/\u4f11\u606f/.test(t)) {
+        if (/\u4f11息/.test(t)) {
           document.getElementById("demo-gif")?.remove();
           return;
         }
@@ -46,7 +46,7 @@
           img.id = "demo-gif";
           img.alt = t;
           img.style.cssText =
-            "display:block;margin:16px auto 0;height:176px;width:auto;border-radius:12px;border:1px solid #2a2a2a;background:#000;object-fit:cover";
+            "display:block;margin:16px auto 0;height:220px;width:auto;max-width:86vw;border-radius:12px;border:1px solid #2a2a2a;background:#000;object-fit:cover";
           h.insertAdjacentElement("afterend", img);
         }
         const src = pick(t);
