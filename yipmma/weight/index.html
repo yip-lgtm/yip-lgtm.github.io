@@ -65,7 +65,8 @@ function route(){
   return path;
 }
 function profileLine(st){
-  const h=st.profile.heightCm, t=st.profile.targetKg;
+  const s=st.profile.heightCm, t=st.profile.targetKg;
+  const h=s;
   if(!h&&!t) return "自己輸入身高同目標";
   return [h?h+" cm":"", t?"目標 "+t+" kg":""].filter(Boolean).join(" · ");
 }
