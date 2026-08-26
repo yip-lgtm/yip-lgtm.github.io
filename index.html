@@ -1,23 +1,33 @@
 <!doctype html>
-<html lang="zh-HK" class="antialiased">
+<html lang="zh-HK">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>蝶刺</title>
-    <meta
-      name="description"
-      content="康文署 30 分鐘外圍拳擊自學：技術移動、體能、體重控制。"
-    />
-    <meta name="theme-color" content="#10110f" />
+    <title>蝶刺 · outboxing stance</title>
+    <meta name="description" content="蝶刺 outboxing stance — 康文署 30 分鐘外圍拳擊自學" />
+    <meta name="theme-color" content="#000000" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" />
+    <link rel="stylesheet" crossorigin href="/assets/index-FTq0VT2e.css" />
+    <style>
+      html, body { background: #000 !important; color: #fff !important; }
+    </style>
     <script type="module" crossorigin src="/assets/index-z4RBCS94.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-FTq0VT2e.css">
+    <script>
+      function applyBrand() {
+        document.querySelectorAll("p,h1,h2,span").forEach((el) => {
+          const t = (el.textContent || "").trim();
+          if (t === "康文署 · 30 分鐘") el.textContent = "OUTBOXING STANCE";
+          if (t === "外圍移動 · 每日塑形") el.textContent = "outboxing stance";
+        });
+        if (document.title === "蝶刺") document.title = "蝶刺 · outboxing stance";
+      }
+      const obs = new MutationObserver(applyBrand);
+      obs.observe(document.documentElement, { childList: true, subtree: true, characterData: true });
+      applyBrand();
+    </script>
   </head>
-  <body class="bg-bg text-fg">
+  <body style="background:#000;color:#fff">
     <div id="root"></div>
   </body>
 </html>
