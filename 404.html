@@ -1,17 +1,13 @@
 <!doctype html>
 <html lang="zh-HK">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>outboxing stance</title>
-    <script>
-      var p = location.pathname;
-      if (p === "/mma" || p.indexOf("/mma/") === 0) {
-        location.replace("/mma/");
-      } else {
-        location.replace("/");
-      }
-    </script>
-  </head>
-  <body style="background:#000;color:#fff"></body>
+<head>
+<meta charset="utf-8" />
+<title>outboxing stance</title>
+<script>
+  var p = location.pathname || "/";
+  if (p === "/mma" || p.indexOf("/mma/") === 0) location.replace("/mma/");
+  else location.replace("/");
+</script>
+</head>
+<body style="background:#000;color:#fff"></body>
 </html>
