@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240"><rect width="200" height="240" fill="#000"/><g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"><circle cx="90" cy="42" r="10"/><path d="M90 54 L90 110"/><path d="M90 70 L62 100"/><path d="M90 70 L118 100"/><path d="M90 110 L70 150 L62 200"><animate attributeName="d" dur="1.4s" repeatCount="indefinite" values="M90 110 L70 150 L62 200;M90 110 L78 168 L70 210;M90 110 L70 150 L62 200"/></path><path d="M90 110 L130 150 L168 128"><animate attributeName="d" dur="1.4s" repeatCount="indefinite" values="M90 110 L130 150 L168 128;M90 110 L138 170 L172 148;M90 110 L130 150 L168 128"/></path></g><rect x="160" y="118" width="28" height="8" fill="#fff" opacity=".35"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 228" width="200" height="228">
+<rect width="200" height="228" rx="12" fill="#000"/>
+<clipPath id="r"><rect x="6" y="6" width="188" height="188" rx="10"/></clipPath>
+<g clip-path="url(#r)">
+<image x="6" y="6" width="188" height="188" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoACgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGf/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAwEBPwB//9k="/>
+</g>
+</svg>
