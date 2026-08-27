@@ -28,47 +28,13 @@
     var p = location.pathname + location.hash + location.search;
     return /session/.test(p) && !/(run=true|run=1)/.test(p);
   }
-  function gifForLabel(t) {
-    if (/環繞/.test(t)) return "ring.gif";
-    if (/滑步/.test(t)) return "shuffle.gif";
-    if (/Pivot|轉角/.test(t)) return "pivot.gif";
-    if (/架勢/.test(t)) return "stance.gif";
-    if (/空拳|刺拳/.test(t)) return "jab.gif";
-    if (/技術/.test(t)) return skillToday().gif;
-    return null;
-  }
-  function injectGif() {
-    if (!isSession()) {
-      var stale = document.getElementById("yip-skill-gif");
-      if (stale) stale.remove();
-      return;
-    }
-    var h = document.querySelector("#root h1");
-    if (!h) return;
-    var gif = gifForLabel(h.textContent || "");
-    var old = document.getElementById("yip-skill-gif");
-    if (!gif) {
-      if (old) old.remove();
-      return;
-    }
-    if (old && old.getAttribute("data-src") === gif) return;
-    if (old) old.remove();
-    var img = document.createElement("img");
-    img.id = "yip-skill-gif";
-    img.alt = "";
-    img.setAttribute("data-src", gif);
-    img.src = "/yipmma/skills/" + gif;
-    img.style.cssText =
-      "display:block;width:100%;max-height:240px;object-fit:contain;background:#000;border-radius:12px;margin:12px auto 0";
-    if (h.parentNode) h.parentNode.insertBefore(img, h.nextSibling);
-  }
   function forceSkillSession() {
     var links = document.querySelectorAll('a[href*="session"]');
     for (var i = 0; i < links.length; i++) {
       var a = links[i];
       var href = a.getAttribute("href") || "";
       if (/run=/.test(href) || /run=/.test(a.search || "")) continue;
-      a.setAttribute("href", "/yipmma/session/?v=skill3");
+      a.setAttribute("href", "/yipmma/session/?v=mc15");
       if (a.getAttribute("data-hard")) continue;
       a.setAttribute("data-hard", "1");
       a.addEventListener(
@@ -76,29 +42,25 @@
         function (e) {
           e.preventDefault();
           e.stopPropagation();
-          location.href = "/yipmma/session/?v=skill3";
+          location.href = "/yipmma/session/?v=mc15";
         },
         true
       );
     }
     if (isSession() && document.getElementById("root") && !document.getElementById("app")) {
-      var h = document.querySelector("#root h1");
-      if (h && !/技術/.test(h.textContent || "") && !location.search.includes("stay=1")) {
-        location.replace("/yipmma/session/?v=skill3");
-      }
+      location.replace("/yipmma/session/?v=mc15");
     }
   }
   function enhanceHome() {
     var sk = skillToday();
     var wanted =
-      "今日技術已計入 30 分鐘主課：" + sk.name + "（開始訓練後，熱身完即做，跟 GIF）。";
-    var paras = document.querySelectorAll("p");
+      "今日技術：" + sk.name + "。後半塑形 5×3＝15 組，機械爆用 MC 揀空位（A/B/C/D）。";
+    var paras = document.querySelectorAll("p, li");
     var copies = [];
     var i;
     for (i = 0; i < paras.length; i++) {
-      if ((paras[i].textContent || "").indexOf("今日技術已計入") !== -1) {
-        copies.push(paras[i]);
-      }
+      var tx = paras[i].textContent || "";
+      if (tx.indexOf("後半塑形 5") !== -1 || tx.indexOf("今日技術已計入") !== -1) copies.push(paras[i]);
     }
     if (copies.length) {
       copies[0].textContent = wanted;
@@ -106,22 +68,30 @@
       for (i = 1; i < copies.length; i++) {
         if (copies[i].parentNode) copies[i].parentNode.removeChild(copies[i]);
       }
-      return;
+    } else {
+      for (i = 0; i < paras.length; i++) {
+        var p = paras[i];
+        if (p.getAttribute("data-skill-line")) continue;
+        var t = p.textContent || "";
+        if (!t || /今日技術/.test(t)) continue;
+        if (!/堆恢復|下機即|上肢塑形|空拳節奏|步頻波|引體、胸|先做外圍|主課內連續/.test(t)) continue;
+        p.setAttribute("data-skill-line", "1");
+        var line = document.createElement("p");
+        line.setAttribute("data-skill-line", "1");
+        line.className = p.className;
+        line.style.marginTop = "8px";
+        line.textContent = wanted;
+        if (p.parentNode) p.parentNode.insertBefore(line, p.nextSibling);
+        break;
+      }
     }
     for (i = 0; i < paras.length; i++) {
-      var p = paras[i];
-      if (p.getAttribute("data-skill-line")) continue;
-      var t = p.textContent || "";
-      if (!t || /今日技術/.test(t)) continue;
-      if (!/堆恢復|下機即|上肢塑形|空拳節奏|步頻波|引體、胸|先做外圍|主課內連續/.test(t)) continue;
-      p.setAttribute("data-skill-line", "1");
-      var line = document.createElement("p");
-      line.setAttribute("data-skill-line", "1");
-      line.className = p.className;
-      line.style.marginTop = "8px";
-      line.textContent = wanted;
-      if (p.parentNode) p.parentNode.insertBefore(line, p.nextSibling);
-      break;
+      var n = paras[i];
+      var s = n.textContent || "";
+      if (s.indexOf("每日後半固定") !== -1) {
+        n.textContent =
+          "每日後半 15 組 MC：背／胸／二頭／腹／2合1 大腿，各 3 組。邊件機空揀邊件，唔好排隊空等。";
+      }
     }
   }
   function enhanceFood() {
@@ -167,7 +137,6 @@
   function enhance() {
     enhanceFood();
     enhanceHome();
-    injectGif();
     forceSkillSession();
   }
   setTimeout(enhance, 200);
