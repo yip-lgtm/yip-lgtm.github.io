@@ -45,34 +45,39 @@
   };
   var PARTS = [
     {id:"back", name:"背", seconds:45, next:"轉胸。", opts:[
-      {k:"A", title:"單機引體／跳上慢落", gear:"單機", cue:"5–8 下。頂停 1 秒，3 秒慢落。排隊就跳上慢落 5。"},
+      {k:"A", title:"單標引體／跳上慢落", gear:"單標", cue:"5–8 下。頂停 1 秒，3 秒慢落。排隊就跳上慢落 5。"},
       {k:"B", title:"助力引體機", gear:"助力機", cue:"8–10 下。肩唔聳，慢落。"},
       {k:"C", title:"高位下拉", gear:"下拉機", cue:"8–12。拉到鎖骨，背先於手。"},
-      {k:"D", title:"坐姿划船／桌底划船", gear:"划船機／桌", cue:"8–12。背平，拉胸向邊。單機爆用呢個。"}
+      {k:"D", title:"坐姿划船／桌底划船", gear:"划船機／桌", cue:"8–12。背平，拉胸向邊。單標爆用呢個。"},
+      {k:"E", title:"俯身啞鈴划／反向划船", gear:"啞鈴／標架", cue:"8–12。背平、拉肘貼腰。機全爆就啞鈴或標架反划。"}
     ]},
     {id:"chest", name:"胸", seconds:45, next:"轉二頭。", opts:[
-      {k:"A", title:"伏地挺身", gear:"墊", cue:"8–15。太難跨姿；太易腳墊高。"},
+      {k:"A", title:"伏地挺身", gear:"墊", cue:"8–15。太難跪姿；太易腳墊高。"},
       {k:"B", title:"推胸機", gear:"推胸機", cue:"8–15。最後 2 下辛苦但仍控制。"},
       {k:"C", title:"啞鈴推胸／地板推", gear:"啞鈴", cue:"8–12。肘約 45 度，唔到底彈。"},
-      {k:"D", title:"雙機撐體／跨姿伏地", gear:"雙機／墊", cue:"6–12。機全爆就跨姿伏地。"}
+      {k:"D", title:"雙標撐體／跪姿伏地", gear:"雙標／墊", cue:"6–12。機全爆就跪姿伏地。"},
+      {k:"E", title:"蝴蝶機／繩索夾胸", gear:"夾胸機／拉力器", cue:"10–15。胸夾、肩放鬆。推胸位爆就去夾胸或繩。"}
     ]},
     {id:"bi", name:"二頭", seconds:45, next:"轉腹。", opts:[
       {k:"A", title:"啞鈴彎舉", gear:"啞鈴", cue:"8–12。肘貼腰。2 秒上 3 秒落。"},
       {k:"B", title:"拉力器彎舉", gear:"拉力器", cue:"10–12。唔借身。啞鈴位爆用呢個。"},
       {k:"C", title:"斜托彎舉機", gear:"彎舉機", cue:"8–12。只求泵感。"},
-      {k:"D", title:"反手引體／水樽彎舉", gear:"單機／水樽", cue:"5–8 或 10–12。最唔使排隊。"}
+      {k:"D", title:"反手引體／水樽彎舉", gear:"單標／水樽", cue:"5–8 或 10–12。最唔使排隊。"},
+      {k:"E", title:"鎚式彎舉／集中彎舉", gear:"啞鈴／空冰", cue:"8–12。掌心相對或手撐大腿。唔使佔彎舉機。"}
     ]},
-    {id:"abs", name:"腹", seconds:45, next:"轉 2合1 大腿。", opts:[
-      {k:"A", title:"單機提膝", gear:"單機", cue:"8–12。可彎膝，唔擺盪。"},
+    {id:"abs", name:"腹", seconds:45, next:"轉大腿。", opts:[
+      {k:"A", title:"單標提膝", gear:"單標", cue:"8–12。可彎膝，唔擺盧。"},
       {k:"B", title:"捲腹", gear:"墊", cue:"10–15。腰貼地，呼氣捲骨盆。"},
       {k:"C", title:"死蟲", gear:"墊", cue:"左右各 8。腰唔拱。"},
-      {k:"D", title:"平板／真空呼氣", gear:"墊", cue:"30–40 秒。單機排隊就趴地做。"}
+      {k:"D", title:"平板／真空呼氣", gear:"墊", cue:"30–40 秒。單標排隊就趴地做。"},
+      {k:"E", title:"羅馬椅／捲腹機／側平板", gear:"羅馬椅／機／墊", cue:"8–12 或每邊 20 秒。邊件空用邊件，唔等單標。"}
     ]},
-    {id:"legs", name:"2合1 大腿", seconds:50, next:"", opts:[
-      {k:"A", title:"深踲（超哥）＋保加利亞踲", gear:"啞鈴／長椅", cue:"踲 8–12 即接左右各 8–10。腰直。"},
-      {k:"B", title:"分腿踲左右", gear:"啞鈴／徒手", cue:"左右各 8。椅位爆用呢個。"},
-      {k:"C", title:"腿舉機", gear:"腿舉", cue:"10–12。唔鎖死膝。深踲架爆用。"},
-      {k:"D", title:"徒手深踲＋弓步", gear:"空地", cue:"踲 12 接左右弓步各 8。完全唔使機。"}
+    {id:"legs", name:"大腿", seconds:50, next:"", opts:[
+      {k:"A", title:"深蹲（超哥）＋保加利亞蹲", gear:"啞鈴／長椅", cue:"蹲 8–12 即接左右各 8–10。腰直。"},
+      {k:"B", title:"分腿蹲左右", gear:"啞鈴／徒手", cue:"左右各 8。椅位爆用呢個。"},
+      {k:"C", title:"腿舉機", gear:"腿舉", cue:"10–12。唔鎖死膝。深蹲架爆用。"},
+      {k:"D", title:"徒手深蹲＋弓步", gear:"空地", cue:"蹲 12 接左右弓步各 8。完全唔使機。"},
+      {k:"E", title:"腿伸／腿彎／登階／靠牆坐", gear:"腿機／箱／牆", cue:"10–15 或靠牆 30–40 秒。四撿一，邊件空做邊件。"}
     ]}
   ];
   function rest(s,cue){return {label:"休息",seconds:s,kind:"rest",cue:cue||"行兩步、鼻吸口呼，唔好坐低。",gear:"原地"};}
@@ -83,9 +88,9 @@
       for(var p=0;p<PARTS.length;p++){
         n+=1;
         var part=PARTS[p];
-        out.push({label:"塑形 "+n+"/15 · "+part.name,seconds:part.seconds,kind:"mc",name:part.name,set:n,round:r,cue:"康文署機械爆就即場揀。揀完先計時。",gear:"揀空位",opts:part.opts,pick:null});
+        out.push({label:"塑形 "+n+"/15 · "+part.name,seconds:part.seconds,kind:"mc",name:part.name,set:n,round:r,cue:"康文署機械爆就即場撿。撿完先計時。",gear:"撿空位",opts:part.opts,pick:null});
         var restCue = part.next;
-        if(p===PARTS.length-1) restCue = r<3 ? "飲水，準備下一輪背。" : "完成 15 組。跟住食南瓜小米粥。";
+        if(p===PARTS.length-1) restCue = r<3 ? "飲水，準備下一輪背（可換字母）。" : "完成 15 組。跟住食南瓜小米粥。";
         out.push(rest(15, restCue));
       }
     }
@@ -101,7 +106,7 @@
     var days={
       1:{name:"速度＋塑形",blocks:[{label:"熱身步行",seconds:90,kind:"warmup",cue:"坡度 1%。之後落地做技術。",gear:"跑步機"},skill("shuffle"),{label:"第 1 回合",seconds:180,kind:"work",cue:"60 秒輕快 → 20 秒加快步頻。",gear:"跑步機"},rest(60),{label:"第 2 回合",seconds:180,kind:"work",cue:"環繞想像：唔直線衝。",gear:"跑步機"},rest(60),{label:"第 3 回合",seconds:180,kind:"work",cue:"講唔到短句就減速。",gear:"跑步機"},rest(60),{label:"第 4 回合",seconds:180,kind:"work",cue:"前腳掌、落地靜。",gear:"跑步機"}].concat(sc)},
       2:{name:"旋轉＋塑形",blocks:[{label:"單車熱身",seconds:90,kind:"warmup",cue:"輕阻力。之後落地做 Pivot。",gear:"單車"},skill("pivot"),{label:"Pallof 左",seconds:45,kind:"work",cue:"手柄喃哈胸口推出，身體唔轉。",gear:"拉力器"},rest(15,"換邊。"),{label:"Pallof 右",seconds:45,kind:"work",cue:"肋骨下壓。",gear:"拉力器"},rest(20),{label:"木斬 右打",seconds:45,kind:"work",cue:"高拉向對側髓。",gear:"拉力器"},rest(15),{label:"木斬 左打",seconds:45,kind:"work",cue:"控制回程。",gear:"拉力器"}].concat(sc)},
-      3:{name:"單腳＋塑形",blocks:[{label:"熱身行",seconds:90,kind:"warmup",cue:"慢走。之後落地練架勢。",gear:"跑步機"},skill("stance"),{label:"分腿踲 左前",seconds:45,kind:"work",cue:"6–8 下。膝跟腳尖同向。",gear:"啞鈴"},rest(15,"換腳。"),{label:"分腿踲 右前",seconds:45,kind:"work",cue:"後膝向地。",gear:"啞鈴"},rest(25),{label:"單腳 RDL 左",seconds:45,kind:"work",cue:"鉸髓，背平。",gear:"啞鈴"},rest(15),{label:"單腳 RDL 右",seconds:45,kind:"work",cue:"髓向後。",gear:"啞鈴"}].concat(sc)},
+      3:{name:"單腳＋塑形",blocks:[{label:"熱身行",seconds:90,kind:"warmup",cue:"慢走。之後落地練架勢。",gear:"跑步機"},skill("stance"),{label:"分腿蹲 左前",seconds:45,kind:"work",cue:"6–8 下。膝跟腳尖同向。",gear:"啞鈴"},rest(15,"換腳。"),{label:"分腿蹲 右前",seconds:45,kind:"work",cue:"後膝向地。",gear:"啞鈴"},rest(25),{label:"單腳 RDL 左",seconds:45,kind:"work",cue:"鈞髓，背平。",gear:"啞鈴"},rest(15),{label:"單腳 RDL 右",seconds:45,kind:"work",cue:"髓向後。",gear:"啞鈴"}].concat(sc)},
       4:{name:"有氧＋塑形",blocks:[{label:"進入區",seconds:90,kind:"warmup",cue:"輕阻力。之後落地做技術。",gear:"單車／橢圓機"},skill("ring"),{label:"Zone 2 上段",seconds:420,kind:"work",cue:"鼻吸為主。心率大約 115–140。",gear:"單車／橢圓機"},{label:"Zone 2 下段",seconds:420,kind:"work",cue:"保持相同阻力。下機前活動肩。",gear:"單車／橢圓機"}].concat(sc)},
       5:{name:"刺拳＋塑形",blocks:[{label:"熱身",seconds:90,kind:"warmup",cue:"碎步、轉腕、轉肩。",gear:"空地"},{label:"技術 · 刺拳 1",seconds:120,kind:"skill",cue:"刺拳即收。場地擠就細動作。",gear:"空地",gif:"jab.gif"},rest(30),{label:"技術 · 刺拳 2",seconds:120,kind:"skill",cue:"1–2 再側步。",gear:"空地",gif:"jab.gif"},rest(30),{label:"技術 · 刺拳 3",seconds:120,kind:"skill",cue:"側閃一次再刺。",gear:"空地",gif:"jab.gif"},rest(20)].concat(sc)},
       6:{name:"移動＋塑形",blocks:[{label:"熱身",seconds:90,kind:"warmup",cue:"6 km/h 走。之後落地做技術。",gear:"跑步機"},skill("jab"),{label:"步頻 1",seconds:40,kind:"work",cue:"加快步頻，跨步細。",gear:"跑步機"},rest(20),{label:"步頻 2",seconds:40,kind:"work",cue:"肩放鬆。",gear:"跑步機"},rest(20),{label:"步頻 3",seconds:40,kind:"work",cue:"落地輕。",gear:"跑步機"}].concat(sc)},
@@ -167,7 +172,7 @@
         var op=b.opts[o];
         opts+='<button type="button" data-k="'+op.k+'"><b>'+op.k+'</b> '+op.title+'<small>'+op.gear+' · '+op.cue+'</small></button>';
       }
-      el.innerHTML=head+'<p class="tally">後半 5×3＝15 組 · 第 '+b.set+' 組 · 第 '+b.round+' 輪</p><p class="kicker">機械爆 · 揀空位</p><h1>'+b.name+'</h1><p class="cue">邊件空就揀邊件。揀完自動計時 '+fmt(b.seconds)+'。</p><div class="mc" id="mc">'+opts+"</div>"+controls;
+      el.innerHTML=head+'<p class="tally">後半 5×3＝15 組 · 第 '+b.set+' 組 · 第 '+b.round+' 輪</p><p class="kicker">機械爆 · A–E 撿空位</p><h1>'+b.name+'</h1><p class="cue">A–E 邊件空撿邊件；三輪可以撿唔同字母。撿完自動計時 '+fmt(b.seconds)+'。</p><div class="mc" id="mc">'+opts+"</div>"+controls;
       document.getElementById("mc").onclick=function(ev){
         var btn=ev.target.closest("button");
         if(!btn) return;
