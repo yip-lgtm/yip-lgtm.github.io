@@ -34,7 +34,7 @@
       var a = links[i];
       var href = a.getAttribute("href") || "";
       if (/run=/.test(href) || /run=/.test(a.search || "")) continue;
-      a.setAttribute("href", "/yipmma/session/?v=mc16");
+      a.setAttribute("href", "/yipmma/session/?v=mc17");
       if (a.getAttribute("data-hard")) continue;
       a.setAttribute("data-hard", "1");
       a.addEventListener(
@@ -42,25 +42,25 @@
         function (e) {
           e.preventDefault();
           e.stopPropagation();
-          location.href = "/yipmma/session/?v=mc16";
+          location.href = "/yipmma/session/?v=mc17";
         },
         true
       );
     }
     if (isSession() && document.getElementById("root") && !document.getElementById("app")) {
-      location.replace("/yipmma/session/?v=mc16");
+      location.replace("/yipmma/session/?v=mc17");
     }
   }
   function enhanceHome() {
     var sk = skillToday();
     var wanted =
-      "今日技術：" + sk.name + "。後半塑形 5×3＝15 組，機械爆用 MC 撿空位（A–E，三輪可唔同）。";
+      "今日技術：" + sk.name + "。後半塑形自由選 A背 B胸 C二頭 D腹 E大腿，每項 3 次＝15 組／15 分鐘。";
     var paras = document.querySelectorAll("p, li");
     var copies = [];
     var i;
     for (i = 0; i < paras.length; i++) {
       var tx = paras[i].textContent || "";
-      if (tx.indexOf("後半塑形 5") !== -1 || tx.indexOf("今日技術已計入") !== -1) copies.push(paras[i]);
+      if (tx.indexOf("後半塑形") !== -1 || tx.indexOf("今日技術已計入") !== -1) copies.push(paras[i]);
     }
     if (copies.length) {
       copies[0].textContent = wanted;
@@ -88,9 +88,9 @@
     for (i = 0; i < paras.length; i++) {
       var n = paras[i];
       var s = n.textContent || "";
-      if (s.indexOf("每日後半固定") !== -1) {
+      if (s.indexOf("每日後半固定") !== -1 || s.indexOf("每日後半 15") !== -1) {
         n.textContent =
-          "每日後半 15 組 MC：背／胸／二頭／腹／大腿，各 3 組。每格 A–E，邊件空撿邊件，三輪可換字母。";
+          "每日後半 15 分鐘 MC：自由選 A背 B胸 C二頭 D腹 E大腿，每項做滿 3 組。邊項空撿邊項。";
       }
     }
   }
