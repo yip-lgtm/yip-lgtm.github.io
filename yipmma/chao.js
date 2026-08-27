@@ -34,7 +34,7 @@
       var a = links[i];
       var href = a.getAttribute("href") || "";
       if (/run=/.test(href) || /run=/.test(a.search || "")) continue;
-      a.setAttribute("href", "/yipmma/session/?v=mc15");
+      a.setAttribute("href", "/yipmma/session/?v=mc16");
       if (a.getAttribute("data-hard")) continue;
       a.setAttribute("data-hard", "1");
       a.addEventListener(
@@ -42,19 +42,19 @@
         function (e) {
           e.preventDefault();
           e.stopPropagation();
-          location.href = "/yipmma/session/?v=mc15";
+          location.href = "/yipmma/session/?v=mc16";
         },
         true
       );
     }
     if (isSession() && document.getElementById("root") && !document.getElementById("app")) {
-      location.replace("/yipmma/session/?v=mc15");
+      location.replace("/yipmma/session/?v=mc16");
     }
   }
   function enhanceHome() {
     var sk = skillToday();
     var wanted =
-      "今日技術：" + sk.name + "。後半塑形 5×3＝15 組，機械爆用 MC 揀空位（A/B/C/D）。";
+      "今日技術：" + sk.name + "。後半塑形 5×3＝15 組，機械爆用 MC 撿空位（A–E，三輪可唔同）。";
     var paras = document.querySelectorAll("p, li");
     var copies = [];
     var i;
@@ -90,7 +90,7 @@
       var s = n.textContent || "";
       if (s.indexOf("每日後半固定") !== -1) {
         n.textContent =
-          "每日後半 15 組 MC：背／胸／二頭／腹／2合1 大腿，各 3 組。邊件機空揀邊件，唔好排隊空等。";
+          "每日後半 15 組 MC：背／胸／二頭／腹／大腿，各 3 組。每格 A–E，邊件空撿邊件，三輪可換字母。";
       }
     }
   }
