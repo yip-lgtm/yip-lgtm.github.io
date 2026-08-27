@@ -12,20 +12,25 @@
     .wrap{max-width:32rem;margin:0 auto;padding:24px 16px 48px}
     a{color:#9a9a9a;text-decoration:none}
     .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-size:14px;color:#9a9a9a}
-    .bar{height:4px;background:#1a1a1a;border-radius:99px;overflow:hidden;margin-bottom:28px}
+    .bar{height:4px;background:#1a1a1a;border-radius:99px;overflow:hidden;margin-bottom:20px}
     .bar>i{display:block;height:100%;background:#fff;width:0}
     .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;text-align:center}
-    h1{font-size:30px;text-align:center;margin:10px 0 8px;font-weight:600;letter-spacing:-.03em}
+    h1{font-size:26px;text-align:center;margin:10px 0 8px;font-weight:600;letter-spacing:-.03em}
     .clock{font-size:72px;text-align:center;margin:12px 0;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
     .clock.rest{color:#8a8a8a;font-size:60px}
     .cue{color:#c4c4c4;font-size:14px;line-height:1.65}
-    .gif{display:block;width:100%;max-height:240px;object-fit:contain;background:#000;border-radius:12px;margin:12px 0}
+    .gif{display:block;width:100%;max-height:220px;object-fit:contain;background:#000;border-radius:12px;margin:12px 0}
     .btns{display:flex;justify-content:center;gap:8px;margin:22px 0}
-    button{width:48px;height:48px;border-radius:999px;border:1px solid #2a2a2a;background:#111;color:#fff;font-size:18px}
-    button.pri{background:#fff;color:#000;border-color:#fff}
+    button.icon{width:48px;height:48px;border-radius:999px;border:1px solid #2a2a2a;background:#111;color:#fff;font-size:18px}
+    button.icon.pri{background:#fff;color:#000;border-color:#fff}
     .next{text-align:center;font-size:12px;color:#666}
-    .done{text-align:center;padding:80px 8px}
+    .done{text-align:center;padding:48px 8px}
     .done a.btn{display:inline-block;margin-top:20px;background:#fff;color:#000;border-radius:999px;padding:12px 22px}
+    .mc{display:flex;flex-direction:column;gap:8px;margin:16px 0}
+    .mc button{width:100%;text-align:left;border:1px solid #2a2a2a;background:#111;color:#fff;border-radius:12px;padding:12px 14px;font:inherit;line-height:1.45}
+    .mc button b{display:inline-block;width:1.4em}
+    .mc button small{display:block;color:#8a8a8a;margin-top:2px;font-size:12px}
+    .tally{text-align:center;font-size:12px;color:#8a8a8a;margin:0 0 8px}
   </style>
 </head>
 <body>
@@ -38,27 +43,51 @@
     ring:{name:"環繞",gif:"ring.gif",cue:"走弧唔走直線。向對手弱手外側移動，刺拳付費，3–5 秒轉節奏。"},
     jab:{name:"刺拳",gif:"jab.gif",cue:"肩先、拳後、即收。唔劈。打完側步離開，唔企原位。"}
   };
+  var PARTS = [
+    {id:"back", name:"背", seconds:45, next:"轉胸。", opts:[
+      {k:"A", title:"單機引體／跳上慢落", gear:"單機", cue:"5–8 下。頂停 1 秒，3 秒慢落。排隊就跳上慢落 5。"},
+      {k:"B", title:"助力引體機", gear:"助力機", cue:"8–10 下。肩唔聳，慢落。"},
+      {k:"C", title:"高位下拉", gear:"下拉機", cue:"8–12。拉到鎖骨，背先於手。"},
+      {k:"D", title:"坐姿划船／桌底划船", gear:"划船機／桌", cue:"8–12。背平，拉胸向邊。單機爆用呢個。"}
+    ]},
+    {id:"chest", name:"胸", seconds:45, next:"轉二頭。", opts:[
+      {k:"A", title:"伏地挺身", gear:"墊", cue:"8–15。太難跨姿；太易腳墊高。"},
+      {k:"B", title:"推胸機", gear:"推胸機", cue:"8–15。最後 2 下辛苦但仍控制。"},
+      {k:"C", title:"啞鈴推胸／地板推", gear:"啞鈴", cue:"8–12。肘約 45 度，唔到底彈。"},
+      {k:"D", title:"雙機撐體／跨姿伏地", gear:"雙機／墊", cue:"6–12。機全爆就跨姿伏地。"}
+    ]},
+    {id:"bi", name:"二頭", seconds:45, next:"轉腹。", opts:[
+      {k:"A", title:"啞鈴彎舉", gear:"啞鈴", cue:"8–12。肘貼腰。2 秒上 3 秒落。"},
+      {k:"B", title:"拉力器彎舉", gear:"拉力器", cue:"10–12。唔借身。啞鈴位爆用呢個。"},
+      {k:"C", title:"斜托彎舉機", gear:"彎舉機", cue:"8–12。只求泵感。"},
+      {k:"D", title:"反手引體／水樽彎舉", gear:"單機／水樽", cue:"5–8 或 10–12。最唔使排隊。"}
+    ]},
+    {id:"abs", name:"腹", seconds:45, next:"轉 2合1 大腿。", opts:[
+      {k:"A", title:"單機提膝", gear:"單機", cue:"8–12。可彎膝，唔擺盪。"},
+      {k:"B", title:"捲腹", gear:"墊", cue:"10–15。腰貼地，呼氣捲骨盆。"},
+      {k:"C", title:"死蟲", gear:"墊", cue:"左右各 8。腰唔拱。"},
+      {k:"D", title:"平板／真空呼氣", gear:"墊", cue:"30–40 秒。單機排隊就趴地做。"}
+    ]},
+    {id:"legs", name:"2合1 大腿", seconds:50, next:"", opts:[
+      {k:"A", title:"深踲（超哥）＋保加利亞踲", gear:"啞鈴／長椅", cue:"踲 8–12 即接左右各 8–10。腰直。"},
+      {k:"B", title:"分腿踲左右", gear:"啞鈴／徒手", cue:"左右各 8。椅位爆用呢個。"},
+      {k:"C", title:"腿舉機", gear:"腿舉", cue:"10–12。唔鎖死膝。深踲架爆用。"},
+      {k:"D", title:"徒手深踲＋弓步", gear:"空地", cue:"踲 12 接左右弓步各 8。完全唔使機。"}
+    ]}
+  ];
   function rest(s,cue){return {label:"休息",seconds:s,kind:"rest",cue:cue||"行兩步、鼻吸口呼，唔好坐低。",gear:"原地"};}
   function skill(id){var s=SK[id];return {label:"技術 · "+s.name,seconds:150,kind:"skill",cue:s.cue,gear:"空地／鏡前",gif:s.gif};}
   function sculpt(){
-    var out=[],cues={
-      pull:"正手引體。5–8 下，頂停 1 秒，3 秒慢落。做唔到：跳上慢落 5 或助力機。",
-      chest:"伏地或推胸 8–15。最後 2 下要辛苦但仍控制。",
-      bi:"站姿啞鈴彎舉 8–12。肘貼腰。2 秒上 3 秒落。",
-      abs:"單機提膝 8–12。唔擺盪。無單機就捲腹。",
-      legs:"2合1：深蹲（超哥）8–12，即接保加利亞蹲左右各 8–10。腰直。"
-    };
+    var out=[], n=0;
     for(var r=1;r<=3;r++){
-      out.push({label:"引體 "+r+"/3",seconds:45,kind:"work",cue:cues.pull,gear:"單機"});
-      out.push(rest(15,"轉胸。"));
-      out.push({label:"胸 "+r+"/3",seconds:45,kind:"work",cue:cues.chest,gear:"墊／推胸"});
-      out.push(rest(15,"轉二頭。"));
-      out.push({label:"二頭 "+r+"/3",seconds:45,kind:"work",cue:cues.bi,gear:"啞鈴"});
-      out.push(rest(15,"轉腹。"));
-      out.push({label:"腹 "+r+"/3",seconds:45,kind:"work",cue:cues.abs,gear:"單機／墊"});
-      out.push(rest(15,"轉 2合1 大腿。"));
-      out.push({label:"2合1 "+r+"/3",seconds:50,kind:"work",cue:cues.legs,gear:"啞鈴／長椅"});
-      out.push(rest(15,r<3?"飲水，準備下一輪引體。":"完成。跟住食南瓜小米粥。"));
+      for(var p=0;p<PARTS.length;p++){
+        n+=1;
+        var part=PARTS[p];
+        out.push({label:"塑形 "+n+"/15 · "+part.name,seconds:part.seconds,kind:"mc",name:part.name,set:n,round:r,cue:"康文署機械爆就即場揀。揀完先計時。",gear:"揀空位",opts:part.opts,pick:null});
+        var restCue = part.next;
+        if(p===PARTS.length-1) restCue = r<3 ? "飲水，準備下一輪背。" : "完成 15 組。跟住食南瓜小米粥。";
+        out.push(rest(15, restCue));
+      }
     }
     return out;
   }
@@ -71,8 +100,8 @@
     var sc=sculpt();
     var days={
       1:{name:"速度＋塑形",blocks:[{label:"熱身步行",seconds:90,kind:"warmup",cue:"坡度 1%。之後落地做技術。",gear:"跑步機"},skill("shuffle"),{label:"第 1 回合",seconds:180,kind:"work",cue:"60 秒輕快 → 20 秒加快步頻。",gear:"跑步機"},rest(60),{label:"第 2 回合",seconds:180,kind:"work",cue:"環繞想像：唔直線衝。",gear:"跑步機"},rest(60),{label:"第 3 回合",seconds:180,kind:"work",cue:"講唔到短句就減速。",gear:"跑步機"},rest(60),{label:"第 4 回合",seconds:180,kind:"work",cue:"前腳掌、落地靜。",gear:"跑步機"}].concat(sc)},
-      2:{name:"旋轉＋塑形",blocks:[{label:"單車熱身",seconds:90,kind:"warmup",cue:"輕阻力。之後落地做 Pivot。",gear:"單車"},skill("pivot"),{label:"Pallof 左",seconds:45,kind:"work",cue:"手柄喺胸口推出，身體唔轉。",gear:"拉力器"},rest(15,"換邊。"),{label:"Pallof 右",seconds:45,kind:"work",cue:"肋骨下壓。",gear:"拉力器"},rest(20),{label:"木斬 右打",seconds:45,kind:"work",cue:"高拉向對側髓。",gear:"拉力器"},rest(15),{label:"木斬 左打",seconds:45,kind:"work",cue:"控制回程。",gear:"拉力器"}].concat(sc)},
-      3:{name:"單腳＋塑形",blocks:[{label:"熱身行",seconds:90,kind:"warmup",cue:"慢走。之後落地練架勢。",gear:"跑步機"},skill("stance"),{label:"分腿蹲 左前",seconds:45,kind:"work",cue:"6–8 下。膝跟腳尖同向。",gear:"啞鈴"},rest(15,"換腳。"),{label:"分腿蹲 右前",seconds:45,kind:"work",cue:"後膝向地。",gear:"啞鈴"},rest(25),{label:"單腳 RDL 左",seconds:45,kind:"work",cue:"鉸髓，背平。",gear:"啞鈴"},rest(15),{label:"單腳 RDL 右",seconds:45,kind:"work",cue:"髓向後。",gear:"啞鈴"}].concat(sc)},
+      2:{name:"旋轉＋塑形",blocks:[{label:"單車熱身",seconds:90,kind:"warmup",cue:"輕阻力。之後落地做 Pivot。",gear:"單車"},skill("pivot"),{label:"Pallof 左",seconds:45,kind:"work",cue:"手柄喃哈胸口推出，身體唔轉。",gear:"拉力器"},rest(15,"換邊。"),{label:"Pallof 右",seconds:45,kind:"work",cue:"肋骨下壓。",gear:"拉力器"},rest(20),{label:"木斬 右打",seconds:45,kind:"work",cue:"高拉向對側髓。",gear:"拉力器"},rest(15),{label:"木斬 左打",seconds:45,kind:"work",cue:"控制回程。",gear:"拉力器"}].concat(sc)},
+      3:{name:"單腳＋塑形",blocks:[{label:"熱身行",seconds:90,kind:"warmup",cue:"慢走。之後落地練架勢。",gear:"跑步機"},skill("stance"),{label:"分腿踲 左前",seconds:45,kind:"work",cue:"6–8 下。膝跟腳尖同向。",gear:"啞鈴"},rest(15,"換腳。"),{label:"分腿踲 右前",seconds:45,kind:"work",cue:"後膝向地。",gear:"啞鈴"},rest(25),{label:"單腳 RDL 左",seconds:45,kind:"work",cue:"鉸髓，背平。",gear:"啞鈴"},rest(15),{label:"單腳 RDL 右",seconds:45,kind:"work",cue:"髓向後。",gear:"啞鈴"}].concat(sc)},
       4:{name:"有氧＋塑形",blocks:[{label:"進入區",seconds:90,kind:"warmup",cue:"輕阻力。之後落地做技術。",gear:"單車／橢圓機"},skill("ring"),{label:"Zone 2 上段",seconds:420,kind:"work",cue:"鼻吸為主。心率大約 115–140。",gear:"單車／橢圓機"},{label:"Zone 2 下段",seconds:420,kind:"work",cue:"保持相同阻力。下機前活動肩。",gear:"單車／橢圓機"}].concat(sc)},
       5:{name:"刺拳＋塑形",blocks:[{label:"熱身",seconds:90,kind:"warmup",cue:"碎步、轉腕、轉肩。",gear:"空地"},{label:"技術 · 刺拳 1",seconds:120,kind:"skill",cue:"刺拳即收。場地擠就細動作。",gear:"空地",gif:"jab.gif"},rest(30),{label:"技術 · 刺拳 2",seconds:120,kind:"skill",cue:"1–2 再側步。",gear:"空地",gif:"jab.gif"},rest(30),{label:"技術 · 刺拳 3",seconds:120,kind:"skill",cue:"側閃一次再刺。",gear:"空地",gif:"jab.gif"},rest(20)].concat(sc)},
       6:{name:"移動＋塑形",blocks:[{label:"熱身",seconds:90,kind:"warmup",cue:"6 km/h 走。之後落地做技術。",gear:"跑步機"},skill("jab"),{label:"步頻 1",seconds:40,kind:"work",cue:"加快步頻，跨步細。",gear:"跑步機"},rest(20),{label:"步頻 2",seconds:40,kind:"work",cue:"肩放鬆。",gear:"跑步機"},rest(20),{label:"步頻 3",seconds:40,kind:"work",cue:"落地輕。",gear:"跑步機"}].concat(sc)},
@@ -80,7 +109,7 @@
     };
     return days[wd]||days[4];
   }
-  function kindLabel(k){return {warmup:"熱身",work:"主項",rest:"休息",skill:"技術",cooldown:"冷卻"}[k]||k;}
+  function kindLabel(k){return {warmup:"熱身",work:"主項",rest:"休息",skill:"技術",mc:"塑形 MC",cooldown:"冷卻"}[k]||k;}
   function fmt(sec){var m=Math.floor(sec/60),s=sec%60;return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;}
   var day=program(dayOf());
   var i=0,left=day.blocks[0].seconds,run=false,done=false,timer=null;
@@ -88,43 +117,74 @@
   function elapsed(){var e=0;for(var x=0;x<i;x++)e+=day.blocks[x].seconds;return e+(day.blocks[i].seconds-left);}
   function tick(){
     if(!run||done)return;
+    var b=day.blocks[i];
+    if(b.kind==="mc" && !b.pick) return;
     left-=1;
     if(left<=0){
       if(i+1>=day.blocks.length){done=true;run=false;if(timer)clearInterval(timer);timer=null;render();return;}
-      i+=1;left=day.blocks[i].seconds;
+      i+=1;left=day.blocks[i].seconds;run=false;
+      if(timer){clearInterval(timer);timer=null;}
     }
     render();
   }
-  function render(){
-    var el=document.getElementById("app");
-    if(done){
-      el.innerHTML='<div class="done"><p class="kicker">完成</p><h1>'+day.name+'</h1><p class="cue">已完成今日主課（含技術）。跟住食南瓜小米粥。</p><a class="btn" href="/yipmma/">返回今日</a></div>';
-      return;
-    }
-    var b=day.blocks[i];
-    var pct=Math.min(100,Math.round(elapsed()/total()*100));
-    var gif=b.gif?('<img class="gif" alt="" src="/yipmma/skills/'+b.gif+'">'):"";
-    var nxt=day.blocks[i+1];
-    el.innerHTML=
-      '<div class="top"><a href="/yipmma/">離開</a><span>'+pct+'%</span></div>'+
-      '<div class="bar"><i style="width:'+pct+'%"></i></div>'+
-      '<p class="kicker">'+kindLabel(b.kind)+" · "+b.gear+"</p>"+
-      "<h1>"+b.label+"</h1>"+gif+
-      '<p class="clock'+(b.kind==="rest"?" rest":"")+'">'+fmt(left)+"</p>"+
-      '<p class="cue">'+b.cue+"</p>"+
-      '<div class="btns"><button class="pri" id="go">'+(run?"❚❚":"▶")+'</button><button id="skip">⏭</button><button id="stop">■</button></div>'+
-      (nxt?'<p class="next">下一段：'+nxt.label+" · "+fmt(nxt.seconds)+"</p>":"");
+  function startClock(){
+    run=true;
+    if(!timer) timer=setInterval(tick,1000);
+  }
+  function bindControls(b){
     document.getElementById("go").onclick=function(){
-      run=!run;
-      if(run&&!timer) timer=setInterval(tick,1000);
-      if(!run&&timer){clearInterval(timer);timer=null;}
+      if(b.kind==="mc" && !b.pick) return;
+      if(run){ run=false; if(timer){clearInterval(timer);timer=null;} }
+      else startClock();
       render();
     };
     document.getElementById("skip").onclick=function(){
       if(i+1>=day.blocks.length){done=true;run=false;if(timer)clearInterval(timer);render();return;}
-      i+=1;left=day.blocks[i].seconds;render();
+      i+=1;left=day.blocks[i].seconds;run=false;if(timer){clearInterval(timer);timer=null;}
+      render();
     };
     document.getElementById("stop").onclick=function(){location.href="/yipmma/";};
+  }
+  function render(){
+    var el=document.getElementById("app");
+    if(done){
+      var log=[];
+      for(var x=0;x<day.blocks.length;x++){
+        var bb=day.blocks[x];
+        if(bb.kind==="mc" && bb.pick) log.push(bb.set+". "+bb.name+" · "+bb.pick.title);
+      }
+      el.innerHTML='<div class="done"><p class="kicker">完成 15 組</p><h1>'+day.name+'</h1><p class="cue">'+log.join("<br>")+'</p><p class="cue">跟住食南瓜小米粥。</p><a class="btn" href="/yipmma/">返回今日</a></div>';
+      return;
+    }
+    var b=day.blocks[i];
+    var pct=Math.min(100,Math.round(elapsed()/total()*100));
+    var nxt=day.blocks[i+1];
+    var head='<div class="top"><a href="/yipmma/">離開</a><span>'+pct+'%</span></div><div class="bar"><i style="width:'+pct+'%"></i></div>';
+    var controls='<div class="btns"><button class="icon pri" id="go">'+(run?"❚❚":"▶")+'</button><button class="icon" id="skip">⏭</button><button class="icon" id="stop">■</button></div>'+(nxt?'<p class="next">下一段：'+nxt.label+" · "+fmt(nxt.seconds)+"</p>":"");
+    if(b.kind==="mc" && !b.pick){
+      var opts="";
+      for(var o=0;o<b.opts.length;o++){
+        var op=b.opts[o];
+        opts+='<button type="button" data-k="'+op.k+'"><b>'+op.k+'</b> '+op.title+'<small>'+op.gear+' · '+op.cue+'</small></button>';
+      }
+      el.innerHTML=head+'<p class="tally">後半 5×3＝15 組 · 第 '+b.set+' 組 · 第 '+b.round+' 輪</p><p class="kicker">機械爆 · 揀空位</p><h1>'+b.name+'</h1><p class="cue">邊件空就揀邊件。揀完自動計時 '+fmt(b.seconds)+'。</p><div class="mc" id="mc">'+opts+"</div>"+controls;
+      document.getElementById("mc").onclick=function(ev){
+        var btn=ev.target.closest("button");
+        if(!btn) return;
+        var k=btn.getAttribute("data-k");
+        for(var z=0;z<b.opts.length;z++) if(b.opts[z].k===k) b.pick=b.opts[z];
+        left=b.seconds;
+        startClock();
+        render();
+      };
+      bindControls(b);
+      return;
+    }
+    var title=b.label, gear=b.gear, cue=b.cue;
+    var gif=b.gif?('<img class="gif" alt="" src="/yipmma/skills/'+b.gif+'">'):"";
+    if(b.kind==="mc" && b.pick){ title=b.pick.k+" · "+b.pick.title; gear=b.pick.gear; cue=b.pick.cue; }
+    el.innerHTML=head+(b.kind==="mc"?'<p class="tally">塑形 '+b.set+'/15</p>':"")+'<p class="kicker">'+kindLabel(b.kind)+" · "+gear+"</p><h1>"+title+"</h1>"+gif+'<p class="clock'+(b.kind==="rest"?" rest":"")+'">'+fmt(left)+"</p><p class=\"cue\">"+cue+"</p>"+controls;
+    bindControls(b);
   }
   render();
   </script>
