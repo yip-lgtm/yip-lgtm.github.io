@@ -8,15 +8,17 @@
     "做完立即食南瓜小米粥。小米補脾胃；9 點到 11 點係脾經當令，效果最佳。所以一定要 9 點鐘健身升陽，10 點鐘食小米粥。粥要淡、熱、易消化，再補蛋白。";
   var SKILL = [
     { name: "架勢", gif: "stance.gif", cue: "前腳對對手，後腳外開 45 度。重心兩腳之間，可隨時側移。唔鎖死。" },
-    { name: "滑步", gif: "shuffle.gif", cue: "雜步交換，幅度細，頭唔晃。隨時可停再刺拳。" },
+    { name: "滑步", gif: "shuffle.gif", cue: "碎步交換，幅度細，頭唔晃。隨時可停再刺拳。" },
     { name: "Pivot", gif: "pivot.gif", cue: "前腳為軸，後腳向外划弧 45–90 度。轉完立刻可以刺拳。" },
-    { name: "架勢", gif: "stance.gif", cue: "膜微屈，隨時可推地側移。前手可較低準備刺拳，下頷微收。" },
+    { name: "架勢", gif: "stance.gif", cue: "膝微屈，隨時可推地側移。前手可較低準備刺拳，下頷微收。" },
     { name: "環繞", gif: "ring.gif", cue: "走弧唔走直線。向對手弱手外側移動，刺拳付費，3–5 秒轉節奏。" },
     { name: "刺拳", gif: "jab.gif", cue: "肩先、拳後、即收。唔劈。打完側步離開，唔企原位。" },
     { name: "刺拳", gif: "jab.gif", cue: "測距、斷節奏。打直但唔鎖死肘，回收快過打出。" }
   ];
   function wd() {
-    return new Date().toLocaleString("en-US", { timeZone: "Asia/Hong_Kong", weekday: "short" }).slice(0, 3);
+    return new Date()
+      .toLocaleString("en-US", { timeZone: "Asia/Hong_Kong", weekday: "short" })
+      .slice(0, 3);
   }
   function skillToday() {
     var map = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
@@ -34,18 +36,14 @@
   function mountSkill() {
     if (!isSession()) return;
     if (document.getElementById("yip-skill")) return;
-    var host =
-      document.querySelector(".mx-auto.w-full.max-w-lg") ||
-      document.getElementById("root");
-    if (!host) return;
     var sk = skillToday();
     var box = document.createElement("div");
     box.id = "yip-skill";
     box.style.cssText =
-      "margin:0 0 20px;padding:16px;border:1px solid #2a2a2a;border-radius:16px;background:#111;";
+      "max-width:32rem;margin:16px auto 0;padding:16px 16px 8px;border:1px solid #2a2a2a;border-radius:16px;background:#111;color:#fff;position:relative;z-index:40;";
     box.innerHTML =
       '<p style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;margin:0 0 6px">30 分鐘 · 技術段</p>' +
-      "<h2 style=\"margin:0;font-size:1.35rem\">技術 · " +
+      '<h2 style="margin:0;font-size:1.35rem">技術 · ' +
       sk.name +
       "</h2>" +
       '<img alt="" src="/yipmma/skills/' +
@@ -56,9 +54,10 @@
       sk.cue +
       "</p>" +
       '<button id="yip-skill-btn" type="button" style="width:100%;border:0;border-radius:999px;padding:12px;font:inherit;font-weight:600;background:#fff;color:#000">開始技術 2.5 分鐘</button>' +
-      '<button id="yip-skill-skip" type="button" style="width:100%;margin-top:8px;border:1px solid #2a2a2a;border-radius:999px;padding:10px;font:inherit;background:transparent;color:#fff">跳過，入主課</button>';
-    if (host.firstChild) host.insertBefore(box, host.firstChild);
-    else host.appendChild(box);
+      '<button id="yip-skill-skip" type="button" style="width:100%;margin:8px 0 8px;border:1px solid #2a2a2a;border-radius:999px;padding:10px;font:inherit;background:transparent;color:#fff">跳過，入主課</button>';
+    var root = document.getElementById("root");
+    if (root && root.parentNode) root.parentNode.insertBefore(box, root);
+    else document.body.insertBefore(box, document.body.firstChild);
     var left = 150,
       t = null;
     var clock = document.getElementById("yip-skill-clock");
@@ -69,7 +68,7 @@
       if (left <= 0) {
         clearInterval(t);
         t = null;
-        box.style.opacity = "0.55";
+        box.style.opacity = "0.7";
         if (btn) btn.textContent = "技術完成 · 可開始主課";
       }
     }
@@ -134,9 +133,7 @@
       if (p.getAttribute("data-skill-line")) continue;
       if (!p.textContent) continue;
       if (
-        /塔恢|下機即|上肢塑形|空拳節奏|步頻波之後|引體、胸、二頭/.test(
-          p.textContent
-        )
+        /堆恢復|下機即|上肢塑形|空拳節奏|步頻波|引體、胸/.test(p.textContent)
       ) {
         var line = document.createElement("p");
         line.setAttribute("data-skill-line", "1");
@@ -144,7 +141,7 @@
         line.style.marginTop = "8px";
         line.textContent =
           "今日技術：" + sk.name + " 2.5 分鐘（計入 30 分鐘課，開始訓練先做）。";
-        p.parentNode.insertBefore(line, p.nextSibling);
+        if (p.parentNode) p.parentNode.insertBefore(line, p.nextSibling);
         break;
       }
     }
