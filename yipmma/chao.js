@@ -68,39 +68,60 @@
       var a = links[i];
       var href = a.getAttribute("href") || "";
       if (/run=/.test(href) || /run=/.test(a.search || "")) continue;
-      a.setAttribute("href", "/yipmma/session/?v=skill2");
+      a.setAttribute("href", "/yipmma/session/?v=skill3");
       if (a.getAttribute("data-hard")) continue;
       a.setAttribute("data-hard", "1");
-      a.addEventListener("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        location.href = "/yipmma/session/?v=skill2";
-      }, true);
+      a.addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          location.href = "/yipmma/session/?v=skill3";
+        },
+        true
+      );
     }
     if (isSession() && document.getElementById("root") && !document.getElementById("app")) {
       var h = document.querySelector("#root h1");
       if (h && !/技術/.test(h.textContent || "") && !location.search.includes("stay=1")) {
-        location.replace("/yipmma/session/?v=skill2");
+        location.replace("/yipmma/session/?v=skill3");
       }
     }
   }
   function enhanceHome() {
     var sk = skillToday();
-    var cards = document.querySelectorAll("p");
-    for (var c = 0; c < cards.length; c++) {
-      var p = cards[c];
-      if (p.getAttribute("data-skill-line")) continue;
-      if (!p.textContent) continue;
-      if (/堆恢復|下機即|上肢塑形|空拳節奏|步頻波|引體、胸|先做外圍|熱身後先做|主課內連續/.test(p.textContent)) {
-        var line = document.createElement("p");
-        line.setAttribute("data-skill-line", "1");
-        line.className = p.className;
-        line.style.marginTop = "8px";
-        line.textContent =
-          "今日技術已計入 30 分鐘主課：" + sk.name + "（開始訓練後，熱身完即做，跟 GIF）。";
-        if (p.parentNode) p.parentNode.insertBefore(line, p.nextSibling);
-        break;
+    var wanted =
+      "今日技術已計入 30 分鐘主課：" + sk.name + "（開始訓練後，熱身完即做，跟 GIF）。";
+    var paras = document.querySelectorAll("p");
+    var copies = [];
+    var i;
+    for (i = 0; i < paras.length; i++) {
+      if ((paras[i].textContent || "").indexOf("今日技術已計入") !== -1) {
+        copies.push(paras[i]);
       }
+    }
+    if (copies.length) {
+      copies[0].textContent = wanted;
+      copies[0].setAttribute("data-skill-line", "1");
+      for (i = 1; i < copies.length; i++) {
+        if (copies[i].parentNode) copies[i].parentNode.removeChild(copies[i]);
+      }
+      return;
+    }
+    for (i = 0; i < paras.length; i++) {
+      var p = paras[i];
+      if (p.getAttribute("data-skill-line")) continue;
+      var t = p.textContent || "";
+      if (!t || /今日技術/.test(t)) continue;
+      if (!/堆恢復|下機即|上肢塑形|空拳節奏|步頻波|引體、胸|先做外圍|主課內連續/.test(t)) continue;
+      p.setAttribute("data-skill-line", "1");
+      var line = document.createElement("p");
+      line.setAttribute("data-skill-line", "1");
+      line.className = p.className;
+      line.style.marginTop = "8px";
+      line.textContent = wanted;
+      if (p.parentNode) p.parentNode.insertBefore(line, p.nextSibling);
+      break;
     }
   }
   function enhanceFood() {
@@ -122,7 +143,8 @@
         a.href = "https://youtu.be/" + v.id;
         a.target = "_blank";
         a.rel = "noreferrer";
-        a.className = "text-sm text-fg underline decoration-border underline-offset-4";
+        a.className =
+          "text-sm text-fg underline decoration-border underline-offset-4";
         a.textContent = v.title + " →";
         li.appendChild(a);
         ul.insertBefore(li, ul.firstChild);
@@ -134,7 +156,10 @@
       if (t === "超哥：練完即食小米粥" || t === "超哥：練完即食熱小米粥") {
         nodes[n].textContent = foodTitle;
       }
-      if (t.indexOf("練完立即食熱小米粥") !== -1 || t.indexOf("小米健脾，脾主肌肉") !== -1) {
+      if (
+        t.indexOf("練完立即食熱小米粥") !== -1 ||
+        t.indexOf("小米健脾，脾主肌肉") !== -1
+      ) {
         nodes[n].textContent = foodBody;
       }
     }
@@ -147,9 +172,5 @@
   }
   setTimeout(enhance, 200);
   setTimeout(enhance, 800);
-  setTimeout(enhance, 1600);
-  setInterval(enhance, 1500);
-  window.addEventListener("hashchange", function () {
-    setTimeout(enhance, 300);
-  });
+  setTimeout(enhance, 2000);
 })();
