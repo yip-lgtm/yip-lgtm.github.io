@@ -1,15 +1,132 @@
 <!doctype html>
-<html lang="zh-HK" class="antialiased">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>outboxing stance</title>
-    <meta name="theme-color" content="#000000" />
-    <script type="module" crossorigin src="/yipmma/assets/index-8b2_2xI8.js"></script>
-    <link rel="stylesheet" crossorigin href="/yipmma/assets/index-B2LaUoBQ.css">
-  </head>
-  <body class="bg-bg text-fg">
-    <div id="root"></div>
-    <script src="/yipmma/chao.js"></script>
-  </body>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>outboxing stance · session</title>
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" type="image/svg+xml" href="/yipmma/favicon.svg" />
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif;min-height:100%}
+    .wrap{max-width:32rem;margin:0 auto;padding:24px 16px 48px}
+    a{color:#9a9a9a;text-decoration:none}
+    .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-size:14px;color:#9a9a9a}
+    .bar{height:4px;background:#1a1a1a;border-radius:99px;overflow:hidden;margin-bottom:28px}
+    .bar>i{display:block;height:100%;background:#fff;width:0}
+    .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;text-align:center}
+    h1{font-size:30px;text-align:center;margin:10px 0 8px;font-weight:600;letter-spacing:-.03em}
+    .clock{font-size:72px;text-align:center;margin:12px 0;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+    .clock.rest{color:#8a8a8a;font-size:60px}
+    .cue{color:#c4c4c4;font-size:14px;line-height:1.65}
+    .gif{display:block;width:100%;max-height:240px;object-fit:contain;background:#000;border-radius:12px;margin:12px 0}
+    .btns{display:flex;justify-content:center;gap:8px;margin:22px 0}
+    button{width:48px;height:48px;border-radius:999px;border:1px solid #2a2a2a;background:#111;color:#fff;font-size:18px}
+    button.pri{background:#fff;color:#000;border-color:#fff}
+    .next{text-align:center;font-size:12px;color:#666}
+    .done{text-align:center;padding:80px 8px}
+    .done a.btn{display:inline-block;margin-top:20px;background:#fff;color:#000;border-radius:999px;padding:12px 22px}
+  </style>
+</head>
+<body>
+  <div class="wrap" id="app"></div>
+  <script>
+  var SK = {
+    stance:{name:"架勢",gif:"stance.gif",cue:"前腳對對手，後腳外開 45 度。重心兩腳之間，可隨時側移。唔鎖死。"},
+    shuffle:{name:"滑步",gif:"shuffle.gif",cue:"碎步交換，幅度細，頭唔晃。隨時可停再刺拳。"},
+    pivot:{name:"Pivot",gif:"pivot.gif",cue:"前腳為軸，後腳向外划弧 45–90 度。轉完立刻可以刺拳。"},
+    ring:{name:"環繞",gif:"ring.gif",cue:"走弧唔走直線。向對手弱手外側移動，刺拳付費，3–5 秒轉節奏。"},
+    jab:{name:"刺拳",gif:"jab.gif",cue:"肩先、拳後、即收。唔劈。打完側步離開，唔企原位。"}
+  };
+  function rest(s,cue){return {label:"休息",seconds:s,kind:"rest",cue:cue||"行兩步、鼻吸口呼，唔好坐低。",gear:"原地"};}
+  function skill(id){var s=SK[id];return {label:"技術 · "+s.name,seconds:150,kind:"skill",cue:s.cue,gear:"空地／鏡前",gif:s.gif};}
+  function sculpt(){
+    var out=[],cues={
+      pull:"正手引體。5–8 下，頂停 1 秒，3 秒慢落。做唔到：跳上慢落 5 或助力機。",
+      chest:"伏地或推胸 8–15。最後 2 下要辛苦但仍控制。",
+      bi:"站姿啞鈴彎舉 8–12。肘貼腰。2 秒上 3 秒落。",
+      abs:"單機提膝 8–12。唔擺盪。無單機就捲腹。",
+      legs:"2合1：深蹲（超哥）8–12，即接保加利亞蹲左右各 8–10。腰直。"
+    };
+    for(var r=1;r<=3;r++){
+      out.push({label:"引體 "+r+"/3",seconds:45,kind:"work",cue:cues.pull,gear:"單機"});
+      out.push(rest(15,"轉胸。"));
+      out.push({label:"胸 "+r+"/3",seconds:45,kind:"work",cue:cues.chest,gear:"墊／推胸"});
+      out.push(rest(15,"轉二頭。"));
+      out.push({label:"二頭 "+r+"/3",seconds:45,kind:"work",cue:cues.bi,gear:"啞鈴"});
+      out.push(rest(15,"轉腹。"));
+      out.push({label:"腹 "+r+"/3",seconds:45,kind:"work",cue:cues.abs,gear:"單機／墊"});
+      out.push(rest(15,"轉 2合1 大腿。"));
+      out.push({label:"2合1 "+r+"/3",seconds:50,kind:"work",cue:cues.legs,gear:"啞鈴／長椅"});
+      out.push(rest(15,r<3?"飲水，準備下一輪引體。":"完成。跟住食南瓜小米粥。"));
+    }
+    return out;
+  }
+  function dayOf(){
+    var wd=new Date().toLocaleString("en-US",{timeZone:"Asia/Hong_Kong",weekday:"short"}).slice(0,3);
+    var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+    return map[wd]||0;
+  }
+  function program(wd){
+    var sc=sculpt();
+    var days={
+      1:{name:"速度＋塑形",blocks:[{label:"熱身步行",seconds:90,kind:"warmup",cue:"坡度 1%。之後落地做技術。",gear:"跑步機"},skill("shuffle"),{label:"第 1 回合",seconds:180,kind:"work",cue:"60 秒輕快 → 20 秒加快步頻。",gear:"跑步機"},rest(60),{label:"第 2 回合",seconds:180,kind:"work",cue:"環繞想像：唔直線衝。",gear:"跑步機"},rest(60),{label:"第 3 回合",seconds:180,kind:"work",cue:"講唔到短句就減速。",gear:"跑步機"},rest(60),{label:"第 4 回合",seconds:180,kind:"work",cue:"前腳掌、落地靜。",gear:"跑步機"}].concat(sc)},
+      2:{name:"旋轉＋塑形",blocks:[{label:"單車熱身",seconds:90,kind:"warmup",cue:"輕阻力。之後落地做 Pivot。",gear:"單車"},skill("pivot"),{label:"Pallof 左",seconds:45,kind:"work",cue:"手柄喺胸口推出，身體唔轉。",gear:"拉力器"},rest(15,"換邊。"),{label:"Pallof 右",seconds:45,kind:"work",cue:"肋骨下壓。",gear:"拉力器"},rest(20),{label:"木斬 右打",seconds:45,kind:"work",cue:"高拉向對側髓。",gear:"拉力器"},rest(15),{label:"木斬 左打",seconds:45,kind:"work",cue:"控制回程。",gear:"拉力器"}].concat(sc)},
+      3:{name:"單腳＋塑形",blocks:[{label:"熱身行",seconds:90,kind:"warmup",cue:"慢走。之後落地練架勢。",gear:"跑步機"},skill("stance"),{label:"分腿蹲 左前",seconds:45,kind:"work",cue:"6–8 下。膝跟腳尖同向。",gear:"啞鈴"},rest(15,"換腳。"),{label:"分腿蹲 右前",seconds:45,kind:"work",cue:"後膝向地。",gear:"啞鈴"},rest(25),{label:"單腳 RDL 左",seconds:45,kind:"work",cue:"鉸髓，背平。",gear:"啞鈴"},rest(15),{label:"單腳 RDL 右",seconds:45,kind:"work",cue:"髓向後。",gear:"啞鈴"}].concat(sc)},
+      4:{name:"有氧＋塑形",blocks:[{label:"進入區",seconds:90,kind:"warmup",cue:"輕阻力。之後落地做技術。",gear:"單車／橢圓機"},skill("ring"),{label:"Zone 2 上段",seconds:420,kind:"work",cue:"鼻吸為主。心率大約 115–140。",gear:"單車／橢圓機"},{label:"Zone 2 下段",seconds:420,kind:"work",cue:"保持相同阻力。下機前活動肩。",gear:"單車／橢圓機"}].concat(sc)},
+      5:{name:"刺拳＋塑形",blocks:[{label:"熱身",seconds:90,kind:"warmup",cue:"碎步、轉腕、轉肩。",gear:"空地"},{label:"技術 · 刺拳 1",seconds:120,kind:"skill",cue:"刺拳即收。場地擠就細動作。",gear:"空地",gif:"jab.gif"},rest(30),{label:"技術 · 刺拳 2",seconds:120,kind:"skill",cue:"1–2 再側步。",gear:"空地",gif:"jab.gif"},rest(30),{label:"技術 · 刺拳 3",seconds:120,kind:"skill",cue:"側閃一次再刺。",gear:"空地",gif:"jab.gif"},rest(20)].concat(sc)},
+      6:{name:"移動＋塑形",blocks:[{label:"熱身",seconds:90,kind:"warmup",cue:"6 km/h 走。之後落地做技術。",gear:"跑步機"},skill("jab"),{label:"步頻 1",seconds:40,kind:"work",cue:"加快步頻，跨步細。",gear:"跑步機"},rest(20),{label:"步頻 2",seconds:40,kind:"work",cue:"肩放鬆。",gear:"跑步機"},rest(20),{label:"步頻 3",seconds:40,kind:"work",cue:"落地輕。",gear:"跑步機"}].concat(sc)},
+      0:{name:"恢復＋輕塑形",blocks:[{label:"斜行",seconds:480,kind:"work",cue:"坡度 4–6%，輕鬆對話速度。",gear:"跑步機"},skill("stance"),{label:"跟活動",seconds:90,kind:"skill",cue:"膝向牆，腳跟不離地。",gear:"牆"}].concat(sc)}
+    };
+    return days[wd]||days[4];
+  }
+  function kindLabel(k){return {warmup:"熱身",work:"主項",rest:"休息",skill:"技術",cooldown:"冷卻"}[k]||k;}
+  function fmt(sec){var m=Math.floor(sec/60),s=sec%60;return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;}
+  var day=program(dayOf());
+  var i=0,left=day.blocks[0].seconds,run=false,done=false,timer=null;
+  function total(){return day.blocks.reduce(function(a,b){return a+b.seconds;},0);}
+  function elapsed(){var e=0;for(var x=0;x<i;x++)e+=day.blocks[x].seconds;return e+(day.blocks[i].seconds-left);}
+  function tick(){
+    if(!run||done)return;
+    left-=1;
+    if(left<=0){
+      if(i+1>=day.blocks.length){done=true;run=false;if(timer)clearInterval(timer);timer=null;render();return;}
+      i+=1;left=day.blocks[i].seconds;
+    }
+    render();
+  }
+  function render(){
+    var el=document.getElementById("app");
+    if(done){
+      el.innerHTML='<div class="done"><p class="kicker">完成</p><h1>'+day.name+'</h1><p class="cue">已完成今日主課（含技術）。跟住食南瓜小米粥。</p><a class="btn" href="/yipmma/">返回今日</a></div>';
+      return;
+    }
+    var b=day.blocks[i];
+    var pct=Math.min(100,Math.round(elapsed()/total()*100));
+    var gif=b.gif?('<img class="gif" alt="" src="/yipmma/skills/'+b.gif+'">'):"";
+    var nxt=day.blocks[i+1];
+    el.innerHTML=
+      '<div class="top"><a href="/yipmma/">離開</a><span>'+pct+'%</span></div>'+
+      '<div class="bar"><i style="width:'+pct+'%"></i></div>'+
+      '<p class="kicker">'+kindLabel(b.kind)+" · "+b.gear+"</p>"+
+      "<h1>"+b.label+"</h1>"+gif+
+      '<p class="clock'+(b.kind==="rest"?" rest":"")+'">'+fmt(left)+"</p>"+
+      '<p class="cue">'+b.cue+"</p>"+
+      '<div class="btns"><button class="pri" id="go">'+(run?"❚❚":"▶")+'</button><button id="skip">⏭</button><button id="stop">■</button></div>'+
+      (nxt?'<p class="next">下一段：'+nxt.label+" · "+fmt(nxt.seconds)+"</p>":"");
+    document.getElementById("go").onclick=function(){
+      run=!run;
+      if(run&&!timer) timer=setInterval(tick,1000);
+      if(!run&&timer){clearInterval(timer);timer=null;}
+      render();
+    };
+    document.getElementById("skip").onclick=function(){
+      if(i+1>=day.blocks.length){done=true;run=false;if(timer)clearInterval(timer);render();return;}
+      i+=1;left=day.blocks[i].seconds;render();
+    };
+    document.getElementById("stop").onclick=function(){location.href="/yipmma/";};
+  }
+  render();
+  </script>
+</body>
 </html>
