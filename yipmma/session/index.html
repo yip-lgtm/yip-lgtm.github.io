@@ -22,7 +22,7 @@
     .gif{display:block;width:100%;max-height:220px;object-fit:contain;background:#000;border-radius:12px;margin:12px 0}
     .btns{display:flex;justify-content:center;gap:8px;margin:22px 0}
     button.icon{width:48px;height:48px;border-radius:999px;border:1px solid #2a2a2a;background:#111;color:#fff;font-size:18px}
-    button.icon.pri{background:#fff;color:#000;border-color:#fff}
+    button.icon.pri{background:#fff;color:#000;border-color:#fff;min-width:88px;padding:0 14px;font-size:14px;letter-spacing:.04em}
     .next{text-align:center;font-size:12px;color:#666}
     .done{text-align:center;padding:48px 8px}
     .done a.btn{display:inline-block;margin-top:20px;background:#fff;color:#000;border-radius:999px;padding:12px 22px}
@@ -135,14 +135,14 @@
   var NEED = 3;
   var doneCount = {A:0,B:0,C:0,D:0,E:0};
   function finishedCount(){ return doneCount.A+doneCount.B+doneCount.C+doneCount.D+doneCount.E; }
-  function rest(s,cue){return {label:"休息",seconds:s,kind:"rest",cue:cue||"行兩步、鼻吸口呼，唔好坐低。下一組鐘響先開始。",gear:"原地"};}
+  function rest(s,cue){return {label:"休息",seconds:s,kind:"rest",cue:cue||"行兩步、鼻吸口呼，唔好坐低。鐘響就接落去，唔使撲開始。",gear:"原地"};}
   function skill(id){var s=SK[id];return {label:"技術 · "+s.name,seconds:150,kind:"skill",cue:s.cue,gear:"空地／鏡前",gif:s.gif};}
   function lomaFirst(id, theme){
     var s = SK[id];
     return [
       {label:"進入 · 彈跳架勢",seconds:90,kind:"warmup",cue:"腳掌輕彈，肩放鬆。重心可隨時側移。洛馬原則：先識企同走，先至打。",gear:"空地／機邊"},
       skill(id),
-      rest(20,"鐘響先起步。"),
+      rest(20,"鐘響自動起步。"),
       {label:"應用 1 · "+s.name,seconds:100,kind:"work",cue:theme.a1,gear:"空地",gif:s.gif},
       rest(20),
       {label:"應用 2 · "+s.name,seconds:100,kind:"work",cue:theme.a2,gear:"空地",gif:s.gif},
@@ -275,7 +275,7 @@
     var nxt=day.blocks[i+1];
     var half = b.kind==="mc"|| (b.kind==="rest" && i>0 && day.blocks[i-1] && day.blocks[i-1].kind==="mc") ? "塑形 15 分鐘" : "上半洛馬 15 分鐘";
     var head='<div class="top"><a href="/yipmma/">離開</a><button type="button" class="mute" id="mute">'+(muted?"鐘關":"鐘開")+'</button><span>'+pct+'%</span></div><div class="bar"><i style="width:'+pct+'%"></i></div>';
-    var controls='<div class="btns"><button class="icon pri" id="go">'+(run?"❚❚":"▶")+'</button><button class="icon" id="skip">⏭</button><button class="icon" id="stop">■</button></div>'+(nxt?'<p class="next">下一段：'+nxt.label+" · "+fmt(nxt.seconds)+"</p>":"");
+    var controls='<div class="btns"><button class="icon pri" id="go">'+(run?"暫停":"Keep")+'</button><button class="icon" id="skip">⏭</button><button class="icon" id="stop">■</button></div>'+(nxt?'<p class="next">下一段：'+nxt.label+" · "+fmt(nxt.seconds)+"</p>":"");
     if(waitingPick(b)){
       var opts="";
       for(var o=0;o<PARTS.length;o++){
@@ -306,6 +306,8 @@
     bindControls(b);
   }
   render();
+  if(!waitingPick(day.blocks[0])) startClock();
+  document.addEventListener("pointerdown", function(){ unlockAudio(); }, true);
   </script>
 </body>
 </html>
