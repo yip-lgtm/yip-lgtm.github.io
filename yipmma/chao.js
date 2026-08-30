@@ -34,7 +34,7 @@
       var a = links[i];
       var href = a.getAttribute("href") || "";
       if (/run=/.test(href) || /run=/.test(a.search || "")) continue;
-      a.setAttribute("href", "/yipmma/session/?v=mc21");
+      a.setAttribute("href", "/yipmma/session/?v=mc22");
       if (a.getAttribute("data-hard")) continue;
       a.setAttribute("data-hard", "1");
       a.addEventListener(
@@ -42,13 +42,13 @@
         function (e) {
           e.preventDefault();
           e.stopPropagation();
-          location.href = "/yipmma/session/?v=mc21";
+          location.href = "/yipmma/session/?v=mc22";
         },
         true
       );
     }
     if (isSession() && document.getElementById("root") && !document.getElementById("app")) {
-      location.replace("/yipmma/session/?v=mc21");
+      location.replace("/yipmma/session/?v=mc22");
     }
   }
   function enhanceHome() {
