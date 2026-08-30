@@ -55,56 +55,82 @@
     if(muted) return;
     try{ if(navigator.vibrate) navigator.vibrate(pat); }catch(e){}
   }
-  function dingAt(at, freq, dur, gain){
+  function partial(at, freq, dur, gain){
     if(!audioCtx) return;
     var o = audioCtx.createOscillator();
     var g = audioCtx.createGain();
-    var f = audioCtx.createBiquadFilter();
-    o.type = "square";
+    o.type = "sine";
     o.frequency.setValueAtTime(freq, at);
-    o.frequency.exponentialRampToValueAtTime(Math.max(80, freq * 0.62), at + dur);
-    f.type = "lowpass";
-    f.frequency.value = 2200;
     g.gain.setValueAtTime(0.0001, at);
-    g.gain.exponentialRampToValueAtTime(gain, at + 0.012);
+    g.gain.exponentialRampToValueAtTime(gain, at + 0.01);
+    g.gain.exponentialRampToValueAtTime(gain * 0.28, at + 0.18);
     g.gain.exponentialRampToValueAtTime(0.0001, at + dur);
-    o.connect(f); f.connect(g); g.connect(audioCtx.destination);
-    o.start(at); o.stop(at + dur + 0.03);
+    o.connect(g); g.connect(audioCtx.destination);
+    o.start(at); o.stop(at + dur + 0.05);
+  }
+  function clapper(at, gain){
+    if(!audioCtx) return;
+    var n = Math.floor(audioCtx.sampleRate * 0.028);
+    var buf = audioCtx.createBuffer(1, n, audioCtx.sampleRate);
+    var d = buf.getChannelData(0);
+    for(var i=0;i<n;i++) d[i] = (Math.random()*2-1) * (1-i/n);
+    var src = audioCtx.createBufferSource();
+    src.buffer = buf;
+    var bp = audioCtx.createBiquadFilter();
+    bp.type = "bandpass";
+    bp.frequency.value = 1800;
+    bp.Q.value = 0.8;
+    var g = audioCtx.createGain();
+    g.gain.setValueAtTime(gain, at);
+    g.gain.exponentialRampToValueAtTime(0.0001, at + 0.05);
+    src.connect(bp); bp.connect(g); g.connect(audioCtx.destination);
+    src.start(at);
+  }
+  function strike(at, vol){
+    clapper(at, vol * 0.55);
+    partial(at, 523.25, 1.35, vol * 0.10);
+    partial(at, 784.0, 1.20, vol * 0.24);
+    partial(at, 1174.7, 0.95, vol * 0.16);
+    partial(at, 1568.0, 0.70, vol * 0.10);
+    partial(at, 2093.0, 0.42, vol * 0.06);
   }
   function bell(kind){
     if(muted) return;
     unlockAudio();
-    if(!audioCtx){ buzz(kind==="start"?[180]:kind==="done"?[200,80,200,80,280]:[90,50,180]); return; }
-    var t0 = audioCtx.currentTime;
+    if(!audioCtx){
+      buzz(kind==="start"?[200]:kind==="done"?[180,70,180,70,280]:[90,50,180]);
+      return;
+    }
+    var t0 = audioCtx.currentTime + 0.02;
     if(kind === "start"){
-      dingAt(t0, 980, 0.28, 0.16);
-      dingAt(t0 + 0.02, 1470, 0.18, 0.07);
-      buzz([160]);
+      strike(t0, 0.95);
+      buzz([220]);
     } else if(kind === "end"){
-      dingAt(t0, 620, 0.42, 0.18);
-      dingAt(t0 + 0.06, 410, 0.38, 0.1);
-      buzz([70, 50, 170]);
+      strike(t0, 0.9);
+      strike(t0 + 0.28, 0.72);
+      buzz([70, 50, 200]);
+    } else if(kind === "change"){
+      strike(t0, 0.88);
+      buzz([160]);
     } else {
-      dingAt(t0, 880, 0.26, 0.15);
-      dingAt(t0 + 0.4, 880, 0.26, 0.15);
-      dingAt(t0 + 0.8, 880, 0.4, 0.18);
-      buzz([180, 80, 180, 80, 260]);
+      for(var n=0;n<8;n++) strike(t0 + n * 0.17, 0.82 - n * 0.06);
+      buzz([180, 70, 180, 70, 180, 70, 320]);
     }
   }
-  function isSet(b){ return b && b.kind !== "rest"; }
+  function waitingPick(b){ return b && b.kind === "mc" && !b.pick; }
   var SK = {
     stance:{name:"架勢",gif:"stance.gif",cue:"前腳對對手，後腳外開 45 度。重心兩腳之間，可隨時側移。唔鎖死。腳先於手。"},
     shuffle:{name:"滑步",gif:"shuffle.gif",cue:"碎步交換，幅度細，頭唔晃。隨時可停再刺拳。洛馬：步子服務角度，唔係表演。"},
-    pivot:{name:"Pivot",gif:"pivot.gif",cue:"前腳為軸，後腳向外划弧 45–90 度。轉完立刻可以刺拳。離開對手發力線。"},
+    pivot:{name:"Pivot",gif:"pivot.gif",cue:"前腳為軸，後腳向外划弧 45 度。慢轉，轉完停穩先至可以刺拳。離開對手發力線。"},
     ring:{name:"環繞",gif:"ring.gif",cue:"走弧唔走直線。向對手弱手外側移動，刺拳付費，3–5 秒轉節奏。"},
     jab:{name:"刺拳",gif:"jab.gif",cue:"肩先、拳後、即收。唔劈。打完側步離開。假想中身就呼氣收腹再走，唔企原位。"}
   };
   var PARTS = [
-    {k:"A", id:"back", name:"背", gear:"單樅／下拉／划船／啞鈺", cue:"邊件空做邊件：單樅引體或跳上慢落、助力機、高位下拉、坐姿划、俯身啞鈺划。5–12 下，背先於手。"},
-    {k:"B", id:"chest", name:"胸", gear:"塵／推胸／啞鈺／夾胸", cue:"邊件空做邊件：伏地、推胸機、啞鈺或地板推、雙樅撐、蝴蝸機或繩索夾胸。8–15 下。"},
-    {k:"C", id:"bi", name:"二頭", gear:"啞鈺／拉力器／彎舉機", cue:"邊件空做邊件：啞鈺彎舉、拉力器、斜托機、反手引體或水樽、鍵式或集中彎舉。8–12 下，唔借身。"},
-    {k:"D", id:"abs", name:"腹", gear:"塵／單樅／牆", cue:"抗打腹：呼氣「嗤」同時四周收緊。優先死蟲左右各 8、側平板每邊 20 秒、平板／真空、單樅提膝。腰唔拱。唔好叫人打肚。"},
-    {k:"E", id:"legs", name:"大腿", gear:"啞鈺／腿機／空地／牆", cue:"邊件空做邊件：深蹲＋保加利亞（超哥）、分腿蹲、腿舉、徒手蹲＋弓步、腿伸／腿彎／登階／靠牆坐。"}
+    {k:"A", id:"back", name:"背", gear:"單樆／下拉／划船／啞鈴", cue:"邊件空做邊件：單樆引體或跳上慢落、助力機、高位下拉、坐姿划、俯身啞鈴划。5–12 下，背先於手。"},
+    {k:"B", id:"chest", name:"胸", gear:"墊／推胸／啞鈴／夾胸", cue:"邊件空做邊件：伏地、推胸機、啞鈴或地板推、雙樆撐、蝴蝸機或繩索夾胸。8–15 下。"},
+    {k:"C", id:"bi", name:"二頭", gear:"啞鈴／拉力器／彎舉機", cue:"邊件空做邊件：啞鈴彎舉、拉力器、斜托機、反手引體或水樽、錘式或集中彎舉。8–12 下，唔借身。"},
+    {k:"D", id:"abs", name:"腹", gear:"墊／單樆／牆", cue:"抗打腹：呼氣「嗤」同時四周收緊。優先死蟲左右各 8、側平板每邊 20 秒、平板／真空、單樆提膝。腰唔拱。唔好叫人打肚。"},
+    {k:"E", id:"legs", name:"大腿", gear:"啞鈴／腿機／空地／牆", cue:"邊件空做邊件：深蹲＋保加利亞（超哥）、分腿蹲、腿舉、徒手蹲＋弓步、腿伸／腿彎／登階／靠牆坐。"}
   ];
   var NEED = 3;
   var doneCount = {A:0,B:0,C:0,D:0,E:0};
@@ -147,7 +173,7 @@
     var sc=sculpt();
     var days={
       1:{name:"洛馬 · 滑步",blocks:lomaFirst("shuffle",{a1:"前滑兩步停。頭唔晃。停完先可以刺。",a2:"後滑兩步，前腳仍指向對手。隨時可再進。",a3:"碎步轉節奏：快兩拍慢兩拍。場地擠就細步。",angle:"向外側滑半步，想像去對手弱手邊。唔直線後退。",jab:"滑步完立刻刺一拳即收，側步離開。",flow:"輕彈＋滑，唔使大力。保持可出擊。"}).concat(sc)},
-      2:{name:"洛馬 · Pivot",blocks:lomaFirst("pivot",{a1:"前腳為軸，後腳划出 45 度。轉完停穩。",a2:"同一軸轉 90 度。視線跟對手，唔低頭。",a3:"轉完立刻還原再轉另一邊。幅度細都得。",angle:"Pivot 到外側，令想像對手打空。",jab:"轉完即刺，回收快過打出。",flow:"慢轉兩次，快轉一次。平衡優先。"}).concat(sc)},
+      2:{name:"洛馬 · Pivot",blocks:lomaFirst("pivot",{a1:"前腳為軸，後腳划出 45 度。轉完停穩。",a2:"同一軸轉另一個 45 度。視線跟對手，唔低頭。",a3:"轉完立刻還原再轉另一邊。幅度細都得。",angle:"Pivot 到外側，令想像對手打空。",jab:"轉完即刺，回收快過打出。",flow:"慢轉兩次。平衡優先，唔催。"}).concat(sc)},
       3:{name:"洛馬 · 架勢",blocks:lomaFirst("stance",{a1:"前腳在外側。膝微屈，可隨時推地。",a2:"重心前後轉換，唔鎖死後腳。",a3:"架勢中輕微預閃：頭離中線，腳先動。",angle:"前腳踩出外側半步，身體跟住，唔垮腰。",jab:"架勢穩先出刺，打完回到可移動姿勢。",flow:"企到鬆。搖一下肩，保持彈簧。"}).concat(sc)},
       4:{name:"洛馬 · 環繞",blocks:lomaFirst("ring",{a1:"走弧。每 3 秒改節奏。唔直線退。",a2:"向弱手外側行。刺拳只係入場券。",a3:"快兩步慢兩步。頭平，落地靜。",angle:"環繞半圈就停，準備出擊或再轉。",jab:"移動中出刺，腳不停死。",flow:"輕走弧收工。呼吸仍可講話。"}).concat(sc)},
       5:{name:"洛馬 · 刺拳",blocks:lomaFirst("jab",{a1:"刺即收。肩先拳後。場地擠就細動作。",a2:"1–2 再側步。唔企原位等打。",a3:"假動作半刺，再真刺。騙重心。",angle:"刺完向外側一步，離開中線。",jab:"連續 3 刺，每下都回收。最後一步離開。",flow:"輕刺保持節奏，唔加力。"}).concat(sc)},
@@ -170,44 +196,68 @@
   var i=0,left=day.blocks[0].seconds,run=false,done=false,timer=null;
   function total(){return day.blocks.reduce(function(a,b){return a+b.seconds;},0);}
   function elapsed(){var e=0;for(var x=0;x<i;x++)e+=day.blocks[x].seconds;return e+(day.blocks[i]?day.blocks[i].seconds-left:0);}
+  function enterBlock(){
+    var b=day.blocks[i];
+    left=b.seconds;
+    if(waitingPick(b)){
+      run=false;
+      if(timer){clearInterval(timer);timer=null;}
+      return;
+    }
+    if(b.kind==="rest") bell("change");
+    else bell("start");
+    run=true;
+    if(!timer) timer=setInterval(tick,1000);
+  }
+  function finishBlock(){
+    var b=day.blocks[i];
+    if(b.kind==="rest") bell("change");
+    else bell("end");
+    if(i+1>=day.blocks.length){
+      done=true; run=false;
+      if(timer){clearInterval(timer);timer=null;}
+      bell("done");
+      render();
+      return;
+    }
+    i+=1;
+    enterBlock();
+    render();
+  }
   function tick(){
     if(!run||done)return;
     var b=day.blocks[i];
-    if(b.kind==="mc" && !b.pick) return;
+    if(waitingPick(b)) return;
     left-=1;
-    if(left<=0){
-      if(isSet(b)) bell("end");
-      if(i+1>=day.blocks.length){done=true;run=false;if(timer)clearInterval(timer);timer=null;bell("done");render();return;}
-      i+=1;left=day.blocks[i].seconds;run=false;
-      if(timer){clearInterval(timer);timer=null;}
-    }
+    if(left<=0){ finishBlock(); return; }
     render();
   }
   function startClock(){
     var b=day.blocks[i];
+    if(waitingPick(b)) return;
     var fresh = left===b.seconds;
     run=true;
-    if(fresh && isSet(b)) bell("start");
+    if(fresh){
+      if(b.kind==="rest") bell("change");
+      else bell("start");
+    }
     if(!timer) timer=setInterval(tick,1000);
   }
   function bindControls(b){
     document.getElementById("go").onclick=function(){
       unlockAudio();
-      if(b.kind==="mc" && !b.pick) return;
+      if(waitingPick(b)) return;
       if(run){ run=false; if(timer){clearInterval(timer);timer=null;} }
       else startClock();
       render();
     };
     document.getElementById("skip").onclick=function(){
       unlockAudio();
-      if(isSet(b) && run) bell("end");
-      if(i+1>=day.blocks.length){done=true;run=false;if(timer)clearInterval(timer);bell("done");render();return;}
-      i+=1;left=day.blocks[i].seconds;run=false;if(timer){clearInterval(timer);timer=null;}
-      render();
+      finishBlock();
     };
     document.getElementById("stop").onclick=function(){location.href="/yipmma/";};
     var mu=document.getElementById("mute");
-    if(mu) mu.onclick=function(){ muted=!muted; unlockAudio(); render(); };
+    if(mu) mu.onclick=function(){ muted=!muted; unlockAudio(); if(!muted) bell("change"); render(); };
   }
   function render(){
     var el=document.getElementById("app");
@@ -226,13 +276,13 @@
     var half = b.kind==="mc"|| (b.kind==="rest" && i>0 && day.blocks[i-1] && day.blocks[i-1].kind==="mc") ? "塑形 15 分鐘" : "上半洛馬 15 分鐘";
     var head='<div class="top"><a href="/yipmma/">離開</a><button type="button" class="mute" id="mute">'+(muted?"鐘關":"鐘開")+'</button><span>'+pct+'%</span></div><div class="bar"><i style="width:'+pct+'%"></i></div>';
     var controls='<div class="btns"><button class="icon pri" id="go">'+(run?"❚❚":"▶")+'</button><button class="icon" id="skip">⏭</button><button class="icon" id="stop">■</button></div>'+(nxt?'<p class="next">下一段：'+nxt.label+" · "+fmt(nxt.seconds)+"</p>":"");
-    if(b.kind==="mc" && !b.pick){
+    if(waitingPick(b)){
       var opts="";
       for(var o=0;o<PARTS.length;o++){
         var op=PARTS[o]; var n=doneCount[op.k]||0; var full=n>=NEED;
-        opts+='<button type="button" data-k="'+op.k+'"'+(full?" disabled":"")+'><b>'+op.k+'</b> '+op.name+' · '+n+'/'+NEED+'<small>'+op.gear+(full?" · 已滿 3 組":" · 空就撷")+'</small></button>';
+        opts+='<button type="button" data-k="'+op.k+'"'+(full?" disabled":"")+'><b>'+op.k+'</b> '+op.name+' · '+n+'/'+NEED+'<small>'+op.gear+(full?" · 已滿 3 組":" · 空就撿")+'</small></button>';
       }
-      el.innerHTML=head+'<p class="tally">自由選 · '+finishedCount()+'/15 組 · '+half+'</p><p class="kicker">A 背 B 胸 C 二頭 D 腹 E 大腿</p><h1>第 '+b.set+' 組</h1>'+dotsHtml()+'<p class="cue">邊項空撿邊項。撿完鐘響＋震機，計時 00:45。</p><div class="mc" id="mc">'+opts+"</div>"+controls;
+      el.innerHTML=head+'<p class="tally">自由選 · '+finishedCount()+'/15 組 · '+half+'</p><p class="kicker">A 背 B 胸 C 二頭 D 腹 E 大腿</p><h1>第 '+b.set+' 組</h1>'+dotsHtml()+'<p class="cue">邊項空撿邊項。撿完比賽鐘響＋震機，計時 00:45。</p><div class="mc" id="mc">'+opts+"</div>"+controls;
       document.getElementById("mc").onclick=function(ev){
         var btn=ev.target.closest("button");
         if(!btn || btn.disabled) return;
