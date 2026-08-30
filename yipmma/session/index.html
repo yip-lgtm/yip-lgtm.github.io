@@ -97,13 +97,13 @@
     shuffle:{name:"滑步",gif:"shuffle.gif",cue:"碎步交換，幅度細，頭唔晃。隨時可停再刺拳。洛馬：步子服務角度，唔係表演。"},
     pivot:{name:"Pivot",gif:"pivot.gif",cue:"前腳為軸，後腳向外划弧 45–90 度。轉完立刻可以刺拳。離開對手發力線。"},
     ring:{name:"環繞",gif:"ring.gif",cue:"走弧唔走直線。向對手弱手外側移動，刺拳付費，3–5 秒轉節奏。"},
-    jab:{name:"刺拳",gif:"jab.gif",cue:"肩先、拳後、即收。唔劈。打完側步離開，唔企原位。"}
+    jab:{name:"刺拳",gif:"jab.gif",cue:"肩先、拳後、即收。唔劈。打完側步離開。假想中身就呼氣收腹再走，唔企原位。"}
   };
   var PARTS = [
     {k:"A", id:"back", name:"背", gear:"單樅／下拉／划船／啞鈺", cue:"邊件空做邊件：單樅引體或跳上慢落、助力機、高位下拉、坐姿划、俯身啞鈺划。5–12 下，背先於手。"},
     {k:"B", id:"chest", name:"胸", gear:"塵／推胸／啞鈺／夾胸", cue:"邊件空做邊件：伏地、推胸機、啞鈺或地板推、雙樅撐、蝴蝸機或繩索夾胸。8–15 下。"},
     {k:"C", id:"bi", name:"二頭", gear:"啞鈺／拉力器／彎舉機", cue:"邊件空做邊件：啞鈺彎舉、拉力器、斜托機、反手引體或水樽、鍵式或集中彎舉。8–12 下，唔借身。"},
-    {k:"D", id:"abs", name:"腹", gear:"單樅／塵／羅馬椅", cue:"邊件空做邊件：單樅提膝、捲腹、死蟲、平板或真空、羅馬椅或側平板。腰唔拱。"},
+    {k:"D", id:"abs", name:"腹", gear:"塵／單樅／牆", cue:"抗打腹：呼氣「嗤」同時四周收緊。優先死蟲左右各 8、側平板每邊 20 秒、平板／真空、單樅提膝。腰唔拱。唔好叫人打肚。"},
     {k:"E", id:"legs", name:"大腿", gear:"啞鈺／腿機／空地／牆", cue:"邊件空做邊件：深蹲＋保加利亞（超哥）、分腿蹲、腿舉、徒手蹲＋弓步、腿伸／腿彎／登階／靠牆坐。"}
   ];
   var NEED = 3;
@@ -125,7 +125,7 @@
       rest(20),
       {label:"角度",seconds:90,kind:"work",cue:theme.angle,gear:"空地"},
       rest(20),
-      {label:"刺拳付費",seconds:90,kind:"work",cue:theme.jab,gear:"空地",gif:"jab.gif"},
+      {label:"刺拳付費",seconds:90,kind:"work",cue:theme.jab+" 中身想像：呼氣收腹，側步離開。",gear:"空地",gif:"jab.gif"},
       rest(20),
       {label:"Flow 收工",seconds:60,kind:"work",cue:theme.flow,gear:"空地"}
     ];
