@@ -34,7 +34,7 @@
       var a = links[i];
       var href = a.getAttribute("href") || "";
       if (/run=/.test(href) || /run=/.test(a.search || "")) continue;
-      a.setAttribute("href", "/yipmma/session/?v=mc18");
+      a.setAttribute("href", "/yipmma/session/?v=mc19");
       if (a.getAttribute("data-hard")) continue;
       a.setAttribute("data-hard", "1");
       a.addEventListener(
@@ -42,19 +42,19 @@
         function (e) {
           e.preventDefault();
           e.stopPropagation();
-          location.href = "/yipmma/session/?v=mc18";
+          location.href = "/yipmma/session/?v=mc19";
         },
         true
       );
     }
     if (isSession() && document.getElementById("root") && !document.getElementById("app")) {
-      location.replace("/yipmma/session/?v=mc18");
+      location.replace("/yipmma/session/?v=mc19");
     }
   }
   function enhanceHome() {
     var sk = skillToday();
     var wanted =
-      "今日技術：" + sk.name + "。上半 15 分鐘洛馬科學法（腳先於手）；後半自由選 A背 B胸 C二頭 D腹 E大腿，每項 3 次＝15 組／15 分鐘。組始組完有鐘同震。";
+      "今日技術：" + sk.name + "。上半 15 分鐘洛馬（腳先於手）。後半自由選 A–E，每項 3 次。D 腹改抗打：呼氣收、死蟲、側平板，唔好叫人打肚。";
     var paras = document.querySelectorAll("p, li");
     var copies = [];
     var i;
@@ -88,9 +88,9 @@
     for (i = 0; i < paras.length; i++) {
       var n = paras[i];
       var s = n.textContent || "";
-      if (s.indexOf("每日後半固定") !== -1 || s.indexOf("每日後半 15") !== -1) {
+      if (s.indexOf("每日後半固定") !== -1 || s.indexOf("每日後半 15") !== -1 || s.indexOf("每日：上半") !== -1) {
         n.textContent =
-          "每日：上半 15 分鐘洛馬（腳→角度→刺拳），後半 15 分鐘 MC 自由選 A–E，每項 3 組。";
+          "每日：上半洛馬 15 分；後半 MC A–E 各 3 組。D 腹＝抗打呼吸＋死蟲／側平板。";
       }
     }
   }
