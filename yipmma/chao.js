@@ -34,7 +34,7 @@
       var a = links[i];
       var href = a.getAttribute("href") || "";
       if (/run=/.test(href) || /run=/.test(a.search || "")) continue;
-      a.setAttribute("href", "/yipmma/session/?v=mc22");
+      a.setAttribute("href", "/yipmma/session/?v=mc23");
       if (a.getAttribute("data-hard")) continue;
       a.setAttribute("data-hard", "1");
       a.addEventListener(
@@ -42,25 +42,37 @@
         function (e) {
           e.preventDefault();
           e.stopPropagation();
-          location.href = "/yipmma/session/?v=mc22";
+          location.href = "/yipmma/session/?v=mc23";
         },
         true
       );
     }
     if (isSession() && document.getElementById("root") && !document.getElementById("app")) {
-      location.replace("/yipmma/session/?v=mc22");
+      location.replace("/yipmma/session/?v=mc23");
     }
+  }
+  function enhanceMotto() {
+    if (document.getElementById("chao-nocardio")) return;
+    var box = document.createElement("div");
+    box.id = "chao-nocardio";
+    box.style.marginTop = "12px";
+    box.innerHTML =
+      '<p style="font-size:11px;letter-spacing:.12em;color:#8a8a8a">超哥訓勉</p><p>千萬不要做任何帶氧，會令今天的 3 個動作效果減半。特別係瘦人。意志被帶氧熱身消耗，重訓就唔係最佳狀態。除非天賦異纈、無窮戰意。最好淘寶鐵架放屋企，連運費唔使 1000，加埋約 4000，一年回本。唔使搭車，對住架唔會偷懶。</p>';
+    var skill = document.querySelector("[data-skill-line]");
+    if (skill && skill.parentNode) skill.parentNode.insertBefore(box, skill.nextSibling);
   }
   function enhanceHome() {
     var sk = skillToday();
     var wanted =
-      "今日技術：" + sk.name + "。上半 15 分鐘洛馬（腳先於手）。後半自由選 A–E，每項 3 次。D 腹改抗打：呼氣收、死蟲、側平板，唔好叫人打肚。";
+      "今日技術：" +
+      sk.name +
+      "。上半洛馬技術，星期四取消有氧改環繞。超哥：千萬唔好做帶氧，效果減半。後半 A–E 各 3。";
     var paras = document.querySelectorAll("p, li");
     var copies = [];
     var i;
     for (i = 0; i < paras.length; i++) {
       var tx = paras[i].textContent || "";
-      if (tx.indexOf("後半塑形") !== -1 || tx.indexOf("今日技術已計入") !== -1 || tx.indexOf("上半 15") !== -1) copies.push(paras[i]);
+      if (tx.indexOf("後半塑形") !== -1 || tx.indexOf("今日技術已計入") !== -1 || tx.indexOf("上半 15") !== -1 || tx.indexOf("上半洛馬") !== -1) copies.push(paras[i]);
     }
     if (copies.length) {
       copies[0].textContent = wanted;
@@ -68,37 +80,21 @@
       for (i = 1; i < copies.length; i++) {
         if (copies[i].parentNode) copies[i].parentNode.removeChild(copies[i]);
       }
-    } else {
-      for (i = 0; i < paras.length; i++) {
-        var p = paras[i];
-        if (p.getAttribute("data-skill-line")) continue;
-        var t = p.textContent || "";
-        if (!t || /今日技術/.test(t)) continue;
-        if (!/堆恢復|下機即|上肢塑形|空拳節奏|步頻波|引體、胸|先做外圍|主課內連續/.test(t)) continue;
-        p.setAttribute("data-skill-line", "1");
-        var line = document.createElement("p");
-        line.setAttribute("data-skill-line", "1");
-        line.className = p.className;
-        line.style.marginTop = "8px";
-        line.textContent = wanted;
-        if (p.parentNode) p.parentNode.insertBefore(line, p.nextSibling);
-        break;
-      }
     }
     for (i = 0; i < paras.length; i++) {
       var n = paras[i];
       var s = n.textContent || "";
       if (s.indexOf("每日後半固定") !== -1 || s.indexOf("每日後半 15") !== -1 || s.indexOf("每日：上半") !== -1) {
-        n.textContent =
-          "每日：上半洛馬 15 分；後半 MC A–E 各 3 組。D 腹＝抗打呼吸＋死蟲／側平板。";
+        n.textContent = "超哥：千萬唔好做帶氧。星期四改環繞技術。上半洛馬，後半 A–E。";
       }
     }
+    enhanceMotto();
   }
   function enhanceFood() {
     var links = document.querySelectorAll('a[href*="youtube.com/shorts/"]');
     for (var i = 0; i < links.length; i++) {
       var id = links[i].href.split("/").pop();
-      links[i].href = "https://youtu.be/" + id;
+      if (id) links[i].href = "https://youtu.be/" + id.replace(/\?.*$/, "");
     }
     var lists = document.querySelectorAll("ul");
     for (var u = 0; u < lists.length; u++) {
@@ -126,10 +122,7 @@
       if (t === "超哥：練完即食小米粥" || t === "超哥：練完即食熱小米粥") {
         nodes[n].textContent = foodTitle;
       }
-      if (
-        t.indexOf("練完立即食熱小米粥") !== -1 ||
-        t.indexOf("小米健脾，脾主肌肉") !== -1
-      ) {
+      if (t.indexOf("練完立即食熱小米粥") !== -1 || t.indexOf("小米健脾，脾主肌肉") !== -1) {
         nodes[n].textContent = foodBody;
       }
     }
@@ -137,6 +130,7 @@
   function enhance() {
     enhanceFood();
     enhanceHome();
+    enhanceMotto();
     forceSkillSession();
   }
   setTimeout(enhance, 200);
