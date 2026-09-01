@@ -19,46 +19,90 @@
   function isCny() {
     return !!CNY[todayKey()];
   }
-  function rewrite(root) {
+  function wd() {
+    return new Date()
+      .toLocaleString("en-US", { timeZone: "Asia/Hong_Kong", weekday: "short" })
+      .slice(0, 3);
+  }
+  function replaceText(root, map) {
     if (!root) return;
-    var cny = isCny();
     var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
     var n;
     while ((n = w.nextNode())) {
       var t = n.nodeValue;
       if (!t) continue;
       var x = t;
-      if (x === "有氧") x = "環繞";
-      else if (x.indexOf("有氧＋塑形") !== -1) x = x.replace("有氧＋塑形", "環繞＋塑形");
-      else if (x.indexOf("Zone 2 堆恢復") !== -1) x = "星期四取消有氧。上半環繞／Pivot／刺拳。";
-      else if (x.indexOf("單車／橢圓機") !== -1)
-        x = x.replace("單車／橢圓機 → 單樆", "空地／鏡前 → 單樆").replace("單車／橢圓機", "空地");
-      else if (x.indexOf("進入區") !== -1) x = x.replace("進入區", "進入 · 彈跳架勢");
-      else if (x.indexOf("Zone 2 上段") !== -1) x = x.replace("Zone 2 上段", "技術 · 環繞");
-      else if (x.indexOf("Zone 2 下段") !== -1) x = x.replace("Zone 2 下段", "應用 · Pivot");
-      else if (x.indexOf("每月第一及第三個星期二") !== -1)
-        x = "健身室 365 運作，沒有保養休息日。只休農曆年初一、初二。";
-      if (!cny) {
-        if (x.indexOf("年初家居日") !== -1) x = "旋轉＋塑形";
-        else if (x.indexOf("保養日徒手塑形") !== -1) x = "旋轉＋塑形";
-        else if (x.indexOf("無器械日") !== -1) x = "拉力器傳力，再做引體／胸／二頭／腹。";
-        else if (x.indexOf("公園單樆或家居") !== -1) x = "拉力器 → 單樆";
-        else if (x.indexOf("今日照常開放") !== -1) x = "";
-        else if (x.indexOf("今日健身室保養休息") !== -1) x = "";
-        else if (x.indexOf("健身室全年開。只休農曆") !== -1) x = "";
-        else if (x.indexOf("第一／第三個星期二") !== -1) x = "";
-        else if (x === "低強度" && (n.parentNode && /星期二/.test((n.parentNode.textContent || "")))) x = "中強度";
+      for (var k in map) {
+        if (x.indexOf(k) !== -1) x = x.split(k).join(map[k]);
       }
       if (x !== t) n.nodeValue = x;
     }
   }
+  function patchTodayCard() {
+    if (isCny()) return;
+    var heads = document.querySelectorAll("h1, h2, h3");
+    for (var i = 0; i < heads.length; i++) {
+      var h = heads[i];
+      var tx = h.textContent || "";
+      if (!/(旋轉|保養|家居|徒手塑形)/.test(tx)) continue;
+      h.textContent = "洛馬 · Pivot";
+      var card = h.parentNode;
+      for (var up = 0; up < 5 && card; up++) {
+        if ((card.textContent || "").indexOf("開始訓練") !== -1) break;
+        card = card.parentNode;
+      }
+      if (!card) continue;
+      replaceText(card, {
+        "低強度": "中強度",
+        "33:15": "30:00",
+        "拉力器傳力，再做引體／胸／二頭／腹。":
+          "上半 15 分 Pivot（慢轉 45 度，唔催）。後半自由選 A–E 各 3 組。",
+        "無器械日：步行 + 引體替代／伏地／彎舉／腹。":
+          "上半 15 分 Pivot（慢轉 45 度，唔催）。後半自由選 A–E 各 3 組。",
+        "公園單樆或家居": "空地／鏡前 → 單樆",
+        "公園單樆或家居": "空地／鏡前 → 單樆"
+      });
+    }
+  }
+  function globalCopy() {
+    var map = {
+      "有氧＋塑形": "環繞＋塑形",
+      "Zone 2 堆恢復，下機即做引體四件套。": "星期四取消有氧主課。上半環繞／Pivot／刺拳。",
+      "單車／橢圓機 → 單樆": "空地／鏡前 → 單樆",
+      "單車／橢圓機": "空地",
+      "每月第一及第三個星期二通常封閉保養——App 會改徒手塑形（公園單樆或伏地／桌底划船）。":
+        "健身室 365 運作，沒有保養休息日。只休農曆年初一、初二。",
+      "每月第一及第三個星期二通常封閉保養——App 會改徒手塑形（公園單樆或伏地／桌底划船）。":
+        "健身室 365 運作，沒有保養休息日。只休農曆年初一、初二。",
+      "習慣不斷。徒手張力一樣可以塑形，只要動作慢、接近力竭。":
+        "洛馬：腳先於手。Pivot 慢轉 45 度，轉完停穩。超哥：唔好做帶氧。",
+      "Pallof 同木斬練出拳力線。塑形組與旋轉分開：引體用背，唔用腰借力。":
+        "洛馬：腳先於手。Pivot 慢轉 45 度，轉完停穩。超哥：唔好做帶氧。"
+    };
+    if (wd() === "Tue" && !isCny()) {
+      map["旋轉＋塑形"] = "洛馬 · Pivot";
+      map["保養日徒手塑形"] = "洛馬 · Pivot";
+      map["年初家居日"] = "洛馬 · Pivot";
+      map["公園單樆或家居"] = "空地／鏡前 → 單樆";
+      map["公園單樆或家居"] = "空地／鏡前 → 單樆";
+      map["低強度"] = "中強度";
+      map["33:15"] = "30:00";
+    }
+    if (map["有氧"] === undefined) {
+      /* chip exact */
+    }
+    replaceText(document.body, map);
+    replaceText(document.body, { "有氧": "環繞" });
+  }
   function hideClosedBanner() {
     if (isCny()) return;
-    var cards = document.querySelectorAll("div, section, article");
-    for (var i = 0; i < cards.length; i++) {
-      var tx = cards[i].textContent || "";
+    var nodes = document.querySelectorAll("p, div, h2");
+    for (var i = 0; i < nodes.length; i++) {
+      var el = nodes[i];
+      var tx = (el.textContent || "").replace(/\s+/g, "");
+      if (!tx) continue;
       if (tx.indexOf("今日照常開放") !== -1 || tx.indexOf("保養休息") !== -1) {
-        if (tx.length < 80) cards[i].style.display = "none";
+        if (tx.length < 60) el.style.display = "none";
       }
     }
   }
@@ -68,17 +112,18 @@
       var a = links[i];
       var href = a.getAttribute("href") || "";
       if (/run=/.test(href) || /run=/.test(a.search || "")) continue;
-      a.setAttribute("href", "/yipmma/session/?v=mc26");
+      a.setAttribute("href", "/yipmma/session/?v=mc27");
     }
   }
   function enhance() {
-    rewrite(document.body);
+    globalCopy();
+    patchTodayCard();
     hideClosedBanner();
     forceSkillSession();
   }
-  setTimeout(enhance, 120);
-  setTimeout(enhance, 500);
-  setTimeout(enhance, 1400);
+  setTimeout(enhance, 80);
+  setTimeout(enhance, 400);
+  setTimeout(enhance, 1200);
   setInterval(enhance, 2000);
   document.addEventListener("click", function () {
     setTimeout(enhance, 40);
