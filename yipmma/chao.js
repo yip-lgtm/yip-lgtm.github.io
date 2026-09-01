@@ -38,58 +38,32 @@
       if (x !== t) n.nodeValue = x;
     }
   }
-  function patchTodayCard() {
-    if (isCny()) return;
-    var heads = document.querySelectorAll("h1, h2, h3");
-    for (var i = 0; i < heads.length; i++) {
-      var h = heads[i];
-      var tx = h.textContent || "";
-      if (!/(旋轉|保養|家居|徒手塑形)/.test(tx)) continue;
-      h.textContent = "洛馬 · Pivot";
-      var card = h.parentNode;
-      for (var up = 0; up < 5 && card; up++) {
-        if ((card.textContent || "").indexOf("開始訓練") !== -1) break;
-        card = card.parentNode;
-      }
-      if (!card) continue;
-      replaceText(card, {
-        "低強度": "中強度",
-        "33:15": "30:00",
-        "拉力器傳力，再做引體／胸／二頭／腹。":
-          "上半 15 分 Pivot（慢轉 45 度，唔催）。後半自由選 A–E 各 3 組。",
-        "無器械日：步行 + 引體替代／伏地／彎舉／腹。":
-          "上半 15 分 Pivot（慢轉 45 度，唔催）。後半自由選 A–E 各 3 組。",
-        "公園單樆或家居": "空地／鏡前 → 單樆",
-        "公園單樆或家居": "空地／鏡前 → 單樆"
-      });
-    }
-  }
   function globalCopy() {
     var map = {
       "有氧＋塑形": "環繞＋塑形",
       "Zone 2 堆恢復，下機即做引體四件套。": "星期四取消有氧主課。上半環繞／Pivot／刺拳。",
-      "單車／橢圓機 → 單樆": "空地／鏡前 → 單樆",
+      "單車／橢圓機 → 單槓": "空地／鏡前 → 單槓",
+      "單車／橢圓機 → 單樆": "空地／鏡前 → 單槓",
       "單車／橢圓機": "空地",
-      "每月第一及第三個星期二通常封閉保養——App 會改徒手塑形（公園單樆或伏地／桌底划船）。":
-        "健身室 365 運作，沒有保養休息日。只休農曆年初一、初二。",
-      "每月第一及第三個星期二通常封閉保養——App 會改徒手塑形（公園單樆或伏地／桌底划船）。":
-        "健身室 365 運作，沒有保養休息日。只休農曆年初一、初二。",
+      "每月第一及第三個星期二通常封閉保養":
+        "健身室 365 運作，沒有保養休息日。只休農曆年初一、初二",
       "習慣不斷。徒手張力一樣可以塑形，只要動作慢、接近力竭。":
         "洛馬：腳先於手。Pivot 慢轉 45 度，轉完停穩。超哥：唔好做帶氧。",
       "Pallof 同木斬練出拳力線。塑形組與旋轉分開：引體用背，唔用腰借力。":
-        "洛馬：腳先於手。Pivot 慢轉 45 度，轉完停穩。超哥：唔好做帶氧。"
+        "洛馬：腳先於手。Pivot 慢轉 45 度，轉完停穩。超哥：唔好做帶氧。",
+      "公園單槓或家居": "空地／鏡前 → 單槓",
+      "公園單樆或家居": "空地／鏡前 → 單槓"
     };
     if (wd() === "Tue" && !isCny()) {
       map["旋轉＋塑形"] = "洛馬 · Pivot";
       map["保養日徒手塑形"] = "洛馬 · Pivot";
       map["年初家居日"] = "洛馬 · Pivot";
-      map["公園單樆或家居"] = "空地／鏡前 → 單樆";
-      map["公園單樆或家居"] = "空地／鏡前 → 單樆";
       map["低強度"] = "中強度";
       map["33:15"] = "30:00";
-    }
-    if (map["有氧"] === undefined) {
-      /* chip exact */
+      map["拉力器傳力，再做引體／胸／二頭／腹。"] =
+        "上半 15 分 Pivot（慢轉 45 度，唔催）。後半自由選 A–E 各 3 組。";
+      map["無器械日：步行 + 引體替代／伏地／彎舉／腹。"] =
+        "上半 15 分 Pivot（慢轉 45 度，唔催）。後半自由選 A–E 各 3 組。";
     }
     replaceText(document.body, map);
     replaceText(document.body, { "有氧": "環繞" });
@@ -117,7 +91,6 @@
   }
   function enhance() {
     globalCopy();
-    patchTodayCard();
     hideClosedBanner();
     forceSkillSession();
   }
