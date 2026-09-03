@@ -17,8 +17,11 @@ h1{font-size:28px;margin:8px 0 6px}
 .set{margin:6px 0;font-size:14px}
 button{border:0;border-radius:999px;padding:14px 22px;background:#fff;color:#000;font-weight:700;margin:6px}
 button.ghost{background:#1a1a1a;color:#ddd;border:1px solid #2a2a2a}
-input{width:100%;background:#161616;color:#fff;border:1px solid #2a2a2a;border-radius:10px;padding:12px;font:inherit}
-.ok{color:#9dbf8a}
+button.dot{min-width:52px;margin:0 0 0 8px;font-size:22px}
+.row{display:flex;align-items:center}
+input{flex:1;min-width:0;background:#161616;color:#fff;border:1px solid #2a2a2a;border-radius:10px;padding:12px;font:inherit;font-size:18px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chips button{padding:8px 12px;margin:0;font-size:13px;font-weight:500}
 a{color:#9a9a9a}
 </style>
 </head>
@@ -35,30 +38,32 @@ a{color:#9a9a9a}
   </div>
   <div class="card">
     <p class="kicker">LOCKED SETTINGS</p>
-    <p class="set">跑步機 · treadmill</p>
-    <p class="set">坡度 1%固定 · grade 1% locked</p>
-    <p class="set">連續 9:00 · no stop / no walk-break</p>
-    <p class="set">唔扶手 · hands off rails</p>
-    <p class="set">匀速；最後 60 秒可以加快</p>
-    <p class="set">唔取代今日洛馬 + A–E 主課</p>
-    <p class="set">唔當帶氧熱身 · Chao: not cardio training</p>
+    <p class="set">跑步機 · 1% 坡 · 9:00 · 唔扶手</p>
+    <p class="set">唔取代主課 · 唔當帶氧訓練</p>
   </div>
-  <div class="card" id="logbox">
-    <p class="kicker">RESULT</p>
-    <p class="muted">鐘音響完記距離（km）</p>
-    <input id="km" inputmode="decimal" placeholder="1.85">
-    <div style="margin-top:10px">
-      <button id="save">記入本週考驗</button>
+  <div class="card">
+    <p class="kicker">RESULT km</p>
+    <p class="muted">鐘音後記距離。Android 可擦「.」</p>
+    <div class="row">
+      <input id="km" type="text" inputmode="decimal" lang="en" autocomplete="off" placeholder="1.85">
+      <button class="ghost dot" id="dot" type="button">.</button>
     </div>
+    <div class="chips" id="chips"></div>
+    <div style="margin-top:12px"><button id="save">記入本週考驗</button></div>
     <p class="muted" id="saved"></p>
   </div>
-  <p class="muted"><a href="/yipmma/?v=mc37">返回今日</a> · <a href="/yipmma/weight/?v=mc33">體重頁</a></p>
+  <p class="muted"><a href="/yipmma/?v=mc37">返回今日</a></p>
 </div>
 <script>
 (function(){
   var LEFT=540, run=false, t=null, done=false;
   function fmt(s){s=Math.max(0,s|0);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
   function paint(){document.getElementById("clk").textContent=fmt(LEFT);}
+  function parseKm(){
+    var v=String(document.getElementById("km").value||"").replace(",",".").replace(/[^0-9.]/g,"");
+    var n=Number(v);
+    return Number.isFinite(n)?n:0;
+  }
   var ac;
   function bell(){
     try{
@@ -86,22 +91,32 @@ a{color:#9a9a9a}
   document.getElementById("go").onclick=function(){
     if(done) return;
     if(ac&&ac.state==="suspended") ac.resume();
-    if(!run){ run=true; if(!t) t=setInterval(tick,1000); document.getElementById("phase").textContent="考驗進行中。1% 坡、唔扶手。"; if(LEFT===540) bell(); }
+    if(!run){ run=true; if(!t) t=setInterval(tick,1000); document.getElementById("phase").textContent="考驗進行中。"; if(LEFT===540) bell(); }
   };
-  document.getElementById("pause").onclick=function(){ run=false; document.getElementById("phase").textContent="暫停。考驗可以繼續，但唔好當訓練休息。"; };
+  document.getElementById("pause").onclick=function(){ run=false; document.getElementById("phase").textContent="暫停。"; };
+  document.getElementById("dot").onclick=function(){
+    var el=document.getElementById("km");
+    if(el.value.indexOf(".")===-1 && el.value.indexOf(",")===-1) el.value += ".";
+    el.focus();
+  };
+  ["1.50","1.70","1.80","1.85","1.90","2.00"].forEach(function(v){
+    var b=document.createElement("button");
+    b.className="ghost"; b.type="button"; b.textContent=v;
+    b.onclick=function(){ document.getElementById("km").value=v; };
+    document.getElementById("chips").appendChild(b);
+  });
   document.getElementById("save").onclick=function(){
-    var km=Number(document.getElementById("km").value);
-    if(!km||km<=0){ document.getElementById("saved").textContent="要有距離 km"; return; }
-    var meters=Math.round(km*1000);
+    var km=parseKm();
+    if(!km){ document.getElementById("saved").textContent="要有距離，例 1.85"; return; }
     var raw=localStorage.getItem("yipmma-v1")||"{}";
     var s; try{s=JSON.parse(raw);}catch(e){s={};}
-    s.runs=s.runs||[];
     var d=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Hong_Kong"});
+    s.runs=s.runs||[];
     s.runs=s.runs.filter(function(r){return r.date!==d;});
-    s.runs.push({date:d,meters:meters,kind:"test"});
+    s.runs.push({date:d,meters:Math.round(km*1000),kind:"test"});
     s.date=d; s.at=Date.now(); s.v=1;
     localStorage.setItem("yipmma-v1",JSON.stringify(s));
-    document.getElementById("saved").textContent="已記入 "+d+" · "+km+" km · 考驗";
+    document.getElementById("saved").textContent="已記入 "+d+" · "+km+" km";
   };
   paint();
 })();
