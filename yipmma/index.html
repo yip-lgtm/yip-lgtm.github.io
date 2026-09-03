@@ -1,15 +1,81 @@
 <!doctype html>
-<html lang="zh-HK" class="antialiased">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>outboxing stance</title>
-    <meta name="theme-color" content="#000000" />
-    <script type="module" crossorigin src="/yipmma/assets/index-8b2_2xI8.js?v=mc35"></script>
-    <link rel="stylesheet" crossorigin href="/yipmma/assets/index-B2LaUoBQ.css">
-  </head>
-  <body class="bg-bg text-fg">
-    <div id="root"></div>
-    <script src="/yipmma/chao.js?v=mc35"></script>
-  </body>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>outboxing stance</title>
+<meta name="theme-color" content="#000000" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif}
+.wrap{max-width:32rem;margin:0 auto;padding:24px 16px 96px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a}
+h1{font-size:34px;margin:6px 0 8px;letter-spacing:-.03em;font-weight:500}
+.lead,.en{color:#9a9a9a;font-size:14px;line-height:1.6}
+.card{border:1px solid #222;border-radius:18px;padding:18px;margin:14px 0;background:#0c0c0c}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+h2{font-size:24px;margin:8px 0 6px}
+a.btn{display:block;text-align:center;background:#fff;color:#000;text-decoration:none;border-radius:999px;padding:14px;font-weight:600;margin-top:16px}
+a.ghost{background:#1a1a1a;color:#ddd;border:1px solid #2a2a2a}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chip{border:1px solid #222;border-radius:14px;padding:12px;background:#0c0c0c}
+.chip b{display:block;font-size:12px;color:#8a8a8a;font-weight:500}
+nav{position:fixed;left:0;right:0;bottom:0;background:#000;border-top:1px solid #222;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
+nav a{color:#888;text-decoration:none;padding:6px}
+nav a.on{color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">OUTBOXING</p>
+  <h1>outboxing stance</h1>
+  <p class="lead">練拳不練功到老一場空<br>（特別鳴謝 超哥）</p>
+
+  <div class="card" id="today"></div>
+
+  <div class="card">
+    <p class="kicker">每週一次 · 體能分析</p>
+    <h2>9 分鐘耐力跑</h2>
+    <p class="en">HK fitness test. Treadmill 1% · 9 min. Not a cardio warm-up. Does not replace today’s session.</p>
+    <a class="btn ghost" href="/yipmma/session/?run=true">開始 9 分鐘</a>
+  </div>
+
+  <div class="chips">
+    <div class="chip"><b>A 背</b>引體向上</div>
+    <div class="chip"><b>B 胸</b>伏地 / 推胸</div>
+    <div class="chip"><b>C 二頭</b>啞鈴彎舉</div>
+    <div class="chip"><b>D 腹</b>抗打腹</div>
+    <div class="chip" style="grid-column:1/-1"><b>E 大腿</b>深蹲（超哥）+ 保加利亞蹲</div>
+  </div>
+</div>
+<nav>
+  <a class="on" href="/yipmma/?v=mc36">今日<br>Today</a>
+  <a href="/yipmma/week/?v=mc36">週期<br>Week</a>
+  <a href="/yipmma/weight/?v=mc33">體重<br>Weight</a>
+  <a href="/yipmma/session/?v=mc36">訓練<br>Train</a>
+</nav>
+<script>
+(function(){
+  var DAYS={
+    Mon:{zh:"星期一",name:"洛馬 · 滑步",en:"Loma · Shuffle",intent:"上半 15 分碎步。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"高"},
+    Tue:{zh:"星期二",name:"洛馬 · Pivot",en:"Loma · Pivot",intent:"慢轉 45 度，唔催。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
+    Wed:{zh:"星期三",name:"洛馬 · 架勢",en:"Loma · Stance",intent:"前腳外側，腳先於手。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
+    Thu:{zh:"星期四",name:"洛馬 · 環繞",en:"Loma · Circle",intent:"走弧唔走直線。取消 Zone 2、單車、橢圓機。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
+    Fri:{zh:"星期五",name:"洛馬 · 刺拳",en:"Loma · Jab",intent:"肩先拳後、即收。後半 A–E 各 3 組。",focus:"空地 → 單槓／啞鈴",lv:"中"},
+    Sat:{zh:"星期六",name:"洛馬 · 移動",en:"Loma · Movement",intent:"滑 + Pivot + 環繞。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
+    Sun:{zh:"星期日",name:"洛馬 · 恢復",en:"Loma · Recovery",intent:"慢鏡、慢滑、慢 Pivot。鼻吸 4 口呼 6。",focus:"空地 → 輕塑形",lv:"低"}
+  };
+  var w=new Date().toLocaleString("en-US",{timeZone:"Asia/Hong_Kong",weekday:"short"}).slice(0,3);
+  var d=DAYS[w]||DAYS.Thu;
+  document.getElementById("today").innerHTML=
+    '<div class="row"><p class="kicker">'+d.zh+' · '+d.lv+'強度</p><p class="kicker">30:00</p></div>'+
+    '<h2>'+d.name+'</h2>'+
+    '<p class="en">'+d.en+'</p>'+
+    '<p class="lead">'+d.intent+'</p>'+
+    '<p class="en">📍 '+d.focus+'</p>'+
+    '<p class="en" style="margin-top:10px">超哥：千萬不要做任何帶氧。</p>'+
+    '<a class="btn" href="/yipmma/session/?v=mc36">開始訓練 →</a>';
+})();
+</script>
+</body>
 </html>
