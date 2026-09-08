@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>outboxing stance · weight</title>
 <meta name="theme-color" content="#000000" />
+<script src="/yipmma/weight/block-minimax.js?v=mc40"></script>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif}
 .wrap{max-width:32rem;margin:0 auto;padding:20px 16px 96px}
 .kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8a8a8a}
 h1{font-size:28px;margin:6px 0 4px}h2{font-size:18px;margin:0 0 8px}
-.en,.muted{color:#9a9a9a;font-size:13px;line-height:1.55}
+.muted{color:#9a9a9a;font-size:13px;line-height:1.55}
 .card{border:1px solid #222;border-radius:16px;padding:16px;margin:14px 0;background:#0c0c0c}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
@@ -36,7 +37,7 @@ nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
 </head>
 <body>
 <div class="wrap">
-  <p class="kicker">WEIGHT · FOOD · JOURNEY</p>
+  <p class="kicker">WEIGHT</p>
   <h1>體重·飲食</h1>
   <div class="card">
     <h2>身高／目標</h2>
@@ -76,19 +77,21 @@ nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
   </div>
   <div class="card">
     <h2>Journey remark</h2>
-    <textarea id="remark" placeholder="睡 6 小時；架勢穩"></textarea>
+    <textarea id="remark"></textarea>
     <button class="ghost full" id="saveRemark">保存今日 remark</button>
     <p class="muted" id="remarkOk"></p>
   </div>
   <div class="card">
-    <h2>分析報告 / 免費 model</h2>
+    <h2>分析 / 免費 model</h2>
+    <p class="muted">唔用 MiniMax。openrouter/free 會轉去已停免費嘅 MiniMax。</p>
     <label>OpenRouter API key</label>
     <input id="key" type="password" autocomplete="off" placeholder="sk-or-…">
     <label>Free model</label>
     <select id="model">
-      <option value="nvidia/nemotron-3-super-120b-a12b:free">NVIDIA Nemotron 3 Super :free</option>
-      <option value="google/gemma-4-31b-it:free">Google Gemma 4 31B :free</option>
-      <option value="openrouter/free">openrouter/free 自動選</option>
+      <option value="nvidia/nemotron-3.5-lightning:free">Nemotron 3.5 Lightning :free</option>
+      <option value="thinkingmachines/inkling-small:free">Inkling Small :free</option>
+      <option value="inclusionai/ling-3.0-flash-sante:free">Ling 3.0 Flash :free</option>
+      <option value="google/gemma-4-31b-it:free">Gemma 4 31B :free</option>
     </select>
     <button class="full" id="go">產生今日報告</button>
     <p class="warn" id="err"></p>
@@ -96,20 +99,19 @@ nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
   </div>
   <div class="card">
     <h2>Git push backup</h2>
-    <label>GitHub token</label>
     <input id="ghToken" type="password" autocomplete="off" placeholder="ghp_…">
-    <label>repo</label><input id="ghRepo" value="yip-lgtm/yipmma-data">
-    <label>path</label><input id="ghPath" value="backup/data.json">
+    <input id="ghRepo" value="yip-lgtm/yipmma-data">
+    <input id="ghPath" value="backup/data.json">
     <button class="full" id="pushBtn">Push backup</button>
     <p class="muted" id="ghStatus"></p>
   </div>
 </div>
 <nav>
-  <a href="/yipmma/?v=mc37">今日<br>Today</a>
-  <a href="/yipmma/week/?v=mc37">週期<br>Week</a>
-  <a class="on" href="/yipmma/weight/?v=mc39">體重<br>Weight</a>
-  <a href="/yipmma/session/?v=mc36">訓練<br>Train</a>
+  <a href="/yipmma/?v=mc37">今日</a>
+  <a href="/yipmma/week/?v=mc37">週期</a>
+  <a class="on" href="/yipmma/weight/?v=mc40">體重</a>
+  <a href="/yipmma/session/?v=mc36">訓練</a>
 </nav>
-<script src="/yipmma/weight/app.js?v=mc39"></script>
+<script src="/yipmma/weight/app.js?v=mc40"></script>
 </body>
 </html>
