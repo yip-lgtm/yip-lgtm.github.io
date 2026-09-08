@@ -1,22 +1,21 @@
 (function () {
-  var MAP = {
-    "有氧＋塑形": "洛馬 · 環繞",
-    "有氧": "環繞",
-    "Zone 2 堆恢復，下機即做引體四件套。": "走弧唔走直線。取消 Zone 2。後半 A–E 各 3 組。",
-    "單車／橢圓機 → 單槓": "空地／鏡前 → 單槓",
-    "單車／橢圓機": "空地"
-  };
-  function rewrite() {
-    if (!document.body) return;
-    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-    var n;
-    while ((n = w.nextNode())) {
-      var t = n.nodeValue;
-      if (!t) continue;
-      var x = t;
-      for (var k in MAP) if (x.indexOf(k) !== -1) x = x.split(k).join(MAP[k]);
-      if (x !== t) n.nodeValue = x;
-    }
+  var WEEK = "/yipmma/week/?v=mc41";
+  var WEIGHT = "/yipmma/weight/?v=mc40";
+  var HOF = "/yipmma/wimhof/?v=mc41";
+  var SESSION = "/yipmma/session/?v=mc36";
+  var HOME = "/yipmma/?v=mc41";
+  var p = location.pathname || "";
+  if (/\/wimhof\/?$/.test(p) && document.getElementById("root")) {
+    location.replace(HOF);
+    return;
+  }
+  if (/\/week\/?$/.test(p) && document.getElementById("root")) {
+    location.replace(WEEK);
+    return;
+  }
+  if (/\/weight\/?$/.test(p) && document.getElementById("root")) {
+    location.replace(WEIGHT);
+    return;
   }
   function hijack() {
     document.addEventListener(
@@ -27,23 +26,40 @@
         var a = t.closest("a");
         var label = ((a && a.textContent) || t.textContent || "").replace(/\s+/g, "");
         var href = (a && (a.getAttribute("href") || "")) || "";
+        if (/wimhof/.test(href) || /Hof/i.test(label)) {
+          e.preventDefault();
+          location.href = HOF;
+          return;
+        }
         if (/week/.test(href) || label.indexOf("週期") !== -1) {
           e.preventDefault();
-          location.href = "/yipmma/week/?v=mc36";
+          location.href = WEEK;
         } else if (/weight/.test(href) || label.indexOf("體重") !== -1) {
           e.preventDefault();
-          location.href = "/yipmma/weight/?v=mc33";
-        } else if (/session/.test(href) || label.indexOf("開始訓練") !== -1 || label.indexOf("訓練") !== -1) {
-          if (!/run=/.test(href) && !/run=/.test(location.search)) {
+          location.href = WEIGHT;
+        } else if (label.indexOf("開始訓練") !== -1 || (/session/.test(href) && !/wimhof/.test(href))) {
+          if (!/run=/.test(href) && !/run=/.test(location.search) && label.indexOf("Hof") === -1) {
             e.preventDefault();
-            location.href = "/yipmma/session/?v=mc36";
+            location.href = SESSION;
           }
         }
       },
       true
     );
   }
+  function fixNav() {
+    var links = document.querySelectorAll("nav a");
+    if (!links.length) return;
+    var last = links[links.length - 1];
+    if (!last) return;
+    var tx = (last.textContent || "").replace(/\s+/g, "");
+    if (tx.indexOf("訓練") !== -1 || tx.indexOf("技術") !== -1 || tx.indexOf("Train") !== -1) {
+      last.setAttribute("href", HOF);
+      last.innerHTML = "Hof<br>5 min";
+      last.className = /wimhof/.test(location.pathname) ? "on" : last.className;
+    }
+  }
   hijack();
-  rewrite();
-  setInterval(rewrite, 800);
+  fixNav();
+  setInterval(fixNav, 600);
 })();
