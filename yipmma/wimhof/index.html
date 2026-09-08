@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wim Hof · 5 min</title>
+<meta name="theme-color" content="#000000" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif}
+.wrap{max-width:32rem;margin:0 auto;padding:24px 16px 96px}
+.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8a8a8a}
+h1{font-size:28px;margin:8px 0 6px}h2{font-size:20px;margin:6px 0}
+.en,.lead{color:#9a9a9a;font-size:14px;line-height:1.65}
+.card{border:1px solid #222;border-radius:16px;padding:16px;margin:14px 0;background:#0c0c0c}
+.clock{font-size:72px;font-variant-numeric:tabular-nums;letter-spacing:-.04em;text-align:center;margin:8px 0}
+.phase{text-align:center;font-size:20px;margin-top:4px}
+.sub{text-align:center;color:#9a9a9a;font-size:13px}
+.btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0}
+button{border:0;border-radius:999px;padding:12px 18px;background:#fff;color:#000;font-weight:700}
+button.ghost{background:#1a1a1a;color:#ddd;border:1px solid #2a2a2a}
+.warn{color:#d7b56d;font-size:13px;line-height:1.55}
+ol{margin:8px 0 0;padding-left:18px;color:#cfcfcf;font-size:14px;line-height:1.6}
+nav{position:fixed;left:0;right:0;bottom:0;background:#000;border-top:1px solid #222;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
+nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
+.bar{height:4px;background:#1a1a1a;border-radius:4px;overflow:hidden;margin-top:10px}
+.bar>i{display:block;height:100%;width:0;background:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">DAILY · 5:00</p>
+  <h1>Wim Hof 呼吸</h1>
+  <p class="en">5-minute daily protocol · short and steady, not a compressed 3–4 round session.</p>
+
+  <div class="card">
+    <p class="kicker" id="round">READY</p>
+    <div class="clock" id="clk">05:00</div>
+    <p class="phase" id="phase">坐穩或躺好再開</p>
+    <p class="sub" id="hint">Sit or lie down first. Never stand, shower, or drive.</p>
+    <div class="bar"><i id="bar"></i></div>
+    <div class="btns">
+      <button id="go">開始 / Start</button>
+      <button class="ghost" id="pause">暫停</button>
+      <button class="ghost" id="skip">想吸了 / Need air</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <p class="kicker">TODAY’S RULE</p>
+    <h2>短而穩定 · Short and steady</h2>
+    <p class="lead">不把完整 3–4 輪硬壓進 5 分鐘。今日 2 輪就算完成。冷水不算入這 5 分鐘。<br><span class="en">Do not squeeze a full session into five minutes. Two rounds count. Cold water is separate.</span></p>
+  </div>
+
+  <div class="card">
+    <p class="kicker">PREP · 15s</p>
+    <p class="lead">寬鬆衣服，腹部可以起伏。閉眼，肩膊放下。只講一句：「今天只練 5 分鐘，不硬撑。」<br><span class="en">Loose clothes, belly free. Eyes closed, shoulders down. One line: “Five minutes only. No forcing.”</span></p>
+  </div>
+
+  <div class="card">
+    <p class="kicker">ROUND · 約 2:15</p>
+    <ol>
+      <li>30 次深呼吸 · 60–70s<br><span class="en">Inhale nose or mouth, belly out, fill. Exhale softly — do not empty hard. Steady to 30.</span></li>
+      <li>空肺屏氣 · 30–45s<br><span class="en">After breath 30, stop empty. When the urge is strong, tap 「想吸了」. Do not race the clock.</span></li>
+      <li>恢復呼吸 · 15s<br><span class="en">Big inhale, hold ~15s, soft exhale.</span></li>
+    </ol>
+    <p class="lead" style="margin-top:10px">第 2 輪重複。這輪通常更平靜，屏氣可以稍長，仍以身體訊號為準。<br><span class="en">Repeat. Round 2 is usually quieter. A longer hold is fine if the body agrees.</span></p>
+  </div>
+
+  <div class="card">
+    <p class="kicker">CLOSE · 15s</p>
+    <p class="lead">自然呼吸。感受胸口、手腳溫度或刺痛是否消退。起身前坐穩 5–10 秒。<br><span class="en">Normal breath. Let chest and limb tingling fade. Sit 5–10s before standing.</span></p>
+  </div>
+
+  <div class="card">
+    <p class="kicker">COLD · NOT IN THIS TIMER</p>
+    <h2>浴浴最後 30 秒冷水</h2>
+    <p class="lead">不佔這 5 分鐘。水下去用平常放慢呼吸，不要做連續深呼吸。放鬆下巴與肩。一週後可加到 45–60 秒。<br><span class="en">After the timer. Last 30s of the normal shower on cold. Slow ordinary breath — never the 30-breath pattern under water. After a week, 45–60s if it feels easy.</span></p>
+  </div>
+
+  <div class="card">
+    <p class="kicker">SAFETY</p>
+    <p class="warn">只能坐或躺。絕不在浴浴、開車、站著做呼吸。頭暈、手麻屬常見；不適就改 20 次，或當天只做 1 輪。<br><span class="en">Sit or lie only. Never in the shower, a car, or standing. Dizzy or tingling hands: drop to 20 breaths, or stop after one round.</span></p>
+    <p class="lead">最佳剛起床空腹。晚上做就降強度，避免難睡。連續 7 天後才考慮某一天升級 3 輪。<br><span class="en">Best on waking, empty stomach. Evening: easier still, so sleep is not wired. After 7 straight days, maybe add a 3-round morning.</span></p>
+  </div>
+
+  <div class="card">
+    <p class="kicker">CUE</p>
+    <p class="lead">「吸——放——」數到 30 →「停」→ 想吸了就「大口吸，停 15，放」。<br><span class="en">“In — out —” to 30 → “hold” → urge to breathe → “big in, hold 15, release.”</span></p>
+  </div>
+</div>
+<nav>
+  <a href="/yipmma/?v=mc41">今日</a>
+  <a href="/yipmma/week/?v=mc37">週期</a>
+  <a href="/yipmma/weight/?v=mc40">體重</a>
+  <a class="on" href="/yipmma/wimhof/?v=mc41">Hof</a>
+</nav>
+<script>
+(function(){
+  var PLAN=[
+    {id:"prep",round:"PREP",zh:"準備 · 腹部自由",en:"Prep · belly free. 5 minutes only.",sec:15},
+    {id:"b1",round:"R1 BREATH",zh:"第 1 輪 · 30 次深呼吸",en:"Round 1 · 30 breaths. Soft exhale.",sec:70},
+    {id:"h1",round:"R1 HOLD",zh:"空肺屏氣 · 想吸就點",en:"Empty hold. Tap Need air when ready.",sec:45,hold:1},
+    {id:"r1",round:"R1 RECOVER",zh:"大口吸 · 屏 15 秒",en:"Big inhale. Hold 15. Soft out.",sec:15},
+    {id:"b2",round:"R2 BREATH",zh:"第 2 輪 · 30 次",en:"Round 2 · 30 breaths.",sec:70},
+    {id:"h2",round:"R2 HOLD",zh:"空肺屏氣 · 更平靜",en:"Empty hold. Body decides.",sec:45,hold:1},
+    {id:"r2",round:"R2 RECOVER",zh:"大口吸 · 屏 15 秒",en:"Big inhale. Hold 15. Soft out.",sec:15},
+    {id:"end",round:"CLOSE",zh:"自然呼吸 · 坐穩再起",en:"Easy breath. Sit before you stand.",sec:15}
+  ];
+  var i=0,left=PLAN[0].sec,run=false,done=false,t=null,ac;
+  function fmt(s){s=Math.max(0,s|0);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
+  function total(){var n=0;for(var x=0;x<PLAN.length;x++)n+=PLAN[x].sec;return n;}
+  function elapsed(){var n=0;for(var x=0;x<i;x++)n+=PLAN[x].sec;return n+(PLAN[i]?PLAN[i].sec-left:0);}
+  function bell(){
+    try{
+      ac=ac||new (window.AudioContext||window.webkitAudioContext)();
+      var o=ac.createOscillator(),g=ac.createGain();
+      o.frequency.value=660;o.type="sine";
+      g.gain.setValueAtTime(0.0001,ac.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.12,ac.currentTime+0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001,ac.currentTime+0.45);
+      o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+0.5);
+    }catch(e){}
+    try{navigator.vibrate&&navigator.vibrate(120);}catch(e){}
+  }
+  function paint(){
+    var b=PLAN[i]||PLAN[PLAN.length-1];
+    document.getElementById("clk").textContent=fmt(left);
+    document.getElementById("round").textContent=b.round;
+    document.getElementById("phase").textContent=b.zh;
+    document.getElementById("hint").textContent=b.en;
+    document.getElementById("bar").style.width=Math.min(100,elapsed()/total()*100)+"%";
+  }
+  function next(){
+    i++;
+    if(i>=PLAN.length){
+      done=true;run=false;left=0;clearInterval(t);
+      document.getElementById("phase").textContent="完成 · 坐穩";
+      document.getElementById("hint").textContent="Done. Sit. Cold water only at the end of the shower.";
+      document.getElementById("go").textContent="完成";
+      bell();paint();return;
+    }
+    left=PLAN[i].sec;bell();paint();
+  }
+  function tick(){ if(!run||done)return; left--; if(left<=0) next(); else paint(); }
+  document.getElementById("go").onclick=function(){
+    if(done) return;
+    if(ac&&ac.state==="suspended") ac.resume();
+    if(!run){ run=true; if(!t) t=setInterval(tick,1000); if(i===0&&left===PLAN[0].sec) bell(); }
+  };
+  document.getElementById("pause").onclick=function(){ run=false; };
+  document.getElementById("skip").onclick=function(){
+    if(done) return;
+    if(PLAN[i]&&PLAN[i].hold) next();
+  };
+  paint();
+})();
+</script>
+</body>
+</html>
