@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>outboxing stance · weight</title>
 <meta name="theme-color" content="#000000" />
-<script src="/yipmma/weight/block-minimax.js?v=mc40"></script>
+<script src="/yipmma/weight/block-minimax.js?v=mc43"></script>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif}
@@ -83,15 +83,15 @@ nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
   </div>
   <div class="card">
     <h2>分析 / 免費 model</h2>
-    <p class="muted">唔用 MiniMax。openrouter/free 會轉去已停免費嘅 MiniMax。</p>
+    <p class="muted">順序：Super → Gemma → Ling → Lightning。唔用 MiniMax，唔用 openrouter/free。</p>
     <label>OpenRouter API key</label>
     <input id="key" type="password" autocomplete="off" placeholder="sk-or-…">
     <label>Free model</label>
     <select id="model">
-      <option value="nvidia/nemotron-3.5-lightning:free">Nemotron 3.5 Lightning :free</option>
-      <option value="thinkingmachines/inkling-small:free">Inkling Small :free</option>
-      <option value="inclusionai/ling-3.0-flash-sante:free">Ling 3.0 Flash :free</option>
-      <option value="google/gemma-4-31b-it:free">Gemma 4 31B :free</option>
+      <option value="nvidia/nemotron-3-super-120b-a12b:free">1 Nemotron 3 Super :free</option>
+      <option value="google/gemma-4-31b-it:free">2 Gemma 4 31B :free</option>
+      <option value="inclusionai/ling-3.0-flash-sante:free">3 Ling 3.0 Flash Sante :free</option>
+      <option value="nvidia/nemotron-3.5-lightning:free">4 Nemotron 3.5 Lightning :free</option>
     </select>
     <button class="full" id="go">產生今日報告</button>
     <p class="warn" id="err"></p>
@@ -107,11 +107,11 @@ nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
   </div>
 </div>
 <nav>
-  <a href="/yipmma/?v=mc37">今日</a>
+  <a href="/yipmma/?v=mc41">今日</a>
   <a href="/yipmma/week/?v=mc37">週期</a>
-  <a class="on" href="/yipmma/weight/?v=mc40">體重</a>
-  <a href="/yipmma/session/?v=mc36">訓練</a>
+  <a class="on" href="/yipmma/weight/?v=mc43">體重</a>
+  <a href="/yipmma/session/?v=mc42">訓練</a>
 </nav>
-<script src="/yipmma/weight/app.js?v=mc40"></script>
+<script src="/yipmma/weight/app.js?v=mc43"></script>
 </body>
 </html>
