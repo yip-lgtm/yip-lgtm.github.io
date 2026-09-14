@@ -6,6 +6,7 @@
     { href: "#/curriculum", key: "/curriculum", label: "課程" },
     { href: "#/tools", key: "/tools", label: "軟件" },
     { href: "#/auto", key: "/auto", label: "自動化" },
+    { href: "#/electives", key: "/electives", label: "選修" },
     { href: "#/lab", key: "/lab", label: "計算台" },
   ];
   const SOFT = [
@@ -26,6 +27,7 @@
     const keys = [];
     ME.tools.forEach((t) => t.lessons.forEach((l) => l.steps.forEach((_, i) => keys.push(l.id + ":" + i))));
     ME.auto.forEach((c) => c.lessons.forEach((l) => l.steps.forEach((_, i) => keys.push(l.id + ":" + i))));
+    (ME.electives || []).forEach((c) => c.lessons.forEach((l) => l.steps.forEach((_, i) => keys.push(l.id + ":" + i))));
     return keys;
   }
   function ratio() {
@@ -77,6 +79,10 @@
     } else if (p === "/auto" || p.startsWith("/auto/")) {
       items = [{ href: "#/auto", label: "總覽", on: p === "/auto" }].concat(
         ME.auto.map((c) => ({ href: "#/auto/" + c.slug, label: c.short, on: p === "/auto/" + c.slug }))
+      );
+    } else if (p === "/electives" || p.startsWith("/electives/")) {
+      items = [{ href: "#/electives", label: "全部", on: p === "/electives" }].concat(
+        (ME.electives || []).map((c) => ({ href: "#/electives/" + c.slug, label: c.short, on: p === "/electives/" + c.slug }))
       );
     }
     if (!items.length) {
@@ -134,10 +140,10 @@
         <div>
           <p class="kicker">Higher Diploma · Mechanical Engineering</p>
           <h1 class="big">機械工程自學台</h1>
-          <p class="muted">IVE 青衣 EG524701 PTE。機械五大 CAD、MATLAB／Simulink，再加自動化七科中英對照。</p>
+          <p class="muted">IVE 青衣 EG524701 PTE。機械五大 CAD、MATLAB／Simulink、自動化七科、選修 13 科全讀。</p>
           <div class="btns">
             <a class="btn pri" href="#/solidworks">今日學 SolidWorks Cut</a>
-            <a class="btn sec" href="#/auto">自動化七科</a>
+            <a class="btn sec" href="#/electives">選修 13 科全讀</a>
           </div>
         </div>
         <div class="card" style="padding:0;overflow:hidden">
@@ -155,7 +161,7 @@
         <div class="grid g3">
           <a class="card" href="#/solidworks"><p class="subtle">01</p><h3>SolidWorks Cut</h3><p class="muted">80×50×15 再剪 33×25。</p></a>
           <a class="card" href="#/matlab"><p class="subtle">02</p><h3>Simulink 彈簧</h3><p class="muted">調 m、c、k，睇欠阻尼同過阻尼。</p></a>
-          <a class="card" href="#/auto"><p class="subtle">03</p><h3>自動化七科</h3><p class="muted">電路 → 卡爾曼，中英對照。</p></a>
+          <a class="card" href="#/electives"><p class="subtle">03</p><h3>選修全讀</h3><p class="muted">官方揀 2；你讀 13 科。</p></a>
         </div>
       </section>
       <section class="sec">
@@ -187,6 +193,11 @@
       <h1>課程</h1>
       <p class="muted">AY2026/27 Student Handbook。Sem 1 已交 00965（3210／3211／3212／LAN3003）。工場 I 唔好豁。IA 畢業前必須申請。</p>
       <div class="grid" style="margin-top:1.25rem">${blocks}</div>
+      <section class="sec">
+        <h2>選修池 · 13 科全讀</h2>
+        <p class="muted">官方 Sem 8 揀 2 科（各 14 cr）。你要讀全部，自學台全開。</p>
+        <div class="grid g2">${(ME.electives || []).map((c) => `<a class="card" href="#/electives/${c.slug}"><p class="subtle">${esc(c.code)}</p><h3>${esc(c.zh)}</h3><p class="subtle">${esc(c.en)}</p></a>`).join("")}</div>
+      </section>
       <div class="card" style="margin-top:1rem">
         <p class="code">${esc(ME.ia.code)}</p>
         <h3>${esc(ME.ia.title)} · ${ME.ia.credits} cr</h3>
@@ -257,6 +268,40 @@
       </section>
       <section class="sec"><h2>公式</h2><div class="grid">${c.formulas.map((f) => `<div class="formula">${esc(f.eq)}<div class="subtle">${esc(f.mean.zh)} · ${esc(f.mean.en)}</div></div>`).join("")}</div></section>
       ${bench}
+      <section class="sec"><h2>課 Lessons</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, l.title.zh + " / " + l.title.en, l.minutes, l.steps, true)).join("")}</div></section>
+      <section class="sec"><h2>MATLAB</h2><pre class="cmd">${esc(c.matlab)}</pre></section>
+      ${footer()}
+    `;
+  }
+
+  function electiveHub() {
+    return `
+      <p class="kicker">官方揀 2 · 自學全開</p>
+      <h1>選修 13 科</h1>
+      <p class="muted">VTC EG524701 Sem 8 選修單元。畢業揀兩科；呢度 13 科中英對照全讀。海事處遠洋：輪機 + 應用熱流體。鐵路：車輛 → 軌道 → RST I／II。</p>
+      <div class="grid g2" style="margin-top:1.25rem">
+        ${(ME.electives || []).map((c) => `<a class="card" href="#/electives/${c.slug}"><p class="subtle">${String(c.order).padStart(2,"0")} · ${esc(c.code)}</p><h3>${esc(c.zh)}</h3><p class="subtle">${esc(c.en)}</p><p class="muted">${esc(c.why.zh)}</p></a>`).join("")}
+      </div>
+      ${footer()}
+    `;
+  }
+
+  function electiveCourse(slug) {
+    const c = (ME.electives || []).find((x) => x.slug === slug);
+    if (!c) return `<h1>未找到</h1><p><a class="btn sec" href="#/electives">返回選修池</a></p>`;
+    const jump = c.jump ? `<p><a class="btn pri" href="#${c.jump.to}">${esc(c.jump.label)}</a></p>` : "";
+    return `
+      <p class="kicker">${esc(c.en)} · ${esc(c.code)} · ${esc(c.hd)}</p>
+      <h1>${esc(c.zh)}</h1>
+      <div class="bi">
+        <p class="muted">${esc(c.why.zh)}</p>
+        <p class="muted">${esc(c.why.en)}</p>
+      </div>
+      ${jump}
+      <section class="sec"><h2>路徑 Path</h2>
+        <ol class="path">${c.path.map((p) => `<li><strong>${esc(p.zh)}</strong> · <span class="subtle">${esc(p.en)}</span></li>`).join("")}</ol>
+      </section>
+      <section class="sec"><h2>公式</h2><div class="grid">${c.formulas.map((f) => `<div class="formula">${esc(f.eq)}<div class="subtle">${esc(f.mean.zh)} · ${esc(f.mean.en)}</div></div>`).join("")}</div></section>
       <section class="sec"><h2>課 Lessons</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, l.title.zh + " / " + l.title.en, l.minutes, l.steps, true)).join("")}</div></section>
       <section class="sec"><h2>MATLAB</h2><pre class="cmd">${esc(c.matlab)}</pre></section>
       ${footer()}
@@ -467,8 +512,10 @@
     else if (p === "/curriculum") html = curriculum();
     else if (p === "/tools") html = toolsHub();
     else if (p === "/auto") html = autoHub();
+    else if (p === "/electives") html = electiveHub();
     else if (p === "/lab") html = lab();
     else if (p.startsWith("/auto/")) html = autoCourse(p.slice(6));
+    else if (p.startsWith("/electives/")) html = electiveCourse(p.slice("/electives/".length));
     else if (SOFT.some((s) => p === "/" + s.slug)) html = software(p.slice(1));
     else html = `<h1>呢頁冇嘢</h1><p><a class="btn sec" href="#/">返總覽</a></p>`;
     view.innerHTML = html;

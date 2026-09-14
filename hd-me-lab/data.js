@@ -1865,5 +1865,1634 @@ window.ME = {
         }
       ]
     }
-  ]
+  ],
+  "electives": [
+  {
+    "slug": "marine",
+    "to": "/electives/marine",
+    "short": "輪機",
+    "order": 1,
+    "stream": "thermal",
+    "code": "MEK",
+    "zh": "輪機工程",
+    "en": "Marine Engineering Knowledge",
+    "hd": "選修 · 海事處遠洋認可路徑之一",
+    "why": {
+      "zh": "柴油主機、輔機、鍋爐、泵、燃油同壓載。同應用熱流體一齊選，先對準海事處認可。船用先安全、再系統。",
+      "en": "Main diesel, auxiliaries, boilers, pumps, fuel and ballast. Pair with Applied Thermo Fluids for the Marine Department seagoing path. Safety first, then systems."
+    },
+    "path": [
+      {
+        "zh": "二衝程／四衝程、掃氣、增壓",
+        "en": "2-stroke / 4-stroke, scavenging, turbocharge"
+      },
+      {
+        "zh": "燃油、潤滑、冷卻、起動空氣",
+        "en": "Fuel, lube, cooling, starting air"
+      },
+      {
+        "zh": "輔鍋爐、造水、壓載、艙底",
+        "en": "Aux boiler, fresh water, ballast, bilge"
+      },
+      {
+        "zh": "值班、應急、防污 MARPOL 入口",
+        "en": "Watchkeeping, emergency, MARPOL entry"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "BMEP · Vd · N / k = Power",
+        "mean": {
+          "zh": "制動平均有效壓力",
+          "en": "Brake mean effective pressure"
+        }
+      },
+      {
+        "eq": "SFOC = mf / P  (g/kWh)",
+        "mean": {
+          "zh": "燃油消耗率",
+          "en": "Specific fuel oil consumption"
+        }
+      },
+      {
+        "eq": "η_prop = P_thrust / P_shaft",
+        "mean": {
+          "zh": "推進效率",
+          "en": "Propulsive efficiency"
+        }
+      }
+    ],
+    "matlab": "% SFOC from mass-flow and power\nmf=0.18; P=7200; % kg/h , kW\nsfoc=mf*1000/P  % g/kWh",
+    "lessons": [
+      {
+        "id": "mek-1",
+        "minutes": 40,
+        "title": {
+          "zh": "主機同循環",
+          "en": "Main engine and cycles"
+        },
+        "steps": [
+          {
+            "zh": "慢速二衝程十字頭：長衝程、直連螺旋槳",
+            "en": "Slow 2-stroke crosshead: long stroke, direct propeller"
+          },
+          {
+            "zh": "中速四衝程：齒輪箱、發電機、輔推進",
+            "en": "Medium 4-stroke: gearbox, gensets, aux propulsion"
+          },
+          {
+            "zh": "先畫氣路：進氣→壓縮→燃燒→膨脹→排氣",
+            "en": "Sketch the gas path: intake → compress → burn → expand → exhaust"
+          }
+        ]
+      },
+      {
+        "id": "mek-2",
+        "minutes": 40,
+        "title": {
+          "zh": "燃油、潤滑、冷卻",
+          "en": "Fuel, lube, cooling"
+        },
+        "steps": [
+          {
+            "zh": "重油要加熱、淨化、黏度控制先噴得出",
+            "en": "HFO needs heat, purify, viscosity control before injection"
+          },
+          {
+            "zh": "潤滑分氣缸油同系統油，唔好混用途",
+            "en": "Cylinder oil ≠ system oil; do not mix duties"
+          },
+          {
+            "zh": "冷卻水有高溫／低溫回路，防腐同防結垢",
+            "en": "HT/LT cooling circuits; corrosion and scale"
+          }
+        ]
+      },
+      {
+        "id": "mek-3",
+        "minutes": 35,
+        "title": {
+          "zh": "值班同法規入口",
+          "en": "Watch and regs entry"
+        },
+        "steps": [
+          {
+            "zh": "交班：轉速、溫度、壓力、油位、警報",
+            "en": "Handover: rpm, T, p, levels, alarms"
+          },
+          {
+            "zh": "MARPOL：油、污水、垃圾、大氣；記簿",
+            "en": "MARPOL: oil, sewage, garbage, air; log books"
+          },
+          {
+            "zh": "呢科加應用熱流體，先講海事處認可",
+            "en": "This plus Applied Thermo Fluids is the Mardep path"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "thermofluids",
+    "to": "/electives/thermofluids",
+    "short": "熱流",
+    "order": 2,
+    "stream": "thermal",
+    "code": "ATF",
+    "zh": "應用熱流體力學",
+    "en": "Applied Thermo Fluids",
+    "hd": "選修 · 接 EME4224／EME4202 · 海事處路徑",
+    "why": {
+      "zh": "把熱力同流體用落蒸汽循環、燃氣循環、製冷同熱交換器。輪機同噴射引擎都要呢科嘅語言。",
+      "en": "Put thermo and fluids onto steam cycles, gas cycles, refrigeration and heat exchangers. Marine and jet both speak this language."
+    },
+    "path": [
+      {
+        "zh": "第一、第二定律複習，焓熵表",
+        "en": "1st/2nd law recap, h–s tables"
+      },
+      {
+        "zh": "Rankine 蒸汽、再熱、回熱",
+        "en": "Rankine steam, reheat, regeneration"
+      },
+      {
+        "zh": "Brayton 燃氣、壓比、TIT",
+        "en": "Brayton gas, pressure ratio, TIT"
+      },
+      {
+        "zh": "蒸氣壓縮製冷 COP、熱交換器 UA",
+        "en": "Vapour-compression COP, exchanger UA"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "η_Carnot = 1 − Tc/Th",
+        "mean": {
+          "zh": "卡諾上限",
+          "en": "Carnot ceiling"
+        }
+      },
+      {
+        "eq": "η_Rankine = (h1−h2−|wp|) / (h1−h4)",
+        "mean": {
+          "zh": "淨功／吸熱",
+          "en": "Net work / heat in"
+        }
+      },
+      {
+        "eq": "COP_R = Q_c / W_net",
+        "mean": {
+          "zh": "製冷性能係數",
+          "en": "Refrigeration COP"
+        }
+      },
+      {
+        "eq": "Q = U A ΔT_lm",
+        "mean": {
+          "zh": "熱交換器",
+          "en": "Heat exchanger"
+        }
+      }
+    ],
+    "matlab": "Th=800; Tc=300;                 % K\netaC=1-Tc/Th\npi=12; g=1.4;                   % Brayton ideal\netaB=1-pi^((1-g)/g)",
+    "lessons": [
+      {
+        "id": "atf-1",
+        "minutes": 40,
+        "title": {
+          "zh": "蒸汽 Rankine",
+          "en": "Steam Rankine"
+        },
+        "steps": [
+          {
+            "zh": "四件：泵、鍋爐、汽輪、冷凝。先標 1–2–3–4",
+            "en": "Four kit: pump, boiler, turbine, condenser. Label 1–2–3–4"
+          },
+          {
+            "zh": "汽輪等熵係理想；真實用等熵效率 ηt",
+            "en": "Isentropic turbine is ideal; real uses ηt"
+          },
+          {
+            "zh": "再熱同回熱為咗提高平均吸熱溫度",
+            "en": "Reheat and regeneration raise mean heat-addition T"
+          }
+        ]
+      },
+      {
+        "id": "atf-2",
+        "minutes": 40,
+        "title": {
+          "zh": "燃氣 Brayton",
+          "en": "Gas Brayton"
+        },
+        "steps": [
+          {
+            "zh": "壓氣機、燃燒室、渦輪。開式用空氣當工質",
+            "en": "Compressor, combustor, turbine. Open cycle treats air as the fluid"
+          },
+          {
+            "zh": "壓比太高，壓氣機功食晒渦輪功",
+            "en": "Too high a pressure ratio and compressor work eats the turbine"
+          },
+          {
+            "zh": "TIT 受葉片材料限制",
+            "en": "TIT is limited by blade material"
+          }
+        ]
+      },
+      {
+        "id": "atf-3",
+        "minutes": 35,
+        "title": {
+          "zh": "製冷同熱交換器",
+          "en": "Refrigeration and exchangers"
+        },
+        "steps": [
+          {
+            "zh": "蒸發、壓縮、冷凝、膨脹閥",
+            "en": "Evaporate, compress, condense, expansion valve"
+          },
+          {
+            "zh": "COP 大於 1 唔代表永動機，只係搬熱",
+            "en": "COP over 1 is not a perpetual-motion machine — it moves heat"
+          },
+          {
+            "zh": "LMTD：逆流平均溫差大過順流",
+            "en": "LMTD: counterflow beats parallel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "adv-math",
+    "to": "/electives/adv-math",
+    "short": "高數",
+    "order": 3,
+    "stream": "math",
+    "code": "AEM",
+    "zh": "高級工程數學",
+    "en": "Advanced Engineering Mathematics",
+    "hd": "選修 · 接 EME4212 · MATLAB 主力",
+    "why": {
+      "zh": "拉普拉斯、傅立葉、PDE、數值方法。控制、振動、熱傳都用呢套。讀完可以直接餵自控同卡爾曼。",
+      "en": "Laplace, Fourier, PDEs, numerics. Control, vibration and heat transfer all use this. Feeds automatic control and Kalman."
+    },
+    "path": [
+      {
+        "zh": "拉普拉斯表、部分分式、ODE",
+        "en": "Laplace tables, partial fractions, ODEs"
+      },
+      {
+        "zh": "傅立葉級數同變換",
+        "en": "Fourier series and transform"
+      },
+      {
+        "zh": "分離變量：波動、熱方程入口",
+        "en": "Separation of variables: wave, heat entry"
+      },
+      {
+        "zh": "數值：Newton、RK4、ode45",
+        "en": "Numerics: Newton, RK4, ode45"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "L{y'} = s Y − y(0)",
+        "mean": {
+          "zh": "導數定理",
+          "en": "Derivative theorem"
+        }
+      },
+      {
+        "eq": "f(t) ~ a0/2 + Σ (an cos nωt + bn sin nωt)",
+        "mean": {
+          "zh": "傅立葉級數",
+          "en": "Fourier series"
+        }
+      },
+      {
+        "eq": "ut = k uxx",
+        "mean": {
+          "zh": "一維熱方程",
+          "en": "1-D heat equation"
+        }
+      }
+    ],
+    "matlab": "syms t s\nY=1/(s^2+2*s+2);\ny=ilaplace(Y,s,t)\n% numeric ODE\nf=@(t,y)[y(2); -2*y(2)-2*y(1)];\n[t,x]=ode45(f,[0 8],[0;1]);\nplot(t,x(:,1)); grid on",
+    "jump": {
+      "to": "/matlab",
+      "label": "去 MATLAB 課"
+    },
+    "lessons": [
+      {
+        "id": "aem-1",
+        "minutes": 40,
+        "title": {
+          "zh": "拉普拉斯解 ODE",
+          "en": "Laplace for ODEs"
+        },
+        "steps": [
+          {
+            "zh": "初值入公式，代數解 Y(s)，再反變換",
+            "en": "ICs into the formula, algebra for Y(s), invert"
+          },
+          {
+            "zh": "複極點 → 衰減正弦，就係二階系統",
+            "en": "Complex poles → damped sinusoid = 2nd-order system"
+          },
+          {
+            "zh": "對照 EME4212 同自控傳函",
+            "en": "Match EME4212 and control G(s)"
+          }
+        ]
+      },
+      {
+        "id": "aem-2",
+        "minutes": 35,
+        "title": {
+          "zh": "傅立葉睇頻譜",
+          "en": "Fourier for spectra"
+        },
+        "steps": [
+          {
+            "zh": "週期訊號拆正弦；方波要好多奇次諧波",
+            "en": "Periodic signals split into sines; a square wave needs many odd harmonics"
+          },
+          {
+            "zh": "非週期用變換；取樣對照訊號科奈奎斯特",
+            "en": "Aperiodic → transform; sampling meets Nyquist from signals"
+          },
+          {
+            "zh": "振動同聲學：主頻先於波形",
+            "en": "Vibration and acoustics: fundamental before waveform"
+          }
+        ]
+      },
+      {
+        "id": "aem-3",
+        "minutes": 40,
+        "title": {
+          "zh": "數值同 MATLAB",
+          "en": "Numerics and MATLAB"
+        },
+        "steps": [
+          {
+            "zh": "Newton 解 f(x)=0：猜、切線、重複",
+            "en": "Newton for f(x)=0: guess, tangent, repeat"
+          },
+          {
+            "zh": "RK4／ode45 解 ẋ=f(t,x)",
+            "en": "RK4 / ode45 for ẋ=f(t,x)"
+          },
+          {
+            "zh": "唔好用手算十八階行列式；用 A\\b",
+            "en": "Do not hand-expand an 18th-order determinant; use A\\b"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "automation",
+    "to": "/electives/automation",
+    "short": "自動",
+    "order": 4,
+    "stream": "auto",
+    "code": "EME4273",
+    "zh": "自動化系統",
+    "en": "Automation",
+    "hd": "選修 · 手冊 Sem 8 範例 1 · 14 cr",
+    "why": {
+      "zh": "PLC、氣壓、感測、順序控制。HD 儀錶科嘅工場版。下面有完整自動化七科自學（電路→卡爾曼）。",
+      "en": "PLC, pneumatics, sensors, sequential control. Shop-floor version of HD instrumentation. Full seven-course automation path (circuits → Kalman) is linked below."
+    },
+    "path": [
+      {
+        "zh": "氣壓符號、缸、閥、順序圖",
+        "en": "Pneumatic symbols, cylinders, valves, sequence"
+      },
+      {
+        "zh": "PLC 梯級：觸點、線圈、計時器",
+        "en": "PLC ladder: contacts, coils, timers"
+      },
+      {
+        "zh": "感測：接近、光電、編碼器",
+        "en": "Sensors: prox, photo, encoder"
+      },
+      {
+        "zh": "安全迴路、急停、互鎖",
+        "en": "Safety circuit, e-stop, interlock"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "F = p A",
+        "mean": {
+          "zh": "氣缸推力",
+          "en": "Cylinder force"
+        }
+      },
+      {
+        "eq": "T_on = n · T_scan",
+        "mean": {
+          "zh": "PLC 計時器約數",
+          "en": "PLC timer ticks"
+        }
+      },
+      {
+        "eq": "v = ω r",
+        "mean": {
+          "zh": "編碼器線速度",
+          "en": "Encoder linear speed"
+        }
+      }
+    ],
+    "matlab": "% conveyor: start, prox, timer, motor\n% ladder equivalent as state\ns=0; % 0 idle 1 run\n% if start && ~estop, s=1; if timer, s=0",
+    "jump": {
+      "to": "/auto",
+      "label": "自動化七科全program"
+    },
+    "lessons": [
+      {
+        "id": "aut-1",
+        "minutes": 40,
+        "title": {
+          "zh": "氣壓回路",
+          "en": "Pneumatic circuits"
+        },
+        "steps": [
+          {
+            "zh": "單作用／雙作用缸，5/2 閥做換向",
+            "en": "Single/double acting; 5/2 valve reverses"
+          },
+          {
+            "zh": "節流閥調速，唔好靠減壓當調速",
+            "en": "Throttle for speed; do not use a regulator as a speed valve"
+          },
+          {
+            "zh": "順序：A+ B+ A− B−，先畫位移–步序圖",
+            "en": "Sequence A+ B+ A− B−: draw the displacement–step chart first"
+          }
+        ]
+      },
+      {
+        "id": "aut-2",
+        "minutes": 45,
+        "title": {
+          "zh": "PLC 梯級",
+          "en": "PLC ladder"
+        },
+        "steps": [
+          {
+            "zh": "左觸點、右線圈；掃描週期由上到下",
+            "en": "Contacts left, coils right; scan top to bottom"
+          },
+          {
+            "zh": "自我保持：起動並聯已運行之線圈",
+            "en": "Seal-in: start in parallel with the running coil"
+          },
+          {
+            "zh": "TON 延時、CTU 計數、比較塊做位置",
+            "en": "TON delay, CTU count, compare for position"
+          }
+        ]
+      },
+      {
+        "id": "aut-3",
+        "minutes": 35,
+        "title": {
+          "zh": "安全同感測",
+          "en": "Safety and sensing"
+        },
+        "steps": [
+          {
+            "zh": "急停硬線切斷，唔好只靠程式",
+            "en": "E-stop is hard-wired; do not rely on code alone"
+          },
+          {
+            "zh": "互鎖：兩缸唔好同時伸",
+            "en": "Interlock: two cylinders must not extend together"
+          },
+          {
+            "zh": "讀完呢科，去自動化七科補電路同 PID",
+            "en": "After this module, take the seven-course auto path for circuits and PID"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "timepiece-a",
+    "to": "/electives/timepiece-a",
+    "short": "時計A",
+    "order": 5,
+    "stream": "watch",
+    "code": "TPSA",
+    "zh": "時計科技研修 A",
+    "en": "Timepiece Technology Studies A",
+    "hd": "選修 · 機械機芯",
+    "why": {
+      "zh": "機械錶：齒輪系、擒縱、發條盒、擺輪。精密機械同公差嘅縮小版，對設計同工場都有用。",
+      "en": "Mechanical watches: gear train, escapement, barrel, balance. Miniature precision mechanics — useful for design and the workshop."
+    },
+    "path": [
+      {
+        "zh": "機芯佈局：條盒、輪系、擒縱、擺輪",
+        "en": "Layout: barrel, train, escapement, balance"
+      },
+      {
+        "zh": "齒輪比同週期",
+        "en": "Gear ratios and period"
+      },
+      {
+        "zh": "擒縱：擒縱輪、叉、衝擊",
+        "en": "Escapement: escape wheel, pallet, impulse"
+      },
+      {
+        "zh": "潤滑、間隙、檢查",
+        "en": "Lubrication, endshake, inspection"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "T = 2π √(I / κ)",
+        "mean": {
+          "zh": "擺輪週期",
+          "en": "Balance period"
+        }
+      },
+      {
+        "eq": "i = z2 / z1",
+        "mean": {
+          "zh": "齒數比",
+          "en": "Tooth ratio"
+        }
+      },
+      {
+        "eq": "f = 1 / T    (如 4 Hz = 28800 vph)",
+        "mean": {
+          "zh": "振動頻率",
+          "en": "Beat rate"
+        }
+      }
+    ],
+    "matlab": "I=2.2e-10; k=2.0e-8;          % kg m^2 , N m/rad\nT=2*pi*sqrt(I/k)\nvph=2/T*3600                   % vibrations per hour",
+    "lessons": [
+      {
+        "id": "tpa-1",
+        "minutes": 35,
+        "title": {
+          "zh": "輪系同能量",
+          "en": "Train and energy"
+        },
+        "steps": [
+          {
+            "zh": "發條盒儲能，輪系減速兼放大力矩",
+            "en": "Barrel stores energy; the train reduces speed and multiplies torque"
+          },
+          {
+            "zh": "中心輪、三番、四番、擒縱輪",
+            "en": "Centre, third, fourth, escape"
+          },
+          {
+            "zh": "秒針通常在四番輪",
+            "en": "The seconds hand usually sits on the fourth wheel"
+          }
+        ]
+      },
+      {
+        "id": "tpa-2",
+        "minutes": 40,
+        "title": {
+          "zh": "擒縱同擺輪",
+          "en": "Escapement and balance"
+        },
+        "steps": [
+          {
+            "zh": "擒縱把連續轉動拆成一格一格",
+            "en": "The escapement chops rotation into ticks"
+          },
+          {
+            "zh": "擺輪游絲決定頻率；快慢針改有效長度",
+            "en": "Hairspring sets frequency; regulator pins change effective length"
+          },
+          {
+            "zh": "28800 vph = 4 Hz = 8 拍／秒",
+            "en": "28800 vph = 4 Hz = 8 beats/s"
+          }
+        ]
+      },
+      {
+        "id": "tpa-3",
+        "minutes": 30,
+        "title": {
+          "zh": "裝配習慣",
+          "en": "Assembly habits"
+        },
+        "steps": [
+          {
+            "zh": "方向、油量、防塵；少油好過油浸",
+            "en": "Orientation, oil quantity, dust; too little oil beats a flood"
+          },
+          {
+            "zh": "端隙同齒側隙太緊會停，太鬆會響",
+            "en": "Endshake and backlash: too tight stops, too loose rattles"
+          },
+          {
+            "zh": "對照 SolidWorks：細模數齒輪同軸孔公差",
+            "en": "Against SolidWorks: fine-module gears and pivot-hole fits"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "timepiece-b",
+    "to": "/electives/timepiece-b",
+    "short": "時計B",
+    "order": 6,
+    "stream": "watch",
+    "code": "TPSB",
+    "zh": "時計科技研修 B",
+    "en": "Timepiece Technology Studies B",
+    "hd": "選修 · 石英、測試、組裝",
+    "why": {
+      "zh": "石英機芯、電路、步進摩打、測試同品質。A 科機械，B 科機電。兩科一齊先完整。",
+      "en": "Quartz movement, circuit, stepper, test and quality. A is mechanical, B is electromechanical. Take both."
+    },
+    "path": [
+      {
+        "zh": "石英振盪 32768 Hz 分頻",
+        "en": "Quartz 32768 Hz and division"
+      },
+      {
+        "zh": "CMOS 電路、步進摩打線圈",
+        "en": "CMOS circuit, stepper coil"
+      },
+      {
+        "zh": "電池、漏電流、停秒",
+        "en": "Battery, leakage, hack"
+      },
+      {
+        "zh": "測試：日差、防水、功能",
+        "en": "Test: rate, water resist, functions"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "32768 = 2^15 Hz",
+        "mean": {
+          "zh": "二分頻 15 次到 1 Hz",
+          "en": "15 divide-by-2 stages to 1 Hz"
+        }
+      },
+      {
+        "eq": "τ = I / (n · Φ)",
+        "mean": {
+          "zh": "步進力矩概念",
+          "en": "Stepper torque idea"
+        }
+      },
+      {
+        "eq": "rate = (T_meas − T_ref) / T_ref",
+        "mean": {
+          "zh": "日差",
+          "en": "Rate error"
+        }
+      }
+    ],
+    "matlab": "f0=32768;\nfor n=1:15, f0=f0/2; end\nf0   % 1 Hz",
+    "lessons": [
+      {
+        "id": "tpb-1",
+        "minutes": 30,
+        "title": {
+          "zh": "石英同分頻",
+          "en": "Quartz and division"
+        },
+        "steps": [
+          {
+            "zh": "晶體穩頻，溫度補償決定日差",
+            "en": "Crystal sets the frequency; temperature compensation sets rate"
+          },
+          {
+            "zh": "15 級二分頻：32768 → 1 Hz",
+            "en": "15 binary stages: 32768 → 1 Hz"
+          },
+          {
+            "zh": "對照微機科嘅時鐘同分頻器",
+            "en": "Same idea as MCU clocks and prescalers"
+          }
+        ]
+      },
+      {
+        "id": "tpb-2",
+        "minutes": 35,
+        "title": {
+          "zh": "步進同電池",
+          "en": "Stepper and battery"
+        },
+        "steps": [
+          {
+            "zh": "線圈脈衝推轉子，齒輪再去指針",
+            "en": "Coil pulse kicks the rotor; gears take it to the hands"
+          },
+          {
+            "zh": "脈衝要短，省電；漏電會瞓電池",
+            "en": "Short pulses save energy; leakage kills the cell"
+          },
+          {
+            "zh": "換電池先放電電容器，防機芯鎖死",
+            "en": "Discharge the cap when changing the cell, or the movement can lock"
+          }
+        ]
+      },
+      {
+        "id": "tpb-3",
+        "minutes": 30,
+        "title": {
+          "zh": "測試",
+          "en": "Testing"
+        },
+        "steps": [
+          {
+            "zh": "日差、振幅（機械）或脈衝寬（石英）",
+            "en": "Rate, amplitude (mech) or pulse width (quartz)"
+          },
+          {
+            "zh": "防水：氣壓或真空法，唔好當潛水證明亂戴",
+            "en": "Water test: air or vacuum; a stamp is not a diving licence"
+          },
+          {
+            "zh": "功能：日曆換日、停秒、夜光",
+            "en": "Functions: date change, hack, lume"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cad",
+    "to": "/electives/cad",
+    "short": "CAD",
+    "order": 7,
+    "stream": "cad",
+    "code": "EME4279",
+    "zh": "電腦輔助設計（3D 建模）",
+    "en": "Computer Aided Design with 3D modelling",
+    "hd": "選修 · 手冊 Sem 8 範例 2 · 14 cr",
+    "why": {
+      "zh": "SolidWorks 主場：零件、組合、工程圖、爆炸、BOM。接 EME3212 繪圖。五大 CAD 分頁喺軟件區。",
+      "en": "SolidWorks home: part, assembly, drawing, explode, BOM. Follows EME3212 drawing. The five CAD packages live under Software."
+    },
+    "path": [
+      {
+        "zh": "草圖約束 → Boss / Cut",
+        "en": "Sketch constraints → Boss / Cut"
+      },
+      {
+        "zh": "組合配合、干涉檢查",
+        "en": "Mates, interference"
+      },
+      {
+        "zh": "工程圖：三視、剖視、BOM",
+        "en": "Drawing: views, section, BOM"
+      },
+      {
+        "zh": "配置、方程式、出 STL",
+        "en": "Configurations, equations, STL out"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "MMGS, not IPS",
+        "mean": {
+          "zh": "單位先對",
+          "en": "Units first"
+        }
+      },
+      {
+        "eq": "fully defined sketch = black",
+        "mean": {
+          "zh": "完全定義",
+          "en": "Fully defined"
+        }
+      }
+    ],
+    "matlab": "% no MATLAB here — go to the CAD studio\n% part 2: 80 x 50 x 15 boss, 33 x 25 cut",
+    "jump": {
+      "to": "/solidworks",
+      "label": "SolidWorks 課（含 Cut）"
+    },
+    "lessons": [
+      {
+        "id": "cad-1",
+        "minutes": 40,
+        "title": {
+          "zh": "零件節奏",
+          "en": "Part rhythm"
+        },
+        "steps": [
+          {
+            "zh": "一個特徵一個意圖；唔好一個 sketch 畫成件",
+            "en": "One feature, one intent; do not draw the whole part in one sketch"
+          },
+          {
+            "zh": "Boss 先大件，Cut 再減料",
+            "en": "Boss the bulk, Cut the removal"
+          },
+          {
+            "zh": "件 2：80×50×15 再剪 33×25",
+            "en": "Part 2: 80×50×15 then cut 33×25"
+          }
+        ]
+      },
+      {
+        "id": "cad-2",
+        "minutes": 40,
+        "title": {
+          "zh": "組合",
+          "en": "Assembly"
+        },
+        "steps": [
+          {
+            "zh": "第一件固定；之後重合、同心、距離",
+            "en": "Fix the first part; then coincident, concentric, distance"
+          },
+          {
+            "zh": "干涉檢查先於出圖",
+            "en": "Interference check before drawing"
+          },
+          {
+            "zh": "爆炸圖講裝配順序",
+            "en": "Exploded view tells the build order"
+          }
+        ]
+      },
+      {
+        "id": "cad-3",
+        "minutes": 35,
+        "title": {
+          "zh": "工程圖",
+          "en": "Drawings"
+        },
+        "steps": [
+          {
+            "zh": "第一角／第三角跟標準；HD 工場常用第一角",
+            "en": "1st/3rd angle by standard; HD shops often use 1st"
+          },
+          {
+            "zh": "尺寸唔重複、由基準出發",
+            "en": "No duplicate dims; start from datums"
+          },
+          {
+            "zh": "BOM 同零件號一致",
+            "en": "BOM matches part numbers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "rolling-stock",
+    "to": "/electives/rolling-stock",
+    "short": "車輛",
+    "order": 8,
+    "stream": "rail",
+    "code": "RSR",
+    "zh": "鐵道車輛",
+    "en": "Rolling Stock in Railway",
+    "hd": "選修 · 轉向架、牽引、制動",
+    "why": {
+      "zh": "車體、轉向架、輪軌接觸、牽引同制動。鐵路三科入門。之後 RST I／II 再入維修同車體細節。",
+      "en": "Carbody, bogie, wheel–rail, traction and brake. Gateway to the three railway electives. RST I/II go deeper on body and maintenance."
+    },
+    "path": [
+      {
+        "zh": "限界、軌距、軸重",
+        "en": "Gauge, track gauge, axle load"
+      },
+      {
+        "zh": "轉向架：一系二系懸掛",
+        "en": "Bogie: primary and secondary suspension"
+      },
+      {
+        "zh": "黏着牽引、再生制動",
+        "en": "Adhesion traction, regenerative brake"
+      },
+      {
+        "zh": "車鉤、貫通道、車門",
+        "en": "Coupler, gangway, doors"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "μ N ≥ F_trac",
+        "mean": {
+          "zh": "黏着限制牽引力",
+          "en": "Adhesion limits tractive effort"
+        }
+      },
+      {
+        "eq": "P = F v",
+        "mean": {
+          "zh": "牽引功率",
+          "en": "Tractive power"
+        }
+      },
+      {
+        "eq": "s ≈ v² / (2 a)",
+        "mean": {
+          "zh": "制動距離概念",
+          "en": "Stopping-distance idea"
+        }
+      }
+    ],
+    "matlab": "m=40e3; v=80/3.6; a=1.1;   % kg, m/s, m/s^2\ns=v^2/(2*a)\nF=m*a",
+    "lessons": [
+      {
+        "id": "rsr-1",
+        "minutes": 35,
+        "title": {
+          "zh": "轉向架",
+          "en": "Bogies"
+        },
+        "steps": [
+          {
+            "zh": "輪對、軸箱、構架、空氣彈簧",
+            "en": "Wheelset, axlebox, frame, air spring"
+          },
+          {
+            "zh": "一系管輪軌高頻，二系管車體舒適",
+            "en": "Primary for high-frequency wheel, secondary for carbody comfort"
+          },
+          {
+            "zh": "輪緣同踏面：通過曲線靠蠕滑",
+            "en": "Flange and tread: curves by creep, not just the flange"
+          }
+        ]
+      },
+      {
+        "id": "rsr-2",
+        "minutes": 40,
+        "title": {
+          "zh": "牽引同制動",
+          "en": "Traction and brake"
+        },
+        "steps": [
+          {
+            "zh": "黏着：雨天 μ 跌，空轉保護",
+            "en": "Adhesion: rain drops μ, wheelslip protection"
+          },
+          {
+            "zh": "電制動優先，空氣制動補低速同停妥",
+            "en": "Electric brake first; air covers low speed and holding"
+          },
+          {
+            "zh": "再生把動能交返接觸網",
+            "en": "Regen dumps kinetic energy back to the catenary"
+          }
+        ]
+      },
+      {
+        "id": "rsr-3",
+        "minutes": 30,
+        "title": {
+          "zh": "車體介面",
+          "en": "Carbody interfaces"
+        },
+        "steps": [
+          {
+            "zh": "車鉤傳力、貫通道密封、車門障礙檢測",
+            "en": "Coupler loads, gangway seal, door obstacle detection"
+          },
+          {
+            "zh": "防火、疏散、車頭碰撞能量管理",
+            "en": "Fire, evacuation, crash energy management"
+          },
+          {
+            "zh": "下一步讀軌道系統同 RST I",
+            "en": "Next: track system and RST I"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "track",
+    "to": "/electives/track",
+    "short": "軌道",
+    "order": 9,
+    "stream": "rail",
+    "code": "TST",
+    "zh": "鐵道軌道系統",
+    "en": "Track System in Railway",
+    "hd": "選修 · 鋼軌、道岔、幾何",
+    "why": {
+      "zh": "鋼軌、軌枕、道碴／板式、道岔、超高、緩和曲線。車輛科嘅地面。Civil 背景喺幾何同路基有優勢。",
+      "en": "Rail, sleeper, ballast/slab, turnout, cant, transition curve. The ground under rolling stock. Civil background helps on geometry and formation."
+    },
+    "path": [
+      {
+        "zh": "軌距、超高、橫坡",
+        "en": "Gauge, cant, crosslevel"
+      },
+      {
+        "zh": "鋼軌斷面、扣件、軌枕",
+        "en": "Rail profile, fastening, sleeper"
+      },
+      {
+        "zh": "道岔：尖軌、轍叉、護軌",
+        "en": "Turnout: switch, frog, check rail"
+      },
+      {
+        "zh": "養護：磨耗、波浪、幾何測量",
+        "en": "Maintenance: wear, corrugation, geometry"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "e = v² G / (g R)",
+        "mean": {
+          "zh": "平衡超高",
+          "en": "Equilibrium cant"
+        }
+      },
+      {
+        "eq": "L = C · v · Δe",
+        "mean": {
+          "zh": "緩和曲線長度概念",
+          "en": "Transition length idea"
+        }
+      },
+      {
+        "eq": "σ_hertz ∝ (N / R_eq)^(1/3) …",
+        "mean": {
+          "zh": "輪軌接觸應力入口",
+          "en": "Wheel–rail Hertz entry"
+        }
+      }
+    ],
+    "matlab": "v=22; R=200; G=1.435; g=9.81; % m/s, m\ne=v^2*G/(g*R)                 % m cant",
+    "lessons": [
+      {
+        "id": "tst-1",
+        "minutes": 35,
+        "title": {
+          "zh": "幾何",
+          "en": "Geometry"
+        },
+        "steps": [
+          {
+            "zh": "軌距 1435 mm 係標準；窄軌另一套",
+            "en": "1435 mm is standard gauge; narrow gauge is another family"
+          },
+          {
+            "zh": "超高平衡離心力；不足超高有未平衡加速度",
+            "en": "Cant balances centripetal demand; cant deficiency is leftover accel"
+          },
+          {
+            "zh": "緩和曲線把直線超高同圓曲線接順",
+            "en": "Transition blends tangent cant into the circular curve"
+          }
+        ]
+      },
+      {
+        "id": "tst-2",
+        "minutes": 35,
+        "title": {
+          "zh": "結構",
+          "en": "Structure"
+        },
+        "steps": [
+          {
+            "zh": "道碴可搗固；板式少養護、振動路徑唔同",
+            "en": "Ballast can be tamped; slab needs less work, different vibration path"
+          },
+          {
+            "zh": "扣件彈性決定一系剛度的一部分",
+            "en": "Fastening stiffness is part of the primary ride"
+          },
+          {
+            "zh": "鋼軌磨耗同波浪要打磨",
+            "en": "Wear and corrugation need grinding"
+          }
+        ]
+      },
+      {
+        "id": "tst-3",
+        "minutes": 35,
+        "title": {
+          "zh": "道岔",
+          "en": "Turnouts"
+        },
+        "steps": [
+          {
+            "zh": "尖軌搬進路；轍叉係交叉心",
+            "en": "Switch blades steer; the frog is the crossing"
+          },
+          {
+            "zh": "護軌防止對側輪跌入有害空間",
+            "en": "Check rail stops the opposite wheel dropping into the gap"
+          },
+          {
+            "zh": "道岔號數愈大，側向通過速度愈高",
+            "en": "Higher turnout number → higher diverging speed"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "robotics",
+    "to": "/electives/robotics",
+    "short": "機械人",
+    "order": 10,
+    "stream": "auto",
+    "code": "ROBO",
+    "zh": "應用機械人學",
+    "en": "Applied Robotics",
+    "hd": "選修 · 接自動化／微機",
+    "why": {
+      "zh": "開鏈機構、DH 參數、正／逆運動學、夾爪同安全。工場機械臂同自動化科接龍。",
+      "en": "Open chains, DH parameters, forward/inverse kinematics, grippers and safety. Shop-floor arms join the automation module."
+    },
+    "path": [
+      {
+        "zh": "關節型／直角／SCARA／Delta",
+        "en": "Articulated / Cartesian / SCARA / Delta"
+      },
+      {
+        "zh": "DH：a, α, d, θ",
+        "en": "DH: a, α, d, θ"
+      },
+      {
+        "zh": "正運動學 T、逆解多解",
+        "en": "Forward T, inverse multiple solutions"
+      },
+      {
+        "zh": "教導盒、IO、安全光幕",
+        "en": "Teach pendant, I/O, light curtain"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "T = A1 A2 … An",
+        "mean": {
+          "zh": "正運動學",
+          "en": "Forward kinematics"
+        }
+      },
+      {
+        "eq": "ẋ = J(q) q̇",
+        "mean": {
+          "zh": "Jacobian",
+          "en": "Jacobian"
+        }
+      },
+      {
+        "eq": "τ = Jᵀ F",
+        "mean": {
+          "zh": "靜力映射",
+          "en": "Static map"
+        }
+      }
+    ],
+    "matlab": "% 2R planar: reach\nl1=0.35; l2=0.30; th1=pi/3; th2=-pi/4;\nx=l1*cos(th1)+l2*cos(th1+th2);\ny=l1*sin(th1)+l2*sin(th1+th2);\n[x y]",
+    "jump": {
+      "to": "/auto",
+      "label": "自動化七科（微機／控制）"
+    },
+    "lessons": [
+      {
+        "id": "rob-1",
+        "minutes": 35,
+        "title": {
+          "zh": "構型",
+          "en": "Architectures"
+        },
+        "steps": [
+          {
+            "zh": "6 軸關節型：靈活、奇異點要避開",
+            "en": "6-axis articulated: dexterous, watch singularities"
+          },
+          {
+            "zh": "SCARA：水平快、垂直剛；Delta：輕快拾放",
+            "en": "SCARA: fast horizontal, stiff vertical; Delta: light pick-and-place"
+          },
+          {
+            "zh": "選構型先於選牌子",
+            "en": "Pick the architecture before the brand"
+          }
+        ]
+      },
+      {
+        "id": "rob-2",
+        "minutes": 45,
+        "title": {
+          "zh": "DH 同解",
+          "en": "DH and solutions"
+        },
+        "steps": [
+          {
+            "zh": "每一桿四個數，連乘得出工具座標",
+            "en": "Four numbers per link; the product is tool pose"
+          },
+          {
+            "zh": "逆解可能多組；工場用教導點多過純公式",
+            "en": "Inverse may have many sets; shops teach points more than closed form"
+          },
+          {
+            "zh": "奇異：Jacobian 跌秩，速度爆",
+            "en": "Singularity: Jacobian rank drops, speeds explode"
+          }
+        ]
+      },
+      {
+        "id": "rob-3",
+        "minutes": 30,
+        "title": {
+          "zh": "安全同 IO",
+          "en": "Safety and I/O"
+        },
+        "steps": [
+          {
+            "zh": "光幕、圍欄、縮減模式；人入工作區要停",
+            "en": "Curtain, fence, reduced mode; stop if a person enters the cell"
+          },
+          {
+            "zh": "夾爪氣壓或電動，真空杯有洩漏檢測",
+            "en": "Gripper pneumatic or electric; vacuum cups need leak detect"
+          },
+          {
+            "zh": "PLC 握手：準備、完成、故障",
+            "en": "PLC handshake: ready, done, fault"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "jet",
+    "to": "/electives/jet",
+    "short": "噴射",
+    "order": 11,
+    "stream": "aero",
+    "code": "JET",
+    "zh": "噴射引擎介紹",
+    "en": "Introduction to Jet Engine",
+    "hd": "選修 · 接應用熱流體 Brayton",
+    "why": {
+      "zh": "進氣、壓氣機、燃燒室、渦輪、噴管。Brayton 嘅飛行版。維修入口同安全。",
+      "en": "Intake, compressor, combustor, turbine, nozzle. Brayton that flies. Maintenance entry and safety."
+    },
+    "path": [
+      {
+        "zh": "氣體路徑同站號 0–8",
+        "en": "Gas path and stations 0–8"
+      },
+      {
+        "zh": "壓比、TIT、旁通比",
+        "en": "Pressure ratio, TIT, bypass ratio"
+      },
+      {
+        "zh": "推力、SFC、推進效率",
+        "en": "Thrust, SFC, propulsive efficiency"
+      },
+      {
+        "zh": "外物損傷、熱端檢查",
+        "en": "FOD, hot-section inspection"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "F = ṁe ve − ṁ0 v0 + (pe−p0)Ae",
+        "mean": {
+          "zh": "淨推力",
+          "en": "Net thrust"
+        }
+      },
+      {
+        "eq": "SFC = ṁf / F",
+        "mean": {
+          "zh": "推力燃油消耗",
+          "en": "Thrust specific fuel consumption"
+        }
+      },
+      {
+        "eq": "BPR = ṁ_bypass / ṁ_core",
+        "mean": {
+          "zh": "旁通比",
+          "en": "Bypass ratio"
+        }
+      }
+    ],
+    "matlab": "pi=24; g=1.4;\neta=1-pi^((1-g)/g)   % ideal Brayton\nbpr=8; mcore=50; mb=bpr*mcore;",
+    "lessons": [
+      {
+        "id": "jet-1",
+        "minutes": 35,
+        "title": {
+          "zh": "氣體路徑",
+          "en": "Gas path"
+        },
+        "steps": [
+          {
+            "zh": "進氣減速增壓 → 壓氣機 → 燃燒 → 渦輪 → 噴管",
+            "en": "Intake ram → compressor → burn → turbine → nozzle"
+          },
+          {
+            "zh": "渦輪功先餵壓氣機，剩低變動能",
+            "en": "Turbine work feeds the compressor first; leftover becomes jet"
+          },
+          {
+            "zh": "渦扇：外涵道走大量慢空氣，效率高",
+            "en": "Turbofan: lots of slower bypass air, better efficiency"
+          }
+        ]
+      },
+      {
+        "id": "jet-2",
+        "minutes": 35,
+        "title": {
+          "zh": "性能數字",
+          "en": "Performance numbers"
+        },
+        "steps": [
+          {
+            "zh": "壓比同 TIT 決定熱效率上限",
+            "en": "Pressure ratio and TIT cap thermal efficiency"
+          },
+          {
+            "zh": "SFC 愈細愈慳油；高旁通民用機",
+            "en": "Lower SFC is thriftier; civil engines want high BPR"
+          },
+          {
+            "zh": "對照應用熱流體嘅 Brayton 課",
+            "en": "Map onto the Applied Thermo Fluids Brayton lesson"
+          }
+        ]
+      },
+      {
+        "id": "jet-3",
+        "minutes": 30,
+        "title": {
+          "zh": "維修入口",
+          "en": "Maintenance entry"
+        },
+        "steps": [
+          {
+            "zh": "FOD：進氣口檢查、葉片缺口",
+            "en": "FOD: intake inspection, nicked blades"
+          },
+          {
+            "zh": "熱端：燃燒室、渦輪葉片氧化同裂",
+            "en": "Hot section: combustor and blade oxidation/cracks"
+          },
+          {
+            "zh": "唔好當飛機維修牌；呢科係原理",
+            "en": "This is not an aircraft-maintenance licence; it is the physics"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "rst1",
+    "to": "/electives/rst1",
+    "short": "RST1",
+    "order": 12,
+    "stream": "rail",
+    "code": "RST1",
+    "zh": "鐵路車輛技術（一）",
+    "en": "Rolling Stock Technology I",
+    "hd": "選修 · 車體、車端、內裝",
+    "why": {
+      "zh": "車體結構、材料、車端能量吸收、內裝同人因。鐵道車輛科嘅構造篇。",
+      "en": "Carbody structure, materials, crash energy at the ends, interiors and human factors. The construction half of rolling stock."
+    },
+    "path": [
+      {
+        "zh": "車體承載：筒體、底架、側牆",
+        "en": "Carbody: tube, underframe, side wall"
+      },
+      {
+        "zh": "鋁／鋼／複合，防腐同防火",
+        "en": "Al / steel / composite, corrosion and fire"
+      },
+      {
+        "zh": "車端碰撞、車鉤高度",
+        "en": "End crash, coupler height"
+      },
+      {
+        "zh": "內裝模組、空調風道",
+        "en": "Interior modules, HVAC ducts"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "σ = M y / I",
+        "mean": {
+          "zh": "車體彎矩校核",
+          "en": "Carbody bending check"
+        }
+      },
+      {
+        "eq": "E_abs = ∫ F ds",
+        "mean": {
+          "zh": "碰撞吸能",
+          "en": "Crash energy"
+        }
+      }
+    ],
+    "matlab": "% simple beam carbody sag\nL=20; w=18e3*9.81/L; I=0.08; E=70e9; y=L/2;\nM=w*L^2/8; sig=M*(0.7)/I",
+    "lessons": [
+      {
+        "id": "rst1-1",
+        "minutes": 35,
+        "title": {
+          "zh": "筒體結構",
+          "en": "Tube structure"
+        },
+        "steps": [
+          {
+            "zh": "底架承縱向，側牆同車頂合成筒",
+            "en": "Underframe takes long loads; sides and roof close the tube"
+          },
+          {
+            "zh": "開口（門窗）要補強，否則應力集中",
+            "en": "Door/window cuts need pad-up or stress concentrates"
+          },
+          {
+            "zh": "對照材料力學：梁 + 薄殼入口",
+            "en": "Against MoM: beam + thin-shell entry"
+          }
+        ]
+      },
+      {
+        "id": "rst1-2",
+        "minutes": 35,
+        "title": {
+          "zh": "材料同防火",
+          "en": "Materials and fire"
+        },
+        "steps": [
+          {
+            "zh": "鋁輕、焊要工序；不銹鋼耐蝕",
+            "en": "Al is light, weld procedure matters; stainless resists corrosion"
+          },
+          {
+            "zh": "內裝材料要難燃、低煙、低毒",
+            "en": "Interior materials: low fire, smoke, toxicity"
+          },
+          {
+            "zh": "電纜貫穿要封阻",
+            "en": "Cable penetrations need fire stopping"
+          }
+        ]
+      },
+      {
+        "id": "rst1-3",
+        "minutes": 30,
+        "title": {
+          "zh": "車端同內裝",
+          "en": "Ends and interior"
+        },
+        "steps": [
+          {
+            "zh": "吸能區不可做司機生存空間",
+            "en": "Crush zone is not the cab survival space"
+          },
+          {
+            "zh": "車鉤高度同行程要同對向車相容",
+            "en": "Coupler height and stroke must match the other car"
+          },
+          {
+            "zh": "下一步 RST II：維修、轉向架細、系統",
+            "en": "Next RST II: maintenance, bogie detail, systems"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "rst2",
+    "to": "/electives/rst2",
+    "short": "RST2",
+    "order": 13,
+    "stream": "rail",
+    "code": "RST2",
+    "zh": "鐵路車輛技術（二）",
+    "en": "Rolling Stock Technology II",
+    "hd": "選修 · 維修、系統、試驗",
+    "why": {
+      "zh": "計劃維修、轉向架分解、制動試驗、列車控制介面。I 科構造、II 科運用。",
+      "en": "Planned maintenance, bogie overhaul, brake test, train-control interface. I is structure, II is operation."
+    },
+    "path": [
+      {
+        "zh": "維修等級：日檢、月檢、架修、大修",
+        "en": "Levels: daily, monthly, bogie, general overhaul"
+      },
+      {
+        "zh": "輪對鏇修、軸承、踏面",
+        "en": "Wheel lathe, bearings, tread"
+      },
+      {
+        "zh": "制動試驗、泄漏、閘瓦／碟",
+        "en": "Brake test, leakage, shoe/disc"
+      },
+      {
+        "zh": "TCMS、ATP／ATO 介面入口",
+        "en": "TCMS, ATP/ATO interface entry"
+      }
+    ],
+    "formulas": [
+      {
+        "eq": "t_cycle = km / v_mean",
+        "mean": {
+          "zh": "週轉時間概念",
+          "en": "Cycle-time idea"
+        }
+      },
+      {
+        "eq": "wear ∝ ∫ p v dt",
+        "mean": {
+          "zh": "磨耗入口",
+          "en": "Wear entry"
+        }
+      }
+    ],
+    "matlab": "% wheel wear budget\nd0=840; dmin=780; % mm\nlife_km=8e5;\nrate=(d0-dmin)/life_km  % mm per km",
+    "lessons": [
+      {
+        "id": "rst2-1",
+        "minutes": 35,
+        "title": {
+          "zh": "維修制度",
+          "en": "Maintenance regime"
+        },
+        "steps": [
+          {
+            "zh": "預防性：按公里／日曆；狀態修：按監測",
+            "en": "Preventive by km/calendar; condition-based by monitors"
+          },
+          {
+            "zh": "架修拆轉向架，大修拆車體系統",
+            "en": "Bogie overhaul strips bogies; general overhaul strips systems"
+          },
+          {
+            "zh": "紀錄同零件號，唔好混車",
+            "en": "Records and part numbers; do not mix cars"
+          }
+        ]
+      },
+      {
+        "id": "rst2-2",
+        "minutes": 35,
+        "title": {
+          "zh": "輪對同制動",
+          "en": "Wheelsets and brake"
+        },
+        "steps": [
+          {
+            "zh": "鏇輪恢復踏面；直徑差有限度",
+            "en": "Turn the tread; diameter mismatch has a limit"
+          },
+          {
+            "zh": "軸承溫升係警報，唔係等佢咬死",
+            "en": "Bearing temperature is an alarm, not a wait-and-seize"
+          },
+          {
+            "zh": "制動試驗：保壓、泄漏、停車距離",
+            "en": "Brake test: hold, leak, stopping distance"
+          }
+        ]
+      },
+      {
+        "id": "rst2-3",
+        "minutes": 30,
+        "title": {
+          "zh": "系統介面",
+          "en": "System interfaces"
+        },
+        "steps": [
+          {
+            "zh": "TCMS 匯流排睇狀態；故障碼先於拆件",
+            "en": "TCMS bus for status; fault codes before stripping parts"
+          },
+          {
+            "zh": "ATP 超速要制動；ATO 係駕駛自動化",
+            "en": "ATP brakes overspeed; ATO is driving automation"
+          },
+          {
+            "zh": "同自動化選修：列車都係閉環控制",
+            "en": "With the automation elective: a train is a closed loop too"
+          }
+        ]
+      }
+    ]
+  }
+]
 };
