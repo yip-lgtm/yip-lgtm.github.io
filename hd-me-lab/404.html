@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<title>ME Lab</title>
+<script>
+(function () {
+  var base = "/hd-me-lab";
+  var path = location.pathname;
+  if (path.indexOf(base) === 0) path = path.slice(base.length);
+  if (!path) path = "/";
+  location.replace(base + "/#" + path + location.search + location.hash.replace(/^#/, ""));
+})();
+</script>
+<p><a href="/hd-me-lab/">ME Lab</a></p>
