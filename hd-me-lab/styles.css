@@ -21,6 +21,13 @@ p { margin: 0 0 0.75rem; }
 .wrap { max-width: 72rem; margin: 0 auto; padding: 0 1rem 6rem; }
 header.top { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--border); background: color-mix(in oklab, var(--bg) 92%, transparent); backdrop-filter: blur(10px); }
 .row { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 0.75rem 0; }
+.head-right { display: flex; align-items: center; gap: 0.5rem; }
+.lang-sw { display: flex; align-items: center; gap: 0.35rem; }
+.lang-sw .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; padding: 2px; }
+.lang-sw button { height: 2.75rem; min-width: 2.75rem; padding: 0 0.75rem; border: 0; background: transparent; color: var(--muted); border-radius: 6px; font-size: 0.875rem; }
+.lang-sw button.on { background: var(--raised); color: var(--fg); }
+.lang-sw .trad { border: 1px solid var(--border); font-size: 0.75rem; }
+@media (max-width: 639px) { .lang-sw .trad { display: none; } }
 .brand { font-weight: 500; display: flex; align-items: baseline; gap: 0.5rem; }
 .brand span { color: var(--muted); font-size: 0.75rem; }
 nav.main a { padding: 0.5rem 0.75rem; border-radius: 8px; color: var(--muted); font-size: 0.875rem; }

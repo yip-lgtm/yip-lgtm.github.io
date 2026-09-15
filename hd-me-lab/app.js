@@ -2,12 +2,12 @@
 (function () {
   const ME = window.ME;
   const NAV = [
-    { href: "#/", key: "/", label: "總覽" },
-    { href: "#/curriculum", key: "/curriculum", label: "課程" },
-    { href: "#/tools", key: "/tools", label: "軟件" },
-    { href: "#/auto", key: "/auto", label: "自動化" },
-    { href: "#/electives", key: "/electives", label: "選修" },
-    { href: "#/lab", key: "/lab", label: "計算台" },
+    { href: "#/", key: "/", zh: "總覽", en: "Home" },
+    { href: "#/curriculum", key: "/curriculum", zh: "課程", en: "Course" },
+    { href: "#/tools", key: "/tools", zh: "軟件", en: "CAD" },
+    { href: "#/auto", key: "/auto", zh: "自動化", en: "Auto" },
+    { href: "#/electives", key: "/electives", zh: "選修", en: "Electives" },
+    { href: "#/lab", key: "/lab", zh: "計算台", en: "Lab" },
   ];
   const SOFT = [
     { slug: "autocad", label: "AutoCAD" },
@@ -18,6 +18,36 @@
     { slug: "matlab", label: "MATLAB" },
   ];
   const PK = "me-lab-pages-progress";
+  const LK = "me-lab-lang";
+  function loadLang() {
+    try { return localStorage.getItem(LK) === "en" ? "en" : "zh"; } catch { return "zh"; }
+  }
+  function saveLang(l) {
+    localStorage.setItem(LK, l);
+    document.documentElement.lang = l === "en" ? "en" : "zh-Hant";
+  }
+  function t(bi) {
+    if (bi == null) return "";
+    if (typeof bi === "string") return bi;
+    return loadLang() === "en" ? (bi.en || bi.zh) : (bi.zh || bi.en);
+  }
+  function langHtml() {
+    const l = loadLang();
+    return `<div class="seg">
+      <button type="button" data-lang="zh" class="${l === "zh" ? "on" : ""}" aria-pressed="${l === "zh"}" aria-label="中文（繁體）">中</button>
+      <button type="button" data-lang="en" class="${l === "en" ? "on" : ""}" aria-pressed="${l === "en"}" aria-label="English">EN</button>
+    </div>
+    <button type="button" data-lang="zh" class="trad ${l === "zh" ? "on" : ""}" aria-label="繁體中文">繁體</button>`;
+  }
+  function bindLang(root) {
+    if (!root) return;
+    root.querySelectorAll("[data-lang]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        saveLang(btn.getAttribute("data-lang"));
+        render({ keepScroll: true });
+      });
+    });
+  }
   const GH = "https://github.com/yip-lgtm/hd-mech-eng/blob/main/";
   const NK = "me-lab-page-notes";
   const GH_MOD = {
@@ -106,7 +136,7 @@
             ? (p === "/curriculum" || p === "/files" || p.startsWith("/modules"))
           : p === n.key || p.startsWith(n.key + "/");
       const softOn = n.key === "/tools" && SOFT.some((s) => p === "/" + s.slug);
-      return `<a href="${n.href}" class="${on || softOn ? "on" : ""}">${n.label}</a>`;
+      return `<a href="${n.href}" class="${on || softOn ? "on" : ""}">${esc(t({ zh: n.zh, en: n.en }))}</a>`;
     }).join("");
   }
 
@@ -115,21 +145,21 @@
     const el = document.getElementById("subnav");
     let items = [];
     if (p === "/tools" || SOFT.some((s) => p === "/" + s.slug)) {
-      items = [{ href: "#/tools", label: "總覽", on: p === "/tools" }].concat(
+      items = [{ href: "#/tools", label: t({ zh: "總覽", en: "Overview" }), on: p === "/tools" }].concat(
         SOFT.map((s) => ({ href: "#/" + s.slug, label: s.label, on: p === "/" + s.slug }))
       );
     } else if (p === "/auto" || p.startsWith("/auto/")) {
-      items = [{ href: "#/auto", label: "總覽", on: p === "/auto" }].concat(
-        ME.auto.map((c) => ({ href: "#/auto/" + c.slug, label: c.short, on: p === "/auto/" + c.slug }))
+      items = [{ href: "#/auto", label: t({ zh: "總綱", en: "Overview" }), on: p === "/auto" }].concat(
+        ME.auto.map((c) => ({ href: "#/auto/" + c.slug, label: t({ zh: c.short, en: c.en }), on: p === "/auto/" + c.slug }))
       );
     } else if (p === "/electives" || p.startsWith("/electives/")) {
-      items = [{ href: "#/electives", label: "全部", on: p === "/electives" }].concat(
-        (ME.electives || []).map((c) => ({ href: "#/electives/" + c.slug, label: c.short, on: p === "/electives/" + c.slug }))
+      items = [{ href: "#/electives", label: t({ zh: "全部", en: "All" }), on: p === "/electives" }].concat(
+        (ME.electives || []).map((c) => ({ href: "#/electives/" + c.slug, label: t({ zh: c.short, en: c.en }), on: p === "/electives/" + c.slug }))
       );
     } else if (p === "/curriculum" || p === "/files" || p.startsWith("/modules")) {
       items = [
-        { href: "#/curriculum", label: "九學期", on: p === "/curriculum" },
-        { href: "#/files", label: "檔案庫", on: p === "/files" || p.startsWith("/modules") },
+        { href: "#/curriculum", label: t({ zh: "九學期", en: "Semesters" }), on: p === "/curriculum" },
+        { href: "#/files", label: t({ zh: "檔案庫", en: "Files" }), on: p === "/files" || p.startsWith("/modules") },
       ];
     }
     if (!items.length) {
@@ -161,7 +191,7 @@
     const p = loadP();
     const rows = steps.map((st, i) => {
       const key = id + ":" + i;
-      const label = bilingual ? `<span>${esc(st.zh)}</span><span class="subtle">${esc(st.en)}</span>` : esc(st);
+      const label = bilingual ? esc(t(st)) : esc(st);
       return `<label class="chk"><input type="checkbox" data-k="${esc(key)}" ${p[key] ? "checked" : ""}><span>${label}</span></label>`;
     }).join("");
     return `<article class="lesson"><h3>${esc(title)} <span class="subtle">${minutes} min</span></h3>${rows}</article>`;
@@ -186,11 +216,11 @@
       <section class="hero">
         <div>
           <p class="kicker">Higher Diploma · Mechanical Engineering</p>
-          <h1 class="big">機械工程自學台</h1>
-          <p class="muted">IVE 青衣 EG524701 PTE。機械五大 CAD、MATLAB／Simulink、自動化七科、選修 13 科全讀。</p>
+          <h1 class="big">${esc(t({ zh: "機械工程自學台", en: "Mechanical Engineering Lab" }))}</h1>
+          <p class="muted">${esc(t({ zh: "IVE 青衣 EG524701 PTE。機械五大 CAD、MATLAB／Simulink、自動化七科、選修 13 科全讀。", en: "IVE Tsing Yi EG524701 PTE. Five mechanical CAD packages, MATLAB/Simulink, seven automation courses, all 13 electives." }))}</p>
           <div class="btns">
-            <a class="btn pri" href="#/solidworks">今日學 SolidWorks Cut</a>
-            <a class="btn sec" href="#/files">檔案庫 · GitHub</a>
+            <a class="btn pri" href="#/solidworks">${esc(t({ zh: "今日學 SolidWorks Cut", en: "Learn SolidWorks Cut today" }))}</a>
+            <a class="btn sec" href="#/files">${esc(t({ zh: "檔案庫 · GitHub", en: "Files · GitHub" }))}</a>
           </div>
         </div>
         <div class="card" style="padding:0;overflow:hidden">
@@ -227,10 +257,9 @@
         <a class="mod-row" href="#/modules/${encodeURIComponent(m.code)}">
           <div class="code">${esc(m.code)}</div>
           <div>
-            <strong>${esc(m.title)}</strong>
-            <p class="subtle" style="margin:0">${esc(m.titleEn)}</p>
+            <strong>${esc(loadLang() === "en" ? m.titleEn : m.title)}</strong>
             <p class="muted" style="margin:0.3rem 0 0">${esc(m.why)}</p>
-            <p class="subtle" style="margin:0.4rem 0 0">開 file →</p>
+            <p class="subtle" style="margin:0.4rem 0 0">${esc(t({ zh: "開 file →", en: "Open file →" }))}</p>
           </div>
           <div><span class="pill ${esc(m.track)}">${esc(m.track)}</span> <span class="subtle">${m.credits} cr</span></div>
         </a>`).join("");
@@ -238,13 +267,13 @@
     }).join("<div style='height:0.75rem'></div>");
     return `
       <p class="kicker">EG524701</p>
-      <h1>課程</h1>
-      <p class="muted">撳單元開 file。接私人筆記庫 hd-mech-eng。工場 I 唔好豁。IA 畢業前必須申請。</p>\n      <p><a class="btn sec" href="#/files">檔案庫 · backup / upload</a></p>
+      <h1>${esc(t({ zh: "課程", en: "Curriculum" }))}</h1>
+      <p class="muted">${esc(t({ zh: "撳單元開 file。接私人筆記庫 hd-mech-eng。工場 I 唔好豁。IA 畢業前必須申請。", en: "Open a module file. Notes live in private repo hd-mech-eng. Do not exempt Workshop I. Apply for IA before graduation." }))}</p>\n      <p><a class="btn sec" href="#/files">${esc(t({ zh: "檔案庫 · backup / upload", en: "Files · backup / upload" }))}</a></p>
       <div class="grid" style="margin-top:1.25rem">${blocks}</div>
       <section class="sec">
-        <h2>選修池 · 13 科全讀</h2>
-        <p class="muted">官方 Sem 8 揀 2 科（各 14 cr）。你要讀全部，自學台全開。</p>
-        <div class="grid g2">${(ME.electives || []).map((c) => `<a class="card" href="#/electives/${c.slug}"><p class="subtle">${esc(c.code)}</p><h3>${esc(c.zh)}</h3><p class="subtle">${esc(c.en)}</p></a>`).join("")}</div>
+        <h2>${esc(t({ zh: "選修池 · 13 科全讀", en: "Elective pool · all 13" }))}</h2>
+        <p class="muted">${esc(t({ zh: "官方 Sem 8 揀 2 科（各 14 cr）。你要讀全部，自學台全開。", en: "Award Sem 8 picks 2 (14 cr each). You want every module, so all 13 are open." }))}</p>
+        <div class="grid g2">${(ME.electives || []).map((c) => `<a class="card" href="#/electives/${c.slug}"><p class="subtle">${esc(c.code)}</p><h3>${esc(t({ zh: c.zh, en: c.en }))}</h3></a>`).join("")}</div>
       </section>
       <a class="card" style="margin-top:1rem;display:block" href="#/modules/${encodeURIComponent(ME.ia.code)}">
         <p class="code">${esc(ME.ia.code)}</p>
@@ -288,11 +317,11 @@
 
   function autoHub() {
     return `
-      <p class="kicker">Bilingual · 中英對照</p>
-      <h1>自動化</h1>
-      <p class="muted">順序：電路 → 訊號 → 微機／控制論 → 自控原理 → 工程控制論 → 卡爾曼。Wiener 控制論 ≠ 自控教科書；錢學森工程控制論 ≈ 狀態空間。</p>
+      <p class="kicker">${esc(t({ zh: "07 科 · EME3228 → EME4273", en: "7 courses · EME3228 → EME4273" }))}</p>
+      <h1>${esc(t({ zh: "自動化", en: "Automation" }))}</h1>
+      <p class="muted">${esc(t({ zh: "順序：電路 → 訊號 → 微機／控制論 → 自控原理 → 工程控制論 → 卡爾曼。Wiener 控制論 ≠ 自控教科書；錢學森工程控制論 ≈ 狀態空間。", en: "Order: circuits → signals → MCU / cybernetics → automatic control → engineering cybernetics → Kalman. Wiener cybernetics ≠ a control textbook; Tsien ≈ state space." }))}</p>
       <div class="grid g2" style="margin-top:1.25rem">
-        ${ME.auto.map((c) => `<a class="card" href="#/auto/${c.slug}"><p class="subtle">0${c.order} · ${esc(c.hd)}</p><h3>${esc(c.zh)}</h3><p class="subtle">${esc(c.en)}</p><p class="muted">${esc(c.why.zh)}</p></a>`).join("")}
+        ${ME.auto.map((c) => `<a class="card" href="#/auto/${c.slug}"><p class="subtle">0${c.order} · ${esc(c.hd)}</p><h3>${esc(t({ zh: c.zh, en: c.en }))}</h3><p class="muted">${esc(t(c.why))}</p></a>`).join("")}
       </div>
       ${footer()}
     `;
@@ -307,19 +336,16 @@
     if (slug === "kalman") bench = kfBench();
     if (slug === "signals") bench = sigBench();
     return `
-      <p class="kicker">${esc(c.en)} · ${esc(c.hd)}</p>
-      <h1>${esc(c.zh)}</h1>
-      ${fileBar("automation/" + slug + ".md", c.zh)}
-      <div class="bi">
-        <p class="muted">${esc(c.why.zh)}</p>
-        <p class="muted">${esc(c.why.en)}</p>
-      </div>
-      <section class="sec"><h2>路徑 Path</h2>
-        <ol class="path">${c.path.map((p) => `<li><strong>${esc(p.zh)}</strong> · <span class="subtle">${esc(p.en)}</span></li>`).join("")}</ol>
+      <p class="kicker">${esc(c.hd)}</p>
+      <h1>${esc(t({ zh: c.zh, en: c.en }))}</h1>
+      ${fileBar("automation/" + slug + ".md", t({ zh: c.zh, en: c.en }))}
+      <p class="muted">${esc(t(c.why))}</p>
+      <section class="sec"><h2>${esc(t({ zh: "路徑", en: "Path" }))}</h2>
+        <ol class="path">${c.path.map((p) => `<li>${esc(t(p))}</li>`).join("")}</ol>
       </section>
-      <section class="sec"><h2>公式</h2><div class="grid">${c.formulas.map((f) => `<div class="formula">${esc(f.eq)}<div class="subtle">${esc(f.mean.zh)} · ${esc(f.mean.en)}</div></div>`).join("")}</div></section>
+      <section class="sec"><h2>${esc(t({ zh: "公式", en: "Formulae" }))}</h2><div class="grid">${c.formulas.map((f) => `<div class="formula">${esc(f.eq)}<div class="subtle">${esc(t(f.mean))}</div></div>`).join("")}</div></section>
       ${bench}
-      <section class="sec"><h2>課 Lessons</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, l.title.zh + " / " + l.title.en, l.minutes, l.steps, true)).join("")}</div></section>
+      <section class="sec"><h2>${esc(t({ zh: "課", en: "Lessons" }))}</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, t(l.title), l.minutes, l.steps, true)).join("")}</div></section>
       <section class="sec"><h2>MATLAB</h2><pre class="cmd">${esc(c.matlab)}</pre></section>
       ${noteBox("auto-" + slug)}
       ${footer()}
@@ -328,11 +354,11 @@
 
   function electiveHub() {
     return `
-      <p class="kicker">官方揀 2 · 自學全開</p>
-      <h1>選修 13 科</h1>
-      <p class="muted">VTC EG524701 Sem 8 選修單元。畢業揀兩科；呢度 13 科中英對照全讀。海事處遠洋：輪機 + 應用熱流體。鐵路：車輛 → 軌道 → RST I／II。</p>
+      <p class="kicker">${esc(t({ zh: "官方揀 2 · 自學全開", en: "Pick 2 for the award · all 13 open" }))}</p>
+      <h1>${esc(t({ zh: "選修 13 科", en: "13 electives" }))}</h1>
+      <p class="muted">${esc(t({ zh: "VTC EG524701 Sem 8 選修單元。畢業揀兩科；呢度 13 科全讀。海事處遠洋：輪機 + 應用熱流體。鐵路：車輛 → 軌道 → RST I／II。", en: "VTC EG524701 Sem 8 electives. Award picks two; all 13 are here. Mardep seagoing: marine + thermofluids. Rail: stock → track → RST I/II." }))}</p>
       <div class="grid g2" style="margin-top:1.25rem">
-        ${(ME.electives || []).map((c) => `<a class="card" href="#/electives/${c.slug}"><p class="subtle">${String(c.order).padStart(2,"0")} · ${esc(c.code)}</p><h3>${esc(c.zh)}</h3><p class="subtle">${esc(c.en)}</p><p class="muted">${esc(c.why.zh)}</p></a>`).join("")}
+        ${(ME.electives || []).map((c) => `<a class="card" href="#/electives/${c.slug}"><p class="subtle">${String(c.order).padStart(2,"0")} · ${esc(c.code)}</p><h3>${esc(t({ zh: c.zh, en: c.en }))}</h3><p class="muted">${esc(t(c.why))}</p></a>`).join("")}
       </div>
       ${footer()}
     `;
@@ -340,22 +366,19 @@
 
   function electiveCourse(slug) {
     const c = (ME.electives || []).find((x) => x.slug === slug);
-    if (!c) return `<h1>未找到</h1><p><a class="btn sec" href="#/electives">返回選修池</a></p>`;
+    if (!c) return `<h1>${esc(t({ zh: "未找到", en: "Not found" }))}</h1><p><a class="btn sec" href="#/electives">${esc(t({ zh: "返回選修池", en: "Back to electives" }))}</a></p>`;
     const jump = c.jump ? `<p><a class="btn pri" href="#${c.jump.to}">${esc(c.jump.label)}</a></p>` : "";
     return `
-      <p class="kicker">${esc(c.en)} · ${esc(c.code)} · ${esc(c.hd)}</p>
-      <h1>${esc(c.zh)}</h1>
-      ${fileBar("electives/" + slug + ".md", c.zh)}
-      <div class="bi">
-        <p class="muted">${esc(c.why.zh)}</p>
-        <p class="muted">${esc(c.why.en)}</p>
-      </div>
+      <p class="kicker">${esc(c.code)} · ${esc(c.hd)}</p>
+      <h1>${esc(t({ zh: c.zh, en: c.en }))}</h1>
+      ${fileBar("electives/" + slug + ".md", t({ zh: c.zh, en: c.en }))}
+      <p class="muted">${esc(t(c.why))}</p>
       ${jump}
-      <section class="sec"><h2>路徑 Path</h2>
-        <ol class="path">${c.path.map((p) => `<li><strong>${esc(p.zh)}</strong> · <span class="subtle">${esc(p.en)}</span></li>`).join("")}</ol>
+      <section class="sec"><h2>${esc(t({ zh: "路徑", en: "Path" }))}</h2>
+        <ol class="path">${c.path.map((p) => `<li>${esc(t(p))}</li>`).join("")}</ol>
       </section>
-      <section class="sec"><h2>公式</h2><div class="grid">${c.formulas.map((f) => `<div class="formula">${esc(f.eq)}<div class="subtle">${esc(f.mean.zh)} · ${esc(f.mean.en)}</div></div>`).join("")}</div></section>
-      <section class="sec"><h2>課 Lessons</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, l.title.zh + " / " + l.title.en, l.minutes, l.steps, true)).join("")}</div></section>
+      <section class="sec"><h2>${esc(t({ zh: "公式", en: "Formulae" }))}</h2><div class="grid">${c.formulas.map((f) => `<div class="formula">${esc(f.eq)}<div class="subtle">${esc(t(f.mean))}</div></div>`).join("")}</div></section>
+      <section class="sec"><h2>${esc(t({ zh: "課", en: "Lessons" }))}</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, t(l.title), l.minutes, l.steps, true)).join("")}</div></section>
       <section class="sec"><h2>MATLAB</h2><pre class="cmd">${esc(c.matlab)}</pre></section>
       ${noteBox("el-" + slug)}
       ${footer()}
@@ -365,8 +388,8 @@
   function lab() {
     return `
       <p class="kicker">Interactive</p>
-      <h1>計算台</h1>
-      <p class="muted">RC 一階、一階植物 PID、質量–彈簧、一維卡爾曼。拉 slider 即時重繪。</p>
+      <h1>${esc(t({ zh: "計算台", en: "Lab" }))}</h1>
+      <p class="muted">${esc(t({ zh: "RC 一階、一階植物 PID、質量–彈簧、一維卡爾曼。拉 slider 即時重繪。", en: "First-order RC, PID on a first-order plant, mass-spring, 1-D Kalman. Sliders redraw live." }))}</p>
       ${rcBench()}
       ${pidBench()}
       ${springBench()}
@@ -589,20 +612,21 @@
     const gh = moduleGh(m);
     return `
       <p class="kicker">${esc(m.code)}${sem ? " · Sem " + sem.id : ""} · ${m.credits} cr</p>
-      <h1>${esc(m.title)}</h1>
-      <p class="subtle">${esc(m.titleEn)}</p>
+      <h1>${esc(loadLang() === "en" ? m.titleEn : m.title)}</h1>
       ${fileBar(gh, m.code)}
       <p class="muted">${esc(m.why)}</p>
-      <section class="sec path"><h2>內容</h2><ol>${(m.study || []).map((s) => `<li>${esc(s)}</li>`).join("")}</ol></section>
-      <p><a class="btn sec" href="#/curriculum">九學期</a> <a class="btn sec" href="#/files">檔案庫</a></p>
+      <section class="sec path"><h2>${esc(t({ zh: "內容", en: "Contents" }))}</h2><ol>${(m.study || []).map((s) => `<li>${esc(s)}</li>`).join("")}</ol></section>
+      <p><a class="btn sec" href="#/curriculum">${esc(t({ zh: "九學期", en: "Semesters" }))}</a> <a class="btn sec" href="#/files">${esc(t({ zh: "檔案庫", en: "Files" }))}</a></p>
       ${noteBox(m.code)}
       ${footer()}
     `;
   }
 
-  function render() {
+  function render(opts) {
     document.getElementById("nav-main").innerHTML = navHtml();
     document.getElementById("nav-bot").innerHTML = navHtml();
+    document.getElementById("lang-toggle").innerHTML = langHtml();
+    bindLang(document.getElementById("lang-toggle"));
     subnav();
     const p = path();
     const view = document.getElementById("view");
@@ -618,13 +642,14 @@
     else if (p.startsWith("/auto/")) html = autoCourse(p.slice(6));
     else if (p.startsWith("/electives/")) html = electiveCourse(p.slice("/electives/".length));
     else if (SOFT.some((s) => p === "/" + s.slug)) html = software(p.slice(1));
-    else html = `<h1>呢頁冇嘢</h1><p><a class="btn sec" href="#/">返總覽</a></p>`;
+    else html = `<h1>${esc(t({ zh: "呢頁冇嘢", en: "Nothing here" }))}</h1><p><a class="btn sec" href="#/">${esc(t({ zh: "返總覽", en: "Home" }))}</a></p>`;
     view.innerHTML = html;
     bindChecks(view);
     bindBenches(view);
     bindNotes(view);
-    window.scrollTo(0, 0);
-    document.title = "ME Lab · 機械工程自學台";
+    if (!opts || !opts.keepScroll) window.scrollTo(0, 0);
+    document.title = loadLang() === "en" ? "ME Lab · Mechanical Engineering" : "ME Lab · 機械工程自學台";
+    document.documentElement.lang = loadLang() === "en" ? "en" : "zh-Hant";
   }
 
   window.addEventListener("hashchange", render);
