@@ -50,6 +50,65 @@
   }
   const GH = "https://github.com/yip-lgtm/hd-mech-eng/blob/main/";
   const NK = "me-lab-page-notes";
+  const TK = "me-lab-gh-token";
+  const GH_API = "https://api.github.com/repos/yip-lgtm/hd-mech-eng/contents/";
+  const GH_NEW = "https://github.com/settings/tokens/new?scopes=public_repo&description=ME-Lab-notes";
+  function loadTok() { try { return (localStorage.getItem(TK) || "").trim(); } catch { return ""; } }
+  function saveTok(v) { try { if (!v) localStorage.removeItem(TK); else localStorage.setItem(TK, v.trim()); } catch (_) {} }
+  function b64enc(text) {
+    const bytes = new TextEncoder().encode(text);
+    let bin = "";
+    bytes.forEach((b) => { bin += String.fromCharCode(b); });
+    return btoa(bin);
+  }
+  function b64dec(b64) {
+    const bin = atob(String(b64 || "").replace(/\n/g, ""));
+    const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+    return new TextDecoder().decode(bytes);
+  }
+  function mergeNotes(existing, personal) {
+    const m = existing.search(/^## Personal notes/m);
+    const body = (m >= 0 ? existing.slice(0, m) : existing).replace(/\s+$/, "");
+    const note = String(personal || "").trim();
+    if (!note) return body + "\n";
+    return body + "\n\n## Personal notes 個人筆記\n\n" + note + "\n";
+  }
+  async function pushGh(path, personal) {
+    const token = loadTok();
+    if (!token) throw new Error("notoken");
+    const api = GH_API + path.replace(/^\/+/, "");
+    const headers = {
+      Accept: "application/vnd.github+json",
+      Authorization: "Bearer " + token,
+      "X-GitHub-Api-Version": "2022-11-28",
+    };
+    let sha, existing = "# " + path + "\n";
+    const got = await fetch(api + "?ref=main", { headers });
+    if (got.status === 200) {
+      const json = await got.json();
+      sha = json.sha;
+      if (json.content) existing = b64dec(json.content);
+    } else if (got.status === 401 || got.status === 403) {
+      throw new Error("token");
+    } else if (got.status !== 404) {
+      throw new Error("read-" + got.status);
+    }
+    const next = mergeNotes(existing, personal);
+    const put = await fetch(api, {
+      method: "PUT",
+      headers: Object.assign({ "Content-Type": "application/json" }, headers),
+      body: JSON.stringify({
+        message: "notes: " + path,
+        content: b64enc(next),
+        branch: "main",
+        sha: sha,
+      }),
+    });
+    if (put.status === 401 || put.status === 403) throw new Error("token");
+    if (!put.ok) throw new Error("put-" + put.status);
+    const out = await put.json();
+    return (out.content && out.content.html_url) || (GH.replace("/blob/main/", "/blob/main/") + path);
+  }
   const GH_MOD = {
     LAN3003: "modules/LAN3003-vocational-chinese-I.md",
     LAN3107: "modules/LAN3107-workplace-oral-english.md",
@@ -72,16 +131,26 @@
       <a class="btn sec" href="${GH}${esc(repoPath)}" target="_blank" rel="noreferrer" style="margin-left:auto">開 file</a>
     </aside>`;
   }
-  function noteBox(id) {
+  function noteBox(id, repoPath) {
     const v = loadN()[id] || "";
+    const tok = loadTok();
+    const connect = tok
+      ? `<p class="subtle">GitHub · hd-mech-eng <button type="button" class="btn sec" data-drop-tok style="height:2.2rem;padding:0 0.7rem">解除</button></p>`
+      : `<form class="btns" data-tok-form>
+          <input type="password" autocomplete="off" spellcheck="false" class="notepad" style="min-height:2.75rem;width:auto;flex:1;min-width:12rem" placeholder="ghp_… / github_pat_…" data-tok-input>
+          <button type="submit" class="btn pri">${esc(t({ zh: "接駁 GitHub", en: "Connect GitHub" }))}</button>
+          <a class="btn sec" href="${GH_NEW}" target="_blank" rel="noreferrer">${esc(t({ zh: "開 token", en: "Create token" }))}</a>
+        </form>`;
     return `<section class="sec"><h2>${esc(t({ zh: "個人筆記", en: "Notes" }))}</h2>
-      <textarea id="note-${esc(id)}" rows="8" class="notepad">${esc(v)}</textarea>
+      <textarea id="note-${esc(id)}" rows="8" class="notepad" data-repo="${esc(repoPath || "")}">${esc(v)}</textarea>
       <div class="btns">
-        <button type="button" class="btn pri" data-save-note="${esc(id)}">${esc(t({ zh: "儲存 Save", en: "Save" }))}</button>
+        <button type="button" class="btn pri" data-save-note="${esc(id)}" data-repo-path="${esc(repoPath || "")}">${esc(t({ zh: "儲存 Save", en: "Save" }))}</button>
         <button type="button" class="btn sec" data-dl-note="${esc(id)}">${esc(t({ zh: "下載 .md", en: "Download .md" }))}</button>
+        <a class="subtle" id="save-link-${esc(id)}" href="#" target="_blank" rel="noreferrer" hidden></a>
         <span class="subtle" id="save-status-${esc(id)}"></span>
       </div>
-      <p class="subtle">${esc(t({ zh: "撳儲存寫入呢部瀏覽器。Ctrl／Cmd+S 都得。下載 .md 再放到 hd-mech-eng。", en: "Save writes to this browser. Ctrl/Cmd+S works. Download .md for GitHub." }))}</p></section>`;
+      ${connect}
+      <p class="subtle">${esc(t({ zh: "接駁一次 token。之後撳儲存就自動放去 GitHub。Sem 1 原文唔會覆蓋。", en: "Connect a token once. Later, Save uploads to GitHub. Sem 1 originals stay." }))}</p></section>`;
   }
   function bindNotes(root) {
     root.querySelectorAll("textarea.notepad").forEach((el) => {
@@ -96,17 +165,16 @@
       el.addEventListener("keydown", (e) => {
         if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "s") {
           e.preventDefault();
-          saveOneNote(el.id.replace(/^note-/, ""));
+          saveOneNote(el.id.replace(/^note-/, ""), el.getAttribute("data-repo") || "");
         }
       });
     });
     root.querySelectorAll("[data-save-note]").forEach((btn) => {
-      btn.addEventListener("click", () => saveOneNote(btn.getAttribute("data-save-note")));
+      btn.addEventListener("click", () => saveOneNote(btn.getAttribute("data-save-note"), btn.getAttribute("data-repo-path") || ""));
     });
     root.querySelectorAll("[data-dl-note]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const id = btn.getAttribute("data-dl-note");
-        saveOneNote(id);
         const el = document.getElementById("note-" + id);
         const blob = new Blob([(el && el.value) || ""], { type: "text/markdown" });
         const a = document.createElement("a");
@@ -116,21 +184,70 @@
         URL.revokeObjectURL(a.href);
       });
     });
+    root.querySelectorAll("[data-tok-form]").forEach((form) => {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const inp = form.querySelector("[data-tok-input]");
+        const val = inp ? inp.value.trim() : "";
+        if (!val) return;
+        saveTok(val);
+        const ta = root.querySelector("textarea.notepad");
+        const id = ta ? ta.id.replace(/^note-/, "") : "";
+        const path = ta ? ta.getAttribute("data-repo") || "" : "";
+        render({ keepScroll: true });
+        if (id) saveOneNote(id, path);
+      });
+    });
+    root.querySelectorAll("[data-drop-tok]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        saveTok("");
+        render({ keepScroll: true });
+      });
+    });
   }
-  function saveOneNote(id) {
+  function saveOneNote(id, repoPath) {
     const el = document.getElementById("note-" + id);
     const n = loadN();
     n[id] = el ? el.value : n[id] || "";
     saveN(n);
     localStorage.setItem(NK + "-at", String(Date.now()));
     const st = document.getElementById("save-status-" + id);
-    if (st) st.textContent = t({ zh: "已儲存", en: "Saved" }) + " " + new Date().toLocaleTimeString();
+    const link = document.getElementById("save-link-" + id);
     const btn = document.querySelector('[data-save-note="' + id + '"]');
-    if (btn) {
-      const prev = btn.textContent;
-      btn.textContent = t({ zh: "已儲存", en: "Saved" });
-      window.setTimeout(() => { btn.textContent = prev; }, 1600);
+    const path = repoPath || (btn && btn.getAttribute("data-repo-path")) || (el && el.getAttribute("data-repo")) || "";
+    function flash(label) {
+      if (btn) {
+        const prev = btn.getAttribute("data-label") || t({ zh: "儲存 Save", en: "Save" });
+        btn.setAttribute("data-label", prev);
+        btn.textContent = label;
+        window.setTimeout(() => { btn.textContent = prev; }, 1600);
+      }
     }
+    if (!loadTok()) {
+      if (st) st.textContent = t({ zh: "已存瀏覽器。下面接駁 GitHub 先會自動 upload。", en: "Saved locally. Connect GitHub below to upload." });
+      flash(t({ zh: "已儲存", en: "Saved" }));
+      return;
+    }
+    if (!path) {
+      if (st) st.textContent = t({ zh: "冇 repo path", en: "Missing path" });
+      return;
+    }
+    if (st) st.textContent = t({ zh: "上傳緊 GitHub…", en: "Uploading…" });
+    if (btn) btn.disabled = true;
+    pushGh(path, n[id]).then((url) => {
+      if (st) st.textContent = t({ zh: "已放上 GitHub", en: "Uploaded to GitHub" });
+      if (link && url) {
+        link.hidden = false;
+        link.href = url;
+        link.textContent = t({ zh: "開 GitHub file", en: "Open GitHub file" });
+      }
+      flash(t({ zh: "已上傳", en: "Uploaded" }));
+    }).catch((err) => {
+      const code = String(err && err.message || err);
+      if (st) st.textContent = code === "token"
+        ? t({ zh: "Token 無效，請重新接駁。", en: "Token invalid — reconnect." })
+        : t({ zh: "上傳失敗（" + code + "）", en: "Upload failed (" + code + ")" });
+    }).finally(() => { if (btn) btn.disabled = false; });
   }
 
   function loadP() {
@@ -354,7 +471,7 @@
       <section class="sec path"><h2>路徑</h2><ol>${t.path.map((p) => `<li>${esc(p)}</li>`).join("")}</ol></section>
       <section class="sec"><h2>課</h2><div class="grid">${t.lessons.map((l) => lessonBlock(l.id, l.title, l.minutes, l.steps, false)).join("")}</div></section>
       <section class="sec"><h2>指令</h2><div class="cmds">${(t.commands || []).map((c) => `<span>${esc(c.cmd)} · ${esc(c.does)}</span>`).join("")}</div></section>
-      ${noteBox("cad-" + slug)}
+      ${noteBox("cad-" + slug, "cad/" + slug + ".md")}
       ${footer()}
     `;
   }
@@ -391,7 +508,7 @@
       ${bench}
       <section class="sec"><h2>${esc(t({ zh: "課", en: "Lessons" }))}</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, t(l.title), l.minutes, l.steps, true)).join("")}</div></section>
       <section class="sec"><h2>MATLAB</h2><pre class="cmd">${esc(c.matlab)}</pre></section>
-      ${noteBox("auto-" + slug)}
+      ${noteBox("auto-" + slug, "automation/" + slug + ".md")}
       ${footer()}
     `;
   }
@@ -424,7 +541,7 @@
       <section class="sec"><h2>${esc(t({ zh: "公式", en: "Formulae" }))}</h2><div class="grid">${c.formulas.map((f) => `<div class="formula">${esc(f.eq)}<div class="subtle">${esc(t(f.mean))}</div></div>`).join("")}</div></section>
       <section class="sec"><h2>${esc(t({ zh: "課", en: "Lessons" }))}</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, t(l.title), l.minutes, l.steps, true)).join("")}</div></section>
       <section class="sec"><h2>MATLAB</h2><pre class="cmd">${esc(c.matlab)}</pre></section>
-      ${noteBox("el-" + slug)}
+      ${noteBox("el-" + slug, "electives/" + slug + ".md")}
       ${footer()}
     `;
   }
@@ -661,7 +778,7 @@
       <p class="muted">${esc(m.why)}</p>
       <section class="sec path"><h2>${esc(t({ zh: "內容", en: "Contents" }))}</h2><ol>${(m.study || []).map((s) => `<li>${esc(s)}</li>`).join("")}</ol></section>
       <p><a class="btn sec" href="#/curriculum">${esc(t({ zh: "九學期", en: "Semesters" }))}</a> <a class="btn sec" href="#/files">${esc(t({ zh: "檔案庫", en: "Files" }))}</a></p>
-      ${noteBox(m.code)}
+      ${noteBox(m.code, gh)}
       ${footer()}
     `;
   }
