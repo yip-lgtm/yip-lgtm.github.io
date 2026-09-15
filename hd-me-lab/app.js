@@ -74,9 +74,14 @@
   }
   function noteBox(id) {
     const v = loadN()[id] || "";
-    return `<section class="sec"><h2>個人筆記 Auto-save</h2>
+    return `<section class="sec"><h2>${esc(t({ zh: "個人筆記", en: "Notes" }))}</h2>
       <textarea id="note-${esc(id)}" rows="8" class="notepad">${esc(v)}</textarea>
-      <p class="subtle">自動存瀏覽器。GitHub 私人庫已接入；Sem 1 原有筆記唔會覆蓋。</p></section>`;
+      <div class="btns">
+        <button type="button" class="btn pri" data-save-note="${esc(id)}">${esc(t({ zh: "儲存 Save", en: "Save" }))}</button>
+        <button type="button" class="btn sec" data-dl-note="${esc(id)}">${esc(t({ zh: "下載 .md", en: "Download .md" }))}</button>
+        <span class="subtle" id="save-status-${esc(id)}"></span>
+      </div>
+      <p class="subtle">${esc(t({ zh: "撳儲存寫入呢部瀏覽器。Ctrl／Cmd+S 都得。下載 .md 再放到 hd-mech-eng。", en: "Save writes to this browser. Ctrl/Cmd+S works. Download .md for GitHub." }))}</p></section>`;
   }
   function bindNotes(root) {
     root.querySelectorAll("textarea.notepad").forEach((el) => {
@@ -85,8 +90,47 @@
         const n = loadN();
         n[id] = el.value;
         saveN(n);
+        const st = document.getElementById("save-status-" + id);
+        if (st) st.textContent = "";
+      });
+      el.addEventListener("keydown", (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "s") {
+          e.preventDefault();
+          saveOneNote(el.id.replace(/^note-/, ""));
+        }
       });
     });
+    root.querySelectorAll("[data-save-note]").forEach((btn) => {
+      btn.addEventListener("click", () => saveOneNote(btn.getAttribute("data-save-note")));
+    });
+    root.querySelectorAll("[data-dl-note]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.getAttribute("data-dl-note");
+        saveOneNote(id);
+        const el = document.getElementById("note-" + id);
+        const blob = new Blob([(el && el.value) || ""], { type: "text/markdown" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = id + "-notes.md";
+        a.click();
+        URL.revokeObjectURL(a.href);
+      });
+    });
+  }
+  function saveOneNote(id) {
+    const el = document.getElementById("note-" + id);
+    const n = loadN();
+    n[id] = el ? el.value : n[id] || "";
+    saveN(n);
+    localStorage.setItem(NK + "-at", String(Date.now()));
+    const st = document.getElementById("save-status-" + id);
+    if (st) st.textContent = t({ zh: "已儲存", en: "Saved" }) + " " + new Date().toLocaleTimeString();
+    const btn = document.querySelector('[data-save-note="' + id + '"]');
+    if (btn) {
+      const prev = btn.textContent;
+      btn.textContent = t({ zh: "已儲存", en: "Saved" });
+      window.setTimeout(() => { btn.textContent = prev; }, 1600);
+    }
   }
 
   function loadP() {
