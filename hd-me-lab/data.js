@@ -19,7 +19,7 @@ window.ME = {
           "credits": 6,
           "hours": 18,
           "track": "lang",
-          "why": "職場普通話會話同書面報告。目錄豁免要語委三甲或高考語文 ≥80。",
+          "why": "唔交豁免。目錄要語委三甲或高考語文 ≥80。照上課。",
           "study": [
             "每堂錄音自己講 2 分鐘工作匯報",
             "背常用機械詞：公差、裝配、安全、工序",
@@ -33,7 +33,7 @@ window.ME = {
           "credits": 6,
           "hours": 18,
           "track": "lang",
-          "why": "會議、簡報、客戶溝通。目錄豁免：DSE 英 ≥4 兼口試 ≥4。",
+          "why": "弱；ENGL／SPCH 頂多問。照上課。",
           "study": [
             "用 STAR 講一個工場／實驗室經歷",
             "每週錄一段 90 秒英語工序說明",
@@ -47,7 +47,7 @@ window.ME = {
           "credits": 6,
           "hours": 26,
           "track": "core",
-          "why": "代數、三角函數、向量入門。目錄：DSE 數學必修 ≥2 可自動豁。",
+          "why": "而家交（Calc I–II）。出席直至批核信。",
           "study": [
             "每日 8 題：三角恆等式 + 二次方程",
             "單位向量、分量分解，為靜力學鋪路",
@@ -61,7 +61,7 @@ window.ME = {
           "credits": 6,
           "hours": 26,
           "track": "core",
-          "why": "微積分同應用。目錄冇自動路徑，要 ILO mapping。",
+          "why": "而家交（Calc + DE + LA + Stats）。ILO mapping。",
           "study": [
             "極限、導數、連鎖律、隱函數",
             "積分：置換、分部、面積、旋轉體",
@@ -75,7 +75,7 @@ window.ME = {
           "credits": 10,
           "hours": 39,
           "track": "core",
-          "why": "正交視圖、剖視、尺寸、CAD。目錄只認指定 DVE CAD。",
+          "why": "只部分（ENGR 1204）。照上課。",
           "study": [
             "先 2D：三視圖、隱藏線、剖視 A-A",
             "尺寸規則：唔重複、由基準出發",
