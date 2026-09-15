@@ -18,6 +18,46 @@
     { slug: "matlab", label: "MATLAB" },
   ];
   const PK = "me-lab-pages-progress";
+  const GH = "https://github.com/yip-lgtm/hd-mech-eng/blob/main/";
+  const NK = "me-lab-page-notes";
+  const GH_MOD = {
+    LAN3003: "modules/LAN3003-vocational-chinese-I.md",
+    LAN3107: "modules/LAN3107-workplace-oral-english.md",
+    EME3210: "modules/EME3210-fundamental-mathematics.md",
+    EME3211: "modules/EME3211-mathematics-I.md",
+    EME3212: "modules/EME3212-drawing-cad.md",
+  };
+  function kebab(s) {
+    return String(s).toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
+  function moduleGh(m) {
+    return GH_MOD[m.code] || ("modules/" + m.code + "-" + kebab(m.titleEn) + ".md");
+  }
+  function loadN() { try { return JSON.parse(localStorage.getItem(NK) || "{}"); } catch { return {}; } }
+  function saveN(n) { localStorage.setItem(NK, JSON.stringify(n)); }
+  function fileBar(repoPath, label) {
+    return `<aside class="card" style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;margin:1rem 0">
+      <span class="code">${esc(repoPath)}</span>
+      <span>${esc(label || "")}</span>
+      <a class="btn sec" href="${GH}${esc(repoPath)}" target="_blank" rel="noreferrer" style="margin-left:auto">開 file</a>
+    </aside>`;
+  }
+  function noteBox(id) {
+    const v = loadN()[id] || "";
+    return `<section class="sec"><h2>個人筆記 Auto-save</h2>
+      <textarea id="note-${esc(id)}" rows="8" class="notepad">${esc(v)}</textarea>
+      <p class="subtle">自動存瀏覽器。GitHub 私人庫已接入；Sem 1 原有筆記唔會覆蓋。</p></section>`;
+  }
+  function bindNotes(root) {
+    root.querySelectorAll("textarea.notepad").forEach((el) => {
+      el.addEventListener("input", () => {
+        const id = el.id.replace(/^note-/, "");
+        const n = loadN();
+        n[id] = el.value;
+        saveN(n);
+      });
+    });
+  }
 
   function loadP() {
     try { return JSON.parse(localStorage.getItem(PK) || "{}"); } catch { return {}; }
@@ -62,6 +102,8 @@
       const on =
         n.key === "/"
           ? p === "/"
+          : n.key === "/curriculum"
+            ? (p === "/curriculum" || p === "/files" || p.startsWith("/modules"))
           : p === n.key || p.startsWith(n.key + "/");
       const softOn = n.key === "/tools" && SOFT.some((s) => p === "/" + s.slug);
       return `<a href="${n.href}" class="${on || softOn ? "on" : ""}">${n.label}</a>`;
@@ -84,6 +126,11 @@
       items = [{ href: "#/electives", label: "全部", on: p === "/electives" }].concat(
         (ME.electives || []).map((c) => ({ href: "#/electives/" + c.slug, label: c.short, on: p === "/electives/" + c.slug }))
       );
+    } else if (p === "/curriculum" || p === "/files" || p.startsWith("/modules")) {
+      items = [
+        { href: "#/curriculum", label: "九學期", on: p === "/curriculum" },
+        { href: "#/files", label: "檔案庫", on: p === "/files" || p.startsWith("/modules") },
+      ];
     }
     if (!items.length) {
       el.hidden = true;
@@ -143,7 +190,7 @@
           <p class="muted">IVE 青衣 EG524701 PTE。機械五大 CAD、MATLAB／Simulink、自動化七科、選修 13 科全讀。</p>
           <div class="btns">
             <a class="btn pri" href="#/solidworks">今日學 SolidWorks Cut</a>
-            <a class="btn sec" href="#/electives">選修 13 科全讀</a>
+            <a class="btn sec" href="#/files">檔案庫 · GitHub</a>
           </div>
         </div>
         <div class="card" style="padding:0;overflow:hidden">
@@ -161,7 +208,7 @@
         <div class="grid g3">
           <a class="card" href="#/solidworks"><p class="subtle">01</p><h3>SolidWorks Cut</h3><p class="muted">80×50×15 再剪 33×25。</p></a>
           <a class="card" href="#/matlab"><p class="subtle">02</p><h3>Simulink 彈簧</h3><p class="muted">調 m、c、k，睇欠阻尼同過阻尼。</p></a>
-          <a class="card" href="#/electives"><p class="subtle">03</p><h3>選修全讀</h3><p class="muted">官方揀 2；你讀 13 科。</p></a>
+          <a class="card" href="#/files"><p class="subtle">03</p><h3>開 file</h3><p class="muted">全課程／軟件／自動化／選修。接 hd-mech-eng。</p></a>
         </div>
       </section>
       <section class="sec">
@@ -177,32 +224,33 @@
   function curriculum() {
     const blocks = ME.semesters.map((s) => {
       const mods = s.modules.map((m) => `
-        <div class="mod-row">
+        <a class="mod-row" href="#/modules/${encodeURIComponent(m.code)}">
           <div class="code">${esc(m.code)}</div>
           <div>
             <strong>${esc(m.title)}</strong>
             <p class="subtle" style="margin:0">${esc(m.titleEn)}</p>
             <p class="muted" style="margin:0.3rem 0 0">${esc(m.why)}</p>
+            <p class="subtle" style="margin:0.4rem 0 0">開 file →</p>
           </div>
           <div><span class="pill ${esc(m.track)}">${esc(m.track)}</span> <span class="subtle">${m.credits} cr</span></div>
-        </div>`).join("");
+        </a>`).join("");
       return `<details class="sem" ${s.id === 1 ? "open" : ""}><summary>Semester ${s.id} · Y${s.year} · ${esc(s.weeks)} · ${s.credits} cr</summary>${mods}</details>`;
     }).join("<div style='height:0.75rem'></div>");
     return `
       <p class="kicker">EG524701</p>
       <h1>課程</h1>
-      <p class="muted">AY2026/27 Student Handbook。Sem 1 已交 00965（3210／3211／3212／LAN3003）。工場 I 唔好豁。IA 畢業前必須申請。</p>
+      <p class="muted">撳單元開 file。接私人筆記庫 hd-mech-eng。工場 I 唔好豁。IA 畢業前必須申請。</p>\n      <p><a class="btn sec" href="#/files">檔案庫 · backup / upload</a></p>
       <div class="grid" style="margin-top:1.25rem">${blocks}</div>
       <section class="sec">
         <h2>選修池 · 13 科全讀</h2>
         <p class="muted">官方 Sem 8 揀 2 科（各 14 cr）。你要讀全部，自學台全開。</p>
         <div class="grid g2">${(ME.electives || []).map((c) => `<a class="card" href="#/electives/${c.slug}"><p class="subtle">${esc(c.code)}</p><h3>${esc(c.zh)}</h3><p class="subtle">${esc(c.en)}</p></a>`).join("")}</div>
       </section>
-      <div class="card" style="margin-top:1rem">
+      <a class="card" style="margin-top:1rem;display:block" href="#/modules/${encodeURIComponent(ME.ia.code)}">
         <p class="code">${esc(ME.ia.code)}</p>
         <h3>${esc(ME.ia.title)} · ${ME.ia.credits} cr</h3>
         <p class="muted">${esc(ME.ia.note)}</p>
-      </div>
+      </a>
       ${footer()}
     `;
   }
@@ -226,12 +274,14 @@
     return `
       <p class="kicker">${esc(t.origin)} · ${esc(t.hdLink)}</p>
       <h1>${esc(t.name)}</h1>
+      ${fileBar("cad/" + slug + ".md", t.name)}
       <p class="muted">${esc(t.why)}</p>
       <p><span class="pill core">${esc(t.role)}</span></p>
       ${bench}
       <section class="sec path"><h2>路徑</h2><ol>${t.path.map((p) => `<li>${esc(p)}</li>`).join("")}</ol></section>
       <section class="sec"><h2>課</h2><div class="grid">${t.lessons.map((l) => lessonBlock(l.id, l.title, l.minutes, l.steps, false)).join("")}</div></section>
       <section class="sec"><h2>指令</h2><div class="cmds">${(t.commands || []).map((c) => `<span>${esc(c.cmd)} · ${esc(c.does)}</span>`).join("")}</div></section>
+      ${noteBox("cad-" + slug)}
       ${footer()}
     `;
   }
@@ -259,6 +309,7 @@
     return `
       <p class="kicker">${esc(c.en)} · ${esc(c.hd)}</p>
       <h1>${esc(c.zh)}</h1>
+      ${fileBar("automation/" + slug + ".md", c.zh)}
       <div class="bi">
         <p class="muted">${esc(c.why.zh)}</p>
         <p class="muted">${esc(c.why.en)}</p>
@@ -270,6 +321,7 @@
       ${bench}
       <section class="sec"><h2>課 Lessons</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, l.title.zh + " / " + l.title.en, l.minutes, l.steps, true)).join("")}</div></section>
       <section class="sec"><h2>MATLAB</h2><pre class="cmd">${esc(c.matlab)}</pre></section>
+      ${noteBox("auto-" + slug)}
       ${footer()}
     `;
   }
@@ -293,6 +345,7 @@
     return `
       <p class="kicker">${esc(c.en)} · ${esc(c.code)} · ${esc(c.hd)}</p>
       <h1>${esc(c.zh)}</h1>
+      ${fileBar("electives/" + slug + ".md", c.zh)}
       <div class="bi">
         <p class="muted">${esc(c.why.zh)}</p>
         <p class="muted">${esc(c.why.en)}</p>
@@ -304,6 +357,7 @@
       <section class="sec"><h2>公式</h2><div class="grid">${c.formulas.map((f) => `<div class="formula">${esc(f.eq)}<div class="subtle">${esc(f.mean.zh)} · ${esc(f.mean.en)}</div></div>`).join("")}</div></section>
       <section class="sec"><h2>課 Lessons</h2><div class="grid">${c.lessons.map((l) => lessonBlock(l.id, l.title.zh + " / " + l.title.en, l.minutes, l.steps, true)).join("")}</div></section>
       <section class="sec"><h2>MATLAB</h2><pre class="cmd">${esc(c.matlab)}</pre></section>
+      ${noteBox("el-" + slug)}
       ${footer()}
     `;
   }
@@ -501,6 +555,51 @@
     });
   }
 
+
+  function filesHub() {
+    const mods = [];
+    ME.semesters.forEach((s) => s.modules.forEach((m) => mods.push({ m, sem: s.id })));
+    const cad = ME.tools.map((x) => `<a class="card" href="#/${x.slug}"><p class="subtle">cad/${esc(x.slug)}.md</p><h3>${esc(x.name)}</h3></a>`).join("");
+    const auto = ME.auto.map((c) => `<a class="card" href="#/auto/${c.slug}"><p class="subtle">automation/${esc(c.slug)}.md</p><h3>${esc(c.zh)}</h3><p class="subtle">${esc(c.en)}</p></a>`).join("");
+    const els = (ME.electives || []).map((c) => `<a class="card" href="#/electives/${c.slug}"><p class="subtle">electives/${esc(c.slug)}.md</p><h3>${esc(c.zh)}</h3><p class="subtle">${esc(c.en)}</p></a>`).join("");
+    const mhtml = mods.map(({ m, sem }) => `<a class="card" href="#/modules/${encodeURIComponent(m.code)}"><p class="subtle">${esc(m.code)} · Sem ${sem}</p><h3>${esc(m.title)}</h3><p class="subtle">${esc(m.titleEn)}</p></a>`).join("");
+    return `
+      <p class="kicker">${mods.length + ME.tools.length + ME.auto.length + (ME.electives || []).length} files · hd-mech-eng</p>
+      <h1>檔案庫</h1>
+      <p class="muted">課程、軟件、自動化、選修每一項都係一個 file。撳開有內容。私人筆記自動存瀏覽器；GitHub 每週自動補齊缺檔。</p>
+      <p><a class="btn pri" href="https://github.com/yip-lgtm/hd-mech-eng" target="_blank" rel="noreferrer">開 GitHub 庫</a></p>
+      <section class="sec"><h2>全課程</h2><div class="grid g2">${mhtml}</div></section>
+      <section class="sec"><h2>全軟件</h2><div class="grid g2">${cad}</div></section>
+      <section class="sec"><h2>全自動化</h2><div class="grid g2">${auto}</div></section>
+      <section class="sec"><h2>全選修</h2><div class="grid g2">${els}</div></section>
+      ${footer()}
+    `;
+  }
+
+  function modulePage(code) {
+    let m = null, sem = null;
+    ME.semesters.forEach((s) => {
+      const hit = s.modules.find((x) => x.code === code);
+      if (hit) { m = hit; sem = s; }
+    });
+    if (!m && ME.ia && code === ME.ia.code) {
+      m = { code: ME.ia.code, title: ME.ia.title, titleEn: "Industrial Attachment", why: ME.ia.note, study: [ME.ia.note], credits: ME.ia.credits, hours: 0, track: "ia" };
+    }
+    if (!m) return `<h1>搵唔到呢個 file</h1><p><a class="btn sec" href="#/files">返回檔案庫</a></p>`;
+    const gh = moduleGh(m);
+    return `
+      <p class="kicker">${esc(m.code)}${sem ? " · Sem " + sem.id : ""} · ${m.credits} cr</p>
+      <h1>${esc(m.title)}</h1>
+      <p class="subtle">${esc(m.titleEn)}</p>
+      ${fileBar(gh, m.code)}
+      <p class="muted">${esc(m.why)}</p>
+      <section class="sec path"><h2>內容</h2><ol>${(m.study || []).map((s) => `<li>${esc(s)}</li>`).join("")}</ol></section>
+      <p><a class="btn sec" href="#/curriculum">九學期</a> <a class="btn sec" href="#/files">檔案庫</a></p>
+      ${noteBox(m.code)}
+      ${footer()}
+    `;
+  }
+
   function render() {
     document.getElementById("nav-main").innerHTML = navHtml();
     document.getElementById("nav-bot").innerHTML = navHtml();
@@ -514,6 +613,8 @@
     else if (p === "/auto") html = autoHub();
     else if (p === "/electives") html = electiveHub();
     else if (p === "/lab") html = lab();
+    else if (p === "/files") html = filesHub();
+    else if (p.startsWith("/modules/")) html = modulePage(decodeURIComponent(p.slice("/modules/".length)));
     else if (p.startsWith("/auto/")) html = autoCourse(p.slice(6));
     else if (p.startsWith("/electives/")) html = electiveCourse(p.slice("/electives/".length));
     else if (SOFT.some((s) => p === "/" + s.slug)) html = software(p.slice(1));
@@ -521,6 +622,7 @@
     view.innerHTML = html;
     bindChecks(view);
     bindBenches(view);
+    bindNotes(view);
     window.scrollTo(0, 0);
     document.title = "ME Lab · 機械工程自學台";
   }

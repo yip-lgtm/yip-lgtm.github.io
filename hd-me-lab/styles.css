@@ -86,3 +86,7 @@ details.sem summary::-webkit-details-marker { display: none; }
 .mod-row { display: grid; gap: 0.25rem; padding: 0.75rem 0; border-top: 1px solid var(--border); }
 @media (min-width: 640px) { .mod-row { grid-template-columns: 7.5rem 1fr auto; align-items: start; } }
 footer.site { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--subtle); font-size: 0.75rem; }
+
+a.mod-row { color: inherit; text-decoration: none; }
+a.mod-row:hover { background: var(--raised); }
+textarea.notepad { width: 100%; min-height: 10rem; background: var(--raised); color: var(--fg); border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-family: var(--mono); font-size: 0.85rem; }
