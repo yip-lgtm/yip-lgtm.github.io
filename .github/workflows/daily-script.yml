@@ -1,0 +1,30 @@
+name: daily-script
+
+on:
+  schedule:
+    - cron: "5 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Ask MiniMax for today's page
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          DAILY_OUT: cute/daily.json
+        run: node scripts/write-daily.mjs
+      - name: Commit the page
+        run: |
+          git config user.name "yip-lgtm"
+          git config user.email "258986088+yip-lgtm@users.noreply.github.com"
+          git add cute/daily.json
+          git diff --staged --quiet || git commit -m "Daily script from MiniMax."
+          git push
