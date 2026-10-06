@@ -1,0 +1,38 @@
+{
+  "source": "https://zh.wikipedia.org/wiki/战争列表",
+  "lists": [
+    "https://zh.wikipedia.org/wiki/战争列表_(1900年—1944年)",
+    "https://zh.wikipedia.org/wiki/战争列表_(1945年—1989年)",
+    "https://zh.wikipedia.org/wiki/战争列表_(1990年—2002年)",
+    "https://zh.wikipedia.org/wiki/战争列表_(2003年至今)"
+  ],
+  "note": "只收開始年不早於 1914 的條目。名稱依中文維基戰爭列表，寫進頁面時用繁體。",
+  "wars": [
+    { "y": 1914, "end": 1918, "name": "第一次世界大戰", "span": "wwi" },
+    { "y": 1915, "end": 1916, "name": "護國戰爭", "span": "wwi" },
+    { "y": 1916, "end": 1916, "name": "復活節起義", "span": "wwi" },
+    { "y": 1918, "end": 1918, "name": "芬蘭內戰", "span": "wwi" },
+    { "y": 1918, "end": 1922, "name": "俄國內戰", "span": "inter" },
+    { "y": 1919, "end": 1921, "name": "波蘇戰爭", "span": "inter" },
+    { "y": 1919, "end": 1921, "name": "愛爾蘭獨立戰爭", "span": "inter" },
+    { "y": 1919, "end": 1923, "name": "土耳其獨立戰爭", "span": "inter" },
+    { "y": 1926, "end": 1928, "name": "北伐戰爭", "span": "inter" },
+    { "y": 1930, "end": 1930, "name": "中原大戰", "span": "inter" },
+    { "y": 1936, "end": 1939, "name": "西班牙內戰", "span": "ww2a" },
+    { "y": 1937, "end": 1945, "name": "抗日戰爭", "span": "ww2a" },
+    { "y": 1939, "end": 1940, "name": "冬季戰爭", "span": "ww2a" },
+    { "y": 1939, "end": 1945, "name": "第二次世界大戰", "span": "ww2a" },
+    { "y": 1941, "end": 1945, "name": "太平洋戰爭", "span": "ww2b" },
+    { "y": 1941, "end": 1945, "name": "蘇德戰爭", "span": "ww2b" },
+    { "y": 1950, "end": 1953, "name": "韓戰", "span": "cold" },
+    { "y": 1956, "end": 1956, "name": "第二次中東戰爭", "span": "cold" },
+    { "y": 1962, "end": 1962, "name": "中印邊境戰爭", "span": "cold" },
+    { "y": 1973, "end": 1973, "name": "第四次中東戰爭", "span": "cold" },
+    { "y": 1980, "end": 1988, "name": "兩伊戰爭", "span": "cold" },
+    { "y": 1982, "end": 1982, "name": "福克蘭戰爭", "span": "cold" },
+    { "y": 1990, "end": 1991, "name": "波斯灣戰爭", "span": "now" },
+    { "y": 1999, "end": 1999, "name": "科索沃戰爭", "span": "now" },
+    { "y": 2001, "end": 2021, "name": "阿富汗戰爭", "span": "now" },
+    { "y": 2003, "end": 2011, "name": "伊拉克戰爭", "span": "now" }
+  ]
+}
