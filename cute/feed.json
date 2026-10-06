@@ -40,6 +40,27 @@
         "layer": "land",
         "history": "作為紅軍標準步槍，於一次大戰與內戰中廣泛配發，具備可靠與精準的特點，並在後續衝突中持續使用。"
       }
+    },
+    {
+      "id": "1936-西班牙內戰",
+      "added": "2026-10-06T18:13:00.000Z",
+      "span": "ww2a",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1936,
+        "m": 7,
+        "name": "西班牙內戰",
+        "theater": "西班牙",
+        "brief": "西班牙內戰中，蘇聯提供的I-15戰鬥機在共和軍空軍擔任主力，與軸心國和叛軍戰機交戰。"
+      },
+      "kit": {
+        "name": "Polikarpov I-15",
+        "designation": "I-15",
+        "year": 1934,
+        "nation": "su",
+        "layer": "air",
+        "history": "蘇聯1934年列裝，配屬共和軍空軍，用於對地支援與空戰。"
+      }
     }
   ]
 }
