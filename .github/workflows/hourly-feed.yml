@@ -13,6 +13,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      # Order matters: brief, then a bilingual dossier, then one portrait.
+      # The brief is the only step allowed to fail the job — the other two are
+      # enrichment, and losing them must not cost a campaign entry.
       - name: Add one campaign
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
@@ -24,17 +27,18 @@ jobs:
           FEED_OUT: cute/feed.json
         continue-on-error: true
         run: node scripts/history-campaign.mjs
+      # Best effort: an image API hiccup or a layout guard must not stop the
+      # commit. Exits 0 when every card already has art, and wires an on-disk
+      # image with no catalog reference without calling the API at all.
+      - name: Try one portrait
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
-        # Best effort: the campaign entry is the important half. A portrait
-        # failure (API hiccup, layout guard) must not stop feed.json committing.
-        # Exits 0 when every card already has art.
         continue-on-error: true
         run: node scripts/portrait-tick.mjs
       - name: Commit
         run: |
-          git config user.name "yip-lgtm"
-          git config user.email "258986088+yip-lgtm@users.noreply.github.com"
+          git config user.name "yip-lmt"
+          git config user.email "258986088+yip-lmt@users.noreply.github.com"
           # portraits + assets + index.html are the portrait step's output; the
           # bundle is re-hashed each run so the old asset is staged as a delete.
           git add cute/feed.json cute/portraits cute/assets cute/index.html
