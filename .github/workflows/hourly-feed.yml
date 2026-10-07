@@ -18,10 +18,20 @@ jobs:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           FEED_OUT: cute/feed.json
         run: node scripts/hourly-feed.mjs
+      - name: Add one 立繪
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+        # Best effort: the campaign entry is the important half. A portrait
+        # failure (API hiccup, layout guard) must not stop feed.json committing.
+        # Exits 0 when every card already has art.
+        continue-on-error: true
+        run: node scripts/portrait-tick.mjs
       - name: Commit
         run: |
           git config user.name "yip-lgtm"
           git config user.email "258986088+yip-lgtm@users.noreply.github.com"
-          git add cute/feed.json
-          git diff --staged --quiet || git commit -m "Hourly campaign from MiniMax."
+          # portraits + assets + index.html are the portrait step's output; the
+          # bundle is re-hashed each run so the old asset is staged as a delete.
+          git add cute/feed.json cute/portraits cute/assets cute/index.html
+          git diff --staged --quiet || git commit -m "Hourly campaign and portrait from MiniMax."
           git push
