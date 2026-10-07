@@ -35,6 +35,10 @@ jobs:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         continue-on-error: true
         run: node scripts/portrait-tick.mjs
+      # Read-only. Warns when this repo and the source catalog disagree about
+      # which cards have art. Non-strict so a fetch hiccup cannot block a commit.
+      - name: Check portrait drift against the source catalog
+        run: node scripts/portrait-drift-check.mjs
       - name: Commit
         run: |
           git config user.name "yip-lmt"
