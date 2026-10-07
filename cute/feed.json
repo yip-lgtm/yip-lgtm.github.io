@@ -18,6 +18,25 @@
         "nation": "it",
         "layer": "land",
         "history": "作為義大利第一款制式氣冷重機槍，與步兵連協同作戰，主要配備於前線火力點，提供持續壓制火力。"
+      },
+      "dossier": {
+        "countries": "意大利王國與奧匈帝國是第七次伊孫佐戰役的主要交戰雙方。意大利在1915年5月對奧匈帝國宣戰後，決意沿伊孫佐河發動連串攻勢，以圖突破奧匈軍在卡索高原與戈里齊亞的防線。奧匈帝國則依靠阿爾卑斯山脈的天然屏障與深溝壕塹，動員包括匈牙利、克羅地亞與波蘭裔士兵在內的多民族兵團，堅守橋頭堡與山地要塞。",
+        "countriesEn": "The Kingdom of Italy and the Austro‑Hungarian Empire were the main belligerents in the seventh Battle of the Isonzo. After Italy declared war on Austria‑Hungary in May 1915, it resolved to launch a series of offensives along the Isonzo River in an attempt to break through the Austro‑Hungarian defenses on the Karst Plateau and at Gorizia. The Austro‑Hungarian Empire relied on the natural barriers of the Alps, deep trenches, and multinational forces comprising Hungarian, Croatian and Polish troops to hold bridgeheads and mountain strongholds.",
+        "people": "義大利方面由陸軍元帥路易吉·卡多爾納率領全軍策划與指揮，意大利第2軍軍長埃米利奧·帕希亞則具體督導前線師團的進攻。奧匈帝國方面，第5軍司令斯韋托扎爾·博羅耶維奇指揮防禦，另有帝國參謀總長康拉德·馮·赫岑多夫提供戰略指導，並有山地兵團指挥官约瑟夫·费尔曼率领阿尔卑斯猎兵参与防守。",
+        "peopleEn": "On the Italian side, Marshal Luigi Cadorna directed overall planning and command of the army, while General Emilio Pashà of the Italian Second Army supervised the frontline divisions’ assaults. For the Austro‑Hungarian side, General Svetozar Borojević commanded the 5th Army’s defense, with Chief of the General Staff Conrad von Hötzendorf providing strategic guidance and Alpine corps commander Josef Virmont leading the Kaiserjäger in the defense.",
+        "kits": "雙方在戰役中皆投入大量當時已列裝的武器。意大利步兵主要使用卡爾卡諾M1891步槍，配備9毫米格利森蒂手槍與6.5毫米維克斯機槍；砲兵則裝備75毫米菲亞特1906野戰炮、65毫米山地炮以及149毫米M1914榴彈炮，並使用81毫米迫擊炮進行近距離壓制。奧匈帝國方面，步槍為施泰爾-曼利舍M1907步槍，手槍包括施泰爾M1912與羅特-施泰爾M1907，機槍以7.92毫米施瓦爾茲洛斯MG M.07為主，砲兵則有8厘米M1905迫擊炮、10.4厘米M1909野戰炮和15厘米M1909榴彈炮，另配有少量裝甲車與觀測氣球。",
+        "kitsEn": "Both sides fielded a wide array of equipment that had been in service by 1915. Italian infantry were armed mainly with the Carcano Model 91 rifle, supplemented by the 9 mm Glisenti pistol and the 6.5 mm Vickers machine gun; artillery included the 75 mm Fiat 1906 field gun, the 65 mm mountain gun, the 149 mm Model 1914 howitzer, and the 81 mm mortar for close‑range support. The Austro‑Hungarian army used the Steyr‑Mannlicher M1907 rifle, pistols such as the Steyr M1912 and Roth‑Steyr M1907, the 7.92 mm Schwarzlose MG M.07 machine gun, 8 cm M1905 mortars, 10.4 cm M1909 field guns, and 15 cm M1909 howitzers, together with a few armored cars and observation balloons.",
+        "tactics": "第七次伊孫佐戰役的戰術以密集砲兵準備與步兵滲透相結合。意大利軍在進攻前先以75毫米與149毫米火炮進行長達兩小時的徐進彈幕，企圖削弱敵軍防線的機槍與鐵絲網；隨後，步兵以小隊形式分批向前躍進，利用山地步兵與阿爾卑斯獵兵的靈活性在峽谷中穿隙間隙。奧匈帝國則採用縱深防禦，將主防線設於河谷高地，配合多層鐵絲網與機槍巢，並在必要時調動預備隊實施逆襲，以抵消意大利的突破口。",
+        "tacticsEn": "The tactics of the seventh Battle of the Isonzo combined heavy artillery preparation with infantry infiltration. Italian forces preceded their assault with a two‑hour creeping barrage from 75 mm and 149 mm guns, aiming to suppress enemy machine‑gun nests and cut barbed wire; afterward, infantry advanced in small squads, exploiting the agility of Alpine troops to slip through gaps in the valleys. The Austro‑Hungarian side employed deep defence, siting the main line on the high ground above the river, layering barbed wire and machine‑gun emplacements, and using reserve units for counter‑attacks to seal any breach.",
+        "data": "第七次伊孫佐戰役於1915年9月14日展開，至同月17日結束，歷時四天。意大利軍在四天的激烈戰鬥中投入約第2軍與第3軍共八個師，總兵力逾十二萬人；奥匈帝國則動員第5軍及若干後備師，兵力約十萬。根據史料，意大利在此次攻勢中傷亡約三萬人，其中約一萬人陣亡；奥匈帝國損失約二萬人，含約七千名士兵陣亡。雙方在戰役中佔領的土地相當有限，僅在河左岸的幾個小山丘上取得了小幅度的進展。",
+        "dataEn": "The seventh Battle of the Isonzo began on 14 September 1915 and ended on 17 September 1915, lasting four days. Italy committed roughly eight divisions of the 2nd and 3rd Armies, totalling over 120,000 men; the Austro‑Hungarian forces deployed the 5th Army and several reserve divisions, about 100,000 troops. Historical records indicate that Italian casualties amounted to roughly 30,000 men, including about 10,000 dead; Austro‑Hungarian losses were around 20,000, with roughly 7,000 killed. Territorial gains were minimal, with only a few hillocks on the left bank of the river changing hands.",
+        "cause": "第七次伊孫佐戰役的根本動因在於意大利欲突破奧匈帝國在伊孫佐河的防線，奪取戰略要地戈里齊亞，進而威脅奧匈帝國的心臟地區。自1915年5月意大利參戰後，軍方高層相信透過接連的消耗戰可以削弱敵軍的抵抗能力，因而決定在短時間內連續發動第七次大規模攻勢，以圖在秋季前取得決定性突破。",
+        "causeEn": "The fundamental cause of the seventh Battle of the Isonzo was Italy’s determination to breach the Austro‑Hungarian lines along the Isonzo, capture the strategic town of Gorizia, and threaten the heartland of the Habsburg Empire. After Italy entered the war in May 1915, the high command believed that a series of attritional assaults would wear down the enemy, prompting the decision to launch another major offensive within a short timeframe, hoping to achieve a decisive breakthrough before the onset of autumn.",
+        "impact": "第七次伊孫佐戰役的結果對雙方的士氣與後續作戰計畫均產生深遠影響。意大利雖然未能在防線上取得決定性突破，但通過此次血戰檢驗了新式砲兵與山地步兵的協同作战能力，並迫使奧匈帝國在伊孫佐河沿線集結大量兵力，削弱了其在卡波雷托方向的防守厚度。此役的慘重傷亡亦使意大利公眾與軍隊內部開始質疑高層的消耗戰策略，促使後續的指揮體系進行局部調整。",
+        "impactEn": "The impact of the seventh Battle of the Isonzo was profound for both sides’ morale and subsequent operations. Although Italy failed to achieve a decisive breakthrough, the battle tested the combined use of modern artillery and Alpine infantry, compelling Austria‑Hungary to concentrate large forces along the Isonzo, thereby thinning its defenses elsewhere, such as at Caporetto. The heavy casualties also sparked criticism within the Italian public and army regarding the high‑command’s attritional strategy, leading to modest adjustments in the command structure thereafter.",
+        "result": "第七次伊孫佐戰役最終以雙方均未能取得決定性勝利告終。意大利軍在激烈的四天交戰後僅佔領了河左岸的數處高地，付出的代價卻是約三萬人的傷亡；奧匈帝國則成功守住主要防線，損失亦約二萬人。雖然戰役未改變整體前線格局，但雙方在兵力與物資上的損耗為後續的第八、第九次伊孫佐戰役以及最終的卡波雷托突破奠定了基礎。",
+        "resultEn": "The seventh Battle of the Isonzo concluded without a decisive victory for either side. After four days of fierce fighting Italy held only a few hillocks on the left bank, at the cost of roughly 30,000 casualties; Austria‑Hungary maintained its main defensive line, losing about 20,000 men. Though the battle did not alter the overall front, the heavy loss of men and material set the stage for the subsequent eighth and ninth Battles of the Isonzo and ultimately the breakthrough at Caporetto.",
+        "updated": "2026-10-07T19:28:11.988Z"
       }
     },
     {
@@ -583,6 +602,27 @@
         "nation": "jp",
         "layer": "land",
         "history": "三八式步槍是日本陸軍在二戰前的主力步槍，以其可靠性和精確度聞名，被廣泛用於步兵班及前線作戰。"
+      }
+    },
+    {
+      "id": "1939-波蘭戰役",
+      "added": "2026-10-07T19:23:57.587Z",
+      "span": "ww2a",
+      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "battle": {
+        "y": 1939,
+        "m": 9,
+        "name": "波蘭戰役",
+        "theater": "波蘭",
+        "brief": "波蘭戰役是德國與蘇聯於1939年9月共同入侵波蘭的軍事衝突，標誌二戰全面爆發。作戰期間，德軍部署四號坦克（PanzerkampfwagenIV）為主力裝甲，實行快速突破與包圍戰術。"
+      },
+      "kit": {
+        "name": "四號坦克",
+        "designation": "Panzerkampfwagen IV",
+        "year": 1937,
+        "nation": "de",
+        "layer": "land",
+        "history": "四號坦克是德軍在二戰初期的主力中坦，負責支援步兵與對抗敵方裝甲，並參與閃擊戰術的實施。"
       }
     }
   ]
