@@ -562,25 +562,6 @@
         "layer": "air",
         "history": "垂直短距起降艦載機。福克蘭一戰證明航母還在，但數量少，制空只蓋得住特遣艦隊。",
         "portrait": "portraits/harrier.jpg"
-      },
-      "dossier": {
-        "theater": "現代",
-        "countries": "福克蘭戰爭在1982年4月2日至6月14日，南大西洋，福克蘭群島同周邊海域。阿根廷先占島，英國從本土派出特遣艦隊。戰場離雙方本土都很遠，補給船比口號先決定還能不能打。",
-        "countriesEn": "The Falklands War ran from 2 April to 14 June 1982 in the South Atlantic. Argentina seized the islands. Britain sent a task force from home waters. Distance made the supply ships the campaign.",
-        "people": "英方特遣艦隊由伍德沃德指揮海上部隊，地面戰後期由摩爾接上。阿根廷軍政府下令占島，島上守軍同海空部隊不是同一套指揮。",
-        "peopleEn": "Woodward commanded the British task force at sea. Moore took the later land fight. Argentina's junta ordered the landing. The garrison and the air arm did not share one staff.",
-        "kits": "海獵鷹FRS.1於1980年列裝，從無敵級與競技神號短距起飛。阿根廷用幻影、匕首同天鷹打艦。英國核潛艇征服者號擊沉貝爾格拉諾將軍號以後，阿根廷航母沒有再出來。",
-        "kitsEn": "The Sea Harrier FRS.1, in service from 1980, flew from Invincible and Hermes. Argentina answered with Mirages, Daggers and Skyhawks. After Conqueror sank General Belgrano, the Argentine carrier stayed in port.",
-        "tactics": "英國先打海上封鎖，再在聖卡洛斯上岸。飛機要在很短的留空時間裡攔截低空來襲的攻擊機。沒有預警同甲板循環，航母就只是一座會動的靶。",
-        "tacticsEn": "Britain blockaded first, then landed at San Carlos. Fighters had minutes to catch low-level raids. Without warning and deck cycles, a carrier is only a moving target.",
-        "data": "戰事74日。英軍死255人，阿根廷死649人，呢兩個數係官方戰死，唔係總傷亡。海獵鷹聲稱空戰擊落二十餘架，數字有爭議，唔寫成精確總帳。",
-        "dataEn": "Seventy-four days. Britain lost 255 dead, Argentina 649 dead. Those are official killed-in-action figures, not total casualties. Harrier claims of twenty-plus kills stay disputed.",
-        "cause": "阿根廷軍政府用占島處理國內壓力，英國唔接受既成事實。距離令呢場仗變成艦隊同空中補給的考試。",
-        "causeEn": "The junta used the islands against a crisis at home. Britain refused the fait accompli. Distance turned the war into a test of ships and air supply.",
-        "impact": "兩國政府都因為呢場仗改變。英國證明還能派出特遣艦隊。阿根廷軍政府喺戰敗後倒台。",
-        "impactEn": "Both governments changed. Britain showed it could still send a task force. The Argentine junta fell after the defeat.",
-        "result": "英軍6月14日重占斯坦利。阿根廷守軍投降。島嶼主權爭議沒有在投降那天消失。",
-        "resultEn": "British forces retook Stanley on 14 June. The garrison surrendered. The sovereignty dispute did not end that day."
       }
     },
     {
