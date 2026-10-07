@@ -47,8 +47,8 @@ const NATION = {
 };
 const LAYER = {
   land: "Army service dress; the vehicle's or gun's most recognisable part worn as a shoulder plate",
-  air: "leather flight suit with a fur collar; an aircraft part — spinner, cowling louvre or wing-root rib — as a shoulder harness",
-  sea: "naval dress; a ship's fitting — turret face, rangefinder or anchor-stock plate — as a collar device",
+  air: "leather flight suit with a fur collar; an aircraft part - spinner, cowling louvre or wing-root rib - as a shoulder harness",
+  sea: "naval dress; a ship's fitting - turret face, rangefinder or anchor-stock plate - as a collar device",
 };
 const KIND = {
   tank: "an armoured hull plate", infantry: "the service rifle's receiver as a chest plate",
@@ -65,55 +65,108 @@ const indexHtml = readFileSync(resolve(CUTE, "index.html"), "utf8");
 const ref = indexHtml.match(/assets\/(pages-[A-Za-z0-9_-]+\.js)/)?.[1];
 if (!ref || ref !== asset) { console.error(`index.html ref ${ref} != ${asset}`); process.exit(1); }
 const bundlePath = resolve(ASSETS, asset);
-let src = readFileSync(bundlePath, "utf8");
+const src = readFileSync(bundlePath, "utf8");
 
-// walk the kit array and capture every T({...}) literal
-const start = src.indexOf("be=[T({");
-if (start < 0) { console.error("kit array not found — bundle layout changed"); process.exit(1); }
-const open = src.indexOf("[", start);
-const spans = [];
-{
-  let depth = 0;
-  for (let k = open; k < src.length; k++) {
-    const c = src[k];
-    if (c === "[" || c === "{" || c === "(") depth++;
-    else if (c === "]" || c === "}" || c === ")") { depth--; if (depth === 0) break; }
-    if (c === "T" && src[k + 1] === "(" && src[k + 2] === "{") {
-      let d = 0, e2 = -1;
-      for (let j = k; j < src.length; j++) {
-        const cc = src[j];
-        if (cc === "(" || cc === "{" || cc === "[") d++;
-        else if (cc === ")" || cc === "}" || cc === "]") { d--; if (d === 0) { e2 = j + 1; break; } }
-      }
-      spans.push([k, e2]); k = e2 - 1;
-    }
+// The roster lives in TWO arrays in this build:
+//   var Se=[E({...})]   the original batch
+//   var ye=[w({...})]   the later additions
+// and we() merges them for the armory. Scan both.
+//
+// The asset-path helper was renamed between builds: the earlier bundle used
+// `ve=e=>`/cute/${e}``, this one uses `be`. Detect it rather than hardcoding --
+// in this build `ve` is the default *skill* object, so injecting
+// portrait:ve(...) would emit a call to a non-function and break the bundle.
+const ARRAYS = ['var Se=[', 'var ye=[', 'var Ke=[', 'var Ee=[', 'var Te=[', 'var Ie=[', 'var Oe=[', 'var Pe=['];
+// Prefer whichever helper the existing portraits actually call; fall back to the
+// /cute/ path builder. Do not trust a bare name match: one earlier build had
+// `ve` as the default *skill* object, so injecting portrait:ve(...) there would
+// call a non-function and break the bundle.
+const used = /([A-Za-z_$][A-Za-z0-9_$]*)\(`portraits\//.exec(src);
+let PATH_FN = used ? used[1] : null;
+if (!PATH_FN) { const h = /(\w+)=e=>`\/cute\/\$\{e\}`/.exec(src); PATH_FN = h ? h[1] : null; }
+if (!PATH_FN) { console.error('asset path helper not found - bundle layout changed'); process.exit(1); }
+
+// String-aware bracket matching. Two things break a naive depth counter here:
+// a `[` or `(` inside a history template literal, and the element skip below --
+// the element opener `w(` is counted by the outer counter while its closer sits
+// inside the skipped span, leaking +1 depth per element. Both made the walk run
+// off the end of the file and the roster scan over-count.
+function matchBracket(from) {
+  const pairs = { '[': ']', '{': '}', '(': ')' };
+  const want = pairs[src[from]];
+  if (!want) return -1;
+  let depth = 0, q = null;
+  for (let i = from; i < src.length; i++) {
+    const c = src[i];
+    if (q) { if (c === '\\') { i++; continue; } if (c === q) q = null; continue; }
+    if (c === '`' || c === '"' || c === "'") { q = c; continue; }
+    if (c === '[' || c === '{' || c === '(') depth++;
+    else if (c === ']' || c === '}' || c === ')') { depth--; if (depth === 0) return i + 1; }
   }
+  return -1;
 }
 
-const cards = spans.map(([s, e]) => {
-  const lit = src.slice(s, e);
-  const g = (re) => re.exec(lit)?.[1];
-  return {
-    at: e - 2, // index of the literal's closing brace
-    id: g(/id:`([^`]+)`/),
-    name: g(/name:`([^`]+)`/),
-    designation: g(/designation:`([^`]+)`/),
-    nation: g(/nation:`([a-z]+)`/),
-    layer: g(/layer:`([a-z]+)`/),
-    kind: g(/kind:`([a-z]+)`/),
-    year: Number(g(/year:(\d+)/)),
-    epithet: g(/epithet:`([^`]+)`/),
-    wired: /portrait:/.test(lit),
-  };
-}).filter((c) => c.id);
+function scan(marker) {
+  const a = src.indexOf(marker);
+  if (a < 0) return [];
+  const open = src.indexOf('[', a);
+  const end = matchBracket(open);
+  if (end < 0) { console.error('unterminated array for ' + marker); process.exit(1); }
+  const out = [];
+  let k = open + 1;
+  while (k < end) {
+    if (/[A-Za-z]/.test(src[k] || '') && src[k + 1] === '(' && src[k + 2] === '{') {
+      const e2 = matchBracket(k + 1);       // start at the `(` of `X({...})`
+      if (e2 < 0 || e2 <= k) { console.error('unterminated element at ' + k); process.exit(1); }
+      const lit = src.slice(k, e2);
+      // Only treat this as a kit record; the span also holds skills and other
+      // calls. Injecting into one of those would corrupt the bundle.
+      if (/id:`/.test(lit) && /name:`/.test(lit) && /nation:`/.test(lit) && /layer:`/.test(lit)) {
+        out.push({ at: e2 - 2, lit });
+      }
+      k = e2;
+      continue;
+    }
+    k++;
+  }
+  return out;
+}
+
+const cards = ARRAYS.flatMap(scan)
+  .map(({ at, lit }) => {
+    const g = (re) => re.exec(lit)?.[1];
+    return {
+      at,
+      id: g(/id:`([^`]+)`/),
+      name: g(/name:`([^`]+)`/),
+      designation: g(/designation:`([^`]+)`/),
+      nation: g(/nation:`([a-z]+)`/),
+      layer: g(/layer:`([a-z]+)`/),
+      kind: g(/kind:`([a-z]+)`/),
+      year: Number(g(/year:(\d+)/)),
+      epithet: g(/epithet:`([^`]+)`/),
+      wired: new RegExp("portrait:" + PATH_FN + "\\(").test(lit),
+    };
+  })
+  .filter((c) => c.id);
+console.log("roster entries scanned:", cards.length);
+if (cards.length < 50) {
+  console.error("scanned roster looks too small - the array markers probably changed; refusing to patch");
+  process.exit(1);
+}
+const ids = new Set(cards.map((c) => c.id));
+if (ids.size !== cards.length) {
+  console.error(`duplicate kit ids in scan (${cards.length} entries, ${ids.size} unique) - refusing to patch`);
+  process.exit(1);
+}
 
 const todo = cards.filter((c) => !c.wired && !existsSync(resolve(PORTRAITS, `${c.id}.jpg`)));
-if (!todo.length) { console.log("all cards have portraits — nothing to do"); process.exit(0); }
+if (!todo.length) { console.log("all cards have portraits - nothing to do"); process.exit(0); }
 
 // stable pick: rotate by run so the 30-minute cadence spreads across the roster
 const offset = Number(process.env.PORTRAIT_OFFSET || 0);
 const card = todo[offset % todo.length];
-console.log(`target: ${card.id} (${card.name}) — ${todo.length} still pending`);
+console.log(`target: ${card.id} (${card.name}) - ${todo.length} still pending`);
 
 // ------------------------------------------------------------------ prompt
 const nat = NATION[card.nation] || NATION.us;
@@ -139,9 +192,7 @@ const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").repla
 let bytes = null;
 
 if (MOCK) {
-  // deterministic stand-in so the wiring path can be exercised without a key
-  bytes = Buffer.from(
-    `MOCK portrait for ${card.id} — not artwork`, "utf8");
+  bytes = Buffer.from(`MOCK portrait for ${card.id} - not artwork`, "utf8");
 } else {
   const res = await fetch(`${base}/image_generation`, {
     method: "POST",
@@ -161,7 +212,7 @@ if (MOCK) {
   }
   const url = body.data?.[0]?.url;
   if (!url) { console.error("no image url in response"); process.exit(1); }
-  // the url dies in 24h — pull the bytes now
+  // the url dies in 24h - pull the bytes now
   const img = await fetch(url);
   if (!img.ok) { console.error(`image download HTTP ${img.status}`); process.exit(1); }
   bytes = Buffer.from(await img.arrayBuffer());
@@ -173,11 +224,7 @@ writeFileSync(resolve(PORTRAITS, `${card.id}.jpg`), bytes);
 console.log(`saved portraits/${card.id}.jpg (${bytes.length} bytes)`);
 
 // ------------------------------------------------------- wire into the bundle
-if (!src.includes("function PF(")) {
-  console.error("face patch (PF) missing — run deploy/patch_faces.mjs against this bundle first");
-  process.exit(1);
-}
-const out = src.slice(0, card.at) + `,portrait:ve(\`portraits/${card.id}.jpg\`)` + src.slice(card.at);
+const out = src.slice(0, card.at) + `,portrait:${PATH_FN}(\`portraits/${card.id}.jpg\`)` + src.slice(card.at);
 new Function(out.replace(/^import.*$/gm, "").replace(/export\{[^}]*\};?$/gm, ""));
 console.log("parse check: OK");
 
@@ -194,18 +241,18 @@ if (process.env.COMMIT === "1") {
     try { return execFileSync("git", ["-C", REPO, cmd, ...args], { stdio: "pipe", encoding: "utf8" }); }
     catch (e) { if (allowFail) return null; throw e; }
   };
-  // The two other bots commit to main on the hour and at 16:05. If either moved
-  // while we were generating, our bundle edit is now based on a stale tree.
+  // The other bots commit to main on the hour and at 16:05. If either moved
+  // while we were generating, our bundle edit is based on a stale tree.
   run("fetch", ["--quiet", "origin"]);
   const behind = Number(run("rev-list", ["--count", "HEAD..origin/main"]).trim());
   if (behind > 0) {
-    console.error(`origin/main moved ${behind} commit(s) while generating — rebase and re-run`);
+    console.error(`origin/main moved ${behind} commit(s) while generating - rebase and re-run`);
     process.exit(2);
   }
   run("config", ["user.name", "yip-lgtm"]);
   run("config", ["user.email", "258986088+yip-lgtm@users.noreply.github.com"]);
   run("add", ["-A"]);
-  // `diff --staged --quiet` exits 0 when there is NOTHING staged; only commit then.
+  // `diff --staged --name-only` is empty when there is nothing staged; only commit then.
   const changed = run("diff", ["--staged", "--name-only"], true);
   if (!changed || !changed.trim()) { console.log("nothing staged"); process.exit(0); }
   run("commit", ["-q", "-m", `cute/portraits: add ${card.name} (${card.id})`]);
