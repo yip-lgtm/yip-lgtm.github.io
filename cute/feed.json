@@ -376,6 +376,27 @@
         "layer": "land",
         "history": "1994年定型，2001年部署至阿富汗山區，取代M16。"
       }
+    },
+    {
+      "id": "1916-復活節起義",
+      "added": "2026-10-07T02:14:00.000Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1916,
+        "m": 4,
+        "name": "復活節起義",
+        "theater": "愛爾蘭都柏林",
+        "brief": "在都柏林市中心與英軍激烈交火，英軍使用李-恩菲爾德步槍於街道、佔領建築內掃射。"
+      },
+      "kit": {
+        "name": "李-恩菲爾德步槍",
+        "designation": "SMLE Mk III",
+        "year": 1907,
+        "nation": "gb",
+        "layer": "land",
+        "history": "英軍於1907年採用此步槍，裝備步兵與支援單位，廣泛用於一次大戰。"
+      }
     }
   ]
 }
