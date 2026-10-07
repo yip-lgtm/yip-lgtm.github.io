@@ -210,7 +210,14 @@ if (MOCK) {
   if (body.base_resp?.status_code && body.base_resp.status_code !== 0) {
     console.error("api:", body.base_resp.status_code, body.base_resp.status_msg); process.exit(1);
   }
-  const url = body.data?.[0]?.url;
+  // The published reference shows data[0].url, but the live service actually
+  // returns data.image_urls[] -- the first real run generated an image
+  // successfully and still failed here. Accept every shape seen so far.
+  const url =
+    body.data?.image_urls?.[0] ||
+    body.data?.[0]?.url ||
+    body.data?.url ||
+    null;
   if (!url) {
     // Log enough of the response to tell "model not enabled" from "schema drift".
     console.error("no image url in response. body:", JSON.stringify(body).slice(0, 1200));
