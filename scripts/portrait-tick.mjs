@@ -205,13 +205,17 @@ if (MOCK) {
       prompt_optimizer: false,
     }),
   });
-  if (!res.ok) { console.error(`image_generation HTTP ${res.status}`); process.exit(1); }
+  if (!res.ok) { console.error(`image_generation HTTP ${res.status}:`, (await res.text()).slice(0, 800)); process.exit(1); }
   const body = await res.json();
   if (body.base_resp?.status_code && body.base_resp.status_code !== 0) {
     console.error("api:", body.base_resp.status_code, body.base_resp.status_msg); process.exit(1);
   }
   const url = body.data?.[0]?.url;
-  if (!url) { console.error("no image url in response"); process.exit(1); }
+  if (!url) {
+    // Log enough of the response to tell "model not enabled" from "schema drift".
+    console.error("no image url in response. body:", JSON.stringify(body).slice(0, 1200));
+    process.exit(1);
+  }
   // the url dies in 24h - pull the bytes now
   const img = await fetch(url);
   if (!img.ok) { console.error(`image download HTTP ${img.status}`); process.exit(1); }
