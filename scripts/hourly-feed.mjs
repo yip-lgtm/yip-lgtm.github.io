@@ -33,7 +33,7 @@ if (!war) {
   console.error("war index exhausted");
   process.exit(1);
 }
-const prompt = `參考中文維基戰爭列表 https://zh.wikipedia.org/wiki/战争列表 。本輪只能寫「${war.name}」，開始年 ${war.y}，不得改名，不得換成列表以外的衝突。用繁體中文。不要口號，不要省略號，不要編造你不確定的精確數字，不要寫製造方法，不要寫平民傷亡。只輸出一個 JSON：{"y":${war.y},"m":月份數字,"name":"${war.name}","theater":"戰場","brief":"九十到一百四十字，點出這場列表中的衝突和一件當時已列裝的真實裝備正式型號","kit":{"name":"裝備中文名","designation":"正式型號","year":服役年,"nation":"us|uk|de|su|jp|fr|it|cn|se|il 其中一個","layer":"land|air|sea","history":"四十到八十字，只講這件裝備在體系裡的位置"}}`;
+const prompt = `參考中文維基戰爭列表 https://zh.wikipedia.org/wiki/战争列表 。本輪只能寫「${war.name}」，開始年 ${war.y}，不得改名，不得換成列表以外的衝突。用繁體中文。不要口號，不要省略號，不要編造你不確定的精確數字，不要寫製造方法，不要寫平民傷亡。裝備服役年必須小於或等於 ${war.y}，不得使用該年之後才列裝的型號。只輸出一個 JSON：{"y":${war.y},"m":月份數字,"name":"${war.name}","theater":"戰場","brief":"九十到一百四十字，點出這場列表中的衝突和一件 ${war.y} 年或更早已列裝的真實裝備正式型號","kit":{"name":"裝備中文名","designation":"正式型號","year":服役年且不得晚於${war.y},"nation":"us|uk|de|su|jp|fr|it|cn|se|il 其中一個","layer":"land|air|sea","history":"四十到八十字，只講這件裝備在體系裡的位置"}}`;
 
 const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").replace(/\/$/, "");
 const model = process.env.MINIMAX_MODEL || "MiniMax-M2.7-highspeed";
@@ -71,6 +71,8 @@ async function once() {
     const y = Number(item.y);
     const m = Number(item.m);
     if (!y || m < 1 || m > 12) return null;
+    const kitYear = Number(kit.year);
+    if (!kitYear || kitYear > war.y) return null;
     const layer = ["land", "air", "sea"].includes(kit.layer) ? kit.layer : "land";
     const nation = ["us", "uk", "de", "su", "jp", "fr", "it", "cn", "se", "il"].includes(kit.nation) ? kit.nation : "us";
     return {
@@ -82,7 +84,7 @@ async function once() {
       kit: {
         name: String(kit.name ?? name).slice(0, 16),
         designation: String(kit.designation ?? "").slice(0, 40),
-        year: Number(kit.year) || y,
+        year: kitYear,
         nation,
         layer,
         history: history.slice(0, 120),
