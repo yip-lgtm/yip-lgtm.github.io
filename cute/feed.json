@@ -563,6 +563,27 @@
         "result": "英軍6月14日重占斯坦利。阿根廷守軍投降。島嶼主權爭議沒有在投降那天消失。",
         "resultEn": "British forces retook Stanley on 14 June. The garrison surrendered. The sovereignty dispute did not end that day."
       }
+    },
+    {
+      "id": "1926-北伐戰爭",
+      "added": "2026-10-07T19:10:11.993Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "battle": {
+        "y": 1926,
+        "m": 7,
+        "name": "北伐戰爭",
+        "theater": "華南至華北",
+        "brief": "北伐戰爭於1926年7月由國民革命軍發起，旨在消滅北方軍閥、統一中國。戰事跨越華南、華中、華北多省，雙方動員大量兵力與各式武器，其中日製三八式步槍作為步兵主力武器之一，於1910年代已列裝部隊，並在北伐的激烈戰鬥中發揮重要作用。"
+      },
+      "kit": {
+        "name": "三八式步槍",
+        "designation": "Type 38",
+        "year": 1905,
+        "nation": "jp",
+        "layer": "land",
+        "history": "三八式步槍是日本陸軍在二戰前的主力步槍，以其可靠性和精確度聞名，被廣泛用於步兵班及前線作戰。"
+      }
     }
   ]
 }
