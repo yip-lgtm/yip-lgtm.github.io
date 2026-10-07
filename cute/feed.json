@@ -39,6 +39,26 @@
         "nation": "su",
         "layer": "land",
         "history": "作為紅軍標準步槍，於一次大戰與內戰中廣泛配發，具備可靠與精準的特點，並在後續衝突中持續使用。"
+      },
+      "dossier": {
+        "theater": "東歐",
+        "countries": "俄國內戰從1917年打到1922年，不是打到2022年。戰場不是一座城，而是歐洲俄羅斯、伏爾加河、西伯利亞大鐵路和遠東。紅軍以莫斯科、彼得格勒為內線。白軍從頓河、西伯利亞、西北和克里米亞分頭打進來。英、法、美、日都派過干涉部隊，但沒有一支干涉軍把白軍收成同一個政府。莫斯科約北緯55.75度、東經37.62度。誰占住車站，誰才能把下一列車的糧和彈送出去。",
+        "countriesEn": "The Russian Civil War ran from 1917 to 1922, not to 2022. It was fought across European Russia, the Volga, the Trans-Siberian Railway and the Far East. The Reds held the interior around Moscow and Petrograd. The Whites came in from the Don, Siberia, the northwest and Crimea. Britain, France, the United States and Japan intervened, and none of them welded the Whites into one government.",
+        "people": "列寧抓政權，托洛茨基把紅軍編成能調動的常備軍。白軍這邊高爾察克在西伯利亞、鄧尼金在南方、弗蘭格爾守到最後的克里米亞，三個人沒有統一的參謀部。外國將領可以送槍，不能替他們決定誰聽誰的。單個軍官的回憶很生動，不能代替一個師還有沒有子彈。",
+        "peopleEn": "Lenin held the state. Trotsky turned the Red Army into a force that could be moved. Kolchak, Denikin and Wrangel never shared one staff. Foreign officers could deliver rifles. They could not make the Whites obey one commander.",
+        "kits": "雙方的底子都是莫辛-納甘M1891，1891年已經列裝，不是後來的改型故事。機槍、徵來的野砲和裝甲列車比任何新式戰車都更決定鐵路樞紐。干涉軍帶來少量戰車和砲，數量蓋不過鐵路。沒有油和零件的列車，比沒有口號的師先停下來。",
+        "kitsEn": "Both sides lived on the Mosin-Nagant M1891, in service since 1891. Machine guns, impressed field guns and armoured trains decided the junctions. The few tanks brought by intervention forces did not outweigh the railway.",
+        "tactics": "這不是壕溝對壕溝。白軍從外線多路進攻，紅軍用內線把師從一個戰場塞到另一個戰場。打法是先占車站和橋，再談進城。徵糧和兵源比一次城市衝鋒更決定還能打幾個月。彈藥斷了，人數還在也退出。",
+        "tacticsEn": "This was not trench against trench. The Whites attacked from the rim. The Reds shifted divisions inside that rim. The method was to take the station and the bridge before the town. Grain and recruits outlasted a single city assault.",
+        "data": "主要戰事在1918到1920年，遠東殘部到1922年日本離開海參崴。死亡和饑荒以百萬計，精確數字至今有爭議，這裡不編成一個假總數。feed裡若寫1918到2022，是把年份接錯，不是這場戰爭的長度。",
+        "dataEn": "The main fighting was 1918 to 1920. The Far East remnant lasted until Japan left Vladivostok in 1922. Deaths and famine ran into the millions. The exact total is disputed, so it is not invented here. A feed line that says 1918–2022 has joined the wrong years.",
+        "cause": "1917年舊政權垮了，布爾什維克奪權，舊軍官、地方政府和外國政府不肯承認。動員不是一張表，是鐵路還能把誰送上前線。沒有這一次奪權，就沒有這場內戰。沒有鐵路，這場內戰打不成現在這個形狀。",
+        "causeEn": "The old regime collapsed in 1917. The Bolsheviks took power. Former officers, local governments and foreign governments refused to accept it. Railways, not a slogan, decided who could still be sent forward.",
+        "impact": "紅軍從這場戰爭裡做成常備軍。蘇聯的邊界和一黨國家不是在宣言裡長出來的，是在白軍失敗以後留下的。干涉沒有打出一個能執政的白軍政府，只留下港口和軍火的帳單。",
+        "impactEn": "The Red Army became a standing force in this war. The Soviet border and the one-party state were what remained after the Whites failed. Intervention did not produce a White government that could rule.",
+        "result": "紅軍勝。白軍主力到1920年失敗，弗蘭格爾從克里米亞撤出，日本1922年離開海參崴。勝負是誰留在車站，不是誰的故事更好聽。",
+        "resultEn": "The Reds won. The main White armies were beaten by 1920, Wrangel left Crimea, and Japan left Vladivostok in 1922. The result is who still held the stations.",
+        "updated": "2026-10-07T18:17:58Z"
       }
     },
     {
