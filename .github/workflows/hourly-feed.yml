@@ -18,7 +18,12 @@ jobs:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           FEED_OUT: cute/feed.json
         run: node scripts/hourly-feed.mjs
-      - name: Add one 立繪
+      - name: Add one bilingual dossier
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          FEED_OUT: cute/feed.json
+        continue-on-error: true
+        run: node scripts/history-campaign.mjs
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         # Best effort: the campaign entry is the important half. A portrait
