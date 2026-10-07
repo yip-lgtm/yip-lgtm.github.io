@@ -72,7 +72,7 @@ async function once() {
     const m = Number(item.m);
     if (!y || m < 1 || m > 12) return null;
     const kitYear = Number(kit.year);
-    if (!kitYear || kitYear > war.y) return null;
+    if (!kitYear || kitYear < 1900 || kitYear > war.y) return null;
     const layer = ["land", "air", "sea"].includes(kit.layer) ? kit.layer : "land";
     const nation = ["us", "uk", "de", "su", "jp", "fr", "it", "cn", "se", "il"].includes(kit.nation) ? kit.nation : "us";
     return {
