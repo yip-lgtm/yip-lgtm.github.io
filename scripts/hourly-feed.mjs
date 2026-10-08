@@ -72,22 +72,41 @@ const prompt = `參考中文維基戰爭列表 https://zh.wikipedia.org/wiki/战
 
 const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").replace(/\/$/, "");
 const model = process.env.MINIMAX_MODEL || "MiniMax-M2.7-highspeed";
+let lastError = "unknown";
+
+// A campaign entry is a long generation. Node's undici headers timeout is 300s,
+// so a slow reply used to throw straight through `once` -- and because the throw
+// was never caught it killed the process before the retry loop below could run
+// once, let alone three times. One slow answer cost the whole hour.
+const TIMEOUT_MS = Number(process.env.FEED_TIMEOUT_MS || 600_000);
 
 async function once() {
-  const res = await fetch(`${base}/chat/completions`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
-    body: JSON.stringify({
-      model,
-      temperature: 0.6,
-      max_completion_tokens: 4000,
-      messages: [
-        { role: "system", content: "只用繁體中文。最後只留一個 JSON 物件。" },
-        { role: "user", content: prompt },
-      ],
-    }),
-  });
-  if (!res.ok) return null;
+  let res;
+  try {
+    res = await fetch(`${base}/chat/completions`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+      body: JSON.stringify({
+        model,
+        temperature: 0.6,
+        max_completion_tokens: 4000,
+        messages: [
+          { role: "system", content: "只用繁體中文。最後只留一個 JSON 物件。" },
+          { role: "user", content: prompt },
+        ],
+      }),
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+  } catch (err) {
+    lastError = err instanceof Error ? err.message : String(err);
+    console.error(`  transport: ${lastError}`);
+    return null;
+  }
+  if (!res.ok) {
+    lastError = `HTTP ${res.status}`;
+    console.error(`  ${lastError}`);
+    return null;
+  }
   const body = await res.json();
   const raw = body.choices?.[0]?.message?.content ?? "";
   const cleaned = raw.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
@@ -164,15 +183,22 @@ async function once() {
         history: history.slice(0, 120),
       },
     };
-  } catch {
+  } catch (err) {
+    lastError = err instanceof Error ? err.message : String(err);
+    console.error(`  parse: ${lastError}`);
     return null;
   }
 }
 
+const ATTEMPTS = Number(process.env.FEED_ATTEMPTS || 3);
 let parsed = null;
-for (let i = 0; i < 3 && !parsed; i++) parsed = await once();
+for (let i = 1; i <= ATTEMPTS && !parsed; i++) {
+  console.error(`attempt ${i}/${ATTEMPTS}`);
+  parsed = await once();
+  if (!parsed && i < ATTEMPTS) await new Promise((r) => setTimeout(r, 15_000 * i));
+}
 if (!parsed) {
-  console.error("no usable json");
+  console.error(`no campaign written for ${war.name}: ${lastError} — will retry next hour`);
   process.exit(1);
 }
 feed.items.push(parsed);
