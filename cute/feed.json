@@ -579,6 +579,25 @@
         "nation": "fi",
         "layer": "land",
         "history": "1931年列裝後，索米衝鋒槍成為芬蘭步兵的主要近戰武器，冬季戰爭期間廣泛配屬於步兵班與滑雪兵，用於近距離火力。"
+      },
+      "dossier": {
+        "countries": "1939年11月30日，蘇聯在列寧格勒軍區集結第9、第14、第15軍團以及後續的第7軍團，配屬大量炮兵與裝甲單位，向芬蘭邊境發動全線侵略。芬蘭方面以陸軍為主體，在卡累利阿地峽及拉多加湖畔構築防線，由元帥卡爾·古斯塔夫·埃米爾·曼納海姆元帥擔任總司令，指揮第1、第2、第3軍及海岸砲兵與空軍聯手抵禦外敵。此役的參戰國僅有蘇聯與芬蘭，雖然瑞典允許志愿兵赴芬助戰，但官方未曾正式介入戰事。",
+        "countriesEn": "On 30 November 1939, the Soviet Union assembled the 9th, 14th, and 15th Armies of the Leningrad Military District, together with the later‑added 7th Army, supported by massive artillery and armor units, and launched a full‑scale invasion along the Finnish border. Finland’s land forces, under Marshal Carl Gustaf Emil Mannerheim as supreme commander, organized the defense of the Karelian Isthmus and the Ladoga‑Lake line, deploying the I, II and III Army Corps along with coastal artillery and the air force. The only official combatants were the Soviet Union and Finland; although Sweden permitted volunteers to serve, it did not formally enter the war.",
+        "people": "蘇聯方面，最高統帥由國防人民委員克里姆·伏羅希洛夫與參謀總長基里爾·梅列茨科夫共同負責，前線指揮則由第9軍團司令亞歷山大·瓦西里耶維奇·什維爾尼克、 第14軍團司令謝爾蓋·鐵木辛哥與第7軍團司令鮑里斯·沙波什尼科夫等將領執行。芬蘭方面，總統與議會任命元帥曼納海姆為最高統帥，副官阿克塞爾·埃里克·艾羅負責戰術策劃，陸軍參謀長維爾霍·佩特里·尼蒂萊則主導情報與後勤協調。各級指揮官均受過嚴格的軍事教育，熟悉北歐地形與嚴寒作戰環境。",
+        "peopleEn": "Soviet command was shared between Defense People’s Commissar Kliment Voroshilov and Chief of the General Staff Kirill Meretskov, with front‑line operations directed by the commanders of the 9th Army (Alexander Vasilievich Shvernik), the 14th Army (Sergei Timoshenko) and the 7th Army (Boris Shaposhnikov). On the Finnish side, President and Parliament appointed Marshal Mannerheim as supreme commander, with Deputy Chief Axel Erik Airo handling tactical planning and Chief of Staff Vilho Petter Nihtilä overseeing intelligence and logistics. All senior officers had received rigorous military education and were familiar with the harsh northern climate and terrain.",
+        "kits": "在裝甲方面，蘇聯動員了T-26、BT-5、BT-7等輕型快速坦克，配以T-28中型坦克及BA-10裝甲車，提供前線突破與偵察能力；步兵則配備Mosin-Nagant M91/30步槍、DP-27輕機槍、PPD-34/38衝鋒槍及45mm 19-K反戰車炮。炮兵火力主要依靠76mm F-22師屬炮、122mm M-10榴彈炮與152mm M-20重型榴彈炮，並配備50mm 1938年型迫擊炮。空軍方面，蘇聯使用Polikarpov I-153、I-16戰鬥機及Tupolev SB轟炸機執行制空與轟炸任務。芬蘭軍隊則主要裝備Vickers 6噸輕坦克與俘獲的Renault FT，步兵使用P35步槍、KP/31“蘇米”衝鋒槍及Lahti‑Saloranta M/26輕機槍，火炮包括37mm Bofors反戰車炮、20mm ITK‑35防空炮與105mm H 10榴彈炮，並部署Fokker D.XXI與Morane‑Saulnier 406戰鬥機及Bristol Blenheim轟炸機。",
+        "kitsEn": "On the armor side the Soviets fielded T‑26, BT‑5 and BT‑7 fast tanks, supplemented by T‑28 medium tanks and BA‑10 armored cars for breakthrough and reconnaissance. Infantry units were equipped with Mosin‑Nagant M91/30 rifles, DP‑27 light machine guns, PPD‑34/38 submachine guns and 45 mm 19‑K anti‑tank guns. Artillery punch came from 76 mm F‑22 divisional guns, 122 mm M‑10 howitzers and 152 mm M‑20 heavy howitzers, while 50 mm 1938‑model mortars provided close‑in fire. The Soviet Air Force contributed Polikarpov I‑153 and I‑16 fighters and Tupolev SB bombers for air superiority and strategic bombing. The Finnish army relied mainly on Vickers 6‑ton tanks and captured Renault FT, used P35 rifles, KP/31 \"Suomi\" submachine guns and Lahti‑Saloranta M/26 light machine guns. Finnish artillery comprised 37 mm Bofors anti‑tank guns, 20 mm ITK‑35 AA guns and 105 mm H 10 howitzers, while the air arm operated Fokker D.XXI and Morane‑Saulnier 406 fighters and Bristol Blenheim bombers.",
+        "tactics": "蘇聯採用大兵團正面突破戰術，先以密集炮火準備摧毀敵方工事，隨即投入坦克與步兵混合編隊實施縱深攻擊，試圖在卡累利阿地峽的曼納海姆防線上撕開缺口。為補償地形不利，蘇聯在冬季大量使用滑雪部隊與空降兵進行側翼包抄，並在春季解凍前加速突破。芬蘭則根據峽谷、湖泊與森林的天然障礙，採用小單位機動作戰，以滑雪兵快速轉移，利用夜間襲擊與包圍戰術，將蘇軍的長列縱隊切割成孤立的“motti”（叢林）集團，再以集中火力殲滅。芬蘭炮兵則隱蔽於地形中，使用間瞄射擊與機動火力支援，抵消蘇聯的火力優勢。",
+        "tacticsEn": "The Soviet strategy was based on massed, front‑wide offensives. A heavy artillery barrage was used to demolish Finnish fortifications, after which combined‑arms groups of tanks and infantry pushed forward to breach the Mannerheim Line on the Karelian Isthmus. To compensate for difficult terrain, the Soviets employed ski‑troops and airborne units for flanking maneuvers and accelerated their push before the spring thaw. Finland, by contrast, exploited the natural obstacles of lakes, forests and narrow valleys, using small‑unit mobile warfare. Ski‑infantry moved swiftly, conducted night raids and surrounded Soviet columns in isolated \"motti\" (forest) pockets, which were then destroyed by concentrated fire. Finnish artillery hid in the terrain, delivering indirect fire and mobile support to offset Soviet fire superiority.",
+        "data": "1939年11月30日凌晨，蘇聯第9軍團在卡累利阿地峽的庫奧拉赫蒂省境內發起第一波攻勢，蘇軍第14軍團沿拉多加湖北岸推進。12月初，蘇軍在凱爾亞（Kelja）與蘇姆馬（Summa）展開激烈防禦戰，芬蘭守軍在12月9日至12月15日間成功組織反擊，迫使蘇軍在部分地段暫時停滯。1940年1月，蘇聯重新調動第7軍團，於2月間在霍恩卡尼米（Honkaniemi）與拉烏馬（Rauma）兩線發起總攻，炮火覆蓋範圍達數十平方公里，坦克突破曼納海姆防線多處缺口。3月5日，蘇軍在卡累利阿地峽的佩塔雅莫（Petäjä）取得決定性突破，隨即於3月12日在莫斯科簽署和平條約，結束為期約三個月的激烈武裝衝突。",
+        "dataEn": "On the early morning of 30 November 1939, the Soviet 9th Army launched the first wave of attacks across the Kuhalahti sector of the Karelian Isthmus, while the 14th Army advanced along the north coast of Lake Ladoga. In early December, heavy fighting erupted at Kelja and Summa; Finnish defenders mounted a counter‑offensive from 9 to 15 December, temporarily halting Soviet progress in several sectors. In January 1940, the Soviets repositioned the 7th Army, and in February launched a major offensive on the Honkaniemi and Rauma fronts; artillery concentrations covered dozens of square kilometres and tanks pierced multiple gaps in the Mannerheim Line. On 5 March the Soviet forces achieved a decisive breakthrough near Petäjä on the Isthmus, leading directly to the signing of the Moscow Peace Treaty on 12 March, which ended roughly three months of intense combat.",
+        "cause": "冬季戰爭的根本起因是蘇聯對列寧格勒安全的戰略憂慮。1939年8月蘇德簽訂互不侵犯條約後，斯大林認為芬蘭與蘇聯的邊界過於靠近列寧格勒，威脅到該城市的防禦纵深。蘇聯遂於同年10月向芬蘭提出領土交換條件，要求租借漢科半島與部分卡累利阿邊界土地，以建立北部緩衝區。芬蘭政府基於主權與民族尊嚴，拒絕接受蘇聯的苛刻要求，並在談判中保持強硬立場。雙方在外交失敗後，蘇聯決定以軍事手段強行改變現狀，於是策動對芬蘭的全線侵略。",
+        "causeEn": "The root cause of the Winter War was the Soviet Union’s strategic concern for the security of Leningrad. After signing the Molotov‑Ribbentrop Pact with Nazi Germany in August 1939, Joseph Stalin viewed the Finnish‑Soviet border as too close to Leningrad, endangering the city’s defensive depth. In October 1939 Moscow demanded territorial exchanges, seeking to lease the Hanko Peninsula and parts of the Karelian border to create a northern buffer zone. The Finnish government, citing national sovereignty and dignity, rejected the harsh terms and maintained a firm stance during negotiations. With diplomacy failing, the Soviet leadership decided to change the status quo by force, ordering a full‑scale invasion of Finland.",
+        "impact": "戰後，芬蘭被迫將卡累利阿地峽、維堡及拉多加湖畔的大片領土割讓給蘇聯，領土面積約佔全國的10%。雖然芬蘭保留了主權與政治體制，但大量軍事設施、工廠與交通網絡被迫遷移，導致國家資源重新配置。蘇聯在國際上因違反國際法與大規模軍事行動而受到譴責，國際聯盟於1939年12月驅逐蘇聯出盟，但蘇聯卻借此加強了對波羅的海三國的控制。蘇軍在冬季戰爭中暴露出兵種協同、指揮控制及後勤供應的不足，促使其後在1940年春季進行軍隊改革與裝備更新。此役同時提升芬蘭軍隊的國際聲譽，並為後來的繼續抵抗奠定基礎。",
+        "impactEn": "In the aftermath, Finland was forced to cede the Karelian Isthmus, Viipuri and large swaths of the Ladoga‑Lake region to the Soviet Union—approximately ten percent of its territory. Although Finland retained its sovereignty and political system, the loss of numerous military installations, factories and transport networks forced a major reallocation of national resources. The Soviet Union faced international condemnation for violating international law and for the scale of its military campaign; the League of Nations expelled the USSR in December 1939, while the Soviet leadership consolidated control over the Baltic states. The war exposed serious deficiencies in Soviet combined‑arms coordination, command and control, and logistics, prompting a series of reforms and equipment upgrades in the spring of 1940. For Finland, the conflict boosted its army’s international reputation and laid the groundwork for subsequent resistance.",
+        "result": "1940年3月12日，莫斯科和平條約正式簽署，標誌著冬季戰爭的終結。根據條約，芬蘭將卡累利阿地峽、維堡及漢科半島等領土割讓給蘇聯，蘇聯則取得通往列寧格勒的安全通道。雖然芬蘭在物質上蒙受重大損失，但成功保住了國家獨立與政治制度，並迫使蘇聯在後續的蘇芬關係中接受更為謹慎的態度。此役使雙方均得到重要的教訓：蘇聯認識到僅靠數量優勢不足以快速壓制地形複雜的對手，芬蘭則體認到即使在劣勢裝備下，仍可透過灵活的游擊與防守戰術取得可觀的軍事成效。",
+        "resultEn": "The Moscow Peace Treaty, signed on 12 March 1940, officially concluded the Winter War. Under its terms Finland surrendered the Karelian Isthmus, Viipuri and the Hanko Peninsula to the Soviet Union, granting the USSR a secure corridor to Leningrad. Despite heavy material losses, Finland preserved its independence and political structure, and forced the Soviet Union to adopt a more cautious posture in future Finnish‑Soviet relations. Both sides drew critical lessons: the Soviet Union realized that sheer numerical superiority could not quickly overwhelm a determined opponent in difficult terrain, while Finland demonstrated that, even with inferior equipment, flexible guerrilla and defensive tactics could achieve significant military results.",
+        "updated": "2026-10-10T07:18:02.211Z"
       }
     },
     {
@@ -979,6 +998,27 @@
         "nation": "uk",
         "layer": "land",
         "history": "作為英國軍的標準中型機槍，維克斯.303在一次大戰與後續衝突中被廣泛使用，以其水冷式結構提供持續火力支援，成為步兵與火力支援的主力裝備。"
+      }
+    },
+    {
+      "id": "1954-阿爾及利亞戰爭",
+      "added": "2026-10-10T07:02:26.434Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "battle": {
+        "y": 1954,
+        "m": 11,
+        "name": "阿爾及利亞戰爭",
+        "theater": "阿爾及利亞山區、沿海平原與撒哈拉",
+        "brief": "阿爾及利亞戰爭（1954‑1962）為法國在北非殖民地的叛亂與游擊戰，戰場橫跨阿爾及利亞山脈、沿海平原與撒哈拉沙漠。雙方使用多樣武器，其中法軍步兵的主要步槍MAS‑36自1936年起服役，於戰爭中提供穩定的火力支援。"
+      },
+      "kit": {
+        "name": "MAS-36步槍",
+        "designation": "MAS-36",
+        "year": 1936,
+        "nation": "fr",
+        "layer": "land",
+        "history": "MAS‑36是法國軍隊在二戰期間採用的標準栓式步槍，採用7.5mm口徑，於步兵班中作為主要單兵武器，提供中距離精確射擊能力。"
       }
     }
   ]
