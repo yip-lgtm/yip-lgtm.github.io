@@ -34,7 +34,7 @@ nav a.on{color:#fff}
   <div class="card">
     <p class="kicker">洛馬內 / INSIDE LOMA</p>
     <h2>蒙臉 + 黑閃</h2>
-    <p class="en">Inside the daily Loma block. Not a separate session.</p>
+    <p class="en">Inside the daily 10-min Loma block. Not a separate session.</p>
     <p class="lead">蒙臉：一手護臉，一手出拳。黑閃：交叉蝴蝶步，閃身再勾。跟住今日洛馬一齊做。</p>
   </div>
   <div class="card">
@@ -64,15 +64,15 @@ nav a.on{color:#fff}
   </div>
 </div>
 <nav>
-  <a class="on" href="/yipmma/?v=mc49">今日<br>Today</a>
-  <a href="/yipmma/week/?v=mc49">週期<br>Week</a>
+  <a class="on" href="/yipmma/?v=mc50">今日<br>Today</a>
+  <a href="/yipmma/week/?v=mc50">週期<br>Week</a>
   <a href="/yipmma/weight/?v=mc43">體重<br>Weight</a>
   <a href="/yipmma/wimhof/?v=mc44">Hof<br>5 min</a>
 </nav>
 <script>
 (function(){
   var DAYS={
-    Mon:{zh:"星期一",name:"洛馬 · 滑步",en:"Loma · Shuffle",intent:"上半碎步，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"高"},
+    Mon:{zh:"星期一",name:"洛馬 · 滑步",en:"Loma · Shuffle",intent:"上半 10 分碎步，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"高"},
     Tue:{zh:"星期二",name:"洛馬 · Pivot",en:"Loma · Pivot",intent:"慢轉 45 度，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
     Wed:{zh:"星期三",name:"洛馬 · 架勢",en:"Loma · Stance",intent:"前腳外側，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
     Thu:{zh:"星期四",name:"洛馬 · 環繞",en:"Loma · Circle",intent:"走弧，內含蒙臉同黑閃。取消 Zone 2。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
@@ -83,11 +83,11 @@ nav a.on{color:#fff}
   var w=new Date().toLocaleString("en-US",{timeZone:"Asia/Hong_Kong",weekday:"short"}).slice(0,3);
   var d=DAYS[w]||DAYS.Thu;
   document.getElementById("today").innerHTML=
-    '<div class="row"><p class="kicker">'+d.zh+' · '+d.lv+'強度</p><p class="kicker">30:00</p></div>'+
+    '<div class="row"><p class="kicker">'+d.zh+' · '+d.lv+'強度</p><p class="kicker">25:00</p></div>'+
     '<h2>'+d.name+'</h2><p class="en">'+d.en+'</p><p class="lead">'+d.intent+'</p>'+
     '<p class="en">📍 '+d.focus+'</p>'+
     '<p class="en" style="margin-top:10px">超哥：一手護臉，一手出拳。黑閃已經跟洛馬一齊做。</p>'+
-    '<a class="btn" href="/yipmma/session/?v=mc49">開始訓練 →</a>';
+    '<a class="btn" href="/yipmma/session/?v=mc50">開始訓練 →</a>';
 })();
 </script>
 </body>

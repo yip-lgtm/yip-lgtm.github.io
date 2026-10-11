@@ -23,21 +23,21 @@ function rest(s,cue){return {label:"休息",seconds:s,kind:"rest",cue:cue||"行�
 function lomaFirst(id,theme){
   var s=SK[id];
   return [
-    {label:"進入 · 彈跳架勢",seconds:80,kind:"warmup",cue:"腳掌輕彈，肩放鬆。重心中間，隨時可側移。一手已經護臉。<br><span class=en>Soft bounce. Weight centred. One hand already covering the face.</span>",gear:"空地"},
-    {label:"技術 · "+s.name,seconds:120,kind:"skill",cue:s.cue,gear:"空地／鏡前"},
-    rest(15),
-    {label:"蒙臉 · 一手護臉",seconds:90,kind:"work",cue:SK.cover.cue,gear:"空地"},
-    rest(15),
-    {label:"應用 1 · "+s.name,seconds:90,kind:"work",cue:theme.a1,gear:"空地"},
-    rest(15),
-    {label:"應用 2 · "+s.name,seconds:90,kind:"work",cue:theme.a2,gear:"空地"},
-    rest(15),
-    {label:"黑閃 · 交叉閃勾",seconds:90,kind:"work",cue:SK.flash.cue,gear:"空地"},
-    rest(15),
-    {label:"角度 · 黑閃再做",seconds:70,kind:"work",cue:theme.flash||SK.flash.cue,gear:"空地"},
-    rest(15),
-    {label:"刺拳 · 蒙臉付費",seconds:70,kind:"work",cue:theme.jab,gear:"空地"},
-    rest(15),
+    {label:"進入 · 彈跳架勢",seconds:50,kind:"warmup",cue:"腳掌輕彈，肩放鬆。重心中間，隨時可側移。一手已經護臉。<br><span class=en>Soft bounce. Weight centred. One hand already covering the face.</span>",gear:"空地"},
+    {label:"技術 · "+s.name,seconds:90,kind:"skill",cue:s.cue,gear:"空地／鏡前"},
+    rest(10),
+    {label:"蒙臉 · 一手護臉",seconds:60,kind:"work",cue:SK.cover.cue,gear:"空地"},
+    rest(10),
+    {label:"應用 1 · "+s.name,seconds:60,kind:"work",cue:theme.a1,gear:"空地"},
+    rest(10),
+    {label:"應用 2 · "+s.name,seconds:60,kind:"work",cue:theme.a2,gear:"空地"},
+    rest(10),
+    {label:"黑閃 · 交叉閃勾",seconds:60,kind:"work",cue:SK.flash.cue,gear:"空地"},
+    rest(10),
+    {label:"角度 · 黑閃再做",seconds:50,kind:"work",cue:theme.flash||SK.flash.cue,gear:"空地"},
+    rest(10),
+    {label:"刺拳 · 蒙臉付費",seconds:50,kind:"work",cue:theme.jab,gear:"空地"},
+    rest(10),
     {label:"Flow 收工",seconds:50,kind:"work",cue:theme.flow,gear:"空地"}
   ];
 }
@@ -80,14 +80,14 @@ function bind(){
   var go=document.getElementById("go");
   if(go) go.onclick=function(){unlockAudio();if(waitingPick(day.blocks[i]))return;if(run){run=false;if(timer){clearInterval(timer);timer=null;}}else startClock();render();};
   var sk=document.getElementById("skip"); if(sk) sk.onclick=function(){unlockAudio();finishBlock();};
-  var st=document.getElementById("stop"); if(st) st.onclick=function(){location.href="/yipmma/?v=mc49";};
+  var st=document.getElementById("stop"); if(st) st.onclick=function(){location.href="/yipmma/?v=mc50";};
 }
 function render(){
   var el=document.getElementById("app");
-  if(done){el.innerHTML="<h1>完成</h1>"+dotsHtml()+"<p class='cue'>跟住食南瓜小米粥。</p><p class='tally'><a href='/yipmma/?v=mc49'>返回今日</a></p>";return;}
+  if(done){el.innerHTML="<h1>完成</h1>"+dotsHtml()+"<p class='cue'>跟住食南瓜小米粥。</p><p class='tally'><a href='/yipmma/?v=mc50'>返回今日</a></p>";return;}
   var b=day.blocks[i],pct=Math.min(100,Math.round(elapsed()/total()*100));
   var nxt=day.blocks[i+1];
-  var head="<div class='top'><a href='/yipmma/?v=mc49'>離開</a><span>"+pct+"%</span></div><div class='bar'><i style='width:"+pct+"%'></i></div>";
+  var head="<div class='top'><a href='/yipmma/?v=mc50'>離開</a><span>"+pct+"%</span></div><div class='bar'><i style='width:"+pct+"%'></i></div>";
   var controls="<div class='btns'><button class='icon pri' id='go'>"+(run?"暫停":"Keep")+"</button><button class='icon' id='skip'>▶▶</button><button class='icon' id='stop'>■</button></div>"+(nxt?"<p class='next'>下一段："+nxt.label+"</p>":"");
   if(waitingPick(b)){
     var opts="";
