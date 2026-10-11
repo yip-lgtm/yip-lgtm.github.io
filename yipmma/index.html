@@ -32,16 +32,10 @@ nav a.on{color:#fff}
   <p class="lead">練拳不練功到老一場空<br>（特別鳴謝 超哥）</p>
   <div class="card" id="today"></div>
   <div class="card">
-    <p class="kicker">PART 1 · CHAO</p>
-    <h2>蒙臉拳法</h2>
-    <p class="en">One hand covers the face. The other punches. Eyes open.</p>
-    <a class="btn ghost" href="/yipmma/blind/?v=mc47">開始蒙臉</a>
-  </div>
-  <div class="card">
-    <p class="kicker">PART 2 · FLASH</p>
-    <h2>黑閃</h2>
-    <p class="en">Cross butterfly step, then slip and hook.</p>
-    <a class="btn ghost" href="/yipmma/flash/?v=mc48">開始黑閃</a>
+    <p class="kicker">洛馬內 / INSIDE LOMA</p>
+    <h2>蒙臉 + 黑閃</h2>
+    <p class="en">Inside the daily Loma block. Not a separate session.</p>
+    <p class="lead">蒙臉：一手護臉，一手出拳。黑閃：交叉蝴蝶步，閃身再勾。跟住今日洛馬一齊做。</p>
   </div>
   <div class="card">
     <p class="kicker">超哥訓勉 / CHAO</p>
@@ -70,21 +64,21 @@ nav a.on{color:#fff}
   </div>
 </div>
 <nav>
-  <a class="on" href="/yipmma/?v=mc48">今日<br>Today</a>
-  <a href="/yipmma/week/?v=mc44">週期<br>Week</a>
+  <a class="on" href="/yipmma/?v=mc49">今日<br>Today</a>
+  <a href="/yipmma/week/?v=mc49">週期<br>Week</a>
   <a href="/yipmma/weight/?v=mc43">體重<br>Weight</a>
-  <a href="/yipmma/flash/?v=mc48">黑閃<br>Flash</a>
+  <a href="/yipmma/wimhof/?v=mc44">Hof<br>5 min</a>
 </nav>
 <script>
 (function(){
   var DAYS={
-    Mon:{zh:"星期一",name:"洛馬 · 滑步",en:"Loma · Shuffle",intent:"上半 15 分碎步。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"高"},
-    Tue:{zh:"星期二",name:"洛馬 · Pivot",en:"Loma · Pivot",intent:"慢轉 45 度，唔催。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
-    Wed:{zh:"星期三",name:"洛馬 · 架勢",en:"Loma · Stance",intent:"前腳外側，腳先於手。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
-    Thu:{zh:"星期四",name:"洛馬 · 環繞",en:"Loma · Circle",intent:"走弧唔走直線。取消 Zone 2。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
-    Fri:{zh:"星期五",name:"洛馬 · 刺拳",en:"Loma · Jab",intent:"肩先拳後、即收。後半 A–E 各 3 組。",focus:"空地 → 單槓／啞鈴",lv:"中"},
-    Sat:{zh:"星期六",name:"洛馬 · 移動",en:"Loma · Movement",intent:"滑 + Pivot + 環繞。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
-    Sun:{zh:"星期日",name:"洛馬 · 恢復",en:"Loma · Recovery",intent:"慢鏡、慢滑、慢 Pivot。鼻吸 4 口呼 6。",focus:"空地 → 輕塑形",lv:"低"}
+    Mon:{zh:"星期一",name:"洛馬 · 滑步",en:"Loma · Shuffle",intent:"上半碎步，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"高"},
+    Tue:{zh:"星期二",name:"洛馬 · Pivot",en:"Loma · Pivot",intent:"慢轉 45 度，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
+    Wed:{zh:"星期三",name:"洛馬 · 架勢",en:"Loma · Stance",intent:"前腳外側，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
+    Thu:{zh:"星期四",name:"洛馬 · 環繞",en:"Loma · Circle",intent:"走弧，內含蒙臉同黑閃。取消 Zone 2。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
+    Fri:{zh:"星期五",name:"洛馬 · 刺拳",en:"Loma · Jab",intent:"肩先拳後，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地 → 單槓／啞鈴",lv:"中"},
+    Sat:{zh:"星期六",name:"洛馬 · 移動",en:"Loma · Movement",intent:"滑 + Pivot + 環繞，內含蒙臉同黑閃。後半 A–E 各 3 組。",focus:"空地／鏡前 → 單槓",lv:"中"},
+    Sun:{zh:"星期日",name:"洛馬 · 恢復",en:"Loma · Recovery",intent:"慢鏡、慢滑、慢蒙臉同黑閃。鼻吸 4 口呼 6。",focus:"空地 → 輕塑形",lv:"低"}
   };
   var w=new Date().toLocaleString("en-US",{timeZone:"Asia/Hong_Kong",weekday:"short"}).slice(0,3);
   var d=DAYS[w]||DAYS.Thu;
@@ -92,8 +86,8 @@ nav a.on{color:#fff}
     '<div class="row"><p class="kicker">'+d.zh+' · '+d.lv+'強度</p><p class="kicker">30:00</p></div>'+
     '<h2>'+d.name+'</h2><p class="en">'+d.en+'</p><p class="lead">'+d.intent+'</p>'+
     '<p class="en">📍 '+d.focus+'</p>'+
-    '<p class="en" style="margin-top:10px">超哥：一手護臉，一手出拳。</p>'+
-    '<a class="btn" href="/yipmma/session/?v=mc42">開始訓練 →</a>';
+    '<p class="en" style="margin-top:10px">超哥：一手護臉，一手出拳。黑閃已經跟洛馬一齊做。</p>'+
+    '<a class="btn" href="/yipmma/session/?v=mc49">開始訓練 →</a>';
 })();
 </script>
 </body>
