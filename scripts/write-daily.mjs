@@ -15,7 +15,11 @@ const prompt = future
   : `今天是 ${date}。用繁體中文只寫一件事：一件真實軍武在它真正服役的年份，或一場真實戰役。不要寫百年總覽，不要把後來的型號提前。從火器、機槍、戰車、飛機、軍艦、飛彈、核威懾到已經列裝的無人機裡挑一個。只輸出一個 JSON。k 是年份，t 最多八個字且不要口號，b 是九十到一百四十字。不要省略號，不要編造精確數字，不要寫製造方法。`;
 
 const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").replace(/\/$/, "");
-const model = process.env.MINIMAX_MODEL || "MiniMax-M2.7-highspeed";
+// Swapped from MiniMax-M2.7-highspeed at the owner's call. Like the image
+// model, this is unverified against the live API: if the service rejects it
+// the run fails loudly with the response body rather than writing a bad entry.
+// MINIMAX_MODEL=MiniMax-M2.7-highspeed reverts without a code change.
+const model = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash-Preview";
 
 async function once() {
   const res = await fetch(`${base}/chat/completions`, {

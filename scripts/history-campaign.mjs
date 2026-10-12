@@ -30,7 +30,11 @@ countries, countriesEn, people, peopleEn, kits, kitsEn, tactics, tacticsEn, data
 英文每段是對應翻譯，不要另寫一場戰爭。`;
 
 const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").replace(/\/$/, "");
-const model = process.env.MINIMAX_MODEL || "MiniMax-M2.7-highspeed";
+// Swapped from MiniMax-M2.7-highspeed at the owner's call. Like the image
+// model, this is unverified against the live API: if the service rejects it
+// the run fails loudly with the response body rather than writing a bad entry.
+// MINIMAX_MODEL=MiniMax-M2.7-highspeed reverts without a code change.
+const model = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash-Preview";
 // An eight-section bilingual record is a long generation. Node's undici
 // headers timeout is 300s, which killed the first Falklands attempt with an
 // unhandled TypeError and lost the run.

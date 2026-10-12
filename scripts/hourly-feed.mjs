@@ -71,7 +71,11 @@ const prompt = `參考中文維基戰爭列表 https://zh.wikipedia.org/wiki/战
 不要輸出欄位說明本身。`;
 
 const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").replace(/\/$/, "");
-const model = process.env.MINIMAX_MODEL || "MiniMax-M2.7-highspeed";
+// Swapped from MiniMax-M2.7-highspeed at the owner's call. Like the image
+// model, this is unverified against the live API: if the service rejects it
+// the run fails loudly with the response body rather than writing a bad entry.
+// MINIMAX_MODEL=MiniMax-M2.7-highspeed reverts without a code change.
+const model = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash-Preview";
 let lastError = "unknown";
 
 // A campaign entry is a long generation. Node's undici headers timeout is 300s,
