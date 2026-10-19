@@ -8,6 +8,11 @@
       var p = location.pathname || "/";
       var q = location.search || "";
       var h = location.hash || "";
+      // Do not redirect lab paths
+      if (p.indexOf("/hd-me-lab") === 0) {
+        // Let the lab 404 handle it, or just stay
+        return;
+      }
       if (p.indexOf("/yipmma") === 0) {
         var rest = p.replace(/^\/yipmma\/?/, "").split("/")[0];
         var known = { weight: 1, session: 1, week: 1, skills: 1 };
