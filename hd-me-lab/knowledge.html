@@ -50,22 +50,23 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
     <a href="#base"><span>01</span>基礎底座</a>
     <a href="#spring"><span>02</span>彈簧 F=kx</a>
     <a href="#beam"><span>03</span>簡支樑撞度</a>
-    <a href="#vib"><span>04</span>共振</a>
-    <a href="#fatigue"><span>05</span>疲勞</a>
-    <a href="#fem"><span>06</span>有限元概念</a>
-    <a href="#map"><span>07</span>應用地圖</a>
+    <a href="#gear"><span>04</span>齒輪比</a>
+    <a href="#vib"><span>05</span>共振</a>
+    <a href="#fatigue"><span>06</span>疲勞</a>
+    <a href="#fem"><span>07</span>有限元概念</a>
+    <a href="#map"><span>08</span>應用地圖</a>
   </nav>
 </header>
 
 <section id="base">
-  <div class="sec-no">01 / 基礎</div>
+  <div class="sec-no">01 / 基礎 · 60 min</div>
   <h2>傳統機械與經典力學</h2>
   <p>機原講「點解運動」，材力講「點解承載」，機設講「點解落地」。三本書加手冊，就是日常設計的底。</p>
   <div class="cards">
-    <div class="card"><div class="k">機原</div><div class="v">運動學</div><div class="note">齒輪、連桿、凸輪</div></div>
-    <div class="card"><div class="k">材力</div><div class="v">強度剛度</div><div class="note">拉壓剪扭彎</div></div>
-    <div class="card"><div class="k">機設</div><div class="v">標準件</div><div class="note">螺栓、軸承、帶</div></div>
-    <div class="card"><div class="k">手冊</div><div class="v">查表</div><div class="note">公差、GB、標準件</div></div>
+    <div class="card"><div class="k">《機械原理》孫桓</div><div class="v">機構運動學</div><div class="note">齒輪、連桿、凸輪</div></div>
+    <div class="card"><div class="k">《材料力學》劉鴻文</div><div class="v">強度剛度</div><div class="note">單杆件拉壓剪扭彎</div></div>
+    <div class="card"><div class="k">《機械設計》濮良貴</div><div class="v">標準件選型</div><div class="note">螺栓、軸承、帶傳動</div></div>
+    <div class="card"><div class="k">《機械設計手冊》聞邦業</div><div class="v">查表</div><div class="note">公差、標準件、GB</div></div>
   </div>
 </section>
 
@@ -104,10 +105,28 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
   </div>
 </section>
 
+<section id="gear">
+  <div class="sec-no">04 / 齒輪</div>
+  <h2>齒輪比 — 速度同扭矩</h2>
+  <p>拖動齒數，看輸入輸出轉速比同扭矩比。齒輪比 i = z2/z1，轉速反比，扭矩正比。</p>
+  <div class="bench">
+    <div class="controls">
+      <div class="ctl"><label>z1 (輸入)<output id="z1o">20</output></label><input id="z1" type="range" min="12" max="40" value="20" step="1"></div>
+      <div class="ctl"><label>z2 (輸出)<output id="z2o">40</output></label><input id="z2" type="range" min="20" max="80" value="40" step="1"></div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="k">齒輪比 i</div><div class="v" id="io">2.00</div></div>
+      <div class="card"><div class="k">轉速比 n2/n1</div><div class="v" id="no">0.50</div></div>
+      <div class="card"><div class="k">扭矩比 T2/T1</div><div class="v" id="to">2.00</div></div>
+    </div>
+    <p class="note">忽略效率。實際有摩擦，扭矩比會稍低。</p>
+  </div>
+</section>
+
 <section id="vib">
-  <div class="sec-no">04 / 振動</div>
+  <div class="sec-no">05 / 振動 · 進階</div>
   <h2>共振 — 動態放大</h2>
-  <p>當外力頻率近固有頻率，振幅會大幅增加。拖動頻率比，看放大倍數。</p>
+  <p>《機械振動》Rao。當外力頻率近固有頻率，振幅會大幅增加。拖動頻率比，看放大倍數。</p>
   <div class="bench">
     <div class="controls">
       <div class="ctl"><label>頻率比 ω/ωₙ<output id="ro">0.8</output></label><input id="r" type="range" min="0.2" max="2.0" value="0.8" step="0.05"></div>
@@ -122,9 +141,9 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
 </section>
 
 <section id="fatigue">
-  <div class="sec-no">05 / 疲勞</div>
+  <div class="sec-no">06 / 疲勞</div>
   <h2>循環載荷下的壽命</h2>
-  <p>強度未超限，件仲可以斷。拖動應力幅，看預估周次（S-N 概念）。</p>
+  <p>《疲勞與斷裂力學》康國政。強度未超限，件仲可以斷。拖動應力幅，看預估周次（S-N 概念）。</p>
   <div class="bench">
     <div class="controls">
       <div class="ctl"><label>應力幅 σa (MPa)<output id="sao">200</output></label><input id="sa" type="range" min="50" max="400" value="200" step="10"></div>
@@ -138,9 +157,9 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
 </section>
 
 <section id="fem">
-  <div class="sec-no">06 / 有限元</div>
+  <div class="sec-no">07 / 有限元 · 現代</div>
   <h2>把連續體切成小塊，再拼回</h2>
-  <p>軟體唔係天花板。網格太粗、邊界錯、單位錯，都會出「美麗的垃圾」。理論先於按鈕。</p>
+  <p>《有限單元法》王勁成 + 曾攀。軟體唔係天花板。網格太粗、邊界錯、單位錯，都會出「美麗的垃圾」。理論先於按鈕。</p>
   <div class="bench">
     <div class="controls">
       <div class="ctl"><label>網格數量<output id="mo">4</output></label><input id="mesh" type="range" min="2" max="12" value="4" step="1"></div>
@@ -148,10 +167,15 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
     <div class="fig"><svg id="svgMesh" viewBox="0 0 480 160"></svg></div>
     <p class="note">網格越細，近似越好，但計算量上升。關鍵位置（應力集中）先加密。</p>
   </div>
+  <div class="cards" style="margin-top:16px">
+    <div class="card"><div class="k">固體</div><div class="v">ABAQUS</div><div class="note">莊苑 · 非線性、接觸、大變形</div></div>
+    <div class="card"><div class="k">流體</div><div class="v">CFD</div><div class="note">Anderson · 空氣動力、熱傳、流道</div></div>
+    <div class="card"><div class="k">實戰</div><div class="v">ANSYS</div><div class="note">喻高遠 · 靜力學、動力學、熱流耦合</div></div>
+  </div>
 </section>
 
 <section id="map">
-  <div class="sec-no">07 / 應用</div>
+  <div class="sec-no">08 / 應用 · 20 min</div>
   <h2>不同目標的閱讀組合</h2>
   <div class="tbl"><table>
     <tr><th>目標</th><th>組合</th><th>解決問題</th></tr>
@@ -161,7 +185,7 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
     <tr><td>流體與熱能</td><td>流體力學 + Anderson CFD</td><td>泵閥、流道、空氣動力</td></tr>
   </table></div>
   <p class="note" style="margin-top:16px">數值同公式都係簡化示意，用來理解趋勢。實際設計要用材料手冊、標準同正規軟體。</p>
-  <p style="margin-top:20px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← 返 Lab SolidWorks</a></p>
+  <p style="margin-top:20px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← 返 Lab SolidWorks</a> · <a href="roadmap.html" style="color:var(--accent)">簡易卡片版</a></p>
 </section>
 </div>
 
@@ -184,8 +208,8 @@ function beam(){
   const L=+document.getElementById('l').value;
   document.getElementById('fo').textContent=F;
   document.getElementById('lo').textContent=L;
-  const E=200000; // MPa
-  const I=1e5;    // mm4
+  const E=200000;
+  const I=1e5;
   const d=F*Math.pow(L,3)/(48*E*I);
   document.getElementById('dv').textContent=d.toFixed(2)+' mm';
   const svg=document.getElementById('svgBeam');
@@ -196,6 +220,16 @@ function beam(){
   <circle cx="${mid}" cy="${80+drop}" r="4" fill="#eb9b4c"/>
   <text x="${mid}" y="${100+drop}" text-anchor="middle" fill="#93a4a9" font-size="12">δ=${d.toFixed(2)} mm</text>
   <text x="260" y="40" text-anchor="middle" fill="#e3ecec" font-size="13">F=${F} N   L=${L} mm</text>`;
+}
+function gear(){
+  const z1=+document.getElementById('z1').value;
+  const z2=+document.getElementById('z2').value;
+  document.getElementById('z1o').textContent=z1;
+  document.getElementById('z2o').textContent=z2;
+  const i=z2/z1;
+  document.getElementById('io').textContent=i.toFixed(2);
+  document.getElementById('no').textContent=(1/i).toFixed(2);
+  document.getElementById('to').textContent=i.toFixed(2);
 }
 function vib(){
   const r=+document.getElementById('r').value;
@@ -259,10 +293,11 @@ function mesh(){
 }
 ['k','x'].forEach(id=>document.getElementById(id).addEventListener('input',spring));
 ['f','l'].forEach(id=>document.getElementById(id).addEventListener('input',beam));
+['z1','z2'].forEach(id=>document.getElementById(id).addEventListener('input',gear));
 ['r','z'].forEach(id=>document.getElementById(id).addEventListener('input',vib));
 document.getElementById('sa').addEventListener('input',fat);
 document.getElementById('mesh').addEventListener('input',mesh);
-spring(); beam(); vib(); fat(); mesh();
+spring(); beam(); gear(); vib(); fat(); mesh();
 </script>
 </body>
 </html>
