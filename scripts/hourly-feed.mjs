@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { kitPortrait, loadPortraitIndex } from "./kit-portrait.mjs";
+import { postJsonOrThrow } from "./minimax.mjs";
 
 const key = process.env.MINIMAX_API_KEY;
 const out = process.env.FEED_OUT || "public/feed.json";
@@ -113,12 +114,11 @@ let lastError = "unknown";
 const TIMEOUT_MS = Number(process.env.FEED_TIMEOUT_MS || 600_000);
 
 async function once() {
-  let res;
+  let body;
   try {
-    res = await fetch(`${base}/chat/completions`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
-      body: JSON.stringify({
+    body = await postJsonOrThrow(
+      `${base}/chat/completions`,
+      {
         model,
         temperature: 0.6,
         max_completion_tokens: Number(process.env.FEED_MAX_TOKENS || 16000),
@@ -126,20 +126,14 @@ async function once() {
           { role: "system", content: "只用繁體中文。最後只留一個 JSON 物件。不要長篇推理，直接輸出答案。" },
           { role: "user", content: prompt + (lastError ? `\n上一份答案被拒絕：${lastError}。請修正後重新輸出。` : "") },
         ],
-      }),
-      signal: AbortSignal.timeout(TIMEOUT_MS),
-    });
+      },
+      { headers: { Authorization: `Bearer ${key}` }, timeoutMs: TIMEOUT_MS },
+    );
   } catch (err) {
     lastError = err instanceof Error ? err.message : String(err);
     console.error(`  transport: ${lastError}`);
     return null;
   }
-  if (!res.ok) {
-    lastError = `HTTP ${res.status}`;
-    console.error(`  ${lastError}`);
-    return null;
-  }
-  const body = await res.json();
   const raw = body.choices?.[0]?.message?.content ?? "";
   const cleaned = raw.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
   const blob = cleaned.includes("{") ? cleaned : raw;

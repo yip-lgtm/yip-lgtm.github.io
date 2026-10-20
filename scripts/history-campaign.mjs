@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync } from "node:fs";
+import { postJsonOrThrow } from "./minimax.mjs";
 
 const key = process.env.MINIMAX_API_KEY;
 const out = process.env.FEED_OUT || "cute/feed.json";
@@ -38,17 +39,19 @@ const model = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash-Preview";
 // An eight-section bilingual record is a long generation. Node's undici
 // headers timeout is 300s, which killed the first Falklands attempt with an
 // unhandled TypeError and lost the run.
-const TIMEOUT_MS = Number(process.env.DOSSIER_TIMEOUT_MS || 600_000);
+// The model thinks before it writes, and eight bilingual sections take a
+// long time to come back. 600 seconds was not enough: the request was
+// killed mid-answer. The job runs once an hour, so it can afford to wait.
+const TIMEOUT_MS = Number(process.env.DOSSIER_TIMEOUT_MS || 1_800_000);
 const ATTEMPTS = Number(process.env.DOSSIER_ATTEMPTS || 3);
 // The reason the last answer was rejected. The next attempt is told about
 // it, so one incomplete answer does not cost the whole hour.
 let lastError = "";
 
 async function attempt() {
-  const res = await fetch(`${base}/chat/completions`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
-    body: JSON.stringify({
+  const data = await postJsonOrThrow(
+    `${base}/chat/completions`,
+    {
       model,
       messages: [{ role: "user", content: prompt + (lastError ? `\n上一份答案被拒絕：${lastError}。請補齊後重新輸出完整的 JSON 物件。` : "") }],
       temperature: 0.4,
@@ -57,11 +60,9 @@ async function attempt() {
       // the reply off at the default length, and the last section -- result
       // and resultEn -- was the part that went missing.
       max_completion_tokens: Number(process.env.DOSSIER_MAX_TOKENS || 32000),
-    }),
-    signal: AbortSignal.timeout(TIMEOUT_MS),
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`);
-  const data = await res.json();
+    },
+    { headers: { Authorization: `Bearer ${key}` }, timeoutMs: TIMEOUT_MS },
+  );
   const text = data.choices?.[0]?.message?.content ?? "";
   const json = text.replace(/<think>[\s\S]*?<\/think>/g, "").match(/\{[\s\S]*\}/);
   if (!json) throw new Error("no json in reply");

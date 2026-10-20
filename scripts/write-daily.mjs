@@ -1,4 +1,5 @@
 import { writeFileSync } from "node:fs";
+import { postJsonOrThrow } from "./minimax.mjs";
 
 const key = process.env.MINIMAX_API_KEY;
 const out = process.env.DAILY_OUT || "public/daily.json";
@@ -20,23 +21,31 @@ const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").repla
 // the run fails loudly with the response body rather than writing a bad entry.
 // MINIMAX_MODEL=MiniMax-M2.7-highspeed reverts without a code change.
 const model = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash-Preview";
+// The daily page is one long generation. Node's fetch cuts the request off
+// at 300 seconds waiting for the headers, which is not enough.
+const TIMEOUT_MS = Number(process.env.DAILY_TIMEOUT_MS || 900_000);
 
 async function once() {
-  const res = await fetch(`${base}/chat/completions`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
-    body: JSON.stringify({
-      model,
-      temperature: 0.6,
-      max_completion_tokens: 4000,
-      messages: [
-        { role: "system", content: "只用繁體中文。最後只留一個 JSON 物件。" },
-        { role: "user", content: prompt },
-      ],
-    }),
-  });
-  if (!res.ok) return null;
-  const body = await res.json();
+  let body;
+  try {
+    body = await postJsonOrThrow(
+      `${base}/chat/completions`,
+      {
+        model,
+        temperature: 0.6,
+        // The model thinks before it answers, and the thinking counts against
+        // this budget.
+        max_completion_tokens: Number(process.env.DAILY_MAX_TOKENS || 16000),
+        messages: [
+          { role: "system", content: "只用繁體中文。最後只留一個 JSON 物件。不要長篇推理，直接輸出答案。" },
+          { role: "user", content: prompt },
+        ],
+      },
+      { headers: { Authorization: `Bearer ${key}` }, timeoutMs: TIMEOUT_MS },
+    );
+  } catch {
+    return null;
+  }
   const raw = body.choices?.[0]?.message?.content ?? "";
   const cleaned = raw.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
   const blob = cleaned.includes("{") ? cleaned : raw;
