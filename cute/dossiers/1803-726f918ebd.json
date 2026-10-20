@@ -1,7 +1,10 @@
 {
  "id": "1803-反法同盟戰爭",
  "theater": "歐洲戰場",
- "place": null,
+ "place": {
+  "lng": 10,
+  "lat": 50
+ },
  "battle": {
   "y": 1803,
   "m": 5,

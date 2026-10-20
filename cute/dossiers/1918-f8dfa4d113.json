@@ -1,7 +1,10 @@
 {
  "id": "1918-芬蘭內戰",
  "theater": "芬蘭本土",
- "place": null,
+ "place": {
+  "lng": 26,
+  "lat": 62
+ },
  "battle": {
   "y": 1918,
   "m": 1,

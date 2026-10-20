@@ -1,7 +1,10 @@
 {
  "id": "1959-越南戰爭",
  "theater": "東南亞",
- "place": null,
+ "place": {
+  "lng": 103,
+  "lat": 12
+ },
  "battle": {
   "y": 1959,
   "m": 7,

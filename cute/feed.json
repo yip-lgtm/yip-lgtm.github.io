@@ -21,7 +21,11 @@
         "portrait": "portraits/feed-mod1914.jpg"
       },
       "dossierUrl": "dossiers/1915-39c62d2203.json",
-      "source": "https://zh.wikipedia.org/wiki/战争列表"
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.6,
+        "lat": 45.9
+      }
     },
     {
       "id": "1918-俄國內戰",
@@ -44,7 +48,11 @@
         "history": "1891年已列裝的栓式步槍，一次大戰同內戰都係紅軍同白軍的底子。內戰裡決定鐵路樞紐的係機槍、野砲同裝甲列車，唔係呢支槍的改型。",
         "portrait": "portraits/mosin.jpg"
       },
-      "dossierUrl": "dossiers/1918-7c5211ed9d.json"
+      "dossierUrl": "dossiers/1918-7c5211ed9d.json",
+      "place": {
+        "lng": 60,
+        "lat": 56
+      }
     },
     {
       "id": "1936-西班牙內戰",
@@ -67,7 +75,11 @@
         "history": "作為共和軍的主力輕型坦克，T-26在西班牙內戰中於城市防守與機動支援中提供裝甲火力。",
         "portrait": "portraits/t26.jpg"
       },
-      "dossierUrl": "dossiers/1936-38a1faaab3.json"
+      "dossierUrl": "dossiers/1936-38a1faaab3.json",
+      "place": {
+        "lng": -3.7,
+        "lat": 40.4
+      }
     },
     {
       "id": "1941-太平洋戰爭",
@@ -90,7 +102,11 @@
         "history": "1944年列裝的美軍中型坦克後期型，配屬太平洋登陸部隊，負責近距火力支援與突破岸防工事。",
         "portrait": "portraits/feed-m4a3e8.jpg"
       },
-      "dossierUrl": "dossiers/1941-95023257b7.json"
+      "dossierUrl": "dossiers/1941-95023257b7.json",
+      "place": {
+        "lng": -177.4,
+        "lat": 28.2
+      }
     },
     {
       "id": "1950-韓戰",
@@ -113,7 +129,11 @@
         "history": "1944年列裝的美軍重型坦克，韓戰期間配屬地面部隊，用於近距火力支援與對抗對方中型坦克。",
         "portrait": "portraits/feed-m26-414572.jpg"
       },
-      "dossierUrl": "dossiers/1950-034f9d833f.json"
+      "dossierUrl": "dossiers/1950-034f9d833f.json",
+      "place": {
+        "lng": 127,
+        "lat": 38
+      }
     },
     {
       "id": "1990-波斯灣戰爭",
@@ -136,7 +156,11 @@
         "history": "1985年列裝的美軍主力戰車，1991年地面作戰期間配屬聯軍裝甲部隊，用於前線突擊與對抗對方戰車。",
         "portrait": "portraits/feed-m1a1.jpg"
       },
-      "dossierUrl": "dossiers/1990-6bd443d918.json"
+      "dossierUrl": "dossiers/1990-6bd443d918.json",
+      "place": {
+        "lng": 51,
+        "lat": 26.5
+      }
     },
     {
       "id": "1914-第一次世界大戰",
@@ -159,7 +183,11 @@
         "history": "MG 08在一次大戰的西線和東線被廣泛部署，其持續的火力在防守與進攻中均發揮了重要作用。",
         "portrait": "portraits/mg08.jpg"
       },
-      "dossierUrl": "dossiers/1914-81d6829416.json"
+      "dossierUrl": "dossiers/1914-81d6829416.json",
+      "place": {
+        "lng": 2.7,
+        "lat": 49
+      }
     },
     {
       "id": "1919-波蘇戰爭",
@@ -182,7 +210,11 @@
         "history": "1917年已列裝的輕坦克，波蘇戰爭期間配屬波蘭裝甲單位，用於步兵支援與短促機動。",
         "portrait": "portraits/ft.jpg"
       },
-      "dossierUrl": "dossiers/1919-93c2abe632.json"
+      "dossierUrl": "dossiers/1919-93c2abe632.json",
+      "place": {
+        "lng": 21,
+        "lat": 52.2
+      }
     },
     {
       "id": "1937-抗日戰爭",
@@ -205,7 +237,11 @@
         "history": "1935年已列裝的日本輕戰車，抗日戰爭期間配屬在華地面部隊，用於步兵支援與短促機動。",
         "portrait": "portraits/feed-hago.jpg"
       },
-      "dossierUrl": "dossiers/1937-7b7904bb67.json"
+      "dossierUrl": "dossiers/1937-7b7904bb67.json",
+      "place": {
+        "lng": 114,
+        "lat": 30
+      }
     },
     {
       "id": "1941-蘇德戰爭",
@@ -228,7 +264,11 @@
         "history": "1939年列裝蘇聯紅軍，1941年廣泛配屬於東歐機械化師團。",
         "portrait": "portraits/feed-t3476.jpg"
       },
-      "dossierUrl": "dossiers/1941-e12c8b702a.json"
+      "dossierUrl": "dossiers/1941-e12c8b702a.json",
+      "place": {
+        "lng": 21,
+        "lat": 52.2
+      }
     },
     {
       "id": "1956-第二次中東戰爭",
@@ -251,7 +291,11 @@
         "history": "1953年列裝法軍，1956年配屬於投入蘇伊士運河區的法國裝甲單位。",
         "portrait": "portraits/feed-amx13.jpg"
       },
-      "dossierUrl": "dossiers/1956-94903a5d7b.json"
+      "dossierUrl": "dossiers/1956-94903a5d7b.json",
+      "place": {
+        "lng": 32.5,
+        "lat": 30
+      }
     },
     {
       "id": "1999-科索沃戰爭",
@@ -274,7 +318,11 @@
         "history": "1978年已列裝的美軍戰鬥機，科索沃戰爭期間配屬北約空中部隊，用於制空與對地打擊。",
         "portrait": "portraits/f16.jpg"
       },
-      "dossierUrl": "dossiers/1999-7f89dd07e1.json"
+      "dossierUrl": "dossiers/1999-7f89dd07e1.json",
+      "place": {
+        "lng": 20,
+        "lat": 42
+      }
     },
     {
       "id": "1915-護國戰爭",
@@ -297,7 +345,11 @@
         "history": "德國1888年研製的栓式步槍，清末引進，廣泛配用於中國內戰。",
         "portrait": "portraits/feed-m1888.jpg"
       },
-      "dossierUrl": "dossiers/1915-9dc835853d.json"
+      "dossierUrl": "dossiers/1915-9dc835853d.json",
+      "place": {
+        "lng": 116.3,
+        "lat": 39.8
+      }
     },
     {
       "id": "1919-愛爾蘭獨立戰爭",
@@ -320,7 +372,11 @@
         "history": "該步槍是英國在第一次世界大戰中的主力栓式步槍，於愛爾蘭獨立戰爭期間被英軍與愛爾蘭武裝廣泛使用。",
         "portrait": "portraits/feed-no1mkiii.jpg"
       },
-      "dossierUrl": "dossiers/1919-9c812e21ba.json"
+      "dossierUrl": "dossiers/1919-9c812e21ba.json",
+      "place": {
+        "lng": -8,
+        "lat": 53.3
+      }
     },
     {
       "id": "1939-冬季戰爭",
@@ -343,7 +399,11 @@
         "history": "1931年列裝後，索米衝鋒槍成為芬蘭步兵的主要近戰武器，冬季戰爭期間廣泛配屬於步兵班與滑雪兵，用於近距離火力。",
         "portrait": "portraits/feed-kp31.jpg"
       },
-      "dossierUrl": "dossiers/1939-a7ddea5917.json"
+      "dossierUrl": "dossiers/1939-a7ddea5917.json",
+      "place": {
+        "lng": 25,
+        "lat": 59
+      }
     },
     {
       "id": "1962-中印邊境戰爭",
@@ -366,7 +426,11 @@
         "history": "1956年列裝的中國制式突擊步槍，1962年中印邊境戰爭期間配屬入藏與新疆方向的步兵部隊，用於山地近戰。",
         "portrait": "portraits/feed-type56.jpg"
       },
-      "dossierUrl": "dossiers/1962-2d3d051a35.json"
+      "dossierUrl": "dossiers/1962-2d3d051a35.json",
+      "place": {
+        "lng": 79,
+        "lat": 32
+      }
     },
     {
       "id": "1973-第四次中東戰爭",
@@ -389,7 +453,11 @@
         "history": "1971年以色列自美國接收並列裝的M60A1，1973年配屬西奈與戈蘭方向的裝甲部隊，用於前線火力支援。",
         "portrait": "portraits/feed-m60a1.jpg"
       },
-      "dossierUrl": "dossiers/1973-315c779e71.json"
+      "dossierUrl": "dossiers/1973-315c779e71.json",
+      "place": {
+        "lng": 34.3,
+        "lat": 31
+      }
     },
     {
       "id": "2001-阿富汗戰爭",
@@ -412,7 +480,11 @@
         "history": "1994年定型，2001年部署至阿富汗山區，取代M16。",
         "portrait": "portraits/feed-m4-ae5eb6.jpg"
       },
-      "dossierUrl": "dossiers/2001-3f0321325d.json"
+      "dossierUrl": "dossiers/2001-3f0321325d.json",
+      "place": {
+        "lng": 66,
+        "lat": 34
+      }
     },
     {
       "id": "1916-復活節起義",
@@ -435,7 +507,11 @@
         "history": "英軍於1907年採用此步槍，裝備步兵與支援單位，廣泛用於一次大戰。",
         "portrait": "portraits/feed-smlemkiii.jpg"
       },
-      "dossierUrl": "dossiers/1916-64b7addbf0.json"
+      "dossierUrl": "dossiers/1916-64b7addbf0.json",
+      "place": {
+        "lng": -6.26,
+        "lat": 53.35
+      }
     },
     {
       "id": "1919-土耳其獨立戰爭",
@@ -458,7 +534,11 @@
         "history": "德國於1888年定型的委員會步槍，後續由德軍以Gew 98替換後大量軍援鄂圖曼帝國。鄂圖曼軍於一戰結束後將其移交土耳其國民軍，土耳其共和國成立後繼續改良使用，服役期延伸至1940年代前後，於土耳其獨立戰爭期間為民族主義部隊可見的制式栓動步槍之一。",
         "portrait": "portraits/feed-gew88.jpg"
       },
-      "dossierUrl": "dossiers/1919-c010df7f9a.json"
+      "dossierUrl": "dossiers/1919-c010df7f9a.json",
+      "place": {
+        "lng": 33,
+        "lat": 39
+      }
     },
     {
       "id": "1939-第二次世界大戰",
@@ -481,7 +561,11 @@
         "history": "做為納粹德國空軍的主力單座戰鬥機，Bf 109在歐洲戰場上肩負制空任務，與盟軍戰機交戰。",
         "portrait": "portraits/bf109.jpg"
       },
-      "dossierUrl": "dossiers/1939-f9da16f270.json"
+      "dossierUrl": "dossiers/1939-f9da16f270.json",
+      "place": {
+        "lng": 30,
+        "lat": 35
+      }
     },
     {
       "id": "1918-芬蘭內戰",
@@ -504,7 +588,11 @@
         "history": "作為德國國防軍的制式步槍，Gewehr 98 在一次大戰期間被廣泛配發至步兵排，並被多國軍隊引進或仿製。",
         "portrait": "portraits/g98.jpg"
       },
-      "dossierUrl": "dossiers/1918-f8dfa4d113.json"
+      "dossierUrl": "dossiers/1918-f8dfa4d113.json",
+      "place": {
+        "lng": 26,
+        "lat": 62
+      }
     },
     {
       "id": "1980-兩伊戰爭",
@@ -527,7 +615,11 @@
         "history": "T-72是蘇聯於1970年代研製的主力戰車，採用125mm滑膛炮與自動裝填機，屬於第三代主力戰車，供蘇聯及多國陸軍使用。",
         "portrait": "portraits/t72.jpg"
       },
-      "dossierUrl": "dossiers/1980-90156ac39c.json"
+      "dossierUrl": "dossiers/1980-90156ac39c.json",
+      "place": {
+        "lng": 47.5,
+        "lat": 30
+      }
     },
     {
       "id": "2003-伊拉克戰爭",
@@ -550,7 +642,11 @@
         "history": "作為美國陸軍的主戰坦克，M1自1980年起服役，具備先進的複合裝甲與120公厘滑膛炮，為師級單位的突擊與防禦主力。",
         "portrait": "portraits/feed-m1-4a7553.jpg"
       },
-      "dossierUrl": "dossiers/2003-0c9b605583.json"
+      "dossierUrl": "dossiers/2003-0c9b605583.json",
+      "place": {
+        "lng": 43.5,
+        "lat": 33
+      }
     },
     {
       "id": "1982-福克蘭戰爭",
@@ -573,7 +669,11 @@
         "history": "垂直短距起降艦載機。福克蘭一戰證明航母還在，但數量少，制空只蓋得住特遣艦隊。",
         "portrait": "portraits/harrier.jpg"
       },
-      "dossierUrl": "dossiers/1982-f4ef20faa1.json"
+      "dossierUrl": "dossiers/1982-f4ef20faa1.json",
+      "place": {
+        "lng": -15,
+        "lat": -25
+      }
     },
     {
       "id": "1926-北伐戰爭",
@@ -596,7 +696,11 @@
         "history": "三八式步槍是日本陸軍在二戰前的主力步槍，以其可靠性和精確度聞名，被廣泛用於步兵班及前線作戰。",
         "portrait": "portraits/type38.jpg"
       },
-      "dossierUrl": "dossiers/1926-7789ac7bba.json"
+      "dossierUrl": "dossiers/1926-7789ac7bba.json",
+      "place": {
+        "lng": 113,
+        "lat": 30
+      }
     },
     {
       "id": "1939-波蘭戰役",
@@ -619,7 +723,11 @@
         "history": "四號坦克是德軍在二戰初期的主力中坦，負責支援步兵與對抗敵方裝甲，並參與閃擊戰術的實施。",
         "portrait": "portraits/feed-panzerkampfwageniv.jpg"
       },
-      "dossierUrl": "dossiers/1939-f4ee58afc5.json"
+      "dossierUrl": "dossiers/1939-f4ee58afc5.json",
+      "place": {
+        "lng": 19.5,
+        "lat": 52.2
+      }
     },
     {
       "id": "1941-繼續戰爭",
@@ -642,7 +750,11 @@
         "history": "T-34是蘇聯在二戰中期部署的主力中型坦克，以傾斜裝甲與76公厘炮提升生存性與火力，成為蘇軍突破防線的骨幹。",
         "portrait": "portraits/feed-t34-fe153b.jpg"
       },
-      "dossierUrl": "dossiers/1941-51353a879d.json"
+      "dossierUrl": "dossiers/1941-51353a879d.json",
+      "place": {
+        "lng": 33,
+        "lat": 61
+      }
     },
     {
       "id": "1948-第一次中東戰爭",
@@ -665,7 +777,11 @@
         "history": "M4謝爾曼是二戰期間美國大量生產的中型坦克，以火力與機動性兼備著稱，成為盟軍裝甲兵力的骨幹。",
         "portrait": "portraits/feed-m4-4f474e.jpg"
       },
-      "dossierUrl": "dossiers/1948-9e1cdc2284.json"
+      "dossierUrl": "dossiers/1948-9e1cdc2284.json",
+      "place": {
+        "lng": 34.8,
+        "lat": 31.5
+      }
     },
     {
       "id": "1991-南斯拉夫內戰",
@@ -688,7 +804,11 @@
         "history": "作為蘇聯及華約國家的主力裝甲，T-72以堅固的裝甲與125毫米口徑滑膛砲著稱，在南斯拉夫內戰期間被多支派系使用，顯示其在地面作戰中的重要性。",
         "portrait": "portraits/t72.jpg"
       },
-      "dossierUrl": "dossiers/1991-434c4a5d21.json"
+      "dossierUrl": "dossiers/1991-434c4a5d21.json",
+      "place": {
+        "lng": 20,
+        "lat": 42
+      }
     },
     {
       "id": "1915-伊孫佐戰役",
@@ -711,7 +831,11 @@
         "history": "作為意大利軍第一款大量裝備的自動機槍，菲亞特·雷維利Mod.1914在步兵班提供持續火力，並被裝甲車與固定據點廣泛使用。",
         "portrait": "portraits/feed-fiatrevellimod1914.jpg"
       },
-      "dossierUrl": "dossiers/1915-1da3b45f19.json"
+      "dossierUrl": "dossiers/1915-1da3b45f19.json",
+      "place": {
+        "lng": 13.6,
+        "lat": 45.9
+      }
     },
     {
       "id": "1930-中原大戰",
@@ -734,7 +858,11 @@
         "history": "雷諾FT輕坦克是第一款採用旋轉炮塔與履帶底盤的輕型坦克，1917年法國研製後廣泛用於一戰，並在1930年代被中國軍閥引進，成為當時重要的機械化裝備。",
         "portrait": "portraits/feed-ft-edd91a.jpg"
       },
-      "dossierUrl": "dossiers/1930-7ad7eac94e.json"
+      "dossierUrl": "dossiers/1930-7ad7eac94e.json",
+      "place": {
+        "lng": 114,
+        "lat": 35
+      }
     },
     {
       "id": "1931-一二八事變",
@@ -757,7 +885,11 @@
         "history": "作為日本帝國陸軍首款大規模生產的中型戰車，於1932年的一二八事變中投入上海戰場，提供機動火力支援。",
         "portrait": "portraits/feed-igo-fc5100.jpg"
       },
-      "dossierUrl": "dossiers/1931-5ce4d5a47d.json"
+      "dossierUrl": "dossiers/1931-5ce4d5a47d.json",
+      "place": {
+        "lng": 121.5,
+        "lat": 31.2
+      }
     },
     {
       "id": "1932-查科戰爭",
@@ -780,7 +912,11 @@
         "history": "作為英國軍的標準中型機槍，維克斯.303在一次大戰與後續衝突中被廣泛使用，以其水冷式結構提供持續火力支援，成為步兵與火力支援的主力裝備。",
         "portrait": "portraits/feed-vickers303.jpg"
       },
-      "dossierUrl": "dossiers/1932-a032380bc7.json"
+      "dossierUrl": "dossiers/1932-a032380bc7.json",
+      "place": {
+        "lng": 23,
+        "lat": 12
+      }
     },
     {
       "id": "1954-阿爾及利亞戰爭",
@@ -803,7 +939,11 @@
         "history": "MAS‑36是法國軍隊在二戰期間採用的標準栓式步槍，採用7.5mm口徑，於步兵班中作為主要單兵武器，提供中距離精確射擊能力。",
         "portrait": "portraits/feed-mas36.jpg"
       },
-      "dossierUrl": "dossiers/1954-350d82ae4a.json"
+      "dossierUrl": "dossiers/1954-350d82ae4a.json",
+      "place": {
+        "lng": 3,
+        "lat": 28
+      }
     },
     {
       "id": "1994-第一次車臣戰爭",
@@ -826,7 +966,11 @@
         "history": "T-72是蘇聯於1970年代研製的主力戰車，具備120毫米滑膛炮與複合裝甲，成為俄軍機械化步兵師的核心突擊力量，至今仍在多國服役。",
         "portrait": "portraits/t72.jpg"
       },
-      "dossierUrl": "dossiers/1994-5b736fc923.json"
+      "dossierUrl": "dossiers/1994-5b736fc923.json",
+      "place": {
+        "lng": 45.5,
+        "lat": 43.3
+      }
     },
     {
       "id": "1935-第二次義埃戰爭",
@@ -849,7 +993,11 @@
         "history": "菲亞特B.R.20是義大利空軍在1930年代中期引進的雙發動機中型轟炸機，隸屬於轟炸航空團，主要負責對敵方縱深目標的轟炸與戰術支援。",
         "portrait": "portraits/feed-br20.jpg"
       },
-      "dossierUrl": "dossiers/1935-b5fb368f3f.json"
+      "dossierUrl": "dossiers/1935-b5fb368f3f.json",
+      "place": {
+        "lng": 46,
+        "lat": 7
+      }
     },
     {
       "id": "1955-第一次蘇丹內戰",
@@ -872,7 +1020,11 @@
         "history": "M3 Stuart為二戰期間廣泛使用的輕型坦克，具備高速機動與可靠火力，主要用於偵察、快速突破及支援步兵，是美國裝甲兵力的骨幹之一。",
         "portrait": "portraits/feed-m3-33232a.jpg"
       },
-      "dossierUrl": "dossiers/1955-657f84e413.json"
+      "dossierUrl": "dossiers/1955-657f84e413.json",
+      "place": {
+        "lng": 30,
+        "lat": 12
+      }
     },
     {
       "id": "1959-越南戰爭",
@@ -895,7 +1047,11 @@
         "history": "UH-1為美軍首款大批量使用的戰術通用直升機，主要負責兵員與物資運輸、空中偵察及近距離支援任務，並成為越戰標誌性空中平台。",
         "portrait": "portraits/feed-uh1-c4e59d.jpg"
       },
-      "dossierUrl": "dossiers/1959-09ef6a76d3.json"
+      "dossierUrl": "dossiers/1959-09ef6a76d3.json",
+      "place": {
+        "lng": 103,
+        "lat": 12
+      }
     },
     {
       "id": "1960-剛果危機",
@@ -918,7 +1074,11 @@
         "history": "M14自動步槍是美軍在冷戰期間採用的標準步槍，取代M1伽蘭德，發射7.62×51mm北約彈，具備半自動與全自動射擊模式，並被多國軍隊採用。",
         "portrait": "portraits/m14.jpg"
       },
-      "dossierUrl": "dossiers/1960-bc0f9ba299.json"
+      "dossierUrl": "dossiers/1960-bc0f9ba299.json",
+      "place": {
+        "lng": 23,
+        "lat": -3
+      }
     },
     {
       "id": "1961-安哥拉獨立戰爭",
@@ -941,7 +1101,11 @@
         "history": "AK-47是蘇聯於1947年研製的5.45×39mm口徑自動步槍，以可靠性聞名，成為華約及多國游擊隊的主要步兵武器。",
         "portrait": "portraits/ak47.jpg"
       },
-      "dossierUrl": "dossiers/1961-12475c34e7.json"
+      "dossierUrl": "dossiers/1961-12475c34e7.json",
+      "place": {
+        "lng": 16,
+        "lat": -12
+      }
     },
     {
       "id": "1998-埃塞俄比亞-厄立特里亞戰爭",
@@ -964,7 +1128,11 @@
         "history": "T-55是蘇聯第二代中型戰車，設計用於提供可靠的火力與裝甲支援，於冷戰期間大量裝備蘇聯及受援國家，成為地面部隊的主力裝甲平台。",
         "portrait": "portraits/feed-t55-e564df.jpg"
       },
-      "dossierUrl": "dossiers/1998-bb5921b053.json"
+      "dossierUrl": "dossiers/1998-bb5921b053.json",
+      "place": {
+        "lng": 45,
+        "lat": 36
+      }
     },
     {
       "id": "1965-第二次印巴戰爭",
@@ -987,7 +1155,11 @@
         "history": "M4A1雪曼坦克是二戰期間美國主力中型坦克，後來退役或轉讓至盟友，1965年巴基斯坦軍隊在印巴戰爭中將其作為裝甲突擊骨幹使用。",
         "portrait": "portraits/feed-m4a1.jpg"
       },
-      "dossierUrl": "dossiers/1965-15f4e485d6.json"
+      "dossierUrl": "dossiers/1965-15f4e485d6.json",
+      "place": {
+        "lng": 74.5,
+        "lat": 34
+      }
     },
     {
       "id": "1967-奈及利亞內戰",
@@ -1010,7 +1182,11 @@
         "history": "AK-47是蘇聯制式突擊步槍，隸屬步兵分隊的輕武器系統，擔任班與排的自動射擊火力，位階低於通用機槍與火炮。",
         "portrait": "portraits/ak47.jpg"
       },
-      "dossierUrl": "dossiers/1967-b5b9d422aa.json"
+      "dossierUrl": "dossiers/1967-b5b9d422aa.json",
+      "place": {
+        "lng": 12.5,
+        "lat": 8
+      }
     },
     {
       "id": "1967-第三次中東戰爭",
@@ -1033,7 +1209,11 @@
         "history": "M48是美國陸軍二戰後標準中型坦克體系的正式型號，擔任裝甲營主力，負責以主砲支援步兵、對抗裝甲目標並在機動作戰中推進占領。",
         "portrait": "portraits/feed-m48-f62413.jpg"
       },
-      "dossierUrl": "dossiers/1967-1ba9f84aa4.json"
+      "dossierUrl": "dossiers/1967-1ba9f84aa4.json",
+      "place": {
+        "lng": 38,
+        "lat": 31
+      }
     },
     {
       "id": "1969-中蘇邊界衝突",
@@ -1056,7 +1236,11 @@
         "history": "59式中型坦克是中國人民解放軍陸軍裝甲兵的第一款國產中型主戰坦克，承擔正面突擊與裝甲支援任務，是當時陸軍機械化部隊的重要骨幹。",
         "portrait": "portraits/feed-59-85a28d.jpg"
       },
-      "dossierUrl": "dossiers/1969-c2c9a86970.json"
+      "dossierUrl": "dossiers/1969-c2c9a86970.json",
+      "place": {
+        "lng": 134,
+        "lat": 48
+      }
     },
     {
       "id": "1971-孟加拉國解放戰爭",
@@ -1079,7 +1263,11 @@
         "history": "F-86F是美國空軍早期單座後掠翼噴氣戰鬥機，憑高速性能與俯衝能力擔任制空、攔截及對地支援，主要編入空軍戰鬥機聯隊。",
         "portrait": "portraits/feed-f86f.jpg"
       },
-      "dossierUrl": "dossiers/1971-39128eb355.json"
+      "dossierUrl": "dossiers/1971-39128eb355.json",
+      "place": {
+        "lng": 90,
+        "lat": 24
+      }
     },
     {
       "id": "1999-卡吉爾戰爭",
@@ -1102,7 +1290,11 @@
         "history": "蘇聯陸軍機械化步兵的核心裝甲載具，負責伴隨坦克輸送兵員，並以機炮提供伴隨步兵火力支援。",
         "portrait": "portraits/feed-bmp2.jpg"
       },
-      "dossierUrl": "dossiers/1999-cb7f868ebe.json"
+      "dossierUrl": "dossiers/1999-cb7f868ebe.json",
+      "place": {
+        "lng": 78,
+        "lat": 22
+      }
     },
     {
       "id": "1974-西沙之戰",
@@ -1152,7 +1344,11 @@
         "history": "AK-74是蘇軍摩托化步兵師步兵連的制式突擊步槍，配置於基層步兵班，負責近距離一般火力，是連隊地面進攻中的主要步兵武器。",
         "portrait": "portraits/ak74.jpg"
       },
-      "dossierUrl": "dossiers/1975-5a34f2470f.json"
+      "dossierUrl": "dossiers/1975-5a34f2470f.json",
+      "place": {
+        "lng": 16,
+        "lat": -12
+      }
     },
     {
       "id": "1978-烏干達-坦桑尼亞戰爭",
@@ -1202,7 +1398,11 @@
         "history": "殲-6是人民空軍早期的主力制空戰鬥機，主要承擔高空攔截與空域防衛任務，並與其他戰鬥機共同構成邊境方向的空中防線。",
         "portrait": "portraits/feed-6-60aa80.jpg"
       },
-      "dossierUrl": "dossiers/1979-99c7e5b4ed.json"
+      "dossierUrl": "dossiers/1979-99c7e5b4ed.json",
+      "place": {
+        "lng": 106,
+        "lat": 22
+      }
     },
     {
       "id": "1979-蘇聯入侵阿富汗",
@@ -1225,7 +1425,11 @@
         "history": "T-62是蘇聯陸軍裝甲部隊的主戰坦克，部署於坦克部隊，負責正面突破、機動作戰與近距離火力支援，並配合步兵作戰。",
         "portrait": "portraits/feed-t62-a36764.jpg"
       },
-      "dossierUrl": "dossiers/1979-bd6ee7f895.json"
+      "dossierUrl": "dossiers/1979-bd6ee7f895.json",
+      "place": {
+        "lng": 66,
+        "lat": 34
+      }
     },
     {
       "id": "2006-黎巴嫩戰爭",
@@ -1248,7 +1452,11 @@
         "history": "梅卡瓦三型是以色列陸軍的主戰坦克，負責裝甲正面作戰、突破與護衛，並與步兵及支援車輛協同行動。",
         "portrait": "portraits/merkava.jpg"
       },
-      "dossierUrl": "dossiers/2006-460696bb16.json"
+      "dossierUrl": "dossiers/2006-460696bb16.json",
+      "place": {
+        "lng": 35.5,
+        "lat": 33.2
+      }
     },
     {
       "id": "1982-第五次中東戰爭",
@@ -1271,7 +1479,11 @@
         "history": "梅卡瓦主戰坦克是以色列陸軍當時的核心裝甲載具，負責正面突破與裝甲防衛，並可和步兵、裝甲車及炮兵協同，構成地面部隊的主要坦克火力。",
         "portrait": "portraits/merkava.jpg"
       },
-      "dossierUrl": "dossiers/1982-370a6b6b61.json"
+      "dossierUrl": "dossiers/1982-370a6b6b61.json",
+      "place": {
+        "lng": 35.8,
+        "lat": 33.9
+      }
     },
     {
       "id": "1988-赤瓜礁海戰",
@@ -1510,7 +1722,11 @@
         "history": "隸屬美國海軍，屬早期大型帆船巡航艦兵力，負責遠洋航行、商船護航與戰區封鎖，並可搭載艦載火炮執行海上作戰。",
         "portrait": "portraits/feed-ussconstitution.jpg"
       },
-      "dossierUrl": "dossiers/1801-383ef6a16b.json"
+      "dossierUrl": "dossiers/1801-383ef6a16b.json",
+      "place": {
+        "lng": 15,
+        "lat": 35
+      }
     },
     {
       "id": "1801-橘子戰爭",
@@ -1533,7 +1749,11 @@
         "history": "一七五七年式步槍是英國陸軍線列步兵的制式火槍，配置於步兵連與營的射擊單位，屬於步兵部隊的基本地面槍械。",
         "portrait": "portraits/feed-pattern1757musket.jpg"
       },
-      "dossierUrl": "dossiers/1801-6943538d83.json"
+      "dossierUrl": "dossiers/1801-6943538d83.json",
+      "place": {
+        "lng": -8.2,
+        "lat": 40.2
+      }
     },
     {
       "id": "1802-第二次馬拉塔戰爭",
@@ -1556,7 +1776,11 @@
         "history": "一七九五年式滑膛槍是英國陸軍步兵的制式火槍，廣泛配屬英軍各步兵營與東印度公司步兵，並與步槍單位的來福槍分列使用。",
         "portrait": "portraits/feed-pattern1795musket.jpg"
       },
-      "dossierUrl": "dossiers/1802-99f3fd9a1e.json"
+      "dossierUrl": "dossiers/1802-99f3fd9a1e.json",
+      "place": {
+        "lng": 77,
+        "lat": 20
+      }
     },
     {
       "id": "1803-反法同盟戰爭",
@@ -1579,7 +1803,11 @@
         "history": "它是法國陸軍步兵連的制式步槍，作為步兵日常作戰的核心火器，與騎兵、砲兵及攻城武器分屬不同裝備體系。",
         "portrait": "portraits/feed-fusildinfanteriemodele17.jpg"
       },
-      "dossierUrl": "dossiers/1803-726f918ebd.json"
+      "dossierUrl": "dossiers/1803-726f918ebd.json",
+      "place": {
+        "lng": 10,
+        "lat": 50
+      }
     },
     {
       "id": "1507-第三次莫斯科-立陶宛戰爭",
@@ -1602,14 +1830,21 @@
         "history": "蒙斯梅格屬於英格蘭王國的重型攻城臼炮，歸入王室攻城砲兵，部署於圍城陣地，主要任務是攻擊城牆及堡壘。",
         "portrait": "portraits/feed-monsmeg.jpg"
       },
-      "dossierUrl": "dossiers/1507-8b4e328394.json"
+      "dossierUrl": "dossiers/1507-8b4e328394.json",
+      "place": {
+        "lng": 21,
+        "lat": 52.2
+      }
     },
     {
       "id": "1004-澶州之戰",
       "added": "2026-10-20T15:50:06.250Z",
       "span": "p11",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 115.03,
+        "lat": 35.76
+      },
       "battle": {
         "y": 1004,
         "m": 11,

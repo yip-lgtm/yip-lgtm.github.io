@@ -1,7 +1,10 @@
 {
  "id": "1914-第一次世界大戰",
  "theater": "西線",
- "place": null,
+ "place": {
+  "lng": 2.7,
+  "lat": 49
+ },
  "battle": {
   "y": 1914,
   "m": 7,

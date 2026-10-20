@@ -1,7 +1,10 @@
 {
  "id": "1939-波蘭戰役",
  "theater": "波蘭",
- "place": null,
+ "place": {
+  "lng": 19.5,
+  "lat": 52.2
+ },
  "battle": {
   "y": 1939,
   "m": 9,

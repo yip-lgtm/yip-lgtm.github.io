@@ -1,7 +1,10 @@
 {
  "id": "1926-北伐戰爭",
  "theater": "華南至華北",
- "place": null,
+ "place": {
+  "lng": 113,
+  "lat": 30
+ },
  "battle": {
   "y": 1926,
   "m": 7,

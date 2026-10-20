@@ -1,7 +1,10 @@
 {
  "id": "2001-阿富汗戰爭",
  "theater": "阿富汗山區",
- "place": null,
+ "place": {
+  "lng": 66,
+  "lat": 34
+ },
  "battle": {
   "y": 2001,
   "m": 10,

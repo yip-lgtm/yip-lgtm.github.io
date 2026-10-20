@@ -1,7 +1,10 @@
 {
  "id": "1991-南斯拉夫內戰",
  "theater": "巴爾幹",
- "place": null,
+ "place": {
+  "lng": 20,
+  "lat": 42
+ },
  "battle": {
   "y": 1991,
   "m": 6,

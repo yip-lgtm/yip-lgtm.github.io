@@ -1,7 +1,10 @@
 {
  "id": "1999-卡吉爾戰爭",
  "theater": "南亞",
- "place": null,
+ "place": {
+  "lng": 78,
+  "lat": 22
+ },
  "battle": {
   "y": 1999,
   "m": 5,

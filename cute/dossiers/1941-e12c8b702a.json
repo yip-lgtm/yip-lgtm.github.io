@@ -1,7 +1,10 @@
 {
  "id": "1941-蘇德戰爭",
  "theater": "東歐",
- "place": null,
+ "place": {
+  "lng": 21,
+  "lat": 52.2
+ },
  "battle": {
   "y": 1941,
   "m": 6,

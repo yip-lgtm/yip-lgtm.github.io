@@ -1,7 +1,10 @@
 {
  "id": "1982-福克蘭戰爭",
  "theater": "南大西洋",
- "place": null,
+ "place": {
+  "lng": -15,
+  "lat": -25
+ },
  "battle": {
   "y": 1982,
   "m": 4,

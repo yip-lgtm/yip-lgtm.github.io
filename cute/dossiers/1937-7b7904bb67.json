@@ -1,7 +1,10 @@
 {
  "id": "1937-抗日戰爭",
  "theater": "中國戰場",
- "place": null,
+ "place": {
+  "lng": 114,
+  "lat": 30
+ },
  "battle": {
   "y": 1937,
   "m": 7,

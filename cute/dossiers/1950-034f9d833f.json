@@ -1,7 +1,10 @@
 {
  "id": "1950-韓戰",
  "theater": "朝鮮半島",
- "place": null,
+ "place": {
+  "lng": 127,
+  "lat": 38
+ },
  "battle": {
   "y": 1950,
   "m": 6,

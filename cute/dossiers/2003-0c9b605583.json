@@ -1,7 +1,10 @@
 {
  "id": "2003-伊拉克戰爭",
  "theater": "伊拉克",
- "place": null,
+ "place": {
+  "lng": 43.5,
+  "lat": 33
+ },
  "battle": {
   "y": 2003,
   "m": 3,

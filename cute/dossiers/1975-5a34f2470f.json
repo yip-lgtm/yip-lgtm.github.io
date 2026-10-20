@@ -1,7 +1,10 @@
 {
  "id": "1975-安哥拉內戰",
  "theater": "安哥拉",
- "place": null,
+ "place": {
+  "lng": 16,
+  "lat": -12
+ },
  "battle": {
   "y": 1975,
   "m": 1,

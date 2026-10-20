@@ -1,7 +1,10 @@
 {
  "id": "1967-第三次中東戰爭",
  "theater": "中東戰線",
- "place": null,
+ "place": {
+  "lng": 38,
+  "lat": 31
+ },
  "battle": {
   "y": 1967,
   "m": 6,
