@@ -27,6 +27,8 @@ h2{font-size:1.35rem;font-weight:900;margin:.3rem 0 .4rem}
 .ctl{display:grid;gap:2px;min-width:160px;flex:1}
 .ctl label{font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between}
 input[type=range]{width:100%;accent-color:var(--accent)}
+.fig{margin:8px 0}
+.fig svg{width:100%;height:auto;display:block;background:#0f181b;border-radius:6px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:10px}
 .card{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--chip)}
 .card .k{font-size:.78rem;color:var(--muted)}
@@ -39,7 +41,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 <header>
   <div class="eyebrow">Self-study · Interactive</div>
   <h1>機械工程知識地圖</h1>
-  <p class="lede">31 個單元。拖動參數直到懂為止。</p>
+  <p class="lede">31 個單元，每個都有圖同動畫。拖動參數直到懂為止。</p>
   <nav class="toc" id="toc"></nav>
 </header>
 <div id="units"></div>
@@ -48,37 +50,37 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 
 <script>
 const units = [
-  {id:'u01', no:'01', title:'基礎底座', desc:'機原、材力、機設、手冊', type:'cards', items:[['機原','運動學'],['材力','強度剛度'],['機設','標準件'],['手冊','查表']]},
-  {id:'u02', no:'02', title:'彈簧 F=kx', desc:'拖動 k 同 x', type:'slider', sliders:[{id:'k',min:2,max:40,v:10,label:'k'},{id:'x',min:0,max:20,v:5,label:'x'}], calc:(p)=>`F = ${(p.k*p.x).toFixed(0)} N`},
-  {id:'u03', no:'03', title:'簡支樑撞度', desc:'δ = FL³/(48EI)', type:'slider', sliders:[{id:'F',min:200,max:4000,v:1000,label:'F'},{id:'L',min:400,max:1600,v:800,label:'L'}], calc:(p)=>`δ = ${(p.F*Math.pow(p.L,3)/(48*200000*1e5)).toFixed(2)} mm`},
-  {id:'u04', no:'04', title:'齒輪比', desc:'i = z2/z1', type:'slider', sliders:[{id:'z1',min:12,max:40,v:20,label:'z1'},{id:'z2',min:20,max:80,v:40,label:'z2'}], calc:(p)=>`i=${(p.z2/p.z1).toFixed(2)}  n2/n1=${(p.z1/p.z2).toFixed(2)}`},
-  {id:'u05', no:'05', title:'應力集中 Kt', desc:'孔越大集中越嚴重', type:'slider', sliders:[{id:'dw',min:0.1,max:0.6,v:0.3,step:0.05,label:'d/w'}], calc:(p)=>`Kt ≈ ${(2+2*p.dw).toFixed(2)}`},
-  {id:'u06', no:'06', title:'伯努利動壓', desc:'0.5ρv²', type:'slider', sliders:[{id:'v',min:1,max:20,v:5,step:0.5,label:'v m/s'}], calc:(p)=>`動壓 = ${(0.5*1000*p.v*p.v/1000).toFixed(1)} kPa`},
-  {id:'u07', no:'07', title:'螺栓預緊', desc:'Fi ≈ T/(K·d)', type:'slider', sliders:[{id:'T',min:5,max:80,v:20,label:'T N·m'},{id:'d',min:6,max:20,v:10,label:'d mm'}], calc:(p)=>`Fi ≈ ${(p.T/(0.2*(p.d/1000))/1000).toFixed(1)} kN`},
-  {id:'u08', no:'08', title:'共振放大', desc:'頻率比 + 阻尼', type:'slider', sliders:[{id:'r',min:0.2,max:2,v:0.8,step:0.05,label:'ω/ωn'},{id:'z',min:0.01,max:0.3,v:0.05,step:0.01,label:'ζ'}], calc:(p)=>`放大 = ${(1/Math.sqrt(Math.pow(1-p.r*p.r,2)+Math.pow(2*p.z*p.r,2))).toFixed(2)}×`},
-  {id:'u09', no:'09', title:'疲勞 S-N', desc:'N = C/σaᵇ', type:'slider', sliders:[{id:'sa',min:50,max:400,v:200,step:10,label:'σa MPa'}], calc:(p)=>`N ≈ ${(1e14/Math.pow(p.sa,3)).toExponential(1)}`},
-  {id:'u10', no:'10', title:'網格概念', desc:'網格越細越準，計算越慢', type:'slider', sliders:[{id:'n',min:2,max:12,v:4,label:'網格數'}], calc:(p)=>`${p.n}×2 單元`},
-  {id:'u11', no:'11', title:'熱膨脹', desc:'δL = α L ΔT', type:'slider', sliders:[{id:'L',min:100,max:2000,v:500,label:'L mm'},{id:'dT',min:10,max:200,v:50,label:'ΔT °C'}], calc:(p)=>`δL ≈ ${(12e-6*p.L*p.dT).toFixed(2)} mm (鋼)`},
-  {id:'u12', no:'12', title:'扭轉角', desc:'θ = TL/(GJ)', type:'slider', sliders:[{id:'T',min:10,max:200,v:50,label:'T N·m'},{id:'L',min:100,max:1000,v:300,label:'L mm'}], calc:(p)=>`θ ≈ ${(p.T*p.L/(80e3*1e5)*1000).toFixed(2)} °`},
-  {id:'u13', no:'13', title:'安全係數', desc:'n = σy/σ', type:'slider', sliders:[{id:'sy',min:200,max:800,v:400,label:'σy'},{id:'s',min:50,max:400,v:150,label:'σ'}], calc:(p)=>`n = ${(p.sy/p.s).toFixed(2)}`},
-  {id:'u14', no:'14', title:'帶傳動比', desc:'i = D2/D1', type:'slider', sliders:[{id:'D1',min:50,max:200,v:80,label:'D1'},{id:'D2',min:80,max:400,v:160,label:'D2'}], calc:(p)=>`i = ${(p.D2/p.D1).toFixed(2)}`},
-  {id:'u15', no:'15', title:'軸承壽命 L10', desc:'L10 ∝ (C/P)³', type:'slider', sliders:[{id:'C',min:5,max:50,v:20,label:'C kN'},{id:'P',min:1,max:20,v:5,label:'P kN'}], calc:(p)=>`L10 ≈ ${(Math.pow(p.C/p.P,3)*1e6).toExponential(1)} 轉`},
-  {id:'u16', no:'16', title:'雷諾數', desc:'Re = ρvD/μ', type:'slider', sliders:[{id:'v',min:0.1,max:5,v:1,step:0.1,label:'v'},{id:'D',min:10,max:100,v:25,label:'D mm'}], calc:(p)=>`Re ≈ ${(1000*p.v*(p.D/1000)/0.001).toFixed(0)}`},
-  {id:'u17', no:'17', title:'管道壓降', desc:'Δp ∝ f L v² / D', type:'slider', sliders:[{id:'v',min:1,max:10,v:3,label:'v'},{id:'L',min:5,max:50,v:20,label:'L m'}], calc:(p)=>`Δp ≈ ${(0.02*(p.L/(0.05))*1000*p.v*p.v/2/1000).toFixed(1)} kPa`},
-  {id:'u18', no:'18', title:'彈簧能量', desc:'U = 0.5 k x²', type:'slider', sliders:[{id:'k',min:5,max:50,v:15,label:'k'},{id:'x',min:1,max:15,v:5,label:'x'}], calc:(p)=>`U = ${(0.5*p.k*p.x*p.x).toFixed(1)} N·mm`},
-  {id:'u19', no:'19', title:'應力-應變', desc:'E = σ/ε', type:'slider', sliders:[{id:'s',min:50,max:400,v:150,label:'σ MPa'}], calc:(p)=>`ε = ${(p.s/200000*100).toFixed(3)} %`},
-  {id:'u20', no:'20', title:'剪力/彎矩', desc:'簡支樑中間 M = FL/4', type:'slider', sliders:[{id:'F',min:100,max:2000,v:500,label:'F'},{id:'L',min:200,max:1000,v:600,label:'L'}], calc:(p)=>`M = ${(p.F*p.L/4/1000).toFixed(1)} N·m`},
-  {id:'u21', no:'21', title:'凸輪升程', desc:'簡化升程曲線', type:'slider', sliders:[{id:'h',min:5,max:30,v:15,label:'h mm'},{id:'b',min:60,max:180,v:120,label:'角度'}], calc:(p)=>`最大升程 ${p.h} mm`},
-  {id:'u22', no:'22', title:'四桿機構', desc:'曲柄角度影響位置', type:'slider', sliders:[{id:'th',min:0,max:360,v:45,label:'角度'}], calc:(p)=>`輸出角 ≈ ${(p.th*0.6).toFixed(0)}°`},
-  {id:'u23', no:'23', title:'接觸應力', desc:'Hertz 簡化', type:'slider', sliders:[{id:'F',min:100,max:2000,v:500,label:'F'},{id:'R',min:5,max:50,v:20,label:'R mm'}], calc:(p)=>`σmax ≈ ${(Math.sqrt(p.F/p.R)*10).toFixed(0)} MPa`},
-  {id:'u24', no:'24', title:'疲勞平均應力', desc:'Goodman 概念', type:'slider', sliders:[{id:'sa',min:50,max:300,v:100,label:'σa'},{id:'sm',min:0,max:300,v:50,label:'σm'}], calc:(p)=>`等效 ≈ ${(p.sa/(1-p.sm/400)).toFixed(0)} MPa`},
-  {id:'u25', no:'25', title:'公差堆疊', desc:'線性堆疊', type:'slider', sliders:[{id:'t1',min:0.01,max:0.2,v:0.05,step:0.01,label:'t1'},{id:'t2',min:0.01,max:0.2,v:0.05,step:0.01,label:'t2'}], calc:(p)=>`總公差 ≈ ±${((p.t1+p.t2)/2).toFixed(3)}`},
-  {id:'u26', no:'26', title:'自然頻率', desc:'簡支樑 fn ∝ 1/L²', type:'slider', sliders:[{id:'L',min:300,max:1500,v:600,label:'L mm'}], calc:(p)=>`fn ≈ ${(200/Math.pow(p.L/1000,2)).toFixed(1)} Hz`},
-  {id:'u27', no:'27', title:'流體粘度', desc:'μ 影響 Re', type:'slider', sliders:[{id:'mu',min:0.5,max:5,v:1,step:0.1,label:'μ ×10⁻³'}], calc:(p)=>`Re ∝ 1/μ → ${(1000/p.mu).toFixed(0)}`},
-  {id:'u28', no:'28', title:'熱傳導', desc:'Q = kAΔT/L', type:'slider', sliders:[{id:'dT',min:10,max:100,v:40,label:'ΔT'},{id:'L',min:5,max:50,v:20,label:'L mm'}], calc:(p)=>`Q ≈ ${(50*0.01*p.dT/(p.L/1000)).toFixed(0)} W`},
-  {id:'u29', no:'29', title:'網格收斂', desc:'細一倍，誤差降', type:'slider', sliders:[{id:'n',min:1,max:5,v:2,label:'細分次數'}], calc:(p)=>`誤差 ≈ ${(10/Math.pow(2,p.n)).toFixed(2)}%`},
-  {id:'u30', no:'30', title:'應用地圖', desc:'不同目標閱讀組合', type:'cards', items:[['考研','機原+機設+材力'],['自動化','手冊+ANSYS'],['高端','振動+疲勞+ABAQUS'],['流體','流體+CFD']]},
-  {id:'u31', no:'31', title:'記住', desc:'所有數值都係簡化示意，不是設計值。', type:'cards', items:[['理論','先於按鈕'],['手冊','查表'],['軟體','驗證'],['實驗','最後']]}
+  {id:'u01', no:'01', title:'基礎底座', desc:'機原、材力、機設、手冊', type:'cards', items:[['機原','運動學'],['材力','強度剛度'],['機設','標準件'],['手冊','查表']], fig:(p)=>`<svg viewBox="0 0 400 80"><text x="20" y="30" fill="#43c2cb" font-size="14">機原</text><text x="120" y="30" fill="#43c2cb" font-size="14">材力</text><text x="220" y="30" fill="#43c2cb" font-size="14">機設</text><text x="320" y="30" fill="#43c2cb" font-size="14">手冊</text><line x1="20" y1="50" x2="380" y2="50" stroke="#2a3b40"/></svg>`},
+  {id:'u02', no:'02', title:'彈簧 F=kx', desc:'拖動 k 同 x', type:'slider', sliders:[{id:'k',min:2,max:40,v:10,label:'k'},{id:'x',min:0,max:20,v:5,label:'x'}], calc:(p)=>`F = ${(p.k*p.x).toFixed(0)} N`, fig:(p)=>{const w=60+p.x*6; return `<svg viewBox="0 0 400 100"><rect x="40" y="35" width="${w}" height="30" rx="4" fill="#1d2c30" stroke="#43c2cb"/><text x="${40+w/2}" y="55" text-anchor="middle" fill="#e3ecec" font-size="12">x=${p.x}</text><text x="40" y="85" fill="#93a4a9" font-size="11">F=${(p.k*p.x).toFixed(0)} N</text></svg>`;}},
+  {id:'u03', no:'03', title:'簡支樑撞度', desc:'δ = FL³/(48EI)', type:'slider', sliders:[{id:'F',min:200,max:4000,v:1000,label:'F'},{id:'L',min:400,max:1600,v:800,label:'L'}], calc:(p)=>`δ = ${(p.F*Math.pow(p.L,3)/(48*200000*1e5)).toFixed(2)} mm`, fig:(p)=>{const d=p.F*Math.pow(p.L,3)/(48*200000*1e5); const drop=Math.min(40,d*6); return `<svg viewBox="0 0 400 100"><line x1="30" y1="50" x2="370" y2="50" stroke="#2a3b40"/><path d="M50 50 Q200 ${50+drop} 350 50" fill="none" stroke="#43c2cb" stroke-width="3"/><circle cx="200" cy="${50+drop}" r="4" fill="#eb9b4c"/></svg>`;}},
+  {id:'u04', no:'04', title:'齒輪比', desc:'i = z2/z1', type:'slider', sliders:[{id:'z1',min:12,max:40,v:20,label:'z1'},{id:'z2',min:20,max:80,v:40,label:'z2'}], calc:(p)=>`i=${(p.z2/p.z1).toFixed(2)}`, fig:(p)=>`<svg viewBox="0 0 400 80"><circle cx="120" cy="40" r="${12+p.z1*0.4}" fill="none" stroke="#43c2cb"/><circle cx="280" cy="40" r="${12+p.z2*0.3}" fill="none" stroke="#eb9b4c"/><text x="120" y="45" text-anchor="middle" fill="#e3ecec" font-size="11">z1</text><text x="280" y="45" text-anchor="middle" fill="#e3ecec" font-size="11">z2</text></svg>`},
+  {id:'u05', no:'05', title:'應力集中 Kt', desc:'孔越大集中越嚴重', type:'slider', sliders:[{id:'dw',min:0.1,max:0.6,v:0.3,step:0.05,label:'d/w'}], calc:(p)=>`Kt ≈ ${(2+2*p.dw).toFixed(2)}`, fig:(p)=>{const r=15+p.dw*40; return `<svg viewBox="0 0 400 80"><rect x="50" y="20" width="300" height="40" fill="#1d2c30" stroke="#2a3b40"/><circle cx="200" cy="40" r="${r}" fill="#0e1618" stroke="#eb9b4c"/></svg>`;}},
+  {id:'u06', no:'06', title:'伯努利動壓', desc:'0.5ρv²', type:'slider', sliders:[{id:'v',min:1,max:20,v:5,step:0.5,label:'v m/s'}], calc:(p)=>`動壓 = ${(0.5*1000*p.v*p.v/1000).toFixed(1)} kPa`, fig:(p)=>{const h=20+p.v*2; return `<svg viewBox="0 0 400 80"><rect x="40" y="${60-h}" width="30" height="${h}" fill="#43c2cb"/><text x="55" y="75" text-anchor="middle" fill="#93a4a9" font-size="10">v</text><rect x="120" y="${60-h*0.6}" width="30" height="${h*0.6}" fill="#eb9b4c"/><text x="135" y="75" text-anchor="middle" fill="#93a4a9" font-size="10">p</text></svg>`;}},
+  {id:'u07', no:'07', title:'螺栓預緊', desc:'Fi ≈ T/(K·d)', type:'slider', sliders:[{id:'T',min:5,max:80,v:20,label:'T'},{id:'d',min:6,max:20,v:10,label:'d'}], calc:(p)=>`Fi ≈ ${(p.T/(0.2*(p.d/1000))/1000).toFixed(1)} kN`, fig:(p)=>`<svg viewBox="0 0 400 80"><rect x="180" y="20" width="${20+p.d}" height="40" fill="#1d2c30" stroke="#43c2cb"/><text x="200" y="70" text-anchor="middle" fill="#93a4a9" font-size="11">d=${p.d}</text></svg>`},
+  {id:'u08', no:'08', title:'共振放大', desc:'頻率比 + 阻尼', type:'slider', sliders:[{id:'r',min:0.2,max:2,v:0.8,step:0.05,label:'ω/ωn'},{id:'z',min:0.01,max:0.3,v:0.05,step:0.01,label:'ζ'}], calc:(p)=>`放大 = ${(1/Math.sqrt(Math.pow(1-p.r*p.r,2)+Math.pow(2*p.z*p.r,2))).toFixed(2)}×`, fig:(p)=>{let pts=''; for(let i=0;i<=80;i++){const rr=0.2+i*1.8/80; const aa=1/Math.sqrt(Math.pow(1-rr*rr,2)+Math.pow(2*p.z*rr,2)); const x=40+i*4; const y=70-Math.min(aa,6)*8; pts+=(i===0?'M':'L')+x+' '+y;} return `<svg viewBox="0 0 400 90"><path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/></svg>`;}},
+  {id:'u09', no:'09', title:'疲勞 S-N', desc:'N = C/σaᵇ', type:'slider', sliders:[{id:'sa',min:50,max:400,v:200,step:10,label:'σa'}], calc:(p)=>`N ≈ ${(1e14/Math.pow(p.sa,3)).toExponential(1)}`, fig:(p)=>{let pts=''; for(let i=0;i<=80;i++){const s=50+i*4; const n=1e14/Math.pow(s,3); const x=40+i*4; const y=75-Math.log10(n)*5; pts+=(i===0?'M':'L')+x+' '+y;} return `<svg viewBox="0 0 400 90"><path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/></svg>`;}},
+  {id:'u10', no:'10', title:'網格概念', desc:'網格越細越準', type:'slider', sliders:[{id:'n',min:2,max:12,v:4,label:'n'}], calc:(p)=>`${p.n}×2`, fig:(p)=>{let g=''; const w=300/p.n; for(let i=0;i<=p.n;i++){const x=50+i*w; g+=`<line x1="${x}" y1="20" x2="${x}" y2="60" stroke="#2a3b40"/>`;} for(let j=0;j<=2;j++){const y=20+j*20; g+=`<line x1="50" y1="${y}" x2="350" y2="${y}" stroke="#2a3b40"/>`;} return `<svg viewBox="0 0 400 80">${g}</svg>`;}},
+  {id:'u11', no:'11', title:'熱膨脹', desc:'δL = α L ΔT', type:'slider', sliders:[{id:'L',min:100,max:2000,v:500,label:'L'},{id:'dT',min:10,max:200,v:50,label:'ΔT'}], calc:(p)=>`δL ≈ ${(12e-6*p.L*p.dT).toFixed(2)} mm`, fig:(p)=>{const ext=p.dT*0.3; return `<svg viewBox="0 0 400 60"><rect x="40" y="20" width="${200+ext}" height="20" fill="#1d2c30" stroke="#eb9b4c"/><text x="40" y="55" fill="#93a4a9" font-size="10">ΔT=${p.dT}°C</text></svg>`;}},
+  {id:'u12', no:'12', title:'扭轉角', desc:'θ = TL/(GJ)', type:'slider', sliders:[{id:'T',min:10,max:200,v:50,label:'T'},{id:'L',min:100,max:1000,v:300,label:'L'}], calc:(p)=>`θ ≈ ${(p.T*p.L/(80e3*1e5)*1000).toFixed(2)}°`, fig:(p)=>`<svg viewBox="0 0 400 70"><rect x="40" y="25" width="${100+p.L/10}" height="20" fill="#1d2c30" stroke="#43c2cb"/><text x="40" y="60" fill="#93a4a9" font-size="10">L=${p.L}</text></svg>`},
+  {id:'u13', no:'13', title:'安全係數', desc:'n = σy/σ', type:'slider', sliders:[{id:'sy',min:200,max:800,v:400,label:'σy'},{id:'s',min:50,max:400,v:150,label:'σ'}], calc:(p)=>`n = ${(p.sy/p.s).toFixed(2)}`, fig:(p)=>`<svg viewBox="0 0 400 60"><rect x="40" y="20" width="${p.s/2}" height="20" fill="#eb9b4c"/><rect x="40" y="20" width="${p.sy/4}" height="20" fill="none" stroke="#43c2cb"/><text x="40" y="55" fill="#93a4a9" font-size="10">n=${(p.sy/p.s).toFixed(2)}</text></svg>`},
+  {id:'u14', no:'14', title:'帶傳動比', desc:'i = D2/D1', type:'slider', sliders:[{id:'D1',min:50,max:200,v:80,label:'D1'},{id:'D2',min:80,max:400,v:160,label:'D2'}], calc:(p)=>`i = ${(p.D2/p.D1).toFixed(2)}`, fig:(p)=>`<svg viewBox="0 0 400 80"><circle cx="100" cy="40" r="${p.D1/4}" fill="none" stroke="#43c2cb"/><circle cx="280" cy="40" r="${p.D2/6}" fill="none" stroke="#eb9b4c"/><line x1="${100+p.D1/4}" y1="40" x2="${280-p.D2/6}" y2="40" stroke="#2a3b40"/></svg>`},
+  {id:'u15', no:'15', title:'軸承壽命 L10', desc:'L10 ∝ (C/P)³', type:'slider', sliders:[{id:'C',min:5,max:50,v:20,label:'C'},{id:'P',min:1,max:20,v:5,label:'P'}], calc:(p)=>`L10 ≈ ${(Math.pow(p.C/p.P,3)*1e6).toExponential(1)}`, fig:(p)=>`<svg viewBox="0 0 400 60"><text x="40" y="35" fill="#43c2cb" font-size="14">C/P = ${(p.C/p.P).toFixed(1)}</text><text x="40" y="55" fill="#93a4a9" font-size="11">L10 ∝ (C/P)³</text></svg>`},
+  {id:'u16', no:'16', title:'雷諾數', desc:'Re = ρvD/μ', type:'slider', sliders:[{id:'v',min:0.1,max:5,v:1,step:0.1,label:'v'},{id:'D',min:10,max:100,v:25,label:'D'}], calc:(p)=>`Re ≈ ${(1000*p.v*(p.D/1000)/0.001).toFixed(0)}`, fig:(p)=>{const re=1000*p.v*(p.D/1000)/0.001; const col=re>2300?'#eb9b4c':'#43c2cb'; return `<svg viewBox="0 0 400 60"><rect x="40" y="20" width="200" height="20" fill="${col}"/><text x="40" y="55" fill="#93a4a9" font-size="11">Re=${re.toFixed(0)} ${re>2300?'紊流':'層流'}</text></svg>`;}},
+  {id:'u17', no:'17', title:'管道壓降', desc:'Δp ∝ f L v² / D', type:'slider', sliders:[{id:'v',min:1,max:10,v:3,label:'v'},{id:'L',min:5,max:50,v:20,label:'L'}], calc:(p)=>`Δp ≈ ${(0.02*(p.L/0.05)*1000*p.v*p.v/2/1000).toFixed(1)} kPa`, fig:(p)=>`<svg viewBox="0 0 400 60"><rect x="40" y="25" width="${100+p.L*4}" height="10" fill="#1d2c30" stroke="#43c2cb"/><text x="40" y="55" fill="#93a4a9" font-size="10">L=${p.L}m</text></svg>`},
+  {id:'u18', no:'18', title:'彈簧能量', desc:'U = 0.5 k x²', type:'slider', sliders:[{id:'k',min:5,max:50,v:15,label:'k'},{id:'x',min:1,max:15,v:5,label:'x'}], calc:(p)=>`U = ${(0.5*p.k*p.x*p.x).toFixed(1)} N·mm`, fig:(p)=>{const h=p.x*3; return `<svg viewBox="0 0 400 70"><rect x="40" y="${50-h}" width="30" height="${h}" fill="#eb9b4c"/><text x="40" y="65" fill="#93a4a9" font-size="10">U∝x²</text></svg>`;}},
+  {id:'u19', no:'19', title:'應力-應變', desc:'E = σ/ε', type:'slider', sliders:[{id:'s',min:50,max:400,v:150,label:'σ'}], calc:(p)=>`ε = ${(p.s/200000*100).toFixed(3)}%`, fig:(p)=>`<svg viewBox="0 0 400 60"><line x1="40" y1="50" x2="${40+p.s/2}" y2="${50-p.s/10}" stroke="#43c2cb" stroke-width="2"/><text x="40" y="55" fill="#93a4a9" font-size="10">σ=${p.s}</text></svg>`},
+  {id:'u20', no:'20', title:'剪力／彎矩', desc:'簡支樑中間 M=FL/4', type:'slider', sliders:[{id:'F',min:100,max:2000,v:500,label:'F'},{id:'L',min:200,max:1000,v:600,label:'L'}], calc:(p)=>`M = ${(p.F*p.L/4/1000).toFixed(1)} N·m`, fig:(p)=>`<svg viewBox="0 0 400 70"><line x1="40" y1="40" x2="360" y2="40" stroke="#2a3b40"/><line x1="200" y1="40" x2="200" y2="${40-p.F/40}" stroke="#eb9b4c" stroke-width="3"/><text x="200" y="65" text-anchor="middle" fill="#93a4a9" font-size="10">M</text></svg>`},
+  {id:'u21', no:'21', title:'凸輪升程', desc:'簡化升程', type:'slider', sliders:[{id:'h',min:5,max:30,v:15,label:'h'},{id:'b',min:60,max:180,v:120,label:'角度'}], calc:(p)=>`最大 ${p.h} mm`, fig:(p)=>`<svg viewBox="0 0 400 70"><path d="M40 50 Q200 ${50-p.h*1.5} 360 50" fill="none" stroke="#43c2cb" stroke-width="2"/><text x="200" y="65" text-anchor="middle" fill="#93a4a9" font-size="10">h=${p.h}</text></svg>`},
+  {id:'u22', no:'22', title:'四桿機構', desc:'曲柄角度', type:'slider', sliders:[{id:'th',min:0,max:360,v:45,label:'角度'}], calc:(p)=>`輸出 ≈ ${(p.th*0.6).toFixed(0)}°`, fig:(p)=>{const ang=p.th*Math.PI/180; const x=200+60*Math.cos(ang); const y=40+40*Math.sin(ang); return `<svg viewBox="0 0 400 80"><line x1="200" y1="40" x2="${x}" y2="${y}" stroke="#43c2cb" stroke-width="3"/><circle cx="200" cy="40" r="4" fill="#eb9b4c"/></svg>`;}},
+  {id:'u23', no:'23', title:'接觸應力', desc:'Hertz 簡化', type:'slider', sliders:[{id:'F',min:100,max:2000,v:500,label:'F'},{id:'R',min:5,max:50,v:20,label:'R'}], calc:(p)=>`σmax ≈ ${(Math.sqrt(p.F/p.R)*10).toFixed(0)} MPa`, fig:(p)=>`<svg viewBox="0 0 400 70"><circle cx="200" cy="40" r="${15+p.R/2}" fill="none" stroke="#43c2cb"/><text x="200" y="65" text-anchor="middle" fill="#93a4a9" font-size="10">R=${p.R}</text></svg>`},
+  {id:'u24', no:'24', title:'疲勞平均應力', desc:'Goodman 概念', type:'slider', sliders:[{id:'sa',min:50,max:300,v:100,label:'σa'},{id:'sm',min:0,max:300,v:50,label:'σm'}], calc:(p)=>`等效 ≈ ${(p.sa/(1-p.sm/400)).toFixed(0)}`, fig:(p)=>`<svg viewBox="0 0 400 60"><rect x="40" y="25" width="${p.sa/2}" height="15" fill="#43c2cb"/><rect x="40" y="45" width="${p.sm/2}" height="8" fill="#eb9b4c"/><text x="40" y="20" fill="#93a4a9" font-size="10">σa</text></svg>`},
+  {id:'u25', no:'25', title:'公差堆疊', desc:'線性堆疊', type:'slider', sliders:[{id:'t1',min:0.01,max:0.2,v:0.05,step:0.01,label:'t1'},{id:'t2',min:0.01,max:0.2,v:0.05,step:0.01,label:'t2'}], calc:(p)=>`±${((p.t1+p.t2)/2).toFixed(3)}`, fig:(p)=>`<svg viewBox="0 0 400 50"><rect x="40" y="15" width="${100+p.t1*200}" height="8" fill="#43c2cb"/><rect x="40" y="28" width="${100+p.t2*200}" height="8" fill="#eb9b4c"/></svg>`},
+  {id:'u26', no:'26', title:'自然頻率', desc:'fn ∝ 1/L²', type:'slider', sliders:[{id:'L',min:300,max:1500,v:600,label:'L'}], calc:(p)=>`fn ≈ ${(200/Math.pow(p.L/1000,2)).toFixed(1)} Hz`, fig:(p)=>`<svg viewBox="0 0 400 60"><line x1="40" y1="40" x2="${40+p.L/5}" y2="40" stroke="#43c2cb"/><text x="40" y="55" fill="#93a4a9" font-size="10">L=${p.L}</text></svg>`},
+  {id:'u27', no:'27', title:'流體粘度', desc:'μ 影響 Re', type:'slider', sliders:[{id:'mu',min:0.5,max:5,v:1,step:0.1,label:'μ'}], calc:(p)=>`Re ∝ ${(1000/p.mu).toFixed(0)}`, fig:(p)=>`<svg viewBox="0 0 400 50"><rect x="40" y="15" width="${200/p.mu}" height="20" fill="#43c2cb"/><text x="40" y="48" fill="#93a4a9" font-size="10">μ↑ Re↓</text></svg>`},
+  {id:'u28', no:'28', title:'熱傳導', desc:'Q = kAΔT/L', type:'slider', sliders:[{id:'dT',min:10,max:100,v:40,label:'ΔT'},{id:'L',min:5,max:50,v:20,label:'L'}], calc:(p)=>`Q ≈ ${(50*0.01*p.dT/(p.L/1000)).toFixed(0)} W`, fig:(p)=>`<svg viewBox="0 0 400 50"><rect x="40" y="15" width="${150+p.dT}" height="15" fill="#eb9b4c"/><text x="40" y="45" fill="#93a4a9" font-size="10">ΔT=${p.dT}</text></svg>`},
+  {id:'u29', no:'29', title:'網格收斂', desc:'細一倍誤差降', type:'slider', sliders:[{id:'n',min:1,max:5,v:2,label:'次數'}], calc:(p)=>`誤差 ≈ ${(10/Math.pow(2,p.n)).toFixed(2)}%`, fig:(p)=>{let g=''; for(let i=0;i<p.n;i++){g+=`<rect x="${40+i*50}" y="15" width="40" height="20" fill="none" stroke="#43c2cb"/>`;} return `<svg viewBox="0 0 400 50">${g}</svg>`;}},
+  {id:'u30', no:'30', title:'應用地圖', desc:'不同目標閱讀組合', type:'cards', items:[['考研','機原+機設+材力'],['自動化','手冊+ANSYS'],['高端','振動+疲勞+ABAQUS'],['流體','流體+CFD']], fig:(p)=>`<svg viewBox="0 0 400 50"><text x="20" y="30" fill="#43c2cb" font-size="12">考研</text><text x="100" y="30" fill="#43c2cb" font-size="12">自動化</text><text x="200" y="30" fill="#43c2cb" font-size="12">高端</text><text x="280" y="30" fill="#43c2cb" font-size="12">流體</text></svg>`},
+  {id:'u31', no:'31', title:'記住', desc:'所有數值都係簡化示意', type:'cards', items:[['理論','先於按鈕'],['手冊','查表'],['軟體','驗證'],['實驗','最後']], fig:(p)=>`<svg viewBox="0 0 400 40"><text x="40" y="25" fill="#eb9b4c" font-size="13">理論 → 手冊 → 軟體 → 實驗</text></svg>`}
 ];
 
 const toc = document.getElementById('toc');
@@ -92,6 +94,10 @@ units.forEach(u => {
   const sec = document.createElement('section');
   sec.id = u.id;
   sec.innerHTML = `<div class="sec-no">${u.no}</div><h2>${u.title}</h2><p>${u.desc}</p>`;
+  const figDiv = document.createElement('div');
+  figDiv.className = 'fig';
+  sec.appendChild(figDiv);
+
   if (u.type === 'cards') {
     const cards = document.createElement('div');
     cards.className = 'cards';
@@ -99,12 +105,12 @@ units.forEach(u => {
       cards.innerHTML += `<div class="card"><div class="k">${k}</div><div class="v">${v}</div></div>`;
     });
     sec.appendChild(cards);
+    figDiv.innerHTML = u.fig({});
   } else if (u.type === 'slider') {
     const bench = document.createElement('div');
     bench.className = 'bench';
     const ctrls = document.createElement('div');
     ctrls.className = 'controls';
-    const outs = {};
     u.sliders.forEach(s => {
       const d = document.createElement('div');
       d.className = 'ctl';
@@ -127,6 +133,7 @@ units.forEach(u => {
         out.textContent = inp.value;
       });
       document.getElementById('r_'+u.id).textContent = u.calc(p);
+      figDiv.innerHTML = u.fig(p);
     }
     u.sliders.forEach(s => {
       document.getElementById('i_'+u.id+'_'+s.id).addEventListener('input', update);
