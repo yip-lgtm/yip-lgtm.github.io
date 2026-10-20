@@ -1580,6 +1580,28 @@
         "portrait": "portraits/feed-fusildinfanteriemodele17.jpg"
       },
       "dossierUrl": "dossiers/1803-726f918ebd.json"
+    },
+    {
+      "id": "1507-第三次莫斯科-立陶宛戰爭",
+      "added": "2026-10-20T15:04:47.314Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "battle": {
+        "y": 1507,
+        "m": 1,
+        "name": "第三次莫斯科-立陶宛戰爭",
+        "theater": "東歐",
+        "brief": "第三次莫斯科-立陶宛戰爭見於中文維基戰爭列表，開始於1507年，交戰方為莫斯科大公國與立陶宛大公國，戰區在東歐。歷史同期已列裝的真實裝備有英格蘭的蒙斯梅格攻城臼炮，正式識別名稱為Mons Meg，1449年已列裝。"
+      },
+      "kit": {
+        "name": "蒙斯梅格攻城臼炮",
+        "designation": "Mons Meg",
+        "year": 1449,
+        "nation": "uk",
+        "layer": "land",
+        "history": "蒙斯梅格屬於英格蘭王國的重型攻城臼炮，歸入王室攻城砲兵，部署於圍城陣地，主要任務是攻擊城牆及堡壘。",
+        "portrait": "portraits/feed-monsmeg.jpg"
+      }
     }
   ]
 }
