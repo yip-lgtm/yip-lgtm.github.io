@@ -131,7 +131,7 @@ for (let n = 0; n < LIMITS.briefs; n++) {
   if (taken && !repeat) continue;
   let item;
   try {
-    const libraryKit = pickKit(war, library, (feed.items?.length ?? 0));
+    const libraryKit = pickKit(war, library, (feed.items?.length ?? 0), portraitIndex);
     const raw = await ask(
       briefPrompt(war, libraryKit),
       "只用繁體中文。最後只留一個 JSON 物件。不要長篇推理，直接輸出答案。",

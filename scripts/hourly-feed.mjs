@@ -103,7 +103,7 @@ if (!war) {
 }
 console.error(`  war: ${war.name} (${war.y}, span ${war.span})`);
 
-const libraryKit = pickKit(war, library, (feed.items?.length ?? 0));
+const libraryKit = pickKit(war, library, (feed.items?.length ?? 0), portraitIndex);
 const prompt = briefPrompt(war, libraryKit);
 
 const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").replace(/\/$/, "");

@@ -98,7 +98,7 @@ const esc = (s) =>
 const withArt = cards.filter((c) => c.portrait).length;
 const art = (c) =>
   c.portrait
-    ? `<img class="face-img" src="${esc(c.portrait)}" alt="" loading="lazy">`
+    ? `<img class="face-img" src="${esc(c.portrait)}" alt="${esc(String(c.name).slice(0,1))}" loading="lazy" onerror="this.outerHTML=this.dataset.fallback">`
     : `<div class="face-ph" style="--nc:${NATION_TINT[c.nation] ?? "#4A5240"}">
          <div class="ph-grid"></div><div class="ph-bar"></div>
          <div class="ph-layer">${LAYER_NAMES[c.layer] ?? "陸"}</div>
@@ -161,6 +161,16 @@ ${cards
   .join("\n")}
 </div>
 <script>
+// A campaign's picture is drawn a moment after the campaign is written. Until
+// it lands the file is not there, and a broken image is worse than the
+// placeholder that says so.
+const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.querySelectorAll('img.face-img').forEach((img)=>{
+  const t=img.closest('.art');
+  if(!t) return;
+  const tint=(t.dataset.tint)||'#4A5240';
+  img.dataset.fallback='<div class="face-ph" style="--nc:'+tint+'"><div class="ph-grid"></div><div class="ph-bar"></div><div class="ph-layer"></div><div class="ph-initial">'+esc(img.alt||'')+'</div><div class="ph-slot">立繪待生成</div></div>';
+});
 const grid=document.getElementById('grid'),cnt=document.getElementById('cnt');
 const cards=[...grid.children];let fL='all',fE='all';
 function apply(){let n=0;cards.forEach(c=>{const ok=(fL==='all'||c.dataset.layer===fL)&&(fE==='all'||c.dataset.era===fE);c.style.display=ok?'':'none';if(ok)n++});cnt.textContent=n+' / '+cards.length+' 張'}

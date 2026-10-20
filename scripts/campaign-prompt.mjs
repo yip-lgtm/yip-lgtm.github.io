@@ -59,8 +59,16 @@ export function pickWar(index, feed) {
  * The modern spans keep the old behaviour: the roster's own weapons cover
  * them, and the picture is already there.
  */
-export function pickKit(war, library, index = 0) {
-  const weapons = library?.weapons ?? [];
+export function pickKit(war, library, index = 0, drawn = null) {
+  let weapons = library?.weapons ?? [];
+  // A weapon is only worth naming once its picture exists. The drawn set is
+  // the catalog's own portrait index, so a card never points at an image that
+  // has not been drawn yet.
+  if (drawn) {
+    const keys = new Set(Object.keys(drawn));
+    const withArt = weapons.filter((w) => keys.has(w.id) || keys.has(w.designation.toLowerCase().replace(/[^a-z0-9]/g, "")));
+    if (withArt.length) weapons = withArt;
+  }
   const usable = weapons.filter((w) => w.year <= war.y);
   if (!usable.length) return null;
   // The closest match is the newest weapon that is still older than the war:
