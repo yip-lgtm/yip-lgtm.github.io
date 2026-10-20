@@ -1813,7 +1813,7 @@
       "id": "1507-第三次莫斯科-立陶宛戰爭",
       "added": "2026-10-20T15:04:47.314Z",
       "span": "p16",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1507,
         "m": 1,
@@ -1860,29 +1860,6 @@
         "layer": "land",
         "history": "霹靂砲位於宋代遠程火力體系，以爆炸作用攻擊城防、人員與器材，通常配置於攻城或守城陣列，與弓弩及砲石相互配合。",
         "portrait": "portraits/feed-3a9531.jpg"
-      }
-    },
-    {
-      "id": "1004-澶州之戰",
-      "added": "2026-10-20T16:10:53.597Z",
-      "span": "p11",
-      "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
-      "battle": {
-        "y": 1004,
-        "m": 11,
-        "name": "澶州之戰",
-        "theater": "河北路澶州一帶",
-        "brief": "中文維基戰爭列表所載的景德元年宋遼衝突，發生於河北路澶州一帶；宋軍北上抵禦遼軍南下，雙方在城防與營壘間僵持後議和。此役凸顯定置弩具與防禦工事的配合，其中床子弩是當時宋軍用於城防與陣地射擊的正式裝備型號。"
-      },
-      "kit": {
-        "name": "床子弩",
-        "designation": "床子弩",
-        "year": 1004,
-        "nation": "cn",
-        "layer": "land",
-        "history": "床子弩在宋代陸軍弩兵體系中負責定置射擊，佈於城牆、營門與陣線前段，以低射界封鎖接近敵軍，與手持步弩形成火力分工。",
-        "portrait": "portraits/feed-b6300c.jpg"
       }
     }
   ]
