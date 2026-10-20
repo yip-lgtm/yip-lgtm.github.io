@@ -161,11 +161,12 @@
   "gatlinggun": "portraits/gatling.jpg",
   "ironclad": "portraits/ironclad.jpg",
   "dory": "portraits/dory.jpg",
-  "corinthianhelmet": "portraits/scutum.jpg",
-  "scorpio": "portraits/egyptianspear.jpg",
+  "corinthianhelmet": "portraits/corinthian.jpg",
+  "scutum": "portraits/scutum.jpg",
   "egyptianspear": "portraits/egyptianspear.jpg",
   "assyrianspear": "portraits/assyrianspear.jpg",
-  "pilum": "portraits/assyrianbow.jpg",
-  "assyrianbow": "portraits/xiaochongnu.jpg"
+  "khopesh": "portraits/khopesh.jpg",
+  "assyrianbow": "portraits/assyrianbow.jpg",
+  "repeatingcrossbow": "portraits/xiaochongnu.jpg"
  }
 }

@@ -2028,7 +2028,7 @@
    "pen": 20,
    "armor": 8,
    "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
-   "portrait": "portraits/scutum.jpg"
+   "portrait": "portraits/corinthian.jpg"
   },
   {
    "id": "scutum",
@@ -2042,7 +2042,7 @@
    "pen": 20,
    "armor": 8,
    "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
-   "portrait": null
+   "portrait": "portraits/scutum.jpg"
   },
   {
    "id": "scorpio",
@@ -2056,7 +2056,7 @@
    "pen": 20,
    "armor": 8,
    "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
-   "portrait": "portraits/egyptianspear.jpg"
+   "portrait": null
   },
   {
    "id": "egyptianspear",
@@ -2098,7 +2098,7 @@
    "pen": 20,
    "armor": 8,
    "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
-   "portrait": null
+   "portrait": "portraits/khopesh.jpg"
   },
   {
    "id": "pilum",
@@ -2112,7 +2112,7 @@
    "pen": 20,
    "armor": 8,
    "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
-   "portrait": "portraits/assyrianbow.jpg"
+   "portrait": null
   },
   {
    "id": "assyrianbow",
@@ -2126,7 +2126,7 @@
    "pen": 20,
    "armor": 8,
    "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
-   "portrait": "portraits/xiaochongnu.jpg"
+   "portrait": "portraits/assyrianbow.jpg"
   },
   {
    "id": "xiaochongnu",
@@ -2140,7 +2140,7 @@
    "pen": 20,
    "armor": 8,
    "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
-   "portrait": null
+   "portrait": "portraits/xiaochongnu.jpg"
   },
   {
    "id": "pavise",
