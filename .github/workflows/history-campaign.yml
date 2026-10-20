@@ -25,20 +25,27 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Write one bilingual campaign dossier
-        env:
-          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
-          FEED_OUT: cute/feed.json
-        run: node scripts/history-campaign.mjs
       # The writer names a theater the app has never heard of, and the map
       # needs a position for it. Top the gazetteer up from the ones it does
       # not know, so the campaign lands where it was fought.
+      #
+      # This runs first and does not depend on the dossier: a spent plan
+      # makes the dossier step fail, and a failed step ends the job, so the
+      # placement would never happen on the one run that most needs it.
       - name: Place the campaigns that have no position
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           FEED_OUT: cute/feed.json
         continue-on-error: true
         run: node scripts/backfill-theaters.mjs
+      - name: Write one bilingual campaign dossier
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          FEED_OUT: cute/feed.json
+        # The plan's usage limit is a hard cap: when it is spent this step
+        # fails, and the campaign keeps the brief it has until the next run.
+        continue-on-error: true
+        run: node scripts/history-campaign.mjs
       - name: Commit
         run: |
           git config user.name "yip-lgtm"
