@@ -1,7 +1,10 @@
 {
  "id": "1974-西沙之戰",
- "theater": "戰場",
- "place": null,
+ "theater": "西沙群島與南中國海",
+ "place": {
+  "lng": 112,
+  "lat": 16
+ },
  "battle": {
   "y": 1974,
   "m": 1,

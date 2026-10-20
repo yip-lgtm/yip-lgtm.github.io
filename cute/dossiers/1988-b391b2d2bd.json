@@ -1,7 +1,10 @@
 {
  "id": "1988-赤瓜礁海戰",
- "theater": "戰場",
- "place": null,
+ "theater": "赤瓜礁與南中國海",
+ "place": {
+  "lng": 114.4,
+  "lat": 9.5
+ },
  "battle": {
   "y": 1988,
   "m": 3,

@@ -137,6 +137,10 @@ for (let n = 0; n < LIMITS.briefs; n++) {
     const history = String(kit.history ?? "").trim();
     const kitYear = Number(kit.year);
     if (brief.length < 40 || history.length < 20) throw new Error("the brief or the kit history is too short");
+    // "戰場" is the placeholder, not a place. The map cannot aim at it, so
+    // the campaign is written again with a real theater.
+    const theater = String(raw.theater ?? "").trim();
+    if (!theater || theater === "戰場" || theater.length < 2) throw new Error(`the theater "${theater}" is not a place`);
     if (!kitYear || kitYear < -4000 || kitYear > war.y) throw new Error(`kit.year ${kit.year} is not a service year at or before ${war.y}`);
     const layer = ["land", "air", "sea"].includes(kit.layer) ? kit.layer : "land";
     const nation = ["us", "uk", "de", "ussr", "jp", "fr", "it", "cn", "se", "il", "gr", "tr"].includes(kit.nation) ? kit.nation : "us";
@@ -151,7 +155,7 @@ for (let n = 0; n < LIMITS.briefs; n++) {
       // draws the campaign on a map; without a position every one of them
       // landed on the same default tile.
       place: placeOf(raw),
-      battle: { y: war.y, m: Number(raw.m) || 1, name: war.name, theater: String(raw.theater ?? "").slice(0, 16), brief: brief.slice(0, 180) },
+      battle: { y: war.y, m: Number(raw.m) || 1, name: war.name, theater: theater.slice(0, 16), brief: brief.slice(0, 180) },
       kit: {
         name: kitName,
         designation: kitDesignation,

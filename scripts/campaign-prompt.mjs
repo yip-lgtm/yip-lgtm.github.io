@@ -50,7 +50,7 @@ export function briefPrompt(war) {
 - y: ${war.y}
 - m: 1 到 12 的整數
 - name: ${war.name}
-- theater: 戰場
+- theater: 戰場名稱，例如「頓巴斯」「西沙群島」；不要只寫「戰場」三個字，要寫出具體地點
 - place.lng: 戰場大致的經度（小數點後兩位，東經為正數，西經為負數）
 - place.lat: 戰場大致的緯度（北緯為正數，南緯為負數）
 - brief: 九十到一百四十字，點出這場列表中的衝突和一件 ${war.y} 年或更早已列裝的真實裝備正式型號

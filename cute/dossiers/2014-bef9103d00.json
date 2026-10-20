@@ -1,7 +1,10 @@
 {
  "id": "2014-頓巴斯戰爭",
- "theater": "戰場",
- "place": null,
+ "theater": "頓巴斯與烏克蘭東部",
+ "place": {
+  "lng": 38,
+  "lat": 48.3
+ },
  "battle": {
   "y": 2014,
   "m": 3,

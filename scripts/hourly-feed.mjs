@@ -98,7 +98,7 @@ const prompt = `參考中文維基戰爭列表 https://zh.wikipedia.org/wiki/战
 - y: ${war.y}
 - m: ${war.y < 0 ? "1（古代戰爭的確切月份無法考證，固定寫 1，不要糾結）" : "1 到 12 的整數"}
 - name: ${war.name}
-- theater: 戰場
+- theater: 戰場名稱，例如「頓巴斯」「西沙群島」；不要只寫「戰場」三個字，要寫出具體地點
 - brief: 九十到一百四十字，點出這場列表中的衝突和一件 ${war.y} 年或更早已列裝的真實裝備正式型號
 - kit.name: 裝備中文名
 - kit.designation: 正式型號
@@ -196,6 +196,15 @@ async function once() {
       console.error(`  ${lastError}`);
       return null;
     }
+    // A theater of "戰場" is the placeholder the prompt used to carry, not a
+    // place. The map has nothing to aim at with it, so the campaign is sent
+    // back for another try rather than filed with a useless location.
+    const theater = String(item.theater ?? "").trim();
+    if (!theater || theater === "戰場" || theater.length < 2) {
+      lastError = `the theater "${theater}" is not a place`;
+      console.error(`  ${lastError}`);
+      return null;
+    }
     // A second pass over the index re-examines a battle that is already in
     // the feed. That is allowed on purpose; the new kit is the point.
     if (!repeat && feed.items.some((it) => it.battle?.name === name)) {
@@ -241,7 +250,7 @@ async function once() {
       // draws the campaign on a map; without a position every one of them
       // landed on the same default tile.
       place: placeOf(item),
-      battle: { y: war.y, m, name: war.name, theater: String(item.theater ?? "").slice(0, 16), brief: brief.slice(0, 180) },
+      battle: { y: war.y, m, name: war.name, theater: theater.slice(0, 16), brief: brief.slice(0, 180) },
       kit: {
         name: kitName,
         designation: kitDesignation,

@@ -1,7 +1,10 @@
 {
  "id": "2022-俄羅斯入侵烏克蘭",
- "theater": "戰場",
- "place": null,
+ "theater": "烏克蘭全境",
+ "place": {
+  "lng": 33,
+  "lat": 48.5
+ },
  "battle": {
   "y": 2022,
   "m": 2,
