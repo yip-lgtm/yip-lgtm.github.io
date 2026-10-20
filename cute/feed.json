@@ -1994,6 +1994,263 @@
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
       }
+    },
+    {
+      "id": "1803-第三次反法同盟",
+      "added": "2026-10-20T21:50:01.964Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 10.94,
+        "lat": 48.56
+      },
+      "battle": {
+        "y": 1803,
+        "m": 10,
+        "name": "第三次反法同盟",
+        "theater": "巴伐利亞韋廷根",
+        "brief": "第三次反法同盟期間，法軍在巴伐利亞韋廷根與奧地利軍交火，此役屬於一八〇三年秋季戰役的一部分。法軍以突然襲擊迫使聯軍退卻，顯示歐洲中部兵力調度與戰場地形的重要性。火繩槍（Matchlock musket）為十六世紀已列裝的步兵火器，但不是此役交戰各方的主力制式裝備。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1804-俄國-波斯戰爭",
+      "added": "2026-10-20T21:50:34.108Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1804,
+        "m": 9,
+        "name": "俄國-波斯戰爭",
+        "theater": "南高加索戰線",
+        "brief": "俄國-波斯戰爭於一八〇四年在南高加索爆發，波斯進攻俄屬喬治亞，戰線其後延伸至亞塞拜然與亞美尼亞；輪發手槍（Wheellock pistol）於一五〇〇年列裝，是歐洲陸軍早期制式火槍之一。戰事延續至一八一三年，最終條約重新劃定兩國的高加索邊界。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      }
+    },
+    {
+      "id": "1805-1805年埃及革命",
+      "added": "2026-10-20T21:50:25.064Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30.04,
+        "lat": 31.24
+      },
+      "battle": {
+        "y": 1805,
+        "m": 3,
+        "name": "1805年埃及革命",
+        "theater": "埃及",
+        "brief": "中文維基戰爭列表將1805年埃及革命列為獨立衝突；這場變動發生於穆罕默德・阿里在埃及重建地方軍政權力、削弱舊有奧托曼控制之際。輪發槍（Wheellock pistol）自1500年列裝，是歐洲早期火器體系中的單兵手槍型號。"
+      },
+      "kit": {
+        "name": "輪發槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
+        "portrait": "portraits/wheellock.jpg"
+      }
+    },
+    {
+      "id": "1805-法瑞戰爭",
+      "added": "2026-10-20T21:51:33.928Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 15,
+        "lat": 54
+      },
+      "battle": {
+        "y": 1805,
+        "m": 4,
+        "name": "法瑞戰爭",
+        "theater": "瑞典波美拉尼亞",
+        "brief": "一八〇五年法國向瑞典宣戰，法瑞戰爭開啟；北德戰略主要圍繞瑞典波美拉尼亞與沿海航路，法軍尋求切斷英國航運並迫使瑞典屈服，進而牽動北歐戰略局勢。輪發槍（Wheellock pistol）至一八〇五年已非野戰主力，僅可能作為軍官、衛兵或地方民兵配備的舊式手槍。"
+      },
+      "kit": {
+        "name": "輪發槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
+        "portrait": "portraits/wheellock.jpg"
+      }
+    },
+    {
+      "id": "1806-英國入侵拉普拉塔河",
+      "added": "2026-10-20T21:51:47.507Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -57.5,
+        "lat": -35
+      },
+      "battle": {
+        "y": 1806,
+        "m": 8,
+        "name": "英國入侵拉普拉塔河",
+        "theater": "拉普拉塔河河口",
+        "brief": "英國入侵拉普拉塔河發生於1806年，英軍由海上進入河口並向布宜諾斯艾利斯推進，與西班牙殖民當局交戰，戰事集中於拉普拉塔河及周邊城鎮。英軍線列步兵以燧發槍（Flintlock musket）為制式火槍，用於中遠距射擊。"
+      },
+      "kit": {
+        "name": "燧發槍",
+        "designation": "Flintlock musket",
+        "year": 1710,
+        "nation": "uk",
+        "layer": "land",
+        "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
+        "portrait": "portraits/flintlock.jpg"
+      }
+    },
+    {
+      "id": "1807-半島戰爭",
+      "added": "2026-10-20T21:51:22.225Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -5,
+        "lat": 40
+      },
+      "battle": {
+        "y": 1807,
+        "m": 10,
+        "name": "半島戰爭",
+        "theater": "伊比利亞半島",
+        "brief": "半島戰爭是拿破崙戰爭的一部分；1807年法國依《楓丹白露密約》介入葡萄牙後，與葡萄牙、西班牙及其盟軍在伊比利亞半島交戰。Pike（1600年）為當時步兵裝備，與火槍共同構成線性步兵防線。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
+      }
+    },
+    {
+      "id": "1840-第一次鴉片戰爭",
+      "added": "2026-10-20T21:49:17.482Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.67,
+        "lat": 22.82
+      },
+      "battle": {
+        "y": 1840,
+        "m": 9,
+        "name": "第一次鴉片戰爭",
+        "theater": "虎門海峽",
+        "brief": "第一次鴉片戰爭於一八四〇年九月在廣東沿海爆發，中英雙方圍繞虎門、廣州等地交戰，法軍遠征隊亦參與行動；遠征隊配備雷管步槍（Percussion rifle），供線列步兵進行遠距離射擊，並執行據點防守與行軍警戒。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1850-太平天國起義",
+      "added": "2026-10-20T21:49:39.857Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 110.18,
+        "lat": 22.36
+      },
+      "battle": {
+        "y": 1850,
+        "m": 1,
+        "name": "太平天國起義",
+        "theater": "廣西桂平金田",
+        "brief": "太平天國起義於一八五〇年在廣西金田爆發，戰事由金田、桂平一帶向湖南、湖北及長江中下游擴展。線膛砲（Muzzle-loading field gun）在一八五〇年已列裝，屬於野戰砲兵體系的地面支援裝置，隨陸軍作戰單位部署，服務於前線攻擊與防衛，發揮火力支援作用。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1870-普法戰爭",
+      "added": "2026-10-20T21:49:27.456Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 4.95,
+        "lat": 49.7
+      },
+      "battle": {
+        "y": 1870,
+        "m": 7,
+        "name": "普法戰爭",
+        "theater": "色當戰場",
+        "brief": "普法戰爭於一八七〇年七月在法國與北德意志諸邦間爆發，法軍在色當戰役失利後被圍巴黎，德軍則攻入法國北部及洛林。線膛砲（Muzzle-loading field gun）是德軍野戰砲兵用於前沿砲火支援與會戰射擊的裝備。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1894-甲午戰爭",
+      "added": "2026-10-20T21:51:01.492Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 126.67,
+        "lat": 36.98
+      },
+      "battle": {
+        "y": 1894,
+        "m": 7,
+        "name": "甲午戰爭",
+        "theater": "豐島海域",
+        "brief": "維基戰爭列表所列的甲午戰爭，是清朝與日本在朝鮮半島及黃海交戰的戰爭，1894年7月於豐島海域爆發衝突，並涉及陸戰與海戰。當時德國陸軍已於1850年列裝線膛砲（Muzzle-loading field gun），將其作為野戰火力支援裝備，置於炮兵體系，並與步兵協同執行作戰任務。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
     }
   ]
 }
