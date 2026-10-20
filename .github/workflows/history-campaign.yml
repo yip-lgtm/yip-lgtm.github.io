@@ -8,6 +8,15 @@ on:
 permissions:
   contents: write
 
+# These three jobs all append to cute/feed.json. Two of them running at once
+# each add a campaign to the same JSON array, and the rebase that follows the
+# push cannot merge two arrays -- it stops with a conflict in feed.json and
+# the job dies with its campaign still in memory. The group is shared on
+# purpose: a per-workflow group does not stop these three from overlapping.
+concurrency:
+  group: cute-feed-writers
+  cancel-in-progress: false
+
 jobs:
   write:
     runs-on: ubuntu-latest
