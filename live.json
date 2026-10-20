@@ -1,0 +1,1889 @@
+{
+  "items": [
+    {
+      "id": "1915-第七次伊孫佐戰役",
+      "added": "2026-10-06T04:53:39.680Z",
+      "span": "wwi",
+      "battle": {
+        "y": 1915,
+        "m": 9,
+        "name": "第七次伊孫佐戰役",
+        "theater": "伊孫佐前線",
+        "brief": "1915年9月，第七次伊孫佐戰役在義大利與奧匈邊境爆發，雙方在高山峡谷激烈交火。義大利軍首次大規模投入菲亞特·瑞維利M1914重機槍，以其高射速壓制奧軍防線，迫使後者陷入消耗戰。此次進攻促使雙方重新部署，並使用新型火砲加強支援。"
+      },
+      "kit": {
+        "name": "菲亞特·瑞維利重機槍",
+        "designation": "Mod. 1914",
+        "year": 1914,
+        "nation": "it",
+        "layer": "land",
+        "history": "作為義大利第一款制式氣冷重機槍，與步兵連協同作戰，主要配備於前線火力點，提供持續壓制火力。",
+        "portrait": "portraits/feed-mod1914.jpg"
+      },
+      "dossierUrl": "dossiers/1915-39c62d2203.json",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.6,
+        "lat": 45.9
+      }
+    },
+    {
+      "id": "1918-俄國內戰",
+      "added": "2026-10-06T05:00:51.815Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1918,
+        "m": 5,
+        "name": "俄國內戰",
+        "theater": "俄羅斯全境",
+        "brief": "俄國內戰（1917–1922）係布爾什維克紅軍與白軍、外國干涉軍及邊區武裝之間的全面衝突，戰場遍及俄羅斯歐洲部分、西伯利亞與遠東。紅軍主力步槍為莫辛-納甘M1891，已於1891年列裝，裝甲列車同鐵路車站比坦克更決定能否把下一列車彈藥送上前線。"
+      },
+      "kit": {
+        "name": "莫辛-納甘M1891步槍",
+        "designation": "M1891",
+        "year": 1891,
+        "nation": "su",
+        "layer": "land",
+        "history": "1891年已列裝的栓式步槍，一次大戰同內戰都係紅軍同白軍的底子。內戰裡決定鐵路樞紐的係機槍、野砲同裝甲列車，唔係呢支槍的改型。",
+        "portrait": "portraits/mosin.jpg"
+      },
+      "dossierUrl": "dossiers/1918-7c5211ed9d.json",
+      "place": {
+        "lng": 60,
+        "lat": 56
+      }
+    },
+    {
+      "id": "1936-西班牙內戰",
+      "added": "2026-10-06T08:16:55.882Z",
+      "span": "ww2a",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1936,
+        "m": 7,
+        "name": "西班牙內戰",
+        "theater": "西班牙",
+        "brief": "西班牙內戰在1936年7月爆發後，共和派與國民軍在馬德里、巴塞隆納、格蘭納達等城市以及北部山區形成激烈的前線。蘇聯提供的T-26輕型坦克在共和軍的機械化單位中被部署，用以支援步兵突破並在城市防守中提供有限的裝甲火力。"
+      },
+      "kit": {
+        "name": "T-26輕型坦克",
+        "designation": "T-26",
+        "year": 1931,
+        "nation": "su",
+        "layer": "land",
+        "history": "作為共和軍的主力輕型坦克，T-26在西班牙內戰中於城市防守與機動支援中提供裝甲火力。",
+        "portrait": "portraits/t26.jpg"
+      },
+      "dossierUrl": "dossiers/1936-38a1faaab3.json",
+      "place": {
+        "lng": -3.7,
+        "lat": 40.4
+      }
+    },
+    {
+      "id": "1941-太平洋戰爭",
+      "added": "2026-10-06T09:16:40.000Z",
+      "span": "ww2b",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1941,
+        "m": 12,
+        "name": "太平洋戰爭",
+        "theater": "太平洋",
+        "brief": "太平洋戰爭自1941年12月展開後，美軍在島嶼登陸與岸上推進中投入已列裝的M4A3E8謝爾曼坦克，以75毫米主砲與寬履帶懸吊支援步兵壓制坑道與岸防火點，並在灘頭之後的短促機動中掩護步兵向內陸推進。"
+      },
+      "kit": {
+        "name": "M4A3E8謝爾曼坦克",
+        "designation": "M4A3E8",
+        "year": 1944,
+        "nation": "us",
+        "layer": "land",
+        "history": "1944年列裝的美軍中型坦克後期型，配屬太平洋登陸部隊，負責近距火力支援與突破岸防工事。",
+        "portrait": "portraits/feed-m4a3e8.jpg"
+      },
+      "dossierUrl": "dossiers/1941-95023257b7.json",
+      "place": {
+        "lng": -177.4,
+        "lat": 28.2
+      }
+    },
+    {
+      "id": "1950-韓戰",
+      "added": "2026-10-06T10:15:24.000Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1950,
+        "m": 6,
+        "name": "韓戰",
+        "theater": "朝鮮半島",
+        "brief": "1950年6月，韓戰在朝鮮半島爆發，聯合國軍與北韓及中國人民志願軍在三八線南北反覆爭奪。美軍投入已列裝的M26潘興坦克，以90毫米主砲支援步兵突破陣地並對抗對方T-34。"
+      },
+      "kit": {
+        "name": "M26潘興坦克",
+        "designation": "M26",
+        "year": 1944,
+        "nation": "us",
+        "layer": "land",
+        "history": "1944年列裝的美軍重型坦克，韓戰期間配屬地面部隊，用於近距火力支援與對抗對方中型坦克。",
+        "portrait": "portraits/feed-m26-414572.jpg"
+      },
+      "dossierUrl": "dossiers/1950-034f9d833f.json",
+      "place": {
+        "lng": 127,
+        "lat": 38
+      }
+    },
+    {
+      "id": "1990-波斯灣戰爭",
+      "added": "2026-10-06T11:18:29.000Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1990,
+        "m": 8,
+        "name": "波斯灣戰爭",
+        "theater": "波斯灣",
+        "brief": "1990年8月伊拉克出兵科威特，波斯灣戰爭隨之展開。多國聯軍在空中與地面作戰中投入已列裝的M1A1主力戰車，以120毫米主砲支援裝甲突擊，突破對方陣地並掩護步兵推進。"
+      },
+      "kit": {
+        "name": "M1A1主力戰車",
+        "designation": "M1A1",
+        "year": 1985,
+        "nation": "us",
+        "layer": "land",
+        "history": "1985年列裝的美軍主力戰車，1991年地面作戰期間配屬聯軍裝甲部隊，用於前線突擊與對抗對方戰車。",
+        "portrait": "portraits/feed-m1a1.jpg"
+      },
+      "dossierUrl": "dossiers/1990-6bd443d918.json",
+      "place": {
+        "lng": 51,
+        "lat": 26.5
+      }
+    },
+    {
+      "id": "1914-第一次世界大戰",
+      "added": "2026-10-06T12:21:00.000Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1914,
+        "m": 7,
+        "name": "第一次世界大戰",
+        "theater": "西線",
+        "brief": "西線戰場以密集的塹壕體系為主，雙方在漫長的戰壕中進行持久的消耗戰。德軍在此戰爭中大量使用MG 08重機槍，以其高射速壓制敵方步兵並防守陣地，發揮了關鍵的火力支援作用。"
+      },
+      "kit": {
+        "name": "MG 08重機槍",
+        "designation": "MG 08",
+        "year": 1908,
+        "nation": "de",
+        "layer": "land",
+        "history": "MG 08在一次大戰的西線和東線被廣泛部署，其持續的火力在防守與進攻中均發揮了重要作用。",
+        "portrait": "portraits/mg08.jpg"
+      },
+      "dossierUrl": "dossiers/1914-81d6829416.json",
+      "place": {
+        "lng": 2.7,
+        "lat": 49
+      }
+    },
+    {
+      "id": "1919-波蘇戰爭",
+      "added": "2026-10-06T13:25:00.000Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1919,
+        "m": 2,
+        "name": "波蘇戰爭",
+        "theater": "東歐",
+        "brief": "1919年2月起，波蘭軍與蘇俄紅軍在東歐交戰，波軍投入已列裝的雷諾FT輕坦克支援步兵推進。該車以短砲塔火力掩護部隊通過開闊地，並與紅軍步兵及裝甲車對峙。"
+      },
+      "kit": {
+        "name": "雷諾FT輕坦克",
+        "designation": "Renault FT",
+        "year": 1917,
+        "nation": "pl",
+        "layer": "land",
+        "history": "1917年已列裝的輕坦克，波蘇戰爭期間配屬波蘭裝甲單位，用於步兵支援與短促機動。",
+        "portrait": "portraits/ft.jpg"
+      },
+      "dossierUrl": "dossiers/1919-93c2abe632.json",
+      "place": {
+        "lng": 21,
+        "lat": 52.2
+      }
+    },
+    {
+      "id": "1937-抗日戰爭",
+      "added": "2026-10-06T14:20:00.000Z",
+      "span": "ww2a",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1937,
+        "m": 7,
+        "name": "抗日戰爭",
+        "theater": "中國戰場",
+        "brief": "抗日戰爭自1937年7月展開，日軍在華北與華中投入已列裝的九五式輕戰車，以短砲火力掩護步兵沿鐵路與公路推進。該車配屬裝甲中隊，在開闊地與城鎮外圍提供近距支援。"
+      },
+      "kit": {
+        "name": "九五式輕戰車",
+        "designation": "Ha-Go",
+        "year": 1935,
+        "nation": "jp",
+        "layer": "land",
+        "history": "1935年已列裝的日本輕戰車，抗日戰爭期間配屬在華地面部隊，用於步兵支援與短促機動。",
+        "portrait": "portraits/feed-hago.jpg"
+      },
+      "dossierUrl": "dossiers/1937-7b7904bb67.json",
+      "place": {
+        "lng": 114,
+        "lat": 30
+      }
+    },
+    {
+      "id": "1941-蘇德戰爭",
+      "added": "2026-10-06T15:20:00.000Z",
+      "span": "ww2b",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1941,
+        "m": 6,
+        "name": "蘇德戰爭",
+        "theater": "東歐",
+        "brief": "1941年6月德軍發動「巴巴羅薩」行動，蘇聯紅軍調派T-34/76坦克於東歐前線抵禦裝甲突破。"
+      },
+      "kit": {
+        "name": "T-34/76坦克",
+        "designation": "T-34/76",
+        "year": 1939,
+        "nation": "su",
+        "layer": "land",
+        "history": "1939年列裝蘇聯紅軍，1941年廣泛配屬於東歐機械化師團。",
+        "portrait": "portraits/feed-t3476.jpg"
+      },
+      "dossierUrl": "dossiers/1941-e12c8b702a.json",
+      "place": {
+        "lng": 21,
+        "lat": 52.2
+      }
+    },
+    {
+      "id": "1956-第二次中東戰爭",
+      "added": "2026-10-06T16:18:02.000Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1956,
+        "m": 10,
+        "name": "第二次中東戰爭",
+        "theater": "埃及蘇伊士運河區",
+        "brief": "1956年10月，英法聯軍與以色列對埃及蘇伊士運河區發動軍事行動，法國裝甲單位投入已列裝的AMX-13輕型坦克。"
+      },
+      "kit": {
+        "name": "AMX-13輕型坦克",
+        "designation": "AMX-13",
+        "year": 1953,
+        "nation": "fr",
+        "layer": "land",
+        "history": "1953年列裝法軍，1956年配屬於投入蘇伊士運河區的法國裝甲單位。",
+        "portrait": "portraits/feed-amx13.jpg"
+      },
+      "dossierUrl": "dossiers/1956-94903a5d7b.json",
+      "place": {
+        "lng": 32.5,
+        "lat": 30
+      }
+    },
+    {
+      "id": "1999-科索沃戰爭",
+      "added": "2026-10-06T17:13:00.000Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1999,
+        "m": 3,
+        "name": "科索沃戰爭",
+        "theater": "巴爾幹",
+        "brief": "1999年3月，北約對南斯拉夫聯盟發動空中作戰，科索沃戰爭隨之展開。美軍投入已列裝的F-16A戰鬥機，執行制空與對地打擊。"
+      },
+      "kit": {
+        "name": "F-16戰鬥機",
+        "designation": "F-16A",
+        "year": 1978,
+        "nation": "us",
+        "layer": "air",
+        "history": "1978年已列裝的美軍戰鬥機，科索沃戰爭期間配屬北約空中部隊，用於制空與對地打擊。",
+        "portrait": "portraits/f16.jpg"
+      },
+      "dossierUrl": "dossiers/1999-7f89dd07e1.json",
+      "place": {
+        "lng": 20,
+        "lat": 42
+      }
+    },
+    {
+      "id": "1915-護國戰爭",
+      "added": "2026-10-06T20:13:00.000Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1915,
+        "m": 12,
+        "name": "護國戰爭",
+        "theater": "中國",
+        "brief": "雲南山區的游擊戰中，護國軍使用M1888步槍進行防禦與埋伏，成功抵禦袁世凱的軍隊。"
+      },
+      "kit": {
+        "name": "M1888步槍",
+        "designation": "M1888",
+        "year": 1888,
+        "nation": "de",
+        "layer": "land",
+        "history": "德國1888年研製的栓式步槍，清末引進，廣泛配用於中國內戰。",
+        "portrait": "portraits/feed-m1888.jpg"
+      },
+      "dossierUrl": "dossiers/1915-9dc835853d.json",
+      "place": {
+        "lng": 116.3,
+        "lat": 39.8
+      }
+    },
+    {
+      "id": "1919-愛爾蘭獨立戰爭",
+      "added": "2026-10-06T21:20:00.000Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1919,
+        "m": 1,
+        "name": "愛爾蘭獨立戰爭",
+        "theater": "愛爾蘭",
+        "brief": "1919年1月在愛爾蘭爆發反英游擊戰，愛爾蘭共和軍在城鄉展開武裝對抗，旨在爭取脫離英國統治。"
+      },
+      "kit": {
+        "name": "李-恩菲爾德 Mk III 步槍",
+        "designation": "No. 1 Mk III",
+        "year": 1907,
+        "nation": "gb",
+        "layer": "land",
+        "history": "該步槍是英國在第一次世界大戰中的主力栓式步槍，於愛爾蘭獨立戰爭期間被英軍與愛爾蘭武裝廣泛使用。",
+        "portrait": "portraits/feed-no1mkiii.jpg"
+      },
+      "dossierUrl": "dossiers/1919-9c812e21ba.json",
+      "place": {
+        "lng": -8,
+        "lat": 53.3
+      }
+    },
+    {
+      "id": "1939-冬季戰爭",
+      "added": "2026-10-06T22:17:00.000Z",
+      "span": "ww2a",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1939,
+        "m": 11,
+        "name": "冬季戰爭",
+        "theater": "北歐與東歐交界",
+        "brief": "1939年11月底，蘇聯紅軍自東線向芬蘭發動全面進攻，芬蘭軍隊在高寒氣候與森林地形中的卡累利阿地峽、極北及拉多加湖周邊展開防禦，並以索米衝鋒槍配屬步兵班，提供近距離火力支援。"
+      },
+      "kit": {
+        "name": "索米衝鋒槍",
+        "designation": "KP/-31",
+        "year": 1931,
+        "nation": "fi",
+        "layer": "land",
+        "history": "1931年列裝後，索米衝鋒槍成為芬蘭步兵的主要近戰武器，冬季戰爭期間廣泛配屬於步兵班與滑雪兵，用於近距離火力。",
+        "portrait": "portraits/feed-kp31.jpg"
+      },
+      "dossierUrl": "dossiers/1939-a7ddea5917.json",
+      "place": {
+        "lng": 25,
+        "lat": 59
+      }
+    },
+    {
+      "id": "1962-中印邊境戰爭",
+      "added": "2026-10-06T23:18:00.000Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1962,
+        "m": 10,
+        "name": "中印邊境戰爭",
+        "theater": "喜馬拉雅邊境",
+        "brief": "1962年10月，中印兩軍在喜馬拉雅山脈東段與西段的高海拔山口交火。中國人民解放軍步兵以已列裝的56式突擊步槍配屬班排，在山地推進中提供近距火力。"
+      },
+      "kit": {
+        "name": "56式突擊步槍",
+        "designation": "Type 56",
+        "year": 1956,
+        "nation": "cn",
+        "layer": "land",
+        "history": "1956年列裝的中國制式突擊步槍，1962年中印邊境戰爭期間配屬入藏與新疆方向的步兵部隊，用於山地近戰。",
+        "portrait": "portraits/feed-type56.jpg"
+      },
+      "dossierUrl": "dossiers/1962-2d3d051a35.json",
+      "place": {
+        "lng": 79,
+        "lat": 32
+      }
+    },
+    {
+      "id": "1973-第四次中東戰爭",
+      "added": "2026-10-07T00:16:00.000Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1973,
+        "m": 10,
+        "name": "第四次中東戰爭",
+        "theater": "西奈半島與戈蘭高地",
+        "brief": "1973年10月6日，埃及與敘利亞同時向西奈半島及戈蘭高地進攻，第四次中東戰爭展開。以色列裝甲部隊以已列裝的M60A1巴頓戰車配屬前線，在兩線以105毫米主砲支援步兵穩住陣地並實施反衝擊。"
+      },
+      "kit": {
+        "name": "M60A1巴頓戰車",
+        "designation": "M60A1",
+        "year": 1971,
+        "nation": "il",
+        "layer": "land",
+        "history": "1971年以色列自美國接收並列裝的M60A1，1973年配屬西奈與戈蘭方向的裝甲部隊，用於前線火力支援。",
+        "portrait": "portraits/feed-m60a1.jpg"
+      },
+      "dossierUrl": "dossiers/1973-315c779e71.json",
+      "place": {
+        "lng": 34.3,
+        "lat": 31
+      }
+    },
+    {
+      "id": "2001-阿富汗戰爭",
+      "added": "2026-10-07T01:19:00.000Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2001,
+        "m": 10,
+        "name": "阿富汗戰爭",
+        "theater": "阿富汗山區",
+        "brief": "2001年10月美軍在阿富汗山區展開「持久自由」行動，使用M4卡賓槍、M249機槍等輕武器掃蕩塔利班據點。"
+      },
+      "kit": {
+        "name": "M4卡賓槍",
+        "designation": "M4",
+        "year": 1994,
+        "nation": "us",
+        "layer": "land",
+        "history": "1994年定型，2001年部署至阿富汗山區，取代M16。",
+        "portrait": "portraits/feed-m4-ae5eb6.jpg"
+      },
+      "dossierUrl": "dossiers/2001-3f0321325d.json",
+      "place": {
+        "lng": 66,
+        "lat": 34
+      }
+    },
+    {
+      "id": "1916-復活節起義",
+      "added": "2026-10-07T02:14:00.000Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1916,
+        "m": 4,
+        "name": "復活節起義",
+        "theater": "愛爾蘭都柏林",
+        "brief": "在都柏林市中心與英軍激烈交火，英軍使用李-恩菲爾德步槍於街道、佔領建築內掃射。"
+      },
+      "kit": {
+        "name": "李-恩菲爾德步槍",
+        "designation": "SMLE Mk III",
+        "year": 1907,
+        "nation": "gb",
+        "layer": "land",
+        "history": "英軍於1907年採用此步槍，裝備步兵與支援單位，廣泛用於一次大戰。",
+        "portrait": "portraits/feed-smlemkiii.jpg"
+      },
+      "dossierUrl": "dossiers/1916-64b7addbf0.json",
+      "place": {
+        "lng": -6.26,
+        "lat": 53.35
+      }
+    },
+    {
+      "id": "1919-土耳其獨立戰爭",
+      "added": "2026-10-07T03:13:19.501Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1919,
+        "m": 5,
+        "name": "土耳其獨立戰爭",
+        "theater": "安納托利亞",
+        "brief": "1919年5月，協約國准許希臘軍於伊茲密爾登陸並向西內陸推進，引發安納托利亞各地的土耳其民族主義抵抗。穆斯塔法·凱末爾於薩姆松登陸後號召成立大國民議會軍，先後於第一次與第二次伊諾努戰役、薩卡里亞河戰役中以步槍與機槍火力遏制希軍推進，最終於1922年大攻勢將希軍逐出安納托利亞，並於1923年建立土耳其共和國。"
+      },
+      "kit": {
+        "name": "Gew 88步槍",
+        "designation": "Gew 88",
+        "year": 1888,
+        "nation": "tr",
+        "layer": "land",
+        "history": "德國於1888年定型的委員會步槍，後續由德軍以Gew 98替換後大量軍援鄂圖曼帝國。鄂圖曼軍於一戰結束後將其移交土耳其國民軍，土耳其共和國成立後繼續改良使用，服役期延伸至1940年代前後，於土耳其獨立戰爭期間為民族主義部隊可見的制式栓動步槍之一。",
+        "portrait": "portraits/feed-gew88.jpg"
+      },
+      "dossierUrl": "dossiers/1919-c010df7f9a.json",
+      "place": {
+        "lng": 33,
+        "lat": 39
+      }
+    },
+    {
+      "id": "1939-第二次世界大戰",
+      "added": "2026-10-07T04:15:57.297Z",
+      "span": "ww2a",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1939,
+        "m": 9,
+        "name": "第二次世界大戰",
+        "theater": "歐洲與太平洋戰場",
+        "brief": "第二次世界大戰於1939年9月1日德國入侵波蘭後全面爆發，橫跨歐洲、非洲與亞洲，牽動全球主要強權。此戰期間，德國空軍的梅塞施密特Bf 109戰鬥機自1937年起服役，成為歐洲戰場上的關鍵空中力量。"
+      },
+      "kit": {
+        "name": "梅塞施密特Bf 109戰鬥機",
+        "designation": "Bf 109",
+        "year": 1937,
+        "nation": "de",
+        "layer": "air",
+        "history": "做為納粹德國空軍的主力單座戰鬥機，Bf 109在歐洲戰場上肩負制空任務，與盟軍戰機交戰。",
+        "portrait": "portraits/bf109.jpg"
+      },
+      "dossierUrl": "dossiers/1939-f9da16f270.json",
+      "place": {
+        "lng": 30,
+        "lat": 35
+      }
+    },
+    {
+      "id": "1918-芬蘭內戰",
+      "added": "2026-10-07T05:08:44.049Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1918,
+        "m": 1,
+        "name": "芬蘭內戰",
+        "theater": "芬蘭本土",
+        "brief": "1918 年 1 月至 5 月，芬蘭內戰在芬蘭本土激烈展開，白軍與紅軍在主要城市與鄉村展開激烈武裝對抗，交戰雙方皆大量裝備德國製造的毛瑟 G98 步槍作為主要步兵武器，衝突導致國家政治版圖與社會結構出現劇烈變動。"
+      },
+      "kit": {
+        "name": "毛瑟G98步槍",
+        "designation": "Gewehr 98",
+        "year": 1898,
+        "nation": "de",
+        "layer": "land",
+        "history": "作為德國國防軍的制式步槍，Gewehr 98 在一次大戰期間被廣泛配發至步兵排，並被多國軍隊引進或仿製。",
+        "portrait": "portraits/g98.jpg"
+      },
+      "dossierUrl": "dossiers/1918-f8dfa4d113.json",
+      "place": {
+        "lng": 26,
+        "lat": 62
+      }
+    },
+    {
+      "id": "1980-兩伊戰爭",
+      "added": "2026-10-07T10:15:39.122Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1980,
+        "m": 9,
+        "name": "兩伊戰爭",
+        "theater": "伊拉克-伊朗邊境與波斯灣",
+        "brief": "兩伊戰爭是伊朗與伊拉克於1980年9月在邊境與波斯灣展開的大規模武裝衝突，交戰雙方在沙漠、城鎮與海域展開激烈戰鬥，並動用了包括蘇製T-72主力戰車在內的多種裝備，造成雙方重大傷亡並持續至1988年。"
+      },
+      "kit": {
+        "name": "T-72主力戰車",
+        "designation": "T-72",
+        "year": 1971,
+        "nation": "su",
+        "layer": "land",
+        "history": "T-72是蘇聯於1970年代研製的主力戰車，採用125mm滑膛炮與自動裝填機，屬於第三代主力戰車，供蘇聯及多國陸軍使用。",
+        "portrait": "portraits/t72.jpg"
+      },
+      "dossierUrl": "dossiers/1980-90156ac39c.json",
+      "place": {
+        "lng": 47.5,
+        "lat": 30
+      }
+    },
+    {
+      "id": "2003-伊拉克戰爭",
+      "added": "2026-10-07T14:37:40.413Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2003,
+        "m": 3,
+        "name": "伊拉克戰爭",
+        "theater": "伊拉克",
+        "brief": "伊拉克戰爭是2003年以美國為首的多國聯軍對伊拉克發動的軍事行動，旨在消除薩達姆·侯賽因政權的大規模殺傷性武器威脅並推翻其政權。3月20日地面部隊突破伊拉克防線，佔領巴格達。期間，美軍主力戰車M1艾布拉姆斯（正式型號M1）在實戰中展現強大防護與火力，成為地面作戰核心。"
+      },
+      "kit": {
+        "name": "M1艾布拉姆斯",
+        "designation": "M1",
+        "year": 1980,
+        "nation": "us",
+        "layer": "land",
+        "history": "作為美國陸軍的主戰坦克，M1自1980年起服役，具備先進的複合裝甲與120公厘滑膛炮，為師級單位的突擊與防禦主力。",
+        "portrait": "portraits/feed-m1-4a7553.jpg"
+      },
+      "dossierUrl": "dossiers/2003-0c9b605583.json",
+      "place": {
+        "lng": 43.5,
+        "lat": 33
+      }
+    },
+    {
+      "id": "1982-福克蘭戰爭",
+      "added": "2026-10-07T18:56:42Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1982,
+        "m": 4,
+        "name": "福克蘭戰爭",
+        "theater": "南大西洋",
+        "brief": "1982年4月2日至6月14日，英國對阿根廷爭福克蘭群島。海獵鷹FRS.1於1980年列裝，從無敵級航母短距起飛，爭的是艦隊上空，不是阿根廷本土。"
+      },
+      "kit": {
+        "name": "海獵鷹",
+        "designation": "Sea Harrier FRS.1",
+        "year": 1980,
+        "nation": "uk",
+        "layer": "air",
+        "history": "垂直短距起降艦載機。福克蘭一戰證明航母還在，但數量少，制空只蓋得住特遣艦隊。",
+        "portrait": "portraits/harrier.jpg"
+      },
+      "dossierUrl": "dossiers/1982-f4ef20faa1.json",
+      "place": {
+        "lng": -15,
+        "lat": -25
+      }
+    },
+    {
+      "id": "1926-北伐戰爭",
+      "added": "2026-10-07T19:10:11.993Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1926,
+        "m": 7,
+        "name": "北伐戰爭",
+        "theater": "華南至華北",
+        "brief": "北伐戰爭於1926年7月由國民革命軍發起，旨在消滅北方軍閥、統一中國。戰事跨越華南、華中、華北多省，雙方動員大量兵力與各式武器，其中日製三八式步槍作為步兵主力武器之一，於1910年代已列裝部隊，並在北伐的激烈戰鬥中發揮重要作用。"
+      },
+      "kit": {
+        "name": "三八式步槍",
+        "designation": "Type 38",
+        "year": 1905,
+        "nation": "jp",
+        "layer": "land",
+        "history": "三八式步槍是日本陸軍在二戰前的主力步槍，以其可靠性和精確度聞名，被廣泛用於步兵班及前線作戰。",
+        "portrait": "portraits/type38.jpg"
+      },
+      "dossierUrl": "dossiers/1926-7789ac7bba.json",
+      "place": {
+        "lng": 113,
+        "lat": 30
+      }
+    },
+    {
+      "id": "1939-波蘭戰役",
+      "added": "2026-10-07T19:23:57.587Z",
+      "span": "ww2a",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1939,
+        "m": 9,
+        "name": "波蘭戰役",
+        "theater": "波蘭",
+        "brief": "波蘭戰役是德國與蘇聯於1939年9月共同入侵波蘭的軍事衝突，標誌二戰全面爆發。作戰期間，德軍部署四號坦克（PanzerkampfwagenIV）為主力裝甲，實行快速突破與包圍戰術。"
+      },
+      "kit": {
+        "name": "四號坦克",
+        "designation": "Panzerkampfwagen IV",
+        "year": 1937,
+        "nation": "de",
+        "layer": "land",
+        "history": "四號坦克是德軍在二戰初期的主力中坦，負責支援步兵與對抗敵方裝甲，並參與閃擊戰術的實施。",
+        "portrait": "portraits/feed-panzerkampfwageniv.jpg"
+      },
+      "dossierUrl": "dossiers/1939-f4ee58afc5.json",
+      "place": {
+        "lng": 19.5,
+        "lat": 52.2
+      }
+    },
+    {
+      "id": "1941-繼續戰爭",
+      "added": "2026-10-07T19:34:01.547Z",
+      "span": "ww2b",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1941,
+        "m": 6,
+        "name": "繼續戰爭",
+        "theater": "卡累利阿地峽與拉多加湖畔",
+        "brief": "1941年6月，芬蘭在德國支持下對蘇聯發動「繼續戰爭」，在卡累利阿地峽及拉多加湖畔展開激烈戰鬥，蘇聯以T-34坦克為主力突破防線，雙方陷入持久消耗。在漫長的冬季裡，T-34的裝甲與火力令芬蘭防線多次被突破，雙方陷入激烈消耗。"
+      },
+      "kit": {
+        "name": "T-34坦克",
+        "designation": "T-34",
+        "year": 1940,
+        "nation": "su",
+        "layer": "land",
+        "history": "T-34是蘇聯在二戰中期部署的主力中型坦克，以傾斜裝甲與76公厘炮提升生存性與火力，成為蘇軍突破防線的骨幹。",
+        "portrait": "portraits/feed-t34-fe153b.jpg"
+      },
+      "dossierUrl": "dossiers/1941-51353a879d.json",
+      "place": {
+        "lng": 33,
+        "lat": 61
+      }
+    },
+    {
+      "id": "1948-第一次中東戰爭",
+      "added": "2026-10-07T23:34:36.023Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1948,
+        "m": 5,
+        "name": "第一次中東戰爭",
+        "theater": "巴勒斯坦與以色列",
+        "brief": "第一次中東戰爭爆發於1948年5月，雙方在巴勒斯坦及以色列境內激烈交火。這場衝突亦稱為以色列建國戰，雙方在耶路撒冷、海法及加沙地帶展開激烈爭奪，影響了中東格局。M4謝爾曼坦克於1942年服役，為盟軍主力裝甲之一，在本戰中被雙方多次使用。"
+      },
+      "kit": {
+        "name": "M4謝爾曼",
+        "designation": "M4",
+        "year": 1942,
+        "nation": "us",
+        "layer": "land",
+        "history": "M4謝爾曼是二戰期間美國大量生產的中型坦克，以火力與機動性兼備著稱，成為盟軍裝甲兵力的骨幹。",
+        "portrait": "portraits/feed-m4-4f474e.jpg"
+      },
+      "dossierUrl": "dossiers/1948-9e1cdc2284.json",
+      "place": {
+        "lng": 34.8,
+        "lat": 31.5
+      }
+    },
+    {
+      "id": "1991-南斯拉夫內戰",
+      "added": "2026-10-08T05:57:33.228Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1991,
+        "m": 6,
+        "name": "南斯拉夫內戰",
+        "theater": "巴爾幹",
+        "brief": "1991年南斯拉夫聯邦在斯洛文尼亞與克羅埃西亞的民族自決運動爆發武裝衝突，標誌著巴爾幹地區多年戰火的開始。此戰場上可見蘇聯授權生產的T-72主戰坦克，該坦克於1971年服役，並在後續的內戰中多次出現。"
+      },
+      "kit": {
+        "name": "T-72 主戰坦克",
+        "designation": "T-72",
+        "year": 1971,
+        "nation": "su",
+        "layer": "land",
+        "history": "作為蘇聯及華約國家的主力裝甲，T-72以堅固的裝甲與125毫米口徑滑膛砲著稱，在南斯拉夫內戰期間被多支派系使用，顯示其在地面作戰中的重要性。",
+        "portrait": "portraits/t72.jpg"
+      },
+      "dossierUrl": "dossiers/1991-434c4a5d21.json",
+      "place": {
+        "lng": 20,
+        "lat": 42
+      }
+    },
+    {
+      "id": "1915-伊孫佐戰役",
+      "added": "2026-10-09T00:21:44.194Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1915,
+        "m": 6,
+        "name": "伊孫佐戰役",
+        "theater": "伊松佐河前線",
+        "brief": "1915年6月，意大利與奧匈帝國在伊松佐河展開激烈衝突，俗稱伊孫佐戰役。此役意大利軍依賴菲亞特·雷維利Mod.1914機槍提供火力支援，該槍為當時少有的自動武器，顯著提升步兵的壓制能力。"
+      },
+      "kit": {
+        "name": "菲亞特·雷維利Mod.1914機",
+        "designation": "Fiat Revelli Mod. 1914",
+        "year": 1914,
+        "nation": "it",
+        "layer": "land",
+        "history": "作為意大利軍第一款大量裝備的自動機槍，菲亞特·雷維利Mod.1914在步兵班提供持續火力，並被裝甲車與固定據點廣泛使用。",
+        "portrait": "portraits/feed-fiatrevellimod1914.jpg"
+      },
+      "dossierUrl": "dossiers/1915-1da3b45f19.json",
+      "place": {
+        "lng": 13.6,
+        "lat": 45.9
+      }
+    },
+    {
+      "id": "1930-中原大戰",
+      "added": "2026-10-09T07:24:42.835Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1930,
+        "m": 5,
+        "name": "中原大戰",
+        "theater": "中原地区（中國華北、華中）",
+        "brief": "1930年5月，蔣介石領導的國民革命軍與閻錫山、馮玉祥等軍閥在中原地區爆發大規模內戰，雙方動員數十萬兵力，激烈的炮兵與步兵戰鬥導致大量傷亡。期間，法國製造的雷諾FT輕坦克（1917年服役）被閻部用於突破防線，展示出新式裝甲兵器的戰術價值。"
+      },
+      "kit": {
+        "name": "雷諾FT輕坦克",
+        "designation": "FT",
+        "year": 1917,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷諾FT輕坦克是第一款採用旋轉炮塔與履帶底盤的輕型坦克，1917年法國研製後廣泛用於一戰，並在1930年代被中國軍閥引進，成為當時重要的機械化裝備。",
+        "portrait": "portraits/feed-ft-edd91a.jpg"
+      },
+      "dossierUrl": "dossiers/1930-7ad7eac94e.json",
+      "place": {
+        "lng": 114,
+        "lat": 35
+      }
+    },
+    {
+      "id": "1931-一二八事變",
+      "added": "2026-10-09T20:55:10.148Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1931,
+        "m": 1,
+        "name": "一二八事變",
+        "theater": "上海",
+        "brief": "一二八事變發生於1932年1月28日至3月3日的上海，日軍以八九式戰車等現代化武器突破華界，與國民革命軍激烈交戰，並在公共租界周邊展開激烈巷戰，測試並展示日本帝國的軍事實力與對華政策的强硬立場。"
+      },
+      "kit": {
+        "name": "八九式戰車",
+        "designation": "八九式 I-Go",
+        "year": 1929,
+        "nation": "jp",
+        "layer": "land",
+        "history": "作為日本帝國陸軍首款大規模生產的中型戰車，於1932年的一二八事變中投入上海戰場，提供機動火力支援。",
+        "portrait": "portraits/feed-igo-fc5100.jpg"
+      },
+      "dossierUrl": "dossiers/1931-5ce4d5a47d.json",
+      "place": {
+        "lng": 121.5,
+        "lat": 31.2
+      }
+    },
+    {
+      "id": "1932-查科戰爭",
+      "added": "2026-10-10T00:48:26.502Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1932,
+        "m": 6,
+        "name": "查科戰爭",
+        "theater": "格蘭查科荒漠與沼澤地帶",
+        "brief": "查科戰爭（1932‑1935）是玻利維亞與巴拉圭在格蘭查科荒漠與沼澤地帶的武裝衝突，雙方軍隊均裝備英國授權製造的維克斯.303水冷式機槍，該槍於1912年服役，並在激烈前線中發揮關鍵火力支援。"
+      },
+      "kit": {
+        "name": "維克斯.303水冷式機槍",
+        "designation": "Vickers .303",
+        "year": 1912,
+        "nation": "uk",
+        "layer": "land",
+        "history": "作為英國軍的標準中型機槍，維克斯.303在一次大戰與後續衝突中被廣泛使用，以其水冷式結構提供持續火力支援，成為步兵與火力支援的主力裝備。",
+        "portrait": "portraits/feed-vickers303.jpg"
+      },
+      "dossierUrl": "dossiers/1932-a032380bc7.json",
+      "place": {
+        "lng": 23,
+        "lat": 12
+      }
+    },
+    {
+      "id": "1954-阿爾及利亞戰爭",
+      "added": "2026-10-10T07:02:26.434Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1954,
+        "m": 11,
+        "name": "阿爾及利亞戰爭",
+        "theater": "阿爾及利亞山區、沿海平原與撒哈拉",
+        "brief": "阿爾及利亞戰爭（1954‑1962）為法國在北非殖民地的叛亂與游擊戰，戰場橫跨阿爾及利亞山脈、沿海平原與撒哈拉沙漠。雙方使用多樣武器，其中法軍步兵的主要步槍MAS‑36自1936年起服役，於戰爭中提供穩定的火力支援。"
+      },
+      "kit": {
+        "name": "MAS-36步槍",
+        "designation": "MAS-36",
+        "year": 1936,
+        "nation": "fr",
+        "layer": "land",
+        "history": "MAS‑36是法國軍隊在二戰期間採用的標準栓式步槍，採用7.5mm口徑，於步兵班中作為主要單兵武器，提供中距離精確射擊能力。",
+        "portrait": "portraits/feed-mas36.jpg"
+      },
+      "dossierUrl": "dossiers/1954-350d82ae4a.json",
+      "place": {
+        "lng": 3,
+        "lat": 28
+      }
+    },
+    {
+      "id": "1994-第一次車臣戰爭",
+      "added": "2026-10-10T13:37:20.397Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1994,
+        "m": 12,
+        "name": "第一次車臣戰爭",
+        "theater": "車臣共和國（高加索）",
+        "brief": "第一次車臣戰爭於1994年末正式爆發，俄羅斯聯邦軍隊在車臣首府格洛茲尼及周邊山區展開激烈城市巷戰與游擊對抗，動員包括大量T-72主力戰車在內的裝甲單位支援步兵突破城鎮防線，並以火力掩護奪取重要據點，展現該坦克的防護與火力優勢。"
+      },
+      "kit": {
+        "name": "T-72主力戰車",
+        "designation": "T-72",
+        "year": 1973,
+        "nation": "su",
+        "layer": "land",
+        "history": "T-72是蘇聯於1970年代研製的主力戰車，具備120毫米滑膛炮與複合裝甲，成為俄軍機械化步兵師的核心突擊力量，至今仍在多國服役。",
+        "portrait": "portraits/t72.jpg"
+      },
+      "dossierUrl": "dossiers/1994-5b736fc923.json",
+      "place": {
+        "lng": 45.5,
+        "lat": 43.3
+      }
+    },
+    {
+      "id": "1935-第二次義埃戰爭",
+      "added": "2026-10-10T18:34:20.451Z",
+      "span": "inter",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1935,
+        "m": 10,
+        "name": "第二次義埃戰爭",
+        "theater": "東非高原、厄立特里亞與意屬索馬里",
+        "brief": "第二次義埃戰爭於1935年10月爆發，義大利以現代化的航空兵力和機械化步兵向衣索比亞的高原推進。義軍裝備的菲亞特B.R.20轟炸機於1935年正式服役，承擔轟炸與偵察任務，支援地面行動。"
+      },
+      "kit": {
+        "name": "菲亞特B.R.20轟炸機",
+        "designation": "B.R.20",
+        "year": 1935,
+        "nation": "it",
+        "layer": "air",
+        "history": "菲亞特B.R.20是義大利空軍在1930年代中期引進的雙發動機中型轟炸機，隸屬於轟炸航空團，主要負責對敵方縱深目標的轟炸與戰術支援。",
+        "portrait": "portraits/feed-br20.jpg"
+      },
+      "dossierUrl": "dossiers/1935-b5fb368f3f.json",
+      "place": {
+        "lng": 46,
+        "lat": 7
+      }
+    },
+    {
+      "id": "1955-第一次蘇丹內戰",
+      "added": "2026-10-11T01:51:04.743Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1955,
+        "m": 8,
+        "name": "第一次蘇丹內戰",
+        "theater": "蘇丹南部與中部",
+        "brief": "第一次蘇丹內戰於1955年8月爆發，政府軍與南方叛軍在蘇丹南部及中部展開激烈交火。衝突期間，蘇丹政府軍部署了美國製造的M3斯圖亞特輕型坦克，該坦克於1941年正式服役，具備良好機動性與火力支援。"
+      },
+      "kit": {
+        "name": "M3 斯圖亞特輕型坦克",
+        "designation": "M3",
+        "year": 1941,
+        "nation": "us",
+        "layer": "land",
+        "history": "M3 Stuart為二戰期間廣泛使用的輕型坦克，具備高速機動與可靠火力，主要用於偵察、快速突破及支援步兵，是美國裝甲兵力的骨幹之一。",
+        "portrait": "portraits/feed-m3-33232a.jpg"
+      },
+      "dossierUrl": "dossiers/1955-657f84e413.json",
+      "place": {
+        "lng": 30,
+        "lat": 12
+      }
+    },
+    {
+      "id": "1959-越南戰爭",
+      "added": "2026-10-11T08:46:40.398Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1959,
+        "m": 7,
+        "name": "越南戰爭",
+        "theater": "東南亞",
+        "brief": "越南戰爭自1959年起在東南亞熱帶丛林展開，美國與北越正規軍及游擊隊的衝突升級。雙方广泛使用包括UH-1「休伊」直升機在內的多型軍備，UH-1在兵力投送與近距離空中支援中扮演關鍵角色，提升了地面部隊的機動性與火力。"
+      },
+      "kit": {
+        "name": "UH-1「休伊」直升機",
+        "designation": "UH-1",
+        "year": 1959,
+        "nation": "us",
+        "layer": "air",
+        "history": "UH-1為美軍首款大批量使用的戰術通用直升機，主要負責兵員與物資運輸、空中偵察及近距離支援任務，並成為越戰標誌性空中平台。",
+        "portrait": "portraits/feed-uh1-c4e59d.jpg"
+      },
+      "dossierUrl": "dossiers/1959-09ef6a76d3.json",
+      "place": {
+        "lng": 103,
+        "lat": 12
+      }
+    },
+    {
+      "id": "1960-剛果危機",
+      "added": "2026-10-11T15:38:29.619Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1960,
+        "m": 7,
+        "name": "剛果危機",
+        "theater": "剛果共和國及其周邊",
+        "brief": "1960年，比利時殖民的剛果共和國宣告獨立後旋即陷入內戰與分離主義危機，導致卡斯特斯省政府、沖突各省及聯合國維和介入，局勢動盪至1965年。此危機中使用的標準步槍之一即為美國於1959年服役的M14自動步槍。"
+      },
+      "kit": {
+        "name": "M14自動步槍",
+        "designation": "M14",
+        "year": 1959,
+        "nation": "us",
+        "layer": "land",
+        "history": "M14自動步槍是美軍在冷戰期間採用的標準步槍，取代M1伽蘭德，發射7.62×51mm北約彈，具備半自動與全自動射擊模式，並被多國軍隊採用。",
+        "portrait": "portraits/m14.jpg"
+      },
+      "dossierUrl": "dossiers/1960-bc0f9ba299.json",
+      "place": {
+        "lng": 23,
+        "lat": -3
+      }
+    },
+    {
+      "id": "1961-安哥拉獨立戰爭",
+      "added": "2026-10-11T20:14:22.127Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1961,
+        "m": 2,
+        "name": "安哥拉獨立戰爭",
+        "theater": "安哥拉（葡萄牙殖民時期）",
+        "brief": "安哥拉獨立戰爭於1961年2月正式爆發，葡萄牙殖民軍與安哥拉民族解放組織在城鄉及叢林展開激烈衝突。雙方均大量配備蘇聯製造的AK-47自動步槍，該武器以其堅固可靠著稱，在游擊戰中發揮關鍵作用。"
+      },
+      "kit": {
+        "name": "AK-47自動步槍",
+        "designation": "AK-47",
+        "year": 1947,
+        "nation": "su",
+        "layer": "land",
+        "history": "AK-47是蘇聯於1947年研製的5.45×39mm口徑自動步槍，以可靠性聞名，成為華約及多國游擊隊的主要步兵武器。",
+        "portrait": "portraits/ak47.jpg"
+      },
+      "dossierUrl": "dossiers/1961-12475c34e7.json",
+      "place": {
+        "lng": 16,
+        "lat": -12
+      }
+    },
+    {
+      "id": "1998-埃塞俄比亞-厄立特里亞戰爭",
+      "added": "2026-10-11T23:40:07.871Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1998,
+        "m": 5,
+        "name": "埃塞俄比亞-厄立特里亞戰爭",
+        "theater": "巴德梅邊境地區",
+        "brief": "1998年5月，埃塞俄比亞與厄立特里亞因邊界爭端在巴德梅地區爆發武裝衝突，雙方動員大量正規軍與重裝備，展開激烈的地面與空中對抗。這場戰爭的焦點之一是埃塞軍的T-55主力戰車，其在蘇聯時期大量裝備，並在衝突中發揮重要作用。"
+      },
+      "kit": {
+        "name": "T-55主力戰車",
+        "designation": "T-55",
+        "year": 1958,
+        "nation": "su",
+        "layer": "land",
+        "history": "T-55是蘇聯第二代中型戰車，設計用於提供可靠的火力與裝甲支援，於冷戰期間大量裝備蘇聯及受援國家，成為地面部隊的主力裝甲平台。",
+        "portrait": "portraits/feed-t55-e564df.jpg"
+      },
+      "dossierUrl": "dossiers/1998-bb5921b053.json",
+      "place": {
+        "lng": 45,
+        "lat": 36
+      }
+    },
+    {
+      "id": "1965-第二次印巴戰爭",
+      "added": "2026-10-12T05:54:19.482Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1965,
+        "m": 8,
+        "name": "第二次印巴戰爭",
+        "theater": "克什米爾與旁遮普前線",
+        "brief": "第二次印巴戰爭（1965年）爆發於克什米爾與旁遮普，雙方投入大量機械化兵團。巴基斯坦陸軍在這場衝突中使用了美製M4A1雪曼坦克，該坦克早於1942年服役，並在戰爭中提供重要裝甲支援。"
+      },
+      "kit": {
+        "name": "M4A1雪曼坦克",
+        "designation": "M4A1",
+        "year": 1942,
+        "nation": "us",
+        "layer": "land",
+        "history": "M4A1雪曼坦克是二戰期間美國主力中型坦克，後來退役或轉讓至盟友，1965年巴基斯坦軍隊在印巴戰爭中將其作為裝甲突擊骨幹使用。",
+        "portrait": "portraits/feed-m4a1.jpg"
+      },
+      "dossierUrl": "dossiers/1965-15f4e485d6.json",
+      "place": {
+        "lng": 74.5,
+        "lat": 34
+      }
+    },
+    {
+      "id": "1967-奈及利亞內戰",
+      "added": "2026-10-12T15:15:24.080Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1967,
+        "m": 7,
+        "name": "奈及利亞內戰",
+        "theater": "奈及利亞東部",
+        "brief": "奈及利亞內戰於一九六七年七月在聯邦政府軍與比亞法拉軍隊之間展開，戰事集中於奈及利亞東部。比亞法拉軍隊使用蘇製AK-47突擊步槍；該正式型號已於一九四九年列裝，是其步兵部隊的重要地面武器，最終戰局由聯邦政府軍取得勝利。"
+      },
+      "kit": {
+        "name": "卡莫夫突擊步槍",
+        "designation": "AK-47",
+        "year": 1949,
+        "nation": "su",
+        "layer": "land",
+        "history": "AK-47是蘇聯制式突擊步槍，隸屬步兵分隊的輕武器系統，擔任班與排的自動射擊火力，位階低於通用機槍與火炮。",
+        "portrait": "portraits/ak47.jpg"
+      },
+      "dossierUrl": "dossiers/1967-b5b9d422aa.json",
+      "place": {
+        "lng": 12.5,
+        "lat": 8
+      }
+    },
+    {
+      "id": "1967-第三次中東戰爭",
+      "added": "2026-10-12T22:31:03.093Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1967,
+        "m": 6,
+        "name": "第三次中東戰爭",
+        "theater": "中東戰線",
+        "brief": "第三次中東戰爭於1967年6月爆發，以色列與埃及、敘利亞等國在中東戰線交鋒；戰事主要發生在西奈半島、戈蘭高地及約旦邊境一帶。戰役中，以軍裝甲部隊使用美製M48巴頓坦克，負責正面突破、裝甲支援、占領要地，並與步兵協同作戰。"
+      },
+      "kit": {
+        "name": "巴頓中型坦克",
+        "designation": "M48",
+        "year": 1952,
+        "nation": "us",
+        "layer": "land",
+        "history": "M48是美國陸軍二戰後標準中型坦克體系的正式型號，擔任裝甲營主力，負責以主砲支援步兵、對抗裝甲目標並在機動作戰中推進占領。",
+        "portrait": "portraits/feed-m48-f62413.jpg"
+      },
+      "dossierUrl": "dossiers/1967-1ba9f84aa4.json",
+      "place": {
+        "lng": 38,
+        "lat": 31
+      }
+    },
+    {
+      "id": "1969-中蘇邊界衝突",
+      "added": "2026-10-13T03:31:47.941Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1969,
+        "m": 3,
+        "name": "中蘇邊界衝突",
+        "theater": "黑龍江省珍寶島地區",
+        "brief": "維基戰爭列表所列的中蘇邊界衝突，於一九六九年三月在黑龍江省珍寶島地區爆發武裝交火，中國邊防部隊出動59式中型坦克巡邏並阻擋蘇軍裝甲車隊。這場衝突是雙方在邊界地區長期對峙的一次直接碰撞，亦成為後續邊防警戒升高的背景。"
+      },
+      "kit": {
+        "name": "59式中型坦克",
+        "designation": "59式",
+        "year": 1959,
+        "nation": "cn",
+        "layer": "land",
+        "history": "59式中型坦克是中國人民解放軍陸軍裝甲兵的第一款國產中型主戰坦克，承擔正面突擊與裝甲支援任務，是當時陸軍機械化部隊的重要骨幹。",
+        "portrait": "portraits/feed-59-85a28d.jpg"
+      },
+      "dossierUrl": "dossiers/1969-c2c9a86970.json",
+      "place": {
+        "lng": 134,
+        "lat": 48
+      }
+    },
+    {
+      "id": "1971-孟加拉國解放戰爭",
+      "added": "2026-10-13T19:14:15.305Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1971,
+        "m": 3,
+        "name": "孟加拉國解放戰爭",
+        "theater": "孟加拉地區",
+        "brief": "孟加拉國解放戰爭於一九七一年爆發，東巴基斯坦軍政府鎮壓獨立運動後，印巴軍隊在孟加拉地區交戰。巴基斯坦空軍在戰事中曾運用F-86F噴氣戰鬥機執行攔截、巡邏與對地任務。衝突由三月軍事行動延續至年末，最終以孟加拉國獨立告終，並改變南亞政治格局。"
+      },
+      "kit": {
+        "name": "F-86F佩刀式戰鬥機",
+        "designation": "F-86F",
+        "year": 1949,
+        "nation": "us",
+        "layer": "air",
+        "history": "F-86F是美國空軍早期單座後掠翼噴氣戰鬥機，憑高速性能與俯衝能力擔任制空、攔截及對地支援，主要編入空軍戰鬥機聯隊。",
+        "portrait": "portraits/feed-f86f.jpg"
+      },
+      "dossierUrl": "dossiers/1971-39128eb355.json",
+      "place": {
+        "lng": 90,
+        "lat": 24
+      }
+    },
+    {
+      "id": "1999-卡吉爾戰爭",
+      "added": "2026-10-14T04:48:08.887Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1999,
+        "m": 5,
+        "name": "卡吉爾戰爭",
+        "theater": "南亞",
+        "brief": "卡吉爾戰爭是印度與巴基斯坦因克什米爾控制權爭端而引發的軍事衝突，於1999年5月爆發。印度陸軍在高山地形中投入蘇聯製BMP-2步兵戰鬥車，執行機動作戰、兵員輸送與步兵火力支援，並配合坦克作戰。"
+      },
+      "kit": {
+        "name": "BMP-2步兵戰鬥車",
+        "designation": "BMP-2",
+        "year": 1985,
+        "nation": "su",
+        "layer": "land",
+        "history": "蘇聯陸軍機械化步兵的核心裝甲載具，負責伴隨坦克輸送兵員，並以機炮提供伴隨步兵火力支援。",
+        "portrait": "portraits/feed-bmp2.jpg"
+      },
+      "dossierUrl": "dossiers/1999-cb7f868ebe.json",
+      "place": {
+        "lng": 78,
+        "lat": 22
+      }
+    },
+    {
+      "id": "1974-西沙之戰",
+      "added": "2026-10-14T10:08:59.030Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1974,
+        "m": 1,
+        "name": "西沙之戰",
+        "theater": "西沙群島與南中國海",
+        "brief": "西沙之戰是一九七四年一月中國與南越在西沙群島及附近海域發生的軍事衝突，交戰涉及艦艇、飛機與地面部隊。中國參戰艦隊包括已於一九七一年服役的051型導彈驅逐艦，承擔海上警戒、護航與火力支援任務。艦隊作戰以攻擊南越海空兵力、奪取島礁控制為主，並保障後續登陸與補給。"
+      },
+      "kit": {
+        "name": "051型導彈驅逐艦",
+        "designation": "051型",
+        "year": 1971,
+        "nation": "cn",
+        "layer": "sea",
+        "history": "051型是中國人民解放軍海軍水面艦艇部隊的導彈驅逐艦，執行編隊防空、反艦、警戒與護航，是早期海上防空作戰體系的骨幹。",
+        "portrait": "portraits/feed-051-2ab802.jpg"
+      },
+      "dossierUrl": "dossiers/1974-b31009a321.json",
+      "place": {
+        "lng": 112,
+        "lat": 16
+      }
+    },
+    {
+      "id": "1975-安哥拉內戰",
+      "added": "2026-10-14T23:11:32.179Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1975,
+        "m": 1,
+        "name": "安哥拉內戰",
+        "theater": "安哥拉",
+        "brief": "安哥拉內戰自1975年獨立前後爆發，安哥拉人民解放運動MPLA、右翼全國解放陣線UNITA與民族解放陣線FNLA為爭取國家政權而交戰。這場內戰與非洲冷戰代理人戰高度重疊，MPLA曾獲得的蘇制裝備包括1974年列裝的AK-74突擊步槍。"
+      },
+      "kit": {
+        "name": "卡拉什尼科夫突擊步槍",
+        "designation": "AK-74",
+        "year": 1974,
+        "nation": "su",
+        "layer": "land",
+        "history": "AK-74是蘇軍摩托化步兵師步兵連的制式突擊步槍，配置於基層步兵班，負責近距離一般火力，是連隊地面進攻中的主要步兵武器。",
+        "portrait": "portraits/ak74.jpg"
+      },
+      "dossierUrl": "dossiers/1975-5a34f2470f.json",
+      "place": {
+        "lng": 16,
+        "lat": -12
+      }
+    },
+    {
+      "id": "1978-烏干達-坦桑尼亞戰爭",
+      "added": "2026-10-15T01:27:20.674Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1978,
+        "m": 8,
+        "name": "烏干達-坦桑尼亞戰爭",
+        "theater": "卡蓋拉地區與坦桑尼亞邊境",
+        "brief": "烏干達-坦桑尼亞戰爭是中文維基戰爭列表所列的1978年衝突，烏干達越境進入坦桑尼亞卡蓋拉地區，雙方在邊境據點及道路交戰。坦桑尼亞地面力量使用中國Type 59中型坦克，此型車於1959年已在中國人民解放軍服役，屬裝甲部隊作戰裝備。"
+      },
+      "kit": {
+        "name": "59式中型坦克",
+        "designation": "Type 59",
+        "year": 1959,
+        "nation": "cn",
+        "layer": "land",
+        "history": "中國人民解放軍機械化步兵師與裝甲師的主力中型坦克，承擔機動作戰、火力支援及反裝甲任務，並作為友好國家裝甲部隊的制式裝備。",
+        "portrait": "portraits/feed-type59.jpg"
+      },
+      "dossierUrl": "dossiers/1978-a6531605aa.json",
+      "place": {
+        "lng": 30.5,
+        "lat": -1.5
+      }
+    },
+    {
+      "id": "1979-中越戰爭",
+      "added": "2026-10-15T13:23:01.546Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1979,
+        "m": 2,
+        "name": "中越戰爭",
+        "theater": "中國與越南邊境",
+        "brief": "中越戰爭於一九七九年二月爆發，中國人民解放軍與越南人民軍在中國與越南邊境地區交戰。人民空軍投入殲-6戰鬥機執行制空、攔截與空域防衛任務；此型機早於本輪衝突列裝，並在交戰期間實際參與邊境空防作戰，是人民空軍作戰體系中承擔攔截任務的早期噴氣式戰鬥機。"
+      },
+      "kit": {
+        "name": "殲-6戰鬥機",
+        "designation": "殲-6",
+        "year": 1956,
+        "nation": "cn",
+        "layer": "air",
+        "history": "殲-6是人民空軍早期的主力制空戰鬥機，主要承擔高空攔截與空域防衛任務，並與其他戰鬥機共同構成邊境方向的空中防線。",
+        "portrait": "portraits/feed-6-60aa80.jpg"
+      },
+      "dossierUrl": "dossiers/1979-99c7e5b4ed.json",
+      "place": {
+        "lng": 106,
+        "lat": 22
+      }
+    },
+    {
+      "id": "1979-蘇聯入侵阿富汗",
+      "added": "2026-10-15T18:15:00.884Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1979,
+        "m": 12,
+        "name": "蘇聯入侵阿富汗",
+        "theater": "阿富汗戰場",
+        "brief": "蘇聯入侵阿富汗衝突始於一九七九年十二月，蘇聯軍隊進入阿富汗後，與反抗蘇聯介入的游擊力量持續交戰。蘇聯陸軍使用T-62主力坦克，參與突破、機動與火力支援；此型號於一九六一年列裝並投入戰役。"
+      },
+      "kit": {
+        "name": "T-62主戰坦克",
+        "designation": "T-62",
+        "year": 1961,
+        "nation": "su",
+        "layer": "land",
+        "history": "T-62是蘇聯陸軍裝甲部隊的主戰坦克，部署於坦克部隊，負責正面突破、機動作戰與近距離火力支援，並配合步兵作戰。",
+        "portrait": "portraits/feed-t62-a36764.jpg"
+      },
+      "dossierUrl": "dossiers/1979-bd6ee7f895.json",
+      "place": {
+        "lng": 66,
+        "lat": 34
+      }
+    },
+    {
+      "id": "2006-黎巴嫩戰爭",
+      "added": "2026-10-15T21:25:16.049Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2006,
+        "m": 7,
+        "name": "黎巴嫩戰爭",
+        "theater": "黎巴嫩南部與黎以邊境地帶",
+        "brief": "維基戰爭列表所列的二〇〇六年黎巴嫩戰爭，是以色列與黎巴嫩真主黨武裝之間的衝突。戰事包括邊境交火、火箭攻擊與地面進攻；以色列地面部隊進入黎巴嫩南部，Merkava III主戰坦克作為裝甲主力，執行突破、警戒及伴隨火力支援任務。"
+      },
+      "kit": {
+        "name": "梅卡瓦三型主戰坦克",
+        "designation": "Merkava III",
+        "year": 1992,
+        "nation": "il",
+        "layer": "land",
+        "history": "梅卡瓦三型是以色列陸軍的主戰坦克，負責裝甲正面作戰、突破與護衛，並與步兵及支援車輛協同行動。",
+        "portrait": "portraits/merkava.jpg"
+      },
+      "dossierUrl": "dossiers/2006-460696bb16.json",
+      "place": {
+        "lng": 35.5,
+        "lat": 33.2
+      }
+    },
+    {
+      "id": "1982-第五次中東戰爭",
+      "added": "2026-10-16T00:21:59.133Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1982,
+        "m": 6,
+        "name": "第五次中東戰爭",
+        "theater": "黎巴嫩",
+        "brief": "中文維基戰爭列表所列的第五次中東戰爭於1982年6月爆發，戰事主要在黎巴嫩境內展開，以色列陸軍投入Merkava Mark 1主戰坦克，在南部戰線執行裝甲突破、據點攻擊與火力支援，並與步兵及裝甲車協同作戰，承擔核心重裝甲任務。"
+      },
+      "kit": {
+        "name": "梅卡瓦主戰坦克",
+        "designation": "Merkava Mark 1",
+        "year": 1979,
+        "nation": "il",
+        "layer": "land",
+        "history": "梅卡瓦主戰坦克是以色列陸軍當時的核心裝甲載具，負責正面突破與裝甲防衛，並可和步兵、裝甲車及炮兵協同，構成地面部隊的主要坦克火力。",
+        "portrait": "portraits/merkava.jpg"
+      },
+      "dossierUrl": "dossiers/1982-370a6b6b61.json",
+      "place": {
+        "lng": 35.8,
+        "lat": 33.9
+      }
+    },
+    {
+      "id": "1988-赤瓜礁海戰",
+      "added": "2026-10-16T11:16:30.610Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1988,
+        "m": 3,
+        "name": "赤瓜礁海戰",
+        "theater": "赤瓜礁與南中國海",
+        "brief": "赤瓜礁海戰於一九八八年三月二十三日爆發，是中越兩國軍隊在南海赤瓜礁及鄰近海域的武裝衝突，也是參考清單收錄的衝突。中國海軍艦艇執行海上巡邏與警戒，中國空軍則出動J-8 II（殲八II）戰鬥機，承擔制空、攔截及海上支援任務。"
+      },
+      "kit": {
+        "name": "殲八II戰鬥機",
+        "designation": "J-8 II",
+        "year": 1980,
+        "nation": "cn",
+        "layer": "air",
+        "history": "J-8 II是中國人民解放軍空軍的單座全天候截擊機，編入航空兵師下屬殲擊機團，主要執行高空高速攔截、警戒與制空任務。",
+        "portrait": "portraits/feed-j8ii.jpg"
+      },
+      "dossierUrl": "dossiers/1988-b391b2d2bd.json",
+      "place": {
+        "lng": 114.4,
+        "lat": 9.5
+      }
+    },
+    {
+      "id": "1989-美國入侵巴拿馬",
+      "added": "2026-10-16T16:35:20.769Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1989,
+        "m": 12,
+        "name": "美國入侵巴拿馬",
+        "theater": "巴拿馬與巴拿馬運河",
+        "brief": "一九八九年十二月，美國入侵巴拿馬，是中文維基「戰爭列表」收錄的衝突。美軍進入巴拿馬後，地面部隊使用M1A1艾布拉姆斯主戰坦克執行突破、掩護與據點攻占任務。該型坦克屬於美國陸軍裝甲部隊，於一九八五年列裝，並在作戰中與裝甲步兵協同推進。"
+      },
+      "kit": {
+        "name": "M1A1艾布拉姆斯主戰坦克",
+        "designation": "M1A1",
+        "year": 1985,
+        "nation": "us",
+        "layer": "land",
+        "history": "M1A1是美國陸軍裝甲師的主要主戰坦克，與裝甲步兵協同執行突破、防禦及要點占領任務，並構成師級裝甲骨幹。",
+        "portrait": "portraits/feed-m1a1.jpg"
+      },
+      "dossierUrl": "dossiers/1989-a9cdc79af2.json",
+      "place": {
+        "lng": -79.5,
+        "lat": 9
+      }
+    },
+    {
+      "id": "2008-俄格戰爭",
+      "added": "2026-10-16T19:56:04.266Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2008,
+        "m": 8,
+        "name": "俄格戰爭",
+        "theater": "南奧塞梯亞與阿布哈茲",
+        "brief": "中文維基戰爭列表所載的俄格戰爭，於二零零八年八月在喬治亞境內爆發，俄羅斯與喬治亞在南奧塞梯亞及阿布哈茲地區交戰。俄軍使用蘇聯主戰坦克T-72，其正式型號自一九七三年起列裝，是地面部隊的重要坦克，並構成俄軍地面作戰體系的重要組成。"
+      },
+      "kit": {
+        "name": "主戰坦克",
+        "designation": "T-72",
+        "year": 1973,
+        "nation": "su",
+        "layer": "land",
+        "history": "T-72是蘇聯陸軍的主力中型坦克，編入坦克部隊，負責正面突破、攻堅與伴隨步兵作戰，並提供直接的火力支援。",
+        "portrait": "portraits/t72.jpg"
+      },
+      "dossierUrl": "dossiers/2008-8d229f9633.json",
+      "place": {
+        "lng": 43.7,
+        "lat": 42.5
+      }
+    },
+    {
+      "id": "2011-利比亞內戰",
+      "added": "2026-10-16T22:48:33.490Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2011,
+        "m": 2,
+        "name": "利比亞內戰",
+        "theater": "利比亞沿海與班加西",
+        "brief": "利比亞內戰於2011年2月爆發，反政府武裝推翻蓋達夫政權後，內部派系爭奪與跨國軍事介入交織。北約空中行動展開之際，英國向利比亞部署「挑戰者2」主戰坦克，用於護送撤運、占領重要設施及支援地面部隊，成為這場衝突中英軍裝甲力量的代表。"
+      },
+      "kit": {
+        "name": "挑戰者2主戰坦克",
+        "designation": "Challenger 2",
+        "year": 1998,
+        "nation": "uk",
+        "layer": "land",
+        "history": "「挑戰者2」是英國陸軍的主戰坦克，隸屬裝甲部隊，負責正面突破、對抗敵方裝甲並占領要害地區，與步兵、工程車及後勤支援車輛協同作戰。",
+        "portrait": "portraits/feed-challenger2.jpg"
+      },
+      "dossierUrl": "dossiers/2011-73316e87a5.json",
+      "place": {
+        "lng": 20.1,
+        "lat": 32.1
+      }
+    },
+    {
+      "id": "2014-頓巴斯戰爭",
+      "added": "2026-10-17T01:17:28.005Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2014,
+        "m": 3,
+        "name": "頓巴斯戰爭",
+        "theater": "頓巴斯與烏克蘭東部",
+        "brief": "中文維基戰爭列表所列的頓巴斯戰爭，是二〇一四年起發生於烏克蘭東部、以頓巴斯地區為核心的武裝衝突。俄羅斯與烏克蘭雙方均使用T-72主戰坦克，投入地面警戒、推進與火力支援，坦克仍是裝甲部隊的重要作戰載具。"
+      },
+      "kit": {
+        "name": "T-72主戰坦克",
+        "designation": "T-72",
+        "year": 1973,
+        "nation": "su",
+        "layer": "land",
+        "history": "T-72是蘇聯陸軍的主戰坦克，位於裝甲部隊的作戰核心，負責正面突破、反裝甲與佔領重要地形，並協同步兵作戰。",
+        "portrait": "portraits/t72.jpg"
+      },
+      "dossierUrl": "dossiers/2014-bef9103d00.json",
+      "place": {
+        "lng": 38,
+        "lat": 48.3
+      }
+    },
+    {
+      "id": "2020-納戈爾諾-卡拉巴赫戰爭",
+      "added": "2026-10-17T06:53:20.637Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2020,
+        "m": 2,
+        "name": "納戈爾諾-卡拉巴赫戰爭",
+        "theater": "納戈爾諾-卡拉巴赫",
+        "brief": "納戈爾諾-卡拉巴赫戰爭始於2020年2月，是亞美尼亞與亞塞拜然圍繞納戈爾諾-卡拉巴赫及周邊地區的武裝衝突。亞塞拜然調動BM-21「Grad」多管火箭炮參戰，該型號於1967年列裝，以車載發射系統提供遠距火箭火力，是此次地面作戰中可辨識的蘇聯時期裝備。"
+      },
+      "kit": {
+        "name": "BM-21「Grad」多管火箭炮",
+        "designation": "BM-21 Grad",
+        "year": 1967,
+        "nation": "su",
+        "layer": "land",
+        "history": "BM-21「Grad」是蘇聯陸軍炮兵體系中的122毫米多管火箭炮，負責提供較炮兵射程更遠的火箭火力，並與自行加榴炮共同構成縱深打擊能力。",
+        "portrait": "portraits/feed-bm21grad.jpg"
+      },
+      "dossierUrl": "dossiers/2020-018e43fd52.json",
+      "place": {
+        "lng": 46.5,
+        "lat": 39.4
+      }
+    },
+    {
+      "id": "2022-俄羅斯入侵烏克蘭",
+      "added": "2026-10-17T11:34:24.244Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2022,
+        "m": 2,
+        "name": "俄羅斯入侵烏克蘭",
+        "theater": "烏克蘭全境",
+        "brief": "俄羅斯入侵烏克蘭自2022年2月展開，戰線由北、東、南多個方向推進，地面作戰結合裝甲突擊與遠程火力打擊。俄軍使用T-72B主戰坦克執行地面進攻；此型號於1985年服役，是俄羅斯地面部隊的制式裝備，任務包括突破防線、伴隨步兵推進及提供機動火力支援。"
+      },
+      "kit": {
+        "name": "主戰坦克",
+        "designation": "T-72B",
+        "year": 1985,
+        "nation": "su",
+        "layer": "land",
+        "history": "T-72B是俄羅斯地面部隊的主戰坦克，位於裝甲作戰核心，負責突破防線、護送步兵及提供機動火力，並與自走榴彈砲協同作戰。",
+        "portrait": "portraits/feed-t72b.jpg"
+      },
+      "dossierUrl": "dossiers/2022-1d4fa9ff52.json",
+      "place": {
+        "lng": 33,
+        "lat": 48.5
+      }
+    },
+    {
+      "id": "2023-以色列—哈馬斯戰爭",
+      "added": "2026-10-17T15:29:02.033Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 2023,
+        "m": 10,
+        "name": "以色列—哈馬斯戰爭",
+        "theater": "加薩走廊與以色列南部",
+        "brief": "以色列—哈馬斯戰爭自二〇二三年十月起，成為中文維基「戰爭列表」所收錄的當代衝突。戰場中，以軍地面部隊廣泛使用「梅卡瓦四型」主戰坦克，負責裝甲部隊作戰；此型早於本輪衝突已列入以色列陸軍服役。"
+      },
+      "kit": {
+        "name": "梅卡瓦四型主戰坦克",
+        "designation": "Merkava IV",
+        "year": 1990,
+        "nation": "il",
+        "layer": "land",
+        "history": "梅卡瓦四型是以色列陸軍裝甲部隊的主力主戰坦克，位於地面作戰體系的裝甲核心，並承擔部隊防護與機動任務。",
+        "portrait": "portraits/merkava.jpg"
+      },
+      "dossierUrl": "dossiers/2023-1b82cc3cf9.json",
+      "place": {
+        "lng": 34.5,
+        "lat": 31.4
+      }
+    },
+    {
+      "id": "1801-第一次巴巴利戰爭",
+      "added": "2026-10-20T10:41:55.588Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1801,
+        "m": 5,
+        "name": "第一次巴巴利戰爭",
+        "theater": "地中海與北大西洋",
+        "brief": "第一次巴巴利戰爭是維基戰爭列表所列、始於一八零一年的近代海上衝突，起於美國拒絕巴巴利政權的進貢要求與航權糾紛。美國海軍巡航艦憲法號於一七九七年服役，正式登錄名稱為USS Constitution，並投入護航、巡邏與封鎖任務，反映美國遠洋海軍的部署能力。"
+      },
+      "kit": {
+        "name": "憲法號巡航艦",
+        "designation": "USS Constitution",
+        "year": 1797,
+        "nation": "us",
+        "layer": "sea",
+        "history": "隸屬美國海軍，屬早期大型帆船巡航艦兵力，負責遠洋航行、商船護航與戰區封鎖，並可搭載艦載火炮執行海上作戰。",
+        "portrait": "portraits/feed-ussconstitution.jpg"
+      },
+      "dossierUrl": "dossiers/1801-383ef6a16b.json",
+      "place": {
+        "lng": 15,
+        "lat": 35
+      }
+    },
+    {
+      "id": "1801-橘子戰爭",
+      "added": "2026-10-20T10:57:32.917Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1801,
+        "m": 2,
+        "name": "橘子戰爭",
+        "theater": "伊比利亞半島葡萄牙與西班牙邊境",
+        "brief": "橘子戰爭是一八〇一年西班牙與葡萄牙之間的短暫邊界衝突，中文維基戰爭列表將其列為獨立條目。英國陸軍同期採用的Pattern 1757 Musket步槍是正式制式型號，配置於線列步兵，屬於當時步兵作戰的裝備層次，並反映十八世紀末至十九世紀初步兵部隊的典型配備。"
+      },
+      "kit": {
+        "name": "一七五七年式步槍",
+        "designation": "Pattern 1757 Musket",
+        "year": 1757,
+        "nation": "uk",
+        "layer": "land",
+        "history": "一七五七年式步槍是英國陸軍線列步兵的制式火槍，配置於步兵連與營的射擊單位，屬於步兵部隊的基本地面槍械。",
+        "portrait": "portraits/feed-pattern1757musket.jpg"
+      },
+      "dossierUrl": "dossiers/1801-6943538d83.json",
+      "place": {
+        "lng": -8.2,
+        "lat": 40.2
+      }
+    },
+    {
+      "id": "1802-第二次馬拉塔戰爭",
+      "added": "2026-10-20T11:04:39.989Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1802,
+        "m": 1,
+        "name": "第二次馬拉塔戰爭",
+        "theater": "印度西部與德幹高原",
+        "brief": "第二次馬拉塔戰爭是英國與馬拉塔聯盟在印度西部及德幹地區進行的戰事。英軍步兵配備的一七九五年式滑膛槍，英文正式型號為 Pattern 1795 Musket，於一七九五年列入英國陸軍裝備，是廣泛使用的制式火槍，並與步槍單位的來福槍分列配置。"
+      },
+      "kit": {
+        "name": "一七九五年式滑膛槍",
+        "designation": "Pattern 1795 Musket",
+        "year": 1795,
+        "nation": "uk",
+        "layer": "land",
+        "history": "一七九五年式滑膛槍是英國陸軍步兵的制式火槍，廣泛配屬英軍各步兵營與東印度公司步兵，並與步槍單位的來福槍分列使用。",
+        "portrait": "portraits/feed-pattern1795musket.jpg"
+      },
+      "dossierUrl": "dossiers/1802-99f3fd9a1e.json",
+      "place": {
+        "lng": 77,
+        "lat": 20
+      }
+    },
+    {
+      "id": "1803-反法同盟戰爭",
+      "added": "2026-10-20T12:22:20.851Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "battle": {
+        "y": 1803,
+        "m": 5,
+        "name": "反法同盟戰爭",
+        "theater": "歐洲戰場",
+        "brief": "1803年5月英國向法國宣戰，此前奧地利已加入反法陣營，衝突隨即在歐洲多處展開，成為反法同盟戰爭的初期戰事，交戰重點仍集中於歐洲大陸。法軍步兵使用的Fusil d'infanterie modèle 1777，是至此年已正式服役、可擔任日常作戰火器的制式步槍。"
+      },
+      "kit": {
+        "name": "法國陸軍1777年型步兵燒火槍",
+        "designation": "Fusil d'infanterie modèle 1777",
+        "year": 1777,
+        "nation": "fr",
+        "layer": "land",
+        "history": "它是法國陸軍步兵連的制式步槍，作為步兵日常作戰的核心火器，與騎兵、砲兵及攻城武器分屬不同裝備體系。",
+        "portrait": "portraits/feed-fusildinfanteriemodele17.jpg"
+      },
+      "dossierUrl": "dossiers/1803-726f918ebd.json",
+      "place": {
+        "lng": 10,
+        "lat": 50
+      }
+    },
+    {
+      "id": "1507-第三次莫斯科-立陶宛戰爭",
+      "added": "2026-10-20T15:04:47.314Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "battle": {
+        "y": 1507,
+        "m": 1,
+        "name": "第三次莫斯科-立陶宛戰爭",
+        "theater": "東歐",
+        "brief": "第三次莫斯科-立陶宛戰爭見於中文維基戰爭列表，開始於1507年，交戰方為莫斯科大公國與立陶宛大公國，戰區在東歐。歷史同期已列裝的真實裝備有英格蘭的蒙斯梅格攻城臼炮，正式識別名稱為Mons Meg，1449年已列裝。"
+      },
+      "kit": {
+        "name": "蒙斯梅格攻城臼炮",
+        "designation": "Mons Meg",
+        "year": 1449,
+        "nation": "uk",
+        "layer": "land",
+        "history": "蒙斯梅格屬於英格蘭王國的重型攻城臼炮，歸入王室攻城砲兵，部署於圍城陣地，主要任務是攻擊城牆及堡壘。",
+        "portrait": "portraits/feed-monsmeg.jpg"
+      },
+      "dossierUrl": "dossiers/1507-8b4e328394.json",
+      "place": {
+        "lng": 21,
+        "lat": 52.2
+      }
+    },
+    {
+      "id": "1004-澶州之戰",
+      "added": "2026-10-20T15:50:06.250Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.03,
+        "lat": 35.76
+      },
+      "battle": {
+        "y": 1004,
+        "m": 11,
+        "name": "澶州之戰",
+        "theater": "黃河沿岸澶州（今河南濮陽一帶）",
+        "brief": "澶州之戰發生於景德元年，遼聖宗與蕭太后率軍南下，戰線由河北一路延伸至黃河沿岸；宋真宗赴澶州後雙方大軍對峙，最終促成澶淵之盟。宋軍所配的宋制霹靂砲，是弩砲與投石系統之外的重要早期火器。"
+      },
+      "kit": {
+        "name": "霹靂火砲",
+        "designation": "宋制霹靂砲",
+        "year": 1004,
+        "nation": "cn",
+        "layer": "land",
+        "history": "霹靂砲位於宋代遠程火力體系，以爆炸作用攻擊城防、人員與器材，通常配置於攻城或守城陣列，與弓弩及砲石相互配合。",
+        "portrait": "portraits/feed-3a9531.jpg"
+      }
+    },
+    {
+      "id": "1004-澶州之戰",
+      "added": "2026-10-20T16:10:53.597Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1004,
+        "m": 11,
+        "name": "澶州之戰",
+        "theater": "河北路澶州一帶",
+        "brief": "中文維基戰爭列表所載的景德元年宋遼衝突，發生於河北路澶州一帶；宋軍北上抵禦遼軍南下，雙方在城防與營壘間僵持後議和。此役凸顯定置弩具與防禦工事的配合，其中床子弩是當時宋軍用於城防與陣地射擊的正式裝備型號。"
+      },
+      "kit": {
+        "name": "床子弩",
+        "designation": "床子弩",
+        "year": 1004,
+        "nation": "cn",
+        "layer": "land",
+        "history": "床子弩在宋代陸軍弩兵體系中負責定置射擊，佈於城牆、營門與陣線前段，以低射界封鎖接近敵軍，與手持步弩形成火力分工。",
+        "portrait": "portraits/feed-b6300c.jpg"
+      }
+    }
+  ]
+}
