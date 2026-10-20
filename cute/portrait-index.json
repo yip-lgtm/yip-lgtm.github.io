@@ -159,6 +159,13 @@
   "percussionrifle": "portraits/percussion.jpg",
   "muzzleloadingfieldgun": "portraits/muzzleloader.jpg",
   "gatlinggun": "portraits/gatling.jpg",
-  "ironclad": "portraits/ironclad.jpg"
+  "ironclad": "portraits/ironclad.jpg",
+  "dory": "portraits/dory.jpg",
+  "corinthianhelmet": "portraits/scutum.jpg",
+  "scorpio": "portraits/egyptianspear.jpg",
+  "egyptianspear": "portraits/egyptianspear.jpg",
+  "assyrianspear": "portraits/assyrianspear.jpg",
+  "pilum": "portraits/assyrianbow.jpg",
+  "assyrianbow": "portraits/xiaochongnu.jpg"
  }
 }

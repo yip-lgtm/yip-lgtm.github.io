@@ -2,6 +2,17 @@
  "note": "The weapons the campaign writer may draw on, by era. A campaign's kit is chosen from here, so every card the feed produces has art: the portrait job drew all of these before the feed can name one. The list is the reason the feed no longer invents a weapon and leaves the card blank.",
  "weapons": [
   {
+   "id": "egyptianspear",
+   "name": "埃及長矛",
+   "designation": "Egyptian spear",
+   "nation": "it",
+   "layer": "land",
+   "kind": "infantry",
+   "year": -3200,
+   "span": "p01",
+   "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。"
+  },
+  {
    "id": "khopesh",
    "name": "埃及月牙劍",
    "designation": "Khopesh",
@@ -11,6 +22,17 @@
    "year": -1500,
    "span": "p01",
    "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。"
+  },
+  {
+   "id": "assyrianspear",
+   "name": "亞述長矛",
+   "designation": "Assyrian spear",
+   "nation": "it",
+   "layer": "land",
+   "kind": "infantry",
+   "year": -900,
+   "span": "p01",
+   "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。"
   },
   {
    "id": "dory",
