@@ -40,6 +40,9 @@ const model = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash-Preview";
 // unhandled TypeError and lost the run.
 const TIMEOUT_MS = Number(process.env.DOSSIER_TIMEOUT_MS || 600_000);
 const ATTEMPTS = Number(process.env.DOSSIER_ATTEMPTS || 3);
+// The reason the last answer was rejected. The next attempt is told about
+// it, so one incomplete answer does not cost the whole hour.
+let lastError = "";
 
 async function attempt() {
   const res = await fetch(`${base}/chat/completions`, {
@@ -47,8 +50,13 @@ async function attempt() {
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
     body: JSON.stringify({
       model,
-      messages: [{ role: "user", content: prompt }],
+      messages: [{ role: "user", content: prompt + (lastError ? `\n上一份答案被拒絕：${lastError}。請補齊後重新輸出完整的 JSON 物件。` : "") }],
       temperature: 0.4,
+      // Eight bilingual sections of 150 characters each is a long answer, and
+      // the model thinks before it writes. Without a budget the service cut
+      // the reply off at the default length, and the last section -- result
+      // and resultEn -- was the part that went missing.
+      max_completion_tokens: Number(process.env.DOSSIER_MAX_TOKENS || 32000),
     }),
     signal: AbortSignal.timeout(TIMEOUT_MS),
   });
@@ -63,7 +71,6 @@ async function attempt() {
 const SECTIONS = ["countries", "people", "kits", "tactics", "data", "cause", "impact", "result"];
 
 let dossier = null;
-let lastError = "";
 for (let i = 1; i <= ATTEMPTS; i++) {
   try {
     const candidate = await attempt();
@@ -77,11 +84,13 @@ for (let i = 1; i <= ATTEMPTS; i++) {
     console.log(`attempt ${i}: ${zh.length} chinese chars`);
     break;
   } catch (err) {
-    // A timeout or a 5xx is worth another go; a short answer is the model's
-    // own call and will not improve by asking again immediately.
+    // A timeout or a 5xx is worth another go -- and so is a short answer,
+    // once the next attempt is told what was missing. Giving up on the first
+    // rejection is what let one missing section cost the whole hour: the
+    // job failed, and the campaign the feed step had already written was
+    // never committed.
     lastError = err instanceof Error ? err.message : String(err);
     console.error(`attempt ${i}/${ATTEMPTS} failed: ${lastError}`);
-    if (/too short|missing english/.test(lastError)) break;
     if (i < ATTEMPTS) await new Promise((r) => setTimeout(r, 20_000 * i));
   }
 }
