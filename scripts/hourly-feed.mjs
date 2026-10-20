@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
-import { kitPortrait, loadPortraitIndex } from "./kit-portrait.mjs";
+import { kitPortrait, loadPortraitIndex, loadLibrary } from "./kit-portrait.mjs";
+import { pickKit, briefPrompt } from "./campaign-prompt.mjs";
 import { postJsonOrThrow } from "./minimax.mjs";
 
 /** The map position the writer gave, if it gave a usable one. */
@@ -65,6 +66,14 @@ if (!index) {
 }
 // The catalog's designation -> portrait map, published next to the war index.
 // It lets a campaign card borrow the 立繪 the roster already paid for.
+// The weapons a campaign may carry. The kit is chosen from here, and the
+// model writes about that weapon, so the card has art by construction.
+const library = loadLibrary(readFileSync, [
+  process.env.WEAPON_LIBRARY,
+  new URL("../cute/weapon-library.json", import.meta.url),
+  new URL("../public/weapon-library.json", import.meta.url),
+]);
+
 const portraitIndex = loadPortraitIndex(readFileSync, [
   process.env.PORTRAIT_INDEX,
   new URL("../cute/portrait-index.json", import.meta.url),
@@ -94,19 +103,8 @@ if (!war) {
 }
 console.error(`  war: ${war.name} (${war.y}, span ${war.span})`);
 
-const prompt = `參考中文維基戰爭列表 https://zh.wikipedia.org/wiki/战争列表 。本輪只能寫「${war.name}」，開始年 ${war.y < 0 ? `公元前${-war.y}年` : war.y}，不得改名，不得換成列表以外的衝突。用繁體中文。不要口號，不要省略號，不要編造你不確定的精確數字，不要寫製造方法，不要寫平民傷亡。裝備服役年必須小於或等於 ${war.y}，不得使用該年之後才列裝的型號。只輸出一個 JSON 物件，欄位如下（值要換成真實內容，不要照抄下面的說明文字）：
-- y: ${war.y}
-- m: ${war.y < 0 ? "1（古代戰爭的確切月份無法考證，固定寫 1，不要糾結）" : "1 到 12 的整數"}
-- name: ${war.name}
-- theater: 戰場名稱，例如「頓巴斯」「西沙群島」；不要只寫「戰場」三個字，要寫出具體地點
-- brief: 九十到一百四十字，點出這場列表中的衝突和一件 ${war.y} 年或更早已列裝的真實裝備正式型號
-- kit.name: 裝備中文名
-- kit.designation: 正式型號
-- kit.year: 服役年，不得晚於 ${war.y}${war.y < 0 ? "；公元前用負數（公元前500年寫 -500）" : ""}
-- kit.nation: us 或 uk 或 de 或 ussr 或 jp 或 fr 或 it 或 cn 或 se 或 il 或 gr 或 tr 其中一個
-- kit.layer: land 或 air 或 sea 其中一個
-- kit.history: 四十到八十字，只講這件裝備在體系裡的位置
-不要輸出欄位說明本身。`;
+const libraryKit = pickKit(war, library, (feed.items?.length ?? 0));
+const prompt = briefPrompt(war, libraryKit);
 
 const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").replace(/\/$/, "");
 // Swapped from MiniMax-M2.7-highspeed at the owner's call. Like the image
@@ -196,15 +194,6 @@ async function once() {
       console.error(`  ${lastError}`);
       return null;
     }
-    // A theater of "戰場" is the placeholder the prompt used to carry, not a
-    // place. The map has nothing to aim at with it, so the campaign is sent
-    // back for another try rather than filed with a useless location.
-    const theater = String(item.theater ?? "").trim();
-    if (!theater || theater === "戰場" || theater.length < 2) {
-      lastError = `the theater "${theater}" is not a place`;
-      console.error(`  ${lastError}`);
-      return null;
-    }
     // A second pass over the index re-examines a battle that is already in
     // the feed. That is allowed on purpose; the new kit is the point.
     if (!repeat && feed.items.some((it) => it.battle?.name === name)) {
@@ -232,12 +221,27 @@ async function once() {
       console.error(`  ${lastError}`);
       return null;
     }
+    // A theater of "戰場" is the placeholder the prompt used to carry, not a
+    // place. The map has nothing to aim at with it, so the campaign is sent
+    // back for another try.
+    const theater = String(item.theater ?? "").trim();
+    if (!theater || theater === "戰場" || theater.length < 2) {
+      lastError = `the theater "${theater}" is not a place`;
+      console.error(`  ${lastError}`);
+      return null;
+    }
     const layer = ["land", "air", "sea"].includes(kit.layer) ? kit.layer : "land";
     // The name and designation are cut to the length the card stores, and the
     // portrait id is derived from the cut values -- otherwise the backfill
     // (which reads the stored values) would compute a different file name.
-    const kitName = String(kit.name ?? name).slice(0, 16);
-    const kitDesignation = String(kit.designation ?? "").slice(0, 40);
+    // The kit comes from the library when the library has one for this war:
+    // the weapon, and so its picture, is decided before the model is asked.
+    const chosen = libraryKit;
+    const kitName = String(chosen?.name ?? kit.name ?? name).slice(0, 16);
+    const kitDesignation = String(chosen?.designation ?? kit.designation ?? "").slice(0, 40);
+    const kitYearFinal = chosen ? chosen.year : kitYear;
+    const nationFinal = chosen ? chosen.nation : nation;
+    const layerFinal = chosen ? chosen.layer : layer;
     // "su" is not a nation the game knows; the id is "ussr". The old list let
     // the model answer "su" and the card then fell back to a US uniform.
     const nation = ["us", "uk", "de", "ussr", "jp", "fr", "it", "cn", "se", "il", "gr", "tr"].includes(kit.nation) ? kit.nation : "us";
@@ -246,22 +250,21 @@ async function once() {
       added: new Date().toISOString(),
       span: war.span,
       source: index.source,
-      // Where the campaign happened, in map coordinates. The history screen
-      // draws the campaign on a map; without a position every one of them
-      // landed on the same default tile.
       place: placeOf(item),
       battle: { y: war.y, m, name: war.name, theater: theater.slice(0, 16), brief: brief.slice(0, 180) },
       kit: {
         name: kitName,
         designation: kitDesignation,
-        year: kitYear,
-        nation,
-        layer,
-        history: history.slice(0, 120),
+        year: kitYearFinal,
+        nation: nationFinal,
+        layer: layerFinal,
+        history: (history || chosen?.history || "").slice(0, 120),
         // The card face draws a 立繪 when the kit has one. Without this the
         // campaign card rendered the "立繪待生成" placeholder even when the
         // same weapon already had art in the roster.
-        portrait: kitPortrait({ designation: kitDesignation, name: kitName }, portraitIndex),
+        portrait: chosen
+          ? `portraits/${chosen.id}.jpg`
+          : kitPortrait({ designation: kitDesignation, name: kitName }, portraitIndex),
       },
     };
   } catch (err) {

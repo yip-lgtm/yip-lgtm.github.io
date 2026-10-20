@@ -43,14 +43,55 @@ export function pickWar(index, feed) {
   return { war: all[(feed.items?.length ?? 0) % all.length], repeat: true };
 }
 
+/**
+ * The kit a campaign carries.
+ *
+ * Before this, the model picked the weapon and the portrait job drew a
+ * picture of it afterwards. That left the card waiting for art, and the
+ * waiting was the norm: the feed names weapons the roster has never heard
+ * of, so the card sits on the "art pending" mark until a generation catches
+ * up.
+ *
+ * The order is reversed now. The weapon comes from the library -- drawn
+ * first, art and all -- and the model writes about that weapon. Every card
+ * the feed produces has art by construction.
+ *
+ * The modern spans keep the old behaviour: the roster's own weapons cover
+ * them, and the picture is already there.
+ */
+export function pickKit(war, library, index = 0) {
+  const weapons = library?.weapons ?? [];
+  const usable = weapons.filter((w) => w.year <= war.y);
+  if (!usable.length) return null;
+  // The closest match is the newest weapon that is still older than the war:
+  // a musket for a war of 1810, not a bronze sword. Inside the war's own span
+  // first, then the span before it, which is the older the era.
+  const order = ["p01", "p11", "p16", "p19", "wwi", "inter", "ww2a", "ww2b", "cold", "now"];
+  const at = order.indexOf(war.span);
+  // Newest first inside the pool, and the pool is walked rather than always
+  // taking its head: six hundred campaigns in one era should not all carry
+  // the same musket.
+  const newest = (pool) => pool.slice().sort((a, b) => b.year - a.year);
+  // The war's own span first, then the older spans: a weapon from the era
+  // before is a better fit than one from the era after.
+  for (let i = at < 0 ? 0 : at; i >= 0; i--) {
+    const pool = newest(usable.filter((w) => w.span === order[i]));
+    if (pool.length) return pool[index % pool.length];
+  }
+  // Nothing older: take the oldest weapon there is rather than none.
+  const rest = newest(usable);
+  return rest[rest.length - 1 - (index % rest.length)];
+}
+
 /** The question the brief writer asks. */
-export function briefPrompt(war) {
+export function briefPrompt(war, kit) {
   const year = war.y < 0 ? `公元前${-war.y}年` : war.y;
   return `參考中文維基戰爭列表 https://zh.wikipedia.org/wiki/战争列表 。本輪只能寫「${war.name}」，開始年 ${year}，不得改名，不得換成列表以外的衝突。用繁體中文。不要口號，不要省略號，不要編造你不確定的精確數字，不要寫製造方法，不要寫平民傷亡。裝備服役年必須小於或等於 ${war.y}，不得使用該年之後才列裝的型號。只輸出一個 JSON 物件，欄位如下（值要換成真實內容，不要照抄下面的說明文字）：
 - y: ${war.y}
 - m: 1 到 12 的整數
 - name: ${war.name}
 - theater: 戰場名稱，例如「頓巴斯」「西沙群島」；不要只寫「戰場」三個字，要寫出具體地點
+- place: 戰場的經緯度，格式 {"lng": 數字, "lat": 數字}，不確定就省略
 - place.lng: 戰場大致的經度（小數點後兩位，東經為正數，西經為負數）
 - place.lat: 戰場大致的緯度（北緯為正數，南緯為負數）
 - brief: 九十到一百四十字，點出這場列表中的衝突和一件 ${war.y} 年或更早已列裝的真實裝備正式型號
@@ -60,7 +101,7 @@ export function briefPrompt(war) {
 - kit.nation: ${NATIONS}
 - kit.layer: land 或 air 或 sea 其中一個
 - kit.history: 四十到八十字，只講這件裝備在體系裡的位置
-不要輸出欄位說明本身。`;
+不要輸出欄位說明本身。${kit ? `本輪的裝備已經定下來了：${kit.name}（${kit.designation}，${kit.year < 0 ? `公元前${-kit.year}年` : `${kit.year}年`}）。只准寫這一件，不得換成別的型號，kit.name 與 kit.designation 就照抄「${kit.name}」與「${kit.designation}」，kit.year 就寫 ${kit.year}，kit.nation 寫 ${kit.nation}，kit.layer 寫 ${kit.layer}。` : ""}`;
 }
 
 const DOSSIER_SECTIONS = [

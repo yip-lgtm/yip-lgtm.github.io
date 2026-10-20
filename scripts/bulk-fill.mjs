@@ -17,9 +17,9 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { resolve, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { postJsonOrThrow } from "./minimax.mjs";
-import { kitPortrait, loadPortraitIndex } from "./kit-portrait.mjs";
+import { kitPortrait, loadPortraitIndex, loadLibrary } from "./kit-portrait.mjs";
 import { dossierFile } from "./split-dossiers.mjs";
-import { SPANS, pickWar, briefPrompt, dossierPrompt, DOSSIER_SECTIONS } from "./campaign-prompt.mjs";
+import { SPANS, pickWar, pickKit, briefPrompt, dossierPrompt, DOSSIER_SECTIONS } from "./campaign-prompt.mjs";
 
 /** The map position the writer gave, if it gave a usable one. */
 function placeOf(raw) {
@@ -54,6 +54,11 @@ const MIN_SECTION = Number(process.env.DOSSIER_MIN_SECTION || 150);
 
 const feed = JSON.parse(readFileSync(feedPath, "utf8"));
 const index = JSON.parse(readFileSync(indexPath, "utf8"));
+const library = loadLibrary(readFileSync, [
+  process.env.WEAPON_LIBRARY,
+  join(REPO, "cute/weapon-library.json"),
+  join(REPO, "public/weapon-library.json"),
+]);
 const portraitIndex = loadPortraitIndex(readFileSync, [
   process.env.PORTRAIT_INDEX,
   join(REPO, "cute/portrait-index.json"),
@@ -126,8 +131,9 @@ for (let n = 0; n < LIMITS.briefs; n++) {
   if (taken && !repeat) continue;
   let item;
   try {
+    const libraryKit = pickKit(war, library, (feed.items?.length ?? 0));
     const raw = await ask(
-      briefPrompt(war),
+      briefPrompt(war, libraryKit),
       "只用繁體中文。最後只留一個 JSON 物件。不要長篇推理，直接輸出答案。",
       0.6,
       Number(process.env.FEED_MAX_TOKENS || 16000),
@@ -144,8 +150,11 @@ for (let n = 0; n < LIMITS.briefs; n++) {
     if (!kitYear || kitYear < -4000 || kitYear > war.y) throw new Error(`kit.year ${kit.year} is not a service year at or before ${war.y}`);
     const layer = ["land", "air", "sea"].includes(kit.layer) ? kit.layer : "land";
     const nation = ["us", "uk", "de", "ussr", "jp", "fr", "it", "cn", "se", "il", "gr", "tr"].includes(kit.nation) ? kit.nation : "us";
-    const kitName = String(kit.name ?? war.name).slice(0, 16);
-    const kitDesignation = String(kit.designation ?? "").slice(0, 40);
+    const kitName = String(libraryKit?.name ?? kit.name ?? war.name).slice(0, 16);
+    const kitDesignation = String(libraryKit?.designation ?? kit.designation ?? "").slice(0, 40);
+    const kitYearFinal = libraryKit ? libraryKit.year : kitYear;
+    const nationFinal = libraryKit ? libraryKit.nation : nation;
+    const layerFinal = libraryKit ? libraryKit.layer : layer;
     item = {
       id: `${war.y}-${war.name}`.replace(/\s+/g, "").slice(0, 32),
       added: new Date().toISOString(),
@@ -159,11 +168,13 @@ for (let n = 0; n < LIMITS.briefs; n++) {
       kit: {
         name: kitName,
         designation: kitDesignation,
-        year: kitYear,
-        nation,
-        layer,
-        history: history.slice(0, 120),
-        portrait: kitPortrait({ designation: kitDesignation, name: kitName }, portraitIndex),
+        year: kitYearFinal,
+        nation: nationFinal,
+        layer: layerFinal,
+        history: (history || libraryKit?.history || "").slice(0, 120),
+        portrait: libraryKit
+          ? `portraits/${libraryKit.id}.jpg`
+          : kitPortrait({ designation: kitDesignation, name: kitName }, portraitIndex),
       },
     };
   } catch (err) {

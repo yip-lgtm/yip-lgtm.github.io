@@ -72,6 +72,23 @@ export function loadPortraitIndex(readFileSync, candidates) {
 }
 
 /**
+ * The weapon library: the weapons a campaign may carry, with their art
+ * already drawn.
+ */
+export function loadLibrary(readFileSync, candidates) {
+  for (const candidate of candidates) {
+    if (!candidate) continue;
+    try {
+      const raw = JSON.parse(readFileSync(candidate, "utf8"));
+      return raw?.weapons ? raw : { weapons: [] };
+    } catch {
+      // try the next candidate
+    }
+  }
+  return { weapons: [] };
+}
+
+/**
  * The portrait path for a kit.
  *
  * `index` is the designation -> "portraits/<id>.jpg" map. A match on the
