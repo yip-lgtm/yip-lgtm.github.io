@@ -15,7 +15,7 @@
  * and is not listed twice: one card, one image.
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
-import { resolve, dirname } from "node:path";
+import {  resolve, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
