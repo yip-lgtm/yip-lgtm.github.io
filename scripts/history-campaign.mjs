@@ -92,6 +92,8 @@ for (let i = 1; i <= ATTEMPTS; i++) {
     // never committed.
     lastError = err instanceof Error ? err.message : String(err);
     console.error(`attempt ${i}/${ATTEMPTS} failed: ${lastError}`);
+    // The plan's usage limit is a hard cap; asking again cannot get past it.
+    if (/Token Plan usage limit|rate_limit_error/i.test(lastError)) break;
     if (i < ATTEMPTS) await new Promise((r) => setTimeout(r, 20_000 * i));
   }
 }

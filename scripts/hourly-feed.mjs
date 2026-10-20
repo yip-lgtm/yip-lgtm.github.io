@@ -250,13 +250,23 @@ async function once() {
 }
 
 const ATTEMPTS = Number(process.env.FEED_ATTEMPTS || 3);
+// The plan's usage limit is a hard cap, not a burst limit: asking again in
+// fifteen seconds cannot get past it. Three attempts on a spent plan only
+// waste the next job's budget, so the run stops and says so.
+const QUOTA = /Token Plan usage limit|rate_limit_error/i;
 let parsed = null;
 for (let i = 1; i <= ATTEMPTS && !parsed; i++) {
   console.error(`attempt ${i}/${ATTEMPTS}`);
   parsed = await once();
+  if (!parsed && QUOTA.test(lastError)) break;
   if (!parsed && i < ATTEMPTS) await new Promise((r) => setTimeout(r, 15_000 * i));
 }
 if (!parsed) {
+  if (QUOTA.test(lastError)) {
+    console.error(`the MiniMax plan's usage limit is reached -- no campaign written for ${war.name}.`);
+    console.error("Nothing is lost: the next run picks the same war up. It needs credits, not a retry.");
+    process.exit(1);
+  }
   console.error(`no campaign written for ${war.name}: ${lastError} — will retry next hour`);
   process.exit(1);
 }
