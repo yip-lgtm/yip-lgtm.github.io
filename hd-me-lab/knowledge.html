@@ -37,7 +37,6 @@ table{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:8px}
 th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 th{color:var(--muted);font-weight:500;font-size:.8rem}
 .note{font-size:.88rem;color:var(--muted);margin-top:8px}
-.quote{border-left:3px solid var(--accent);padding:2px 0 2px 14px;margin:10px 0}
 </style>
 </head>
 <body>
@@ -48,13 +47,16 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
   <p class="lede">從傳統基礎到現代 CAE。看不懂的地方，拖動參數直到懂為止。</p>
   <nav class="toc" aria-label="目錄">
     <a href="#base"><span>01</span>基礎底座</a>
-    <a href="#spring"><span>02</span>彈簧 F=kx</a>
-    <a href="#beam"><span>03</span>簡支樑撞度</a>
+    <a href="#spring"><span>02</span>彈簧</a>
+    <a href="#beam"><span>03</span>簡支樑</a>
     <a href="#gear"><span>04</span>齒輪比</a>
-    <a href="#vib"><span>05</span>共振</a>
-    <a href="#fatigue"><span>06</span>疲勞</a>
-    <a href="#fem"><span>07</span>有限元概念</a>
-    <a href="#map"><span>08</span>應用地圖</a>
+    <a href="#kt"><span>05</span>應力集中</a>
+    <a href="#bernoulli"><span>06</span>伯努利</a>
+    <a href="#bolt"><span>07</span>螺栓預緊</a>
+    <a href="#vib"><span>08</span>共振</a>
+    <a href="#fatigue"><span>09</span>疲勞</a>
+    <a href="#fem"><span>10</span>有限元</a>
+    <a href="#map"><span>11</span>應用地圖</a>
   </nav>
 </header>
 
@@ -72,232 +74,174 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
 
 <section id="spring">
   <div class="sec-no">02 / 彈簧</div>
-  <h2>F = kx — 最簡單的強度關係</h2>
-  <p>拖動剛度同位移，看力點變。材力入門就係呢個線性關係。</p>
+  <h2>F = kx</h2>
+  <p>拖動剛度同位移，看力點變。</p>
   <div class="bench">
     <div class="controls">
       <div class="ctl"><label>k (N/mm)<output id="ko">10</output></label><input id="k" type="range" min="2" max="40" value="10" step="1"></div>
       <div class="ctl"><label>x (mm)<output id="xo">5</output></label><input id="x" type="range" min="0" max="20" value="5" step="0.5"></div>
     </div>
-    <div class="fig"><svg id="svgSpring" viewBox="0 0 480 160"></svg></div>
-    <div class="cards">
-      <div class="card"><div class="k">F</div><div class="v" id="fv">50 N</div></div>
-      <div class="card"><div class="k">公式</div><div class="v">F = k·x</div></div>
-    </div>
+    <div class="fig"><svg id="svgSpring" viewBox="0 0 480 120"></svg></div>
+    <div class="cards"><div class="card"><div class="k">F</div><div class="v" id="fv">50 N</div></div></div>
   </div>
 </section>
 
 <section id="beam">
   <div class="sec-no">03 / 樑</div>
-  <h2>簡支樑中間撞度</h2>
-  <p>拖動力同長度，看撞度點變。公式 δ = FL³ / (48EI)。長度影響最大（立方）。</p>
+  <h2>簡支樑中間撞度 δ = FL³/(48EI)</h2>
   <div class="bench">
     <div class="controls">
       <div class="ctl"><label>F (N)<output id="fo">1000</output></label><input id="f" type="range" min="200" max="4000" value="1000" step="100"></div>
       <div class="ctl"><label>L (mm)<output id="lo">800</output></label><input id="l" type="range" min="400" max="1600" value="800" step="50"></div>
     </div>
-    <div class="fig"><svg id="svgBeam" viewBox="0 0 520 180"></svg></div>
-    <div class="cards">
-      <div class="card"><div class="k">δ 中間</div><div class="v" id="dv">—</div></div>
-      <div class="card"><div class="k">公式</div><div class="v" style="font-size:.95rem">δ = FL³/(48EI)</div></div>
-    </div>
-    <p class="note">假設 E = 200 GPa，I = 1.0×10⁵ mm⁴（約 50×50 方鋼）。只係示意，唔係設計值。</p>
+    <div class="fig"><svg id="svgBeam" viewBox="0 0 520 140"></svg></div>
+    <div class="cards"><div class="card"><div class="k">δ</div><div class="v" id="dv">—</div></div></div>
+    <p class="note">E=200 GPa，I=1×10⁵ mm⁴。示意而已。</p>
   </div>
 </section>
 
 <section id="gear">
   <div class="sec-no">04 / 齒輪</div>
-  <h2>齒輪比 — 速度同扭矩</h2>
-  <p>拖動齒數，看輸入輸出轉速比同扭矩比。齒輪比 i = z2/z1，轉速反比，扭矩正比。</p>
+  <h2>齒輪比 i = z2/z1</h2>
   <div class="bench">
     <div class="controls">
-      <div class="ctl"><label>z1 (輸入)<output id="z1o">20</output></label><input id="z1" type="range" min="12" max="40" value="20" step="1"></div>
-      <div class="ctl"><label>z2 (輸出)<output id="z2o">40</output></label><input id="z2" type="range" min="20" max="80" value="40" step="1"></div>
+      <div class="ctl"><label>z1<input id="z1" type="range" min="12" max="40" value="20" step="1"><output id="z1o">20</output></label></div>
+      <div class="ctl"><label>z2<input id="z2" type="range" min="20" max="80" value="40" step="1"><output id="z2o">40</output></label></div>
     </div>
     <div class="cards">
-      <div class="card"><div class="k">齒輪比 i</div><div class="v" id="io">2.00</div></div>
-      <div class="card"><div class="k">轉速比 n2/n1</div><div class="v" id="no">0.50</div></div>
-      <div class="card"><div class="k">扭矩比 T2/T1</div><div class="v" id="to">2.00</div></div>
+      <div class="card"><div class="k">i</div><div class="v" id="io">2.00</div></div>
+      <div class="card"><div class="k">n2/n1</div><div class="v" id="no">0.50</div></div>
+      <div class="card"><div class="k">T2/T1</div><div class="v" id="to">2.00</div></div>
     </div>
-    <p class="note">忽略效率。實際有摩擦，扭矩比會稍低。</p>
+  </div>
+</section>
+
+<section id="kt">
+  <div class="sec-no">05 / 應力集中</div>
+  <h2>孔邊應力上升</h2>
+  <p>拖動孔徑與板寬比，看 Kt 概念。孔越大（相對寬度），集中越嚴重。</p>
+  <div class="bench">
+    <div class="controls">
+      <div class="ctl"><label>d/w 比例<output id="kto">0.3</output></label><input id="kt" type="range" min="0.1" max="0.6" value="0.3" step="0.05"></div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="k">Kt 概念</div><div class="v" id="ktv">—</div></div>
+    </div>
+    <p class="note">簡化：Kt ≈ 2 + 2*(d/w)。實際要查手冊或用有限元。</p>
+  </div>
+</section>
+
+<section id="bernoulli">
+  <div class="sec-no">06 / 流體</div>
+  <h2>伯努利 — 速度上升，壓力下降</h2>
+  <p>拖動速度，看動壓點變。管道收細時，速度升、壓力降。</p>
+  <div class="bench">
+    <div class="controls">
+      <div class="ctl"><label>v (m/s)<output id="vo">5</output></label><input id="v" type="range" min="1" max="20" value="5" step="0.5"></div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="k">動壓 0.5ρv²</div><div class="v" id="dv2">—</div></div>
+    </div>
+    <p class="note">ρ ≈ 1000 kg/m³（水）。靜壓 + 動壓 + 位置 = 常數（忽略損失）。</p>
+  </div>
+</section>
+
+<section id="bolt">
+  <div class="sec-no">07 / 螺栓</div>
+  <h2>預緊力 ≈ 扭矩 / (K·d)</h2>
+  <p>拖動扭矩同螺紋直徑，看預緊力。K 係摩擦系數（約 0.2）。</p>
+  <div class="bench">
+    <div class="controls">
+      <div class="ctl"><label>T (N·m)<output id="To">20</output></label><input id="T" type="range" min="5" max="80" value="20" step="1"></div>
+      <div class="ctl"><label>d (mm)<output id="do">10</output></label><input id="d" type="range" min="6" max="20" value="10" step="1"></div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="k">Fi 預緊</div><div class="v" id="Fiv">—</div></div>
+    </div>
+    <p class="note">K=0.2。實際要看潤滑、螺紋類型同螺母面。</p>
   </div>
 </section>
 
 <section id="vib">
-  <div class="sec-no">05 / 振動 · 進階</div>
-  <h2>共振 — 動態放大</h2>
-  <p>《機械振動》Rao。當外力頻率近固有頻率，振幅會大幅增加。拖動頻率比，看放大倍數。</p>
+  <div class="sec-no">08 / 振動</div>
+  <h2>共振放大</h2>
   <div class="bench">
     <div class="controls">
-      <div class="ctl"><label>頻率比 ω/ωₙ<output id="ro">0.8</output></label><input id="r" type="range" min="0.2" max="2.0" value="0.8" step="0.05"></div>
-      <div class="ctl"><label>阻尼比 ζ<output id="zo">0.05</output></label><input id="z" type="range" min="0.01" max="0.3" value="0.05" step="0.01"></div>
+      <div class="ctl"><label>ω/ωₙ<output id="ro">0.8</output></label><input id="r" type="range" min="0.2" max="2.0" value="0.8" step="0.05"></div>
+      <div class="ctl"><label>ζ<output id="zo">0.05</output></label><input id="z" type="range" min="0.01" max="0.3" value="0.05" step="0.01"></div>
     </div>
-    <div class="fig"><svg id="svgVib" viewBox="0 0 480 200"></svg></div>
-    <div class="cards">
-      <div class="card"><div class="k">放大倍數</div><div class="v" id="av">—</div></div>
-    </div>
-    <p class="note">單自由度系統。阻尼細時，共振峰非常尖。</p>
+    <div class="fig"><svg id="svgVib" viewBox="0 0 480 160"></svg></div>
+    <div class="cards"><div class="card"><div class="k">放大</div><div class="v" id="av">—</div></div></div>
   </div>
 </section>
 
 <section id="fatigue">
-  <div class="sec-no">06 / 疲勞</div>
-  <h2>循環載荷下的壽命</h2>
-  <p>《疲勞與斷裂力學》康國政。強度未超限，件仲可以斷。拖動應力幅，看預估周次（S-N 概念）。</p>
+  <div class="sec-no">09 / 疲勞</div>
+  <h2>S-N 概念</h2>
   <div class="bench">
     <div class="controls">
-      <div class="ctl"><label>應力幅 σa (MPa)<output id="sao">200</output></label><input id="sa" type="range" min="50" max="400" value="200" step="10"></div>
+      <div class="ctl"><label>σa (MPa)<output id="sao">200</output></label><input id="sa" type="range" min="50" max="400" value="200" step="10"></div>
     </div>
-    <div class="fig"><svg id="svgFat" viewBox="0 0 480 180"></svg></div>
-    <div class="cards">
-      <div class="card"><div class="k">預估周次 N</div><div class="v" id="nv">—</div></div>
-    </div>
-    <p class="note">簡化 Basquin：N = C / σaᵇ，C=10¹⁴，b=3。只係示意趋勢，不是材料數據。</p>
+    <div class="fig"><svg id="svgFat" viewBox="0 0 480 140"></svg></div>
+    <div class="cards"><div class="card"><div class="k">N</div><div class="v" id="nv">—</div></div></div>
   </div>
 </section>
 
 <section id="fem">
-  <div class="sec-no">07 / 有限元 · 現代</div>
-  <h2>把連續體切成小塊，再拼回</h2>
-  <p>《有限單元法》王勁成 + 曾攀。軟體唔係天花板。網格太粗、邊界錯、單位錯，都會出「美麗的垃圾」。理論先於按鈕。</p>
+  <div class="sec-no">10 / 有限元</div>
+  <h2>網格概念</h2>
   <div class="bench">
     <div class="controls">
-      <div class="ctl"><label>網格數量<output id="mo">4</output></label><input id="mesh" type="range" min="2" max="12" value="4" step="1"></div>
+      <div class="ctl"><label>網格數<output id="mo">4</output></label><input id="mesh" type="range" min="2" max="12" value="4" step="1"></div>
     </div>
-    <div class="fig"><svg id="svgMesh" viewBox="0 0 480 160"></svg></div>
-    <p class="note">網格越細，近似越好，但計算量上升。關鍵位置（應力集中）先加密。</p>
-  </div>
-  <div class="cards" style="margin-top:16px">
-    <div class="card"><div class="k">固體</div><div class="v">ABAQUS</div><div class="note">莊苑 · 非線性、接觸、大變形</div></div>
-    <div class="card"><div class="k">流體</div><div class="v">CFD</div><div class="note">Anderson · 空氣動力、熱傳、流道</div></div>
-    <div class="card"><div class="k">實戰</div><div class="v">ANSYS</div><div class="note">喻高遠 · 靜力學、動力學、熱流耦合</div></div>
+    <div class="fig"><svg id="svgMesh" viewBox="0 0 480 120"></svg></div>
   </div>
 </section>
 
 <section id="map">
-  <div class="sec-no">08 / 應用 · 20 min</div>
-  <h2>不同目標的閱讀組合</h2>
-  <div class="tbl"><table>
-    <tr><th>目標</th><th>組合</th><th>解決問題</th></tr>
-    <tr><td>考研／本科核心</td><td>機原 + 機設 + 材力</td><td>基礎理論與手算</td></tr>
-    <tr><td>常規非標自動化</td><td>手冊 + 材力 + ANSYS 實例</td><td>標準件 + 簡單強度校核</td></tr>
-    <tr><td>高端（航天／汽車／重工）</td><td>振動 + 疲勞 + 有限元 + ABAQUS</td><td>共振、壽命、非線性</td></tr>
-    <tr><td>流體與熱能</td><td>流體力學 + Anderson CFD</td><td>泵閥、流道、空氣動力</td></tr>
-  </table></div>
-  <p class="note" style="margin-top:16px">數值同公式都係簡化示意，用來理解趋勢。實際設計要用材料手冊、標準同正規軟體。</p>
-  <p style="margin-top:20px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← 返 Lab SolidWorks</a> · <a href="roadmap.html" style="color:var(--accent)">簡易卡片版</a></p>
+  <div class="sec-no">11 / 應用</div>
+  <h2>閱讀組合</h2>
+  <table>
+    <tr><th>目標</th><th>組合</th><th>解決</th></tr>
+    <tr><td>考研／本科</td><td>機原 + 機設 + 材力</td><td>基礎理論</td></tr>
+    <tr><td>非標自動化</td><td>手冊 + 材力 + ANSYS</td><td>標準件 + 校核</td></tr>
+    <tr><td>高端研發</td><td>振動 + 疲勞 + FEM + ABAQUS</td><td>共振、壽命、非線性</td></tr>
+    <tr><td>流體熱能</td><td>流體 + CFD</td><td>泵閥、流道</td></tr>
+  </table>
+  <p class="note">所有數值都係簡化示意。</p>
+  <p style="margin-top:16px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← Lab</a></p>
 </section>
 </div>
 
 <script>
-function spring(){
-  const k=+document.getElementById('k').value;
-  const x=+document.getElementById('x').value;
-  document.getElementById('ko').textContent=k;
-  document.getElementById('xo').textContent=x;
-  const F=k*x;
-  document.getElementById('fv').textContent=F.toFixed(0)+' N';
-  const svg=document.getElementById('svgSpring');
-  const w=40+x*8;
-  svg.innerHTML=`<rect x="40" y="60" width="${w}" height="40" rx="4" fill="#1d2c30" stroke="#43c2cb"/>
-  <text x="${40+w/2}" y="86" text-anchor="middle" fill="#e3ecec" font-size="14">x=${x} mm</text>
-  <text x="40" y="130" fill="#93a4a9" font-size="12">F = ${k} × ${x} = ${F.toFixed(0)} N</text>`;
-}
-function beam(){
-  const F=+document.getElementById('f').value;
-  const L=+document.getElementById('l').value;
-  document.getElementById('fo').textContent=F;
-  document.getElementById('lo').textContent=L;
-  const E=200000;
-  const I=1e5;
-  const d=F*Math.pow(L,3)/(48*E*I);
-  document.getElementById('dv').textContent=d.toFixed(2)+' mm';
-  const svg=document.getElementById('svgBeam');
-  const mid=260;
-  const drop=Math.min(60,d*8);
-  svg.innerHTML=`<line x1="40" y1="80" x2="480" y2="80" stroke="#2a3b40"/>
-  <path d="M60 80 Q${mid} ${80+drop} 460 80" fill="none" stroke="#43c2cb" stroke-width="3"/>
-  <circle cx="${mid}" cy="${80+drop}" r="4" fill="#eb9b4c"/>
-  <text x="${mid}" y="${100+drop}" text-anchor="middle" fill="#93a4a9" font-size="12">δ=${d.toFixed(2)} mm</text>
-  <text x="260" y="40" text-anchor="middle" fill="#e3ecec" font-size="13">F=${F} N   L=${L} mm</text>`;
-}
-function gear(){
-  const z1=+document.getElementById('z1').value;
-  const z2=+document.getElementById('z2').value;
-  document.getElementById('z1o').textContent=z1;
-  document.getElementById('z2o').textContent=z2;
-  const i=z2/z1;
-  document.getElementById('io').textContent=i.toFixed(2);
-  document.getElementById('no').textContent=(1/i).toFixed(2);
-  document.getElementById('to').textContent=i.toFixed(2);
-}
-function vib(){
-  const r=+document.getElementById('r').value;
-  const z=+document.getElementById('z').value;
-  document.getElementById('ro').textContent=r.toFixed(2);
-  document.getElementById('zo').textContent=z.toFixed(2);
-  const den=Math.sqrt(Math.pow(1-r*r,2)+Math.pow(2*z*r,2));
-  const A=1/den;
-  document.getElementById('av').textContent=A.toFixed(2)+'×';
-  const svg=document.getElementById('svgVib');
-  let pts='';
-  for(let i=0;i<=100;i++){
-    const rr=0.2+i*1.8/100;
-    const aa=1/Math.sqrt(Math.pow(1-rr*rr,2)+Math.pow(2*z*rr,2));
-    const x=40+i*4;
-    const y=160-Math.min(aa,8)*16;
-    pts+=(i===0?'M':'L')+x+' '+y;
-  }
-  const cx=40+(r-0.2)/1.8*400;
-  const cy=160-Math.min(A,8)*16;
-  svg.innerHTML=`<path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/>
-  <circle cx="${cx}" cy="${cy}" r="5" fill="#eb9b4c"/>
-  <text x="240" y="30" text-anchor="middle" fill="#e3ecec" font-size="13">放大倍數 ${A.toFixed(2)}</text>`;
-}
-function fat(){
-  const sa=+document.getElementById('sa').value;
-  document.getElementById('sao').textContent=sa;
-  const C=1e14, b=3;
-  const N=C/Math.pow(sa,b);
-  document.getElementById('nv').textContent=N.toExponential(1);
-  const svg=document.getElementById('svgFat');
-  let pts='';
-  for(let i=0;i<=100;i++){
-    const s=50+i*3.5;
-    const n=C/Math.pow(s,b);
-    const x=40+i*4;
-    const y=150-Math.log10(n)*12;
-    pts+=(i===0?'M':'L')+x+' '+y;
-  }
-  const cx=40+(sa-50)/350*400;
-  const cy=150-Math.log10(N)*12;
-  svg.innerHTML=`<path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/>
-  <circle cx="${cx}" cy="${cy}" r="5" fill="#eb9b4c"/>
-  <text x="240" y="28" text-anchor="middle" fill="#e3ecec" font-size="13">N ≈ ${N.toExponential(1)}</text>`;
-}
-function mesh(){
-  const n=+document.getElementById('mesh').value;
-  document.getElementById('mo').textContent=n;
-  const svg=document.getElementById('svgMesh');
-  let g='';
-  const w=400/n;
-  for(let i=0;i<=n;i++){
-    const x=40+i*w;
-    g+=`<line x1="${x}" y1="40" x2="${x}" y2="120" stroke="#2a3b40"/>`;
-  }
-  for(let j=0;j<=2;j++){
-    const y=40+j*40;
-    g+=`<line x1="40" y1="${y}" x2="440" y2="${y}" stroke="#2a3b40"/>`;
-  }
-  svg.innerHTML=g+`<text x="240" y="150" text-anchor="middle" fill="#93a4a9" font-size="12">${n} × 2 單元</text>`;
-}
-['k','x'].forEach(id=>document.getElementById(id).addEventListener('input',spring));
-['f','l'].forEach(id=>document.getElementById(id).addEventListener('input',beam));
-['z1','z2'].forEach(id=>document.getElementById(id).addEventListener('input',gear));
-['r','z'].forEach(id=>document.getElementById(id).addEventListener('input',vib));
-document.getElementById('sa').addEventListener('input',fat);
-document.getElementById('mesh').addEventListener('input',mesh);
-spring(); beam(); gear(); vib(); fat(); mesh();
+function spring(){const k=+kEl.value,x=+xEl.value;ko.textContent=k;xo.textContent=x;const F=k*x;fv.textContent=F.toFixed(0)+' N';const w=40+x*8;svgSpring.innerHTML=`<rect x="40" y="40" width="${w}" height="40" rx="4" fill="#1d2c30" stroke="#43c2cb"/><text x="${40+w/2}" y="66" text-anchor="middle" fill="#e3ecec" font-size="14">x=${x}</text>`;}
+function beam(){const F=+fEl.value,L=+lEl.value;fo.textContent=F;lo.textContent=L;const d=F*Math.pow(L,3)/(48*200000*1e5);dv.textContent=d.toFixed(2)+' mm';const mid=260,drop=Math.min(50,d*8);svgBeam.innerHTML=`<line x1="40" y1="60" x2="480" y2="60" stroke="#2a3b40"/><path d="M60 60 Q${mid} ${60+drop} 460 60" fill="none" stroke="#43c2cb" stroke-width="3"/><circle cx="${mid}" cy="${60+drop}" r="4" fill="#eb9b4c"/>`;}
+function gear(){const z1=+z1El.value,z2=+z2El.value;z1o.textContent=z1;z2o.textContent=z2;const i=z2/z1;io.textContent=i.toFixed(2);no.textContent=(1/i).toFixed(2);to.textContent=i.toFixed(2);}
+function ktFn(){const r=+ktEl.value;kto.textContent=r.toFixed(2);const Kt=2+2*r;ktv.textContent=Kt.toFixed(2);}
+function bern(){const v=+vEl.value;vo.textContent=v;const q=0.5*1000*v*v;dv2.textContent=(q/1000).toFixed(1)+' kPa';}
+function bolt(){const T=+TEl.value,d=+dEl.value;To.textContent=T;doEl.textContent=d;const Fi=T/(0.2*(d/1000));Fiv.textContent=(Fi/1000).toFixed(1)+' kN';}
+function vib(){const r=+rEl.value,z=+zEl.value;ro.textContent=r.toFixed(2);zo.textContent=z.toFixed(2);const A=1/Math.sqrt(Math.pow(1-r*r,2)+Math.pow(2*z*r,2));av.textContent=A.toFixed(2)+'×';let pts='';for(let i=0;i<=100;i++){const rr=0.2+i*1.8/100;const aa=1/Math.sqrt(Math.pow(1-rr*rr,2)+Math.pow(2*z*rr,2));const x=40+i*4;const y=130-Math.min(aa,8)*12;pts+=(i===0?'M':'L')+x+' '+y;}const cx=40+(r-0.2)/1.8*400;const cy=130-Math.min(A,8)*12;svgVib.innerHTML=`<path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/><circle cx="${cx}" cy="${cy}" r="5" fill="#eb9b4c"/>`;}
+function fat(){const sa=+saEl.value;sao.textContent=sa;const N=1e14/Math.pow(sa,3);nv.textContent=N.toExponential(1);let pts='';for(let i=0;i<=100;i++){const s=50+i*3.5;const n=1e14/Math.pow(s,3);const x=40+i*4;const y=120-Math.log10(n)*8;pts+=(i===0?'M':'L')+x+' '+y;}const cx=40+(sa-50)/350*400;const cy=120-Math.log10(N)*8;svgFat.innerHTML=`<path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/><circle cx="${cx}" cy="${cy}" r="5" fill="#eb9b4c"/>`;}
+function mesh(){const n=+meshEl.value;mo.textContent=n;let g='';const w=400/n;for(let i=0;i<=n;i++){const x=40+i*w;g+=`<line x1="${x}" y1="30" x2="${x}" y2="90" stroke="#2a3b40"/>`;}for(let j=0;j<=2;j++){const y=30+j*30;g+=`<line x1="40" y1="${y}" x2="440" y2="${y}" stroke="#2a3b40"/>`;}svgMesh.innerHTML=g;}
+const kEl=document.getElementById('k'),xEl=document.getElementById('x'),ko=document.getElementById('ko'),xo=document.getElementById('xo'),fv=document.getElementById('fv'),svgSpring=document.getElementById('svgSpring');
+const fEl=document.getElementById('f'),lEl=document.getElementById('l'),fo=document.getElementById('fo'),lo=document.getElementById('lo'),dv=document.getElementById('dv'),svgBeam=document.getElementById('svgBeam');
+const z1El=document.getElementById('z1'),z2El=document.getElementById('z2'),z1o=document.getElementById('z1o'),z2o=document.getElementById('z2o'),io=document.getElementById('io'),no=document.getElementById('no'),to=document.getElementById('to');
+const ktEl=document.getElementById('kt'),kto=document.getElementById('kto'),ktv=document.getElementById('ktv');
+const vEl=document.getElementById('v'),vo=document.getElementById('vo'),dv2=document.getElementById('dv2');
+const TEl=document.getElementById('T'),dEl=document.getElementById('d'),To=document.getElementById('To'),doEl=document.getElementById('do'),Fiv=document.getElementById('Fiv');
+const rEl=document.getElementById('r'),zEl=document.getElementById('z'),ro=document.getElementById('ro'),zo=document.getElementById('zo'),av=document.getElementById('av'),svgVib=document.getElementById('svgVib');
+const saEl=document.getElementById('sa'),sao=document.getElementById('sao'),nv=document.getElementById('nv'),svgFat=document.getElementById('svgFat');
+const meshEl=document.getElementById('mesh'),mo=document.getElementById('mo'),svgMesh=document.getElementById('svgMesh');
+[kEl,xEl].forEach(e=>e.addEventListener('input',spring));
+[fEl,lEl].forEach(e=>e.addEventListener('input',beam));
+[z1El,z2El].forEach(e=>e.addEventListener('input',gear));
+ktEl.addEventListener('input',ktFn);
+vEl.addEventListener('input',bern);
+[TEl,dEl].forEach(e=>e.addEventListener('input',bolt));
+[rEl,zEl].forEach(e=>e.addEventListener('input',vib));
+saEl.addEventListener('input',fat);
+meshEl.addEventListener('input',mesh);
+spring();beam();gear();ktFn();bern();bolt();vib();fat();mesh();
 </script>
 </body>
 </html>
