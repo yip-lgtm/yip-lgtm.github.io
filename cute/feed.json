@@ -1887,6 +1887,60 @@
         "history": "瑙厄二型是晚期邁錫尼陸軍武器體系中的主要短劍型式，配置於重裝步兵的近身戰鬥裝備，負責盾陣進攻中的突刺任務。",
         "portrait": "portraits/feed-naueii.jpg"
       }
+    },
+    {
+      "id": "1810-智利獨立戰爭",
+      "added": "2026-10-20T21:34:13.648Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -70.67,
+        "lat": -33.45
+      },
+      "battle": {
+        "y": 1810,
+        "m": 9,
+        "name": "智利獨立戰爭",
+        "theater": "智利中部聖地亞哥",
+        "brief": "智利獨立戰爭始於1810年，歷經殖民體制崩解、王國時期內戰，最終以智利脫離西班牙王國告終。聖地亞哥及智利中部是政治與軍事衝突核心，參戰步兵使用火繩槍（Matchlock musket），其正式列裝年份為1520年。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      },
+      "dossierUrl": "dossiers/1810-61240f6ecb.json"
+    },
+    {
+      "id": "1810-阿根廷獨立戰爭",
+      "added": "2026-10-20T21:34:12.632Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -58.38,
+        "lat": -34.6
+      },
+      "battle": {
+        "y": 1810,
+        "m": 5,
+        "name": "阿根廷獨立戰爭",
+        "theater": "布宜諾斯艾利斯及拉普拉塔河地區",
+        "brief": "阿根廷獨立戰爭始於一八一〇年五月，戰事以布宜諾斯艾利斯及拉普拉塔地區為核心，圍繞殖民地脫離西班牙統治與建立獨立國家展開。參戰殖民軍曾配備正式型號為 Matchlock musket 的火繩槍，該型號於一五二〇年列裝，是當時步兵常用的遠射武器。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      },
+      "dossierUrl": "dossiers/1810-86a6c3e685.json"
     }
   ]
 }
