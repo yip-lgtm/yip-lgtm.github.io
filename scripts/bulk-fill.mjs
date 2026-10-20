@@ -21,6 +21,15 @@ import { kitPortrait, loadPortraitIndex } from "./kit-portrait.mjs";
 import { dossierFile } from "./split-dossiers.mjs";
 import { SPANS, pickWar, briefPrompt, dossierPrompt, DOSSIER_SECTIONS } from "./campaign-prompt.mjs";
 
+/** The map position the writer gave, if it gave a usable one. */
+function placeOf(raw) {
+  const lng = Number(raw?.place?.lng);
+  const lat = Number(raw?.place?.lat);
+  if (!Number.isFinite(lng) || !Number.isFinite(lat)) return null;
+  if (Math.abs(lng) > 180 || Math.abs(lat) > 90) return null;
+  return { lng: Math.round(lng * 100) / 100, lat: Math.round(lat * 100) / 100 };
+}
+
 const HERE = dirname(fileURLToPath(import.meta.url));
 const REPO = resolve(HERE, "..");
 const feedPath = resolve(process.env.FEED_OUT || join(REPO, "cute/feed.json"));
@@ -138,6 +147,10 @@ for (let n = 0; n < LIMITS.briefs; n++) {
       added: new Date().toISOString(),
       span: war.span,
       source: index.source,
+      // Where the campaign happened, in map coordinates. The history screen
+      // draws the campaign on a map; without a position every one of them
+      // landed on the same default tile.
+      place: placeOf(raw),
       battle: { y: war.y, m: Number(raw.m) || 1, name: war.name, theater: String(raw.theater ?? "").slice(0, 16), brief: brief.slice(0, 180) },
       kit: {
         name: kitName,

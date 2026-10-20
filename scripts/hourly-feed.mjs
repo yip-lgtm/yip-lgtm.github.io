@@ -2,6 +2,15 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { kitPortrait, loadPortraitIndex } from "./kit-portrait.mjs";
 import { postJsonOrThrow } from "./minimax.mjs";
 
+/** The map position the writer gave, if it gave a usable one. */
+function placeOf(raw) {
+  const lng = Number(raw?.place?.lng);
+  const lat = Number(raw?.place?.lat);
+  if (!Number.isFinite(lng) || !Number.isFinite(lat)) return null;
+  if (Math.abs(lng) > 180 || Math.abs(lat) > 90) return null;
+  return { lng: Math.round(lng * 100) / 100, lat: Math.round(lat * 100) / 100 };
+}
+
 const key = process.env.MINIMAX_API_KEY;
 const out = process.env.FEED_OUT || "public/feed.json";
 if (!key) {
@@ -228,6 +237,10 @@ async function once() {
       added: new Date().toISOString(),
       span: war.span,
       source: index.source,
+      // Where the campaign happened, in map coordinates. The history screen
+      // draws the campaign on a map; without a position every one of them
+      // landed on the same default tile.
+      place: placeOf(item),
       battle: { y: war.y, m, name: war.name, theater: String(item.theater ?? "").slice(0, 16), brief: brief.slice(0, 180) },
       kit: {
         name: kitName,

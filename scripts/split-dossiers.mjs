@@ -53,13 +53,30 @@ if (ranDirectly) {
     const year = item.battle?.y ?? item.kit?.year ?? 0;
     const file = dossierFile(item.id, year);
     const path = join(dir, file);
-    if (!existsSync(path)) {
-      writeFileSync(
-        path,
-        JSON.stringify({ id: item.id, battle: item.battle, kit: item.kit, ...dossier }, null, 1) + "\n",
-      );
-      written++;
-    }
+    // Always rewrite. The file name is a hash of the campaign id, so a second
+    // pass over the same war lands on the same file: skipping an existing one
+    // left the old record in place while the feed moved on to a new kit, and
+    // the history screen kept showing the first pass's text.
+    writeFileSync(
+      path,
+      JSON.stringify(
+        {
+          id: item.id,
+          // The history screen reads `theater` and `place` off the dossier.
+          // The writer puts the theater on the battle and the position on the
+          // entry, so lift them to the top level here rather than leaving the
+          // map to guess.
+          theater: item.battle?.theater ?? "",
+          place: item.place ?? null,
+          battle: item.battle,
+          kit: item.kit,
+          ...dossier,
+        },
+        null,
+        1,
+      ) + "\n",
+    );
+    written++;
     item.dossierUrl = `dossiers/${file}`;
     delete item.dossier;
   }

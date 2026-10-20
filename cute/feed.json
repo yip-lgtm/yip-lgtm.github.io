@@ -20,7 +20,8 @@
         "history": "作為義大利第一款制式氣冷重機槍，與步兵連協同作戰，主要配備於前線火力點，提供持續壓制火力。",
         "portrait": "portraits/feed-mod1914.jpg"
       },
-      "dossierUrl": "dossiers/1915-39c62d2203.json"
+      "dossierUrl": "dossiers/1915-39c62d2203.json",
+      "source": "https://zh.wikipedia.org/wiki/战争列表"
     },
     {
       "id": "1918-俄國內戰",
@@ -555,7 +556,7 @@
       "id": "1982-福克蘭戰爭",
       "added": "2026-10-07T18:56:42Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1982,
         "m": 4,
@@ -578,7 +579,7 @@
       "id": "1926-北伐戰爭",
       "added": "2026-10-07T19:10:11.993Z",
       "span": "inter",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1926,
         "m": 7,
@@ -601,7 +602,7 @@
       "id": "1939-波蘭戰役",
       "added": "2026-10-07T19:23:57.587Z",
       "span": "ww2a",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1939,
         "m": 9,
@@ -624,7 +625,7 @@
       "id": "1941-繼續戰爭",
       "added": "2026-10-07T19:34:01.547Z",
       "span": "ww2b",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1941,
         "m": 6,
@@ -647,7 +648,7 @@
       "id": "1948-第一次中東戰爭",
       "added": "2026-10-07T23:34:36.023Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1948,
         "m": 5,
@@ -670,7 +671,7 @@
       "id": "1991-南斯拉夫內戰",
       "added": "2026-10-08T05:57:33.228Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1991,
         "m": 6,
@@ -693,7 +694,7 @@
       "id": "1915-伊孫佐戰役",
       "added": "2026-10-09T00:21:44.194Z",
       "span": "wwi",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1915,
         "m": 6,
@@ -716,7 +717,7 @@
       "id": "1930-中原大戰",
       "added": "2026-10-09T07:24:42.835Z",
       "span": "inter",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1930,
         "m": 5,
@@ -739,7 +740,7 @@
       "id": "1931-一二八事變",
       "added": "2026-10-09T20:55:10.148Z",
       "span": "inter",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1931,
         "m": 1,
@@ -762,7 +763,7 @@
       "id": "1932-查科戰爭",
       "added": "2026-10-10T00:48:26.502Z",
       "span": "inter",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1932,
         "m": 6,
@@ -785,7 +786,7 @@
       "id": "1954-阿爾及利亞戰爭",
       "added": "2026-10-10T07:02:26.434Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1954,
         "m": 11,
@@ -808,7 +809,7 @@
       "id": "1994-第一次車臣戰爭",
       "added": "2026-10-10T13:37:20.397Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1994,
         "m": 12,
@@ -831,7 +832,7 @@
       "id": "1935-第二次義埃戰爭",
       "added": "2026-10-10T18:34:20.451Z",
       "span": "inter",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1935,
         "m": 10,
@@ -854,7 +855,7 @@
       "id": "1955-第一次蘇丹內戰",
       "added": "2026-10-11T01:51:04.743Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1955,
         "m": 8,
@@ -877,7 +878,7 @@
       "id": "1959-越南戰爭",
       "added": "2026-10-11T08:46:40.398Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1959,
         "m": 7,
@@ -900,7 +901,7 @@
       "id": "1960-剛果危機",
       "added": "2026-10-11T15:38:29.619Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1960,
         "m": 7,
@@ -923,7 +924,7 @@
       "id": "1961-安哥拉獨立戰爭",
       "added": "2026-10-11T20:14:22.127Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1961,
         "m": 2,
@@ -946,7 +947,7 @@
       "id": "1998-埃塞俄比亞-厄立特里亞戰爭",
       "added": "2026-10-11T23:40:07.871Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1998,
         "m": 5,
@@ -969,7 +970,7 @@
       "id": "1965-第二次印巴戰爭",
       "added": "2026-10-12T05:54:19.482Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1965,
         "m": 8,
@@ -992,7 +993,7 @@
       "id": "1967-奈及利亞內戰",
       "added": "2026-10-12T15:15:24.080Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1967,
         "m": 7,
@@ -1015,7 +1016,7 @@
       "id": "1967-第三次中東戰爭",
       "added": "2026-10-12T22:31:03.093Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1967,
         "m": 6,
@@ -1038,7 +1039,7 @@
       "id": "1969-中蘇邊界衝突",
       "added": "2026-10-13T03:31:47.941Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1969,
         "m": 3,
@@ -1061,7 +1062,7 @@
       "id": "1971-孟加拉國解放戰爭",
       "added": "2026-10-13T19:14:15.305Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1971,
         "m": 3,
@@ -1084,7 +1085,7 @@
       "id": "1999-卡吉爾戰爭",
       "added": "2026-10-14T04:48:08.887Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1999,
         "m": 5,
@@ -1107,7 +1108,7 @@
       "id": "1974-西沙之戰",
       "added": "2026-10-14T10:08:59.030Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1974,
         "m": 1,
@@ -1130,7 +1131,7 @@
       "id": "1975-安哥拉內戰",
       "added": "2026-10-14T23:11:32.179Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1975,
         "m": 1,
@@ -1153,7 +1154,7 @@
       "id": "1978-烏干達-坦桑尼亞戰爭",
       "added": "2026-10-15T01:27:20.674Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1978,
         "m": 8,
@@ -1176,7 +1177,7 @@
       "id": "1979-中越戰爭",
       "added": "2026-10-15T13:23:01.546Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1979,
         "m": 2,
@@ -1199,7 +1200,7 @@
       "id": "1979-蘇聯入侵阿富汗",
       "added": "2026-10-15T18:15:00.884Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1979,
         "m": 12,
@@ -1222,7 +1223,7 @@
       "id": "2006-黎巴嫩戰爭",
       "added": "2026-10-15T21:25:16.049Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 2006,
         "m": 7,
@@ -1245,7 +1246,7 @@
       "id": "1982-第五次中東戰爭",
       "added": "2026-10-16T00:21:59.133Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1982,
         "m": 6,
@@ -1268,7 +1269,7 @@
       "id": "1988-赤瓜礁海戰",
       "added": "2026-10-16T11:16:30.610Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1988,
         "m": 3,
@@ -1291,7 +1292,7 @@
       "id": "1989-美國入侵巴拿馬",
       "added": "2026-10-16T16:35:20.769Z",
       "span": "cold",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1989,
         "m": 12,
@@ -1314,7 +1315,7 @@
       "id": "2008-俄格戰爭",
       "added": "2026-10-16T19:56:04.266Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 2008,
         "m": 8,
@@ -1337,7 +1338,7 @@
       "id": "2011-利比亞內戰",
       "added": "2026-10-16T22:48:33.490Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 2011,
         "m": 2,
@@ -1360,7 +1361,7 @@
       "id": "2014-頓巴斯戰爭",
       "added": "2026-10-17T01:17:28.005Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 2014,
         "m": 3,
@@ -1383,7 +1384,7 @@
       "id": "2020-納戈爾諾-卡拉巴赫戰爭",
       "added": "2026-10-17T06:53:20.637Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 2020,
         "m": 2,
@@ -1406,7 +1407,7 @@
       "id": "2022-俄羅斯入侵烏克蘭",
       "added": "2026-10-17T11:34:24.244Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 2022,
         "m": 2,
@@ -1429,7 +1430,7 @@
       "id": "2023-以色列—哈馬斯戰爭",
       "added": "2026-10-17T15:29:02.033Z",
       "span": "now",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 2023,
         "m": 10,
@@ -1452,7 +1453,7 @@
       "id": "1801-第一次巴巴利戰爭",
       "added": "2026-10-20T10:41:55.588Z",
       "span": "p19",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1801,
         "m": 5,
@@ -1475,7 +1476,7 @@
       "id": "1801-橘子戰爭",
       "added": "2026-10-20T10:57:32.917Z",
       "span": "p19",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1801,
         "m": 2,
@@ -1498,7 +1499,7 @@
       "id": "1802-第二次馬拉塔戰爭",
       "added": "2026-10-20T11:04:39.989Z",
       "span": "p19",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1802,
         "m": 1,
@@ -1521,7 +1522,7 @@
       "id": "1803-反法同盟戰爭",
       "added": "2026-10-20T12:22:20.851Z",
       "span": "p19",
-      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
       "battle": {
         "y": 1803,
         "m": 5,

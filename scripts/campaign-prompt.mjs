@@ -51,6 +51,8 @@ export function briefPrompt(war) {
 - m: 1 到 12 的整數
 - name: ${war.name}
 - theater: 戰場
+- place.lng: 戰場大致的經度（小數點後兩位，東經為正數，西經為負數）
+- place.lat: 戰場大致的緯度（北緯為正數，南緯為負數）
 - brief: 九十到一百四十字，點出這場列表中的衝突和一件 ${war.y} 年或更早已列裝的真實裝備正式型號
 - kit.name: 裝備中文名
 - kit.designation: 正式型號

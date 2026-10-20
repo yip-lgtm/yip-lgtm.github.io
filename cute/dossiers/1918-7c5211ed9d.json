@@ -1,5 +1,7 @@
 {
  "id": "1918-俄國內戰",
+ "theater": "俄羅斯全境",
+ "place": null,
  "battle": {
   "y": 1918,
   "m": 5,
@@ -16,7 +18,6 @@
   "history": "1891年已列裝的栓式步槍，一次大戰同內戰都係紅軍同白軍的底子。內戰裡決定鐵路樞紐的係機槍、野砲同裝甲列車，唔係呢支槍的改型。",
   "portrait": "portraits/mosin.jpg"
  },
- "theater": "東歐、西伯利亞、遠東",
  "countries": "俄國內戰由1917年11月7日打到1922年10月25日，遠東殘部到1923年6月，不是打到2022年。戰場不是一座城，而是歐洲俄羅斯、頓河、伏爾加河、西伯利亞大鐵路同海參崴。紅軍守住莫斯科同彼得格勒呢條內線。白軍由南面鄧尼金、東面高爾察克、西北面尤登尼奇、最後克里米亞嘅弗蘭格爾分頭打入來。英、法、美、日都派過干涉部隊，日本留到1922年先離開海參崴。邊區仲有芬蘭、波蘭、烏克蘭、高加索自己嘅政府。莫斯科約北緯55.75度、東經37.62度。誰佔住車站，誰先送得出下一列車嘅彈同糧。",
  "countriesEn": "The Russian Civil War ran from 7 November 1917 to 25 October 1922, with a Far East remnant into June 1923. It did not run to 2022. The ground was European Russia, the Don, the Volga, the Trans-Siberian Railway and Vladivostok, not one city. The Reds held the interior around Moscow and Petrograd. The Whites came in from Denikin in the south, Kolchak in the east, Yudenich in the northwest, and Wrangel last in Crimea. Britain, France, the United States and Japan intervened. Japan stayed until it left Vladivostok in 1922. Finland, Poland, Ukraine and the Caucasus had their own governments. Moscow sits near 55.75 N, 37.62 E. Whoever held the station could send the next train of ammunition and grain.",
  "people": "列寧抓政權，托洛茨基把紅軍編成可以調動嘅常備軍，軍部就設喺一列裝甲列車上面，政委跟住每個單位走。布瓊尼帶第一騎兵軍，伏龍芝後來改紅軍嘅打法，捷爾任斯基掌契卡，圖哈切夫斯基係年輕指揮官，1937年先被清洗。白軍冇統一參謀部。高爾察克1920年1月15日喺伊爾庫茨克被俘，其後被處決。鄧尼金1920年3月26至27日由新羅西斯克撤出。弗蘭格爾守到1920年11月14至16日先離開克里米亞。尤登尼奇1919年10月打到彼得格勒外圍。科爾尼洛夫1918年4月已死，米勒守北方阿爾漢格爾斯克。捷克斯洛伐克軍團大約5萬到6萬人，1918年沿鐵路同當地蘇維埃打起，打開東線。馬赫諾喺烏克蘭同兩邊都打過。",
