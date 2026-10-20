@@ -1941,6 +1941,59 @@
         "portrait": "portraits/matchlock.jpg"
       },
       "dossierUrl": "dossiers/1810-86a6c3e685.json"
+    },
+    {
+      "id": "1810-墨西哥獨立戰爭",
+      "added": "2026-10-20T21:39:25.439Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -100.92,
+        "lat": 21.16
+      },
+      "battle": {
+        "y": 1810,
+        "m": 9,
+        "name": "墨西哥獨立戰爭",
+        "theater": "瓜納華托州多洛雷斯",
+        "brief": "《戰爭列表》所列的墨西哥獨立戰爭始於一八一〇年九月，發端於瓜納華托州多洛雷斯，戰事其後擴至墨西哥多地。獨立派反抗西班牙殖民統治，雙方在各處交戰。火繩槍（Matchlock musket）於一五二〇年列入西班牙陸軍裝備，屬早期步兵火藥槍械。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      },
+      "dossierUrl": "dossiers/1810-e71618d08a.json"
+    },
+    {
+      "id": "1821-希臘獨立戰爭",
+      "added": "2026-10-20T21:39:09.523Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 22.5,
+        "lat": 37.7
+      },
+      "battle": {
+        "y": 1821,
+        "m": 3,
+        "name": "希臘獨立戰爭",
+        "theater": "伯羅奔尼撒半島",
+        "brief": "希臘獨立戰爭始於1821年，衝突涵蓋伯羅奔尼撒、摩里亞及希臘島嶼，希臘革命軍對抗鄂圖曼帝國軍隊。陸戰裝備包括長槍，正式型號為Pike，早於1821年已列裝，並由長槍兵持用於近戰與軍陣穩定。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
+      }
     }
   ]
 }
