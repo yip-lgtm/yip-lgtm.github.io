@@ -15,132 +15,130 @@ header{padding:32px 0 8px}
 h1{font-size:clamp(1.6rem,6vw,2.6rem);font-weight:900;margin:.2rem 0 .4rem}
 .lede{color:var(--muted)}
 .toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-.toc a{font-size:.9rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:var(--panel)}
-section{margin-top:36px}
-.sec-no{font:600 .8rem "IBM Plex Mono",monospace;color:var(--muted)}
-h2{font-size:1.35rem;font-weight:900;margin:.2rem 0 .4rem}
-.bench{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:10px}
-.ctl{margin-bottom:12px}
-.ctl label{font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between;margin-bottom:4px}
-input[type=range]{width:100%;accent-color:var(--accent);height:36px}
-.fig{margin:8px 0}
+.toc a{font-size:.85rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:var(--panel)}
+section{margin-top:32px}
+.sec-no{font:600 .75rem "IBM Plex Mono",monospace;color:var(--muted)}
+h2{font-size:1.3rem;font-weight:900;margin:.2rem 0 .3rem}
+.bench{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:8px}
+.ctl{margin-bottom:10px}
+.ctl label{font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between;margin-bottom:2px}
+input[type=range]{width:100%;accent-color:var(--accent);height:32px}
 .fig svg{width:100%;height:auto;display:block;background:#0f181b;border-radius:6px}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-.card{border:1px solid var(--line);border-radius:8px;padding:12px;background:var(--chip)}
-.card .k{font-size:.78rem;color:var(--muted)}
-.card .v{font:600 1.1rem "IBM Plex Mono",monospace}
-.book{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.card{border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--chip)}
+.card .k{font-size:.75rem;color:var(--muted)}
+.card .v{font:600 1.05rem "IBM Plex Mono",monospace}
+.book{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:6px 0}
 .book .title{font-weight:700}
-.book .note{color:var(--muted);font-size:.9rem}
+.book .note{color:var(--muted);font-size:.85rem}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
   <h1>機械工程知識地圖</h1>
-  <p class="lede">完整書單 + 互動圖解。</p>
-  <nav class="toc">
-    <a href="#base">基礎</a>
-    <a href="#adv">進階</a>
-    <a href="#cae">現代</a>
-    <a href="#u02">彈簧</a>
-    <a href="#u03">樑</a>
-    <a href="#u04">齒輪</a>
-    <a href="#u08">共振</a>
-  </nav>
+  <p class="lede">完整書單 + 全部單元圖解。</p>
+  <nav class="toc" id="toc"></nav>
 </header>
-
-<section id="base">
-  <div class="sec-no">基礎底座</div>
-  <h2>傳統機械與經典力學</h2>
-  <div class="book"><div class="title">《機械原理》孫桓</div><div class="note">機構運動學（齒輪、連桿、凸輪）</div></div>
-  <div class="book"><div class="title">《材料力學》劉鴻文</div><div class="note">單杆件拉壓剪扭彎的強度與剛度</div></div>
-  <div class="book"><div class="title">《機械設計》濮良貴</div><div class="note">標準件選型（螺栓、軸承、帶傳動）</div></div>
-  <div class="book"><div class="title">《機械設計手冊》聞邦業</div><div class="note">公差、標準件、GB 查閱</div></div>
-</section>
-
-<section id="adv">
-  <div class="sec-no">進階支柱</div>
-  <h2>高級力學與流體</h2>
-  <div class="book"><div class="title">《工程流體力學》孔珁</div><div class="note">泵、閥、管道、液壓系統</div></div>
-  <div class="book"><div class="title">《機械振動》Rao</div><div class="note">避免共振、降噪音、精密穩定性</div></div>
-  <div class="book"><div class="title">《疲勞與斷裂力學》康國政</div><div class="note">循環載荷下的壽命預測</div></div>
-</section>
-
-<section id="cae">
-  <div class="sec-no">現代之翼</div>
-  <h2>有限元與 CAE 仿真</h2>
-  <div class="book"><div class="title">理論：王勁成 + 曾攀</div><div class="note">網格與矩陣</div></div>
-  <div class="book"><div class="title">固體：ABAQUS 莊苑</div><div class="note">非線性、接觸、大變形</div></div>
-  <div class="book"><div class="title">流體：Anderson CFD</div><div class="note">計算流體力學</div></div>
-  <div class="book"><div class="title">實戰：ANSYS Workbench 喻高遠</div><div class="note">靜力學、動力學、熱流耦合</div></div>
-</section>
-
-<section id="u02">
-  <div class="sec-no">互動</div>
-  <h2>彈簧 F=kx</h2>
-  <div class="bench">
-    <div class="ctl"><label>k <output id="o02k">10</output></label><input type="range" id="i02k" min="2" max="40" value="10"></div>
-    <div class="ctl"><label>x <output id="o02x">5</output></label><input type="range" id="i02x" min="0" max="20" value="5"></div>
-    <div class="fig"><svg id="f02" viewBox="0 0 360 80"></svg></div>
-    <div class="cards"><div class="card"><div class="k">F</div><div class="v" id="r02"></div></div></div>
-  </div>
-</section>
-
-<section id="u03">
-  <div class="sec-no">互動</div>
-  <h2>簡支樑撞度</h2>
-  <div class="bench">
-    <div class="ctl"><label>F <output id="o03F">1000</output></label><input type="range" id="i03F" min="200" max="4000" value="1000" step="100"></div>
-    <div class="ctl"><label>L <output id="o03L">800</output></label><input type="range" id="i03L" min="400" max="1600" value="800" step="50"></div>
-    <div class="fig"><svg id="f03" viewBox="0 0 360 90"></svg></div>
-    <div class="cards"><div class="card"><div class="k">delta</div><div class="v" id="r03"></div></div></div>
-  </div>
-</section>
-
-<section id="u04">
-  <div class="sec-no">互動</div>
-  <h2>齒輪比</h2>
-  <div class="bench">
-    <div class="ctl"><label>z1 <output id="o04z1">20</output></label><input type="range" id="i04z1" min="12" max="40" value="20"></div>
-    <div class="ctl"><label>z2 <output id="o04z2">40</output></label><input type="range" id="i04z2" min="20" max="80" value="40"></div>
-    <div class="fig"><svg id="f04" viewBox="0 0 360 90"></svg></div>
-    <div class="cards"><div class="card"><div class="k">i</div><div class="v" id="r04"></div></div></div>
-  </div>
-</section>
-
-<section id="u08">
-  <div class="sec-no">互動</div>
-  <h2>共振放大</h2>
-  <div class="bench">
-    <div class="ctl"><label>r <output id="o08r">0.8</output></label><input type="range" id="i08r" min="0.2" max="2" value="0.8" step="0.05"></div>
-    <div class="ctl"><label>z <output id="o08z">0.05</output></label><input type="range" id="i08z" min="0.01" max="0.3" value="0.05" step="0.01"></div>
-    <div class="fig"><svg id="f08" viewBox="0 0 360 100"></svg></div>
-    <div class="cards"><div class="card"><div class="k">放大</div><div class="v" id="r08"></div></div></div>
-  </div>
-</section>
-
+<div id="content"></div>
 <p style="margin-top:24px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← Lab</a></p>
 </div>
 <script>
-function set(id, outs, calc, draw){
-  function upd(){
-    var p={};
-    outs.forEach(function(o){
-      var el=document.getElementById(o.i);
-      document.getElementById(o.o).textContent=el.value;
-      p[o.k]=+el.value;
+const units = [
+  {id:'base', no:'基礎', title:'基礎底座', type:'books', items:[
+    ['《機械原理》孫桓','機構運動學（齒輪、連桿、凸輪）'],
+    ['《材料力學》劉鴻文','單杆件拉壓剪扭彎的強度與剛度'],
+    ['《機械設計》濮良貴','標準件選型（螺栓、軸承、帶傳動）'],
+    ['《機械設計手冊》聞邦業','公差、標準件、GB 查閱']
+  ]},
+  {id:'adv', no:'進階', title:'進階支柱', type:'books', items:[
+    ['《工程流體力學》孔珁','泵、閥、管道、液壓系統'],
+    ['《機械振動》Rao','避免共振、降噪音、精密穩定性'],
+    ['《疲勞與斷裂力學》康國政','循環載荷下的壽命預測']
+  ]},
+  {id:'cae', no:'現代', title:'現代之翼', type:'books', items:[
+    ['理論：王勁成 + 曾攀','網格與矩陣'],
+    ['固體：ABAQUS 莊苑','非線性、接觸、大變形'],
+    ['流體：Anderson CFD','計算流體力學'],
+    ['實戰：ANSYS 喻高遠','靜力學、動力學、熱流耦合']
+  ]},
+  {id:'u02', no:'02', title:'彈簧 F=kx', type:'slider', sliders:[{k:'k',a:2,b:40,v:10},{k:'x',a:0,b:20,v:5}], calc:p=> (p.k*p.x).toFixed(0)+' N', fig:p=>{const w=40+p.x*6; return `<rect x="30" y="20" width="${w}" height="28" rx="4" fill="#1d2c30" stroke="#43c2cb"/><text x="${30+w/2}" y="38" text-anchor="middle" fill="#e3ecec" font-size="11">x=${p.x}</text>`;}},
+  {id:'u03', no:'03', title:'簡支樑', type:'slider', sliders:[{k:'F',a:200,b:4000,v:1000},{k:'L',a:400,b:1600,v:800}], calc:p=> (p.F*Math.pow(p.L,3)/(48*200000*1e5)).toFixed(2)+' mm', fig:p=>{const d=p.F*Math.pow(p.L,3)/(48*200000*1e5); const drop=Math.min(30,d*4); return `<line x1="20" y1="40" x2="340" y2="40" stroke="#2a3b40"/><path d="M40 40 Q180 ${40+drop} 320 40" fill="none" stroke="#43c2cb" stroke-width="3"/>`;}},
+  {id:'u04', no:'04', title:'齒輪比', type:'slider', sliders:[{k:'z1',a:12,b:40,v:20},{k:'z2',a:20,b:80,v:40}], calc:p=> (p.z2/p.z1).toFixed(2), fig:p=> `<circle cx="100" cy="40" r="${8+p.z1*0.35}" fill="none" stroke="#43c2cb"/><circle cx="260" cy="40" r="${8+p.z2*0.22}" fill="none" stroke="#eb9b4c"/>`},
+  {id:'u05', no:'05', title:'應力集中', type:'slider', sliders:[{k:'dw',a:0.1,b:0.6,v:0.3}], calc:p=> 'Kt ~ '+(2+2*p.dw).toFixed(2), fig:p=> {const r=12+p.dw*40; return `<rect x="40" y="15" width="280" height="50" fill="#1d2c30" stroke="#2a3b40"/><circle cx="180" cy="40" r="${r}" fill="#0e1618" stroke="#eb9b4c"/>`;}},
+  {id:'u06', no:'06', title:'伯努利', type:'slider', sliders:[{k:'v',a:1,b:20,v:5}], calc:p=> (0.5*1000*p.v*p.v/1000).toFixed(1)+' kPa', fig:p=> {const h=15+p.v*2; return `<rect x="40" y="${55-h}" width="25" height="${h}" fill="#43c2cb"/><text x="52" y="70" text-anchor="middle" fill="#93a4a9" font-size="9">v</text>`;}},
+  {id:'u07', no:'07', title:'螺栓預緊', type:'slider', sliders:[{k:'T',a:5,b:80,v:20},{k:'d',a:6,b:20,v:10}], calc:p=> (p.T/(0.2*(p.d/1000))/1000).toFixed(1)+' kN', fig:p=> `<rect x="160" y="18" width="${15+p.d}" height="44" fill="#1d2c30" stroke="#43c2cb"/>`},
+  {id:'u08', no:'08', title:'共振放大', type:'slider', sliders:[{k:'r',a:0.2,b:2,v:0.8},{k:'z',a:0.01,b:0.3,v:0.05}], calc:p=> (1/Math.sqrt(Math.pow(1-p.r*p.r,2)+Math.pow(2*p.z*p.r,2))).toFixed(2)+'x', fig:p=> {let pts=''; for(let i=0;i<=50;i++){const rr=0.2+i*1.8/50; const aa=1/Math.sqrt(Math.pow(1-rr*rr,2)+Math.pow(2*p.z*rr,2)); pts+=(i===0?'M':'L')+(30+i*6)+' '+(75-Math.min(aa,6)*9);} return `<path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/>`;}},
+  {id:'u09', no:'09', title:'疲勞 S-N', type:'slider', sliders:[{k:'sa',a:50,b:400,v:200}], calc:p=> (1e14/Math.pow(p.sa,3)).toExponential(1), fig:p=> {let pts=''; for(let i=0;i<=50;i++){const s=50+i*7; const n=1e14/Math.pow(s,3); pts+=(i===0?'M':'L')+(30+i*6)+' '+(75-Math.log10(n)*4);} return `<path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/>`;}},
+  {id:'u10', no:'10', title:'網格', type:'slider', sliders:[{k:'n',a:2,b:12,v:4}], calc:p=> p.n+' x 2', fig:p=> {let g=''; const w=280/p.n; for(let i=0;i<=p.n;i++){const x=40+i*w; g+=`<line x1="${x}" y1="15" x2="${x}" y2="65" stroke="#2a3b40"/>`;} for(let j=0;j<=2;j++){const y=15+j*25; g+=`<line x1="40" y1="${y}" x2="320" y2="${y}" stroke="#2a3b40"/>`;} return g;}},
+  {id:'u11', no:'11', title:'熱膨脹', type:'slider', sliders:[{k:'L',a:100,b:2000,v:500},{k:'dT',a:10,b:200,v:50}], calc:p=> (12e-6*p.L*p.dT).toFixed(2)+' mm', fig:p=> {const ext=p.dT*0.25; return `<rect x="40" y="20" width="${180+ext}" height="20" fill="#1d2c30" stroke="#eb9b4c"/>`;}},
+  {id:'u12', no:'12', title:'扭轉角', type:'slider', sliders:[{k:'T',a:10,b:200,v:50},{k:'L',a:100,b:1000,v:300}], calc:p=> (p.T*p.L/(80e3*1e5)*1000).toFixed(2)+' deg', fig:p=> `<rect x="40" y="22" width="${80+p.L/12}" height="16" fill="#1d2c30" stroke="#43c2cb"/>`},
+  {id:'u13', no:'13', title:'安全係數', type:'slider', sliders:[{k:'sy',a:200,b:800,v:400},{k:'s',a:50,b:400,v:150}], calc:p=> (p.sy/p.s).toFixed(2), fig:p=> `<rect x="40" y="20" width="${p.s/3}" height="18" fill="#eb9b4c"/><rect x="40" y="20" width="${p.sy/5}" height="18" fill="none" stroke="#43c2cb"/>`},
+  {id:'u14', no:'14', title:'帶傳動', type:'slider', sliders:[{k:'D1',a:50,b:200,v:80},{k:'D2',a:80,b:400,v:160}], calc:p=> (p.D2/p.D1).toFixed(2), fig:p=> `<circle cx="100" cy="40" r="${p.D1/5}" fill="none" stroke="#43c2cb"/><circle cx="260" cy="40" r="${p.D2/7}" fill="none" stroke="#eb9b4c"/>`},
+  {id:'u15', no:'15', title:'軸承壽命', type:'slider', sliders:[{k:'C',a:5,b:50,v:20},{k:'P',a:1,b:20,v:5}], calc:p=> (Math.pow(p.C/p.P,3)*1e6).toExponential(1), fig:p=> `<text x="40" y="40" fill="#43c2cb" font-size="14">C/P = ${(p.C/p.P).toFixed(1)}</text>`},
+  {id:'u16', no:'16', title:'雷諾數', type:'slider', sliders:[{k:'v',a:0.1,b:5,v:1},{k:'D',a:10,b:100,v:25}], calc:p=> (1000*p.v*(p.D/1000)/0.001).toFixed(0), fig:p=> {const re=1000*p.v*(p.D/1000)/0.001; const c=re>2300?'#eb9b4c':'#43c2cb'; return `<rect x="40" y="20" width="180" height="20" fill="${c}"/>`;}},
+  {id:'u17', no:'17', title:'管道壓降', type:'slider', sliders:[{k:'v',a:1,b:10,v:3},{k:'L',a:5,b:50,v:20}], calc:p=> (0.02*(p.L/0.05)*500*p.v*p.v/1000).toFixed(1)+' kPa', fig:p=> `<rect x="40" y="25" width="${80+p.L*4}" height="10" fill="#1d2c30" stroke="#43c2cb"/>`},
+  {id:'u18', no:'18', title:'彈簧能量', type:'slider', sliders:[{k:'k',a:5,b:50,v:15},{k:'x',a:1,b:15,v:5}], calc:p=> (0.5*p.k*p.x*p.x).toFixed(1), fig:p=> {const h=p.x*2.5; return `<rect x="40" y="${50-h}" width="25" height="${h}" fill="#eb9b4c"/>`;}},
+  {id:'u19', no:'19', title:'應力應變', type:'slider', sliders:[{k:'s',a:50,b:400,v:150}], calc:p=> (p.s/200000*100).toFixed(3)+'%', fig:p=> `<line x1="40" y1="55" x2="${40+p.s/3}" y2="${55-p.s/8}" stroke="#43c2cb" stroke-width="2"/>`},
+  {id:'u20', no:'20', title:'彎矩', type:'slider', sliders:[{k:'F',a:100,b:2000,v:500},{k:'L',a:200,b:1000,v:600}], calc:p=> (p.F*p.L/4/1000).toFixed(1)+' N m', fig:p=> `<line x1="40" y1="45" x2="320" y2="45" stroke="#2a3b40"/><line x1="180" y1="45" x2="180" y2="${45-p.F/50}" stroke="#eb9b4c" stroke-width="3"/>`},
+  {id:'u21', no:'21', title:'凸輪升程', type:'slider', sliders:[{k:'h',a:5,b:30,v:15}], calc:p=> p.h+' mm', fig:p=> `<path d="M40 50 Q180 ${50-p.h*1.2} 320 50" fill="none" stroke="#43c2cb" stroke-width="2"/>`},
+  {id:'u22', no:'22', title:'四桿機構', type:'slider', sliders:[{k:'th',a:0,b:360,v:45}], calc:p=> (p.th*0.6).toFixed(0)+' deg', fig:p=> {const ang=p.th*Math.PI/180; const x=180+50*Math.cos(ang); const y=40+30*Math.sin(ang); return `<line x1="180" y1="40" x2="${x}" y2="${y}" stroke="#43c2cb" stroke-width="3"/><circle cx="180" cy="40" r="3" fill="#eb9b4c"/>`;}},
+  {id:'u23', no:'23', title:'接觸應力', type:'slider', sliders:[{k:'F',a:100,b:2000,v:500},{k:'R',a:5,b:50,v:20}], calc:p=> (Math.sqrt(p.F/p.R)*10).toFixed(0)+' MPa', fig:p=> `<circle cx="180" cy="40" r="${12+p.R/3}" fill="none" stroke="#43c2cb"/>`},
+  {id:'u24', no:'24', title:'Goodman', type:'slider', sliders:[{k:'sa',a:50,b:300,v:100},{k:'sm',a:0,b:300,v:50}], calc:p=> (p.sa/(1-p.sm/400)).toFixed(0), fig:p=> `<rect x="40" y="20" width="${p.sa/2}" height="12" fill="#43c2cb"/><rect x="40" y="38" width="${p.sm/2}" height="8" fill="#eb9b4c"/>`},
+  {id:'u25', no:'25', title:'公差堆疊', type:'slider', sliders:[{k:'t1',a:0.01,b:0.2,v:0.05},{k:'t2',a:0.01,b:0.2,v:0.05}], calc:p=> '+/- '+((p.t1+p.t2)/2).toFixed(3), fig:p=> `<rect x="40" y="15" width="${100+p.t1*150}" height="8" fill="#43c2cb"/><rect x="40" y="28" width="${100+p.t2*150}" height="8" fill="#eb9b4c"/>`},
+  {id:'u26', no:'26', title:'自然頻率', type:'slider', sliders:[{k:'L',a:300,b:1500,v:600}], calc:p=> (200/Math.pow(p.L/1000,2)).toFixed(1)+' Hz', fig:p=> `<line x1="40" y1="40" x2="${40+p.L/6}" y2="40" stroke="#43c2cb"/>`},
+  {id:'u27', no:'27', title:'流體粘度', type:'slider', sliders:[{k:'mu',a:0.5,b:5,v:1}], calc:p=> (1000/p.mu).toFixed(0), fig:p=> `<rect x="40" y="15" width="${160/p.mu}" height="18" fill="#43c2cb"/>`},
+  {id:'u28', no:'28', title:'熱傳導', type:'slider', sliders:[{k:'dT',a:10,b:100,v:40},{k:'L',a:5,b:50,v:20}], calc:p=> (50*0.01*p.dT/(p.L/1000)).toFixed(0)+' W', fig:p=> `<rect x="40" y="15" width="${120+p.dT}" height="14" fill="#eb9b4c"/>`},
+  {id:'u29', no:'29', title:'網格收斂', type:'slider', sliders:[{k:'n',a:1,b:5,v:2}], calc:p=> (10/Math.pow(2,p.n)).toFixed(2)+'%', fig:p=> {let g=''; for(let i=0;i<p.n;i++){g+=`<rect x="${40+i*45}" y="15" width="35" height="18" fill="none" stroke="#43c2cb"/>`;} return g;}},
+  {id:'map', no:'應用', title:'應用地圖', type:'books', items:[
+    ['考研／本科','機原 + 機設 + 材力'],
+    ['非標自動化','手冊 + 材力 + ANSYS'],
+    ['高端研發','振動 + 疲勞 + ABAQUS'],
+    ['流體熱能','流體 + CFD']
+  ]}
+];
+
+const toc = document.getElementById('toc');
+const content = document.getElementById('content');
+units.forEach(u => {
+  const a = document.createElement('a');
+  a.href = '#'+u.id;
+  a.textContent = u.no;
+  toc.appendChild(a);
+
+  const sec = document.createElement('section');
+  sec.id = u.id;
+  sec.innerHTML = `<div class="sec-no">${u.no}</div><h2>${u.title}</h2>`;
+
+  if (u.type === 'books') {
+    u.items.forEach(([t,n]) => {
+      sec.innerHTML += `<div class="book"><div class="title">${t}</div><div class="note">${n}</div></div>`;
     });
-    document.getElementById(id).textContent=calc(p);
-    if(draw) document.getElementById(draw.id).innerHTML=draw.fn(p);
+  } else {
+    const bench = document.createElement('div');
+    bench.className = 'bench';
+    u.sliders.forEach(s => {
+      bench.innerHTML += `<div class="ctl"><label>${s.k} <output id="o${u.id}${s.k}">${s.v}</output></label><input type="range" id="i${u.id}${s.k}" min="${s.a}" max="${s.b}" value="${s.v}" step="${s.a<1?0.01:1}"></div>`;
+    });
+    bench.innerHTML += `<div class="fig"><svg id="f${u.id}" viewBox="0 0 360 80"></svg></div>`;
+    bench.innerHTML += `<div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r${u.id}"></div></div></div>`;
+    sec.appendChild(bench);
+
+    function upd() {
+      const p = {};
+      u.sliders.forEach(s => {
+        const inp = document.getElementById('i'+u.id+s.k);
+        document.getElementById('o'+u.id+s.k).textContent = inp.value;
+        p[s.k] = +inp.value;
+      });
+      document.getElementById('r'+u.id).textContent = u.calc(p);
+      document.getElementById('f'+u.id).innerHTML = u.fig(p);
+    }
+    u.sliders.forEach(s => document.getElementById('i'+u.id+s.k).addEventListener('input', upd));
+    upd();
   }
-  outs.forEach(function(o){ document.getElementById(o.i).addEventListener('input',upd); });
-  upd();
-}
-set('r02',[{i:'i02k',o:'o02k',k:'k'},{i:'i02x',o:'o02x',k:'x'}],function(p){return (p.k*p.x).toFixed(0)+' N';},{id:'f02',fn:function(p){var w=50+p.x*6; return '<rect x="30" y="25" width="'+w+'" height="30" rx="4" fill="#1d2c30" stroke="#43c2cb"/><text x="'+(30+w/2)+'" y="45" text-anchor="middle" fill="#e3ecec" font-size="12">x='+p.x+'</text>';}});
-set('r03',[{i:'i03F',o:'o03F',k:'F'},{i:'i03L',o:'o03L',k:'L'}],function(p){return (p.F*Math.pow(p.L,3)/(48*200000*1e5)).toFixed(2)+' mm';},{id:'f03',fn:function(p){var d=p.F*Math.pow(p.L,3)/(48*200000*1e5); var drop=Math.min(35,d*5); return '<line x1="20" y1="45" x2="340" y2="45" stroke="#2a3b40"/><path d="M40 45 Q180 '+(45+drop)+' 320 45" fill="none" stroke="#43c2cb" stroke-width="3"/><circle cx="180" cy="'+(45+drop)+'" r="4" fill="#eb9b4c"/>';}});
-set('r04',[{i:'i04z1',o:'o04z1',k:'z1'},{i:'i04z2',o:'o04z2',k:'z2'}],function(p){return (p.z2/p.z1).toFixed(2);},{id:'f04',fn:function(p){return '<circle cx="100" cy="45" r="'+(8+p.z1*0.4)+'" fill="none" stroke="#43c2cb"/><circle cx="260" cy="45" r="'+(8+p.z2*0.25)+'" fill="none" stroke="#eb9b4c"/><text x="100" y="50" text-anchor="middle" fill="#e3ecec" font-size="11">z1</text><text x="260" y="50" text-anchor="middle" fill="#e3ecec" font-size="11">z2</text>';}});
-set('r08',[{i:'i08r',o:'o08r',k:'r'},{i:'i08z',o:'o08z',k:'z'}],function(p){return (1/Math.sqrt(Math.pow(1-p.r*p.r,2)+Math.pow(2*p.z*p.r,2))).toFixed(2)+'x';},{id:'f08',fn:function(p){var pts=''; for(var i=0;i<=60;i++){var rr=0.2+i*1.8/60; var aa=1/Math.sqrt(Math.pow(1-rr*rr,2)+Math.pow(2*p.z*rr,2)); var x=30+i*5; var y=80-Math.min(aa,6)*10; pts+=(i===0?'M':'L')+x+' '+y;} return '<path d="'+pts+'" fill="none" stroke="#43c2cb" stroke-width="2"/>';}});
+  content.appendChild(sec);
+});
 </script>
 </body>
 </html>
