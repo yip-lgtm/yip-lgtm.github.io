@@ -18,12 +18,19 @@ jobs:
           fetch-depth: 0
       - name: Rebuild the update record
         run: node scripts/build-record.mjs
+      # The card deck lists every card with its art. It was a hand-built file
+      # that went stale the moment a portrait landed -- it still said the art
+      # was pending on 94 of its 100 cards while the live site had every one
+      # of them drawn. It is generated now, from the catalog dump and the
+      # live feed.
+      - name: Rebuild the card deck
+        run: node scripts/build-cards.mjs
       - name: Commit
         run: |
           git config user.name "yip-lmt"
           git config user.email "258986088+yip-lmt@users.noreply.github.com"
-          git add cute/record.html
-          git diff --staged --quiet || git commit -m "cute/record: rebuild the update log"
+          git add cute/record.html cute/cards.html
+          git diff --staged --quiet || git commit -m "cute/record: rebuild the update log and the card deck"
           # Another job may have pushed while this one was writing -- the
           # Pages repo is written by four workflows and the app repo
           # publishes into it too. Rebasing onto the remote keeps this job's
