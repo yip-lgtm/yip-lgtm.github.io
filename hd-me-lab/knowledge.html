@@ -12,41 +12,47 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Noto Sans TC",system-ui,sans-serif;padding:0 16px 100px}
 .wrap{max-width:900px;margin:0 auto}
 header{padding:32px 0 8px}
-.eyebrow{font:600 .78rem "IBM Plex Mono",monospace;letter-spacing:.14em;color:var(--accent);text-transform:uppercase}
 h1{font-size:clamp(1.6rem,6vw,2.6rem);font-weight:900;margin:.2rem 0 .4rem}
-.lede{color:var(--muted);margin:0 0 16px}
+.lede{color:var(--muted)}
 .toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-.toc a{font-size:.9rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:var(--panel);display:inline-block;min-height:44px}
-section{margin-top:40px;scroll-margin-top:16px}
+.toc a{font-size:.9rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:var(--panel)}
+section{margin-top:36px}
 .sec-no{font:600 .8rem "IBM Plex Mono",monospace;color:var(--muted)}
-h2{font-size:1.4rem;font-weight:900;margin:.2rem 0 .4rem}
-.book{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0}
-.book .title{font-weight:700}
-.book .note{color:var(--muted);font-size:.9rem}
+h2{font-size:1.35rem;font-weight:900;margin:.2rem 0 .4rem}
+.bench{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:10px}
+.ctl{margin-bottom:12px}
+.ctl label{font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between;margin-bottom:4px}
+input[type=range]{width:100%;accent-color:var(--accent);height:36px}
+.fig{margin:8px 0}
+.fig svg{width:100%;height:auto;display:block;background:#0f181b;border-radius:6px}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
 .card{border:1px solid var(--line);border-radius:8px;padding:12px;background:var(--chip)}
 .card .k{font-size:.78rem;color:var(--muted)}
 .card .v{font:600 1.1rem "IBM Plex Mono",monospace}
+.book{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0}
+.book .title{font-weight:700}
+.book .note{color:var(--muted);font-size:.9rem}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-  <div class="eyebrow">Self-study</div>
   <h1>機械工程知識地圖</h1>
-  <p class="lede">從傳統基礎到現代 CAE。</p>
+  <p class="lede">完整書單 + 互動圖解。</p>
   <nav class="toc">
-    <a href="#base">基礎底座</a>
-    <a href="#adv">進階支柱</a>
-    <a href="#cae">現代之翼</a>
-    <a href="#map">應用地圖</a>
-    <a href="#demo">互動單元</a>
+    <a href="#base">基礎</a>
+    <a href="#adv">進階</a>
+    <a href="#cae">現代</a>
+    <a href="#u02">彈簧</a>
+    <a href="#u03">樑</a>
+    <a href="#u04">齒輪</a>
+    <a href="#u08">共振</a>
   </nav>
 </header>
 
 <section id="base">
-  <div class="sec-no">01 · 60 min</div>
-  <h2>基礎底座：傳統機械與經典力學</h2>
+  <div class="sec-no">基礎底座</div>
+  <h2>傳統機械與經典力學</h2>
   <div class="book"><div class="title">《機械原理》孫桓</div><div class="note">機構運動學（齒輪、連桿、凸輪）</div></div>
   <div class="book"><div class="title">《材料力學》劉鴻文</div><div class="note">單杆件拉壓剪扭彎的強度與剛度</div></div>
   <div class="book"><div class="title">《機械設計》濮良貴</div><div class="note">標準件選型（螺栓、軸承、帶傳動）</div></div>
@@ -54,41 +60,87 @@ h2{font-size:1.4rem;font-weight:900;margin:.2rem 0 .4rem}
 </section>
 
 <section id="adv">
-  <div class="sec-no">02 · 50 min</div>
-  <h2>進階支柱：高級力學與流體</h2>
+  <div class="sec-no">進階支柱</div>
+  <h2>高級力學與流體</h2>
   <div class="book"><div class="title">《工程流體力學》孔珁</div><div class="note">泵、閥、管道、液壓系統</div></div>
   <div class="book"><div class="title">《機械振動》Rao</div><div class="note">避免共振、降噪音、精密穩定性</div></div>
   <div class="book"><div class="title">《疲勞與斷裂力學》康國政</div><div class="note">循環載荷下的壽命預測</div></div>
 </section>
 
 <section id="cae">
-  <div class="sec-no">03 · 70 min</div>
-  <h2>現代之翼：有限元與 CAE 仿真</h2>
-  <div class="book"><div class="title">理論：《有限單元法》王勁成 + 《結構的建模與分析》曾攀</div><div class="note">網格與矩陣</div></div>
-  <div class="book"><div class="title">固體：《ABAQUS分析與應用》莊苑</div><div class="note">非線性、接觸、大變形</div></div>
-  <div class="book"><div class="title">流體：《計算流體力學基礎及其應用》Anderson</div><div class="note">CFD</div></div>
-  <div class="book"><div class="title">實戰：《ANSYS Workbench 2024實例詳解》喻高遠</div><div class="note">靜力學、動力學、熱流耦合</div></div>
+  <div class="sec-no">現代之翼</div>
+  <h2>有限元與 CAE 仿真</h2>
+  <div class="book"><div class="title">理論：王勁成 + 曾攀</div><div class="note">網格與矩陣</div></div>
+  <div class="book"><div class="title">固體：ABAQUS 莊苑</div><div class="note">非線性、接觸、大變形</div></div>
+  <div class="book"><div class="title">流體：Anderson CFD</div><div class="note">計算流體力學</div></div>
+  <div class="book"><div class="title">實戰：ANSYS Workbench 喻高遠</div><div class="note">靜力學、動力學、熱流耦合</div></div>
 </section>
 
-<section id="map">
-  <div class="sec-no">04 · 20 min</div>
-  <h2>應用場景速查</h2>
-  <div class="cards">
-    <div class="card"><div class="k">考研／本科</div><div class="v">機原 + 機設 + 材力</div></div>
-    <div class="card"><div class="k">常規非標自動化</div><div class="v">手冊 + 材力 + ANSYS 實例</div></div>
-    <div class="card"><div class="k">高端（航天／汽車／重工）</div><div class="v">振動 + 疲勞 + 有限元 + ABAQUS</div></div>
-    <div class="card"><div class="k">流體與熱能</div><div class="v">流體力學 + Anderson CFD</div></div>
+<section id="u02">
+  <div class="sec-no">互動</div>
+  <h2>彈簧 F=kx</h2>
+  <div class="bench">
+    <div class="ctl"><label>k <output id="o02k">10</output></label><input type="range" id="i02k" min="2" max="40" value="10"></div>
+    <div class="ctl"><label>x <output id="o02x">5</output></label><input type="range" id="i02x" min="0" max="20" value="5"></div>
+    <div class="fig"><svg id="f02" viewBox="0 0 360 80"></svg></div>
+    <div class="cards"><div class="card"><div class="k">F</div><div class="v" id="r02"></div></div></div>
   </div>
 </section>
 
-<section id="demo">
-  <div class="sec-no">05</div>
-  <h2>互動單元</h2>
-  <p>下面係簡化示意，拖動參數看趋勢。實際設計要用手冊同正規軟體。</p>
-  <p><a href="#u02" style="color:var(--accent)">彈簧 F=kx</a> · <a href="#u03" style="color:var(--accent)">簡支樑</a> · <a href="#u04" style="color:var(--accent)">齒輪比</a> · <a href="#u08" style="color:var(--accent)">共振</a> · <a href="#u09" style="color:var(--accent)">疲勞</a></p>
+<section id="u03">
+  <div class="sec-no">互動</div>
+  <h2>簡支樑撞度</h2>
+  <div class="bench">
+    <div class="ctl"><label>F <output id="o03F">1000</output></label><input type="range" id="i03F" min="200" max="4000" value="1000" step="100"></div>
+    <div class="ctl"><label>L <output id="o03L">800</output></label><input type="range" id="i03L" min="400" max="1600" value="800" step="50"></div>
+    <div class="fig"><svg id="f03" viewBox="0 0 360 90"></svg></div>
+    <div class="cards"><div class="card"><div class="k">delta</div><div class="v" id="r03"></div></div></div>
+  </div>
 </section>
 
-<p style="margin-top:32px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← Lab</a></p>
+<section id="u04">
+  <div class="sec-no">互動</div>
+  <h2>齒輪比</h2>
+  <div class="bench">
+    <div class="ctl"><label>z1 <output id="o04z1">20</output></label><input type="range" id="i04z1" min="12" max="40" value="20"></div>
+    <div class="ctl"><label>z2 <output id="o04z2">40</output></label><input type="range" id="i04z2" min="20" max="80" value="40"></div>
+    <div class="fig"><svg id="f04" viewBox="0 0 360 90"></svg></div>
+    <div class="cards"><div class="card"><div class="k">i</div><div class="v" id="r04"></div></div></div>
+  </div>
+</section>
+
+<section id="u08">
+  <div class="sec-no">互動</div>
+  <h2>共振放大</h2>
+  <div class="bench">
+    <div class="ctl"><label>r <output id="o08r">0.8</output></label><input type="range" id="i08r" min="0.2" max="2" value="0.8" step="0.05"></div>
+    <div class="ctl"><label>z <output id="o08z">0.05</output></label><input type="range" id="i08z" min="0.01" max="0.3" value="0.05" step="0.01"></div>
+    <div class="fig"><svg id="f08" viewBox="0 0 360 100"></svg></div>
+    <div class="cards"><div class="card"><div class="k">放大</div><div class="v" id="r08"></div></div></div>
+  </div>
+</section>
+
+<p style="margin-top:24px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← Lab</a></p>
 </div>
+<script>
+function set(id, outs, calc, draw){
+  function upd(){
+    var p={};
+    outs.forEach(function(o){
+      var el=document.getElementById(o.i);
+      document.getElementById(o.o).textContent=el.value;
+      p[o.k]=+el.value;
+    });
+    document.getElementById(id).textContent=calc(p);
+    if(draw) document.getElementById(draw.id).innerHTML=draw.fn(p);
+  }
+  outs.forEach(function(o){ document.getElementById(o.i).addEventListener('input',upd); });
+  upd();
+}
+set('r02',[{i:'i02k',o:'o02k',k:'k'},{i:'i02x',o:'o02x',k:'x'}],function(p){return (p.k*p.x).toFixed(0)+' N';},{id:'f02',fn:function(p){var w=50+p.x*6; return '<rect x="30" y="25" width="'+w+'" height="30" rx="4" fill="#1d2c30" stroke="#43c2cb"/><text x="'+(30+w/2)+'" y="45" text-anchor="middle" fill="#e3ecec" font-size="12">x='+p.x+'</text>';}});
+set('r03',[{i:'i03F',o:'o03F',k:'F'},{i:'i03L',o:'o03L',k:'L'}],function(p){return (p.F*Math.pow(p.L,3)/(48*200000*1e5)).toFixed(2)+' mm';},{id:'f03',fn:function(p){var d=p.F*Math.pow(p.L,3)/(48*200000*1e5); var drop=Math.min(35,d*5); return '<line x1="20" y1="45" x2="340" y2="45" stroke="#2a3b40"/><path d="M40 45 Q180 '+(45+drop)+' 320 45" fill="none" stroke="#43c2cb" stroke-width="3"/><circle cx="180" cy="'+(45+drop)+'" r="4" fill="#eb9b4c"/>';}});
+set('r04',[{i:'i04z1',o:'o04z1',k:'z1'},{i:'i04z2',o:'o04z2',k:'z2'}],function(p){return (p.z2/p.z1).toFixed(2);},{id:'f04',fn:function(p){return '<circle cx="100" cy="45" r="'+(8+p.z1*0.4)+'" fill="none" stroke="#43c2cb"/><circle cx="260" cy="45" r="'+(8+p.z2*0.25)+'" fill="none" stroke="#eb9b4c"/><text x="100" y="50" text-anchor="middle" fill="#e3ecec" font-size="11">z1</text><text x="260" y="50" text-anchor="middle" fill="#e3ecec" font-size="11">z2</text>';}});
+set('r08',[{i:'i08r',o:'o08r',k:'r'},{i:'i08z',o:'o08z',k:'z'}],function(p){return (1/Math.sqrt(Math.pow(1-p.r*p.r,2)+Math.pow(2*p.z*p.r,2))).toFixed(2)+'x';},{id:'f08',fn:function(p){var pts=''; for(var i=0;i<=60;i++){var rr=0.2+i*1.8/60; var aa=1/Math.sqrt(Math.pow(1-rr*rr,2)+Math.pow(2*p.z*rr,2)); var x=30+i*5; var y=80-Math.min(aa,6)*10; pts+=(i===0?'M':'L')+x+' '+y;} return '<path d="'+pts+'" fill="none" stroke="#43c2cb" stroke-width="2"/>';}});
+</script>
 </body>
 </html>
