@@ -1601,6 +1601,30 @@
         "layer": "land",
         "history": "蒙斯梅格屬於英格蘭王國的重型攻城臼炮，歸入王室攻城砲兵，部署於圍城陣地，主要任務是攻擊城牆及堡壘。",
         "portrait": "portraits/feed-monsmeg.jpg"
+      },
+      "dossierUrl": "dossiers/1507-8b4e328394.json"
+    },
+    {
+      "id": "1004-澶州之戰",
+      "added": "2026-10-20T15:50:06.250Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1004,
+        "m": 11,
+        "name": "澶州之戰",
+        "theater": "黃河沿岸澶州（今河南濮陽一帶）",
+        "brief": "澶州之戰發生於景德元年，遼聖宗與蕭太后率軍南下，戰線由河北一路延伸至黃河沿岸；宋真宗赴澶州後雙方大軍對峙，最終促成澶淵之盟。宋軍所配的宋制霹靂砲，是弩砲與投石系統之外的重要早期火器。"
+      },
+      "kit": {
+        "name": "霹靂火砲",
+        "designation": "宋制霹靂砲",
+        "year": 1004,
+        "nation": "cn",
+        "layer": "land",
+        "history": "霹靂砲位於宋代遠程火力體系，以爆炸作用攻擊城防、人員與器材，通常配置於攻城或守城陣列，與弓弩及砲石相互配合。",
+        "portrait": "portraits/feed-3a9531.jpg"
       }
     }
   ]
