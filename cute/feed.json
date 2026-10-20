@@ -2582,6 +2582,28 @@
         "resultEn": "Because the question identifies the war with 2023, the complete chronicle covers October 7 through December 31, 2023. The war itself had not ended when this period closed. By the end of the year, Israel held positions in northern Gaza, along several principal corridors through Gaza City, and around the encirclement and penetration positions near Khan Younis, while maintaining a north-to-south operational system. Hamas had lost part of its central communications, command network, and ground equipment, but it could still use rockets, mortars, sniper fire, and small assaults from the northern edge and dispersed tunnel network. Israel announced the deaths of multiple commanders and the destruction of underground facilities, but the full organizational losses could not be independently verified in public. The cessation that began on November 30 broke down on December 1. No full ceasefire or political settlement existed by the end of the year. The military result for 2023 was that Israel regained strategic initiative and expanded ground control, while Hamas's cross-border offensive was checked but the organization was not eliminated. The year therefore ended with an interim operational balance rather than a final conclusion to the war.",
         "updated": "2026-10-19T00:35:03.335Z"
       }
+    },
+    {
+      "id": "1801-第一次巴巴利戰爭",
+      "added": "2026-10-20T10:41:55.588Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/zh-hk/戰爭列表",
+      "battle": {
+        "y": 1801,
+        "m": 5,
+        "name": "第一次巴巴利戰爭",
+        "theater": "地中海與北大西洋",
+        "brief": "第一次巴巴利戰爭是維基戰爭列表所列、始於一八零一年的近代海上衝突，起於美國拒絕巴巴利政權的進貢要求與航權糾紛。美國海軍巡航艦憲法號於一七九七年服役，正式登錄名稱為USS Constitution，並投入護航、巡邏與封鎖任務，反映美國遠洋海軍的部署能力。"
+      },
+      "kit": {
+        "name": "憲法號巡航艦",
+        "designation": "USS Constitution",
+        "year": 1797,
+        "nation": "us",
+        "layer": "sea",
+        "history": "隸屬美國海軍，屬早期大型帆船巡航艦兵力，負責遠洋航行、商船護航與戰區封鎖，並可搭載艦載火炮執行海上作戰。",
+        "portrait": "portraits/feed-ussconstitution.jpg"
+      }
     }
   ]
 }
