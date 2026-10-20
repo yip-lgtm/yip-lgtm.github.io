@@ -1,15 +1,24 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { postJsonOrThrow } from "./minimax.mjs";
+import { dossierFile } from "./split-dossiers.mjs";
 
 const key = process.env.MINIMAX_API_KEY;
 const out = process.env.FEED_OUT || "cute/feed.json";
+const dir = process.env.DOSSIER_DIR || "cute/dossiers";
 if (!key) {
   console.error("MINIMAX_API_KEY missing");
   process.exit(1);
 }
 
 const feed = JSON.parse(readFileSync(out, "utf8"));
-const item = (feed.items ?? []).find((it) => it.battle?.name && !it.dossier?.countries);
+// A campaign needs a dossier when it has no file of its own. The dossier
+// lives beside the feed rather than inside it: with a thousand campaigns
+// the feed would be tens of megabytes, and the site fetches it whole just to
+// list the battles.
+const hasDossier = (it) =>
+  Boolean(it.dossier?.countries) ||
+  Boolean(it.dossierUrl && existsSync(`${dir}/${dossierFile(it.id, it.battle?.y ?? it.kit?.year ?? 0)}`));
+const item = (feed.items ?? []).find((it) => it.battle?.name && !hasDossier(it));
 if (!item) {
   console.log("every campaign already has a dossier");
   process.exit(0);
@@ -103,8 +112,15 @@ if (!dossier) {
   process.exit(1);
 }
 
-item.dossier = dossier;
-item.dossier.updated = new Date().toISOString();
+dossier.updated = new Date().toISOString();
+mkdirSync(dir, { recursive: true });
+const file = dossierFile(item.id, item.battle?.y ?? item.kit?.year ?? 0);
+writeFileSync(
+  `${dir}/${file}`,
+  JSON.stringify({ id: item.id, battle: item.battle, kit: item.kit, ...dossier }, null, 1) + "\n",
+);
+item.dossierUrl = `dossiers/${file}`;
+delete item.dossier;
 writeFileSync(out, JSON.stringify(feed, null, 2) + "\n");
 const total = SECTIONS.map((k) => dossier[k] || "").join("").length;
-console.log(`dossier written for ${name}, ${total} chars`);
+console.log(`dossier written for ${name}, ${total} chars -> ${dir}/${file}`);

@@ -57,20 +57,33 @@ for (const c of commits) {
       const id = f.slice(15, -4);
       if (!seenPortrait.has(id)) { seenPortrait.add(id); day(c.date).portraits.push(id); }
     }
+    // A dossier is a file of its own now. The file is the event: it was
+    // written on a day, and it carries the battle it belongs to.
+    if (f.startsWith("cute/dossiers/") && f.endsWith(".json")) {
+      const doc = readAt(c.sha, f);
+      if (!doc || seenDossiers.has(doc.id)) continue;
+      seenDossiers.add(doc.id);
+      day(c.date).dossiers.push({
+        name: doc.battle?.name ?? "?",
+        year: doc.battle?.y ?? 0,
+        kit: doc.kit?.name ?? "",
+        chars: SECT.reduce((a, k) => a + (doc[k] || "").length, 0),
+      });
+    }
   }
   if (c.files.some((f) => f.endsWith("\tcute/feed.json"))) {
     const now = readAt(c.sha, "cute/feed.json");
     if (now) {
       for (const it of now.items ?? []) {
-        if (seenIds.has(it.id) && !(it.dossier?.countries && !seenDossiers.has(it.id))) continue;
+        if (seenIds.has(it.id)) continue;
         const e = { name: it.battle?.name ?? "?", year: it.battle?.y ?? "?", kit: it.kit?.name ?? "" };
+        // The dossier is counted from its own file, not from the feed.
         if (it.dossier?.countries) {
           if (seenDossiers.has(it.id)) continue;
           seenDossiers.add(it.id);
           e.chars = SECT.reduce((a, k) => a + (it.dossier[k] || "").length, 0);
           day(c.date).dossiers.push(e);
         } else {
-          if (seenIds.has(it.id)) continue;
           day(c.date).briefs.push(e);
         }
         seenIds.add(it.id);
