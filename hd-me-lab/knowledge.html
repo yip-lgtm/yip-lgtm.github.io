@@ -19,24 +19,19 @@ h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:900;margin:.2rem 0 .6rem}
 .toc a{font-size:.88rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px 4px 6px;background:var(--panel);display:inline-flex;gap:6px;align-items:center}
 .toc a:hover{border-color:var(--accent)}
 .toc span{font:600 .75rem "IBM Plex Mono",monospace;color:var(--accent);background:var(--chip);border-radius:999px;padding:1px 7px}
-section{margin-top:48px}
+section{margin-top:40px}
 .sec-no{font:600 .8rem "IBM Plex Mono",monospace;color:var(--muted);letter-spacing:.1em}
-h2{font-size:1.45rem;font-weight:900;margin:.3rem 0 .6rem}
-.bench{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;margin-top:12px}
-.controls{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:flex-end;margin-bottom:12px}
-.ctl{display:grid;gap:2px;min-width:180px;flex:1}
-.ctl label{font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between}
-.ctl output{font-family:"IBM Plex Mono",monospace;font-weight:600}
+h2{font-size:1.35rem;font-weight:900;margin:.3rem 0 .4rem}
+.bench{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:10px}
+.controls{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-end;margin-bottom:10px}
+.ctl{display:grid;gap:2px;min-width:160px;flex:1}
+.ctl label{font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between}
 input[type=range]{width:100%;accent-color:var(--accent)}
-.fig svg{width:100%;height:auto;display:block}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
-.card{border:1px solid var(--line);border-radius:8px;padding:12px 14px;background:var(--chip)}
-.card .k{font-size:.82rem;color:var(--muted)}
-.card .v{font:600 1.4rem "IBM Plex Mono",monospace}
-table{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:8px}
-th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-th{color:var(--muted);font-weight:500;font-size:.8rem}
-.note{font-size:.88rem;color:var(--muted);margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:10px}
+.card{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--chip)}
+.card .k{font-size:.78rem;color:var(--muted)}
+.card .v{font:600 1.25rem "IBM Plex Mono",monospace}
+.note{font-size:.82rem;color:var(--muted);margin-top:6px}
 </style>
 </head>
 <body>
@@ -44,204 +39,102 @@ th{color:var(--muted);font-weight:500;font-size:.8rem}
 <header>
   <div class="eyebrow">Self-study · Interactive</div>
   <h1>機械工程知識地圖</h1>
-  <p class="lede">從傳統基礎到現代 CAE。看不懂的地方，拖動參數直到懂為止。</p>
-  <nav class="toc" aria-label="目錄">
-    <a href="#base"><span>01</span>基礎底座</a>
-    <a href="#spring"><span>02</span>彈簧</a>
-    <a href="#beam"><span>03</span>簡支樑</a>
-    <a href="#gear"><span>04</span>齒輪比</a>
-    <a href="#kt"><span>05</span>應力集中</a>
-    <a href="#bernoulli"><span>06</span>伯努利</a>
-    <a href="#bolt"><span>07</span>螺栓預緊</a>
-    <a href="#vib"><span>08</span>共振</a>
-    <a href="#fatigue"><span>09</span>疲勞</a>
-    <a href="#fem"><span>10</span>有限元</a>
-    <a href="#map"><span>11</span>應用地圖</a>
-  </nav>
+  <p class="lede">31 個單元。拖動參數直到懂為止。</p>
+  <nav class="toc" id="toc"></nav>
 </header>
-
-<section id="base">
-  <div class="sec-no">01 / 基礎 · 60 min</div>
-  <h2>傳統機械與經典力學</h2>
-  <p>機原講「點解運動」，材力講「點解承載」，機設講「點解落地」。三本書加手冊，就是日常設計的底。</p>
-  <div class="cards">
-    <div class="card"><div class="k">《機械原理》孫桓</div><div class="v">機構運動學</div><div class="note">齒輪、連桿、凸輪</div></div>
-    <div class="card"><div class="k">《材料力學》劉鴻文</div><div class="v">強度剛度</div><div class="note">單杆件拉壓剪扭彎</div></div>
-    <div class="card"><div class="k">《機械設計》濮良貴</div><div class="v">標準件選型</div><div class="note">螺栓、軸承、帶傳動</div></div>
-    <div class="card"><div class="k">《機械設計手冊》聞邦業</div><div class="v">查表</div><div class="note">公差、標準件、GB</div></div>
-  </div>
-</section>
-
-<section id="spring">
-  <div class="sec-no">02 / 彈簧</div>
-  <h2>F = kx</h2>
-  <p>拖動剛度同位移，看力點變。</p>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>k (N/mm)<output id="ko">10</output></label><input id="k" type="range" min="2" max="40" value="10" step="1"></div>
-      <div class="ctl"><label>x (mm)<output id="xo">5</output></label><input id="x" type="range" min="0" max="20" value="5" step="0.5"></div>
-    </div>
-    <div class="fig"><svg id="svgSpring" viewBox="0 0 480 120"></svg></div>
-    <div class="cards"><div class="card"><div class="k">F</div><div class="v" id="fv">50 N</div></div></div>
-  </div>
-</section>
-
-<section id="beam">
-  <div class="sec-no">03 / 樑</div>
-  <h2>簡支樑中間撞度 δ = FL³/(48EI)</h2>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>F (N)<output id="fo">1000</output></label><input id="f" type="range" min="200" max="4000" value="1000" step="100"></div>
-      <div class="ctl"><label>L (mm)<output id="lo">800</output></label><input id="l" type="range" min="400" max="1600" value="800" step="50"></div>
-    </div>
-    <div class="fig"><svg id="svgBeam" viewBox="0 0 520 140"></svg></div>
-    <div class="cards"><div class="card"><div class="k">δ</div><div class="v" id="dv">—</div></div></div>
-    <p class="note">E=200 GPa，I=1×10⁵ mm⁴。示意而已。</p>
-  </div>
-</section>
-
-<section id="gear">
-  <div class="sec-no">04 / 齒輪</div>
-  <h2>齒輪比 i = z2/z1</h2>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>z1<input id="z1" type="range" min="12" max="40" value="20" step="1"><output id="z1o">20</output></label></div>
-      <div class="ctl"><label>z2<input id="z2" type="range" min="20" max="80" value="40" step="1"><output id="z2o">40</output></label></div>
-    </div>
-    <div class="cards">
-      <div class="card"><div class="k">i</div><div class="v" id="io">2.00</div></div>
-      <div class="card"><div class="k">n2/n1</div><div class="v" id="no">0.50</div></div>
-      <div class="card"><div class="k">T2/T1</div><div class="v" id="to">2.00</div></div>
-    </div>
-  </div>
-</section>
-
-<section id="kt">
-  <div class="sec-no">05 / 應力集中</div>
-  <h2>孔邊應力上升</h2>
-  <p>拖動孔徑與板寬比，看 Kt 概念。孔越大（相對寬度），集中越嚴重。</p>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>d/w 比例<output id="kto">0.3</output></label><input id="kt" type="range" min="0.1" max="0.6" value="0.3" step="0.05"></div>
-    </div>
-    <div class="cards">
-      <div class="card"><div class="k">Kt 概念</div><div class="v" id="ktv">—</div></div>
-    </div>
-    <p class="note">簡化：Kt ≈ 2 + 2*(d/w)。實際要查手冊或用有限元。</p>
-  </div>
-</section>
-
-<section id="bernoulli">
-  <div class="sec-no">06 / 流體</div>
-  <h2>伯努利 — 速度上升，壓力下降</h2>
-  <p>拖動速度，看動壓點變。管道收細時，速度升、壓力降。</p>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>v (m/s)<output id="vo">5</output></label><input id="v" type="range" min="1" max="20" value="5" step="0.5"></div>
-    </div>
-    <div class="cards">
-      <div class="card"><div class="k">動壓 0.5ρv²</div><div class="v" id="dv2">—</div></div>
-    </div>
-    <p class="note">ρ ≈ 1000 kg/m³（水）。靜壓 + 動壓 + 位置 = 常數（忽略損失）。</p>
-  </div>
-</section>
-
-<section id="bolt">
-  <div class="sec-no">07 / 螺栓</div>
-  <h2>預緊力 ≈ 扭矩 / (K·d)</h2>
-  <p>拖動扭矩同螺紋直徑，看預緊力。K 係摩擦系數（約 0.2）。</p>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>T (N·m)<output id="To">20</output></label><input id="T" type="range" min="5" max="80" value="20" step="1"></div>
-      <div class="ctl"><label>d (mm)<output id="do">10</output></label><input id="d" type="range" min="6" max="20" value="10" step="1"></div>
-    </div>
-    <div class="cards">
-      <div class="card"><div class="k">Fi 預緊</div><div class="v" id="Fiv">—</div></div>
-    </div>
-    <p class="note">K=0.2。實際要看潤滑、螺紋類型同螺母面。</p>
-  </div>
-</section>
-
-<section id="vib">
-  <div class="sec-no">08 / 振動</div>
-  <h2>共振放大</h2>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>ω/ωₙ<output id="ro">0.8</output></label><input id="r" type="range" min="0.2" max="2.0" value="0.8" step="0.05"></div>
-      <div class="ctl"><label>ζ<output id="zo">0.05</output></label><input id="z" type="range" min="0.01" max="0.3" value="0.05" step="0.01"></div>
-    </div>
-    <div class="fig"><svg id="svgVib" viewBox="0 0 480 160"></svg></div>
-    <div class="cards"><div class="card"><div class="k">放大</div><div class="v" id="av">—</div></div></div>
-  </div>
-</section>
-
-<section id="fatigue">
-  <div class="sec-no">09 / 疲勞</div>
-  <h2>S-N 概念</h2>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>σa (MPa)<output id="sao">200</output></label><input id="sa" type="range" min="50" max="400" value="200" step="10"></div>
-    </div>
-    <div class="fig"><svg id="svgFat" viewBox="0 0 480 140"></svg></div>
-    <div class="cards"><div class="card"><div class="k">N</div><div class="v" id="nv">—</div></div></div>
-  </div>
-</section>
-
-<section id="fem">
-  <div class="sec-no">10 / 有限元</div>
-  <h2>網格概念</h2>
-  <div class="bench">
-    <div class="controls">
-      <div class="ctl"><label>網格數<output id="mo">4</output></label><input id="mesh" type="range" min="2" max="12" value="4" step="1"></div>
-    </div>
-    <div class="fig"><svg id="svgMesh" viewBox="0 0 480 120"></svg></div>
-  </div>
-</section>
-
-<section id="map">
-  <div class="sec-no">11 / 應用</div>
-  <h2>閱讀組合</h2>
-  <table>
-    <tr><th>目標</th><th>組合</th><th>解決</th></tr>
-    <tr><td>考研／本科</td><td>機原 + 機設 + 材力</td><td>基礎理論</td></tr>
-    <tr><td>非標自動化</td><td>手冊 + 材力 + ANSYS</td><td>標準件 + 校核</td></tr>
-    <tr><td>高端研發</td><td>振動 + 疲勞 + FEM + ABAQUS</td><td>共振、壽命、非線性</td></tr>
-    <tr><td>流體熱能</td><td>流體 + CFD</td><td>泵閥、流道</td></tr>
-  </table>
-  <p class="note">所有數值都係簡化示意。</p>
-  <p style="margin-top:16px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← Lab</a></p>
-</section>
+<div id="units"></div>
+<p style="margin-top:32px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← Lab</a></p>
 </div>
 
 <script>
-function spring(){const k=+kEl.value,x=+xEl.value;ko.textContent=k;xo.textContent=x;const F=k*x;fv.textContent=F.toFixed(0)+' N';const w=40+x*8;svgSpring.innerHTML=`<rect x="40" y="40" width="${w}" height="40" rx="4" fill="#1d2c30" stroke="#43c2cb"/><text x="${40+w/2}" y="66" text-anchor="middle" fill="#e3ecec" font-size="14">x=${x}</text>`;}
-function beam(){const F=+fEl.value,L=+lEl.value;fo.textContent=F;lo.textContent=L;const d=F*Math.pow(L,3)/(48*200000*1e5);dv.textContent=d.toFixed(2)+' mm';const mid=260,drop=Math.min(50,d*8);svgBeam.innerHTML=`<line x1="40" y1="60" x2="480" y2="60" stroke="#2a3b40"/><path d="M60 60 Q${mid} ${60+drop} 460 60" fill="none" stroke="#43c2cb" stroke-width="3"/><circle cx="${mid}" cy="${60+drop}" r="4" fill="#eb9b4c"/>`;}
-function gear(){const z1=+z1El.value,z2=+z2El.value;z1o.textContent=z1;z2o.textContent=z2;const i=z2/z1;io.textContent=i.toFixed(2);no.textContent=(1/i).toFixed(2);to.textContent=i.toFixed(2);}
-function ktFn(){const r=+ktEl.value;kto.textContent=r.toFixed(2);const Kt=2+2*r;ktv.textContent=Kt.toFixed(2);}
-function bern(){const v=+vEl.value;vo.textContent=v;const q=0.5*1000*v*v;dv2.textContent=(q/1000).toFixed(1)+' kPa';}
-function bolt(){const T=+TEl.value,d=+dEl.value;To.textContent=T;doEl.textContent=d;const Fi=T/(0.2*(d/1000));Fiv.textContent=(Fi/1000).toFixed(1)+' kN';}
-function vib(){const r=+rEl.value,z=+zEl.value;ro.textContent=r.toFixed(2);zo.textContent=z.toFixed(2);const A=1/Math.sqrt(Math.pow(1-r*r,2)+Math.pow(2*z*r,2));av.textContent=A.toFixed(2)+'×';let pts='';for(let i=0;i<=100;i++){const rr=0.2+i*1.8/100;const aa=1/Math.sqrt(Math.pow(1-rr*rr,2)+Math.pow(2*z*rr,2));const x=40+i*4;const y=130-Math.min(aa,8)*12;pts+=(i===0?'M':'L')+x+' '+y;}const cx=40+(r-0.2)/1.8*400;const cy=130-Math.min(A,8)*12;svgVib.innerHTML=`<path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/><circle cx="${cx}" cy="${cy}" r="5" fill="#eb9b4c"/>`;}
-function fat(){const sa=+saEl.value;sao.textContent=sa;const N=1e14/Math.pow(sa,3);nv.textContent=N.toExponential(1);let pts='';for(let i=0;i<=100;i++){const s=50+i*3.5;const n=1e14/Math.pow(s,3);const x=40+i*4;const y=120-Math.log10(n)*8;pts+=(i===0?'M':'L')+x+' '+y;}const cx=40+(sa-50)/350*400;const cy=120-Math.log10(N)*8;svgFat.innerHTML=`<path d="${pts}" fill="none" stroke="#43c2cb" stroke-width="2"/><circle cx="${cx}" cy="${cy}" r="5" fill="#eb9b4c"/>`;}
-function mesh(){const n=+meshEl.value;mo.textContent=n;let g='';const w=400/n;for(let i=0;i<=n;i++){const x=40+i*w;g+=`<line x1="${x}" y1="30" x2="${x}" y2="90" stroke="#2a3b40"/>`;}for(let j=0;j<=2;j++){const y=30+j*30;g+=`<line x1="40" y1="${y}" x2="440" y2="${y}" stroke="#2a3b40"/>`;}svgMesh.innerHTML=g;}
-const kEl=document.getElementById('k'),xEl=document.getElementById('x'),ko=document.getElementById('ko'),xo=document.getElementById('xo'),fv=document.getElementById('fv'),svgSpring=document.getElementById('svgSpring');
-const fEl=document.getElementById('f'),lEl=document.getElementById('l'),fo=document.getElementById('fo'),lo=document.getElementById('lo'),dv=document.getElementById('dv'),svgBeam=document.getElementById('svgBeam');
-const z1El=document.getElementById('z1'),z2El=document.getElementById('z2'),z1o=document.getElementById('z1o'),z2o=document.getElementById('z2o'),io=document.getElementById('io'),no=document.getElementById('no'),to=document.getElementById('to');
-const ktEl=document.getElementById('kt'),kto=document.getElementById('kto'),ktv=document.getElementById('ktv');
-const vEl=document.getElementById('v'),vo=document.getElementById('vo'),dv2=document.getElementById('dv2');
-const TEl=document.getElementById('T'),dEl=document.getElementById('d'),To=document.getElementById('To'),doEl=document.getElementById('do'),Fiv=document.getElementById('Fiv');
-const rEl=document.getElementById('r'),zEl=document.getElementById('z'),ro=document.getElementById('ro'),zo=document.getElementById('zo'),av=document.getElementById('av'),svgVib=document.getElementById('svgVib');
-const saEl=document.getElementById('sa'),sao=document.getElementById('sao'),nv=document.getElementById('nv'),svgFat=document.getElementById('svgFat');
-const meshEl=document.getElementById('mesh'),mo=document.getElementById('mo'),svgMesh=document.getElementById('svgMesh');
-[kEl,xEl].forEach(e=>e.addEventListener('input',spring));
-[fEl,lEl].forEach(e=>e.addEventListener('input',beam));
-[z1El,z2El].forEach(e=>e.addEventListener('input',gear));
-ktEl.addEventListener('input',ktFn);
-vEl.addEventListener('input',bern);
-[TEl,dEl].forEach(e=>e.addEventListener('input',bolt));
-[rEl,zEl].forEach(e=>e.addEventListener('input',vib));
-saEl.addEventListener('input',fat);
-meshEl.addEventListener('input',mesh);
-spring();beam();gear();ktFn();bern();bolt();vib();fat();mesh();
+const units = [
+  {id:'u01', no:'01', title:'基礎底座', desc:'機原、材力、機設、手冊', type:'cards', items:[['機原','運動學'],['材力','強度剛度'],['機設','標準件'],['手冊','查表']]},
+  {id:'u02', no:'02', title:'彈簧 F=kx', desc:'拖動 k 同 x', type:'slider', sliders:[{id:'k',min:2,max:40,v:10,label:'k'},{id:'x',min:0,max:20,v:5,label:'x'}], calc:(p)=>`F = ${(p.k*p.x).toFixed(0)} N`},
+  {id:'u03', no:'03', title:'簡支樑撞度', desc:'δ = FL³/(48EI)', type:'slider', sliders:[{id:'F',min:200,max:4000,v:1000,label:'F'},{id:'L',min:400,max:1600,v:800,label:'L'}], calc:(p)=>`δ = ${(p.F*Math.pow(p.L,3)/(48*200000*1e5)).toFixed(2)} mm`},
+  {id:'u04', no:'04', title:'齒輪比', desc:'i = z2/z1', type:'slider', sliders:[{id:'z1',min:12,max:40,v:20,label:'z1'},{id:'z2',min:20,max:80,v:40,label:'z2'}], calc:(p)=>`i=${(p.z2/p.z1).toFixed(2)}  n2/n1=${(p.z1/p.z2).toFixed(2)}`},
+  {id:'u05', no:'05', title:'應力集中 Kt', desc:'孔越大集中越嚴重', type:'slider', sliders:[{id:'dw',min:0.1,max:0.6,v:0.3,step:0.05,label:'d/w'}], calc:(p)=>`Kt ≈ ${(2+2*p.dw).toFixed(2)}`},
+  {id:'u06', no:'06', title:'伯努利動壓', desc:'0.5ρv²', type:'slider', sliders:[{id:'v',min:1,max:20,v:5,step:0.5,label:'v m/s'}], calc:(p)=>`動壓 = ${(0.5*1000*p.v*p.v/1000).toFixed(1)} kPa`},
+  {id:'u07', no:'07', title:'螺栓預緊', desc:'Fi ≈ T/(K·d)', type:'slider', sliders:[{id:'T',min:5,max:80,v:20,label:'T N·m'},{id:'d',min:6,max:20,v:10,label:'d mm'}], calc:(p)=>`Fi ≈ ${(p.T/(0.2*(p.d/1000))/1000).toFixed(1)} kN`},
+  {id:'u08', no:'08', title:'共振放大', desc:'頻率比 + 阻尼', type:'slider', sliders:[{id:'r',min:0.2,max:2,v:0.8,step:0.05,label:'ω/ωn'},{id:'z',min:0.01,max:0.3,v:0.05,step:0.01,label:'ζ'}], calc:(p)=>`放大 = ${(1/Math.sqrt(Math.pow(1-p.r*p.r,2)+Math.pow(2*p.z*p.r,2))).toFixed(2)}×`},
+  {id:'u09', no:'09', title:'疲勞 S-N', desc:'N = C/σaᵇ', type:'slider', sliders:[{id:'sa',min:50,max:400,v:200,step:10,label:'σa MPa'}], calc:(p)=>`N ≈ ${(1e14/Math.pow(p.sa,3)).toExponential(1)}`},
+  {id:'u10', no:'10', title:'網格概念', desc:'網格越細越準，計算越慢', type:'slider', sliders:[{id:'n',min:2,max:12,v:4,label:'網格數'}], calc:(p)=>`${p.n}×2 單元`},
+  {id:'u11', no:'11', title:'熱膨脹', desc:'δL = α L ΔT', type:'slider', sliders:[{id:'L',min:100,max:2000,v:500,label:'L mm'},{id:'dT',min:10,max:200,v:50,label:'ΔT °C'}], calc:(p)=>`δL ≈ ${(12e-6*p.L*p.dT).toFixed(2)} mm (鋼)`},
+  {id:'u12', no:'12', title:'扭轉角', desc:'θ = TL/(GJ)', type:'slider', sliders:[{id:'T',min:10,max:200,v:50,label:'T N·m'},{id:'L',min:100,max:1000,v:300,label:'L mm'}], calc:(p)=>`θ ≈ ${(p.T*p.L/(80e3*1e5)*1000).toFixed(2)} °`},
+  {id:'u13', no:'13', title:'安全係數', desc:'n = σy/σ', type:'slider', sliders:[{id:'sy',min:200,max:800,v:400,label:'σy'},{id:'s',min:50,max:400,v:150,label:'σ'}], calc:(p)=>`n = ${(p.sy/p.s).toFixed(2)}`},
+  {id:'u14', no:'14', title:'帶傳動比', desc:'i = D2/D1', type:'slider', sliders:[{id:'D1',min:50,max:200,v:80,label:'D1'},{id:'D2',min:80,max:400,v:160,label:'D2'}], calc:(p)=>`i = ${(p.D2/p.D1).toFixed(2)}`},
+  {id:'u15', no:'15', title:'軸承壽命 L10', desc:'L10 ∝ (C/P)³', type:'slider', sliders:[{id:'C',min:5,max:50,v:20,label:'C kN'},{id:'P',min:1,max:20,v:5,label:'P kN'}], calc:(p)=>`L10 ≈ ${(Math.pow(p.C/p.P,3)*1e6).toExponential(1)} 轉`},
+  {id:'u16', no:'16', title:'雷諾數', desc:'Re = ρvD/μ', type:'slider', sliders:[{id:'v',min:0.1,max:5,v:1,step:0.1,label:'v'},{id:'D',min:10,max:100,v:25,label:'D mm'}], calc:(p)=>`Re ≈ ${(1000*p.v*(p.D/1000)/0.001).toFixed(0)}`},
+  {id:'u17', no:'17', title:'管道壓降', desc:'Δp ∝ f L v² / D', type:'slider', sliders:[{id:'v',min:1,max:10,v:3,label:'v'},{id:'L',min:5,max:50,v:20,label:'L m'}], calc:(p)=>`Δp ≈ ${(0.02*(p.L/(0.05))*1000*p.v*p.v/2/1000).toFixed(1)} kPa`},
+  {id:'u18', no:'18', title:'彈簧能量', desc:'U = 0.5 k x²', type:'slider', sliders:[{id:'k',min:5,max:50,v:15,label:'k'},{id:'x',min:1,max:15,v:5,label:'x'}], calc:(p)=>`U = ${(0.5*p.k*p.x*p.x).toFixed(1)} N·mm`},
+  {id:'u19', no:'19', title:'應力-應變', desc:'E = σ/ε', type:'slider', sliders:[{id:'s',min:50,max:400,v:150,label:'σ MPa'}], calc:(p)=>`ε = ${(p.s/200000*100).toFixed(3)} %`},
+  {id:'u20', no:'20', title:'剪力/彎矩', desc:'簡支樑中間 M = FL/4', type:'slider', sliders:[{id:'F',min:100,max:2000,v:500,label:'F'},{id:'L',min:200,max:1000,v:600,label:'L'}], calc:(p)=>`M = ${(p.F*p.L/4/1000).toFixed(1)} N·m`},
+  {id:'u21', no:'21', title:'凸輪升程', desc:'簡化升程曲線', type:'slider', sliders:[{id:'h',min:5,max:30,v:15,label:'h mm'},{id:'b',min:60,max:180,v:120,label:'角度'}], calc:(p)=>`最大升程 ${p.h} mm`},
+  {id:'u22', no:'22', title:'四桿機構', desc:'曲柄角度影響位置', type:'slider', sliders:[{id:'th',min:0,max:360,v:45,label:'角度'}], calc:(p)=>`輸出角 ≈ ${(p.th*0.6).toFixed(0)}°`},
+  {id:'u23', no:'23', title:'接觸應力', desc:'Hertz 簡化', type:'slider', sliders:[{id:'F',min:100,max:2000,v:500,label:'F'},{id:'R',min:5,max:50,v:20,label:'R mm'}], calc:(p)=>`σmax ≈ ${(Math.sqrt(p.F/p.R)*10).toFixed(0)} MPa`},
+  {id:'u24', no:'24', title:'疲勞平均應力', desc:'Goodman 概念', type:'slider', sliders:[{id:'sa',min:50,max:300,v:100,label:'σa'},{id:'sm',min:0,max:300,v:50,label:'σm'}], calc:(p)=>`等效 ≈ ${(p.sa/(1-p.sm/400)).toFixed(0)} MPa`},
+  {id:'u25', no:'25', title:'公差堆疊', desc:'線性堆疊', type:'slider', sliders:[{id:'t1',min:0.01,max:0.2,v:0.05,step:0.01,label:'t1'},{id:'t2',min:0.01,max:0.2,v:0.05,step:0.01,label:'t2'}], calc:(p)=>`總公差 ≈ ±${((p.t1+p.t2)/2).toFixed(3)}`},
+  {id:'u26', no:'26', title:'自然頻率', desc:'簡支樑 fn ∝ 1/L²', type:'slider', sliders:[{id:'L',min:300,max:1500,v:600,label:'L mm'}], calc:(p)=>`fn ≈ ${(200/Math.pow(p.L/1000,2)).toFixed(1)} Hz`},
+  {id:'u27', no:'27', title:'流體粘度', desc:'μ 影響 Re', type:'slider', sliders:[{id:'mu',min:0.5,max:5,v:1,step:0.1,label:'μ ×10⁻³'}], calc:(p)=>`Re ∝ 1/μ → ${(1000/p.mu).toFixed(0)}`},
+  {id:'u28', no:'28', title:'熱傳導', desc:'Q = kAΔT/L', type:'slider', sliders:[{id:'dT',min:10,max:100,v:40,label:'ΔT'},{id:'L',min:5,max:50,v:20,label:'L mm'}], calc:(p)=>`Q ≈ ${(50*0.01*p.dT/(p.L/1000)).toFixed(0)} W`},
+  {id:'u29', no:'29', title:'網格收斂', desc:'細一倍，誤差降', type:'slider', sliders:[{id:'n',min:1,max:5,v:2,label:'細分次數'}], calc:(p)=>`誤差 ≈ ${(10/Math.pow(2,p.n)).toFixed(2)}%`},
+  {id:'u30', no:'30', title:'應用地圖', desc:'不同目標閱讀組合', type:'cards', items:[['考研','機原+機設+材力'],['自動化','手冊+ANSYS'],['高端','振動+疲勞+ABAQUS'],['流體','流體+CFD']]},
+  {id:'u31', no:'31', title:'記住', desc:'所有數值都係簡化示意，不是設計值。', type:'cards', items:[['理論','先於按鈕'],['手冊','查表'],['軟體','驗證'],['實驗','最後']]}
+];
+
+const toc = document.getElementById('toc');
+const container = document.getElementById('units');
+units.forEach(u => {
+  const a = document.createElement('a');
+  a.href = '#'+u.id;
+  a.innerHTML = `<span>${u.no}</span>${u.title}`;
+  toc.appendChild(a);
+
+  const sec = document.createElement('section');
+  sec.id = u.id;
+  sec.innerHTML = `<div class="sec-no">${u.no}</div><h2>${u.title}</h2><p>${u.desc}</p>`;
+  if (u.type === 'cards') {
+    const cards = document.createElement('div');
+    cards.className = 'cards';
+    u.items.forEach(([k,v]) => {
+      cards.innerHTML += `<div class="card"><div class="k">${k}</div><div class="v">${v}</div></div>`;
+    });
+    sec.appendChild(cards);
+  } else if (u.type === 'slider') {
+    const bench = document.createElement('div');
+    bench.className = 'bench';
+    const ctrls = document.createElement('div');
+    ctrls.className = 'controls';
+    const outs = {};
+    u.sliders.forEach(s => {
+      const d = document.createElement('div');
+      d.className = 'ctl';
+      d.innerHTML = `<label>${s.label}<output id="o_${u.id}_${s.id}">${s.v}</output></label><input type="range" id="i_${u.id}_${s.id}" min="${s.min}" max="${s.max}" value="${s.v}" step="${s.step||1}">`;
+      ctrls.appendChild(d);
+    });
+    const res = document.createElement('div');
+    res.className = 'cards';
+    res.innerHTML = `<div class="card"><div class="k">結果</div><div class="v" id="r_${u.id}"></div></div>`;
+    bench.appendChild(ctrls);
+    bench.appendChild(res);
+    sec.appendChild(bench);
+
+    function update() {
+      const p = {};
+      u.sliders.forEach(s => {
+        const inp = document.getElementById('i_'+u.id+'_'+s.id);
+        const out = document.getElementById('o_'+u.id+'_'+s.id);
+        p[s.id] = +inp.value;
+        out.textContent = inp.value;
+      });
+      document.getElementById('r_'+u.id).textContent = u.calc(p);
+    }
+    u.sliders.forEach(s => {
+      document.getElementById('i_'+u.id+'_'+s.id).addEventListener('input', update);
+    });
+    setTimeout(update, 0);
+  }
+  container.appendChild(sec);
+});
 </script>
 </body>
 </html>
