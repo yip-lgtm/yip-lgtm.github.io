@@ -16,14 +16,13 @@ header{padding:32px 0 8px}
 h1{font-size:clamp(1.6rem,6vw,2.6rem);font-weight:900;margin:.2rem 0 .4rem}
 .lede{color:var(--muted);margin:0 0 16px}
 .toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-.toc a{font-size:.9rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:10px 14px 10px 10px;background:var(--panel);display:inline-flex;gap:6px;align-items:center;min-height:44px}
+.toc a{font-size:.9rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:var(--panel);display:inline-block;min-height:44px}
 .toc a:active{border-color:var(--accent)}
-.toc span{font:600 .75rem "IBM Plex Mono",monospace;color:var(--accent);background:var(--chip);border-radius:999px;padding:2px 8px}
-section{margin-top:36px;scroll-margin-top:20px}
+section{margin-top:40px;scroll-margin-top:16px}
 .sec-no{font:600 .8rem "IBM Plex Mono",monospace;color:var(--muted)}
 h2{font-size:1.4rem;font-weight:900;margin:.2rem 0 .4rem}
 .bench{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:10px}
-.ctl{margin-bottom:12px}
+.ctl{margin-bottom:14px}
 .ctl label{font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between;margin-bottom:4px}
 input[type=range]{width:100%;accent-color:var(--accent);height:40px}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
@@ -37,101 +36,148 @@ input[type=range]{width:100%;accent-color:var(--accent);height:40px}
 <header>
   <div class="eyebrow">Self-study</div>
   <h1>機械工程知識地圖</h1>
-  <p class="lede">31 個單元。按目錄跳轉，拖動參數即時更新。</p>
-  <nav class="toc" id="toc"></nav>
+  <p class="lede">31 個單元。按目錄跳轉。</p>
+  <nav class="toc">
+    <a href="#u01">01 基礎</a>
+    <a href="#u02">02 彈簧</a>
+    <a href="#u03">03 樑</a>
+    <a href="#u04">04 齒輪</a>
+    <a href="#u05">05 集中</a>
+    <a href="#u06">06 伯努利</a>
+    <a href="#u07">07 螺栓</a>
+    <a href="#u08">08 共振</a>
+    <a href="#u09">09 疲勞</a>
+    <a href="#u10">10 網格</a>
+    <a href="#u11">11 熱膨脹</a>
+    <a href="#u12">12 扭轉</a>
+    <a href="#u13">13 安全係數</a>
+    <a href="#u14">14 帶傳動</a>
+    <a href="#u15">15 軸承</a>
+    <a href="#u16">16 雷諾數</a>
+    <a href="#u17">17 壓降</a>
+    <a href="#u18">18 能量</a>
+    <a href="#u19">19 應變</a>
+    <a href="#u20">20 彎矩</a>
+    <a href="#u21">21 凸輪</a>
+    <a href="#u22">22 四桿</a>
+    <a href="#u23">23 接觸</a>
+    <a href="#u24">24 Goodman</a>
+    <a href="#u25">25 公差</a>
+    <a href="#u26">26 頻率</a>
+    <a href="#u27">27 粘度</a>
+    <a href="#u28">28 熱傳</a>
+    <a href="#u29">29 收斂</a>
+    <a href="#u30">30 應用</a>
+    <a href="#u31">31 記住</a>
+  </nav>
 </header>
-<div id="units"></div>
+
+<section id="u01"><div class="sec-no">01</div><h2>基礎底座</h2><p>機原、材力、機設、手冊</p><div class="cards"><div class="card"><div class="k">機原</div><div class="v">運動學</div></div><div class="card"><div class="k">材力</div><div class="v">強度剛度</div></div><div class="card"><div class="k">機設</div><div class="v">標準件</div></div><div class="card"><div class="k">手冊</div><div class="v">查表</div></div></div></section>
+
+<section id="u02"><div class="sec-no">02</div><h2>彈簧 F=kx</h2><p>拖動 k 同 x</p><div class="bench"><div class="ctl"><label>k <output id="o02k">10</output></label><input type="range" id="i02k" min="2" max="40" value="10"></div><div class="ctl"><label>x <output id="o02x">5</output></label><input type="range" id="i02x" min="0" max="20" value="5"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r02"></div></div></div></div></section>
+
+<section id="u03"><div class="sec-no">03</div><h2>簡支樑撞度</h2><p>delta = FL^3/(48EI)</p><div class="bench"><div class="ctl"><label>F <output id="o03F">1000</output></label><input type="range" id="i03F" min="200" max="4000" value="1000" step="100"></div><div class="ctl"><label>L <output id="o03L">800</output></label><input type="range" id="i03L" min="400" max="1600" value="800" step="50"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r03"></div></div></div></div></section>
+
+<section id="u04"><div class="sec-no">04</div><h2>齒輪比</h2><p>i = z2/z1</p><div class="bench"><div class="ctl"><label>z1 <output id="o04z1">20</output></label><input type="range" id="i04z1" min="12" max="40" value="20"></div><div class="ctl"><label>z2 <output id="o04z2">40</output></label><input type="range" id="i04z2" min="20" max="80" value="40"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r04"></div></div></div></div></section>
+
+<section id="u05"><div class="sec-no">05</div><h2>應力集中</h2><p>Kt 概念</p><div class="bench"><div class="ctl"><label>d/w <output id="o05dw">0.3</output></label><input type="range" id="i05dw" min="0.1" max="0.6" value="0.3" step="0.05"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r05"></div></div></div></div></section>
+
+<section id="u06"><div class="sec-no">06</div><h2>伯努利</h2><p>動壓 0.5 rho v^2</p><div class="bench"><div class="ctl"><label>v <output id="o06v">5</output></label><input type="range" id="i06v" min="1" max="20" value="5" step="0.5"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r06"></div></div></div></div></section>
+
+<section id="u07"><div class="sec-no">07</div><h2>螺栓預緊</h2><p>Fi ~ T/(0.2 d)</p><div class="bench"><div class="ctl"><label>T <output id="o07T">20</output></label><input type="range" id="i07T" min="5" max="80" value="20"></div><div class="ctl"><label>d <output id="o07d">10</output></label><input type="range" id="i07d" min="6" max="20" value="10"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r07"></div></div></div></div></section>
+
+<section id="u08"><div class="sec-no">08</div><h2>共振放大</h2><p>頻率比 + 阻尼</p><div class="bench"><div class="ctl"><label>r <output id="o08r">0.8</output></label><input type="range" id="i08r" min="0.2" max="2" value="0.8" step="0.05"></div><div class="ctl"><label>z <output id="o08z">0.05</output></label><input type="range" id="i08z" min="0.01" max="0.3" value="0.05" step="0.01"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r08"></div></div></div></div></section>
+
+<section id="u09"><div class="sec-no">09</div><h2>疲勞 S-N</h2><p>N = C / sa^3</p><div class="bench"><div class="ctl"><label>sa <output id="o09sa">200</output></label><input type="range" id="i09sa" min="50" max="400" value="200" step="10"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r09"></div></div></div></div></section>
+
+<section id="u10"><div class="sec-no">10</div><h2>網格概念</h2><p>網格越細越準</p><div class="bench"><div class="ctl"><label>n <output id="o10n">4</output></label><input type="range" id="i10n" min="2" max="12" value="4"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r10"></div></div></div></div></section>
+
+<section id="u11"><div class="sec-no">11</div><h2>熱膨脹</h2><p>dL = a L dT</p><div class="bench"><div class="ctl"><label>L <output id="o11L">500</output></label><input type="range" id="i11L" min="100" max="2000" value="500"></div><div class="ctl"><label>dT <output id="o11dT">50</output></label><input type="range" id="i11dT" min="10" max="200" value="50"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r11"></div></div></div></div></section>
+
+<section id="u12"><div class="sec-no">12</div><h2>扭轉角</h2><p>theta = TL/(GJ)</p><div class="bench"><div class="ctl"><label>T <output id="o12T">50</output></label><input type="range" id="i12T" min="10" max="200" value="50"></div><div class="ctl"><label>L <output id="o12L">300</output></label><input type="range" id="i12L" min="100" max="1000" value="300"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r12"></div></div></div></div></section>
+
+<section id="u13"><div class="sec-no">13</div><h2>安全係數</h2><p>n = sy/s</p><div class="bench"><div class="ctl"><label>sy <output id="o13sy">400</output></label><input type="range" id="i13sy" min="200" max="800" value="400"></div><div class="ctl"><label>s <output id="o13s">150</output></label><input type="range" id="i13s" min="50" max="400" value="150"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r13"></div></div></div></div></section>
+
+<section id="u14"><div class="sec-no">14</div><h2>帶傳動比</h2><p>i = D2/D1</p><div class="bench"><div class="ctl"><label>D1 <output id="o14D1">80</output></label><input type="range" id="i14D1" min="50" max="200" value="80"></div><div class="ctl"><label>D2 <output id="o14D2">160</output></label><input type="range" id="i14D2" min="80" max="400" value="160"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r14"></div></div></div></div></section>
+
+<section id="u15"><div class="sec-no">15</div><h2>軸承壽命</h2><p>L10 ~ (C/P)^3</p><div class="bench"><div class="ctl"><label>C <output id="o15C">20</output></label><input type="range" id="i15C" min="5" max="50" value="20"></div><div class="ctl"><label>P <output id="o15P">5</output></label><input type="range" id="i15P" min="1" max="20" value="5"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r15"></div></div></div></div></section>
+
+<section id="u16"><div class="sec-no">16</div><h2>雷諾數</h2><p>Re = rho v D / mu</p><div class="bench"><div class="ctl"><label>v <output id="o16v">1</output></label><input type="range" id="i16v" min="0.1" max="5" value="1" step="0.1"></div><div class="ctl"><label>D <output id="o16D">25</output></label><input type="range" id="i16D" min="10" max="100" value="25"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r16"></div></div></div></div></section>
+
+<section id="u17"><div class="sec-no">17</div><h2>管道壓降</h2><p>dp ~ L v^2</p><div class="bench"><div class="ctl"><label>v <output id="o17v">3</output></label><input type="range" id="i17v" min="1" max="10" value="3"></div><div class="ctl"><label>L <output id="o17L">20</output></label><input type="range" id="i17L" min="5" max="50" value="20"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r17"></div></div></div></div></section>
+
+<section id="u18"><div class="sec-no">18</div><h2>彈簧能量</h2><p>U = 0.5 k x^2</p><div class="bench"><div class="ctl"><label>k <output id="o18k">15</output></label><input type="range" id="i18k" min="5" max="50" value="15"></div><div class="ctl"><label>x <output id="o18x">5</output></label><input type="range" id="i18x" min="1" max="15" value="5"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r18"></div></div></div></div></section>
+
+<section id="u19"><div class="sec-no">19</div><h2>應力應變</h2><p>E = s/e</p><div class="bench"><div class="ctl"><label>s <output id="o19s">150</output></label><input type="range" id="i19s" min="50" max="400" value="150"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r19"></div></div></div></div></section>
+
+<section id="u20"><div class="sec-no">20</div><h2>彎矩</h2><p>M = FL/4</p><div class="bench"><div class="ctl"><label>F <output id="o20F">500</output></label><input type="range" id="i20F" min="100" max="2000" value="500"></div><div class="ctl"><label>L <output id="o20L">600</output></label><input type="range" id="i20L" min="200" max="1000" value="600"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r20"></div></div></div></div></section>
+
+<section id="u21"><div class="sec-no">21</div><h2>凸輪升程</h2><p>最大升程</p><div class="bench"><div class="ctl"><label>h <output id="o21h">15</output></label><input type="range" id="i21h" min="5" max="30" value="15"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r21"></div></div></div></div></section>
+
+<section id="u22"><div class="sec-no">22</div><h2>四桿機構</h2><p>曲柄角度</p><div class="bench"><div class="ctl"><label>th <output id="o22th">45</output></label><input type="range" id="i22th" min="0" max="360" value="45"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r22"></div></div></div></div></section>
+
+<section id="u23"><div class="sec-no">23</div><h2>接觸應力</h2><p>Hertz 簡化</p><div class="bench"><div class="ctl"><label>F <output id="o23F">500</output></label><input type="range" id="i23F" min="100" max="2000" value="500"></div><div class="ctl"><label>R <output id="o23R">20</output></label><input type="range" id="i23R" min="5" max="50" value="20"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r23"></div></div></div></div></section>
+
+<section id="u24"><div class="sec-no">24</div><h2>Goodman</h2><p>平均應力影響</p><div class="bench"><div class="ctl"><label>sa <output id="o24sa">100</output></label><input type="range" id="i24sa" min="50" max="300" value="100"></div><div class="ctl"><label>sm <output id="o24sm">50</output></label><input type="range" id="i24sm" min="0" max="300" value="50"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r24"></div></div></div></div></section>
+
+<section id="u25"><div class="sec-no">25</div><h2>公差堆疊</h2><p>線性堆疊</p><div class="bench"><div class="ctl"><label>t1 <output id="o25t1">0.05</output></label><input type="range" id="i25t1" min="0.01" max="0.2" value="0.05" step="0.01"></div><div class="ctl"><label>t2 <output id="o25t2">0.05</output></label><input type="range" id="i25t2" min="0.01" max="0.2" value="0.05" step="0.01"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r25"></div></div></div></div></section>
+
+<section id="u26"><div class="sec-no">26</div><h2>自然頻率</h2><p>fn ~ 1/L^2</p><div class="bench"><div class="ctl"><label>L <output id="o26L">600</output></label><input type="range" id="i26L" min="300" max="1500" value="600"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r26"></div></div></div></div></section>
+
+<section id="u27"><div class="sec-no">27</div><h2>流體粘度</h2><p>mu 影響 Re</p><div class="bench"><div class="ctl"><label>mu <output id="o27mu">1</output></label><input type="range" id="i27mu" min="0.5" max="5" value="1" step="0.1"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r27"></div></div></div></div></section>
+
+<section id="u28"><div class="sec-no">28</div><h2>熱傳導</h2><p>Q = k A dT / L</p><div class="bench"><div class="ctl"><label>dT <output id="o28dT">40</output></label><input type="range" id="i28dT" min="10" max="100" value="40"></div><div class="ctl"><label>L <output id="o28L">20</output></label><input type="range" id="i28L" min="5" max="50" value="20"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r28"></div></div></div></div></section>
+
+<section id="u29"><div class="sec-no">29</div><h2>網格收斂</h2><p>細分次數</p><div class="bench"><div class="ctl"><label>n <output id="o29n">2</output></label><input type="range" id="i29n" min="1" max="5" value="2"></div><div class="cards"><div class="card"><div class="k">結果</div><div class="v" id="r29"></div></div></div></div></section>
+
+<section id="u30"><div class="sec-no">30</div><h2>應用地圖</h2><p>不同目標組合</p><div class="cards"><div class="card"><div class="k">考研</div><div class="v">機原+機設+材力</div></div><div class="card"><div class="k">自動化</div><div class="v">手冊+ANSYS</div></div><div class="card"><div class="k">高端</div><div class="v">振動+疲勞+ABAQUS</div></div><div class="card"><div class="k">流體</div><div class="v">流體+CFD</div></div></div></section>
+
+<section id="u31"><div class="sec-no">31</div><h2>記住</h2><p>數值都係簡化示意，不是設計值。</p><div class="cards"><div class="card"><div class="k">理論</div><div class="v">先於按鈕</div></div><div class="card"><div class="k">手冊</div><div class="v">查表</div></div><div class="card"><div class="k">軟體</div><div class="v">驗證</div></div><div class="card"><div class="k">實驗</div><div class="v">最後</div></div></div></section>
+
 <p style="margin-top:24px"><a href="https://yip-lgtm.github.io/hd-me-lab/#/solidworks" style="color:var(--accent)">← Lab</a></p>
 </div>
 <script>
-(function(){
-  var data = [
-    {no:'01',t:'基礎底座',d:'機原、材力、機設、手冊',cards:['機原 / 運動學','材力 / 強度剛度','機設 / 標準件','手冊 / 查表']},
-    {no:'02',t:'彈簧 F=kx',d:'拖動 k 同 x',s:[{n:'k',a:2,b:40,v:10},{n:'x',a:0,b:20,v:5}],f:function(p){return 'F = '+(p.k*p.x).toFixed(0)+' N';}},
-    {no:'03',t:'簡支樑撞度',d:'delta = FL^3/(48EI)',s:[{n:'F',a:200,b:4000,v:1000},{n:'L',a:400,b:1600,v:800}],f:function(p){return 'delta = '+(p.F*Math.pow(p.L,3)/(48*200000*1e5)).toFixed(2)+' mm';}},
-    {no:'04',t:'齒輪比',d:'i = z2/z1',s:[{n:'z1',a:12,b:40,v:20},{n:'z2',a:20,b:80,v:40}],f:function(p){return 'i = '+(p.z2/p.z1).toFixed(2);}},
-    {no:'05',t:'應力集中',d:'Kt 概念',s:[{n:'dw',a:0.1,b:0.6,v:0.3}],f:function(p){return 'Kt ~ '+(2+2*p.dw).toFixed(2);}},
-    {no:'06',t:'伯努利',d:'動壓',s:[{n:'v',a:1,b:20,v:5}],f:function(p){return '動壓 = '+(0.5*1000*p.v*p.v/1000).toFixed(1)+' kPa';}},
-    {no:'07',t:'螺栓預緊',d:'Fi ~ T/(0.2d)',s:[{n:'T',a:5,b:80,v:20},{n:'d',a:6,b:20,v:10}],f:function(p){return 'Fi ~ '+(p.T/(0.2*(p.d/1000))/1000).toFixed(1)+' kN';}},
-    {no:'08',t:'共振放大',d:'頻率比 + 阻尼',s:[{n:'r',a:0.2,b:2,v:0.8},{n:'z',a:0.01,b:0.3,v:0.05}],f:function(p){return '放大 = '+(1/Math.sqrt(Math.pow(1-p.r*p.r,2)+Math.pow(2*p.z*p.r,2))).toFixed(2)+'x';}},
-    {no:'09',t:'疲勞 S-N',d:'N = C/sa^3',s:[{n:'sa',a:50,b:400,v:200}],f:function(p){return 'N ~ '+(1e14/Math.pow(p.sa,3)).toExponential(1);}},
-    {no:'10',t:'網格概念',d:'網格越細越準',s:[{n:'n',a:2,b:12,v:4}],f:function(p){return p.n+' x 2 單元';}},
-    {no:'11',t:'熱膨脹',d:'dL = a L dT',s:[{n:'L',a:100,b:2000,v:500},{n:'dT',a:10,b:200,v:50}],f:function(p){return 'dL ~ '+(12e-6*p.L*p.dT).toFixed(2)+' mm';}},
-    {no:'12',t:'扭轉角',d:'theta = TL/(GJ)',s:[{n:'T',a:10,b:200,v:50},{n:'L',a:100,b:1000,v:300}],f:function(p){return 'theta ~ '+(p.T*p.L/(80e3*1e5)*1000).toFixed(2)+' deg';}},
-    {no:'13',t:'安全係數',d:'n = sy/s',s:[{n:'sy',a:200,b:800,v:400},{n:'s',a:50,b:400,v:150}],f:function(p){return 'n = '+(p.sy/p.s).toFixed(2);}},
-    {no:'14',t:'帶傳動比',d:'i = D2/D1',s:[{n:'D1',a:50,b:200,v:80},{n:'D2',a:80,b:400,v:160}],f:function(p){return 'i = '+(p.D2/p.D1).toFixed(2);}},
-    {no:'15',t:'軸承壽命',d:'L10 ~ (C/P)^3',s:[{n:'C',a:5,b:50,v:20},{n:'P',a:1,b:20,v:5}],f:function(p){return 'L10 ~ '+(Math.pow(p.C/p.P,3)*1e6).toExponential(1);}},
-    {no:'16',t:'雷諾數',d:'Re = rho v D / mu',s:[{n:'v',a:0.1,b:5,v:1},{n:'D',a:10,b:100,v:25}],f:function(p){return 'Re ~ '+(1000*p.v*(p.D/1000)/0.001).toFixed(0);}},
-    {no:'17',t:'管道壓降',d:'dp ~ L v^2',s:[{n:'v',a:1,b:10,v:3},{n:'L',a:5,b:50,v:20}],f:function(p){return 'dp ~ '+(0.02*(p.L/0.05)*500*p.v*p.v/1000).toFixed(1)+' kPa';}},
-    {no:'18',t:'彈簧能量',d:'U = 0.5 k x^2',s:[{n:'k',a:5,b:50,v:15},{n:'x',a:1,b:15,v:5}],f:function(p){return 'U = '+(0.5*p.k*p.x*p.x).toFixed(1)+' N mm';}},
-    {no:'19',t:'應力應變',d:'E = s/e',s:[{n:'s',a:50,b:400,v:150}],f:function(p){return 'e = '+(p.s/200000*100).toFixed(3)+' %';}},
-    {no:'20',t:'彎矩',d:'M = FL/4',s:[{n:'F',a:100,b:2000,v:500},{n:'L',a:200,b:1000,v:600}],f:function(p){return 'M = '+(p.F*p.L/4/1000).toFixed(1)+' N m';}},
-    {no:'21',t:'凸輪升程',d:'最大升程',s:[{n:'h',a:5,b:30,v:15}],f:function(p){return '最大 '+p.h+' mm';}},
-    {no:'22',t:'四桿機構',d:'曲柄角度',s:[{n:'th',a:0,b:360,v:45}],f:function(p){return '輸出 ~ '+(p.th*0.6).toFixed(0)+' deg';}},
-    {no:'23',t:'接觸應力',d:'Hertz 簡化',s:[{n:'F',a:100,b:2000,v:500},{n:'R',a:5,b:50,v:20}],f:function(p){return 's ~ '+(Math.sqrt(p.F/p.R)*10).toFixed(0)+' MPa';}},
-    {no:'24',t:'Goodman',d:'平均應力影響',s:[{n:'sa',a:50,b:300,v:100},{n:'sm',a:0,b:300,v:50}],f:function(p){return '等效 ~ '+(p.sa/(1-p.sm/400)).toFixed(0);}},
-    {no:'25',t:'公差堆疊',d:'線性堆疊',s:[{n:'t1',a:0.01,b:0.2,v:0.05},{n:'t2',a:0.01,b:0.2,v:0.05}],f:function(p){return '+/- '+((p.t1+p.t2)/2).toFixed(3);}},
-    {no:'26',t:'自然頻率',d:'fn ~ 1/L^2',s:[{n:'L',a:300,b:1500,v:600}],f:function(p){return 'fn ~ '+(200/Math.pow(p.L/1000,2)).toFixed(1)+' Hz';}},
-    {no:'27',t:'流體粘度',d:'mu 影響 Re',s:[{n:'mu',a:0.5,b:5,v:1}],f:function(p){return 'Re ~ '+(1000/p.mu).toFixed(0);}},
-    {no:'28',t:'熱傳導',d:'Q = k A dT / L',s:[{n:'dT',a:10,b:100,v:40},{n:'L',a:5,b:50,v:20}],f:function(p){return 'Q ~ '+(50*0.01*p.dT/(p.L/1000)).toFixed(0)+' W';}},
-    {no:'29',t:'網格收斂',d:'細分次數',s:[{n:'n',a:1,b:5,v:2}],f:function(p){return '誤差 ~ '+(10/Math.pow(2,p.n)).toFixed(2)+'%';}},
-    {no:'30',t:'應用地圖',d:'不同目標組合',cards:['考研 / 機原+機設+材力','自動化 / 手冊+ANSYS','高端 / 振動+疲勞+ABAQUS','流體 / 流體+CFD']},
-    {no:'31',t:'記住',d:'數值都係簡化示意',cards:['理論 / 先於按鈕','手冊 / 查表','軟體 / 驗證','實驗 / 最後']}
-  ];
-
-  var toc = document.getElementById('toc');
-  var box = document.getElementById('units');
-
-  data.forEach(function(u){
-    var a = document.createElement('a');
-    a.href = '#u'+u.no;
-    a.innerHTML = '<span>'+u.no+'</span>'+u.t;
-    toc.appendChild(a);
-
-    var sec = document.createElement('section');
-    sec.id = 'u'+u.no;
-    sec.innerHTML = '<div class="sec-no">'+u.no+'</div><h2>'+u.t+'</h2><p>'+u.d+'</p>';
-
-    if (u.cards) {
-      var cards = document.createElement('div');
-      cards.className = 'cards';
-      u.cards.forEach(function(c){
-        var parts = c.split(' / ');
-        cards.innerHTML += '<div class="card"><div class="k">'+(parts[0]||'')+'</div><div class="v">'+(parts[1]||parts[0])+'</div></div>';
-      });
-      sec.appendChild(cards);
-    } else if (u.s) {
-      var bench = document.createElement('div');
-      bench.className = 'bench';
-      u.s.forEach(function(s){
-        var d = document.createElement('div');
-        d.className = 'ctl';
-        d.innerHTML = '<label>'+s.n+' <output id="o'+u.no+s.n+'">'+s.v+'</output></label><input type="range" id="i'+u.no+s.n+'" min="'+s.a+'" max="'+s.b+'" value="'+s.v+'" step="'+(s.a<1?0.01:1)+'">';
-        bench.appendChild(d);
-      });
-      var res = document.createElement('div');
-      res.className = 'cards';
-      res.innerHTML = '<div class="card"><div class="k">結果</div><div class="v" id="r'+u.no+'"></div></div>';
-      bench.appendChild(res);
-      sec.appendChild(bench);
-
-      function upd(){
-        var p = {};
-        u.s.forEach(function(s){
-          var inp = document.getElementById('i'+u.no+s.n);
-          document.getElementById('o'+u.no+s.n).textContent = inp.value;
-          p[s.n] = +inp.value;
-        });
-        document.getElementById('r'+u.no).textContent = u.f(p);
-      }
-      u.s.forEach(function(s){
-        document.getElementById('i'+u.no+s.n).addEventListener('input', upd);
-      });
-      upd();
-    }
-    box.appendChild(sec);
-  });
-})();
+function bind(id, outs, calc){
+  function upd(){
+    var p={};
+    outs.forEach(function(o){
+      var el=document.getElementById(o.i);
+      document.getElementById(o.o).textContent=el.value;
+      p[o.k]=+el.value;
+    });
+    document.getElementById(id).textContent=calc(p);
+  }
+  outs.forEach(function(o){ document.getElementById(o.i).addEventListener('input',upd); });
+  upd();
+}
+bind('r02',[{i:'i02k',o:'o02k',k:'k'},{i:'i02x',o:'o02x',k:'x'}],function(p){return 'F = '+(p.k*p.x).toFixed(0)+' N';});
+bind('r03',[{i:'i03F',o:'o03F',k:'F'},{i:'i03L',o:'o03L',k:'L'}],function(p){return 'delta = '+(p.F*Math.pow(p.L,3)/(48*200000*1e5)).toFixed(2)+' mm';});
+bind('r04',[{i:'i04z1',o:'o04z1',k:'z1'},{i:'i04z2',o:'o04z2',k:'z2'}],function(p){return 'i = '+(p.z2/p.z1).toFixed(2);});
+bind('r05',[{i:'i05dw',o:'o05dw',k:'dw'}],function(p){return 'Kt ~ '+(2+2*p.dw).toFixed(2);});
+bind('r06',[{i:'i06v',o:'o06v',k:'v'}],function(p){return '動壓 = '+(0.5*1000*p.v*p.v/1000).toFixed(1)+' kPa';});
+bind('r07',[{i:'i07T',o:'o07T',k:'T'},{i:'i07d',o:'o07d',k:'d'}],function(p){return 'Fi ~ '+(p.T/(0.2*(p.d/1000))/1000).toFixed(1)+' kN';});
+bind('r08',[{i:'i08r',o:'o08r',k:'r'},{i:'i08z',o:'o08z',k:'z'}],function(p){return '放大 = '+(1/Math.sqrt(Math.pow(1-p.r*p.r,2)+Math.pow(2*p.z*p.r,2))).toFixed(2)+'x';});
+bind('r09',[{i:'i09sa',o:'o09sa',k:'sa'}],function(p){return 'N ~ '+(1e14/Math.pow(p.sa,3)).toExponential(1);});
+bind('r10',[{i:'i10n',o:'o10n',k:'n'}],function(p){return p.n+' x 2';});
+bind('r11',[{i:'i11L',o:'o11L',k:'L'},{i:'i11dT',o:'o11dT',k:'dT'}],function(p){return 'dL ~ '+(12e-6*p.L*p.dT).toFixed(2)+' mm';});
+bind('r12',[{i:'i12T',o:'o12T',k:'T'},{i:'i12L',o:'o12L',k:'L'}],function(p){return 'theta ~ '+(p.T*p.L/(80e3*1e5)*1000).toFixed(2)+' deg';});
+bind('r13',[{i:'i13sy',o:'o13sy',k:'sy'},{i:'i13s',o:'o13s',k:'s'}],function(p){return 'n = '+(p.sy/p.s).toFixed(2);});
+bind('r14',[{i:'i14D1',o:'o14D1',k:'D1'},{i:'i14D2',o:'o14D2',k:'D2'}],function(p){return 'i = '+(p.D2/p.D1).toFixed(2);});
+bind('r15',[{i:'i15C',o:'o15C',k:'C'},{i:'i15P',o:'o15P',k:'P'}],function(p){return 'L10 ~ '+(Math.pow(p.C/p.P,3)*1e6).toExponential(1);});
+bind('r16',[{i:'i16v',o:'o16v',k:'v'},{i:'i16D',o:'o16D',k:'D'}],function(p){return 'Re ~ '+(1000*p.v*(p.D/1000)/0.001).toFixed(0);});
+bind('r17',[{i:'i17v',o:'o17v',k:'v'},{i:'i17L',o:'o17L',k:'L'}],function(p){return 'dp ~ '+(0.02*(p.L/0.05)*500*p.v*p.v/1000).toFixed(1)+' kPa';});
+bind('r18',[{i:'i18k',o:'o18k',k:'k'},{i:'i18x',o:'o18x',k:'x'}],function(p){return 'U = '+(0.5*p.k*p.x*p.x).toFixed(1);});
+bind('r19',[{i:'i19s',o:'o19s',k:'s'}],function(p){return 'e = '+(p.s/200000*100).toFixed(3)+' %';});
+bind('r20',[{i:'i20F',o:'o20F',k:'F'},{i:'i20L',o:'o20L',k:'L'}],function(p){return 'M = '+(p.F*p.L/4/1000).toFixed(1)+' N m';});
+bind('r21',[{i:'i21h',o:'o21h',k:'h'}],function(p){return '最大 '+p.h+' mm';});
+bind('r22',[{i:'i22th',o:'o22th',k:'th'}],function(p){return '輸出 ~ '+(p.th*0.6).toFixed(0)+' deg';});
+bind('r23',[{i:'i23F',o:'o23F',k:'F'},{i:'i23R',o:'o23R',k:'R'}],function(p){return 's ~ '+(Math.sqrt(p.F/p.R)*10).toFixed(0)+' MPa';});
+bind('r24',[{i:'i24sa',o:'o24sa',k:'sa'},{i:'i24sm',o:'o24sm',k:'sm'}],function(p){return '等效 ~ '+(p.sa/(1-p.sm/400)).toFixed(0);});
+bind('r25',[{i:'i25t1',o:'o25t1',k:'t1'},{i:'i25t2',o:'o25t2',k:'t2'}],function(p){return '+/- '+((p.t1+p.t2)/2).toFixed(3);});
+bind('r26',[{i:'i26L',o:'o26L',k:'L'}],function(p){return 'fn ~ '+(200/Math.pow(p.L/1000,2)).toFixed(1)+' Hz';});
+bind('r27',[{i:'i27mu',o:'o27mu',k:'mu'}],function(p){return 'Re ~ '+(1000/p.mu).toFixed(0);});
+bind('r28',[{i:'i28dT',o:'o28dT',k:'dT'},{i:'i28L',o:'o28L',k:'L'}],function(p){return 'Q ~ '+(50*0.01*p.dT/(p.L/1000)).toFixed(0)+' W';});
+bind('r29',[{i:'i29n',o:'o29n',k:'n'}],function(p){return '誤差 ~ '+(10/Math.pow(2,p.n)).toFixed(2)+'%';});
 </script>
 </body>
 </html>
