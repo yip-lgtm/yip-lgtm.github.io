@@ -117,7 +117,21 @@ mkdirSync(dir, { recursive: true });
 const file = dossierFile(item.id, item.battle?.y ?? item.kit?.year ?? 0);
 writeFileSync(
   `${dir}/${file}`,
-  JSON.stringify({ id: item.id, battle: item.battle, kit: item.kit, ...dossier }, null, 1) + "\n",
+  // The history screen reads `theater` and `place` off the dossier. The
+  // writer puts the theater on the battle and the position on the entry, so
+  // lift them to the top level here rather than leaving the map to guess.
+  JSON.stringify(
+    {
+      id: item.id,
+      theater: item.battle?.theater ?? "",
+      place: item.place ?? null,
+      battle: item.battle,
+      kit: item.kit,
+      ...dossier,
+    },
+    null,
+    1,
+  ) + "\n",
 );
 item.dossierUrl = `dossiers/${file}`;
 delete item.dossier;
