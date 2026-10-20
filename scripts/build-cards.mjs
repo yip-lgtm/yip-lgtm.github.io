@@ -95,7 +95,14 @@ cards.sort((a, b) => a.year - b.year || a.name.localeCompare(b.name, "zh-Hant"))
 const esc = (s) =>
   String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
-const withArt = cards.filter((c) => c.portrait).length;
+// "完成" means the picture is there, not that a reference points at it: a
+// campaign's picture is drawn a moment after the campaign is written.
+const portraitDir = resolve(REPO, "cute/portraits");
+const hasFile = (c) => {
+  if (!c.portrait) return false;
+  return existsSync(join(portraitDir, c.portrait.split("/").pop()));
+};
+const withArt = cards.filter(hasFile).length;
 const art = (c) =>
   c.portrait
     ? `<img class="face-img" src="${esc(c.portrait)}" alt="${esc(String(c.name).slice(0,1))}" loading="lazy" onerror="this.outerHTML=this.dataset.fallback">`
