@@ -27049,7 +27049,8 @@
         "layer": "land",
         "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
         "portrait": "portraits/scutum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/610-43bb6c56a8.json"
     },
     {
       "id": "614-猶太人反希拉克略起義",
@@ -27102,7 +27103,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/gongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/627-a95dd9afc7.json"
     },
     {
       "id": "628-628-632年薩珊王朝內戰",
@@ -27128,7 +27130,8 @@
         "layer": "land",
         "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
         "portrait": "portraits/hoplite.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/628-bbfeba6f7d.json"
     },
     {
       "id": "661-平壤之戰",
@@ -27154,7 +27157,8 @@
         "layer": "land",
         "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
         "portrait": "portraits/gladius.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/661-6c0080dd0f.json"
     },
     {
       "id": "682-雲州之戰",
@@ -27207,7 +27211,736 @@
         "layer": "land",
         "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/xiaochongnu.jpg"
+      },
+      "dossierUrl": "dossiers/750-85a662a904.json"
+    },
+    {
+      "id": "535-歌德戰爭(535年—554年)",
+      "added": "2026-10-21T08:57:04.222Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 12.5,
+        "lat": 41.9
+      },
+      "battle": {
+        "y": 535,
+        "m": 6,
+        "name": "歌德戰爭 (535年—554年)",
+        "theater": "意大利半島（羅馬與拉文納）",
+        "brief": "查士丁尼以阿瑪拉松塔母子遇害為由，於535年派貝利撒留渡海攻入意大利，十九年間三度圍羅馬，拉文納兩度易手，最後由納爾塞斯在塔奇奈與蒙斯・拉塔里烏斯兩役掃平東哥特王國。卡面所配秦弩從未踏上意大利，戰中真正壓制城頭的，是承羅馬弩機傳統的手弩。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/535-c1a8d34133.json"
+    },
+    {
+      "id": "567-倫巴底-格皮德戰爭(567年)",
+      "added": "2026-10-21T08:57:04.238Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 19.35,
+        "lat": 45.02
+      },
+      "battle": {
+        "y": 567,
+        "m": 6,
+        "name": "倫巴底-格皮德戰爭 (567年)",
+        "theater": "潘諾尼亞盆地與西爾米烏姆",
+        "brief": "公元五六七年，倫巴德王阿爾博因聯結潘諾尼亞阿伏爾可汗巴揚，摧毀多瑙河中游的格皮德王國：國王昆諾蒙德為阿爾博因親手所殺，首級被帶回營中。格皮德與倫巴德步兵承自晚期羅馬軍制的巨盾防線，擋得住正面騎兵衝撞，卻封不住阿伏爾馬上弓手的合圍與繞擊。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/567-b7d6e6058b.json"
+    },
+    {
+      "id": "602-拜占庭—薩珊戰爭(602年—628年)",
+      "added": "2026-10-21T08:57:04.390Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 43.13,
+        "lat": 36.35
+      },
+      "battle": {
+        "y": 602,
+        "m": 3,
+        "name": "拜占庭—薩珊戰爭 (602年—628年)",
+        "theater": "美索不達米亞與安納托利亞",
+        "brief": "602年霍斯勞二世藉口為莫里斯復仇開戰，廿六年間連取達拉、安提阿與耶路撒冷，邊防退到博斯普魯斯海峽。希拉克略即位後放棄死守，627年12月12日在尼尼微濃霧中佯退反擊，翌年逼出薩珊政變，630年和約收回失地並迎回真十字架。卡面月牙劍早此戰一千五百餘年，是外彎單刃刀劍的源頭。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/602-96078e524e.json"
+    },
+    {
+      "id": "630-胡奈之戰",
+      "added": "2026-10-21T08:57:04.466Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 40.35,
+        "lat": 21.43
+      },
+      "battle": {
+        "y": 630,
+        "m": 11,
+        "name": "胡奈之戰",
+        "theater": "胡奈山谷（麥加以東）",
+        "brief": "西元630年，穆罕默德率一萬二千人自麥加出發，討伐赫瓦辛、薩卡夫等部族聯軍。聯軍預伏山谷，以拋石與襲擊迫前鋒潰散，先知一度被圍；卡里德率騎兵繞出隘口反擊伏兵，戰局才逆轉，聯軍崩潰。卡面斯巴達長矛未到過阿拉伯半島，但它代表的密集步兵與側翼騎兵之爭，正是此役的骨架。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/630-e1b91ac5e2.json"
+    },
+    {
+      "id": "631-第二次「星際大戰」（第三次卡拉科爾-納蘭霍戰爭）",
+      "added": "2026-10-21T08:57:04.526Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -89.15,
+        "lat": 17.38
+      },
+      "battle": {
+        "y": 631,
+        "m": 3,
+        "name": "第二次「星際大戰」（第三次卡拉科爾-納蘭霍戰爭）",
+        "theater": "佩滕東北納蘭霍與蒂卡爾",
+        "brief": "公元631年，佩滕核心區再起星戰：納蘭霍與貝里斯河谷的卡拉科爾聯手攻入蒂卡爾，王雅什努恩·阿欣一世被俘，佩滕中心的舊秩序為之一空，此役即編年記所稱第三次卡拉科爾—納蘭霍戰爭。卡面的埃及月牙劍標示的是劈砍那一環：與它同源的是瑪雅那種鑲黑曜石刃、砍下不用拔的棍劍，正是破門毀碑時所用的東西。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/631-05c2d02360.json"
+    },
+    {
+      "id": "634-唐擊吐谷渾之戰",
+      "added": "2026-10-21T08:57:04.557Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 100.1,
+        "lat": 36.15
+      },
+      "battle": {
+        "y": 634,
+        "m": 5,
+        "name": "唐擊吐谷渾之戰",
+        "theater": "青海道積石山至伏俟城",
+        "brief": "貞觀八年夏，吐谷渾可汗慕容伏允寇涼州、鄯州，唐遣交河道行軍總管侯君集率兵討之；貞觀九年太宗親征，分積石、涇河、湟河三道出師，六月大破吐谷渾於烏海、牛心堆，伏允走磧中為部下所殺，太子慕容順降，立西海郡。卡面的羅馬標槍屬羅軍團制式投射兵器，與本役相隔七百年，不在青海戰場。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/634-12f40560cc.json"
+    },
+    {
+      "id": "636-第三次「星際大戰」（第四次卡拉科爾-納蘭霍戰爭）",
+      "added": "2026-10-21T08:57:04.558Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -89.15,
+        "lat": 14.95
+      },
+      "battle": {
+        "y": 636,
+        "m": 12,
+        "name": "第三次「星際大戰」（第四次卡拉科爾-納蘭霍戰爭）",
+        "theater": "貝里斯—洪都拉斯科潘河谷",
+        "brief": "公元六三六年，貝里斯山麓的卡拉科爾在王「鷹豹」率領下第四次深入洪都拉斯科潘河谷，了結六三一年星戰的舊賬：納蘭霍城被焚，君主再度被擒、被焚殺，佩滕南翼的城邦聯盟重排。卡面的羅馬重步兵從未出現在中美洲，它標示密集的近戰正面——長矛與棉甲盾牌結成的盾列，靠的是兵源與糧道，不是靠重裝。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/636-90e66bc333.json"
+    },
+    {
+      "id": "640-唐滅高昌",
+      "added": "2026-10-21T08:57:04.567Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 89.2,
+        "lat": 42.9
+      },
+      "battle": {
+        "y": 640,
+        "m": 8,
+        "name": "唐滅高昌",
+        "theater": "吐魯番盆地交河城",
+        "brief": "貞觀十四年（640）八月，唐以兵部尚書侯君集為交河道行軍大總管，率兵及回紇、西域諸國十餘萬眾西征高昌。大軍進圍交河城時，高昌王麴文泰已卒，其子麴智盛出降，唐得其城二十二座、戶八千四十六。卡面的羅馬扭力投石機早此役八百九十年，攻城所倚的是唐軍的雲梯、撞車與抛車，即中國式的投石機。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/640-4fb6d03d04.json"
+    },
+    {
+      "id": "640-唐與西突厥的戰爭",
+      "added": "2026-10-21T08:57:04.567Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 81.3,
+        "lat": 43.9
+      },
+      "battle": {
+        "y": 640,
+        "m": 12,
+        "name": "唐與西突厥的戰爭",
+        "theater": "天山北麓與交河碎葉草原",
+        "brief": "640年（貞觀十四年）起，唐朝在交河與天山北麓同西突厥十姓聯盟開戰：先平高昌、置安西都護府於交河，同年冬以李靖為交河道行軍大總管出師；又於諾真水以步軍下馬執長槊正面衝鋒，破了騎兵萬矢齊發。卡面的希臘重步兵並不在西域，其方陣盾牆只能對照唐軍密集結陣、長槊直推的實際戰法。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/640-b9d52976cf.json"
+    },
+    {
+      "id": "644-第四次「星際大戰」",
+      "added": "2026-10-21T08:57:04.571Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -92.57,
+        "lat": 17.69
+      },
+      "battle": {
+        "y": 644,
+        "m": 12,
+        "name": "第四次「星際大戰」",
+        "theater": "塔巴斯科南岸托爾圖格羅",
+        "brief": "公元644年，墨西哥灣最南端的托爾圖格羅王巴赫拉姆·阿豪在一次星際大戰中擊敗未具名的政權，碑文記下「血聚成池、骨堆成山」；五年後他再取科馬爾卡爾科。卡面的亞述長矛屬西亞鐵兵器，從未進入中美洲；位置上相應的，是托爾圖格羅軍中用燧石矛頭的長矛與投矛器。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/644-76d37dd212.json"
+    },
+    {
+      "id": "645-唐滅薛延陀之戰",
+      "added": "2026-10-21T08:57:04.571Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 102.5,
+        "lat": 47.5
+      },
+      "battle": {
+        "y": 645,
+        "m": 12,
+        "name": "唐滅薛延陀之戰",
+        "theater": "蒙古高原郁督軍山一帶",
+        "brief": "貞觀十九年冬，薛延陀多彌可汗拔灼趁唐太宗東征高句麗，屢攻夏州。太宗發朔州、勝州、靈州諸兵分道進討，李道宗、阿史那社爾任瀚海安撫大使，執失思力與契苾何力各率胡兵，直指蒙古高原。拔灼敗走為回紇所殺，李世勣至郁督軍山招降咄摩支，薛延陀汗國遂亡；月牙劍一類單刃彎刀正是騎兵貼身近戰的兵器。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/645-59037bc87a.json"
+    },
+    {
+      "id": "656-伊斯蘭教一次內戰",
+      "added": "2026-10-21T08:57:04.575Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 47.45,
+        "lat": 30.4
+      },
+      "battle": {
+        "y": 656,
+        "m": 4,
+        "name": "伊斯蘭教一次內戰",
+        "theater": "伊拉克巴士拉西南原野",
+        "brief": "伊斯蘭教一次內戰是哈里發國第一場內戰。前哈里發奧斯曼遇刺後，阿里在伊拉克巴士拉西南原野與艾伊莎、塔勒哈、祖拜爾的聯軍對峙，四月六日爆發駱駝之戰。卡面羅馬標槍代表以重投槍破盾、再以短劍近戰的古典兵法；七世紀雙方實攜的則是薩珊與拜占庭邊防技術的末端產物——合弓、長矛與重圓盾。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/656-ace4ffa3c4.json"
+    },
+    {
+      "id": "657-唐朝與西突厥第二次戰役",
+      "added": "2026-10-21T08:57:04.575Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 88,
+        "lat": 47.9
+      },
+      "battle": {
+        "y": 657,
+        "m": 1,
+        "name": "唐朝與西突厥第二次戰役",
+        "theater": "曳咥河至雙河戰線",
+        "brief": "顯慶二年（657）正月，唐高宗以右屯衛大將軍蘇定方為伊麗道行軍大總管，率唐軍與回紇兵北擊西突厥沙鉢羅可汗賀魯。十二月唐軍進抵曳咥河西，一萬餘人破敵十萬，追奔至雙河與金牙山，西域遂平。卡上的羅馬重步兵非戰場實物，它標示的是「步兵據高、槊外向」的正面拒止。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/657-965e5b8b29.json"
+    },
+    {
+      "id": "670-唐朝與新羅的戰爭",
+      "added": "2026-10-21T08:57:04.580Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 127.2,
+        "lat": 37.7
+      },
+      "battle": {
+        "y": 670,
+        "m": 8,
+        "name": "唐朝與新羅的戰爭",
+        "theater": "平壤至熊津江流域",
+        "brief": "唐高宗時期，唐朝與新羅在平壤、熊津江一線由同盟轉為交戰，先平高句麗，再經百濟復國與唐羅對峙，最後新羅攻取平壤而唐軍北撤。這場戰爭的攻城與守城都靠直射重火力定型，羅馬弩砲所代表的一發一具箭的扭力擲弩，正是兩軍壓制城頭射手、掩護突擊的標準器械。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/670-c5442d2b41.json"
+    },
+    {
+      "id": "670-羅唐戰爭",
+      "added": "2026-10-21T08:57:04.581Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 125.75,
+        "lat": 39.02
+      },
+      "battle": {
+        "y": 670,
+        "m": 1,
+        "name": "羅唐戰爭",
+        "theater": "朝鮮半島中北部",
+        "brief": "唐咸亨元年（670年）起，新羅斷絕朝貢、與唐爭奪朝鮮半島，唐安東都護府在平壤、熊津一線與新羅軍反覆拉鋸，到咸亨五年（676年）雙方才罷兵。卡面亞述長矛所代表的短柄長刃鐵鏃刺槍樣式，雖未隨軍東渡半島，但同類長矛正是兩軍前排結陣、封死城門與抵禦登城雲梯的骨幹兵器。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/670-1c10b33f04.json"
+    },
+    {
+      "id": "687-帕倫克-托尼那戰爭",
+      "added": "2026-10-21T08:57:04.589Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -92,
+        "lat": 17.33
+      },
+      "battle": {
+        "y": 687,
+        "m": 6,
+        "name": "帕倫克-托尼那戰爭",
+        "theater": "恰帕斯高地與烏蘇馬辛塔河谷",
+        "brief": "687年起，瑪雅城邦帕倫克與中部高地強國托尼那為邊界、鹽路與水源爭鬥，衝突延續百餘年。762年托尼那大軍攻入帕倫克，焚燒王殿並擄走王室；帕倫克在攝政王母主持下重建，卻再未恢復盛勢。本卡所列的亞述長弓標示的，正是此役的關鍵：投射火力太弱，只能近身速射，勝負要在接近後用刃器分出。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      },
+      "dossierUrl": "dossiers/687-990899dce6.json"
+    },
+    {
+      "id": "692-安西之戰",
+      "added": "2026-10-21T08:57:04.591Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 75.3,
+        "lat": 42.8
+      },
+      "battle": {
+        "y": 692,
+        "m": 3,
+        "name": "安西之戰",
+        "theater": "雙河（今吉爾吉斯楚河上游）",
+        "brief": "長久二年（692），西突厥可汗阿史那咄支反唐，進逼安西四鎮；唐遣王孝傑為安西行軍大總管，率諸道兵出安西，於楚河上游雙河一帶大破突厥，擒其可汗，遂復置龜茲、疏勒、于闐、焉耆四鎮。秦弩仍在役：守城時壓住攻城之敵，出師後以弩配橫刀長槊，補步卒面對輕騎的射擊壓力。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/692-38db1c54ba.json"
+    },
+    {
+      "id": "727-瓜州之戰",
+      "added": "2026-10-21T08:57:04.598Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 95.8,
+        "lat": 40.52
+      },
+      "battle": {
+        "y": 727,
+        "m": 11,
+        "name": "瓜州之戰",
+        "theater": "河西走廊瓜州段",
+        "brief": "開元十五年（727）冬，吐蕃與葛邏祿聯軍進逼河西走廊西端的瓜州，安西留使薛仁貴據堡壘與疏勒河谷口，以弩砲封住隘道，再令副將阿史那道真率精騎衝擊聯軍側翼，逼其退回天山南北。羅馬弩砲是單發扭力弩，源自拆掉希臘城牆的攻城器材，此役只能守住幾段通道，決定勝負的已是騎兵、糧草與指揮體系。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/727-463d57b210.json"
+    },
+    {
+      "id": "755-郭子儀擊叛軍之戰",
+      "added": "2026-10-21T08:57:04.608Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.56,
+        "lat": 38.14
+      },
+      "battle": {
+        "y": 755,
+        "m": 12,
+        "name": "郭子儀擊叛軍之戰",
+        "theater": "河朔平原與常山道",
+        "brief": "天寶十四載末，安祿山在范陽起兵，河朔望風瓦解；郭子儀以朔方節度使奉詔討賊，與李光弼分道進軍河北，會師常山擊敗史思明，平河曲、收河東、攻潼關，至德二載會同回紇兵於香積寺收復長安。卡面亞述長弓未入中土，然角木筋複合、弓兵隨車射擊，正是唐軍角弓與回紇騎射的同源遠祖。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      },
+      "dossierUrl": "dossiers/755-7a6debca75.json"
+    },
+    {
+      "id": "756-陳濤斜之戰",
+      "added": "2026-10-21T08:57:04.610Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.84,
+        "lat": 34.16
+      },
+      "battle": {
+        "y": 756,
+        "m": 4,
+        "name": "陳濤斜之戰",
+        "theater": "河南汝州陳陶斜",
+        "brief": "至德元年（756）春，叛軍已陷洛陽，為把豫西糧道攥在手中，兵鋒再向汝州、襄城推進；唐軍在洛陽西南的陳陶斜憑險拒守，以弩陣封住狹窄谷道，與攻方在坡上坡下攻守數日，終以隘口不失、叛軍退去收場。卡面羅馬弩砲不屬本役，它早於本役八百年，卻點出同一道理：單發重箭的機弩，威力全在封鎖那一瞬。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/756-e158f35968.json"
+    },
+    {
+      "id": "757-唐收復長安之戰",
+      "added": "2026-10-21T08:57:04.611Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.34
+      },
+      "battle": {
+        "y": 757,
+        "m": 10,
+        "name": "唐收復長安之戰",
+        "theater": "長安、華州與河中道",
+        "brief": "唐肅宗至德二載（757）十月，郭子儀率唐軍會回鶻精騎，自河中蒲州西渡蒲津，轉取華州，進逼長安，叛將安守忠開城出降，西京遂復。卡面那柄羅馬短劍並未入華，它代表的是短兵相接的母型：以盾抵格、以刺找縫，唐軍近身靠陌刀、橫刀與盾陣承襲同一套節奏。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/757-dedfa5b614.json"
+    },
+    {
+      "id": "762-唐再奪東京之戰",
+      "added": "2026-10-21T08:57:04.615Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 135.77,
+        "lat": 35.01
+      },
+      "battle": {
+        "y": 762,
+        "m": 9,
+        "name": "唐再奪東京之戰",
+        "theater": "平安京與大和盆地",
+        "brief": "天平寶字元年（762）八月，藤原仲麻呂趁孝謙天皇崩、淳仁天皇即位之際舉兵，挾持光明皇太妃、火燒高松與大宮，直逼平安京。唐玄宗遣劉全真率唐兵及新羅、渤海之兵東渡，與大伴氏合兵，於京郊追擊，再於大和鄉間捕殺仲麻呂，東京重回朝廷之手。卡面的科林斯青銅盔不在此役序列，只作對照。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/762-968b8ae635.json"
+    },
+    {
+      "id": "779-劍南、西川之戰",
+      "added": "2026-10-21T08:57:04.618Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 102.28,
+        "lat": 28.4
+      },
+      "battle": {
+        "y": 779,
+        "m": 12,
+        "name": "劍南、西川之戰",
+        "theater": "劍南西川越巂會同定莋邊地",
+        "brief": "大曆十四年（779）末，劍南西川節度使張虔陀杖殺南詔使者，閣羅鳳發兵反攻，攻下嶍州（越巂）、會同、定莋一線城邑，虔陀死於軍中；兩國自此在嶍姚地界僵持二十二年，至貞元十八年唐軍追擊大敗南詔軍，議和收場。卡面的埃及長矛早此役數千年，不會出現在嶍州城下，但它代表的密集列陣長矛，正是這場邊爭中雙方步兵的骨幹。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/779-53d6818131.json"
+    },
+    {
+      "id": "783-涇原兵變",
+      "added": "2026-10-21T08:57:04.622Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.34
+      },
+      "battle": {
+        "y": 783,
+        "m": 10,
+        "name": "涇原兵變",
+        "theater": "長安京師與涇原入京道",
+        "brief": "建中四年十月，涇原節度使姚令言率五千邊軍入衛京師，因糧餉不給而夜半哗變，剽掠市井、焚毀宮闕。眾軍推朱泚為主，朱泚稱帝建燕；德宗與妃嬪、諸王百餘人連夜出奔奉天。九月官軍收復長安，朱泚西走奉天，為段秀實陣前擊殺。卡面羅馬重步兵未曾東來，交鋒靠的仍是長槍、勁弩與飢軍變亂。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/783-f2bfce553a.json"
+    },
+    {
+      "id": "794-神川之戰",
+      "added": "2026-10-21T08:57:04.625Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.7,
+        "lat": 31.33
+      },
+      "battle": {
+        "y": 794,
+        "m": 7,
+        "name": "神川之戰",
+        "theater": "大隅國南部神川海岸",
+        "brief": "延暦13年（794）七月，隼人與大隅人再度舉兵，朝廷遣藤原魚名、大伴弟麻呂率軍南下，於大隅國神川之濱與叛軍會戰，一戰而潰其眾，大隅全境平定。卡面希臘重步兵與此戰並無涉，但圓盾結陣、互相遮蔽的思路，與官軍以大楯列陣、弓兵在後壓制的打法恰可對照：一個靠常備公民兵與正面強度，一個靠兵種分工與地形切割。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/794-852f2c0eb9.json"
+    },
+    {
+      "id": "868-龐勛起義",
+      "added": "2026-10-21T08:57:04.634Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.18,
+        "lat": 34.26
+      },
+      "battle": {
+        "y": 868,
+        "m": 8,
+        "name": "龐勛起義",
+        "theater": "桂林至徐州（湘贛淮南）",
+        "brief": "咸通九年（868），桂管軍兵變，龐勛率桂林兵北還，循湘贛淮水而下，轉戰千里，直抵泗州、濠州、宿州，攻陷徐州，切斷汴河漕運，兵鋒逼近汴洛。咸通十一年（870）城破，龐勛伏誅。卡面月牙劍並非唐軍兵器，其代表的單刃弧背、砍下不拔一路，在龐勛軍中對應的是環首刀與柴刀。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
       }
+    },
+    {
+      "id": "878-黃巢南下福州之戰",
+      "added": "2026-10-21T08:57:04.639Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 119.3,
+        "lat": 26.08
+      },
+      "battle": {
+        "y": 878,
+        "m": 8,
+        "name": "黃巢南下福州之戰",
+        "theater": "閩浙山道與福州城",
+        "brief": "乾符五年（878年）八月，黃巢攻宣州不克，被宣歙觀察使王凝擊敗於南陵，遂引眾入浙東，開山路七百里直插閩北，攻剽福建諸州；十二月甲戌陷福州，福建觀察使韋岫棄城走。卡面的羅馬標槍並未隨義軍入華，它代表的是以重投槍破盾的技術路線，唐軍這裡靠的是長矛、弓弩與攻城器。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/878-a18e5dbc33.json"
     }
   ]
 }
