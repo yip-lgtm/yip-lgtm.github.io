@@ -3327,6 +3327,32 @@
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
       }
+    },
+    {
+      "id": "1839-第二次土埃戰爭",
+      "added": "2026-10-21T04:51:29.333Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 37.8,
+        "lat": 37.02
+      },
+      "battle": {
+        "y": 1839,
+        "m": 4,
+        "name": "第二次土埃戰爭",
+        "theater": "幼發拉底河至黎凡特海岸",
+        "brief": "一八三九年四月，易卜拉欣帕夏自埃及越境進入敘利亞，六月二十四日在內齊布以炮火與騎兵擊潰哈菲茲帕夏的奧斯曼軍，奪門百餘，敘利亞盡入埃及之手。一八四〇年英國地中海艦隊南下，炮擊貝魯特、賽伊達與阿克，終以一紙條約把敘利亞退回蘇丹。卡面輪發手槍是軍官腰間那一代火燧手槍的祖型，在這場戰爭裡只屬個人佩槍，真正定勝負的是火炮與艦隊。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      }
     }
   ]
 }
