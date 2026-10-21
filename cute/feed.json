@@ -6035,7 +6035,8 @@
         "layer": "land",
         "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
         "portrait": "portraits/matchlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1820-5a29c6a026.json"
     },
     {
       "id": "1821-巴西獨立戰爭",
@@ -8069,7 +8070,8 @@
         "layer": "land",
         "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
         "portrait": "portraits/hoplite.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-209-844c44a8b6.json"
     },
     {
       "id": "-220-利提亞戰爭",
@@ -8255,7 +8257,8 @@
         "layer": "land",
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1134-d6b21c3956.json"
     },
     {
       "id": "1161-皂角林之戰",
@@ -8389,7 +8392,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1216-8a77fe3d88.json"
     },
     {
       "id": "1223-迦勒迦河之戰",
@@ -8442,7 +8446,8 @@
         "layer": "land",
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
         "portrait": "portraits/wheellock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1508-a0b8e97297.json"
     },
     {
       "id": "1875-獅頭社戰爭",
@@ -8497,6 +8502,163 @@
         "portrait": "portraits/muzzleloader.jpg"
       },
       "dossierUrl": "dossiers/1897-7a355d1d4f.json"
+    },
+    {
+      "id": "-113-辛布里戰爭",
+      "added": "2026-10-21T06:03:45.394Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13,
+        "lat": 47.8
+      },
+      "battle": {
+        "y": -113,
+        "m": 10,
+        "name": "辛布里戰爭",
+        "theater": "諾里西姆谷地與北意大利戰線",
+        "brief": "前113年辛布里人自北方湧入阿爾卑斯，在諾里西姆谷地重創羅馬執政官軍，戰火自高盧燒到北意大利，前101年才以維爾凱萊的殘滅收場。卡面的科林斯青銅盔並非戰場實物，它早於本役數百年就退出希臘軍備；真正的對照物是辛布里人與羅馬步兵同樣戴上的青銅頭盔，以及雙方都只能靠隊形站住的那道防線。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      }
+    },
+    {
+      "id": "-167-馬加比起義",
+      "added": "2026-10-21T06:03:45.397Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 35.01,
+        "lat": 31.89
+      },
+      "battle": {
+        "y": -167,
+        "m": 11,
+        "name": "馬加比起義",
+        "theater": "猶太山地莫德因與耶路撒冷",
+        "brief": "塞琉古王安提奧庫斯四世禁猶太人守律並掠奪耶路撒冷聖殿，祭司馬他提亞於莫德因起兵，率猶大·馬加比等五子在猶太山地游擊；公元前一百六十四年冬攻入聖殿、重開祭禮，開啟哈斯蒙尼王朝。卡面的科林斯青銅盔代表塞琉古方希臘重裝步兵的典型防具。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      }
+    },
+    {
+      "id": "-202-第五次敘利亞戰爭",
+      "added": "2026-10-21T06:03:45.400Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 36.16,
+        "lat": 36.2
+      },
+      "battle": {
+        "y": -202,
+        "m": 4,
+        "name": "第五次敘利亞戰爭",
+        "theater": "敘利亞北部與美索不達米亞",
+        "brief": "公元前二〇二年，塞琉古王安條克三世自安條克發兵，東渡幼發拉底河攻入美索不達米亞與米底，一度奪下帕提亞首都泰西封與埃克巴塔娜，卻在裡海之門夜戰後因埃及干涉而全線收縮。托勒密五世治下的埃及軍隊與埃及持矛兵把住敘利亞戰線，是扭轉戰局的關鍵棋子。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      }
+    },
+    {
+      "id": "-215-第一次馬其頓戰爭",
+      "added": "2026-10-21T06:03:45.403Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 22.4,
+        "lat": 40.7
+      },
+      "battle": {
+        "y": -215,
+        "m": 6,
+        "name": "第一次馬其頓戰爭",
+        "theater": "色雷斯海岸與愛琴海北岸",
+        "brief": "西元前215至205年，第一次馬其頓戰爭在色雷斯海岸、馬其頓北部邊境與愛琴海北岸展開。迦太基海軍在梅托涅與埃維亞得手，馬其頓王國靠混合方陣頂住埃托利亞聯盟的游擊，最後靠羅馬促成的和約收場。卡面的斯巴達長矛正站在這一戰的起點：它仍是希臘盟軍重裝步兵的制式兵器，馬其頓方陣的薩里沙長矛已把它擠到側翼。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/-215-fc425d329e.json"
+    },
+    {
+      "id": "1114-出河店之戰",
+      "added": "2026-10-21T06:03:45.416Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 125.1,
+        "lat": 46
+      },
+      "battle": {
+        "y": 1114,
+        "m": 9,
+        "name": "出河店之戰",
+        "theater": "松花江中游肇州",
+        "brief": "遼天慶四年九月，完顏阿骨打率二萬精兵，與宋將童員所部在黑龍江肇州出河店合擊遼朝大軍。弩手是宋軍側翼唯一能封死退路的火力，卻隨全軍先潰而一矢未發。遼軍中軍被突破，死者以萬計，北宋聯金滅遼之局由此開端。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
+    },
+    {
+      "id": "1119-宋江起義",
+      "added": "2026-10-21T06:03:45.422Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.95,
+        "lat": 35.78
+      },
+      "battle": {
+        "y": 1119,
+        "m": 6,
+        "name": "宋江起義",
+        "theater": "鄆城梁山泊、黃泥岡與潯州",
+        "brief": "宣和元年六月，晁蓋、吳用等八人在黃泥岡以蒙汗藥迷倒押運生辰綱的殿司制使楊志，一夜之間劫走生辰綱而聚義梁山泊。押司宋江私放晁蓋、殺滅閻婆惜，刺配江州後題反詩被判斬，晁蓋等遂在潯陽縣法場劫囚相救。官軍以舟師、蒙衝與火箭攻水泊寨栅，至宣和三年始擒宋江，平此小而急的起義。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      }
     }
   ]
 }
