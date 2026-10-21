@@ -5458,7 +5458,8 @@
         "layer": "land",
         "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
         "portrait": "portraits/fieldgun.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1585-a67331f24e.json"
     },
     {
       "id": "1740-奧地利王位繼承戰爭",
@@ -5565,7 +5566,8 @@
         "layer": "land",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1877-fd25937d25.json"
     },
     {
       "id": "1877-達固湖灣戰爭",
@@ -5591,7 +5593,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1877-814da23a15.json"
     },
     {
       "id": "1881-法國入侵突尼斯",
@@ -5617,7 +5620,8 @@
         "layer": "sea",
         "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
         "portrait": "portraits/ironclad.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1881-fe02326a95.json"
     },
     {
       "id": "1885-塞保戰爭",
@@ -5697,7 +5701,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1895-55afea273a.json"
     },
     {
       "id": "1898-美西戰爭",
@@ -5725,6 +5730,167 @@
         "portrait": "portraits/percussion.jpg"
       },
       "dossierUrl": "dossiers/1898-7439cbb91b.json"
+    },
+    {
+      "id": "1874-佐賀之亂",
+      "added": "2026-10-21T05:27:02.338Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.3,
+        "lat": 33.25
+      },
+      "battle": {
+        "y": 1874,
+        "m": 2,
+        "name": "佐賀之亂",
+        "theater": "佐賀城下與筑後河沿岸",
+        "brief": "一八七四年二月，佐賀士族在江藤新平與島義勇號召下起兵，佔領縣廳與佐賀城，與奉命鎮壓的鎮台兵在筑後河兩岸交鋒。官軍以汽船、電信調度東京、大阪、熊各鎮台步砲兵，雙方裝備同屬雷管步槍一代，勝負卻落在彈藥、砲兵與後勤上。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1874-4d7d01f877.json"
+    },
+    {
+      "id": "1876-清軍收復新疆之戰",
+      "added": "2026-10-21T05:27:02.343Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 87.62,
+        "lat": 43.82
+      },
+      "battle": {
+        "y": 1876,
+        "m": 3,
+        "name": "清軍收復新疆之戰",
+        "theater": "烏魯木齊城垣與天山南北",
+        "brief": "一八七六年三月，清廷授左宗棠欽差大臣全權節制三軍，湘軍分批出關，四月抵哈密，八月十七日自古牧地缺口攻入迪化，次年三路南下取庫車、喀什噶爾。戰事全在陸上，鐵甲艦不曾參戰；同年海上正是英國鐵甲艦的年代，它凸顯清廷當年無力海防，只能靠屯田與數千里糧道撐住戰局。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      }
+    },
+    {
+      "id": "1876-神風連之亂",
+      "added": "2026-10-21T05:27:02.346Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.65,
+        "lat": 32.79
+      },
+      "battle": {
+        "y": 1876,
+        "m": 10,
+        "name": "神風連之亂",
+        "theater": "熊本城及周邊市街",
+        "brief": "一八七六年十月二十四日深夜，肥後藩士太田黑伴雄、加屋霽堅等約一百七十人結敬神黨，分隊襲擊熊本鎮台司令官種田政明與縣令安岡良亮宅，再攻入熊本城殺傷守兵、占砲兵營。翌晨兒玉源太郎指揮步兵第十三連隊與砲兵第六大隊反攻，首謀者重傷自刃。加特林式機槍日境內僅數門，熊本火線未見其蹤。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1876-83f7419b99.json"
+    },
+    {
+      "id": "1880-第一次波耳戰爭",
+      "added": "2026-10-21T05:27:02.356Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 27.8,
+        "lat": -25.9
+      },
+      "battle": {
+        "y": 1880,
+        "m": 12,
+        "name": "第一次波耳戰爭",
+        "theater": "德蘭士瓦西部與奧蘭治自由邦",
+        "brief": "一八八〇年十二月，德蘭士瓦武裝村民起事，逐走英方守軍，重開人民議恢復共和國。英軍在帕德克勞與英戈戈兩度敗績，一八八一年二月在梅奇山取回主動權，三月佔領布隆方丹，五月簽訂比勒陀利亞協約。雷管步槍是這場戰爭的樞紐：布爾射手伏在丘陵後方五六百碼外單發點射，英軍線形隊形屢次在射程內散開。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1880-f36ae4aa23.json"
+    },
+    {
+      "id": "1893-法暹戰爭",
+      "added": "2026-10-21T05:27:02.367Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 100.58,
+        "lat": 13.5
+      },
+      "battle": {
+        "y": 1893,
+        "m": 7,
+        "name": "法暹戰爭",
+        "theater": "暹羅灣與湄公河中下游",
+        "brief": "一八九三年七月，法國兩艘砲艦溯昭披耶河駛入曼谷灣，炮擊帕南要塞、封鎖河口，逼迫暹羅割讓湄公河以東的寮國並賠款，簽訂《曼谷條約》。此役靠的是艦炮、後膛步槍與後膛炮，加特林機槍在歐洲已退出一線軍備，僅作為同時代速射火力的原型被記錄。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1893-ef3987914f.json"
+    },
+    {
+      "id": "1899-千日戰爭",
+      "added": "2026-10-21T05:27:02.374Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -74.07,
+        "lat": 4.71
+      },
+      "battle": {
+        "y": 1899,
+        "m": 10,
+        "name": "千日戰爭",
+        "theater": "安第斯山區與加勒比海沿岸",
+        "brief": "一八九九年十月卅一日，桑坦德省帕洛內格羅槍響，自由派起兵攻打保守派據點，此後近千日戰火遍及全國，最終雙方在內華達山區議和。同期加勒比海沿岸遭自由派封鎖，哥倫比亞海軍以木殼巡洋艦與河口分艦隊的鐵殼武裝艇應戰，整場戰爭沒有真正的鐵甲艦上陣。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1899-eeb37c60a9.json"
     }
   ]
 }
