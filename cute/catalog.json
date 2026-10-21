@@ -2266,7 +2266,7 @@
    "pen": 20,
    "armor": 8,
    "history": "插在火槍上的短刀。它讓火槍兵在裝填的間隙裡仍然算得上一名士兵。",
-   "portrait": null
+   "portrait": "portraits/bayonet.jpg"
   },
   {
    "id": "tercioshield",
@@ -2308,7 +2308,7 @@
    "pen": 20,
    "armor": 8,
    "history": "葡萄牙人帶到種子島的一支火繩槍，幾個月內就造出了幾萬支。",
-   "portrait": null
+   "portrait": "portraits/tanegashima.jpg"
   },
   {
    "id": "ottomanmusket",
@@ -2322,7 +2322,7 @@
    "pen": 20,
    "armor": 8,
    "history": "帝國的兵廠自己造的火槍。蘇丹的軍隊用歐洲的技術，用自己的爐子。",
-   "portrait": null
+   "portrait": "portraits/ottomanmusket.jpg"
   },
   {
    "id": "navalculverin",
@@ -2336,7 +2336,7 @@
    "pen": 20,
    "armor": 8,
    "history": "能打穿船板的長身管砲。它的重心決定了船能裝多少門，也決定了船能走多遠。",
-   "portrait": null
+   "portrait": "portraits/navalculverin.jpg"
   },
   {
    "id": "manofwar",
@@ -2350,7 +2350,7 @@
    "pen": 20,
    "armor": 8,
    "history": "一艘船上的炮比一整座要塞還多。風、帆和火炮的計算從此綁在一起。",
-   "portrait": null
+   "portrait": "portraits/manofwar.jpg"
   },
   {
    "id": "swisspike",

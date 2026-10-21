@@ -178,7 +178,12 @@
   "contostephano": "portraits/contostephano.jpg",
   "lombardshield": "portraits/lombardshield.jpg",
   "springald": "portraits/springald.jpg",
+  "bayonet": "portraits/bayonet.jpg",
   "spanishtercioshield": "portraits/tercioshield.jpg",
-  "cuirass": "portraits/cuirassst.jpg"
+  "cuirass": "portraits/cuirassst.jpg",
+  "tanegashimamatchlock": "portraits/tanegashima.jpg",
+  "ottomanmusket": "portraits/ottomanmusket.jpg",
+  "navalculverin": "portraits/navalculverin.jpg",
+  "manofwar": "portraits/manofwar.jpg"
  }
 }
