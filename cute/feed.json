@@ -2305,7 +2305,8 @@
         "layer": "land",
         "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
         "portrait": "portraits/flintlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1806-2b74ab745c.json"
     },
     {
       "id": "1806-第四次反法同盟",
@@ -5814,18 +5815,17 @@
     {
       "id": "1880-第一次波耳戰爭",
       "added": "2026-10-21T05:27:02.356Z",
-      "span": "p19",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
       "place": {
-        "lng": 27.8,
-        "lat": -25.9
+        "lng": 28.19,
+        "lat": -25.75
       },
       "battle": {
         "y": 1880,
         "m": 12,
         "name": "第一次波耳戰爭",
-        "theater": "德蘭士瓦西部與奧蘭治自由邦",
-        "brief": "一八八〇年十二月，德蘭士瓦武裝村民起事，逐走英方守軍，重開人民議恢復共和國。英軍在帕德克勞與英戈戈兩度敗績，一八八一年二月在梅奇山取回主動權，三月佔領布隆方丹，五月簽訂比勒陀利亞協約。雷管步槍是這場戰爭的樞紐：布爾射手伏在丘陵後方五六百碼外單發點射，英軍線形隊形屢次在射程內散開。"
+        "theater": "德蘭士瓦高原與比勒陀利亞",
+        "brief": "一八八〇年十二月十六日，比勒陀利亞的英國居民與德蘭士瓦民兵在斯普魯伊特河畔交火，波爾民軍攻入皇家酒店，奪走英軍兩門野砲同加特林機槍。戰事延續至翌年五月，英軍連敗於英戈戈河與帕德克拉爾，以談判收場。卡面法國一八四〇年雷管步槍屬前裝槍世代，維利堡前膛槍同馬丁利－亨利步槍都靠雷管點火。"
       },
       "kit": {
         "name": "雷管步槍",
@@ -5891,6 +5891,159 @@
         "portrait": "portraits/ironclad.jpg"
       },
       "dossierUrl": "dossiers/1899-eeb37c60a9.json"
+    },
+    {
+      "id": "1817-高加索戰爭",
+      "added": "2026-10-21T05:24:39.266Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1817,
+        "m": 1,
+        "name": "高加索戰爭",
+        "theater": "北高加索",
+        "brief": "中文維基「戰爭列表」所列的高加索戰爭始於一八一七年，主要發生在北高加索，反映俄羅斯帝國向當地抵抗勢力擴張的長期軍事衝突。西班牙長槍（Pike，1600年）是截至一八一七年已列裝的陸軍近戰裝備，可作為同期兵種技術背景。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
+      }
+    },
+    {
+      "id": "1820-厄瓜多爾獨立戰爭",
+      "added": "2026-10-21T05:15:27.488Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -78.52,
+        "lat": -0.18
+      },
+      "battle": {
+        "y": 1820,
+        "m": 5,
+        "name": "厄瓜多爾獨立戰爭",
+        "theater": "基多",
+        "brief": "中文維基戰爭列表所列的厄瓜多爾獨立戰爭，於一八二〇年五月在基多爆發，戰事遍及厄瓜多爾沿岸與安第斯山區，一方為西班牙殖民當局，另一方為獨立革命軍。當時西班牙陸軍體系中仍可見火繩槍（Matchlock musket），屬可用於步兵作戰的早期火器。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1820-奧斯曼-波斯戰爭(1821年-1823年)",
+      "added": "2026-10-21T05:15:28.232Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 41.27,
+        "lat": 39.91
+      },
+      "battle": {
+        "y": 1820,
+        "m": 9,
+        "name": "奧斯曼-波斯戰爭 (1821年-1823年)",
+        "theater": "埃爾祖魯姆",
+        "brief": "奧斯曼-波斯戰爭（1821年至1823年）主要在東安納托利亞與高加索南部展開，埃爾祖魯姆是奧斯曼軍與卡札爾波斯軍交鋒的重要區域。火繩槍（Matchlock musket）自1520年已列裝，屬可用於步兵線列的早期槍械。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1820-張格爾之亂",
+      "added": "2026-10-21T05:16:38.094Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 75.99,
+        "lat": 39.47
+      },
+      "battle": {
+        "y": 1820,
+        "m": 1,
+        "name": "張格爾之亂",
+        "theater": "新疆西部喀什噶爾地區",
+        "brief": "張格爾之亂是1820年發生於新疆西部的清廷平叛戰事，張格爾率部起事後，衝突主要牽涉喀什噶爾及其周邊地區，並延續至清廷平定為止。清軍步兵使用火繩槍（Matchlock musket）作為遠程火器；此正式型號自1520年列裝，至1820年仍是可用的步兵裝備。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1820-西班牙立憲革命",
+      "added": "2026-10-21T05:15:24.827Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -3.7,
+        "lat": 40.42
+      },
+      "battle": {
+        "y": 1820,
+        "m": 3,
+        "name": "西班牙立憲革命",
+        "theater": "馬德里",
+        "brief": "西班牙立憲革命於一八二〇年三月在馬德里爆發，起義軍迫使費爾南多七世恢復一八一二年憲法，並開啟自由主義時期。中文維基〈戰爭列表〉將其列為衝突；火繩槍（Matchlock musket）則是自一五二〇年列裝、曾供西班牙步兵使用的制式火器。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1821-巴西獨立戰爭",
+      "added": "2026-10-21T05:16:18.603Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -43.17,
+        "lat": -22.91
+      },
+      "battle": {
+        "y": 1821,
+        "m": 6,
+        "name": "巴西獨立戰爭",
+        "theater": "里約熱內盧坎普・德・桑塔納",
+        "brief": "巴西獨立戰爭是巴西脫離葡萄牙統治過程中的軍事衝突，1821年里約熱內盧坎普・德・桑塔納的交火，是早期事件之一。輪發手槍（Wheellock pistol）自十五世紀末已列入軍隊裝備，屬早期單兵火器，主要供軍官、衛兵與輕裝步兵作近身防衛，也可擔任營區與登船警戒。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      }
     }
   ]
 }
