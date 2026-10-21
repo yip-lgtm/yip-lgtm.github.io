@@ -2178,7 +2178,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1840-0e1931ea5b.json"
     },
     {
       "id": "1850-太平天國起義",
@@ -2204,7 +2205,8 @@
         "layer": "land",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1850-27b916198e.json"
     },
     {
       "id": "1870-普法戰爭",
@@ -2282,7 +2284,8 @@
         "layer": "land",
         "history": "線膛砲在德國陸軍體系中屬於野戰砲兵，作為步兵作戰時的火力支援裝置，與其他砲兵單位共同構成地面攻勢與防禦力量。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1853-aa22815429.json"
     },
     {
       "id": "1806-第七次俄土戰爭",
@@ -31424,6 +31427,405 @@
         "portrait": "portraits/dory.jpg"
       },
       "dossierUrl": "dossiers/607-29b8a0bf3b.json"
+    },
+    {
+      "id": "531-高歡攻爾朱氏之戰",
+      "added": "2026-10-21T09:54:57.481Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.62,
+        "lat": 36.35
+      },
+      "battle": {
+        "y": 531,
+        "m": 7,
+        "name": "高歡攻爾朱氏之戰",
+        "theater": "鄴城韓陵與晉陽",
+        "brief": "北魏末年，高歡在晉陽起兵討伐爾朱氏，先立渤海王元朗於信都號令河北，隨即兵臨鄴城。城破之後，他以不足三萬步騎在韓陵結圓陣、連繫牛驢塞住歸路，大破號稱二十萬的爾朱兆之眾，河北遂入其手。卡面的羅馬方陣盾不在這片戰場，它指出的是同一個道理：防線靠咬合與封閉成立，不靠盾牌多厚；真正頂住契胡騎兵的，是魏軍前列的漢魏木楯與長柄槊。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      }
+    },
+    {
+      "id": "610-翟讓起義",
+      "added": "2026-10-21T09:54:57.555Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.03,
+        "lat": 35.76
+      },
+      "battle": {
+        "y": 610,
+        "m": 11,
+        "name": "翟讓起義",
+        "theater": "河南道滑州韋縣至洛口倉",
+        "brief": "大業六年（610），滑州韋縣的翟讓聚眾起事，以木筏沿黃河劫掠永濟渠漕船；後有李密來投，聯軍攻下洛口倉，成為瓦崗軍主體，隋廷遣張須陀鎮河南剿之。卡面羅馬方陣盾並非隋軍裝備，此處借它標示「盾」的位置：隋軍與瓦崗步卒都以木製大盾結陣遮蔽弓弩，防線靠盾與盾互相支撐，不是靠盾牌多厚。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      }
+    },
+    {
+      "id": "614-楊公卿起義",
+      "added": "2026-10-21T09:54:57.578Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 102.64,
+        "lat": 37.93
+      },
+      "battle": {
+        "y": 614,
+        "m": 10,
+        "name": "楊公卿起義",
+        "theater": "河西走廊涼州與吐谷渾邊境",
+        "brief": "大業十年冬，吐谷渾大軍進犯河西，涼州守軍崩潰，胡商首領楊公卿乘亂據城，與吐谷渾騎兵聯兵自守，河西走廊自此斷絕。由李靖平定吐谷渾、重開走廊，這場近二十年的割據才告結束。卡面這件斯巴達長矛並未到過六一四年的涼州，但它代表的長柄刺擊兵器，正是當年步卒抵住騎兵衝鋒、撐起防線的骨幹。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      }
+    },
+    {
+      "id": "615-張起緒起義",
+      "added": "2026-10-21T09:54:57.582Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.42,
+        "lat": 32.39
+      },
+      "battle": {
+        "y": 615,
+        "m": 7,
+        "name": "張起緒起義",
+        "theater": "淮南江都廣陵沿淮一線",
+        "brief": "大業十一年(615)七月，淮南人張起緒舉兵為盜，眾至三萬，郡兵不能制；同月隋煬帝北巡塞外，八月被突厥困於雁門，淮南的急報與北方的急報同時擺上案頭。卡面羅馬方陣盾未隨軍而至：中國軍中無此制式，叛軍靠漁具柴斧與粗弓，官軍仍是楯結陣、槊弩與札甲的郡兵。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      }
+    },
+    {
+      "id": "615-楊仲緒起義",
+      "added": "2026-10-21T09:54:57.585Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.88,
+        "lat": 39.82
+      },
+      "battle": {
+        "y": 615,
+        "m": 2,
+        "name": "楊仲緒起義",
+        "theater": "北平郡城",
+        "brief": "大業十一年二月戊辰，涿郡豪帥楊仲緒率眾萬餘攻北平郡城，隋廷以滑國公李景率軍赴援；守軍以秦弩列陣城頭，居高壓制攻城步卒，叛軍攻具屢不得上城牆。二月之役中叛軍野戰失利，楊仲緒被斬，幽州起義隨之瓦解。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/615-8d1fa8f259.json"
+    },
+    {
+      "id": "616-杜揚州",
+      "added": "2026-10-21T09:54:57.591Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 105.7,
+        "lat": 19.8
+      },
+      "battle": {
+        "y": 616,
+        "m": 1,
+        "name": "杜揚州",
+        "theater": "交州南境至毗驩城下",
+        "brief": "大業十二年，隋煬帝再發大軍討林邑，主將劉方圍都城毗驩數月，國相昆吾詐降反攻，隋軍大敗，主將中箭卒於軍中，諸軍無功而還；隋朝仍於故地置杜揚州，續以羈縻。羅馬方陣盾不在此役，但隋軍步卒結盾拒象、以車壁代盾牆，正是「盾緣咬住盾緣」那套道理。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/616-3bf90fb1fd.json"
+    },
+    {
+      "id": "616-荔非世雄起義",
+      "added": "2026-10-21T09:54:57.595Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 107.2,
+        "lat": 35.68
+      },
+      "battle": {
+        "y": 616,
+        "m": 9,
+        "name": "荔非世雄起義",
+        "theater": "隴右安定郡臨洮與華亭一帶",
+        "brief": "大業十二年（616）九月初九，安定郡人荔非世雄在臨洮縣聚眾，殺縣令、自稱將軍，隴右的郡縣秩序隨之斷裂。卡面這件秦弩正是亂局中守城的關鍵：弩機儲力、一張一發，郡兵居高臨下把攻城的鄉兵壓在牆外；只是募兵、屯田戶與流民大量流散，守軍的弩陣與糧道都撐不了多久。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/616-a69fd3bfba.json"
+    },
+    {
+      "id": "616-隋王仁恭擊突厥之戰",
+      "added": "2026-10-21T09:54:57.596Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.43,
+        "lat": 39.33
+      },
+      "battle": {
+        "y": 616,
+        "m": 9,
+        "name": "隋王仁恭擊突厥之戰",
+        "theater": "馬邑城與雁門關之間的代北邊地",
+        "brief": "大業十二年（616年），東突厥始畢可汗再度窺犯代北，隋廷命馬邑太守王仁恭率兵出擊，於馬邑城與雁門關之間的邊地與突厥騎兵交鋒。卡面這名希臘重步兵不屬隋軍，它點出的是同一道理：面對成群衝鋒的騎兵，靠的是成陣互遮而非個人勇力。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      }
+    },
+    {
+      "id": "617-張善安起義",
+      "added": "2026-10-21T09:54:57.598Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116,
+        "lat": 29.4
+      },
+      "battle": {
+        "y": 617,
+        "m": 12,
+        "name": "張善安起義",
+        "theater": "江右鄱陽尋陽（贛北長江中游）",
+        "brief": "大業十三年（617）冬，隋室已自長江下游的江都播遷，天下州縣多為亂兵所據，張善安在鄱陽起兵，攻陷尋陽，自稱都督、置官屬，兵鋒直指江右郡縣；隋廷遣將回討，起義旋即潰散。卡面斯巴達長矛未隨軍而至，但密集槍陣的形制在江右鄉兵的竹槊與隋軍的步槊上都有對應。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/617-c9f8ecc1cc.json"
+    },
+    {
+      "id": "617-徐圓朗起義",
+      "added": "2026-10-21T09:54:57.600Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 116.59,
+        "lat": 35.41
+      },
+      "battle": {
+        "y": 617,
+        "m": 1,
+        "name": "徐圓朗起義",
+        "theater": "魯郡兗州及宋城一線",
+        "brief": "隋大業十三年（617年）正月，魯郡人徐圓朗在兗州聚眾起事，眾至數萬，先取金鄉、濟州一帶，後依附瓦崗李密，李密敗則歸竇建德；武德二年（619年）降唐，封魯郡公、拜兗州總管，旋於武德四年（621年）八月扣唐使盛彥師反唐，與河北劉黑闔相呼應而攻宋城，終為唐軍所平。卡面這件埃及月牙劍屬青銅時代工藝，比本役早三千餘年，並不在魯郡戰場上；隋唐兩軍實用者為環首橢刀、方天畫戟、長柄槊與蹶張弩，攻城賴撞車、雲梯與石砲。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/617-5e0a6719dd.json"
+    },
+    {
+      "id": "617-杜伏威擊陳稜之戰",
+      "added": "2026-10-21T09:54:57.602Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.35,
+        "lat": 31.72
+      },
+      "battle": {
+        "y": 617,
+        "m": 10,
+        "name": "杜伏威擊陳稜之戰",
+        "theater": "淮南歷陽、高郵一線",
+        "brief": "隋大業十三年（617）秋，江淮起義首領杜伏威在淮南一線迎擊隋廷鎮壓名將陳稜的軍隊，設伏破其精兵，陳稜僅以身免；杜乘勝破高郵，進取歷陽自稱總管。卡面的羅馬方陣盾屬公元前後羅馬軍團裝備，並未出現在此役，隋軍實用圓盾方盾配長槊與明光鎧，義軍則靠水網游擊與火攻取勝。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/617-3b4ee1af11.json"
+    },
+    {
+      "id": "617-楊世洛起義",
+      "added": "2026-10-21T09:54:57.603Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.47,
+        "lat": 37.75
+      },
+      "battle": {
+        "y": 617,
+        "m": 10,
+        "name": "楊世洛起義",
+        "theater": "太原郡晉陽縣（晉陽故城）",
+        "brief": "大業十三年十月丁亥，太原人楊世洛聚眾萬餘人，攻城掠邑。時太原一帶已歸李淵次子李元吉節制，隋廷徵發未解、府兵久疲，起兵旬月即擾及鄰縣。兩《隋書》於此僅留一語，其後無詳。卡面羅馬重步兵並未入華，可與之對照者，是隋軍具裝步卒結重盾長槊之陣。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/617-1e907833dd.json"
+    },
+    {
+      "id": "617-郭子和起義",
+      "added": "2026-10-21T09:54:57.608Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 109.58,
+        "lat": 34.52
+      },
+      "battle": {
+        "y": 617,
+        "m": 10,
+        "name": "郭子和起義",
+        "theater": "陝西同州蒲城",
+        "brief": "大業十三年關中饑荒、隋廷失序，掖衛郭子和流放榆林後糾集亡命，殺同州郡丞王才、開倉賑饑，自立永樂王，建元正平，與梁師都及突厥往來，據渭北同州蒲城，與隋軍對峙逾年，翌年降唐拜雲州總管、封金河郡公。外彎單刃的月牙劍砍入不必拔刃，於密集結陣的近身搏鬥中可連劈不輟，正合流民結眾的肉搏戰法。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/617-171ae6cfe4.json"
+    },
+    {
+      "id": "618-徐世勣討王德仁之戰",
+      "added": "2026-10-21T09:54:57.611Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.34,
+        "lat": 34.8
+      },
+      "battle": {
+        "y": 618,
+        "m": 11,
+        "name": "徐世勣討王德仁之戰",
+        "theater": "陳留郡汴水下游",
+        "brief": "武德元年（618）十一月，江南梁王蕭梁遣大將王德仁沿淮泗汴水北上，掠取陳留、豫兗一帶，威脅黎陽倉；唐命東海郡公徐世勣自黎陽出擊，在汴水線上擊破梁軍，王德仁兵敗被擒，陳留歸唐。卡面羅馬重步兵屬公元前二世紀裝備，未用於此役，其「靠兵源與補給線」的特質對應的正是徐世勣以黎陽倉為出擊支點的戰法。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      }
+    },
+    {
+      "id": "618-竇建德攻幽州之戰",
+      "added": "2026-10-21T09:54:57.613Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.34,
+        "lat": 39.89
+      },
+      "battle": {
+        "y": 618,
+        "m": 11,
+        "name": "竇建德攻幽州之戰",
+        "theater": "范陽幽州城",
+        "brief": "武德初年，竇建德併有河北後揮軍北上，圍攻幽州，總管羅藝據城固守，攻方屢攻不克，聞唐援軍將至遂解圍而去，幽州終歸唐有。卡面兵器為希臘重步兵（Hoplite），成形於公元前五世紀的希臘城邦，比本役早一千一百餘年；其以圓盾結陣、盾肩相接的戰法，與守軍結陣自保的樣態最為相類。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/618-99e74a1faf.json"
     }
   ]
 }
