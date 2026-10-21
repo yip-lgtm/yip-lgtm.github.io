@@ -3412,7 +3412,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1838-bbca6925d3.json"
     },
     {
       "id": "1839-蜂蜜戰爭",
@@ -3546,7 +3547,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1848-f243fc066b.json"
     },
     {
       "id": "1848-法國二月革命",
@@ -3653,7 +3655,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1848-0614bec69e.json"
     },
     {
       "id": "1848-第二次英國錫克戰爭",
@@ -3706,7 +3709,8 @@
         "layer": "land",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1853-7ae569418a.json"
     },
     {
       "id": "1854-堪薩斯內戰",
@@ -3734,6 +3738,786 @@
         "portrait": "portraits/percussion.jpg"
       },
       "dossierUrl": "dossiers/1854-7aaa0b4fe9.json"
+    },
+    {
+      "id": "1848-西西里1848年革命",
+      "added": "2026-10-21T05:01:34.303Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.36,
+        "lat": 38.12
+      },
+      "battle": {
+        "y": 1848,
+        "m": 1,
+        "name": "西西里1848年革命",
+        "theater": "巴勒莫與墨西拿戰線",
+        "brief": "一八四八年一月十二日，巴勒莫民眾在羅西利諾·皮洛與朱塞佩·拉·馬薩率領下起事，奪取海濱兵工廠與海上城堡，翌日總委員會宣告波旁王朝在島上失效；全島先後有百餘個城鎮響應，三月召開西西里議會並另立王國。波旁軍退守墨西拿稜堡，於一八四八年九月以遠征軍攻回全島，次年五月十五日復陷巴勒莫。雷管步槍在城區街壘與鄉村散射中交鋒，射程拉長改變了攻守節奏。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1848-3102325941.json"
+    },
+    {
+      "id": "1852-第二次英緬戰爭",
+      "added": "2026-10-21T05:01:34.306Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 96.2,
+        "lat": 16.87
+      },
+      "battle": {
+        "y": 1852,
+        "m": 3,
+        "name": "第二次英緬戰爭",
+        "theater": "仰光至曼德勒伊洛瓦底江流域",
+        "brief": "一八五二年三月東印度公司藉駐緬代表遇害與朝儀爭端出兵，四月圍仰光、六月破城，爾後沿伊洛瓦底江北上，一八五六年五月克曼德勒，貢榜王朝覆亡。英軍步兵以雷管步槍為主，底火不受雨霧影響，射程壓過緬軍土砲，開闊地火力即成勝負之別。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1852-89160dc64f.json"
+    },
+    {
+      "id": "1855-廓藏戰爭",
+      "added": "2026-10-21T05:01:34.312Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 85.6,
+        "lat": 28.8
+      },
+      "battle": {
+        "y": 1855,
+        "m": 3,
+        "name": "廓藏戰爭",
+        "theater": "克榮溝與定日邊境",
+        "brief": "一八五五年三月，尼泊爾首相章巴·拉納以使團受辱與克蒂邊界爭端為由向西藏宣戰，四月初分克榮、克蒂、馬斯塘三路越過山口，投入二萬七千人、三十六門砲與八門迫擊砲。卡面這門一八五〇年的德意志線膛野戰砲代表射程革命，但遠征帶上山的仍是前裝滑膛銅砲，扭轉戰局的是章卡攻堅九天與藏軍雪季反攻。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1855-c08903200f.json"
+    },
+    {
+      "id": "1855-第三次塞米諾爾戰爭",
+      "added": "2026-10-21T05:01:34.315Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -82.44,
+        "lat": 28.32
+      },
+      "battle": {
+        "y": 1855,
+        "m": 12,
+        "name": "第三次塞米諾爾戰爭",
+        "theater": "佛州西南大柏樹沼澤與威拉庫奇河",
+        "brief": "一八五五年起，佛州當局以增兵、禁運與保留地制度逼最後一批塞米諾爾人西遷，同年十二月邁爾斯堡外的馬車隊伏擊拉開第三次塞米諾爾戰爭。此後三年，雙方在威拉庫奇河、大柏樹沼澤與奧基喬比湖反覆拉鋸：聯軍以雷管步槍在雨霧中遠距精射，卻屢遭游擊與後勤襲擊牽制，最後以金錢買下西遷。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1855-622a9e209f.json"
+    },
+    {
+      "id": "1856-第二次鴉片戰爭",
+      "added": "2026-10-21T05:01:34.317Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.74,
+        "lat": 39.02
+      },
+      "battle": {
+        "y": 1856,
+        "m": 10,
+        "name": "第二次鴉片戰爭",
+        "theater": "大沽口至京師",
+        "brief": "一八五六年十月亞羅號事件掀開戰端，英法聯軍自珠江口打到京師。卡面線膛砲是遠征軍野戰砲兵的核心裝備，射程與穿甲力令清軍岸上固定砲台在交火前已被壓制；一八六〇年遠征軍奪取大沽口，九月二十一日在八里橋以砲火與騎兵側擊擊潰蒙古騎兵，十月五日進北京。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1856-d041989a72.json"
+    },
+    {
+      "id": "1856-英國-波斯戰爭",
+      "added": "2026-10-21T05:01:34.320Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 56.28,
+        "lat": 27.19
+      },
+      "battle": {
+        "y": 1856,
+        "m": 12,
+        "name": "英國-波斯戰爭",
+        "theater": "波斯灣沿岸與荷姆茲海峽",
+        "brief": "一八五六年波斯使節在君士坦丁堡失言，英國與波斯絕交；同年十二月皇家海軍封鎖波斯灣，在布什爾外海開火。一八五七年英軍登陸基什島、攻陷荷姆茲石堡，並在海上截獲波斯巡防艦。雷管步槍這一代技術以法國一八四〇年制式為代表，已是遠征軍標準槍械，海霧中的遠射也讓密集隊形難以維持。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1856-34c899e6d4.json"
+    },
+    {
+      "id": "1856-雲南回變",
+      "added": "2026-10-21T05:01:34.323Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 102.83,
+        "lat": 25.04
+      },
+      "battle": {
+        "y": 1856,
+        "m": 3,
+        "name": "雲南回變",
+        "theater": "昆明城郊與滇南滇西山區",
+        "brief": "咸豐六年三月，雲南清官在昆明處決數名回族首領，馬如龍、馬興才與杜文秀遂率回眾起事，戰火由滇南通海蔓延至臨安、大理與滇西騰越，官軍屢攻不下。叛軍以山寨石堡固守，屢圍昆明，並三度進兵緬甸求援。線膛砲隨英軍遠征隊入滇，遠射程壓過叛軍抬砲，改變攻城戰的規則。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1856-0f63349acb.json"
+    },
+    {
+      "id": "1857-印度民族起義",
+      "added": "2026-10-21T05:01:34.325Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 77.21,
+        "lat": 28.61
+      },
+      "battle": {
+        "y": 1857,
+        "m": 5,
+        "name": "印度民族起義",
+        "theater": "北印度德里與勒克瑙戰線",
+        "brief": "一八五七年五月十日，密拉特軍營起事，起義軍攻入德里並擁立巴合杜爾沙為帝。德里的雷管步槍多來自公司軍械庫與法造步槍，射擊精準但裝填遲緩，攻城仰賴繳獲的火砲與夜襲；同年下半年戰線東移勒克瑙、坎伯而與占西，終被英軍攻城砲列與刺刀攻城的立體火力壓垮。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1857-bcf64647ce.json"
+    },
+    {
+      "id": "1857-猶他戰爭",
+      "added": "2026-10-21T05:01:34.327Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -111.89,
+        "lat": 40.76
+      },
+      "battle": {
+        "y": 1857,
+        "m": 4,
+        "name": "猶他戰爭",
+        "theater": "大鹽湖谷地與瓦薩奇山脈北麓",
+        "brief": "一八五七年四月，聯邦政府以猶他領地廢除聯邦法律、私設民兵為由，派出約二千五百名正規軍西進。布賴翰·楊退往密蘇里河，聯邦軍於一八五八年七月二十六日無一槍一彈進入鹽湖城。全役沒有會戰，只在堡壘、缺口與遠程砲火之間周旋；線膛砲的射程優勢自頭到尾沒有決定過任何一場勝負。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1857-fe16685ac7.json"
+    },
+    {
+      "id": "1858-南圻遠征",
+      "added": "2026-10-21T05:01:34.330Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.63,
+        "lat": 10.78
+      },
+      "battle": {
+        "y": 1858,
+        "m": 9,
+        "name": "南圻遠征",
+        "theater": "越南南部西貢江口與城堡",
+        "brief": "一八五八年九月，法西艦隊溯西貢江進攻安南，砲艇先以火力壓倒順安河口與望海樓的守台，登陸先鋒突入城內，數日內奪下西貢，成為法國在亞洲的據點。阮朝向清朝求援，兩軍於升龍郊野交戰；一八六一年法軍夜攻城堡得手，一八六二年割讓南圻三省。雷管步槍底火不熄，濕季仍可射擊。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1858-9acc03a6e2.json"
+    },
+    {
+      "id": "1859-第二次意大利獨立戰爭",
+      "added": "2026-10-21T05:01:34.333Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 8.92,
+        "lat": 45.26
+      },
+      "battle": {
+        "y": 1859,
+        "m": 4,
+        "name": "第二次意大利獨立戰爭",
+        "theater": "倫巴第平原與米蘭西北戰線",
+        "brief": "一八五九年四月末，薩丁尼亞王國議會批准與法國結盟，奧軍五月二十九日進攻皮埃蒙特，戰火在倫巴第平原鋪開。卡面線膛砲代表一八五八年前後剛問世的線膛前膛野戰砲，射程遠超滑膛銅砲，砲兵頭一次能在射程上壓過步兵；索爾費里諾一役雙方主力仍是滑膛砲，線膛砲要到一八六〇年代才全面取代它。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1859-82c4a12ce8.json"
+    },
+    {
+      "id": "1859-西摩戰爭",
+      "added": "2026-10-21T05:01:34.335Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 33.52,
+        "lat": 44.62
+      },
+      "battle": {
+        "y": 1859,
+        "m": 10,
+        "name": "西摩戰爭",
+        "theater": "克里米亞半島塞瓦斯托波爾",
+        "brief": "一八五三年十月俄軍越過普魯特河侵入摩爾多瓦，戰火最終燒到克里米亞半島，英法聯軍自一八五四年九月圍困塞瓦斯托波爾，歷時十七個月。雷管步槍已取代火燧成為各國步兵主力，卡面呢件法國雷管步槍正係聯軍攻城步兵列陣所用嘅制式槍械。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1859-89439a1771.json"
+    },
+    {
+      "id": "1860-千人隊遠征",
+      "added": "2026-10-21T05:01:34.337Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 12.44,
+        "lat": 37.8
+      },
+      "battle": {
+        "y": 1860,
+        "m": 5,
+        "name": "千人隊遠征",
+        "theater": "西西里島西部與那不勒斯灣",
+        "brief": "一八六〇年五月十一日，加里波第率一千零八十九名志願者自熱那亞出海，在西西里馬爾薩拉登陸，經卡爾塔菲米、米爾措直取巴勒莫，再渡海峽入那不勒斯，十月一日於沃爾圖爾諾擊潰波旁軍，圍困加埃塔至翌年二月陷落。志願軍所攜的十四點七毫米雷管步槍，正是皮埃蒙特軍同族步槍的母型，山地上的射擊節奏由它決定。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1861-佔領阿勞卡尼亞",
+      "added": "2026-10-21T05:01:34.340Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -72.71,
+        "lat": -37.9
+      },
+      "battle": {
+        "y": 1861,
+        "m": 12,
+        "name": "佔領阿勞卡尼亞",
+        "theater": "智利南部阿勞卡尼亞邊疆",
+        "brief": "一八六一年底起，智利以遠征軍沿比奧比奧河與卡烏廷河之間推進，用堡壘、鐵路與電報一節一節吃掉馬普切人的土地。卡面的線膛野戰砲是這套慢功夫的骨幹火力：射程越過對方的長槍與投石索，讓堡壘可以脫離步兵射程獨立存在，也讓縱隊敢在沒有會戰的情況下繼續往前推。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1861-南北戰爭",
+      "added": "2026-10-21T05:01:34.343Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -77.44,
+        "lat": 37.54
+      },
+      "battle": {
+        "y": 1861,
+        "m": 4,
+        "name": "南北戰爭",
+        "theater": "維吉尼亞戰區與西部戰線",
+        "brief": "一八六一年四月，南方十一州退出聯邦，內戰在查爾斯頓港的薩姆特堡打響。卡面雷管步槍把有效射程推到二百碼以上，拿破崙式縱隊在弗雷德里克斯堡與冷港前撞上散兵與塹壕，戰爭因此變成一場比工業、比鐵路、比動員的消耗。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1861-aeab06afdc.json"
+    },
+    {
+      "id": "1862-同治新疆回亂",
+      "added": "2026-10-21T05:01:34.345Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 75.99,
+        "lat": 39.47
+      },
+      "battle": {
+        "y": 1862,
+        "m": 5,
+        "name": "同治新疆回亂",
+        "theater": "陝甘三州與天山南北",
+        "brief": "一八六二年五月，陝西渭南、大荔一帶回民起義，戰火經陝東、河州、肅州燒到天山南北，演成十五年裡清廷、回軍、浩罕與阿古柏四方角力的西北大戰。線膛砲在陝甘攻堅中只是配合的舊器械，到左宗棠西征才升格為封鎖城垣的骨幹，同時把前裝砲射速低、彈藥沉重的弱點暴露得一清二楚。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1862-ebb9847f19.json"
+    },
+    {
+      "id": "1862-同治陝甘回變",
+      "added": "2026-10-21T05:01:34.348Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 103.21,
+        "lat": 35.6
+      },
+      "battle": {
+        "y": 1862,
+        "m": 2,
+        "name": "同治陝甘回變",
+        "theater": "陝西關中與甘肅河洮走廊",
+        "brief": "一八六二年二月，陝西回民於華州起義，攻涇陽、臨潼並圍困西安；甘肅河州馬化龍同年響應，據洮河立寨建軍，與清廷對抗十五年。一八七六年左宗棠收復肅州，一八七七年河州歸順，首領誅於蘭州。全役在內陸，無海軍參與；同年英國首批鐵甲艦入役，漢普頓斯維之役證其長，此器只是那一代技術的標記。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1862-0128605eff.json"
+    },
+    {
+      "id": "1863-下關戰爭",
+      "added": "2026-10-21T05:01:34.350Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.95,
+        "lat": 33.95
+      },
+      "battle": {
+        "y": 1863,
+        "m": 9,
+        "name": "下關戰爭",
+        "theater": "下關海峽",
+        "brief": "一八六三年九月五日起，英、法、美、荷、普、丹六國艦隊兩度炮擊下關海峽，迫使長州藩開港並准許外國人購馬，一八六四年一月十六日更以約二千人的上陸部隊攻佔唐戶、垢田兩座砲台。卡面加特林機槍是一八六〇年取得美國專利的速射武器，參戰的美國正是其本國；海峽裡真正開火的是艦載前膛與後膛砲。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1863-6e6be52119.json"
+    },
+    {
+      "id": "1864-不丹戰爭",
+      "added": "2026-10-21T05:01:34.353Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 89.88,
+        "lat": 27.42
+      },
+      "battle": {
+        "y": 1864,
+        "m": 8,
+        "name": "不丹戰爭",
+        "theater": "錫金東麓與不丹中央河谷",
+        "brief": "一八六四年八月，不丹自錫金越境，攻入英屬印度的杜爾斯與大吉嶺。英軍組成遠征縱隊，自比爾斯堡沿托爾薩河谷前進，冬春兩季攻入不丹中央河谷，攻破蓬卡與通薩兩座宗堡，逼訂辛楚拉條約。海上的支援全賴孟加拉海軍的淺水蒸汽砲艇，英國本土的鐵甲主力艦吃水太深，無力溯抵前線。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1864-a5a8fade1a.json"
+    },
+    {
+      "id": "1864-天狗黨之亂",
+      "added": "2026-10-21T05:01:34.355Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 132.13,
+        "lat": 34.03
+      },
+      "battle": {
+        "y": 1864,
+        "m": 3,
+        "name": "天狗黨之亂",
+        "theater": "大周防・三山(現山口縣柳井市)",
+        "brief": "一八六四年三月,長州藩浪人高杉晉作率三十餘名天狗黨徒眾在萩起事,轉入大周防山區,靠鄉士接應游擊藩兵,終在柳井三山被長州藩軍包圍殲滅。事件成為幕府第一次征討長州的藉口。卡面加特林機槍一八六〇年方問世,天狗黨實際持用的仍是火繩銃,新舊兩代兵器的落差正是此役關鍵。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1864-305662aa8e.json"
+    },
+    {
+      "id": "1864-巴拉圭戰爭",
+      "added": "2026-10-21T05:01:34.358Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -58.52,
+        "lat": -27.08
+      },
+      "battle": {
+        "y": 1864,
+        "m": 12,
+        "name": "巴拉圭戰爭",
+        "theater": "巴拉那河下游與南巴拉圭",
+        "brief": "一八六四年十二月，巴西聯同阿根廷、烏拉圭組成三方聯盟向巴拉圭宣戰，在巴拉那河下游與南巴拉圭打了五年。巴拉圭獨力迎戰，以自產前裝野戰砲與內河艦隊死守亞松森與烏米塔要塞；聯軍以重砲攻壞要塞、以騎兵斷其退路，於一八七〇年三月一日塞羅科拉一役瓦解巴軍。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1864-4253298786.json"
+    },
+    {
+      "id": "1866-普奧戰爭",
+      "added": "2026-10-21T05:01:34.360Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 15.78,
+        "lat": 50.21
+      },
+      "battle": {
+        "y": 1866,
+        "m": 6,
+        "name": "普奧戰爭",
+        "theater": "波希米亞北部與薩多瓦會戰戰場",
+        "brief": "一八六六年六月，普魯士聯同義大利向奧地利開戰，德意志邦聯在數週內解體。七月三日薩多瓦會戰，第一軍正面強攻，第二軍自南翼夜行切入，線膛野砲與克魯普後膛砲在千餘米外壓住奧軍陣線，迫使奧軍左翼崩潰；八月二十三日《布拉格條約》畫下小德意志方案的界線。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1866-4521ecd8a2.json"
+    },
+    {
+      "id": "1866-第三次意大利獨立戰爭",
+      "added": "2026-10-21T05:01:34.363Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 10.8,
+        "lat": 45.49
+      },
+      "battle": {
+        "y": 1866,
+        "m": 4,
+        "name": "第三次意大利獨立戰爭",
+        "theater": "維羅納卡斯托扎與威尼西亞戰線",
+        "brief": "一八六六年四月至七月，義大利在加富爾推動下向奧地利開戰，主戰場是維羅納西南的卡斯托扎，六月二十四日拉·馬爾莫拉統率的中意大利軍被拉德茨基與本德克擊潰。卡面雷管步槍是當時歐洲步槍的技術基準：意軍以卡爾卡諾雷管槍列陣，奧軍用前膛雷管槍據守山脊，勝負卻不在槍，而在工兵爆破與指揮。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1866-fc3f23c9f0.json"
+    },
+    {
+      "id": "1868-十年戰爭",
+      "added": "2026-10-21T05:01:34.365Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -75.82,
+        "lat": 20.02
+      },
+      "battle": {
+        "y": 1868,
+        "m": 10,
+        "name": "十年戰爭",
+        "theater": "古巴東方省山區至卡馬圭東部",
+        "brief": "一八六八年十月十日，東方省拉德馬哈瓜莊園起義，揭開長達十年的獨立戰爭，至一八七八年桑洪條約收場。戰事集中於聖地牙哥、霍爾金山區與卡馬圭東部，起義軍以小隊游擊對抗西班牙縱隊。卡面這門一八五〇年的線膛野戰炮是西班牙砲兵火力核心，射程延長讓砲兵得以先於步兵壓制，起義軍只能以游擊應對。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1868-33317edbba.json"
+    },
+    {
+      "id": "1868-戊辰戰爭",
+      "added": "2026-10-21T05:01:34.368Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 135.5,
+        "lat": 34.69
+      },
+      "battle": {
+        "y": 1868,
+        "m": 1,
+        "name": "戊辰戰爭",
+        "theater": "關西平原至箱館灣",
+        "brief": "一八六八年一月三日江戶城不戰而開，幕府軍退守大坂，鳥羽伏見與大坂之戰接連失利，五月北走越前敦賀，六月二十七日蝦夷共和國投降。卡面雷管步槍正是官軍壓過幕府鳥銃的底火槍械，十八式小銃由小石川工場仿製，定裝藥莢帶來的射速與射程，把守軍的密集隊形變成活靶。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1868-fe9102f003.json"
+    },
+    {
+      "id": "1868-樟腦戰爭",
+      "added": "2026-10-21T05:01:34.370Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 121.44,
+        "lat": 25.17
+      },
+      "battle": {
+        "y": 1868,
+        "m": 5,
+        "name": "樟腦戰爭",
+        "theater": "淡水八卦山與基隆海岸",
+        "brief": "一八六八年五月底，薩摩藩以琉球未償千代丸沉船賠款為由，遣西郷重蔵率海陸兵自鹿兒島東渡，六月連取基隆、淡水兩座砲台，八月廿二日在淡水南面八卦山與清軍主力血戰失利，九月初全軍登船撤回。卡面鐵甲艦是裝甲重砲新紀元的產物，當時東亞水域尚無一艘，卻正預告這場戰役暴露的海岸攻防落差。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1868-f9e25978d6.json"
+    },
+    {
+      "id": "1872-第三次卡洛斯戰爭",
+      "added": "2026-10-21T05:01:34.373Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -1.65,
+        "lat": 42.81
+      },
+      "battle": {
+        "y": 1872,
+        "m": 8,
+        "name": "第三次卡洛斯戰爭",
+        "theater": "西班牙北部納瓦拉與巴斯克山區",
+        "brief": "1872年8月2日，帕維亞與普里姆在馬德里發動兵變，迫使阿馬迪奧一世退位流亡，卡洛斯派隨即在納瓦拉、巴斯克與加泰羅尼亞全面起兵，內戰延續三年半。卡洛斯七世兩度自稱國王，政府軍以法製雷管步槍配合青銅砲，在山區逐次攻奪卡洛斯派的小堡，1876年3月維加拉協議後退回法國。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1872-f8e70d6c03.json"
+    },
+    {
+      "id": "1872-莫多克戰爭",
+      "added": "2026-10-21T05:01:34.375Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -120.62,
+        "lat": 41.79
+      },
+      "battle": {
+        "y": 1872,
+        "m": 11,
+        "name": "莫多克戰爭",
+        "theater": "華納山與俄勒岡邊境",
+        "brief": "一八七二至七三年，莫多克人拒絕遷入克拉馬特保留地，退到加州與俄勒岡邊境的華納山天然堡壘；美軍以步兵第四、六團為主圍攻四月，靠山地榴彈砲與掘壕逼近才迫其屈服。鐵甲艦代表的正是同一個十年海軍裝甲化的轉折，與堡壘「小砲打不穿」的道理相通。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1872-f655178832.json"
+    },
+    {
+      "id": "1873-亞齊戰爭",
+      "added": "2026-10-21T05:01:34.378Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 95.32,
+        "lat": 5.55
+      },
+      "battle": {
+        "y": 1873,
+        "m": 10,
+        "name": "亞齊戰爭",
+        "theater": "古拉惹與亞齊內陸山區",
+        "brief": "一八七三年荷蘭以「主權」為名向亞齊派遠征軍，接收蘇丹宮並催促蘇丹確認割讓沿岸據點，卻在宮內被亞齊守軍擊殺使者，十月衝突遂擴大為全面戰爭。荷軍後以加特林機槍與連發砲在據點封鎖山嶺商路，卻追不上深入叢林的亞齊游擊隊，戰役前後打足三十年。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。"
+      },
+      "dossierUrl": "dossiers/1873-50f0be8845.json"
     }
   ]
 }
