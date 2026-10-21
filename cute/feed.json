@@ -2262,7 +2262,8 @@
         "layer": "land",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1894-94b7618905.json"
     },
     {
       "id": "1853-克里米亞戰爭",
@@ -2957,7 +2958,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1835-ca76cc3137.json"
     },
     {
       "id": "1835-托萊多戰爭",
@@ -2983,7 +2985,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1835-f3f86c83b3.json"
     },
     {
       "id": "1835-法拉波斯戰爭",
@@ -3009,7 +3012,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1835-ac40b5b7e1.json"
     },
     {
       "id": "1835-第二次塞米諾爾戰爭",
@@ -3035,7 +3039,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1835-149f2dd6cf.json"
     },
     {
       "id": "1836-邦聯戰爭",
@@ -6566,7 +6571,8 @@
         "layer": "land",
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1130-215b5236ce.json"
     },
     {
       "id": "1826-俄國-波斯戰爭(1826年-1828年)",
@@ -23099,7 +23105,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/gongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/225-9275824c98.json"
     },
     {
       "id": "232-三世紀危機",
@@ -31466,7 +31473,8 @@
         "layer": "land",
         "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
         "portrait": "portraits/scutum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/531-f738da19b1.json"
     },
     {
       "id": "610-翟讓起義",
@@ -32572,7 +32580,8 @@
         "layer": "land",
         "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
         "portrait": "portraits/hoplite.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/623-f815833c0f.json"
     },
     {
       "id": "641-唐擊薛延陀之戰",
@@ -33835,7 +33844,8 @@
         "layer": "land",
         "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
         "portrait": "portraits/egyptianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/629-ee5a6c0eb7.json"
     },
     {
       "id": "714-灤水谷之戰",
@@ -34077,7 +34087,8 @@
         "layer": "land",
         "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
         "portrait": "portraits/assyrianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/657-bdc02a7306.json"
     },
     {
       "id": "660-唐與契丹、奚等之戰",
@@ -34103,7 +34114,8 @@
         "layer": "land",
         "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
         "portrait": "portraits/scorpio.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/660-671c0aa258.json"
     },
     {
       "id": "666-唐滅高句麗之戰",
@@ -34129,7 +34141,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/gongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/666-361daf7264.json"
     },
     {
       "id": "764-邠州之戰",
