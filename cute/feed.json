@@ -8996,7 +8996,8 @@
         "layer": "land",
         "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
         "portrait": "portraits/fieldgun.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1700-4562056292.json"
     },
     {
       "id": "1895-乙未戰爭",
@@ -9337,6 +9338,137 @@
         "layer": "land",
         "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
         "portrait": "portraits/egyptianspear.jpg"
+      }
+    },
+    {
+      "id": "1073-宋收復河、岷等州之戰",
+      "added": "2026-10-21T06:18:29.039Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 103.53,
+        "lat": 35.04
+      },
+      "battle": {
+        "y": 1073,
+        "m": 1,
+        "name": "宋收復河、岷等州之戰",
+        "theater": "河州、岷州（今甘肅臨夏、甘南一帶",
+        "brief": "北宋熙寧六年，王韶率軍在西北邊地與吐蕃交戰，收復河、岷等州，並藉此拓展熙河路。戰事反映宋廷以邊軍進逼吐蕃控制區。同期已列裝的維京長斧（Dane axe）屬北歐重型雙刃步戰斧，供前排步兵破盾、砍殺及迎擊重裝目標。"
+      },
+      "kit": {
+        "name": "維京長斧",
+        "designation": "Dane axe",
+        "year": 1050,
+        "nation": "uk",
+        "layer": "land",
+        "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
+        "portrait": "portraits/daneaxe.jpg"
+      }
+    },
+    {
+      "id": "1125-靖康之變",
+      "added": "2026-10-21T06:18:29.040Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.31,
+        "lat": 34.8
+      },
+      "battle": {
+        "y": 1125,
+        "m": 11,
+        "name": "靖康之變",
+        "theater": "汴京戰場",
+        "brief": "靖康之變是金軍進攻北宋、圍攻都城汴京的戰事，戰線由北方邊境延伸至河南。金軍突破防線後攻入汴京，擄走宋徽宗與宋欽宗，北宋因而覆亡。戰役的野戰與城防序列均部署十字弩（Crossbow）；此正式型號約於1100年列裝，屬英國軍隊的步兵投射裝備。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
+    },
+    {
+      "id": "1233-蔡州之戰",
+      "added": "2026-10-21T06:18:29.041Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.36,
+        "lat": 32.98
+      },
+      "battle": {
+        "y": 1233,
+        "m": 12,
+        "name": "蔡州之戰",
+        "theater": "河南南部蔡州（今汝南縣）",
+        "brief": "蔡州之戰是1233年12月宋元戰爭末期的圍城決戰，蒙古軍以長圍與攻城器械封鎖南宋臨時都城蔡州，守軍屢次突圍仍未能解困，最終城池陷落，南宋朝廷覆亡。交戰年代已列裝的步兵裝備包括維京長斧，正式型號為Dane axe，約自1050年服役。"
+      },
+      "kit": {
+        "name": "維京長斧",
+        "designation": "Dane axe",
+        "year": 1050,
+        "nation": "uk",
+        "layer": "land",
+        "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
+        "portrait": "portraits/daneaxe.jpg"
+      }
+    },
+    {
+      "id": "1500-第二次莫斯科-立陶宛戰爭",
+      "added": "2026-10-21T06:18:29.042Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 32.05,
+        "lat": 54.78
+      },
+      "battle": {
+        "y": 1500,
+        "m": 1,
+        "name": "第二次莫斯科-立陶宛戰爭",
+        "theater": "斯摩棱斯克",
+        "brief": "第二次莫斯科-立陶宛戰爭於1500年爆發，立陶宛大公國聯同克里米亞汗國進攻莫斯科大公國，交戰集中於斯摩棱斯克及維德羅沙河一帶，莫斯科軍在維德羅沙河戰役受挫。當時已列裝的輪發槍（Wheellock pistol）主要供火繩槍兵作近身射擊與自衛之用。"
+      },
+      "kit": {
+        "name": "輪發槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
+        "portrait": "portraits/wheellock.jpg"
+      },
+      "dossierUrl": "dossiers/1500-faccaf7e9c.json"
+    },
+    {
+      "id": "1688-大同盟戰爭",
+      "added": "2026-10-21T06:18:29.042Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -3.5,
+        "lat": 50.48
+      },
+      "battle": {
+        "y": 1688,
+        "m": 11,
+        "name": "大同盟戰爭",
+        "theater": "英格蘭托爾灣",
+        "brief": "大同盟戰爭於1688年展開，威廉率荷蘭聯軍於11月在托爾灣登陸，英格蘭艦隊隨後倒向威廉，詹姆斯二世出逃，英國王位與宗教政策隨之改變。此役是法國支持的詹姆斯派與威廉聯軍在歐洲衝突的開端。西班牙陸軍的野砲（Field gun）於1550年已列裝，屬可隨隊作戰的地面裝備。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
       }
     }
   ]
