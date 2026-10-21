@@ -2020,7 +2020,8 @@
         "layer": "land",
         "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
         "portrait": "portraits/matchlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1803-5e942dedb0.json"
     },
     {
       "id": "1804-俄國-波斯戰爭",
@@ -2719,7 +2720,8 @@
         "year": 1600,
         "nation": "es",
         "layer": "land",
-        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。"
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
       },
       "dossierUrl": "dossiers/1814-01869166f1.json"
     },
@@ -2745,7 +2747,8 @@
         "year": 1600,
         "nation": "es",
         "layer": "land",
-        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。"
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
       },
       "dossierUrl": "dossiers/1814-f14af1211d.json"
     },
@@ -2771,7 +2774,8 @@
         "year": 1600,
         "nation": "es",
         "layer": "land",
-        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。"
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
       },
       "dossierUrl": "dossiers/1814-a5af62fa3b.json"
     },
@@ -2797,7 +2801,8 @@
         "year": 1600,
         "nation": "es",
         "layer": "land",
-        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。"
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
       },
       "dossierUrl": "dossiers/1828-84ac6646d8.json"
     },
@@ -4520,7 +4525,8 @@
         "year": 1860,
         "nation": "us",
         "layer": "land",
-        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。"
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
       },
       "dossierUrl": "dossiers/1873-50f0be8845.json"
     },
@@ -6231,7 +6237,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1161-2ecaf2fa8e.json"
     },
     {
       "id": "1211-野狐嶺會戰",
@@ -6286,6 +6293,214 @@
         "portrait": "portraits/wheellockpistol.jpg"
       },
       "dossierUrl": "dossiers/1536-5e9a511af2.json"
+    },
+    {
+      "id": "1041-好水川之戰",
+      "added": "2026-10-21T05:42:53.143Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 105.19,
+        "lat": 37.5
+      },
+      "battle": {
+        "y": 1041,
+        "m": 2,
+        "name": "好水川之戰",
+        "theater": "寧夏中衛黃河左岸好水川",
+        "brief": "一〇四一年康定二年春，西夏元昊再犯渭州，宋將曹瑋迎戰於好水川河谷。宋軍以蹶張弓、霹靂弓與牀子弩築成箭幕擋住夏軍精騎，再以車陣分割敵陣、精騎掩擊，夏軍大潰，斬首數千級。此役縱火只靠火箭與火障；卡面的拜占庭希臘火同樣以火阻騎，卻從未東傳。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      }
+    },
+    {
+      "id": "1127-宋金川陝爭奪戰",
+      "added": "2026-10-21T05:42:53.149Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.27
+      },
+      "battle": {
+        "y": 1127,
+        "m": 1,
+        "name": "宋金川陝爭奪戰",
+        "theater": "關中京兆府與川陝邊境",
+        "brief": "靖康元年冬金西路軍由河東南下，取河中、陷京兆，關中與陝西諸州相繼淪陷，宋朝西北四路與四川為之割絕；靖康二年四月汴京城破，北宋覆亡，宋室南渡後改以四川為根本，在大散關、和尚原一線與金人拉鋸十餘年。十字弩守城居高壓制鐵騎，野戰因裝填遲緩而受制，取捨全在城垣與隘口。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
+    },
+    {
+      "id": "1821-帕達里戰爭",
+      "added": "2026-10-21T05:44:29.739Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 21.73,
+        "lat": 38.25
+      },
+      "battle": {
+        "y": 1821,
+        "m": 3,
+        "name": "帕達里戰爭",
+        "theater": "伯羅奔尼撒半島",
+        "brief": "帕達里戰爭是希臘獨立戰爭初期的衝突。1821年3月，伯羅奔尼撒地區起義者進攻奧斯曼軍控制的帕達里，取得城內控制權，構成半島起義的重要早期事件。輪發手槍（Wheellock pistol）約自1500年出現，屬當時可用的近程個人副武器。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      }
+    },
+    {
+      "id": "1821-西班牙再征服墨西哥",
+      "added": "2026-10-21T05:44:29.740Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -97.86,
+        "lat": 22.25
+      },
+      "battle": {
+        "y": 1821,
+        "m": 7,
+        "name": "西班牙再征服墨西哥",
+        "theater": "墨西哥灣沿岸",
+        "brief": "「西班牙再征服墨西哥」是墨西哥獨立後，西班牙企圖重返墨西哥的系列軍事行動，塔姆皮科登陸為早期代表。西班牙軍與墨西哥地方軍交戰後節節受挫，未能恢復殖民統治；輪發手槍（Wheellock pistol）於1500年正式列裝，屬其陸軍火繩槍體系。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      }
+    },
+    {
+      "id": "1823-第一次英緬戰爭",
+      "added": "2026-10-21T05:44:29.740Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 92.17,
+        "lat": 26.2
+      },
+      "battle": {
+        "y": 1823,
+        "m": 3,
+        "name": "第一次英緬戰爭",
+        "theater": "阿薩姆",
+        "brief": "第一次英緬戰爭於一八二三年三月在阿薩姆爆發，緬甸軍隊越境攻擊英屬印度東部據點，英軍派遣部隊迎戰，戰事其後沿阿薩姆與孟加拉邊境展開。英軍步兵使用燧發槍（Flintlock musket），這款早於一八二三年列裝的火器，是其地面部隊在陣地上的主要遠程射擊武器。"
+      },
+      "kit": {
+        "name": "燧發槍",
+        "designation": "Flintlock musket",
+        "year": 1710,
+        "nation": "uk",
+        "layer": "land",
+        "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
+        "portrait": "portraits/flintlock.jpg"
+      }
+    },
+    {
+      "id": "1823-第一次阿散蒂戰爭",
+      "added": "2026-10-21T05:44:29.741Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -1.62,
+        "lat": 6.69
+      },
+      "battle": {
+        "y": 1823,
+        "m": 1,
+        "name": "第一次阿散蒂戰爭",
+        "theater": "阿散蒂王國（今加納）",
+        "brief": "第一次阿散蒂戰爭是英國與阿散蒂王國在西非黃金海岸爆發的衝突，交戰涉及阿散蒂軍隊及英軍遠征部隊。英軍步兵使用燧發槍（Flintlock musket）作主要火器；此型號自1710年列入制式裝備，至1823年已可投入線列射擊與野戰。"
+      },
+      "kit": {
+        "name": "燧發槍",
+        "designation": "Flintlock musket",
+        "year": 1710,
+        "nation": "uk",
+        "layer": "land",
+        "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
+        "portrait": "portraits/flintlock.jpg"
+      }
+    },
+    {
+      "id": "1825-十二月黨人起義",
+      "added": "2026-10-21T05:44:29.742Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30.32,
+        "lat": 59.93
+      },
+      "battle": {
+        "y": 1825,
+        "m": 12,
+        "name": "十二月黨人起義",
+        "theater": "聖彼得堡",
+        "brief": "十二月黨人起義於1825年12月在俄羅斯帝國聖彼得堡爆發，參議院廣場集會是代表性事件，參與者反對尼古拉一世即位後延續專制統治；火繩槍銃（Arquebus）於1550年已列裝，屬16世紀軍隊使用的早期陸軍火槍型號。"
+      },
+      "kit": {
+        "name": "火繩槍銃",
+        "designation": "Arquebus",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
+        "portrait": "portraits/arquebus.jpg"
+      }
+    },
+    {
+      "id": "1825-爪哇戰爭",
+      "added": "2026-10-21T05:44:29.742Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 110.42,
+        "lat": -7.2
+      },
+      "battle": {
+        "y": 1825,
+        "m": 7,
+        "name": "爪哇戰爭",
+        "theater": "爪哇島中部",
+        "brief": "爪哇戰爭始於1825年7月，是拉惹迪波涅格羅率領爪哇勢力反抗荷蘭東印度殖民統治的長期戰事，至1830年結束，主要戰區在爪哇中部。火繩槍銃（Arquebus，1550年）為十六世紀已列裝的早期火器，型號早於本衝突兩個多世紀，屬舊式火器體系。"
+      },
+      "kit": {
+        "name": "火繩槍銃",
+        "designation": "Arquebus",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
+        "portrait": "portraits/arquebus.jpg"
+      }
     }
   ]
 }
