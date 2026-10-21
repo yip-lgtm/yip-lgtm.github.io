@@ -2030,7 +2030,10 @@
       "added": "2026-10-20T21:50:34.108Z",
       "span": "p19",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 47,
+        "lat": 41.4
+      },
       "battle": {
         "y": 1804,
         "m": 9,
@@ -2432,7 +2435,10 @@
       "added": "2026-10-21T02:52:14.107Z",
       "span": "p19",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 11.87,
+        "lat": 59.67
+      },
       "battle": {
         "y": 1808,
         "m": 3,
@@ -2456,7 +2462,10 @@
       "added": "2026-10-21T03:16:05.396Z",
       "span": "p19",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 24.75,
+        "lat": 61.3
+      },
       "battle": {
         "y": 1808,
         "m": 2,
@@ -5934,7 +5943,10 @@
       "added": "2026-10-21T05:24:39.266Z",
       "span": "p19",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 45.68,
+        "lat": 43.31
+      },
       "battle": {
         "y": 1817,
         "m": 1,
@@ -6047,8 +6059,8 @@
         "y": 1820,
         "m": 3,
         "name": "西班牙立憲革命",
-        "theater": "馬德里",
-        "brief": "西班牙立憲革命於一八二〇年三月在馬德里爆發，起義軍迫使費爾南多七世恢復一八一二年憲法，並開啟自由主義時期。中文維基〈戰爭列表〉將其列為衝突；火繩槍（Matchlock musket）則是自一五二〇年列裝、曾供西班牙步兵使用的制式火器。"
+        "theater": "西班牙",
+        "brief": "一八二〇年元旦，炮兵上尉列戈在加的斯宣布擁護一八一二年《加的斯憲法》，數週內全國倒戈，國王三月九日宣誓，制憲議會七月重開。一八二三年法軍越比達索阿河入伊，五月二十三日占領馬德里，自由三年期終結，列戈十一月被槍斃。火繩槍此時已屬舊式火器，僅見於民兵與軍械庫，線列步兵實用燧發槍。"
       },
       "kit": {
         "name": "火繩槍",
@@ -6633,7 +6645,10 @@
       "added": "2026-10-21T05:46:46.847Z",
       "span": "p19",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": -75.21,
+        "lat": -12.07
+      },
       "battle": {
         "y": 1828,
         "m": 6,
@@ -9033,7 +9048,10 @@
       "added": "2026-10-21T06:10:21.130Z",
       "span": "p19",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 122.12,
+        "lat": 37.51
+      },
       "battle": {
         "y": 1895,
         "m": 1,
@@ -12459,7 +12477,10 @@
       "added": "2026-10-21T06:43:35.236Z",
       "span": "p11",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 116.52,
+        "lat": 32.56
+      },
       "battle": {
         "y": 1127,
         "m": 5,
@@ -12483,7 +12504,10 @@
       "added": "2026-10-21T06:43:35.237Z",
       "span": "p11",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 111,
+        "lat": 35.5
+      },
       "battle": {
         "y": 1127,
         "m": 1,
@@ -33837,7 +33861,10 @@
       "added": "2026-10-21T10:19:49.013Z",
       "span": "p01",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 112.86,
+        "lat": 38.42
+      },
       "battle": {
         "y": 629,
         "m": 11,
@@ -34185,7 +34212,10 @@
       "added": "2026-10-21T10:46:15.541Z",
       "span": "p01",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 85,
+        "lat": 43
+      },
       "battle": {
         "y": 670,
         "m": 9,
@@ -34209,7 +34239,10 @@
       "added": "2026-10-21T10:46:15.542Z",
       "span": "p01",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 103.86,
+        "lat": 35.39
+      },
       "battle": {
         "y": 714,
         "m": 1,
@@ -34233,7 +34266,10 @@
       "added": "2026-10-21T10:46:15.544Z",
       "span": "p01",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 100.22,
+        "lat": 25.7
+      },
       "battle": {
         "y": 773,
         "m": 1,
@@ -34284,7 +34320,10 @@
       "added": "2026-10-21T10:46:15.545Z",
       "span": "p01",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 104.68,
+        "lat": 34.9
+      },
       "battle": {
         "y": 786,
         "m": 1,
@@ -34389,7 +34428,10 @@
       "added": "2026-10-21T11:00:07.198Z",
       "span": "p01",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 116.42,
+        "lat": 36.19
+      },
       "battle": {
         "y": 923,
         "m": 5,
@@ -34466,7 +34508,10 @@
       "added": "2026-10-21T11:14:25.014Z",
       "span": "p01",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
-      "place": null,
+      "place": {
+        "lng": 113.05,
+        "lat": 36.35
+      },
       "battle": {
         "y": 909,
         "m": 1,
