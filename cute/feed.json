@@ -7704,7 +7704,8 @@
         "layer": "land",
         "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
         "portrait": "portraits/fieldgun.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1833-5265bd0dd6.json"
     },
     {
       "id": "1843-多米尼加共和國獨立戰爭",
@@ -9181,6 +9182,162 @@
         "portrait": "portraits/trebuchet.jpg"
       },
       "dossierUrl": "dossiers/1220-82ed8df625.json"
+    },
+    {
+      "id": "161-公元161-166年羅馬-安息戰爭",
+      "added": "2026-10-21T06:14:25.811Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 43.38,
+        "lat": 36.29
+      },
+      "battle": {
+        "y": 161,
+        "m": 6,
+        "name": "公元161-166年羅馬-安息戰爭",
+        "theater": "美索不達米亞與亞美尼亞",
+        "brief": "161年，馬爾庫斯·奧勒留因亞美尼亞王位與哈特拉歸屬爭端派使節，使節被扣害，羅馬開戰。162至163年，科爾布羅與卡西烏斯相繼攻入底格里斯河谷、奪泰西封，卻兩度攻不下深壕高牆的哈特拉；164年辛加拉之戰羅軍得手，165年因瘟疫與多瑙河戰線東返，166年安息求和，羅馬退回幼發拉底河。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      }
+    },
+    {
+      "id": "452-宋文帝攻魏河南之戰",
+      "added": "2026-10-21T06:14:26.008Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.52,
+        "lat": 35.58
+      },
+      "battle": {
+        "y": 452,
+        "m": 1,
+        "name": "宋文帝攻魏河南之戰",
+        "theater": "河南滑臺至瓜步沿黃河江淮",
+        "brief": "景平二年正月，宋文帝劉義隆乘北魏太武帝平定北方之機，再發大軍北伐河南，以王玄謨為前鋒，屯軍滑臺，與魏騎隔黃河相持；糧道不繼而全軍潰敗，魏軍乘勝據滑臺、圍鍾離，進抵瓜步逼近建康。兩軍步卒仍以短柄長刃鐵鏃之長矛為骨幹，魏騎則靠襲擾糧道定勝負。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      }
+    },
+    {
+      "id": "537-沙苑之戰",
+      "added": "2026-10-21T06:14:26.011Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 109.95,
+        "lat": 34.7
+      },
+      "battle": {
+        "y": 537,
+        "m": 10,
+        "name": "沙苑之戰",
+        "theater": "陝西大荔沙苑渭曲",
+        "brief": "魏大統十三年（537）十月，東魏相國高歡率二十萬眾自蒲津南下、進逼關中；西魏宇文泰自恆農馳援，僅以不足萬人輕騎渡渭，列陣大荔沙苑渭曲，伏兵蘆葦。李弼鐵甲騎兵橫擊，東魏前軍被截為兩段，高歡大潰，棄甲士八萬、鎧仗十之八，士卒為西魏所俘七萬。此役西魏近戰骨幹為披甲槊兵與重騎，卡面羅馬重步兵所代表的分段鎧甲配重盾並未在此出現。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      }
+    },
+    {
+      "id": "547-侯景叛東魏之戰",
+      "added": "2026-10-21T06:14:26.013Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.18,
+        "lat": 34.26
+      },
+      "battle": {
+        "y": 547,
+        "m": 9,
+        "name": "侯景叛東魏之戰",
+        "theater": "彭城至壽陽的淮北戰線",
+        "brief": "公元547年秋，東魏河南大行台侯景舉兵反，遣使降梁，圍攻彭城；渤海王高澄親率大軍討之，追至寒山，大破景軍，景僅以數十騎遁保壽陽，兩軍議和罷兵。卡面的希臘重步兵是對照件：本役真正交鋒的是披甲騎兵、弩手與攻城器械，與希臘方陣無涉，它提醒的正是方陣一旦失去互相遮蔽便立刻崩散。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      }
+    },
+    {
+      "id": "575-河陰之戰",
+      "added": "2026-10-21T06:14:26.016Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.58,
+        "lat": 34.9
+      },
+      "battle": {
+        "y": 575,
+        "m": 7,
+        "name": "河陰之戰",
+        "theater": "河南洛陽孟津河陰渡口",
+        "brief": "北周建德四年（575）七月至九月，周武帝宇文邕統軍十餘萬東伐北齊，八月二十四日陷河陰、武濟、洛口，焚黃河浮橋，圍中潬城二十餘日；九月齊援軍自晉陽抵河陽，周軍遂棄三十餘城班師。卡面的羅馬重步兵不屬於本役，其位置對應的是周齊雙方的重裝步兵與北齊甲騎。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      }
+    },
+    {
+      "id": "581-突厥攻隋之戰",
+      "added": "2026-10-21T06:14:26.018Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.43,
+        "lat": 39.33
+      },
+      "battle": {
+        "y": 581,
+        "m": 11,
+        "name": "突厥攻隋之戰",
+        "theater": "河朔朔州太原一線邊塞",
+        "brief": "開皇元年冬，東突厥沙摩羅可汗乘隋代周立國、邊防未固，率眾入寇朔州、太原一線。隋以河間王楊誼屯河朔，遣韓擒虎、虞慶等出塞拒之，次年追擊於朔州以北，斬獲頗眾。卡面那件埃及長矛並非戰場之物，它代表長矛的源流：隋軍以步槊、拒馬列陣禦騎，突厥騎手以套馬桿長矛衝鋒。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      }
     }
   ]
 }
