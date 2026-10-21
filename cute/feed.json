@@ -4852,7 +4852,8 @@
         "layer": "land",
         "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
         "portrait": "portraits/matchlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1813-9ac1f0a353.json"
     },
     {
       "id": "1815-第七次反法同盟",
@@ -6521,7 +6522,8 @@
         "layer": "land",
         "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
         "portrait": "portraits/arquebus.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1825-f71b63c7da.json"
     },
     {
       "id": "1130-富平之戰",
@@ -6573,7 +6575,8 @@
         "layer": "land",
         "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
         "portrait": "portraits/fieldgun.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1826-6f18d12faa.json"
     },
     {
       "id": "1826-黑色戰爭",
@@ -6599,7 +6602,8 @@
         "layer": "land",
         "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
         "portrait": "portraits/fieldgun.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1826-0f3dbc324e.json"
     },
     {
       "id": "1828-大哥倫比亞-秘魯戰爭",
@@ -6648,7 +6652,8 @@
         "layer": "land",
         "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
         "portrait": "portraits/flintlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1830-0552c525d7.json"
     },
     {
       "id": "1038-宋夏戰爭",
@@ -7645,7 +7650,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1831-a6c7aa0e4a.json"
     },
     {
       "id": "1832-黑鷹戰爭",
@@ -7671,7 +7677,8 @@
         "layer": "land",
         "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
         "portrait": "portraits/arquebus.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1832-74a05a5464.json"
     },
     {
       "id": "1833-第一次卡洛斯戰爭",
