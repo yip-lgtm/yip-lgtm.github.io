@@ -11175,7 +11175,8 @@
         "layer": "land",
         "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
         "portrait": "portraits/assyrianbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/580-25354ab35b.json"
     },
     {
       "id": "580-鄴城之戰",
@@ -11309,7 +11310,8 @@
         "layer": "land",
         "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
         "portrait": "portraits/pilum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/585-e29bee0ea8.json"
     },
     {
       "id": "69-巴達維起義",
@@ -11360,7 +11362,8 @@
         "year": -500,
         "nation": "gr",
         "layer": "land",
-        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。"
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
       },
       "dossierUrl": "dossiers/736-402370b29e.json"
     },
@@ -11390,6 +11393,32 @@
         "portrait": "portraits/gongnu.jpg"
       },
       "dossierUrl": "dossiers/854-eeb04fda6a.json"
+    },
+    {
+      "id": "589-歧亭、延州之戰",
+      "added": "2026-10-21T06:28:59.020Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 111.45,
+        "lat": 30.62
+      },
+      "battle": {
+        "y": 589,
+        "m": 1,
+        "name": "歧亭、延州之戰",
+        "theater": "長江西陵峽至枝江段",
+        "brief": "開皇九年正月，隋滅陳之役西線開打。行軍元帥楊素領水軍自狼尾灘順流東下，前鋒大將軍劉仁恩進抵宜昌西陵峽口，遇上南陳荊州刺史陳慧紀所遣南康內史呂忠肅屯兵歧亭。陳軍依兩岸巖石築城拒守，隋軍以五牙大艦所載擲石機擊破岩城，乘勝追至延洲，陳軍再潰，江陵遂開。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      }
     }
   ]
 }
