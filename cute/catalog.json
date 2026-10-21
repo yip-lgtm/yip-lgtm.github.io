@@ -2224,7 +2224,7 @@
    "pen": 20,
    "armor": 8,
    "history": "帝國的騎兵用它的頸甲，槍身短而重，衝鋒靠的不是速度而是馬的重量。",
-   "portrait": null
+   "portrait": "portraits/contostephano.jpg"
   },
   {
    "id": "lombardshield",
@@ -2238,7 +2238,7 @@
    "pen": 20,
    "armor": 8,
    "history": "又長又窄的騎士盾，能遮住整個身體，也能讓騎兵把盾固定在臂上。",
-   "portrait": null
+   "portrait": "portraits/lombardshield.jpg"
   },
   {
    "id": "springald",
@@ -2252,7 +2252,7 @@
    "pen": 20,
    "armor": 8,
    "history": "把扭力儲在絞盤裡的攻城弩。攻城方第一次有了能打穿城門的東西。",
-   "portrait": null
+   "portrait": "portraits/springald.jpg"
   },
   {
    "id": "bayonet",
@@ -2280,7 +2280,7 @@
    "pen": 20,
    "armor": 8,
    "history": "一面方盾撐住一整排人。無敵兵團的方陣靠它，也靠後面那排火繩槍。",
-   "portrait": null
+   "portrait": "portraits/tercioshield.jpg"
   },
   {
    "id": "cuirassst",
@@ -2294,7 +2294,7 @@
    "pen": 20,
    "armor": 8,
    "history": "鍛鐵的胸甲讓步槍變成冷兵器。馬爾康·波佐多的改變比任何一場戰役都快。",
-   "portrait": null
+   "portrait": "portraits/cuirassst.jpg"
   },
   {
    "id": "tanegashima",
@@ -2378,7 +2378,7 @@
    "pen": 20,
    "armor": 8,
    "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
-   "portrait": null
+   "portrait": "portraits/wheellockpistol.jpg"
   },
   {
    "id": "minieball",
