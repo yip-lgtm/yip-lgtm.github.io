@@ -2043,7 +2043,8 @@
         "layer": "land",
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
         "portrait": "portraits/wheellockpistol.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1804-8555e1d676.json"
     },
     {
       "id": "1805-1805年埃及革命",
@@ -2505,6 +2506,84 @@
         "layer": "land",
         "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
         "portrait": "portraits/fieldgun.jpg"
+      }
+    },
+    {
+      "id": "1809-第五次反法同盟",
+      "added": "2026-10-21T03:31:57.546Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 16.37,
+        "lat": 48.21
+      },
+      "battle": {
+        "y": 1809,
+        "m": 3,
+        "name": "第五次反法同盟",
+        "theater": "奧地利中部維也納戰區",
+        "brief": "第五次反法同盟於一八〇九年由奧地利、普魯士等國組成，對抗法國及其盟國。戰事橫跨中歐，維也納與奧地利中部是奧軍迎擊法軍的重要戰區；英、俄等國亦在外線參戰。西班牙陸軍的野砲自一五五〇年列入服役，持續擔任伴隨步兵作戰的野戰砲兵。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      }
+    },
+    {
+      "id": "1810-夏威夷統一戰爭",
+      "added": "2026-10-21T03:25:07.642Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -157.8,
+        "lat": 20.8
+      },
+      "battle": {
+        "y": 1810,
+        "m": 1,
+        "name": "夏威夷統一戰爭",
+        "theater": "夏威夷群島",
+        "brief": "夏威夷統一戰爭是卡美哈梅哈一世於一八一零年推進夏威夷島嶼統一時引發的衝突，戰事遍及莫洛凱等島。參戰軍隊使用火繩槍（Matchlock musket）進行步兵遠程射擊；此型號在一八一零年前已列裝，並與近戰兵器共同構成作戰裝備。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1811-委內瑞拉獨立戰爭",
+      "added": "2026-10-21T03:23:26.402Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -66.9,
+        "lat": 10.48
+      },
+      "battle": {
+        "y": 1811,
+        "m": 4,
+        "name": "委內瑞拉獨立戰爭",
+        "theater": "委內瑞拉北部",
+        "brief": "委內瑞拉獨立戰爭是南美洲殖民者反抗西班牙殖民統治、爭取獨立的戰爭，戰事遍及委內瑞拉北部，並以移動游擊配合會戰。輪發手槍是火繩槍時代的單兵手槍，供步兵近距離射擊與臨近防衛使用，而非長程火槍。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
       }
     }
   ]
