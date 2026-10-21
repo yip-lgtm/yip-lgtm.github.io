@@ -2364,7 +2364,7 @@
    "pen": 20,
    "armor": 8,
    "history": "長槍密集如林，後面才是火槍。瑞士人靠它僱傭自己去打仗。",
-   "portrait": null
+   "portrait": "portraits/swisspike.jpg"
   },
   {
    "id": "wheellockpistol",
@@ -2392,7 +2392,7 @@
    "pen": 20,
    "armor": 8,
    "history": "圓錐形爆炸彈配膛線步槍。射程翻了幾倍，野戰隊形從此再回不去。",
-   "portrait": null
+   "portrait": "portraits/minieball.jpg"
   },
   {
    "id": "winchester",
@@ -2406,7 +2406,7 @@
    "pen": 20,
    "armor": 8,
    "history": "槍管後膛與壓下槓桿的擊發。它便宜到西部每個牧人都買得起。",
-   "portrait": null
+   "portrait": "portraits/winchester.jpg"
   },
   {
    "id": "enfieldrifle",
@@ -2420,7 +2420,7 @@
    "pen": 20,
    "armor": 8,
    "history": "英軍的制式步槍。克里米亞的教訓是：射程和後膛比勇敢更早決定勝負。",
-   "portrait": null
+   "portrait": "portraits/enfieldrifle.jpg"
   },
   {
    "id": "berdan",
@@ -2434,7 +2434,7 @@
    "pen": 20,
    "armor": 8,
    "history": "別丹式步槍，帶鋼製襯套。它是俄國後膛槍的第一次嘗試，也是第一次失敗。",
-   "portrait": null
+   "portrait": "portraits/berdan.jpg"
   },
   {
    "id": "sharps",
