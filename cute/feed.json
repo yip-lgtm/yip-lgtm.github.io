@@ -2278,6 +2278,84 @@
         "history": "線膛砲在德國陸軍體系中屬於野戰砲兵，作為步兵作戰時的火力支援裝置，與其他砲兵單位共同構成地面攻勢與防禦力量。",
         "portrait": "portraits/muzzleloader.jpg"
       }
+    },
+    {
+      "id": "1806-第七次俄土戰爭",
+      "added": "2026-10-21T02:38:40.229Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 25.97,
+        "lat": 43.85
+      },
+      "battle": {
+        "y": 1806,
+        "m": 12,
+        "name": "第七次俄土戰爭",
+        "theater": "魯塞（保加利亞多瑙河下游）",
+        "brief": "第七次俄土戰爭是中文維基「戰爭列表」中的俄羅斯帝國與鄂圖魯帝國戰爭，1806年爆發，延至1812年，交戰重點在多瑙河下游、黑海北岸及高加索。英國陸軍的燧發槍（Flintlock musket）於1710年服役，屬當時步兵火器體系，也是步兵編制中的通用火器，並用於野戰。"
+      },
+      "kit": {
+        "name": "燧發槍",
+        "designation": "Flintlock musket",
+        "year": 1710,
+        "nation": "uk",
+        "layer": "land",
+        "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
+        "portrait": "portraits/flintlock.jpg"
+      }
+    },
+    {
+      "id": "1806-第四次反法同盟",
+      "added": "2026-10-21T02:34:54.850Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 11.93,
+        "lat": 51.08
+      },
+      "battle": {
+        "y": 1806,
+        "m": 10,
+        "name": "第四次反法同盟",
+        "theater": "奧爾施泰特戰場",
+        "brief": "第四次反法同盟期間，1806年10月，普魯士軍在奧爾施泰特迎戰法軍並遭敗北。交戰中，線列步兵仍以燧發槍（Flintlock musket）射擊，再配合刺刀近戰；此役為普法戰爭的重要戰鬥。"
+      },
+      "kit": {
+        "name": "燧發槍",
+        "designation": "Flintlock musket",
+        "year": 1710,
+        "nation": "uk",
+        "layer": "land",
+        "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
+        "portrait": "portraits/flintlock.jpg"
+      }
+    },
+    {
+      "id": "1807-炮艦戰爭",
+      "added": "2026-10-21T02:45:56.454Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 19,
+        "lat": 56
+      },
+      "battle": {
+        "y": 1807,
+        "m": 3,
+        "name": "炮艦戰爭",
+        "theater": "波羅的海",
+        "brief": "「炮艦戰爭」是拿破崙戰爭背景下丹麥－挪威王國與瑞典王國於1807年起發生的北歐衝突，雙方以砲艦巡弋、封鎖近海並爭奪波羅的海航路。西班牙並非交戰方；此處列出的長槍（Pike）在更早的西班牙軍制中已列裝，屬步兵制式長柄兵器。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
+      }
     }
   ]
 }
