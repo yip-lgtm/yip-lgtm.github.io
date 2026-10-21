@@ -8800,7 +8800,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1133-74c914545a.json"
     },
     {
       "id": "1161-陳家島海戰",
@@ -8907,6 +8908,33 @@
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
       }
+    },
+    {
+      "id": "1890-狗稅戰爭",
+      "added": "2026-10-21T06:08:14.773Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 173.4,
+        "lat": -35.38
+      },
+      "battle": {
+        "y": 1890,
+        "m": 4,
+        "name": "狗稅戰爭",
+        "theater": "紐西蘭北島霍基安加灣",
+        "brief": "一八九〇年代，紐西蘭北島霍基安加區議會向每頭狗徵半克朗稅款，南霍基安加毛利人拒繳；一八九八年四月，普克米羅毛利人集結武裝，槍隊進逼拉韋恩，殖民地出動一百二十人、兩門野戰砲與兩挺速射砲；海上一八六二年式鐵甲早已退場，只剩皇家海軍單桅戰艦守住河口，最後靠議員斡旋收場。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1890-fdcd9bfb22.json"
     }
   ]
 }
