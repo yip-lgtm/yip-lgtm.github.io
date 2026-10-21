@@ -34875,6 +34875,32 @@
         "history": "秦連弩是秦軍步卒的弩類裝備，以重複弩機進行連續射擊，屬軍隊遠程火力的一環，並可與弓兵及城防火力協同。",
         "portrait": "portraits/xiaochongnu.jpg"
       }
+    },
+    {
+      "id": "1916-復活節起義",
+      "added": "2026-10-21T22:18:24.926Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -6.26,
+        "lat": 53.35
+      },
+      "battle": {
+        "y": 1916,
+        "m": 4,
+        "name": "復活節起義",
+        "theater": "都柏林",
+        "brief": "維基戰爭列表所載的復活節起義，是愛爾蘭共和派於一九一六年在都柏林發動的反英國起義，起事者佔據郵政總局等關鍵設施，宣布愛爾蘭脫離英國統治，並與英軍及都柏林市民武裝交戰，最終遭政府軍鎮壓。英國皇家海軍的Ironclad屬裝甲艦體系，負責海上防禦與權力投射。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "Ironclad是英國皇家海軍早期裝甲艦類別，以鐵甲包覆艦體，配置艦炮與蒸汽動力，隸屬戰鬥艦隊並執行防禦、封鎖和海上控制任務。",
+        "portrait": "portraits/ironclad.jpg"
+      }
     }
   ]
 }
