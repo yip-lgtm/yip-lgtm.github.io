@@ -32814,7 +32814,8 @@
         "layer": "land",
         "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
         "portrait": "portraits/pilum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/730-e5e8e05985.json"
     },
     {
       "id": "747-唐擊小勃律之戰",
@@ -33002,7 +33003,8 @@
         "layer": "land",
         "history": "半米長的投槍，槍桿中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
         "portrait": "portraits/pilum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/757-59be475637.json"
     },
     {
       "id": "757-河東之戰",
@@ -33055,7 +33057,8 @@
         "layer": "land",
         "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
         "portrait": "portraits/onager.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/757-fbe2b1d99e.json"
     },
     {
       "id": "784-貝州之戰",
@@ -33108,7 +33111,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/xiaochongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/943-50255976d0.json"
     },
     {
       "id": "958-河北之戰",
@@ -33134,7 +33138,650 @@
         "layer": "land",
         "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
         "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/958-482923d9b8.json"
+    },
+    {
+      "id": "611-高士達起義",
+      "added": "2026-10-21T10:18:38.173Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 120.45,
+        "lat": 41.57
+      },
+      "battle": {
+        "y": 611,
+        "m": 11,
+        "name": "高士達起義",
+        "theater": "遼東柳城至豆子澗",
+        "brief": "大業七年（611）冬，渤海人高士達在遼東柳城聚眾為盜，眾至數萬，攻陷郡縣，並與山東清河張金稱相呼應，使隋廷腹背受敵。隋將段達討之不克，後楊義臣率遼東還兵擊破之，陣斬張金稱。卡面的斯巴達長矛屬希臘方陣工藝，不在此役現場；同期隋軍步卒用槊與盾列陣，渤海、契丹部眾則以長矛、骨鏃弓應戰。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/611-c459b86d3e.json"
+    },
+    {
+      "id": "624-五隴坂之戰",
+      "added": "2026-10-21T10:18:38.251Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 107.3,
+        "lat": 34.45
+      },
+      "battle": {
+        "y": 624,
+        "m": 8,
+        "name": "五隴坂之戰",
+        "theater": "長安西北五隴阪",
+        "brief": "武德七年八月（624年），頡利、突利二可汗傾國南侵，連營直抵長安西北，李世民率兵拒守於幽州城西五隴阪：單騎馳詣虜陳責其背約，又於雨夜潛師逼近敵營，並說動突利請和親、願結兄弟，突厥遂退。卡面科林斯青銅盔為希臘重裝步卒裝備，與本役相隔逾一千二百年，不在陣中；現場交戰者為唐制兜鍪、明光鎧、馬槊、胡弓與弩。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
       }
+    },
+    {
+      "id": "684-武則天平李敬業之戰",
+      "added": "2026-10-21T10:18:38.295Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.44,
+        "lat": 32.26
+      },
+      "battle": {
+        "y": 684,
+        "m": 9,
+        "name": "武則天平李敬業之戰",
+        "theater": "揚州瓜洲江口",
+        "brief": "嗣聖元年（684）九月，李敬業以「匡復廬陵王」為名在揚州舉兵，旬日集眾十萬；武則天遣李孝逸將兵三十萬自洛陽沿運河東下，進逼瓜洲，叛軍部將降唐而全軍潰散。卡面羅馬重步兵非本役實物，正可對照唐軍步騎混編、全靠漕運維持的取向。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/684-8f0b18d35e.json"
+    },
+    {
+      "id": "696-黃麞谷之戰",
+      "added": "2026-10-21T10:18:38.302Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.87,
+        "lat": 40.08
+      },
+      "battle": {
+        "y": 696,
+        "m": 8,
+        "name": "黃麞谷之戰",
+        "theater": "河北遷安西硤石谷",
+        "brief": "萬歲通天元年八月，契丹李盡忠在西硤石黃麞谷設伏，誘曹仁師、張玄遇領的二十八將所部輕騎入谷，周軍大敗，張玄遇、龔仁節被俘；李盡忠又用繳獲的軍印偽造軍牒，誘幽州後軍馳援，軍馬疲敝而遭二次截擊，幾乎全滅。卡面希臘重步兵的方陣原理，恰好說明周軍棄步兵、驅輕騎入峽的敗因。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/696-43b3fbff8e.json"
+    },
+    {
+      "id": "759-河陽之戰",
+      "added": "2026-10-21T10:18:38.340Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.6,
+        "lat": 34.85
+      },
+      "battle": {
+        "y": 759,
+        "m": 2,
+        "name": "河陽之戰",
+        "theater": "河南洛陽孟津白馬津",
+        "brief": "河陽之戰是乾元二年史思明南下解洛陽之圍、與唐九節度使聯軍在河陽白馬津對峙的一場夜戰：郭子儀力主趁叛軍遠來疲弊，選精騎夜渡黃河破其營，斬獲甚眾。卡面兵器是科林斯青銅盔，那種全正面開眼的青銅盔並不在唐軍的裝備序列裡，它的價值正在反面——視界被壓到極窄，戴它的人只能靠隊形活。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/759-abe50109ac.json"
+    },
+    {
+      "id": "765-奉天、靈台之戰",
+      "added": "2026-10-21T10:18:38.343Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 107.6,
+        "lat": 34.6
+      },
+      "battle": {
+        "y": 765,
+        "m": 9,
+        "name": "奉天、靈台之戰",
+        "theater": "關中涇原奉天靈台一線",
+        "brief": "永泰元年（765）九月，叛將僕固懷恩勾結吐蕃、回紇、党項羌等，率三十餘萬眾三路南下，進逼長安。唐廷分兵扼守東渭橋、雲陽、便橋與奉天、邠州諸城，渾瑊、白元光守奉天出奇兵、夜襲蕃營；郭子儀遣李光瓚說反回紇，十月十五日於靈台西原大破尚結息部，聯軍退走。卡面的羅馬弩砲並不在此役現場，僅作同族投射兵器之對照。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/765-708651609f.json"
+    },
+    {
+      "id": "782-洹水之戰",
+      "added": "2026-10-21T10:18:38.350Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.55,
+        "lat": 36.2
+      },
+      "battle": {
+        "y": 782,
+        "m": 2,
+        "name": "洹水之戰",
+        "theater": "洹水下游（河北磁州安陽間）",
+        "brief": "建中三年（782），成德軍節度使李寶臣拒絕入朝，河北諸鎮皆不奉詔，唐廷以昭義軍節度使張瓊為招討使，會河中諸道兵討之。官軍東出太行、進至洹水一線，與成德軍騎兵接戰失利，朝廷首次削藩落空，轉為招撫。卡面的羅馬標槍未隨軍而至，其空心槍幹受撞即折的用法與唐軍的床弩齊射全然不同。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/782-ac8f9937ce.json"
+    },
+    {
+      "id": "802-唐破吐蕃維州之戰",
+      "added": "2026-10-21T10:18:38.359Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 103.3,
+        "lat": 31.5
+      },
+      "battle": {
+        "y": 802,
+        "m": 1,
+        "name": "唐破吐蕃維州之戰",
+        "theater": "川西維州薛城",
+        "brief": "貞元十八年（802）正月，吐蕃大相論莽熱率十萬援軍南下解維州之圍，唐劍南西川節度使韋皋以西川兵萬餘預先設伏於維州薛城一帶險道，唐兵出挑戰引敵追入谷中，伏兵合擊，論莽熱被擒，援軍死傷大半。卡面的投石機為扭力式拋石機，與唐軍砲車同出一脈，攻城與封鎖谷道皆用其石彈。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/802-ef0b392a61.json"
+    },
+    {
+      "id": "843-唐平劉稹澤潞之戰",
+      "added": "2026-10-21T10:18:38.363Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.13,
+        "lat": 36.19
+      },
+      "battle": {
+        "y": 843,
+        "m": 6,
+        "name": "唐平劉稹澤潞之戰",
+        "theater": "上黨潞州、澤州晉城",
+        "brief": "會昌三年五月，昭義軍節度使劉悟病歿，軍中越詔立其子劉稹自為留後，朝廷分道出師討之，久攻潞州城不下，終於會昌四年春罷兵招撫。卡面以羅馬重步兵作對照：唐代重裝步卒同樣以鎧盾結陣、弩箭壓制，兩者皆靠嚴整陣列與補給線撐住戰線。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/843-99db8d4f16.json"
+    },
+    {
+      "id": "875-王仙芝起義",
+      "added": "2026-10-21T10:18:38.372Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.48,
+        "lat": 35.24
+      },
+      "battle": {
+        "y": 875,
+        "m": 6,
+        "name": "王仙芝起義",
+        "theater": "河南道宋曹兗四州",
+        "brief": "乾符二年（875）河南大饑，鹽商王仙芝聚饑民於曹、濮、宋、兗之間起兵，三年轉戰十餘州，兵眾由數萬增至十餘萬，逼近汴洛而終未下洛陽。僖宗招撫與討伐並用皆無效，仙芝終以兵變死於潞州，部眾歸於黃巢。卡面的秦連弩正係唐軍守城壓制攀城者的利器。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。"
+      },
+      "dossierUrl": "dossiers/875-21e376de64.json"
+    },
+    {
+      "id": "880-長安之戰",
+      "added": "2026-10-21T10:18:38.375Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.34
+      },
+      "battle": {
+        "y": 880,
+        "m": 12,
+        "name": "長安之戰",
+        "theater": "長安城與潼關灞上",
+        "brief": "廣明元年（880）十一月黃巢陷東都洛陽，十二月西進，六日激戰而下潼關、華州，僖宗倉皇奔蜀，叛軍入長安建大齊，歲內改元金統。卡上亞述長弓不在此戰，弓兵開路、車兵跟進的體制足為對照：真正決定長安陷落的是諸道兵調度、禁軍崩解與糧道，不是弓弩本身。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      },
+      "dossierUrl": "dossiers/880-0ed43f9504.json"
+    },
+    {
+      "id": "907-潞州之戰",
+      "added": "2026-10-21T10:18:38.382Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 113.11,
+        "lat": 36.19
+      },
+      "battle": {
+        "y": 907,
+        "m": 2,
+        "name": "潞州之戰",
+        "theater": "上黨盆地潞州城",
+        "brief": "天祐四年（907）春，晉王李克用攻後梁昭義節度使符存佑據守的潞州，梁遣張文蔚率軍往援，晉軍夜襲破其營於城下，符存佑旋為部將所殺，潞州遂歸晉。卡面投石機為配重式拋射器，與本役相隔千餘年，不可能現身；當時中原攻城倚賴同原理的拋石機壓制城頭守軍，本役是否實置則史無明文。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      }
+    },
+    {
+      "id": "910-柏鄉之戰",
+      "added": "2026-10-21T10:18:38.383Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.69,
+        "lat": 37.48
+      },
+      "battle": {
+        "y": 910,
+        "m": 10,
+        "name": "柏鄉之戰",
+        "theater": "河北邢台柏鄉野河一帶",
+        "brief": "開平四年（910）十月，朱溫以救援王鎔、討伐劉守光為名深入河北；王鎔轉求晉王李存勖，晉軍出井陘、屯趙州，兩軍會於柏鄉野河。晉軍步兵結方陣抵住梁軍騎兵衝擊，周德威率精騎斜擊梁軍陣腳，梁軍崩潰，河北門戶洞開。卡面斯巴達長矛屬古希臘重步兵兵器，未到過此役；功能對應者為王彥章的長槊，一樣以刺突定勝負。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/910-ae1eb7f1a7.json"
+    },
+    {
+      "id": "923-後唐滅後梁之戰",
+      "added": "2026-10-21T10:18:38.389Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 114.31,
+        "lat": 34.8
+      },
+      "battle": {
+        "y": 923,
+        "m": 1,
+        "name": "後唐滅後梁之戰",
+        "theater": "河北鄴城、河南楊劉至開封",
+        "brief": "同光元年（923），晉王李存勖自河東晉陽出兵，拔鄴城、下楊劉、敗王彥章於中都，十月進軍開封，梁末帝朱友貞自焚，後梁亡。卡面的希臘重步兵早於此役一千四百餘年，靠盾牌相接的方陣取勝；五百年前的中原，取勝的已是騎兵集群與雲梯、排車。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      }
+    },
+    {
+      "id": "925-後唐滅前蜀之戰",
+      "added": "2026-10-21T10:18:38.391Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 104.07,
+        "lat": 30.67
+      },
+      "battle": {
+        "y": 925,
+        "m": 9,
+        "name": "後唐滅前蜀之戰",
+        "theater": "成都平原、劍門棧道與三峽水道",
+        "brief": "前蜀末主王衍荒於游樂，益州與峽中不修武備；後唐莊宗李存勖於九二五年秋遣樞密使郭崇韜自陝西沿棧道南下，荊南都統董璋順江突破三峽，兩路夾擊。十一月郭崇韜率前鋒疾馳入成都，王衍出降，前蜀立國十九年而亡。沿途破關所用砲石與床弩皆屬扭力儲能一脈，羅馬弩砲正為其西方原型。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/925-435183310a.json"
+    },
+    {
+      "id": "936-後晉滅後唐之戰",
+      "added": "2026-10-21T10:18:38.394Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.45,
+        "lat": 34.62
+      },
+      "battle": {
+        "y": 936,
+        "m": 1,
+        "name": "後晉滅後唐之戰",
+        "theater": "河東太原、潞州至洛陽",
+        "brief": "936年正月，成德節度使安重榮在趙州起兵，河東節度使石敬瑭退守太原。掌書記桑維翰力主借契丹之兵，割燕雲十六州換取援軍，遼太宗耶律德光南下破洛陽，末帝李從厚出亡，後唐亡而後晉代立。守城一方以秦弩布於城頭，萬弩齊發壓制鐵騎衝鋒，弩陣是潞州、洛陽兩城撐到最後的關鍵。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      }
+    },
+    {
+      "id": "954-高平之戰",
+      "added": "2026-10-21T10:18:38.400Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.93,
+        "lat": 35.8
+      },
+      "battle": {
+        "y": 954,
+        "m": 3,
+        "name": "高平之戰",
+        "theater": "晉南高平至晉陽",
+        "brief": "顯德元年三月，後周世宗柴榮親征北漢，與劉旻部將張崇徹在晉南高平對壘。周軍前鋒初挫，柴榮斬退將七十餘人肅軍紀，親冒矢石督戰，精騎突入中軍射殺張崇徹，擊潰北漢三萬之眾，乘勝圍太原，五月拔晉陽，劉旻僅以百餘騎遁走。將士戴兜鍪頓項、護面而視野受限，正合卡面科林斯盔「靠隊形活」之道。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/954-715caf386c.json"
+    },
+    {
+      "id": "955-後周攻南唐之戰",
+      "added": "2026-10-21T10:18:38.401Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.79,
+        "lat": 32.58
+      },
+      "battle": {
+        "y": 955,
+        "m": 11,
+        "name": "後周攻南唐之戰",
+        "theater": "壽州紫金山",
+        "brief": "顯德二年十一月後周大舉南下攻南唐，淮南壽州紫金山一線成了主戰場。此役弓矢仍是壓制城頭與野戰的骨架，亞述長弓那類複合反曲弓正是反曲弓形制的早期代表，與當年後周騎兵步卒所拉的中原弓弩同屬弓兵體系，攻城器械與糧秣轉運則決定了淮南十四州的歸屬。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      },
+      "dossierUrl": "dossiers/955-c8d5f626f4.json"
+    },
+    {
+      "id": "963-荊湖之戰",
+      "added": "2026-10-21T10:18:38.407Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.19,
+        "lat": 30.35
+      },
+      "battle": {
+        "y": 963,
+        "m": 1,
+        "name": "荊湖之戰",
+        "theater": "荊湖江陵、朗州與襄樊一線",
+        "brief": "建隆四年（963）正月起，宋太祖趙匡胤以先荊南、後湖南之序平定荊湖，江陵、朗州相繼請降；同年冬南唐襲取後蜀的襄、樊，次年為宋軍收復。卡面的羅馬重步兵在此作對照：宋軍同樣不靠攻城硬拼，而是靠重裝步卒的編制、水路補給與降兵收編取勝。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/963-c045b20c3e.json"
+    },
+    {
+      "id": "964-夔州之戰",
+      "added": "2026-10-21T10:18:38.408Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 109.47,
+        "lat": 31.02
+      },
+      "battle": {
+        "y": 964,
+        "m": 12,
+        "name": "夔州之戰",
+        "theater": "長江上游夔州巫山峽口",
+        "brief": "乾德二年冬，宋太祖決策伐後蜀，以曹彬為行營總都督，率禁軍溯長江而上，取江陵為基地，直叩夔州。蜀軍依三峽之險，舟師封江、弩手據岸，宋軍破峽入白帝，順勢趨成都，孟昶出降。卡面羅馬短劍不曾入夔州，它象徵的正是短兵相接的刺擊節奏：登岸後的舟兵與步卒，靠的仍是刀、矛與盾的配合。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/964-08100e39d8.json"
+    },
+    {
+      "id": "979-滿城之戰",
+      "added": "2026-10-21T10:18:38.416Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.05,
+        "lat": 38.7
+      },
+      "battle": {
+        "y": 979,
+        "m": 9,
+        "name": "滿城之戰",
+        "theater": "河北保定滿城徐河",
+        "brief": "滿城之戰是宋遼戰爭的反擊之戰。979年九月，遼景宗乘高梁河之捷，遣韓匡嗣、耶律休哥率十萬眾自幽州南下，直指河北重鎮鎮州；宋軍以劉廷翰、李漢瓊、崔翰、崔彥進分統八萬人拒於徐河，趙廷進、李繼隆力主變陣。終場斬首萬餘級、俘老幼三萬戶，遼軍退易州；步戰仍賴長矛，本卡埃及長矛即其先例。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/979-e54a4087c7.json"
+    },
+    {
+      "id": "980-雁門之戰",
+      "added": "2026-10-21T10:18:38.421Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.87,
+        "lat": 39.19
+      },
+      "battle": {
+        "y": 980,
+        "m": 4,
+        "name": "雁門之戰",
+        "theater": "雁門關、代州與崞縣（山西代縣）",
+        "brief": "雍熙三年五月，遼聖宗與蕭太后分路南侵，蕭撻凜領前鋒精騎直趨代州、雁門，攻城失利中石而死，遼軍遂不能下關。宋軍據關固守，以城頭秦連弩與飛石壓制雲梯撞車，李繼隆部在崞縣出擊，斬首三千餘級。此役守住太原門戶，雁門關之名也自此走進楊家將的傳說。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
+    },
+    {
+      "id": "986-代州之戰",
+      "added": "2026-10-21T10:18:38.423Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.96,
+        "lat": 39.07
+      },
+      "battle": {
+        "y": 986,
+        "m": 1,
+        "name": "代州之戰",
+        "theater": "代州、朔州至幽州一線",
+        "brief": "雍熙三年（986）正月，宋太宗分三路北伐遼國：曹彬自雄州趨幽州，潘美與楊業自代州攻朔州。卡面的羅馬重步兵未隨軍而至，但宋軍內襯步卒以長槊、大盾結陣抵擋遼騎衝鋒，其戰力同樣建立在兵源補充與糧秣補給之上。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/986-e8ee26c1ff.json"
+    },
+    {
+      "id": "993-高麗契丹戰爭",
+      "added": "2026-10-21T10:18:38.427Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 125.75,
+        "lat": 39.05
+      },
+      "battle": {
+        "y": 993,
+        "m": 10,
+        "name": "高麗契丹戰爭",
+        "theater": "鴨綠江東岸與高麗北境",
+        "brief": "993年遼聖宗率大軍渡鴨綠江，攻破高麗西京平壤外的蓬山陣，兵鋒抵安戴鎮受阻，雙方在江東議和。往後二十六年遼三度南下，1018年蕭排押率十萬眾再攻江東六城，卻在慈州、三橋川被姜邯贊全殲。卡面希臘重步兵並未出戰役，然高麗劍車結陣與遼騎突入盾線，正是重步兵互相遮蔽立陣的同一條戰術邏輯。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/993-38d3164752.json"
     }
   ]
 }
