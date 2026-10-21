@@ -3061,6 +3061,271 @@
         "layer": "land",
         "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
         "portrait": "portraits/fieldgun.jpg"
+      },
+      "dossierUrl": "dossiers/1837-f8f9a5765a.json"
+    },
+    {
+      "id": "1838-糕點戰爭",
+      "added": "2026-10-21T04:51:14.280Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -96.13,
+        "lat": 19.2
+      },
+      "battle": {
+        "y": 1838,
+        "m": 11,
+        "name": "糕點戰爭",
+        "theater": "墨西哥灣韋拉克魯斯",
+        "brief": "一八三八年十一月二十七日，法國分艦隊封鎖墨西哥灣，炮擊聖胡安·德烏魯阿要塞，次日清晨迫其投降；十二月五日法軍再以一千五百人分三路登陸奪取韋拉克魯斯城，俘墨軍總司令阿里斯塔。這場以糕餅糾紛得名、由艦炮決定的戰爭，卡面火繩槍早已退為軍械庫中的舊物。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      },
+      "dossierUrl": "dossiers/1838-cb3fe05f8f.json"
+    },
+    {
+      "id": "1838-血河之戰",
+      "added": "2026-10-21T04:51:14.280Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30.54,
+        "lat": -28.11
+      },
+      "battle": {
+        "y": 1838,
+        "m": 12,
+        "name": "血河之戰",
+        "theater": "南非納孔河畔血河渡口",
+        "brief": "一八三八年十二月十六日，安德烈斯·普雷托里乌斯率六十四輛牛車、四百六十四名布爾人移民先驅在納孔河北岸結營，次日清晨遭丁干王的祖魯大軍以牛角陣反覆衝撞，牛車圍成的車陣與火槍齊射擋住四波攻擊，祖魯軍陣亡逾三千人，布爾人僅三人受傷。卡面火繩槍早已過時，實際決戰的是燧發步槍與兩門老砲。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1838-阿魯斯圖克戰爭",
+      "added": "2026-10-21T04:51:14.281Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -68.01,
+        "lat": 47.05
+      },
+      "battle": {
+        "y": 1838,
+        "m": 12,
+        "name": "阿魯斯圖克戰爭",
+        "theater": "緬因州北部阿魯斯圖克河谷",
+        "brief": "一八三八年十二月三十一日卡里布附近，新不倫瑞克伐木工與緬因民兵在黑熊襲擊引發的誤射中短兵相接，糾紛一路升級：一八三九年二月緬因州派出武裝團進駐阿魯斯圖克河，雙方互相扣押人質，一度陳兵萬人，卻始終沒有正面交戰。最終以一八四二年韋伯斯特—阿什伯頓條約劃界收場。卡面火繩槍在三世紀前已退出戰列，雙方民兵手中的武器是燧發與雷管式滑膛步槍。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1839-烏拉圭內戰",
+      "added": "2026-10-21T04:51:14.282Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -56.32,
+        "lat": -34.4
+      },
+      "battle": {
+        "y": 1839,
+        "m": 3,
+        "name": "烏拉圭內戰",
+        "theater": "烏拉圭東部卡甘查至蒙得維的亞",
+        "brief": "一八三九年三月起，弗魯克圖奧索·里維拉在蒙得維的亞當選總統並向布宜諾斯艾利斯省長羅薩斯宣戰，恩特雷里奧斯省長帕斯夸爾·埃查瓜隨即率聯邦軍越過烏拉圭河入侵，十二月二十九日卡甘查一戰敗北，之後演成橫跨十二年的「大戰」，以蒙得維的亞九年圍城最為著名。卡面輪發手槍在三百年前已被燧發手槍取代，只在軍械庫中留作舊物。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      }
+    },
+    {
+      "id": "1839-第一次英阿戰爭",
+      "added": "2026-10-21T04:51:14.282Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 69.18,
+        "lat": 34.53
+      },
+      "battle": {
+        "y": 1839,
+        "m": 4,
+        "name": "第一次英阿戰爭",
+        "theater": "白沙瓦至喀布爾走廊",
+        "brief": "一八三九年四月，約二萬一千人的印度軍由基恩率領渡過印度河，四月廿五日駐紮坎大哈，七月廿三日以火藥爆破城門攻下加茲尼，八月入喀布爾扶沙迦复位。卡面輪發手槍是一六〇〇年前後的德意志機括，四百年後只剩火燧手槍還在英軍軍官腰間；左右戰局的卻是火繩傑薩伊、滑膛步槍的射程與三萬頭駱駝的後勤。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      },
+      "dossierUrl": "dossiers/1839-aa7e0d36a1.json"
+    },
+    {
+      "id": "1846-第二次卡洛斯戰爭",
+      "added": "2026-10-21T04:51:14.284Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -2.05,
+        "lat": 42.68
+      },
+      "battle": {
+        "y": 1846,
+        "m": 5,
+        "name": "第二次卡洛斯戰爭",
+        "theater": "納瓦拉與阿拉瓦山區",
+        "brief": "一八四六年五月起，馬德里的軍事起事被平定後，內戰迅速蔓延到北部的納瓦拉、阿拉瓦與比斯開，卡洛斯派以村落為堡壘與自由派軍隊對抗三年。卡面雷管步槍是政府軍步兵的制式裝備，也是卡洛斯山區民兵最渴望的走私品，兩者的差別最終不在槍而在封鎖線與法國的干預。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1846-50032bfe58.json"
+    },
+    {
+      "id": "1848-大波蘭起義(1848年)",
+      "added": "2026-10-21T04:51:14.285Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 16.93,
+        "lat": 52.41
+      },
+      "battle": {
+        "y": 1848,
+        "m": 1,
+        "name": "大波蘭起義 (1848年)",
+        "theater": "波茲南城與大波蘭鄉村戰線",
+        "brief": "一八四八年一月下旬，普魯士波森省議會駁回波蘭民族訴求的消息傳到波茲南，民眾在二十三日攻入議會與市政機關，奪取軍械，內城一度易手，義軍其後轉入鄉村，靠散射與襲擊拖住普軍至數月。雷管步槍在初春的雨霧中仍能擊發，讓遠距單發精射成為可能，亦令普軍密集縱隊更易被消耗。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1848-6c5463eaf3.json"
+    },
+    {
+      "id": "1848-奧地利1848年革命",
+      "added": "2026-10-21T04:51:14.285Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 16.37,
+        "lat": 48.21
+      },
+      "battle": {
+        "y": 1848,
+        "m": 3,
+        "name": "奧地利1848年革命",
+        "theater": "維也納內城與下奧地利戰線",
+        "brief": "一八四八年三月十三日起，維也納民眾築起街壘，迫使哈布斯堡宮廷讓步：皇帝承諾憲章、出版自由與司法改革，四月下奧地利頒布憲法；然而十月六日起義再度爆發，溫迪施－格雷茨率援軍入城，用重砲連續轟擊城郊街壘，最終迫使皇室出走。雷管步槍在近距交火中可靠擊發，使守壘的國民守衛隊得以抵擋帝國步兵。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1848-德意志1848年革命",
+      "added": "2026-10-21T04:51:14.290Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.4,
+        "lat": 52.52
+      },
+      "battle": {
+        "y": 1848,
+        "m": 3,
+        "name": "德意志1848年革命",
+        "theater": "柏林街壘與中部德意志邦國",
+        "brief": "一八四八年三月十八日至十九日，柏林的國民守衛隊與工人以街壘對抗普魯士軍，國王被迫承諾言論自由與軍隊改革；三月廿九日法蘭克福國民議會在聖保羅教堂開議，萊茵民軍與普法爾茨義軍隨後北進，石勒蘇益格戰爭把普軍拉向北方。雷管步槍在街壘射擊中可靠擊發，讓守壘者在近距離內得以抵擋。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1848-意大利1848年革命",
+      "added": "2026-10-21T04:51:14.290Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 9.19,
+        "lat": 45.46
+      },
+      "battle": {
+        "y": 1848,
+        "m": 3,
+        "name": "意大利1848年革命",
+        "theater": "米蘭與倫巴第戰線",
+        "brief": "一八四八年三月，米蘭民眾在五天之內逐走奧軍守備，卡洛·阿爾貝托三月返回都靈、四月頒布憲章並於四月二十三日對奧開戰；拉德茨基自維羅納北進，於四月帕斯特倫戈與聖露西亞連勝後，於七月庫斯托扎擊潰撒丁軍，米蘭再度淪陷。雷管步槍在倫巴第的村鎮攻守與山道交火中交鋒，騎槍精射改變了攻守節奏。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
       }
     }
   ]
