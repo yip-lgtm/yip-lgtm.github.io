@@ -33782,6 +33782,55 @@
         "portrait": "portraits/hoplite.jpg"
       },
       "dossierUrl": "dossiers/993-38d3164752.json"
+    },
+    {
+      "id": "615-朱粲起義",
+      "added": "2026-10-21T10:20:11.434Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.45,
+        "lat": 34.62
+      },
+      "battle": {
+        "y": 615,
+        "m": 1,
+        "name": "朱粲起義",
+        "theater": "河南洛陽",
+        "brief": "朱粲起義於隋朝末年在河南一帶爆發，主要活動區域涉及洛陽與汝州，參與者為地方起義勢力及隋軍。羅馬弩砲正式型號Scorpio，約於公元前50年列裝，年代早於本場衝突六百餘年，屬羅馬軍隊的輕型投射武器，本條據此標記裝備年代。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      }
+    },
+    {
+      "id": "629-唐滅東突厥之戰",
+      "added": "2026-10-21T10:19:49.013Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 629,
+        "m": 11,
+        "name": "唐滅東突厥之戰",
+        "theater": "陰山山脈",
+        "brief": "《中文維基戰爭列表》所列的唐滅東突厥之戰，是629年唐朝與東突厥汗國在蒙古高原及陰山一帶交兵的衝突。唐軍由李靖率領出征，針對突厥部眾的抵抗展開進攻；本條目所採裝備為埃及長矛（Egyptian spear），其於公元前3200年已列入服役，年代早於629年。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      }
     }
   ]
 }
