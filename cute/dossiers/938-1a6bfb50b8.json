@@ -1,6 +1,6 @@
 {
  "id": "938-白藤江之戰",
- "theater": "交州白藤江口",
+ "theater": "北寧白藤江口",
  "place": {
   "lng": 106.2,
   "lat": 21.5
@@ -9,8 +9,8 @@
   "y": 938,
   "m": 12,
   "name": "白藤江之戰",
-  "theater": "交州白藤江口",
-  "brief": "白藤江之戰是交州靜海軍對南漢遠征水軍的一場決戰。938年冬，交趾方面由節度使吳權主持，在白藤江水道預先沉入削尖木楔，以輕舟佯敗誘南漢大船入伏，待退潮船隻擱淺，弓弩齊發、步卒登船，斬南漢平海將軍弘操，敵軍死傷逾半。此役全無重裝步卒正面對撞，卡面希臘重步兵並未在場，其方陣互相遮蔽的邏輯只在交趾水軍以盾兵接舷時隱約重現。"
+  "theater": "北寧白藤江口",
+  "brief": "白藤江之戰是交州靜海軍對南漢遠征水軍的決戰。938年冬，節度使吳權在白藤江沉入削尖木楔，以輕舟佯敗誘南漢大船入伏，待退潮船隻擱淺，弓弩齊發、步卒登船，斬南漢平海將軍弘操，敵軍死傷逾半。此役無重裝步卒正面對撞，卡面希臘重步兵並未在場，方陣互相遮蔽的邏輯只在交趾水軍接舷時隱約重現。"
  },
  "kit": {
   "name": "希臘重步兵",
@@ -18,7 +18,7 @@
   "year": -500,
   "nation": "gr",
   "layer": "land",
-  "history": "方阵的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+  "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
   "portrait": "portraits/hoplite.jpg"
  },
  "countries": "白藤江之戰是十世紀末交州（交趾）與南漢之間的一場水陸大戰，交戰雙方在名義上都還掛著中原王朝的招牌，實際上已是兩個各自獨立的政治力量。交州一方是靜海軍節度使吳權的軍隊：靜海軍是唐末以來交州鎮系將校世襲的部曲，節度使衙署設在交州城（今海陽郡水原一帶），兵源以交州鄉兵與俚人部曲為主，另有自嶺南、兩廣流散而來的客籍將校，編制仍循唐代藩鎮「牙兵親兵—州縣鄉兵」的兩層結構，上層是與將校有姻親、故舊關係的核心部曲，下層是臨時徵發的鄉兵與水手。吳權出身蒲陽，父吳公智在交州領兵，他以誅殺自立節度使麴公粲、平定內亂取得位置，水寨、舟師與糧秣都握在自己手裡。南漢一方是劉氏政權直轄的中央水軍：劉龔坐鎮廣州，遣第九子弘操以平海將軍、交趾王號率師南征，兵員自嶺南各州抽調，配海船、大舶與隨軍糧秣，後方留有京畿宿衞與閩、楚兩方向的策應之師。兩軍最終在白藤江一段狹窄水道遭遇：交州方以水寨、舟隊與江灘堡壘構成抵抗，吳權的部署目標很明確，先挫其舟，再挫其將，把南漢精銳封死在灘上。",
@@ -37,5 +37,5 @@
  "impactEn": "The consequences of the battle of Bạch Đằng reached far beyond the fate of one engagement. The Southern Han abandoned the intention of recovering Giao Châu, the Vietnamese records saying plainly that from that point they dared not look at the province again. Giao Châu gained a period of genuine independence, and Vietnamese historians normally take the year 938 as the mark of the end of the northern domination; in the following year Ngô Quyền proclaimed himself king and founded the Ngô state with its capital at Cổ Loa, opening the succession of independent Vietnamese dynasties that would follow, the early Lê, the Trần and after them. The victory also rearranged the regional balance of power: the Southern Han turned its weight back north to contest the Central Plains, while Giao Châu sat on its own princely title and its relations with the north settled into a long state of formal submission and real independence. At the military level the effect was longer lived still. The method of waiting on the tide and planting wedges in advance became the signature of the Giao Châu army: the same Bạch Đằng was the place where a Song army was beaten in 981, and where Trần Hưng Đạo destroyed a Yuan fleet in 1288 by the same means, three battles and three successes reproducing one identical logic four centuries later. In the years after the victory Ngô Quyền built up the sea defences, raised river stockades, dredged channels, promoted farming and struck copper coin in the Taiping Xingbao pattern, laying the groundwork for the maritime shape of the Ngô state and of the Lê state after it.",
  "result": "南漢的遠征軍在白藤江被徹底擊潰。弘操率大船深入楔區，潮退之後全線擱淺，弓弩齊射之下死傷過半，弘操本人陣亡，屍身隨殘兵墜江；前鋒與後隊被輕舟切斷，首尾不能相救，餘部由海路退回廣州。交州方面損失有限，吳權的水寨、舟隊與城防基本完好，吳昌熾所獻的「候潮而發」之策完全奏效，吳權威望由此奠定。直接的政治結果，是南漢在放棄以武力收復交州的同時，承認既成事實，兩國往來重新以使節與貿易維持，而交州在實質上脫離了南漢的軍令系統。次年，即九三九年，吳權稱王，改元建元年（年號說法不一），建吳朝，定都古螺，此後由吳朝而前黎朝，開啟越南自主王朝相繼的序列。白藤江亦由一條普通水道，一躍而成越南歷史上的象徵性地名，直至今日仍是當地最著名的古戰場之一。",
  "resultEn": "The Southern Han expeditionary force was completely broken on the Bạch Đằng. Hoằng Tháo had run his great ships deep into the wedge zone, and once the tide fell the whole line was aground; under the volleys of bows and crossbows more than half the men fell, Hoằng Tháo himself was killed, and his body went down into the river with the broken troops. Light craft had cut the fleet into isolated sections so that the leading ships could not be rescued by those behind, and the survivors made their way back to Guangzhou by sea. The Giao Châu side lost comparatively little: Ngô Quyền's stockades, fleet and city works came through the day essentially intact, and the plan of Ngô Xương Ngập, to strike in obedience to the tide, worked exactly as designed, fixing Ngô Quyền's prestige in the process. The immediate political result was that the Southern Han, in giving up the attempt to retake Giao Châu by force, accepted the accomplished fact; intercourse between the two was resumed through envoys and trade, while Giao Châu in substance left the Southern Han's military command system behind. In the following year, 939, Ngô Quyền proclaimed himself king, founded the Ngô state and made Cổ Loa his capital, beginning the sequence of Vietnamese dynasties that ran from the Ngô through the early Lê. The Bạch Đằng itself, from an ordinary watercourse, became in a single stroke the most symbolic place name in Vietnamese history and remains one of the most famous battlefields in the country to this day.",
- "updated": "2026-10-21T10:24:47.472Z"
+ "updated": "2026-10-21T10:30:44.263Z"
 }
