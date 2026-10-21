@@ -2585,6 +2585,33 @@
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
         "portrait": "portraits/wheellockpistol.jpg"
       }
+    },
+    {
+      "id": "1812-俄法戰爭",
+      "added": "2026-10-21T04:32:56.537Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 37.62,
+        "lat": 55.75
+      },
+      "battle": {
+        "y": 1812,
+        "m": 6,
+        "name": "俄法戰爭",
+        "theater": "莫斯科與別列津納河",
+        "brief": "一八一二年六月二十四日，拿破崙率大軍越過涅曼河東進，企圖逼亞歷山大一世重回大陸封鎖體系。戰事由斯摩棱斯克、博羅季諾燒到莫斯科城，最後以別列津納河渡口崩潰收場。俄軍全程避免會戰，改以焦土與平行撤退耗敵。輪發槍在法軍序列中僅餘於警衛與軍官備用手槍位，近身戰鬥全由燧發手槍承擔。"
+      },
+      "kit": {
+        "name": "輪發槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
+        "portrait": "portraits/wheellock.jpg"
+      },
+      "dossierUrl": "dossiers/1812-c742b66890.json"
     }
   ]
 }
