@@ -34416,6 +34416,81 @@
         "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
         "portrait": "portraits/dory.jpg"
       }
+    },
+    {
+      "id": "880-黃巢攻東都之戰",
+      "added": "2026-10-21T11:14:25.012Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.45,
+        "lat": 34.62
+      },
+      "battle": {
+        "y": 880,
+        "m": 11,
+        "name": "黃巢攻東都之戰",
+        "theater": "河洛地區",
+        "brief": "本場衝突是唐朝廣明元年的黃巢攻東都之戰，黃巢軍進攻並攻陷洛陽，唐廷因而承受直接軍事壓力，洛陽攻防成為戰局核心。條目所列裝備為羅馬弩砲，正式型號Scorpio，約於公元前五十年已列裝，屬陸軍投射武器，可用於營地防禦與前線火力壓制。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      }
+    },
+    {
+      "id": "909-象牙潭之戰",
+      "added": "2026-10-21T11:14:25.014Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 909,
+        "m": 1,
+        "name": "象牙潭之戰",
+        "theater": "象牙潭",
+        "brief": "「象牙潭之戰」為九〇九年所列衝突；題目未提供可核實的參戰者、戰果或精確位置，故不以外部傳聞補足。埃及月牙劍（Khopesh）約於公元前一千五百年已列裝，是古代埃及軍隊用於近身劈砍的真實冷兵器，與本題指定的服役年及層類相符。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      }
+    },
+    {
+      "id": "957-淮南之戰",
+      "added": "2026-10-21T11:14:25.016Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.79,
+        "lat": 32.58
+      },
+      "battle": {
+        "y": 957,
+        "m": 11,
+        "name": "淮南之戰",
+        "theater": "淮南地區的壽州與濠州一帶",
+        "brief": "淮南之戰是後周與南唐在顯德四年爭奪淮南地區的衝突，戰線集中於壽州、濠州及淮河沿線，後周軍隊南進破城，迫使南唐割地議和。衝突相關裝備記錄列有埃及月牙劍（Khopesh），其於公元前1500年已列裝，屬步卒近用的彎鉤單手劍，可用於劈砍、格擋與勾擊。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      }
     }
   ]
 }
