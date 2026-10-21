@@ -7376,7 +7376,8 @@
         "year": 1520,
         "nation": "es",
         "layer": "land",
-        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。"
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
       },
       "dossierUrl": "dossiers/1526-2a6d98820d.json"
     },
@@ -10342,7 +10343,8 @@
         "year": -650,
         "nation": "gr",
         "layer": "land",
-        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。"
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
       },
       "dossierUrl": "dossiers/589-33398a5f96.json"
     },
@@ -16167,7 +16169,8 @@
         "year": -650,
         "nation": "gr",
         "layer": "land",
-        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。"
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
       },
       "dossierUrl": "dossiers/-260-5b9937cea6.json"
     },
@@ -18488,7 +18491,8 @@
         "year": -650,
         "nation": "gr",
         "layer": "land",
-        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。"
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
       },
       "dossierUrl": "dossiers/-219-c4c60d6c38.json"
     },
@@ -25993,7 +25997,8 @@
         "year": -200,
         "nation": "cn",
         "layer": "land",
-        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。"
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
       },
       "dossierUrl": "dossiers/755-2144e67e20.json"
     },
@@ -28665,7 +28670,8 @@
         "year": -200,
         "nation": "cn",
         "layer": "land",
-        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。"
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
       },
       "dossierUrl": "dossiers/640-a1e65c306f.json"
     },
@@ -33416,7 +33422,8 @@
         "year": -200,
         "nation": "cn",
         "layer": "land",
-        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。"
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
       },
       "dossierUrl": "dossiers/875-21e376de64.json"
     },
@@ -34288,7 +34295,8 @@
         "layer": "land",
         "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
         "portrait": "portraits/pilum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/786-ec89b92a91.json"
     },
     {
       "id": "875-唐末農民戰爭",
