@@ -1887,7 +1887,8 @@
         "layer": "land",
         "history": "瑙厄二型是晚期邁錫尼陸軍武器體系中的主要短劍型式，配置於重裝步兵的近身戰鬥裝備，負責盾陣進攻中的突刺任務。",
         "portrait": "portraits/feed-naueii.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-1194-3e20c9cd87.json"
     },
     {
       "id": "1810-智利獨立戰爭",
@@ -4904,7 +4905,8 @@
         "layer": "land",
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
         "portrait": "portraits/wheellock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1815-67377fe917.json"
     },
     {
       "id": "1815-那不勒斯戰爭",
@@ -5952,7 +5954,8 @@
         "layer": "land",
         "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
         "portrait": "portraits/matchlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1820-68adec4aa2.json"
     },
     {
       "id": "1820-奧斯曼-波斯戰爭(1821年-1823年)",
@@ -5978,7 +5981,8 @@
         "layer": "land",
         "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
         "portrait": "portraits/matchlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1820-c2d6c0aa76.json"
     },
     {
       "id": "1820-張格爾之亂",
@@ -6689,7 +6693,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1042-6611d88643.json"
     },
     {
       "id": "1049-河南、涼州之戰",
@@ -6796,7 +6801,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1074-969a43f5fe.json"
     },
     {
       "id": "1075-宋越熙寧戰爭",
@@ -6876,7 +6882,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1114-fc718d6f84.json"
     },
     {
       "id": "1114-金與遼的戰爭",
@@ -6902,7 +6909,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1114-cf514a3671.json"
     },
     {
       "id": "1120-宋金滅遼",
@@ -6955,7 +6963,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1121-90c7def3e8.json"
     },
     {
       "id": "1130-下沚江之戰",
@@ -6981,7 +6990,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1130-55c3fa8111.json"
     },
     {
       "id": "1130-黃天蕩之戰",
@@ -7034,7 +7044,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1131-5bf91a8ca3.json"
     },
     {
       "id": "1132-德安之戰",
@@ -7060,7 +7071,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1132-882d9aa27a.json"
     },
     {
       "id": "1134-仙人關之戰",
@@ -7140,7 +7152,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1140-4d004e3f1c.json"
     },
     {
       "id": "1140-順昌之戰",
@@ -7220,7 +7233,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1161-046b386ed2.json"
     },
     {
       "id": "1267-襄樊之戰",
@@ -7273,7 +7287,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1279-da74207074.json"
     },
     {
       "id": "1521-第六次意大利戰爭",
@@ -7325,7 +7340,8 @@
         "nation": "es",
         "layer": "land",
         "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。"
-      }
+      },
+      "dossierUrl": "dossiers/1526-2a6d98820d.json"
     },
     {
       "id": "1701-西班牙王位繼承戰爭",
@@ -7459,7 +7475,8 @@
         "layer": "land",
         "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
         "portrait": "portraits/gatling.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1861-f0cd6c1043.json"
     },
     {
       "id": "1863-第二次阿散蒂戰爭",
@@ -7566,7 +7583,8 @@
         "layer": "land",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1873-f04dcb65b3.json"
     },
     {
       "id": "1883-第一次馬達加斯加戰爭",
@@ -7750,6 +7768,87 @@
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
       }
+    },
+    {
+      "id": "1035-鄯州之戰",
+      "added": "2026-10-21T05:56:52.445Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 102.4,
+        "lat": 36.5
+      },
+      "battle": {
+        "y": 1035,
+        "m": 6,
+        "name": "鄯州之戰",
+        "theater": "青海湟水鄯州城與北岸渡口",
+        "brief": "景祐二年（1035），湟水中游的鄯州（今青海樂都）捲入青藏高原東北部重新劃界的衝突：控制鄯州、青唐一線的吐蕃諸部，與西面壓進來的党項夏州勢力在城郊與渡口一帶交鋒，宋廷只以封授招撫居中。卡面的希臘火不在這個內陸戰場上，同期可與之對照的東方燃燒武器是猛火油櫃、火矢與發火飛石。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1035-48bea4a6ca.json"
+    },
+    {
+      "id": "1512-第五次莫斯科-立陶宛戰爭",
+      "added": "2026-10-21T05:56:52.483Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30.42,
+        "lat": 54.51
+      },
+      "battle": {
+        "y": 1512,
+        "m": 9,
+        "name": "第五次莫斯科-立陶宛戰爭",
+        "theater": "斯摩棱斯克與維捷布斯克邊境",
+        "brief": "一五一二年末起，莫斯科大公國沿第聶伯河上游向斯摩棱斯克、維捷布斯克三面用兵，圍城兩載，卻在一五一四年奧爾沙被立陶宛-波蘭聯軍以騎兵衝鋒與林中砲兵擊潰，連軍營與三百門砲都丟了。此役的火力骨架仍是火繩步槍與攻城重砲，輪發手槍只配給火槍隊軍官與近衛，用於營帳夜哨與近身自衛。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      },
+      "dossierUrl": "dossiers/1512-627b8b534b.json"
+    },
+    {
+      "id": "1866-第二次長州征討",
+      "added": "2026-10-21T05:56:52.556Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.95,
+        "lat": 33.95
+      },
+      "battle": {
+        "y": 1866,
+        "m": 9,
+        "name": "第二次長州征討",
+        "theater": "下關海峽與萩城高砂一線",
+        "brief": "一八六六年朝廷再下第二次征討長州的勅旨，官軍以第一、第五師團攻入周防，關門海峽被岸砲逐退，九月十五日高砂之役更被長州奇兵隊打崩，圍困萩城到冬天，最後講和撤軍。卡面這艘一八六二年英國鐵甲艦沒有到過日本：長州要自己造它，幕府要向歐洲買它，決定勝負的其實是兵站與彈藥。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1866-6a821184e2.json"
     }
   ]
 }
