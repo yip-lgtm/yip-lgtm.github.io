@@ -253,7 +253,7 @@
         "m": 6,
         "name": "蘇德戰爭",
         "theater": "東歐",
-        "brief": "1941年6月德軍發動「巴巴羅薩」行動，蘇聯紅軍調派T-34/76坦克於東歐前線抵禦裝甲突破。"
+        "brief": "1941年6月22日德軍發動巴巴羅薩行動，蘇德戰爭在歐洲東線全面展開，至1945年5月德軍投降、蘇軍攻入柏林告終，歷時近四年，是二次大戰的主戰場。卡面的1860年加特林機槍並未參戰，但讓後坐力分散於六次射擊的多管設計，正是本役兩軍以機槍火力密度壓制整個師的技術源頭。"
       },
       "kit": {
         "name": "T-34/76坦克",
@@ -29532,7 +29532,8 @@
         "layer": "land",
         "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
         "portrait": "portraits/assyrianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/613-9c25c77df6.json"
     },
     {
       "id": "634-伊斯蘭征服黎凡特",
@@ -29774,7 +29775,8 @@
         "layer": "land",
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/872-4d28d6d504.json"
     },
     {
       "id": "888-888年薩曼尼德內戰",
@@ -29800,7 +29802,8 @@
         "layer": "land",
         "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
         "portrait": "portraits/scorpio.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/888-71e69ed17e.json"
     },
     {
       "id": "905-白馬驛之禍",
@@ -29826,7 +29829,8 @@
         "layer": "land",
         "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
         "portrait": "portraits/pilum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/905-4d44b4bd07.json"
     },
     {
       "id": "913-913-927年拜占庭-保加利亞戰爭",
@@ -29933,7 +29937,8 @@
         "layer": "land",
         "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
         "portrait": "portraits/scorpio.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/943-5305d30a16.json"
     },
     {
       "id": "945-陽城、滹沱之戰",
@@ -29959,7 +29964,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/gongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/945-4658782e4f.json"
     },
     {
       "id": "996-科帕尼的起義",
@@ -29987,6 +29993,597 @@
         "portrait": "portraits/scorpio.jpg"
       },
       "dossierUrl": "dossiers/996-5e44a99423.json"
+    },
+    {
+      "id": "426-宋攻謝晦之戰",
+      "added": "2026-10-21T09:27:28.889Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.48,
+        "lat": 31.68
+      },
+      "battle": {
+        "y": 426,
+        "m": 2,
+        "name": "宋攻謝晦之戰",
+        "theater": "採石磯・長江下游",
+        "brief": "元嘉二十三年（426）正月，荊州刺史謝晦奉密詔舉兵，自江陵、豫章順流而下，二月進抵採石磯，以鐵鎖橫江阻絕舟師。撫軍將軍柳元景以數千之眾守採石，遣蒙衝撞斷鐵鎖，叛軍不能渡。相持數月，疾疫且糧道不繼，謝晦焚舟夜退，兵潰於湘中。前拒所用大楯，與卡面羅馬方陣盾的凸面長盾同源。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/426-07684e18aa.json"
+    },
+    {
+      "id": "426-魏攻統萬之戰",
+      "added": "2026-10-21T09:27:28.892Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.85,
+        "lat": 37.95
+      },
+      "battle": {
+        "y": 426,
+        "m": 3,
+        "name": "魏攻統萬之戰",
+        "theater": "陝西統萬城與河套道",
+        "brief": "始光三年（426），北魏太武帝拓跋燾分道伐夏；翌年五月率輕兵三萬西行，夜抵統萬城下，破城擒其主赫連昌，大夏國亡。統萬牆以蒸土築成，攻守之爭全在攻城器械、糧秣與突進速度；卡面這件羅馬重步兵所代表的重裝步兵母題，正落在城頭防線與攻城雲梯之間。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/426-cf97413fdb.json"
+    },
+    {
+      "id": "430-平涼之戰",
+      "added": "2026-10-21T09:27:28.896Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.67,
+        "lat": 35.54
+      },
+      "battle": {
+        "y": 430,
+        "m": 6,
+        "name": "平涼之戰",
+        "theater": "秦州平涼與隴右一線",
+        "brief": "景和七年（430）夏，北魏主力南下河南之際，大夏主赫連定率殘部東進，突襲秦州平涼。守軍以弩砲與礌石壓住雲梯，魏援騎兵循谷道南下，先以弩箭齊射再衝鋒，迫赫連定解圍西撤，退回龍興。翌年赫連定走敦煌被誅，大夏遂亡；卡面的秦弩，正是在平涼城頭撐住防線的那件兵器。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      }
+    },
+    {
+      "id": "450-陝城之戰",
+      "added": "2026-10-21T09:27:28.900Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 111.2,
+        "lat": 34.72
+      },
+      "battle": {
+        "y": 450,
+        "m": 11,
+        "name": "陝城之戰",
+        "theater": "河南三門峽陝城（崤山南麓）",
+        "brief": "元嘉二十七年（450）十一月，劉宋北伐西路軍連下盧氏、弘農，兵鋒抵北魏洛州陝城。刺史張是連提率眾二萬度崤山來援，薛安都卸甲單騎突陣、柳元怙夜出南門，激戰整日，魏軍大敗，三千餘人被斬、二千餘人被俘，陝城遂陷。斯巴達長矛對應宋軍列陣所用的長槍體系，與方陣中長矛決定站位的作用同構。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/450-c13844e287.json"
+    },
+    {
+      "id": "454-宋平劉義宣之戰",
+      "added": "2026-10-21T09:27:28.902Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.38,
+        "lat": 31.35
+      },
+      "battle": {
+        "y": 454,
+        "m": 2,
+        "name": "宋平劉義宣之戰",
+        "theater": "長江梁山洲、姑孰至江陵水道",
+        "brief": "孝建元年，鎮江陵的荊州刺史劉義宣舉兵東下，兵鋒直指建康。梁山洲一戰，叛軍舟師被王玄謨與垣護之攻破焚毀，義宣逃回江陵，六月庚寅為新任荊州刺史朱脩之所誅。卡面所配埃及月牙劍早於此役近兩千年且從未東傳，此役真正上手的是環首刀、長槍、弩弓與乘風放火焚船的火攻。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/454-58e903a48a.json"
+    },
+    {
+      "id": "466-彭城之戰",
+      "added": "2026-10-21T09:27:28.908Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.18,
+        "lat": 34.26
+      },
+      "battle": {
+        "y": 466,
+        "m": 12,
+        "name": "彭城之戰",
+        "theater": "彭城與淮北（徐州至淮陰一線）",
+        "brief": "公元466年，北魏天安元年與南朝宋泰始二年，淮北彭城一線再起兵端：魏軍沿泗淮水道南下試探，宋廷卻逢廣陵劉子勛之亂，抽走淮南兵馬，兩軍短兵相接後轉為遣使議和。卡面羅馬方陣盾未隨軍而至，但五世紀淮北的步戰同樣靠大盾列陣與騎兵衝鋒分勝負：宋軍以車陣強弩拒魏騎，魏軍用重甲鐵騎與長槊破陣。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      }
+    },
+    {
+      "id": "488-魏伐百濟",
+      "added": "2026-10-21T09:27:28.916Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 127,
+        "lat": 36.3
+      },
+      "battle": {
+        "y": 488,
+        "m": 10,
+        "name": "魏伐百濟",
+        "theater": "百濟漢江下游",
+        "brief": "北魏太和十二年，孝文帝拓跋宏應百濟之請，遣平西將軍龔寶、征南將軍慕容彌將步騎五萬自齊州渡海，進攻百濟。魏軍登陸廣津，連破城邑三十餘座，進逼漢城，終因糧草不繼而退，遭高句麗與百濟追擊而大潰。卡面這把秦弩是攻城骨幹：弩手封住登城通道，強弩自巢車層臺居高壓制守軍，弩矢與糧草一齊耗盡。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/488-e0dc1f853c.json"
+    },
+    {
+      "id": "613-隋煬帝第二次攻高麗之戰",
+      "added": "2026-10-21T09:27:29.021Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 125.75,
+        "lat": 39.02
+      },
+      "battle": {
+        "y": 613,
+        "m": 1,
+        "name": "隋煬帝第二次攻高麗之戰",
+        "theater": "平壤城與鴨綠水下游",
+        "brief": "大業九年正月，隋煬帝再發大軍征高句麗，九軍三十萬五千人渡鴨綠水，圍平壤月餘，築土山攻城不下，糧盡北還，途中遇雨缺糧，賴玄菟長史史祥築城拒追兵。卡面羅馬標槍早七百餘年，僅作重投槍破騎的形制對照；隋軍近身所恃仍是槊、排甲與百日糧。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/613-945c10f677.json"
+    },
+    {
+      "id": "614-司馬長安起義",
+      "added": "2026-10-21T09:27:29.025Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.34
+      },
+      "battle": {
+        "y": 614,
+        "m": 11,
+        "name": "司馬長安起義",
+        "theater": "雍州長安城與關中",
+        "brief": "大業十年（614）冬，隋煬帝遠在江都，雍州（長安）司馬長安殺監軍、據州城起兵，旬月間聚眾數萬，遣使招納關中諸郡，與劉文通部相應，關中震動。隋廷詔以行軍總管楊政率軍入關討平，首領被擒。卡面投石機即此類攻城器械：隋軍沿用前朝發石車、撞車諸具，惟此戰記載未細辨其用。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/614-624f9e2a21.json"
+    },
+    {
+      "id": "614-王德仁起義",
+      "added": "2026-10-21T09:27:29.030Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.05,
+        "lat": 35.42
+      },
+      "battle": {
+        "y": 614,
+        "m": 11,
+        "name": "王德仁起義",
+        "theater": "汲郡汲縣太行山東麓",
+        "brief": "大業十年（614）十一月，隋煬帝第三次征高句麗無功班師之際，汲郡賊帥王德仁擁眾數萬，保林慮山為盜，依太行山東麓立寨。郡兵不多，中央精兵遠在涿郡與懷遠鎮一線，無力深入山區；起義軍以長兵、弓弩及簡陋器械據險待變，與同月離石劉苗王、東海彭孝才相互聲援，為隋末北方郡縣解體的徵候。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/614-e7b6eb1b40.json"
+    },
+    {
+      "id": "615-王須拔",
+      "added": "2026-10-21T09:27:29.035Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.5,
+        "lat": 38.67
+      },
+      "battle": {
+        "y": 615,
+        "m": 10,
+        "name": "王須拔",
+        "theater": "河間高陽至幽州涿郡",
+        "brief": "大業十一年（615年），上谷人王須拔聚眾十萬起事，自稱漫天王、國號燕，轉戰河北山西，攻克河間高陽後進逼幽州涿郡，中流矢而亡，部眾歸魏刀兒。起義軍攻城以拋石車、撞木破垣，隋軍憑城堞、弩陣與火攻拒守；卡面這件羅馬扭力式投石機早於本役八百餘年，與東亞砲車同類而形制不同。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/615-2386f5b045.json"
+    },
+    {
+      "id": "616-大海寺之戰",
+      "added": "2026-10-21T09:27:29.039Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.4,
+        "lat": 34.88
+      },
+      "battle": {
+        "y": 616,
+        "m": 10,
+        "name": "大海寺之戰",
+        "theater": "滎陽大海寺（河南滎陽東北）",
+        "brief": "大業十二年十月，李密勸翟讓先取滎陽、奪取糧倉，瓦崗軍破金堤關、攻下諸縣。隋煬帝徙張須陀為滎陽通守，率精銳萬餘來討。張須陀輕敵，方陣前進並追擊十餘里，李密預伏千餘人於大海寺北林間，掩發合圍，張須陀躍馬回身死鬥，隋軍大潰。瓦崗軍乘勝據滎陽、取糧倉。卡面亞述長矛雖未隨軍而至，隋軍方陣前排所立長槊正是同一兵種的傳承。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      }
+    },
+    {
+      "id": "616-趙萬海起義",
+      "added": "2026-10-21T09:27:29.044Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.96,
+        "lat": 38.07
+      },
+      "battle": {
+        "y": 616,
+        "m": 11,
+        "name": "趙萬海起義",
+        "theater": "渤海郡樂安縣",
+        "brief": "大業十二年冬，隋廷主力西征高句麗未歸、關中河北大饑，渤海郡樂安縣丞趙萬海糾集縣兵與潰卒據城起事，一度威脅郡治；竇建德遣兵策應，翌年進取樂安，趙萬海部眾自此併入夏軍。卡面羅馬投石機未隨軍而至，但起義方攻城守城所用的拋石車、撞車與強弩，同屬以配重拋射巨石破壞城垣的器械譜系。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/616-cbee33ea26.json"
+    },
+    {
+      "id": "778-坦特基尼奇的戰爭",
+      "added": "2026-10-21T09:27:29.134Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 72.8,
+        "lat": 40.5
+      },
+      "battle": {
+        "y": 778,
+        "m": 6,
+        "name": "坦特基尼奇的戰爭",
+        "theater": "費爾干納河谷與碎葉前線",
+        "brief": "大曆十三年（778），阿拔斯帝國聯同突騎施鐵騎沿錐爾河進逼費爾干納，唐朝自安西、北庭調來的援軍在坦特基尼奇一線被迎頭擊潰，碎葉與拔汗那的城砦相繼失守，唐軍退回龜茲。卡面投石機並未隨軍西來，但它代表的攻城砲車技術正是這條戰線的勝負手：野戰崩盤之後，攻城方再靠砲車與圍城拿下城牆。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/778-0b04f180c0.json"
+    },
+    {
+      "id": "938-白藤江之戰(938年)",
+      "added": "2026-10-21T09:27:29.182Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 128.3,
+        "lat": 36.28
+      },
+      "battle": {
+        "y": 938,
+        "m": 11,
+        "name": "白藤江之戰 (938年)",
+        "theater": "洛東江白藤江口（慶尚北道）",
+        "brief": "九三八年十一月，新羅以大將軍金燕休為總帥，與後高句麗王弓乙、後百濟王甄蕤及倭國援軍戰於洛東江白藤江。新羅以草馬疑兵夜襲敵營，再分兵三路，盡破敵之兩翼與中央，倭國君長與大將相繼戰死，斬首溺死者以萬計。卡面的亞述長矛不在此役之列，但矛與盾的刺擊兵傳統，正是江畔列陣的底色。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/938-7d73a3d168.json"
+    },
+    {
+      "id": "963-北宋開國戰爭",
+      "added": "2026-10-21T09:27:29.192Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.78,
+        "lat": 32.06
+      },
+      "battle": {
+        "y": 963,
+        "m": 9,
+        "name": "北宋開國戰爭",
+        "theater": "江淮至金陵（長江中下游）",
+        "brief": "開寶六年九月，曹彬、潘美自襄州率禁軍東下，取池州、圍壽州；樊若水繪江流圖，倡浮橋與黃金龍戰船，舟師直趨金陵，次年三月城破，李煜出降，南唐亡。羅馬方陣盾未曾入宋，卡上那面凸面咬邊的盾牌，其成牆的遮蔽原理，正對應宋軍以團牌、札甲與偏厢車結成的進攻線。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/963-6e0523b1cc.json"
+    },
+    {
+      "id": "966-維京人第二次突襲葡萄牙",
+      "added": "2026-10-21T09:27:29.195Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -8.99,
+        "lat": 37.02
+      },
+      "battle": {
+        "y": 966,
+        "m": 6,
+        "name": "維京人第二次突襲葡萄牙",
+        "theater": "阿爾加維與聖文森特海角",
+        "brief": "966年，一支北歐長船隊再度南下，在今葡萄牙阿爾加維一帶登岸掠掠，隨後於聖文森特海角與科爾多瓦埃米爾國及北方基督教諸侯的聯軍交戰遭敗。戰爭的關鍵全在近身：登陸的維京戰士與聯軍步兵在盾牆後互相刺突，羅馬短劍代表的正是這套以刺為主、靠盾配合的近戰邏輯。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/966-d3828f7b1f.json"
+    },
+    {
+      "id": "968-拜占庭征服保加利亞",
+      "added": "2026-10-21T09:27:29.198Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 23.32,
+        "lat": 42.7
+      },
+      "battle": {
+        "y": 968,
+        "m": 8,
+        "name": "拜占庭征服保加利亞",
+        "theater": "斯雷代茨與巴爾干山道",
+        "brief": "公元968年，拜占庭皇帝尼基弗魯斯二世在沙皇彼得一世決裂後遠征，八月在斯雷代茨外遭伏擊全軍覆沒；969年御駕再攻卡在山道。齊米斯基斯接位後於970年8月27日在斯雷代茨城下大破保軍，971年迫沙皇薩穆伊爾投降，保加利亞降為帝國軍區。卡面秦弩早於本役千餘年，現場壓制城頭的是希臘火與投石機。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/968-4135e6a505.json"
+    },
+    {
+      "id": "980-維京人第二次入侵不列顛群島",
+      "added": "2026-10-21T09:27:29.204Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 1.08,
+        "lat": 51.28
+      },
+      "battle": {
+        "y": 980,
+        "m": 6,
+        "name": "維京人第二次入侵不列顛群島",
+        "theater": "肯特郡坎特伯雷與謝佩島",
+        "brief": "980年北歐戰團再度登陸英國，在肯特郡自謝佩島直取坎特伯雷，攻破城牆、掠走主教座堂的教會財貨與世俗財貨；坎特伯雷大主教鄧斯坦集結艦隊，在「艾塞爾港」毀其戰船，北軍帶著戰利品退回海上。這是「大異教軍」散去後第二波北歐入侵的開場：不再久駐建國，改為登陸即掠、載貨而返。卡面科林斯青銅盔早於此一千六百年，其「戴盔者只能靠隊形活」的道理在這裡換副面孔回來——丹麥人靠盾牆上岸，英格蘭人靠艦隊切斷退路。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/980-39a3ef2fe0.json"
+    },
+    {
+      "id": "982-越占戰爭(982年)",
+      "added": "2026-10-21T09:27:29.207Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.85,
+        "lat": 17.05
+      },
+      "battle": {
+        "y": 982,
+        "m": 8,
+        "name": "越占戰爭 (982年)",
+        "theater": "越南中部廣平省博公隘",
+        "brief": "太平興國七年，前黎朝皇帝黎桓大舉南征占城，舟師沿海、陸師越嶺，擬直取占城王都毗若。交趾前鋒深入博公隘後，遭占城軍與降將柳繼宗所部反擊，銳卒與糧秣大部陷於嶺道。卡面斯巴達長矛未現於此役，其前鋒列槍互衛、以長矛定勝敗的原理，正是交趾長矛隊在隘口失手之因。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/982-69b4a0c82d.json"
+    },
+    {
+      "id": "996-996年諾曼第農民起義",
+      "added": "2026-10-21T09:27:29.210Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -0.7,
+        "lat": 49.28
+      },
+      "battle": {
+        "y": 996,
+        "m": 6,
+        "name": "996年諾曼第農民起義",
+        "theater": "諾曼第貝桑與科區",
+        "brief": "996年諾曼第公爵理查二世遠赴意大利期間，貝桑與科區的農民起兵，奪取莊園武器、攻擊城堡，公爵回師後以封建徵召兵力平定，首領被處死，莊園被沒收。卡面的埃及長矛屬青銅時代工藝，與本役相隔三千年，並未在此役出現；當時諾曼步兵用鐵矛長槍，騎士用長矛、圓盾與騎槍。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/996-103e7f0640.json"
+    },
+    {
+      "id": "999-倫斯特對布萊恩·博魯的反抗",
+      "added": "2026-10-21T09:27:29.212Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -6.35,
+        "lat": 53.06
+      },
+      "battle": {
+        "y": 999,
+        "m": 8,
+        "name": "倫斯特對布萊恩·博魯的反抗",
+        "theater": "威克洛郡格倫馬瑪山口",
+        "brief": "公元999年，布萊恩·博魯自蒙斯率大軍北上圍攻都柏林，倫斯特、萊奧伊斯與奧斯萊蓋三王聯軍在格倫馬瑪山谷隘口擊潰其鋒，殺其子肯尼迪，博魯眼部受傷。卡面羅馬弩砲屬公元前50年前後的攻城器械，並不在此役現場；它代表的是攻城技術的另一條路徑——真實的攻城靠火攻、斧鑿與封鎖海陸補給線。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/999-2fe38901d1.json"
     }
   ]
 }
