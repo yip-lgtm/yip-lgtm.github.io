@@ -11419,6 +11419,110 @@
         "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
         "portrait": "portraits/onager.jpg"
       }
+    },
+    {
+      "id": "1040-延州之戰",
+      "added": "2026-10-21T06:20:07.557Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 109.49,
+        "lat": 36.6
+      },
+      "battle": {
+        "y": 1040,
+        "m": 10,
+        "name": "延州之戰",
+        "theater": "陝西延州（今陝西省延安市）",
+        "brief": "延州之戰發生於一〇四〇年，是北宋與西夏在陝西延州地域交鋒的邊境戰事，宋軍依託延州防線抵禦西夏軍進攻，也是宋夏長期邊爭的一部分。條目所列的希臘火（Greek fire）在六百七十年已正式列裝，是拜占庭帝國攻守軍用體系中的燃燒投射器材。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      }
+    },
+    {
+      "id": "1087-西夏、吐蕃攻宋之戰",
+      "added": "2026-10-21T06:21:29.143Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 109.49,
+        "lat": 36.6
+      },
+      "battle": {
+        "y": 1087,
+        "m": 1,
+        "name": "西夏、吐蕃攻宋之戰",
+        "theater": "陝西延安大順城一帶",
+        "brief": "西夏、吐蕃攻宋之戰是西夏與吐蕃聯軍在陝西大順城一帶對北宋發動的攻勢，雙方在宋夏邊境展開反覆攻守，宋軍依託堡壘、弓箭與地勢據守抵禦。與此同時，維京長斧（Dane axe）已在北歐列裝，作為步兵重斧用來破盾、砍擊披甲目標，並非宋軍本戰的現場裝備。"
+      },
+      "kit": {
+        "name": "維京長斧",
+        "designation": "Dane axe",
+        "year": 1050,
+        "nation": "uk",
+        "layer": "land",
+        "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
+        "portrait": "portraits/daneaxe.jpg"
+      }
+    },
+    {
+      "id": "1115-達魯古城之戰",
+      "added": "2026-10-21T06:20:50.980Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30.52,
+        "lat": 39.78
+      },
+      "battle": {
+        "y": 1115,
+        "m": 7,
+        "name": "達魯古城之戰",
+        "theater": "安納托利亞中部",
+        "brief": "達魯古城之戰是1115年在安納托利亞達魯古城爆發的戰役，屬中世紀安納托利亞邊境的一次軍事衝突。達魯古城位於安納托利亞中部，扼守內陸交通，成為交戰各方關注的城市。拜占庭方面配置配重投石車（Trebuchet，1100年），用於圍城遠程打擊，攻擊城牆與城門，並與其他攻城器械協同部署。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      }
+    },
+    {
+      "id": "1125-太原之戰",
+      "added": "2026-10-21T06:21:41.779Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.55,
+        "lat": 37.87
+      },
+      "battle": {
+        "y": 1125,
+        "m": 1,
+        "name": "太原之戰",
+        "theater": "山西太原",
+        "brief": "《中文維基戰爭列表》所列的太原之戰，是金宋戰爭中發生於山西太原一帶的衝突，北宋軍隊曾在此組織救援與防禦，但最終交鋒失利。十字弩（Crossbow）至1100年已列入軍用裝備，可由步兵與守軍用來進行遠程壓制，阻擊進攻部隊，並為太原防線提供定點火力。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
     }
   ]
 }
