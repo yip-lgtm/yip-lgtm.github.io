@@ -9373,7 +9373,8 @@
         "layer": "land",
         "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
         "portrait": "portraits/daneaxe.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1073-840c1a8308.json"
     },
     {
       "id": "1125-靖康之變",
@@ -11447,7 +11448,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1040-3f87334503.json"
     },
     {
       "id": "1087-西夏、吐蕃攻宋之戰",
@@ -11499,7 +11501,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1115-35c690c8f3.json"
     },
     {
       "id": "1125-太原之戰",
@@ -12414,6 +12417,130 @@
         "portrait": "portraits/legionary.jpg"
       },
       "dossierUrl": "dossiers/599-f1d44e3664.json"
+    },
+    {
+      "id": "1127-宋平丁進之戰",
+      "added": "2026-10-21T06:43:35.236Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1127,
+        "m": 5,
+        "name": "宋平丁進之戰",
+        "theater": "河南商丘平丁進",
+        "brief": "宋平丁進之戰發生於1127年，是金軍追擊南撤宋軍時，在平丁進與南宋軍隊交戰的衝突；宋將張叔夜兵敗被俘並遭殺害。同期已服役的裝備包括維京長斧（Dane axe），其服役年為1050，可用於重裝步兵近身戰鬥。"
+      },
+      "kit": {
+        "name": "維京長斧",
+        "designation": "Dane axe",
+        "year": 1050,
+        "nation": "uk",
+        "layer": "land",
+        "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
+        "portrait": "portraits/daneaxe.jpg"
+      }
+    },
+    {
+      "id": "1127-邵興抗金起義",
+      "added": "2026-10-21T06:43:35.237Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1127,
+        "m": 1,
+        "name": "邵興抗金起義",
+        "theater": "江西",
+        "brief": "《戰爭列表》所列的邵興抗金起義，是1127年發生於江西的抗金武裝衝突，屬宋金更替初期的地區性戰事。就裝備年代而言，步卒可配置1050年已服役的維京長斧（Dane axe）；此正式型號為雙刃近戰斧具，能配合長矛、圓盾及刀劍進行正面攻防，並非火器。"
+      },
+      "kit": {
+        "name": "維京長斧",
+        "designation": "Dane axe",
+        "year": 1050,
+        "nation": "uk",
+        "layer": "land",
+        "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
+        "portrait": "portraits/daneaxe.jpg"
+      }
+    },
+    {
+      "id": "1130-建州之戰",
+      "added": "2026-10-21T06:43:35.238Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 124.03,
+        "lat": 42.55
+      },
+      "battle": {
+        "y": 1130,
+        "m": 1,
+        "name": "建州之戰",
+        "theater": "遼東",
+        "brief": "建州之戰發生於金天會八年（1130年），是金宋戰爭中金軍攻取遼東建州的一次戰役。宋軍據城抵抗，最終建州失守，金軍由此鞏固遼東的軍政控制。神臂弓（Shenbi crossbow）是宋軍已列裝的遠程重弩，適合城防與野戰射擊。"
+      },
+      "kit": {
+        "name": "神臂弓",
+        "designation": "Shenbi crossbow",
+        "year": 1130,
+        "nation": "cn",
+        "layer": "land",
+        "history": "以絞弦張臂的強弩，一發穿重甲。宋的邊軍靠它守住了自己的邊界。",
+        "portrait": "portraits/shenbi.jpg"
+      }
+    },
+    {
+      "id": "1133-固石洞之戰",
+      "added": "2026-10-21T06:43:35.238Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 35.55,
+        "lat": 32.72
+      },
+      "battle": {
+        "y": 1133,
+        "m": 1,
+        "name": "固石洞之戰",
+        "theater": "加利利",
+        "brief": "戰爭列表所列的1133年固石洞之戰，發生於加利利古什，是耶路撒冷王國與法蒂瑪王朝交戰的邊境衝突，十字軍一方獲勝並占據古什。所列裝備正式型號為Dane axe（維京長斧），約於1050年列裝，是英格蘭與諾曼底步兵用於近身劈砍的長柄斧。"
+      },
+      "kit": {
+        "name": "維京長斧",
+        "designation": "Dane axe",
+        "year": 1050,
+        "nation": "uk",
+        "layer": "land",
+        "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
+        "portrait": "portraits/daneaxe.jpg"
+      }
+    },
+    {
+      "id": "1141-柘皋之戰",
+      "added": "2026-10-21T06:43:35.239Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.14,
+        "lat": 31.68
+      },
+      "battle": {
+        "y": 1141,
+        "m": 11,
+        "name": "柘皋之戰",
+        "theater": "淮南戰場",
+        "brief": "柘皋之戰是南宋與金朝在江淮地區的一場衝突，交鋒地點為淮南要地柘皋，宋軍由劉錡指揮，在此擊退南下的金軍，守住淮南戰線。此役以野戰防禦為主；交戰裝備包括十字弩（Crossbow），此型弩機自1100年列裝，是可用於野戰與攻城的遠程投射武器。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
     }
   ]
 }
