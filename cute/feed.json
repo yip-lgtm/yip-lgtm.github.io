@@ -5783,7 +5783,8 @@
         "layer": "sea",
         "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
         "portrait": "portraits/ironclad.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1876-15fc09813a.json"
     },
     {
       "id": "1876-神風連之亂",
@@ -6044,6 +6045,33 @@
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
         "portrait": "portraits/wheellockpistol.jpg"
       }
+    },
+    {
+      "id": "1894-東學黨起義",
+      "added": "2026-10-21T05:32:09.166Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 127.15,
+        "lat": 35.82
+      },
+      "battle": {
+        "y": 1894,
+        "m": 4,
+        "name": "東學黨起義",
+        "theater": "全羅道全州與公州一線",
+        "brief": "一八九四年春，東學黨在古府起事，四月集結數萬農民，連破正邑、黃土現，五月底攻入全州城。朝廷引清國兵入朝，日本亦以護僑為名出兵，清日聯軍以新式砲火在公州烏金峙一線擊潰義軍。一八九五年四月，全琯準於漢城被處斬；線膛砲代表的，是這場戰爭裡已嫌過時、仍留在朝鮮城頭的舊式前裝砲火。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1894-344c91d015.json"
     }
   ]
 }
