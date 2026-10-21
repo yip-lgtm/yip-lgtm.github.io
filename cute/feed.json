@@ -31017,7 +31017,8 @@
         "layer": "land",
         "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
         "portrait": "portraits/onager.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/617-609f3564f8.json"
     },
     {
       "id": "622-唐滅劉黑闥之戰",
@@ -31043,7 +31044,223 @@
         "layer": "land",
         "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
         "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/622-df1e7dd8bd.json"
+    },
+    {
+      "id": "583-隋梁遠擊吐谷渾之戰",
+      "added": "2026-10-21T09:43:11.397Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 101.8,
+        "lat": 35.9
+      },
+      "battle": {
+        "y": 583,
+        "m": 4,
+        "name": "隋梁遠擊吐谷渾之戰",
+        "theater": "青海湖東南湟水洮水流域",
+        "brief": "開皇三年（583）四月，吐谷渾寇隋西境，益州總管梁遠奉詔出蜀道西征，經松州北折，抵青海湖東南山谷，與吐谷渾游騎交戰。隋軍以長槊列陣、弩手外張，潰敵追奔，斬獲以千計，迫其退保湖西。此役未擒可汗、未斷商道，只壓住邊患。卡面斯巴達長矛不在此役現場，它代表長杆定陣的兵種傳統。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
       }
+    },
+    {
+      "id": "589-南康之戰",
+      "added": "2026-10-21T09:43:11.405Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.94,
+        "lat": 25.85
+      },
+      "battle": {
+        "y": 589,
+        "m": 2,
+        "name": "南康之戰",
+        "theater": "江西贛州南康城",
+        "brief": "開皇九年二月，隋軍已克建康、擒陳後主，然豫章太守徐璒仍據南康城抗隋，斷章江通道。柱國韋洸遣開府呂昂、長史馮世基兵臨城下，徐璒詐降而夜引所部二千人襲營，兩軍合擊，斬徐璒，隋軍入城。城頭秦弩本是守方壓制攻城者的利器，此役卻用在夜襲與反擊之間。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/589-ddfe78da82.json"
+    },
+    {
+      "id": "617-張子路起義",
+      "added": "2026-10-21T09:43:11.541Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.03,
+        "lat": 35.76
+      },
+      "battle": {
+        "y": 617,
+        "m": 7,
+        "name": "張子路起義",
+        "theater": "兗州東郡、鄆州濮陽一帶",
+        "brief": "隋大業十三年（617），張子路在東郡、鄆州一帶聚眾起兵，郡兵不能制，是隋末豫東、兗州一線州縣層級起義的一環。卡面亞述長矛出自兩河流域，與此役相隔一千五百餘年，並無實物關聯；可對照的是隋代步卒的長柄矛與槊，兩者在密集刺擊與結陣逼近上同一脈。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/617-d81cb9ea2e.json"
+    },
+    {
+      "id": "617-梁師都起事",
+      "added": "2026-10-21T09:43:11.545Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.79,
+        "lat": 37.99
+      },
+      "battle": {
+        "y": 617,
+        "m": 6,
+        "name": "梁師都起事",
+        "theater": "夏州朔方城與河套東緣",
+        "brief": "大業十一年（617），夏州朔方豪族梁師都聚徒殺郡丞，據郡稱大丞相，旋僭號梁國皇帝、建元永隆，北連突厥。隋亡後他與劉武周並立，屢引突厥兵寇延州，武德二年野豬嶺為段德操所大破，貞觀二年終為從弟洛仁所斬。卡面羅馬標槍早一千七百年，不在此戰場；可對照者為隋唐邊軍的短投槍、臂弩與拒馬。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/617-9b95f90aa5.json"
+    },
+    {
+      "id": "617-薛舉起事",
+      "added": "2026-10-21T09:43:11.553Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.72,
+        "lat": 34.35
+      },
+      "battle": {
+        "y": 617,
+        "m": 4,
+        "name": "薛舉起事",
+        "theater": "長安西北涇水流域",
+        "brief": "大業十三年四月，薛舉於長安西聚眾反隋，自號西秦霸王，旋稱帝遷都秦州。薛仁杲承襲後與唐軍相持涇水，武德元年七月李世民在淺水原以精騎破其大將宗羅睺，圍城斷糧，薛仁杲出降被誅，薛氏覆亡。短柄長刃、配鐵鏃的亞述長矛，正是關中步騎矛槊的形制遠祖；此役仍靠矛槊、弓弩與騎兵衝鋒定勝負。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/617-8c326f99a8.json"
+    },
+    {
+      "id": "618-宇文化及江都之亂",
+      "added": "2026-10-21T09:43:11.561Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.41,
+        "lat": 32.4
+      },
+      "battle": {
+        "y": 618,
+        "m": 3,
+        "name": "宇文化及江都之亂",
+        "theater": "揚州江都城與聊城大陸縣",
+        "brief": "大業十四年（618）三月，隋煬帝楊廣在江都宮中被虎賁郎將司馬德戡、裴虔通等與宇文化及策動的政變縊殺。宇文化及立秦王楊浩、自稱丞相，率驍果軍十餘萬北上攻李密、竇建德，翌年三月在聊城被竇建德俘斬。卡面羅馬標槍為古典義大利步兵重投槍，與本役相隔七百年。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/618-40d2925229.json"
+    },
+    {
+      "id": "618-竇建德攻佔冀州之戰",
+      "added": "2026-10-21T09:43:11.564Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.03,
+        "lat": 37.06
+      },
+      "battle": {
+        "y": 618,
+        "m": 11,
+        "name": "竇建德攻佔冀州之戰",
+        "theater": "河北道冀州城（今河北寧晉）",
+        "brief": "武德元年（618）冬，竇建德自樂壽出兵，圍隋朝冀州城（今河北寧晉）：砲車壓制城頭，撞車撞門，雲梯蟻附，十月築壘，十一月城破，州治與所屬諸縣盡歸夏國。卡面的羅馬投石機未到過冀州，它的功能對應者是夏軍拆牆壓制的砲車。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/618-e50554045d.json"
+    },
+    {
+      "id": "620-唐與突厥戰爭",
+      "added": "2026-10-21T09:43:11.567Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 111.75,
+        "lat": 40.6
+      },
+      "battle": {
+        "y": 620,
+        "m": 1,
+        "name": "唐與突厥戰爭",
+        "theater": "漠南陰山定襄道",
+        "brief": "武德三年正月，秦王李世民在美良川、淺水原擊破劉武周部將宋金剛，迫其北走突厥，唐與漠北東突厥的邊境戰爭自此開端；經渭水之盟，貞觀四年李靖夜襲定襄、追奔鐵山擒頗利可汗。卡面亞述長矛屬公元前九世紀的短柄鐵刃形制，並未隨軍到陰山，它代表的是長矛在亂軍中近身拒馬、刺穿密集隊形的那一層作用。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綉在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/620-e9c92d76af.json"
     }
   ]
 }
