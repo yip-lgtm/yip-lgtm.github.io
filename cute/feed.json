@@ -6072,6 +6072,220 @@
         "portrait": "portraits/muzzleloader.jpg"
       },
       "dossierUrl": "dossiers/1894-344c91d015.json"
+    },
+    {
+      "id": "1081-靈州之戰",
+      "added": "2026-10-21T05:42:22.242Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.23,
+        "lat": 38.09
+      },
+      "battle": {
+        "y": 1081,
+        "m": 4,
+        "name": "靈州之戰",
+        "theater": "寧夏靈州、第五都與黃河渡口",
+        "brief": "元豐四年，宋神宗以五路大軍伐西夏，環慶、涇原兩路合攻黃河東岸的靈州，四月至五月間城破；宋軍進抵黃河對岸，兵鋒已及興慶府門外，卻因糧道被騎兵切斷、河東路全軍覆於第五都而被迫撤退，靈州仍歸西夏。卡面的希臘火不在這個內陸戰場上，同期可與之對照的，是東方火矢與猛火油柜的普及。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1081-e4e7fe309b.json"
+    },
+    {
+      "id": "1115-晏州之戰",
+      "added": "2026-10-21T05:42:22.245Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 104.53,
+        "lat": 28.28
+      },
+      "battle": {
+        "y": 1115,
+        "m": 1,
+        "name": "晏州之戰",
+        "theater": "瀘南晏州與思峨洞山區",
+        "brief": "政和五年正月，瀘南晏州大首領卜漏起兵，眾十餘萬攻圍樂共、長寧等寨堡，終奇襲攻陷梅嶺堡。宋以梓州路轉運使趙遹為瀘南招討統制使，調涇原、環慶、永興兵與土軍、義軍、保甲弓手，共三萬五百四十人，十月自江安分三路攻輪縛大囤。官軍強弓弩仰射不能及半，趙遹乃遣兵攀崖燃炬破寨，擒卜漏，瀘南悉平。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1115-bf5f372d69.json"
+    },
+    {
+      "id": "1115-護步達岡之戰",
+      "added": "2026-10-21T05:42:22.247Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 126.78,
+        "lat": 44.9
+      },
+      "battle": {
+        "y": 1115,
+        "m": 12,
+        "name": "護步達岡之戰",
+        "theater": "松花江中游五常以西",
+        "brief": "金收國元年十二月，完顏阿骨打率二萬騎追擊遼天祚帝大軍於護步答岡，攻破遼軍中軍，遼軍大潰、屍橫百餘里，金軍取輿輦、幄帳、馬牛無數。戰場在今黑龍江五常以西的松花江中游，時值隆冬，交戰雙方只用冷兵器與騎兵；希臘火那時仍在拜占庭海軍服役，與東北亞的雪原追擊無關。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      }
+    },
+    {
+      "id": "1120-方臘起義",
+      "added": "2026-10-21T05:42:22.250Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.05,
+        "lat": 29.6
+      },
+      "battle": {
+        "y": 1120,
+        "m": 10,
+        "name": "方臘起義",
+        "theater": "睦州幫源洞、歙州與杭州",
+        "brief": "宣和二年十月，睦州幫源洞的方臘聚眾起事，數月之間攻取歙、睦、杭等州縣，江南震動。宋廷先命童貫率京師禁軍南下，繼以韓世忠、劉延慶、王淵分道進剿，張叔夜直取杭州；明年四月官軍攻破幫源洞，擒方臘送杭州處死。同期歐洲的圍城靠配重投石車決定城牆存亡，而宋軍攻城仍以雲梯、撞木與弩機為主。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1120-3930d76eed.json"
+    },
+    {
+      "id": "1127-紅巾軍抗金起義",
+      "added": "2026-10-21T05:42:22.254Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.85,
+        "lat": 35.49
+      },
+      "battle": {
+        "y": 1127,
+        "m": 9,
+        "name": "紅巾軍抗金起義",
+        "theater": "澤潞兩州與河東戰線",
+        "brief": "建炎元年春，汴京陷落，二帝北遷，兩河民眾以紅巾裹頭，聚眾抗金。九月，澤州、潞州的忠義民兵夜襲金朝左副元帥完顏宗翰的大寨，宗翰幾乎被擒。金軍屢次出師搜捕皆無所獲。一一二七年的攻城仍靠人力挽索的砲石車，配重投石車要等蒙古軍東來才到中土。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1127-a9ec1ae9d4.json"
+    },
+    {
+      "id": "1161-采石之戰",
+      "added": "2026-10-21T05:42:22.257Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.48,
+        "lat": 31.55
+      },
+      "battle": {
+        "y": 1161,
+        "m": 11,
+        "name": "采石之戰",
+        "theater": "長江下游采石磯與和州岸",
+        "brief": "隆興元年十月，金主完顏亮御駕親征，企圖架浮橋與攻城器械強渡長江直取臨安。中書舍人虞允文奉命督視采石軍務，收拾散卒、整頓陣容，以砲火與火攻焚毀渡江器材，宋軍大破金兵於采石磯。南渡計畫破產，金軍主力北撤，宋軍一度乘勝收復泗州等地，隆興和議遂以淮水為界。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      }
+    },
+    {
+      "id": "1211-野狐嶺會戰",
+      "added": "2026-10-21T05:42:22.259Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.72,
+        "lat": 40.87
+      },
+      "battle": {
+        "y": 1211,
+        "m": 8,
+        "name": "野狐嶺會戰",
+        "theater": "張家口野狐嶺與蔚州澮河堡",
+        "brief": "金宣宗興祐元年（一二一一年）八月，成吉思汗在張家口野狐嶺隘口擊潰金軍主力，十月前後追殲於蔚州澮河堡，金軍全軍覆沒。木華黎由獾兒嘴奇道插入，蒙古騎兵下馬步戰破中軍，成吉思汗再以三千騎作最後一擊。配重投石車未列此役；同一戰線上對涿州、中都的攻城與繳獲的工匠，才是蒙古攻城能力的來源。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1211-a1b5993b53.json"
+    },
+    {
+      "id": "1536-意大利戰爭(1536年—1538年)",
+      "added": "2026-10-21T05:42:22.263Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 5.37,
+        "lat": 43.3
+      },
+      "battle": {
+        "y": 1536,
+        "m": 6,
+        "name": "意大利戰爭 (1536年—1538年)",
+        "theater": "普羅旺斯與皮埃蒙特戰線",
+        "brief": "卡爾五世在義大利的地位到頂點，法王弗朗索瓦一世拒絕解散干邑聯盟，戰事隨即爆發。一五三六年帝國軍自米蘭越嶺攻入普羅旺斯，八月逼降馬賽；法國聯軍翌年六月在塞拉瓦萊擊潰帝國縱隊，救不了聯盟瓦解。一五三八年《尼斯和約》逼法國退出米蘭。全役火槍隊以火繩步槍為骨幹，輪發手槍只配軍官與近衛。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      },
+      "dossierUrl": "dossiers/1536-5e9a511af2.json"
     }
   ]
 }
