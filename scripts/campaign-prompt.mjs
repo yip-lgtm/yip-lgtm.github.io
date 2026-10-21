@@ -71,6 +71,7 @@ export function pickKit(war, library, index = 0, drawn = null) {
   }
   const usable = weapons.filter((w) => w.year <= war.y);
   if (!usable.length) return null;
+  const n = usable.length;
   // The closest match is the newest weapon that is still older than the war:
   // a musket for a war of 1810, not a bronze sword. Inside the war's own span
   // first, then the span before it, which is the older the era.
@@ -82,13 +83,16 @@ export function pickKit(war, library, index = 0, drawn = null) {
   const newest = (pool) => pool.slice().sort((a, b) => b.year - a.year);
   // The war's own span first, then the older spans: a weapon from the era
   // before is a better fit than one from the era after.
+  // The index walks the pool. A negative index would pick from the wrong
+  // end, so it is brought inside the pool first.
+  const at_ = ((index % n) + n) % n;
   for (let i = at < 0 ? 0 : at; i >= 0; i--) {
     const pool = newest(usable.filter((w) => w.span === order[i]));
-    if (pool.length) return pool[index % pool.length];
+    if (pool.length) return pool[at_ % pool.length];
   }
   // Nothing older: take the oldest weapon there is rather than none.
   const rest = newest(usable);
-  return rest[rest.length - 1 - (index % rest.length)];
+  return rest[rest.length - 1 - (at_ % rest.length)];
 }
 
 /** The question the brief writer asks. */
