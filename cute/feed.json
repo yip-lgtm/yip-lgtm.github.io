@@ -34501,7 +34501,8 @@
         "layer": "land",
         "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
         "portrait": "portraits/scorpio.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/880-44a3201450.json"
     },
     {
       "id": "909-象牙潭之戰",
