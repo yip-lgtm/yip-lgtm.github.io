@@ -6530,6 +6530,107 @@
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
       }
+    },
+    {
+      "id": "1826-俄國-波斯戰爭(1826年-1828年)",
+      "added": "2026-10-21T05:45:33.445Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 47.02,
+        "lat": 40.37
+      },
+      "battle": {
+        "y": 1826,
+        "m": 9,
+        "name": "俄國-波斯戰爭 (1826年-1828年)",
+        "theater": "高加索戰區阿斯蘭杜茲戰場",
+        "brief": "俄國-波斯戰爭爆發後，俄軍在歐亞邊境的高加索戰區推進，並於阿斯蘭杜茲戰役擊敗波斯軍。戰役集中於今亞塞拜然西北部及亞美尼亞西部一帶。野砲（Field gun）自1550年起列裝，屬地面炮兵裝備，置於前線步兵與輕騎兵之間，提供機動射擊與攻勢支援。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      }
+    },
+    {
+      "id": "1826-黑色戰爭",
+      "added": "2026-10-21T05:45:47.015Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 147,
+        "lat": -42
+      },
+      "battle": {
+        "y": 1826,
+        "m": 1,
+        "name": "黑色戰爭",
+        "theater": "塔斯馬尼亞島",
+        "brief": "「黑色戰爭」為戰爭列表所列的塔斯馬尼亞衝突，1826年開始，英國殖民者與當地原住民在島上交戰。西班牙陸軍於1550年列裝的野砲（Field gun）屬早期野戰砲兵，可隨軍支援地面部隊。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      }
+    },
+    {
+      "id": "1828-大哥倫比亞-秘魯戰爭",
+      "added": "2026-10-21T05:46:46.847Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1828,
+        "m": 6,
+        "name": "大哥倫比亞-秘魯戰爭",
+        "theater": "厄瓜多爾南部波特特德塔爾基近海",
+        "brief": "此列表所列的大哥倫比亞-秘魯戰爭於一八二八年六月在厄瓜多爾南部爆發，波特特德塔爾基近海是其早期戰場，戰事其後延至秘魯北部。輪發手槍（Wheellock pistol）約於一五〇〇年已供歐洲陸軍使用，早於本戰爭三百餘年，並非本役裝備。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      }
+    },
+    {
+      "id": "1830-法國入侵阿爾及利亞",
+      "added": "2026-10-21T05:45:30.579Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 3.05,
+        "lat": 36.75
+      },
+      "battle": {
+        "y": 1830,
+        "m": 6,
+        "name": "法國入侵阿爾及利亞",
+        "theater": "阿爾及爾海岸與市區",
+        "brief": "法國入侵阿爾及利亞是中文維基「戰爭列表」收錄的衝突。1830年6月，法軍在阿爾及爾一帶登陸並發動進攻，迫使當地統治當局退位，隨後占據阿爾及爾。英國陸軍線制步兵配備的燧發槍（Flintlock musket）於1710年列裝，是當時制式火槍型號。"
+      },
+      "kit": {
+        "name": "燧發槍",
+        "designation": "Flintlock musket",
+        "year": 1710,
+        "nation": "uk",
+        "layer": "land",
+        "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
+        "portrait": "portraits/flintlock.jpg"
+      }
     }
   ]
 }
