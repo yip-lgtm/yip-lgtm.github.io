@@ -11481,7 +11481,8 @@
         "layer": "land",
         "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
         "portrait": "portraits/daneaxe.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1087-abef58f8a3.json"
     },
     {
       "id": "1115-達魯古城之戰",
@@ -11534,7 +11535,8 @@
         "layer": "land",
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1125-7be45ff08a.json"
     },
     {
       "id": "1236-真州之戰",
@@ -12471,7 +12473,8 @@
         "layer": "land",
         "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
         "portrait": "portraits/daneaxe.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1127-519f5f42ca.json"
     },
     {
       "id": "1130-建州之戰",
@@ -12497,7 +12500,8 @@
         "layer": "land",
         "history": "以絞弦張臂的強弩，一發穿重甲。宋的邊軍靠它守住了自己的邊界。",
         "portrait": "portraits/shenbi.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1130-2929665ed2.json"
     },
     {
       "id": "1133-固石洞之戰",
@@ -12523,7 +12527,8 @@
         "layer": "land",
         "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
         "portrait": "portraits/daneaxe.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1133-51494cc4be.json"
     },
     {
       "id": "1141-柘皋之戰",
@@ -12549,7 +12554,8 @@
         "layer": "land",
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1141-fa86ece99e.json"
     },
     {
       "id": "-1442-第十二次敘利亞戰役",
@@ -13738,6 +13744,244 @@
         "portrait": "portraits/crossbow.jpg"
       },
       "dossierUrl": "dossiers/1277-c1cf420fa8.json"
+    },
+    {
+      "id": "-1279-拉美西斯二世的戰爭",
+      "added": "2026-10-21T06:55:21.783Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 36.45,
+        "lat": 34.9
+      },
+      "battle": {
+        "y": -1279,
+        "m": 5,
+        "name": "拉美西斯二世的戰爭",
+        "theater": "卡迭石與奧龍特斯河上游",
+        "brief": "公元前1274年5月，拉美西斯二世率埃及大軍北上，在卡迭石城下與赫梯王穆瓦塔里二世接戰。赫梯戰車迂迴包抄，拉美西斯二世親率近衛反衝脫圍，兩軍在河畔拉成僵持。這是有詳細陣形記載的最早會戰，也是史上戰車最多的一役。卡面長矛在步兵縱隊後列待命，刺馬腿、斷韁繩。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      }
+    },
+    {
+      "id": "-2119-古提王朝的滅亡",
+      "added": "2026-10-21T06:55:21.800Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.25,
+        "lat": 32.05
+      },
+      "battle": {
+        "y": -2119,
+        "m": 4,
+        "name": "古提王朝的滅亡",
+        "theater": "美索不達米亞中部與扎格羅斯山麓",
+        "brief": "公元前二一一九年，扎格羅斯山麓的古提人自阿卡德覆亡後盤踞蘇美爾已近半世紀，烏爾的祭司烏圖亨伽爾在南部城邦起兵，沿幼發拉底北上，於尼普爾與烏萊河畔擊潰古提軍，古提王朝就此覆亡。本卡那件早王朝的埃及長矛，正是同代束柄銅矛的同型兵器，攻城與野戰皆靠它立陣。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/-2119-05be4054e4.json"
+    },
+    {
+      "id": "-725-科爾基斯-斯基提亞戰爭",
+      "added": "2026-10-21T06:55:21.826Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 42.05,
+        "lat": 42.25
+      },
+      "battle": {
+        "y": -725,
+        "m": 5,
+        "name": "科爾基斯-斯基提亞戰爭",
+        "theater": "高加索西麓科爾基斯平原",
+        "brief": "公元前725年，黑海東岸的科爾基斯王國被越過高加索山脈南下的斯基提亞大軍圍困。科爾基斯人向得爾斐求問，得神諭指向金羊毛與外邦英雄伊阿宋；伊阿宋取得金羊毛後與科爾基斯人合兵，在法希斯河口擊潰圍城者。兵器卡上的亞述長矛，代表同期西高加索邊境以鐵矛、弓箭與戰車構成的軍事技術。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏤。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      }
+    },
+    {
+      "id": "1134-岳飛收復襄陽六郡之戰",
+      "added": "2026-10-21T06:55:21.863Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.14,
+        "lat": 32.04
+      },
+      "battle": {
+        "y": 1134,
+        "m": 5,
+        "name": "岳飛收復襄陽六郡之戰",
+        "theater": "鄂西北襄漢走廊",
+        "brief": "紹興四年五月至七月，岳飛率三萬五千人的岳家軍自鄂州渡江，先拔郢州，再取襄陽、隨州，七月北進克鄧州、唐州與信陽軍，收復偽齊與金人據守的六郡，是南宋立國以來首次收復大片失地。漢水浮橋與江上舟師的配合，是希臘火這類縱火兵器在宋金水戰中的對應物；成敗仍由攻城工程與糧秣決定。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1134-3320e7e4c2.json"
+    },
+    {
+      "id": "1162-海州之戰",
+      "added": "2026-10-21T06:55:21.872Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.16,
+        "lat": 34.6
+      },
+      "battle": {
+        "y": 1162,
+        "m": 4,
+        "name": "海州之戰",
+        "theater": "淮東沿海海州城與周邊鹽場",
+        "brief": "紹興三十二年春，金主完顏亮被弒後大軍北撤，宋軍乘勢向淮東反攻，江淮招討使張俊所部與楚州魏勝所部在海州城及周邊鹽場、灘塗一線，同滯留的金兵爭奪城池、鹽運與海道。此役是金人南侵崩解後宋軍收復兩淮的前哨戰之一；卡面十字弩未見於本戰器械，實際立於城頭與鹽場寨舍的機械弩，卻正是宋軍抵擋攻城器械與騎兵的支柱。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1162-1dfb98bfa5.json"
+    },
+    {
+      "id": "1206-六合之戰",
+      "added": "2026-10-21T06:55:21.878Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.84,
+        "lat": 32.34
+      },
+      "battle": {
+        "y": 1206,
+        "m": 11,
+        "name": "六合之戰",
+        "theater": "江蘇六合城",
+        "brief": "開禧二年（1206）十一月，金朝左副元帥僕散揆統九路大軍南下，宋將畢再遇退守江防要塞六合。金軍逼近城壕，宋軍弓弩齊發、旗鼓並舉，伏兵突出而大破金軍；完顏蒲剌都率十萬騎兵圍城，焚柵決水皆為勁弩所退。弩在城頭撐住全場，又以舉青蓋誘射，斂回二萬餘支箭矢。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
+    },
+    {
+      "id": "1211-邊堡寨之戰",
+      "added": "2026-10-21T06:55:21.881Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.1,
+        "lat": 37.3
+      },
+      "battle": {
+        "y": 1211,
+        "m": 11,
+        "name": "邊堡寨之戰",
+        "theater": "河北河間府南境邊堡寨",
+        "brief": "貞祐元年冬，蒙古木華黎部南征河北，連下洺州、廣平諸郡，直逼河間。金將完顏陳和尚率步卒五千，據河北邊境邊堡寨固守，以強弩當蒙古精騎，數月不能拔寨，蒙古軍遂退。此役中弩取代長弓成為寨牆防線骨幹，是金朝在平原邊防以步制騎的罕見成功。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
+    },
+    {
+      "id": "1217-棗陽之戰",
+      "added": "2026-10-21T06:55:21.887Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.99,
+        "lat": 32.68
+      },
+      "battle": {
+        "y": 1217,
+        "m": 9,
+        "name": "棗陽之戰",
+        "theater": "襄州棗陽、隨州與漢水上游",
+        "brief": "嘉定十年（1217）秋，蒙古自河南南下，奪棗陽、逼襄陽，荊襄告急。宋將孟珙率兵自隨州疾援，敗蒙古軍於城下，盡復失地，襄樊防線不搖。卡面的希臘火在這場戰役並無實錄：攻守靠的是弓弩、砲石與撞車，燒不出一條通路，救得了襄陽的是援軍與城防。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      }
+    },
+    {
+      "id": "1221-申河之戰",
+      "added": "2026-10-21T06:55:21.894Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 68.7,
+        "lat": 28.05
+      },
+      "battle": {
+        "y": 1221,
+        "m": 4,
+        "name": "申河之戰",
+        "theater": "信德省申河下游與烏奇",
+        "brief": "一二二一年春，蒙古軍追花剌子模殘部至印度河下游，渡傑赫勒姆河、克木蘭後長驅信德，在申河擊破花剌子模騎兵並攻下烏奇。季風洪水與成吉思汗死訊令遠征止於印度河西岸。卡面希臘火靠銅管與祕方維持壟斷，此役真正發揮作用的是可隨軍搬運的攻城與渡河工程。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1221-46dc93d393.json"
     }
   ]
 }
