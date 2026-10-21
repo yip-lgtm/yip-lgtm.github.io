@@ -34509,6 +34509,87 @@
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
       }
+    },
+    {
+      "id": "782-魏州之戰",
+      "added": "2026-10-21T11:30:31.482Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 115.33,
+        "lat": 36.63
+      },
+      "battle": {
+        "y": 782,
+        "m": 1,
+        "name": "魏州之戰",
+        "theater": "河北道魏州貴鄉城",
+        "brief": "建中三年正月，魏博節度使田悅自洹水戰敗，率殘部千餘人奔魏州，殺閉城拒納之大將李長春，據孤城固抗。河東節度使馬燧、昭義節度使李抱真屯兵平邑，堵塞御河使城中水源斷絕，迫其出戰；二月田悅背城列兵二萬於永濟渠再戰，大敗退回。卡面羅馬方陣盾不在此役現場，其凸面方盾之形即唐軍方盾結陣拒騎之具。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/782-37880e08b5.json"
+    },
+    {
+      "id": "979-宋遼戰爭",
+      "added": "2026-10-21T11:30:31.560Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.4,
+        "lat": 39.9
+      },
+      "battle": {
+        "y": 979,
+        "m": 1,
+        "name": "宋遼戰爭",
+        "theater": "河北雄州、幽州與朔州戰線",
+        "brief": "雍熙三年冬，宋太宗定策北伐，太平興國四年正月分三路出師，志在幽州。三月曹彬部敗於岐溝關，五月宋太宗督師於君子館一戰而潰，十一月楊繼業孤軍覆沒於陳家谷口，北伐全敗。埃及月牙劍雖不在此戰之列，但它那外彎不拔的單刃形制，正是後來遼金騎兵割馬彎刀的祖型。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/979-67cf42610b.json"
+    },
+    {
+      "id": "993-王小波、李順起義",
+      "added": "2026-10-21T11:30:31.570Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 104.07,
+        "lat": 30.67
+      },
+      "battle": {
+        "y": 993,
+        "m": 10,
+        "name": "王小波、李順起義",
+        "theater": "益州成都及眉嘉邛諸州",
+        "brief": "993年秋冬，王小波、李順在益州成都舉事，眾聚至數萬，轉攻眉州、嘉州、邛州諸城，殺稅吏、開倉散糧；宋廷先招撫後進剿，994年王小波戰歿，995年李順被擒處死。蜀地城塞多為木柵夯土，攻城靠雲梯、撞車與拋石飛石，卡面羅馬扭力投石機正是這條攻城技術的源頭。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/993-7b041ec3ea.json"
     }
   ]
 }

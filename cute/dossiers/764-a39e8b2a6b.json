@@ -1,15 +1,15 @@
 {
  "id": "764-邠州之戰",
- "theater": "陝西邠州至乾陵一帶",
+ "theater": "關中",
  "place": {
-  "lng": 108.25,
-  "lat": 35.3
+  "lng": 108.14,
+  "lat": 35.19
  },
  "battle": {
   "y": 764,
   "m": 1,
   "name": "邠州之戰",
-  "theater": "陝西邠州至乾陵一帶",
+  "theater": "關中",
   "brief": "廣德二年（764）八月，叛將僕固懷恩引吐蕃、回紥十萬眾，自靈武、奉天兩路直取邠州；守將白孝德與郭晞閉城拒戰，郭子儀率援軍夜襲敵營於乾陵南，聯軍敗走涇水，邠州之圍解。卡面所繪的亞述長矛未現於此戰，但兩軍步騎所用的長柄矛與短刃，正是同一類冷兵器技術的遠裔。"
  },
  "kit": {
@@ -37,5 +37,5 @@
  "impactEn": "Binzhou was saved, and with it Guanzhong. After the campaign the Tibetan-Uyghur coalition withdrew to the Long region and the northern steppe, Chang'an was never taken again, and the court was able to put its finances in order in Guanzhong and repair its defences; the reputation of the veteran Guo Ziyi rose to a point where no one dared question it, while the plan of Pugu Huai'en to use foreign power to browbeat the court failed completely, and the men he held in Shuofang and Hebei lost heart along with it. Pugu Huai'en died of illness at Yunzhou in the first year of Yongtai, 765, and the court honoured him posthumously as Grand Commander; the mixed Tibetan and Chinese forces he gathered fell apart with him. His son Pugu Yang and others later rose once more and were put down by the court during the Jianzong era, and the family power was broken at last. On a larger scale the battle showed that the Tang could no longer hold off the armies of the Long region alone; frontier defence turned from soldiers to subsidies and allies, borrowing Uyghur troops and negotiating with Tibet, and that became the standing policy of the decades that followed, with the Qingshui covenant of 781 and the later agreements between the two states all resting on this foundation. As for the commands, Shuofang and Binning gained in standing from their part in the defence, the military governors and their private soldiery grew steadily more powerful, and the seeds of the mid and late Tang military governors' separatism were planted here. Binzhou became a hinge of the north-western frontier, and its position did not decay for the decades that followed; when the Tibetans came again in the Xiantong years, the military governor Guo Yao held the city in resistance, an episode that echoes the one recounted here.",
  "result": "結果是唐軍守住邠州，聯軍失敗而退。十月十三日聯軍攻東門不下，十四日在南原被唐軍擊潰，十月二十一日涉過涇水北去，圍解；唐軍沒有全殲敵人，卻以弱勝強，完成了守土之責。吐蕃與回紥聯軍在關中城下折損千餘人、被俘八十三人、失去戰馬五十匹、四名大將被擒，士氣與補給都受到重創，被迫退回原路；僕固懷恩所期望藉番軍之力重掌兵權的願望隨之破滅，次年即死於軍中。從戰術層面看，本役最值得記取處有三：一是郭子儀堅守不戰、拒絕任何出戰之請，把聯軍求速戰的意願扭成持久消耗；二是以廣布旗幟、虛張十萬的辦法，把唐軍實力不明的信息牢牢握在手中；三是郭晞以三千精銳夜襲敵營，用一次夜間突擊換回整個戰局的轉折，顯示西北邊軍在缺乏大戰經驗、兵器與後勤都不利的情況下，仍可以靠紀律與時機取得戰果。這場戰爭沒有改變唐蕃、回紥之間的基本力量對比，卻明確標誌了唐廷在安史之亂後由盛轉衰的斷點所在。",
  "resultEn": "The result was that the Tang held Binzhou and the coalition went away defeated. On the thirteenth the coalition's assault on the east gate failed; on the fourteenth it was broken by the Tang at Nanyuan; on the twenty-first it crossed the Jing River and withdrew north, and the siege was lifted. The Tang did not destroy the enemy, but the weaker side had won, and the duty of holding the ground was discharged. The Tibetan and Uyghur coalition lost more than a thousand men before the walled city of Guanzhong, had eighty-three taken prisoner, lost fifty war-horses and gave up four commanders, and its morale and supplies were both badly damaged, so that it was driven back the way it had come; and with it went the hope Pugu Huai'en had built on foreign arms to recover his military power, for he was dead within the year. In tactical terms three lessons of the campaign deserve to be kept. First, Guo Ziyi fought no battle, refused every request to engage, and turned the coalition's demand for a quick decision into a long attritional contest. Second, by spreading flags widely and pretending to a hundred thousand men, he kept the one piece of information that mattered, the true strength of the Tang army, firmly in his own hands. Third, Guo Xi attacked the enemy camp at night with three thousand picked men, and one nocturnal stroke bought back the turning of the whole situation, showing that the north-western frontier armies, short of great battle experience and handicapped in both weapons and supply, could still win through discipline and the choice of the moment. The war did not alter the fundamental balance of strength between the Tang, the Tibetans and the Uyghurs, but it marks plainly the point at which the Tang court turned from strength to decline after the An Lushan rebellion.",
- "updated": "2026-10-21T11:24:43.609Z"
+ "updated": "2026-10-21T11:30:42.559Z"
 }
