@@ -2055,15 +2055,15 @@
       "span": "p19",
       "source": "https://zh.wikipedia.org/wiki/战争列表",
       "place": {
-        "lng": 30.04,
-        "lat": 31.24
+        "lng": 31.24,
+        "lat": 30.04
       },
       "battle": {
         "y": 1805,
         "m": 3,
         "name": "1805年埃及革命",
-        "theater": "埃及",
-        "brief": "中文維基戰爭列表將1805年埃及革命列為獨立衝突；這場變動發生於穆罕默德・阿里在埃及重建地方軍政權力、削弱舊有奧托曼控制之際。輪發槍（Wheellock pistol）自1500年列裝，是歐洲早期火器體系中的單兵手槍型號。"
+        "theater": "開羅與尼羅河三角洲",
+        "brief": "一八〇五年三月，埃及的馬穆魯克貝伊趁奧斯曼省府內鬥反攻開羅，奪堡逼宮；朝廷改派阿爾巴尼亞系的穆罕默德·阿里出任瓦利，一八〇七年朝廷遠征軍在三角洲潰散，阿里坐穩埃及。卡面這柄輪發槍代表馬穆魯克家臣騎兵與貝伊侍衛的近身副兵器，只是到一八〇五年，真正的配槍已是燧發手槍。"
       },
       "kit": {
         "name": "輪發槍",
@@ -34177,7 +34177,8 @@
         "layer": "land",
         "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
         "portrait": "portraits/assyrianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/764-a39e8b2a6b.json"
     },
     {
       "id": "670-大非川之戰",
@@ -34200,7 +34201,8 @@
         "layer": "land",
         "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
         "portrait": "portraits/egyptianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/670-710c10f0a5.json"
     },
     {
       "id": "714-武街之戰",
@@ -34223,7 +34225,8 @@
         "layer": "land",
         "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
         "portrait": "portraits/assyrianbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/714-4291f9d27e.json"
     },
     {
       "id": "773-靈、宜、鹽、百之戰",
@@ -34246,7 +34249,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/xiaochongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/773-e2caff4f7f.json"
     },
     {
       "id": "783-奉天之戰",
@@ -34272,7 +34276,8 @@
         "layer": "land",
         "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
         "portrait": "portraits/scorpio.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/783-827a5142d2.json"
     },
     {
       "id": "786-汧城之戰",
@@ -34322,7 +34327,8 @@
         "layer": "land",
         "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
         "portrait": "portraits/dory.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/875-1927fff913.json"
     },
     {
       "id": "877-黃巢轉戰中原之戰",
@@ -34348,7 +34354,8 @@
         "layer": "land",
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/877-43b800bdfa.json"
     },
     {
       "id": "881-黃巢攻長安之戰",
@@ -34374,7 +34381,8 @@
         "layer": "land",
         "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
         "portrait": "portraits/scutum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/881-ae05d87585.json"
     },
     {
       "id": "923-楊劉之戰",
@@ -34397,7 +34405,8 @@
         "layer": "land",
         "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
         "portrait": "portraits/dory.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/923-6096e12157.json"
     },
     {
       "id": "955-壽州之戰",
@@ -34423,7 +34432,8 @@
         "layer": "land",
         "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
         "portrait": "portraits/dory.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/955-54a16d06ea.json"
     },
     {
       "id": "880-黃巢攻東都之戰",
