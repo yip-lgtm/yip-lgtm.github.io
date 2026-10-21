@@ -34169,6 +34169,124 @@
         "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
         "portrait": "portraits/assyrianspear.jpg"
       }
+    },
+    {
+      "id": "670-大非川之戰",
+      "added": "2026-10-21T10:46:15.541Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 670,
+        "m": 9,
+        "name": "大非川之戰",
+        "theater": "青海大非川",
+        "brief": "大非川之戰是唐高宗咸亨元年唐軍與吐蕃軍在青海大非川交鋒的衝突，唐軍因指揮失當與補給困難而崩敗，吐蕃取得青海戰區的主動權。本條目按定案列舉埃及長矛（Egyptian spear，公元前3200年）作為早期陸戰裝備對照，並不表示它實際參與本戰。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      }
+    },
+    {
+      "id": "714-武街之戰",
+      "added": "2026-10-21T10:46:15.542Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 714,
+        "m": 1,
+        "name": "武街之戰",
+        "theater": "烏拉爾圖山區（今土耳其東部與伊朗",
+        "brief": "武街之戰是公元前714年亞述王國與烏拉爾圖王國交戰的北方遠征戰役，亞述王薩爾貢二世率軍在烏拉爾圖山區取得優勢，迫使烏拉爾圖王薩爾杜里一世退避，並攻占穆薩西爾。這場戰事使亞述的北方影響力上升，亞述軍列裝的正式型號包括亞述長弓（Assyrian bow）。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      }
+    },
+    {
+      "id": "773-靈、宜、鹽、百之戰",
+      "added": "2026-10-21T10:46:15.544Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 773,
+        "m": 1,
+        "name": "靈、宜、鹽、百之戰",
+        "theater": "南詔靈、宜、鹽百地區",
+        "brief": "中文維基「戰爭列表」所列的靈、宜、鹽、百之戰，發生於773年，是南詔內部勢力在靈、宜、鹽、百四地發生的武裝衝突。秦連弩（Repeating crossbow）在公元前200年已列裝，是真實的早期連發弩機型號，其服役開始時間早於本戰役近千年。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
+    },
+    {
+      "id": "783-奉天之戰",
+      "added": "2026-10-21T10:46:15.544Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 123.43,
+        "lat": 41.8
+      },
+      "battle": {
+        "y": 783,
+        "m": 11,
+        "name": "奉天之戰",
+        "theater": "奉天城（今遼寧瀋陽）",
+        "brief": "奉天之戰是公元783年建中元年間，李懷光之亂背景下唐軍與叛軍在奉天交鋒的衝突，發生於唐朝中央受到叛軍威脅、朝廷轉移至奉天之際，反映當時城防與平叛部署。Scorpio則是公元前50年已列入軍用的古羅馬弩砲型號，並非此戰實際使用的裝備。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      }
+    },
+    {
+      "id": "786-汧城之戰",
+      "added": "2026-10-21T10:46:15.545Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 786,
+        "m": 1,
+        "name": "汧城之戰",
+        "theater": "甘肅隴南",
+        "brief": "本列表所列汧城之戰發生於唐德宗貞元二年，是唐軍與吐蕃軍在隴右汧城交鋒的戰役，唐軍獲勝，屬於唐蕃在隴右長期角力的一部分。羅馬標槍（Pilum，公元前100年）為當時已存在的羅馬重裝步兵投射武器，並非本戰交戰雙方所用。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      }
     }
   ]
 }
