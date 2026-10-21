@@ -8935,6 +8935,32 @@
         "portrait": "portraits/ironclad.jpg"
       },
       "dossierUrl": "dossiers/1890-fdcd9bfb22.json"
+    },
+    {
+      "id": "1845-第一次英國錫克戰爭",
+      "added": "2026-10-21T06:09:24.933Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 74.56,
+        "lat": 30.68
+      },
+      "battle": {
+        "y": 1845,
+        "m": 12,
+        "name": "第一次英國錫克戰爭",
+        "theater": "旁遮普木爾基戰場",
+        "brief": "第一次英國錫克戰爭於1845年12月在旁遮普爆發，英軍與錫克王國軍隊於木爾基一帶交戰，木爾基之戰是首場主要會戰，並造成錫克軍首次重大挫敗。錫克軍使用法製雷管步槍（Percussion rifle，1840年列裝），以火帽取代燧石，提升野戰射擊的可靠性。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
     }
   ]
 }
