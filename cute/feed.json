@@ -23702,7 +23702,8 @@
         "layer": "land",
         "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
         "portrait": "portraits/corinthian.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/439-cae6746557.json"
     },
     {
       "id": "449-雍州之戰",
@@ -23780,7 +23781,8 @@
         "year": -900,
         "nation": "it",
         "layer": "land",
-        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。"
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
       },
       "dossierUrl": "dossiers/492-aab3a12441.json"
     },
@@ -23808,7 +23810,8 @@
         "layer": "land",
         "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
         "portrait": "portraits/egyptianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/515-70cad1806e.json"
     },
     {
       "id": "527-磐井之亂",
@@ -23888,7 +23891,8 @@
         "layer": "land",
         "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
         "portrait": "portraits/corinthian.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/548-b2005795b5.json"
     },
     {
       "id": "564-洛陽之戰",
@@ -23914,7 +23918,8 @@
         "layer": "land",
         "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
         "portrait": "portraits/egyptianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/564-b65409c985.json"
     },
     {
       "id": "581-豐利山之戰",
@@ -24131,6 +24136,302 @@
         "portrait": "portraits/assyrianbow.jpg"
       },
       "dossierUrl": "dossiers/613-5ac287576d.json"
+    },
+    {
+      "id": "429-魏攻柔然之戰",
+      "added": "2026-10-21T08:28:50.748Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 105,
+        "lat": 47
+      },
+      "battle": {
+        "y": 429,
+        "m": 7,
+        "name": "魏攻柔然之戰",
+        "theater": "蒙古高原瀚海與弱水之間",
+        "brief": "公元429年（太延元年），北魏太武帝拓跋燾自雲中出塞，分道深入瀚海與弱水一線，大破柔然可汗大檀所部，斬首三萬餘級，逼其西遁。卡面的羅馬短劍是羅馬共和末期軍團的近身兵器，與本役相隔五百餘年，不在戰陣之中；當時陣前所用，是柔然的角弓、骨鍍矛、彎刀與北魏的鐵槊、環首刀。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/429-3a991cce11.json"
+    },
+    {
+      "id": "503-梁與北魏的戰爭",
+      "added": "2026-10-21T08:28:50.786Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 117.56,
+        "lat": 32.87
+      },
+      "battle": {
+        "y": 503,
+        "m": 3,
+        "name": "梁與北魏的戰爭",
+        "theater": "淮水鍾離與義陽戰線",
+        "brief": "503年三月，北魏宣武帝元恪趁南梁新立，遣任城王元澄率兵五萬，與降魏的蕭寶夤、陳伯之並力攻梁朝鍾離城，另遣鎮南將軍元英攻義陽。戰事延至527年，陳慶之率五千騎破魏十萬援軍直抵洛陽。兩軍用環首刀、戟、槍、弓弩及皮甲札甲；卡面科林斯青銅盔早本役一千一百五十年，不在淮水陣上。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/503-700cd9199d.json"
+    },
+    {
+      "id": "537-潼關之戰",
+      "added": "2026-10-21T08:28:50.852Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 109.5,
+        "lat": 34.5
+      },
+      "battle": {
+        "y": 537,
+        "m": 6,
+        "name": "潼關之戰",
+        "theater": "陝西潼關與渭橋南岸",
+        "brief": "西魏大統十三年（537）六月，東魏高歡率眾西征，進逼潼關；宇文泰據險深溝高壘，以不足五千之眾當二十萬大軍，七月鐵騎橫蹙渭橋，東魏崩解，棄甲者十餘萬。潼關前線靠槊與環首刀取勝，短劍未曾上陣：卡面羅馬短劍出自東羅馬禁衛軍，作副兵器，其刺擊邏輯與北魏環首刀相通，前線並無此物。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/537-c4e50696fe.json"
+    },
+    {
+      "id": "576-平陽之戰",
+      "added": "2026-10-21T08:28:50.879Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 111.5,
+        "lat": 36.06
+      },
+      "battle": {
+        "y": 576,
+        "m": 10,
+        "name": "平陽之戰",
+        "theater": "河東平陽城與晉州城下",
+        "brief": "建德五年（五七六）十月至十二月，北周武帝宇文邕率軍東出，分兵扼守雀鼠谷、汾水關，內史王誼督主力攻平陽。十一月齊後主高緯親征逼城，周軍一度西撤；十二月再集兵約八萬於城下，大敗齊援軍，斬萬餘人，齊主敗退晉陽。卡面短劍非本戰實械，其直刺邏輯正對應北朝步卒的環首刀。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/576-1b65f0ae97.json"
+    },
+    {
+      "id": "580-楊堅平尉遲迥之戰",
+      "added": "2026-10-21T08:28:50.883Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.7,
+        "lat": 35.25
+      },
+      "battle": {
+        "y": 580,
+        "m": 4,
+        "name": "楊堅平尉遲迥之戰",
+        "theater": "河北鄴城漳水流域",
+        "brief": "大象二年（五八〇年）四月，北周丞相尉遲迥在鄴城舉兵，眾號十餘萬；隨王楊堅以王誼為行軍元帥率五州兵東征，先於清漳破其前鋒，再圍鄴城，同年冬平之，尉遲迥自刎。卡面的科林斯青銅盔是公元前七世紀希臘重裝步兵的全封閉面甲，並未出現在這場戰役裡，在此僅作對照——北周的兜鍪只護頭頂不遮面，兵家所恃在馬速、弓弩與旗鼓。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/580-2a71432986.json"
+    },
+    {
+      "id": "604-隋平楊諒之戰",
+      "added": "2026-10-21T08:28:50.908Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 113.02,
+        "lat": 34.75
+      },
+      "battle": {
+        "y": 604,
+        "m": 11,
+        "name": "隋平楊諒之戰",
+        "theater": "鞏縣淵水戰場",
+        "brief": "開皇四年（604）末，隋文帝崩，楊廣即位，其弟秦王楊諒以并州為基地舉兵，眾至十餘萬；關中一路由韋雲起襲虎牢，河北一路由王世充掃平諸城。十一月戰於鞏縣淵水，叛軍夜潰，楊諒與數十人奔城陽，為追騎擒送洛陽。卡面科林斯青銅盔非本役實物，正可對照隋軍兜鍪與輕騎機動作戰的取向。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/604-96706209fa.json"
+    },
+    {
+      "id": "610-尉文通起義",
+      "added": "2026-10-21T08:28:50.912Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.85,
+        "lat": 35.6
+      },
+      "battle": {
+        "y": 610,
+        "m": 10,
+        "name": "尉文通起義",
+        "theater": "晉南長平郡（今山西晉城東北）",
+        "brief": "大業六年（610）秋，長平人尉文通聚眾為亂，眾至數萬，攻破長平、沁水一帶縣城；隋煬帝遣相國行軍總管張須陀率郡兵討之。張須陀據道斷糧、設伏誘敵，於長平一戰破之，斬首萬餘級，尉文通僅以身免。卡面埃及長矛未隨軍而至，代表軍陣中數量最多的近身刺擊兵器，隋代由鐵矛與馬槊擔當同一角色。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/610-b6090f68fe.json"
+    },
+    {
+      "id": "610-隋擊流求之戰",
+      "added": "2026-10-21T08:28:50.914Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 127.68,
+        "lat": 26.21
+      },
+      "battle": {
+        "y": 610,
+        "m": 7,
+        "name": "隋擊流求之戰",
+        "theater": "琉球群島沖繩本島",
+        "brief": "大業六年（610年），隋煬帝遣武衛將軍陳棱、虎威將軍劉寶、周師將軍朱智良，率五萬五千人自廣州浮海東渡攻琉球國。隋軍以弩陣與盾兵壓住島民，強登灘頭破城，擒國主、俘虜二萬餘人。近戰靠環首直刀：與本卡的羅馬短劍同族，靠盾邊與刺突節奏取勝，不靠揮砍。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/610-85dce704f6.json"
+    },
+    {
+      "id": "611-王薄起義",
+      "added": "2026-10-21T08:28:50.916Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.78,
+        "lat": 36.83
+      },
+      "battle": {
+        "y": 611,
+        "m": 11,
+        "name": "王薄起義",
+        "theater": "山東鄒平長白山至濟北",
+        "brief": "大業七年（611）冬，山東鄒平長白山下，王薄聚眾起兵，以《無向隴頭望故鄉》為號，眾至數萬，劫掠州郡，與河北張金稱部遙相呼應。隋廷集兵百餘萬於涿郡，山東守備空虛，遣將討之，數月眾潰，王薄下落不明。卡面的科林斯青銅盔出自西元前七世紀的希臘，只能對照：護身的是身邊站著的人，不是那頂盔。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/611-46b6e6fef6.json"
+    },
+    {
+      "id": "613-陳瑱",
+      "added": "2026-10-21T08:28:50.921Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.87,
+        "lat": 28.94
+      },
+      "battle": {
+        "y": 613,
+        "m": 8,
+        "name": "陳瑱",
+        "theater": "浙江衢州信安郡",
+        "brief": "隋煬帝大業九年（613）八月，浙西信安郡一帶，賊帥陳瑱聚眾三萬攻陷郡城；同年蒼梧梁慧尚、東陽李三兒亦舉兵，三役同見於《隋書·炀帝紀》。攻城靠流民自備的刀叉與夜襲，官軍以州縣兵、弩手與騎兵鎮壓。卡面羅馬弩砲屬公元前一的扭力器械，與本役相隔一千六百餘年，不會出現在浙西城頭；同時代中國的對應物是機弩與床弩，皆以定點單發的箭壓制密集人馬。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      }
+    },
+    {
+      "id": "999-斯沃爾德戰役",
+      "added": "2026-10-21T08:28:50.967Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 12.6,
+        "lat": 55.9
+      },
+      "battle": {
+        "y": 999,
+        "m": 9,
+        "name": "斯沃爾德戰役",
+        "theater": "波羅的海西部厄勒海峽",
+        "brief": "斯沃爾德海戰在西波羅的海一帶爆發：挪威王奧拉夫·特里格瓦松率六十餘艘戰船與十一度約姆維京船自波美拉尼亞返國，遭丹麥、瑞典與拉德雅爾三方聯軍伏擊。他把戰船並排綁成浮動堡壘，長蛇號居中策應，最終寡不敵眾，溺斃海中。卡面羅馬方陣盾為盾牆原典，其互咬原理正是北歐盾陣所承襲者。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/999-73d7bfaa19.json"
     }
   ]
 }
