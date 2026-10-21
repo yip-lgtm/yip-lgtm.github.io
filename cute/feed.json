@@ -8827,7 +8827,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1161-c595f50cde.json"
     },
     {
       "id": "1189-十三翼之戰",
@@ -8907,7 +8908,8 @@
         "layer": "land",
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1221-e58f8adb8b.json"
     },
     {
       "id": "1890-狗稅戰爭",
@@ -9010,6 +9012,168 @@
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
       }
+    },
+    {
+      "id": "-189-加拉太戰爭",
+      "added": "2026-10-21T06:11:20.603Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 22.55,
+        "lat": 38.79
+      },
+      "battle": {
+        "y": -189,
+        "m": 9,
+        "name": "加拉太戰爭",
+        "theater": "希臘中部塞薩利與溫泉關",
+        "brief": "公元前189年，埃托利亞同盟雇用數千名加拉太傭兵與羅馬共和國在希臘本土再戰。執政官尼亞斯·曼利烏斯·武爾索率軍在塞薩利擊潰傭兵，逼埃托利亞於溫泉關投降。真正決定戰局的是直刃鐵劍、標槍與盾甲，兵器卡上的月牙劍只餘形制上的遠親。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/-189-dc04c190a2.json"
+    },
+    {
+      "id": "1189-成吉思汗統一蒙古之戰",
+      "added": "2026-10-21T06:11:20.647Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 110,
+        "lat": 48.3
+      },
+      "battle": {
+        "y": 1189,
+        "m": 1,
+        "name": "成吉思汗統一蒙古之戰",
+        "theater": "蒙古高原斡難河上游",
+        "brief": "鐵木真1189年於斡難河畔起兵，與札木合、克烈、乃蠻相爭十七年，勝答蘭版朱思，借金朝之力平塔塔兒，吞併泰赤烏與主兒乞，1204年察乞兒馬兀惕斬太陽汗、誅札木合，1206年於斡難河源忽里勒臺稱成吉思汗，立怯薛與千戶制，草原歸於一統。主力兵器是蒙古複合弓，十字弩則見於金與西夏邊軍。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1189-df09cf6334.json"
+    },
+    {
+      "id": "1205-蒙古與西夏戰爭",
+      "added": "2026-10-21T06:11:20.649Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.23,
+        "lat": 38.49
+      },
+      "battle": {
+        "y": 1205,
+        "m": 11,
+        "name": "蒙古與西夏戰爭",
+        "theater": "寧夏興慶府與河西走廊",
+        "brief": "一二〇五年冬，成吉思汗以西夏拒不出兵助金為由，率騎兵自河套南下，圍西夏都城中興府，數月不解；西夏遣使請和，蒙古退兵，一二〇七年與一二〇九年再攻，一二〇九年夏主受封，兩國以兄弟相稱。卡面希臘火與此役無涉，其噴火諸法只見於拜占庭海戰。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1205-a6eee8ff02.json"
+    },
+    {
+      "id": "1211-紅襖軍抗金起義",
+      "added": "2026-10-21T06:11:20.652Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.51,
+        "lat": 37.07
+      },
+      "battle": {
+        "y": 1211,
+        "m": 12,
+        "name": "紅襖軍抗金起義",
+        "theater": "河東、河北與山東游擊區",
+        "brief": "金宣宗貞祐元年冬，蒙古軍南下、河北山東連遭兵燹，金廷又括地括丁，劉六符、劉八遂於河東聚眾起事，以紅色短襖為號，紅襖軍由此得名。起義以鄉兵游擊、破堡焚倉為主，攻城只靠撞木、雲梯與火攻；卡面這件配重投石車並未出現在這條戰線，倒是蒙古軍同期帶入的配重砲與火器，才是當時攻城技術的分水嶺。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1211-860ef85844.json"
+    },
+    {
+      "id": "1215-北京之戰",
+      "added": "2026-10-21T06:11:20.654Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.36,
+        "lat": 39.88
+      },
+      "battle": {
+        "y": 1215,
+        "m": 2,
+        "name": "北京之戰",
+        "theater": "金中都城與燕京近郊",
+        "brief": "大定十八年仿汴京建成的金中都，自貞祐元年十月宣宗南遷後被蒙古軍圍住，木華黎主圍，成吉思汗自西夏回軍督攻，至貞祐三年二月城破，宮闕盡焚，金勢退保河南。此役把弩的兩面一次顯齊：守方倚弩於城堞仍守不住地道與飛石，攻方則靠降附漢人的攻城技藝補上蒙古騎兵的不足。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1215-1187d4af80.json"
+    },
+    {
+      "id": "1220-玉龍傑赤之戰",
+      "added": "2026-10-21T06:11:20.659Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 60.22,
+        "lat": 41.55
+      },
+      "battle": {
+        "y": 1220,
+        "m": 7,
+        "name": "玉龍傑赤之戰",
+        "theater": "阿姆河下游古城玉龍傑赤",
+        "brief": "蒙古第一次西征期間，朮赤與察合台於一二二〇年夏圍困花剌子模舊都玉龍傑赤，康里守軍約三萬憑土坯城牆與壕溝抵抗，圍城歷時六個多月。配重投石車壓制城頭、拆毀城樓而未能獨力破城，最後由窩闊台渡阿姆河迂迴夾擊，一二二一年初城破。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1220-82ed8df625.json"
     }
   ]
 }
