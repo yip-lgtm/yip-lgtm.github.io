@@ -2098,7 +2098,8 @@
         "layer": "land",
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
         "portrait": "portraits/wheellock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1805-063134df82.json"
     },
     {
       "id": "1806-英國入侵拉普拉塔河",
@@ -7593,6 +7594,162 @@
         "portrait": "portraits/ironclad.jpg"
       },
       "dossierUrl": "dossiers/1883-c27244324c.json"
+    },
+    {
+      "id": "1831-第一次土埃戰爭",
+      "added": "2026-10-21T05:56:06.260Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 36.29,
+        "lat": 33.51
+      },
+      "battle": {
+        "y": 1831,
+        "m": 1,
+        "name": "第一次土埃戰爭",
+        "theater": "埃及、敘利亞與安納托利亞戰區",
+        "brief": "第一次土埃戰爭於1831年爆發，埃及穆罕默德·阿里王朝與奧斯曼帝國為埃及、敘利亞及安納托利亞的控制權交戰，戰線橫跨北非東端與鄂多士。長槍（Pike，1600年）是西班牙步兵方陣中早於此戰列裝的正式裝備，負責前排近戰、維持陣形及阻擋騎兵。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
+      }
+    },
+    {
+      "id": "1832-黑鷹戰爭",
+      "added": "2026-10-21T05:56:06.261Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -90.66,
+        "lat": 42.55
+      },
+      "battle": {
+        "y": 1832,
+        "m": 4,
+        "name": "黑鷹戰爭",
+        "theater": "美國伊利諾伊州與威斯康辛州邊境戰",
+        "brief": "黑鷹戰爭於1832年4月爆發，是美國政府軍與黑鷹率領的原住民聯盟在伊利諾伊與威斯康辛土地權爭中發生的武裝衝突。Arquebus（火繩槍銃）的1550年服役年代早於本戰，符合1832年前的裝備限制。"
+      },
+      "kit": {
+        "name": "火繩槍銃",
+        "designation": "Arquebus",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
+        "portrait": "portraits/arquebus.jpg"
+      }
+    },
+    {
+      "id": "1833-第一次卡洛斯戰爭",
+      "added": "2026-10-21T05:56:06.262Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -1.65,
+        "lat": 42.81
+      },
+      "battle": {
+        "y": 1833,
+        "m": 1,
+        "name": "第一次卡洛斯戰爭",
+        "theater": "西班牙北部納瓦拉與巴斯克地區",
+        "brief": "第一次卡洛斯戰爭是戰爭列表所列的西班牙內戰，起因是王位繼承。1833年費爾南多七世去世後，卡洛斯派支持唐·卡洛斯爭位，伊莎貝二世一方由政府軍支持。戰事集中於北部納瓦拉、巴斯克及埃布羅河流域；野砲（Field gun）1550年已列裝，參與前線壓制與進攻支援。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      }
+    },
+    {
+      "id": "1843-多米尼加共和國獨立戰爭",
+      "added": "2026-10-21T05:56:06.263Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -69.93,
+        "lat": 18.49
+      },
+      "battle": {
+        "y": 1843,
+        "m": 2,
+        "name": "多米尼加共和國獨立戰爭",
+        "theater": "聖多明各",
+        "brief": "多米尼加共和國獨立戰爭於一八四三年展開，聖多明各及伊斯帕尼奧拉島各地爆發反抗海地佔領的武裝衝突。交戰者使用一八四〇年列裝的雷管步槍（Percussion rifle），其以火帽點火取代舊式燧發機制，提升命中率與射擊可靠性，並成為步兵遠程火力裝備。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1844-法摩戰爭",
+      "added": "2026-10-21T05:56:06.264Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -5.95,
+        "lat": 34.95
+      },
+      "battle": {
+        "y": 1844,
+        "m": 8,
+        "name": "法摩戰爭",
+        "theater": "摩洛哥北部伊斯利河畔",
+        "brief": "法摩戰爭中的伊斯利戰役於1844年8月14日在摩洛哥北部伊斯利河畔展開，法軍與摩洛哥軍隊交戰。法軍步兵線列使用雷管步槍（Percussion rifle，1840年制），此型號在1844年以前已正式列裝，是本場衝突中符合年代限制的真實步槍。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1845-新西蘭土地戰爭",
+      "added": "2026-10-21T05:56:06.265Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 174.77,
+        "lat": -35.27
+      },
+      "battle": {
+        "y": 1845,
+        "m": 3,
+        "name": "新西蘭土地戰爭",
+        "theater": "科羅拉雷卡戰役與魯瑟爾",
+        "brief": "1845年3月，科羅拉雷卡戰役爆發，成為新西蘭土地戰爭初期的重要衝突。英軍與毛利人在魯瑟爾城鎮及周邊陣地交戰，戰事涉及城鎮控制、據點攻防與軍隊推進。英軍步兵使用雷管步槍（Percussion rifle），其擊砧式雷管點火取代傳統燧發機制，能在射擊時提供較穩定的點火。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
     }
   ]
 }
