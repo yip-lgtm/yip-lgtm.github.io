@@ -469,7 +469,7 @@
         "m": 10,
         "name": "阿富汗戰爭",
         "theater": "阿富汗山區",
-        "brief": "2001年10月美軍在阿富汗山區展開「持久自由」行動，使用M4卡賓槍、M249機槍等輕武器掃蕩塔利班據點。"
+        "brief": "二〇〇一年十月七日聯軍發動持久自由行動，先以巡弋飛彈與艦載機摧毀塔利班防空與空軍，地面戰由北方聯盟與特種部隊引導。卡面是1862年英國鐵甲艦，木殼包鐵使裝甲第一次比火砲更難對付，砲塔自此繞著防禦展開；其後裔便是駐紮印度洋的航空母艦與護衛艦，阿富汗內陸沒有海港，重火力全靠海運。"
       },
       "kit": {
         "name": "M4卡賓槍",
@@ -31071,7 +31071,8 @@
         "layer": "land",
         "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
         "portrait": "portraits/dory.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/583-eff7561550.json"
     },
     {
       "id": "589-南康之戰",
@@ -31261,6 +31262,168 @@
         "portrait": "portraits/assyrianspear.jpg"
       },
       "dossierUrl": "dossiers/620-e9c92d76af.json"
+    },
+    {
+      "id": "582-陳平始興王陳叔陵叛亂",
+      "added": "2026-10-21T09:49:03.449Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.79,
+        "lat": 32.06
+      },
+      "battle": {
+        "y": 582,
+        "m": 1,
+        "name": "陳平始興王陳叔陵叛亂",
+        "theater": "建康城皇城與東府",
+        "brief": "開皇二年（582）正月，陳宣帝崩次日，湘東王陳叔陵在建康宮中舉兵，藥刀刺兄不中，敗走東府集甲士應援。陳後主遣蕭摩訶討之，蕭摩訶先誘捕其心腹戴溫、譚騏驎，再追截百餘步騎於南門。卡面的秦弩正是蕭摩訶賴以成名的步弩：既是他平叛的依托，也是他降隋後成為隋軍攻陳主力的那門技術。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/582-e195e19865.json"
+    },
+    {
+      "id": "585-陳平章大寶叛亂",
+      "added": "2026-10-21T09:49:03.456Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 107.35,
+        "lat": 22.15
+      },
+      "battle": {
+        "y": 585,
+        "m": 3,
+        "name": "陳平章大寶叛亂",
+        "theater": "廣西鬱林郡豐州",
+        "brief": "禎明元年三月，前豐州刺史、曾任中護軍的章大寶在鬱林郡豐州舉兵反陳，州內義軍主陳景詳起兵討之，約七十日內擒斬叛首，首級傳回建康。卡面羅馬方陣盾並不在這場戰役，它是前100年前後的羅馬軍備，只能與陳朝步卒所倚的弩、槊、環首刀分作兩個技術譜系來看。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/585-a1e688272a.json"
+    },
+    {
+      "id": "590-隋平江南之戰",
+      "added": "2026-10-21T09:49:03.464Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.26,
+        "lat": 23.13
+      },
+      "battle": {
+        "y": 590,
+        "m": 10,
+        "name": "隋平江南之戰",
+        "theater": "廣州番禺與泉州晉安",
+        "brief": "開皇九年十月隋軍分三路逼近長江，十一月陳後主被擒於建康；開皇十年秋，隋廷發兵嶺南，平蘇寶於晉安、王仲通於番禺，李佛子降於交州，江南乃全。卡面的斯巴達長矛是公元前八世紀希臘方陣的兩米木槍，對位中原裝備是隋軍步槊與長矛，但決定此役的是弩陣、攻城器械與五牙大艦，而非一面槍牆。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/590-9c8995b683.json"
+    },
+    {
+      "id": "598-隋文帝攻高句麗之戰",
+      "added": "2026-10-21T09:49:03.468Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 125.75,
+        "lat": 39.02
+      },
+      "battle": {
+        "y": 598,
+        "m": 1,
+        "name": "隋文帝攻高句麗之戰",
+        "theater": "鴨綠水至平壤清川戰線",
+        "brief": "隋文帝開皇十八年正月下詔伐高句麗，楊廣為行軍元帥，宇文述等分道出師，渡鴨綠水後屯營築圍攻平壤，糧盡掘地而食；十二月在清川遭伏大敗，士卒死者十四五，全軍退回。卡面羅馬方陣盾是共和末期羅馬軍團的盾牆裝備，不在此役現場；役中功能相近者，是隋軍步卒結方陣所執的方盾與長槊。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/598-3f9be530be.json"
+    },
+    {
+      "id": "601-隋衛文升平僚人叛亂",
+      "added": "2026-10-21T09:49:03.476Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 104.07,
+        "lat": 30.57
+      },
+      "battle": {
+        "y": 601,
+        "m": 3,
+        "name": "隋衛文升平僚人叛亂",
+        "theater": "益州西山僚人山寨",
+        "brief": "仁壽元年（601），益州西山一帶僚人寨眾起兵反隋，州郡不能制，隋廷發郡兵與募兵往討。蜀道險遠，糧秣全賴劍閣道與岷江轉運。守寨一方據山梁高處以弩封隘，官軍亦以弩手壓制寨牆，再遣步卒緣梯登寨。戰爭列表記此役為『隋衛文升平僚人叛亂』，正史未載主將姓名與戰果數字。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/601-c7ac5a7043.json"
+    },
+    {
+      "id": "607-隋擊鐵勒之戰",
+      "added": "2026-10-21T09:49:03.481Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 88,
+        "lat": 47
+      },
+      "battle": {
+        "y": 607,
+        "m": 4,
+        "name": "隋擊鐵勒之戰",
+        "theater": "河西走廊西段至金山北麓",
+        "brief": "大業三年（607）四月，隋煬帝發兵百三十萬、號百萬，分道西征吐谷渾與鐵勒。李靖率軍在赤水源與積石山一線擊潰吐谷渾王庭，隨後置西海、河源、鄯善、且末四郡；鐵勒一部西走、一部內附。卡面的斯巴達長矛屬希臘方陣兵器，與本役相隔一千四百餘年，並不在隋軍武備之列。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/607-29b8a0bf3b.json"
     }
   ]
 }
