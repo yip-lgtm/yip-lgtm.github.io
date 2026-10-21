@@ -4655,6 +4655,164 @@
         "portrait": "portraits/muzzleloader.jpg"
       },
       "dossierUrl": "dossiers/1871-d89a5771b7.json"
+    },
+    {
+      "id": "1792-法國大革命戰爭",
+      "added": "2026-10-21T05:10:44.896Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 2.35,
+        "lat": 48.86
+      },
+      "battle": {
+        "y": 1792,
+        "m": 4,
+        "name": "法國大革命戰爭",
+        "theater": "巴黎市區與法國東北邊境",
+        "brief": "一七九二年四月，法國革命政府向奧地利宣戰，大革命戰爭自此拉開，至一八〇二年《亞眠條約》才落幕。巴黎街頭的長槍隊伍在一七九二年八月十日迎著瑞士衛兵的刺刀而上，聯軍一方的長槍連則一直用到一七九〇年代末才被線列步兵取代。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
+      },
+      "dossierUrl": "dossiers/1792-f7b5b2433e.json"
+    },
+    {
+      "id": "1876-萩之亂",
+      "added": "2026-10-21T05:10:45.010Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 131.42,
+        "lat": 34.4
+      },
+      "battle": {
+        "y": 1876,
+        "m": 2,
+        "name": "萩之亂",
+        "theater": "萩城總門與德山長門",
+        "brief": "一八七六年二月，廢藩置縣與秩祿處分之後失去俸祿的萩藩舊士族起兵，攻燒郡役所，占據萩城總門及德山、長門一帶要道，與官軍對峙九十天。鎮壓由鎮台步兵、補充兵與警察隊完成，海上全程無軍艦介入；同年日本海軍只有對馬、敷高等鐵骨汽船，裝甲主力艦要到一八七七年才開始訂造。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1876-968f61651f.json"
+    },
+    {
+      "id": "1888-第二次英藏戰爭",
+      "added": "2026-10-21T05:10:45.012Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 90.43,
+        "lat": 28.92
+      },
+      "battle": {
+        "y": 1888,
+        "m": 3,
+        "name": "第二次英藏戰爭",
+        "theater": "春丕河谷與江孜",
+        "brief": "一八八八年三月，英國以催促履行一八八六年《北京條約》附約為名，遠征軍自印度越過杰萊普山口進入春丕河谷，四月攻入帕里與江孜，設商埠駐兵，藏軍以火繩槍難以擊發而屢退，九月英軍撤回印度；一八九〇年再出兵解江孜之圍。卡面雷管步槍正代表英軍步槍同代的技術世代。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1888-69a86a3ae8.json"
+    },
+    {
+      "id": "1896-菲律賓革命",
+      "added": "2026-10-21T05:10:45.015Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 121.05,
+        "lat": 14.62
+      },
+      "battle": {
+        "y": 1896,
+        "m": 8,
+        "name": "菲律賓革命",
+        "theater": "馬尼拉都會區與中呂宋",
+        "brief": "一八九六年八月二十三日，蓋蒂普南在馬尼拉北郊發動武裝起事，呂宋中部的武裝農民以冷刃與繳獲步槍攻擊西班牙殖民軍，鄉村堡壘與游擊隊撐了四個月。交戰雙方靠山炮、連發步槍與刺刀分勝負，戰役裡並無加特林機槍；這件六管速射武器要到三年後美軍遠征時才踏上前線，作為炮兵與步兵之間的火力銜接。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      }
+    },
+    {
+      "id": "1883-中法戰爭",
+      "added": "2026-10-21T05:11:41.338Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.72,
+        "lat": 22.1
+      },
+      "battle": {
+        "y": 1883,
+        "m": 5,
+        "name": "中法戰爭",
+        "theater": "越北諒山與廣西鎮南關",
+        "brief": "一八八三年五月法軍攻陷河內，越南落入法國控制，清廷先遣雲南兵剿黑旗軍，後以兩廣、雲南兩路大軍入安南。一八八四年三月桂軍與黑旗軍在廣西鎮南關前同法軍血戰，法軍線膛砲射程遠勝清軍舊砲，關隘幾度易手；清軍靠夜襲與山道截擊才收復諒山，最終仍以撤出越南收場。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1899-美菲戰爭",
+      "added": "2026-10-21T05:11:41.342Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 120.98,
+        "lat": 14.6
+      },
+      "battle": {
+        "y": 1899,
+        "m": 2,
+        "name": "美菲戰爭",
+        "theater": "呂宋中部與馬尼拉灣沿岸",
+        "brief": "一八九九年二月四日，革命軍與美軍在馬尼拉近郊帕西格河畔開火，美菲戰爭開打。美軍以三吋口徑的線膛野戰砲為砲兵骨幹，革命軍則用西班牙時期留下的舊銅砲與船載砲位作戰。雙方在呂宋中部的中央區拉鋸三年，一九〇二年革命政府垮台，戰事以《華盛頓條約》收場。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
     }
   ]
 }
