@@ -34692,6 +34692,189 @@
         "portrait": "portraits/gladius.jpg"
       },
       "dossierUrl": "dossiers/986-d5e97fc76c.json"
+    },
+    {
+      "id": "817-蔡州之戰",
+      "added": "2026-10-21T20:06:28.926Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.36,
+        "lat": 32.78
+      },
+      "battle": {
+        "y": 817,
+        "m": 9,
+        "name": "蔡州之戰",
+        "theater": "蔡州",
+        "brief": "蔡州之戰是唐憲宗元和十二年（817）唐軍進取蔡州、討伐淮西節度使吳元濟的戰役，也是削平淮西藩鎮割據的關鍵行動。此役使淮西割據勢力遭到決定性打擊。戰爭發生時，秦連弩（Repeating crossbow）已在中國軍隊服役，並列入弩類射手裝備，具備持續射擊能力。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "秦連弩是中國古代陸軍弩類射手裝備，配置於步軍，負責連續射擊與定點火力壓制，在遠程兵器體系中用於持續支援。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      },
+      "dossierUrl": "dossiers/817-c5f9a06855.json"
+    },
+    {
+      "id": "974-采石之戰",
+      "added": "2026-10-21T20:06:31.490Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.13,
+        "lat": 31.68
+      },
+      "battle": {
+        "y": 974,
+        "m": 11,
+        "name": "采石之戰",
+        "theater": "長江下游江東戰區",
+        "brief": "北宋太平興國七年，周寶權據池州反叛，宋軍進兵江東，在扼守長江下游水道的采石一帶擊敗叛軍，使地方叛勢受到重挫。此役是周寶權之亂中的關鍵戰鬥，顯示宋軍步兵與弩兵能協同作戰。秦連弩（Repeating crossbow）作為弩兵正式裝備，可連續投射箭矢，支撐前線並壓制敵陣。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "秦連弩屬弩兵的遠射裝備，編入步軍作戰體系，負責持續投射箭矢，通常與弓兵協同行動，壓制敵方陣線並支援前鋒。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
+    },
+    {
+      "id": "757-太原之戰",
+      "added": "2026-10-21T20:06:44.359Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.55,
+        "lat": 37.87
+      },
+      "battle": {
+        "y": 757,
+        "m": 10,
+        "name": "太原之戰",
+        "theater": "山西太原",
+        "brief": "唐至德二年，吐蕃軍進攻太原，唐軍由郭子儀、李嗣業等將領率領赴援，雙方在太原城及周邊地區交戰。此役是唐蕃戰爭的一部分，唐軍扭轉戰局，使太原免遭攻陷。秦連弩於公元前二百年已列裝，可用於守城遠射，並壓制接近城垣的敵軍。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "秦連弩是唐軍弩兵裝備中的連續發射型弩機，編入步軍或守城部隊，負責遠距壓制、封鎖射界，並支援城防與反擊。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
+    },
+    {
+      "id": "982-宋夏戰爭",
+      "added": "2026-10-21T20:06:59.285Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 109.73,
+        "lat": 38.28
+      },
+      "battle": {
+        "y": 982,
+        "m": 1,
+        "name": "宋夏戰爭",
+        "theater": "麟州",
+        "brief": "宋夏戰爭始於982年，是宋朝與西夏為爭奪西北邊地控制權而發生的長期戰事，陝西麟州成為早期反覆交兵的重要前線。本條目所用裝備正式型號為秦連弩（Repeating crossbow），其於公元前200年已列裝，連續射擊能力適合城防與陣地交火。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "秦連弩在古代中國軍隊中屬於連續射擊型弩兵器，主要配置於步兵陣列與守城防線，位於前線壓制與城防火力環節。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
+    },
+    {
+      "id": "622-靈州之戰",
+      "added": "2026-10-21T20:07:40.704Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.34,
+        "lat": 38.03
+      },
+      "battle": {
+        "y": 622,
+        "m": 1,
+        "name": "靈州之戰",
+        "theater": "寧夏靈州（今靈武一帶）",
+        "brief": "本條為《戰爭列表》所列622年唐朝與吐谷渾在靈州交鋒的靈州之戰，屬唐初西北邊疆衝突，戰場約在今寧夏靈武一帶，反映唐朝邊軍與青海高原政權的接觸。作為早期制式裝備對照，亞述長弓（Assyrian bow）於公元前700年已列裝，遠早於本役，並非本戰場實際使用的唐軍武器。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述長弓是亞述軍隊制式的步兵遠射弓，與箭矢、箭袋及盾牌配套，主要供前排步兵在接戰前拋射，也可由車上射手與城防部隊使用。",
+        "portrait": "portraits/assyrianbow.jpg"
+      }
+    },
+    {
+      "id": "1236-江陵之戰",
+      "added": "2026-10-21T20:07:56.236Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.19,
+        "lat": 30.35
+      },
+      "battle": {
+        "y": 1236,
+        "m": 1,
+        "name": "江陵之戰",
+        "theater": "江陵",
+        "brief": "江陵之戰是1236年蒙古帝國南下攻宋、爭奪長江中游江陵的戰事。江陵為南宋在荊州地區的防務重鎮，蒙古軍以配重投石車（Trebuchet）作遠程拋射，配合圍城與兵力推進；南宋守軍最終未能保有城池，蒙古軍占領江陵，鞏固其在襄鄂地區的前進據點。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "配重投石車屬於攻城體系中的遠程拋射兵器，通常部署於圍城陣線或防線後方，以石彈打擊城牆、塔樓及集結部隊，支援地面部隊推進。",
+        "portrait": "portraits/trebuchet.jpg"
+      }
+    },
+    {
+      "id": "956-六合之戰",
+      "added": "2026-10-21T20:08:13.843Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.34,
+        "lat": 32.34
+      },
+      "battle": {
+        "y": 956,
+        "m": 1,
+        "name": "六合之戰",
+        "theater": "江淮地區（江蘇南京六合）",
+        "brief": "維基戰爭列表所收錄的六合之戰，是956年後周與南唐在江淮一帶交鋒的戰事，後周軍隊擊敗南唐援軍，使南唐在江北的防線受挫。秦連弩（Repeating crossbow）於公元前二百年已列入秦軍裝備，可反覆發射弩箭，屬當時既有陸軍弩兵遠射兵器。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "秦連弩是秦軍步卒的弩類裝備，以重複弩機進行連續射擊，屬軍隊遠程火力的一環，並可與弓兵及城防火力協同。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
     }
   ]
 }
