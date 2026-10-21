@@ -2070,7 +2070,8 @@
         "layer": "land",
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
         "portrait": "portraits/wheellock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1805-4842ae4908.json"
     },
     {
       "id": "1805-法瑞戰爭",
@@ -2330,7 +2331,8 @@
         "layer": "land",
         "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
         "portrait": "portraits/flintlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1806-58b05e0d65.json"
     },
     {
       "id": "1807-炮艦戰爭",
@@ -4812,6 +4814,162 @@
         "nation": "de",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1813-癸酉之變",
+      "added": "2026-10-21T05:02:40.625Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.4,
+        "lat": 39.92
+      },
+      "battle": {
+        "y": 1813,
+        "m": 7,
+        "name": "癸酉之變",
+        "theater": "北京紫禁城",
+        "brief": "癸酉之變是嘉慶十八年爆發的八卦教起義，先在河南滑縣起事，連動山東與直隸，並有起義者攻入北京紫禁城，清廷其後集中兵力鎮壓。西班牙陸軍於一五二〇年列裝的正式型號「火繩槍」（Matchlock musket），曾為步兵遠射配備，至一八一三年已非野戰主力。"
+      },
+      "kit": {
+        "name": "火繩槍",
+        "designation": "Matchlock musket",
+        "year": 1520,
+        "nation": "es",
+        "layer": "land",
+        "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
+        "portrait": "portraits/matchlock.jpg"
+      }
+    },
+    {
+      "id": "1815-第七次反法同盟",
+      "added": "2026-10-21T05:00:42.333Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 4.41,
+        "lat": 50.68
+      },
+      "battle": {
+        "y": 1815,
+        "m": 6,
+        "name": "第七次反法同盟",
+        "theater": "比利時滑鐵盧",
+        "brief": "第七次反法同盟於一八一五年再啟，聯軍在比利時滑鐵盧一帶迎戰法軍，拿破崙最終戰敗後促成維也納會議。這是拿破崙戰爭末期的重要衝突；輪發槍則是十五世紀末已列裝的真實火器，符合本年裝備年代限制。"
+      },
+      "kit": {
+        "name": "輪發槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
+        "portrait": "portraits/wheellock.jpg"
+      }
+    },
+    {
+      "id": "1815-第二次巴巴利戰爭",
+      "added": "2026-10-21T05:00:57.511Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.19,
+        "lat": 32.89
+      },
+      "battle": {
+        "y": 1815,
+        "m": 6,
+        "name": "第二次巴巴利戰爭",
+        "theater": "的黎波里塔哈近海",
+        "brief": "第二次巴巴利戰爭是維基戰爭列表所列的巴巴利衝突之一，起於1815年美國與的黎波里塔哈之間的戰事。輪發槍（Wheellock pistol）於1500年列裝，是早期歐洲軍隊使用的單手火器，可配於騎兵與衛兵等地面部隊。"
+      },
+      "kit": {
+        "name": "輪發槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
+        "portrait": "portraits/wheellock.jpg"
+      }
+    },
+    {
+      "id": "1815-那不勒斯戰爭",
+      "added": "2026-10-21T05:01:20.680Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 14.27,
+        "lat": 40.85
+      },
+      "battle": {
+        "y": 1815,
+        "m": 3,
+        "name": "那不勒斯戰爭",
+        "theater": "那不勒斯王國",
+        "brief": "1815年那不勒斯戰爭發生在南義那不勒斯王國，穆拉特王政與英國及西西里聯軍交戰，結果促成波旁王朝重返那不勒斯。輪發槍（Wheellock pistol）於1500年已列裝，是真實存在的火繩手槍型號，但不代表它是1815年交戰部隊的典型主力武器。"
+      },
+      "kit": {
+        "name": "輪發槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
+        "portrait": "portraits/wheellock.jpg"
+      }
+    },
+    {
+      "id": "1817-第一次塞米諾爾戰爭",
+      "added": "2026-10-21T05:01:06.188Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -82,
+        "lat": 28.5
+      },
+      "battle": {
+        "y": 1817,
+        "m": 12,
+        "name": "第一次塞米諾爾戰爭",
+        "theater": "佛羅里達半島",
+        "brief": "第一次塞米諾爾戰爭始於1817年，戰事主要發生在佛羅里達，美軍進攻與塞米諾族武裝抵抗接連交鋒，戰線由北部向半島內陸延伸。長槍（Pike）在1600年已列裝，屬西班牙步兵制式陸軍裝備，用於支撐密集隊形並防制騎兵衝鋒；至本戰爆發時，它早已不是主要兵器。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
+      }
+    },
+    {
+      "id": "1817-第三次馬拉塔戰爭",
+      "added": "2026-10-21T05:01:01.425Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 73.85,
+        "lat": 18.53
+      },
+      "battle": {
+        "y": 1817,
+        "m": 1,
+        "name": "第三次馬拉塔戰爭",
+        "theater": "浦那附近卡德基戰場",
+        "brief": "第三次馬拉塔戰爭於1817年一月在浦那附近展開，英軍與馬拉塔聯軍交鋒，卡德基之戰揭開戰端。戰爭所涉的歐洲步兵裝備中，長槍（Pike）與火槍併用，負責近身刺擊、維繫陣線與抗拒衝鋒。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
       }
     }
   ]
