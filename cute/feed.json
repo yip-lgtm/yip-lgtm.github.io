@@ -34341,6 +34341,81 @@
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
       }
+    },
+    {
+      "id": "881-黃巢攻長安之戰",
+      "added": "2026-10-21T11:00:07.197Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.34
+      },
+      "battle": {
+        "y": 881,
+        "m": 12,
+        "name": "黃巢攻長安之戰",
+        "theater": "關中平原長安城",
+        "brief": "黃巢軍在唐末起義中攻入關中長安，唐廷倉促撤離，黃巢隨後據城建立大齊，使叛軍取得重要的政治與軍事據點。此役即黃巢攻長安之戰；早於本戰的羅馬軍隊已列裝羅馬方陣盾 Scutum，其服役年為公元前100年。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      }
+    },
+    {
+      "id": "923-楊劉之戰",
+      "added": "2026-10-21T11:00:07.198Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 923,
+        "m": 5,
+        "name": "楊劉之戰",
+        "theater": "山西河東楊劉",
+        "brief": "楊劉之戰於923年五月爆發，後唐李存勖與後梁王彥章所部在楊劉交鋒，爭奪堡寨與黃河渡口，戰局影響其後爭奪中原的部署，也凸顯河東堡壘與交通位置的重要性。斯巴達長矛（Dory）於公元前800年已列裝，是古典希臘重裝步兵的制式長矛，屬早期冷兵器步兵裝備體系。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      }
+    },
+    {
+      "id": "955-壽州之戰",
+      "added": "2026-10-21T11:00:07.199Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.79,
+        "lat": 32.58
+      },
+      "battle": {
+        "y": 955,
+        "m": 1,
+        "name": "壽州之戰",
+        "theater": "壽州（今安徽省淮南市壽縣）",
+        "brief": "《中文維基戰爭列表》所列的壽州之戰，是後周與南唐爭奪淮南壽州的衝突；後周軍隊圍城後迫使南唐守軍投降，壽州歸入後周。斯巴達長矛（正式型號 Dory，公元前800年）是古希臘重裝步兵所用的長柄刺槍，是本役開始前已列裝的真實裝備。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      }
     }
   ]
 }
