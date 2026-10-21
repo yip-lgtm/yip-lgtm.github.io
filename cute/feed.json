@@ -34528,7 +34528,8 @@
         "layer": "land",
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/909-01898cd9cc.json"
     },
     {
       "id": "957-淮南之戰",
@@ -34554,7 +34555,8 @@
         "layer": "land",
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/957-17fe16a084.json"
     },
     {
       "id": "782-魏州之戰",
