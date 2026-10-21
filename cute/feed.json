@@ -34289,6 +34289,58 @@
         "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
         "portrait": "portraits/pilum.jpg"
       }
+    },
+    {
+      "id": "875-唐末農民戰爭",
+      "added": "2026-10-21T10:47:55.292Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.34
+      },
+      "battle": {
+        "y": 875,
+        "m": 1,
+        "name": "唐末農民戰爭",
+        "theater": "長安",
+        "brief": "中文維基「戰爭列表」將唐末農民戰爭列為中國唐朝末年的農民起義與內戰，始於875年，戰事由河南向關中擴展並涉及長安，黃巢軍攻入京城後迫使唐廷南遷。斯巴達長矛（Dory）於公元前800年已列裝，是古希臘陸軍正式使用的長柄兵器；此處僅作早期裝備對照，並非唐朝部隊裝備。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      }
+    },
+    {
+      "id": "877-黃巢轉戰中原之戰",
+      "added": "2026-10-21T10:48:04.026Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.45,
+        "lat": 34.62
+      },
+      "battle": {
+        "y": 877,
+        "m": 1,
+        "name": "黃巢轉戰中原之戰",
+        "theater": "河南中部洛陽一帶",
+        "brief": "黃巢轉戰中原之戰於877年在河南中部展開，黃巢軍由河南腹地向洛陽一帶轉進，採取流動作戰及多路牽制，尋求擊破唐軍部署並擴大控制範圍。埃及月牙劍Khopesh早於本戰爭數千年已正式列裝，是古代埃及步兵用於近身決鬥的冷兵器。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      }
     }
   ]
 }
