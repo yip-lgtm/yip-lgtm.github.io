@@ -27,8 +27,9 @@ jobs:
       - name: Write campaigns and dossiers
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
-          BULK_LIMIT: "20"
-          DOSSIER_LIMIT: "20"
+          BULK_LIMIT: "40"
+          DOSSIER_LIMIT: "40"
+          BULK_WORKERS: "8"
         run: node scripts/bulk-fill.mjs
       - name: Commit
         run: |

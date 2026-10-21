@@ -118,17 +118,51 @@ async function ask(prompt, system, temperature, maxTokens) {
   throw new Error("no usable json in reply");
 }
 
+/**
+ * Run tasks with a fixed number in flight.
+ *
+ * The plan's limit opens for a short while and then closes again, so what
+ * matters is how much is in flight when it opens. The ones already sent are
+ * worth keeping: only the new ones stop.
+ */
+let quotaStop = "";
+async function pool(items, workers, task) {
+  let next = 0;
+  const runners = Array.from({ length: Math.max(1, Math.min(workers, items.length)) }, async () => {
+    while (next < items.length) {
+      if (quotaStop) break;
+      const item = items[next++];
+      try {
+        await task(item);
+      } catch (err) {
+        const message = err instanceof Error ? err.message : String(err);
+        if (QUOTA.test(message)) {
+          quotaStop = message;
+          break;
+        }
+        console.error(`  rejected: ${message}`);
+      }
+    }
+  });
+  await Promise.all(runners);
+}
+
 const LIMITS = { briefs: Number(process.env.BULK_LIMIT || 20), dossiers: Number(process.env.DOSSIER_LIMIT || 20) };
+const WORKERS = Number(process.env.BULK_WORKERS || 6);
 let wroteBriefs = 0;
 let wroteDossiers = 0;
 let stopped = "";
 
+const wars = [];
 for (let n = 0; n < LIMITS.briefs; n++) {
   const picked = pickWar(index, feed);
   if (!picked) break;
   const { war, repeat } = picked;
   const taken = (feed.items ?? []).some((it) => it.battle?.name === war.name);
   if (taken && !repeat) continue;
+  wars.push({ war, repeat });
+}
+await pool(wars, WORKERS, async ({ war, repeat }) => {
   let item;
   try {
     const libraryKit = pickKit(war, library, (feed.items?.length ?? 0), portraitIndex);
@@ -181,19 +215,20 @@ for (let n = 0; n < LIMITS.briefs; n++) {
     const message = err instanceof Error ? err.message : String(err);
     if (QUOTA.test(message)) {
       stopped = `the MiniMax plan's usage limit is reached (${war.name})`;
-      break;
+      throw new Error(message);
     }
     console.error(`  brief for ${war.name} rejected: ${message}`);
-    continue;
+    return;
   }
   feed.items = feed.items ?? [];
   feed.items.push(item);
   wroteBriefs++;
   console.log(`  brief ${wroteBriefs}: ${war.name} (${war.y}, ${war.span}) -> ${item.kit.name}`);
   writeFileSync(feedPath, JSON.stringify(feed, null, 2) + "\n");
-}
+});
 
 if (!process.env.SKIP_DOSSIERS) {
+  const pending = [];
   for (let n = 0; n < LIMITS.dossiers; n++) {
     const item = (feed.items ?? []).find((it) => {
       if (!it.battle?.name) return false;
@@ -202,6 +237,9 @@ if (!process.env.SKIP_DOSSIERS) {
       return !existsSync(join(dir, file));
     });
     if (!item) break;
+    pending.push(item);
+  }
+  await pool(pending, Math.max(1, Math.min(WORKERS, 4)), async (item) => {
     let dossier;
     try {
       const raw = await ask(
@@ -219,10 +257,10 @@ if (!process.env.SKIP_DOSSIERS) {
       const message = err instanceof Error ? err.message : String(err);
       if (QUOTA.test(message)) {
         stopped = `the MiniMax plan's usage limit is reached (${item.battle.name})`;
-        break;
+        throw new Error(message);
       }
       console.error(`  dossier for ${item.battle.name} rejected: ${message}`);
-      continue;
+      return;
     }
     dossier.updated = new Date().toISOString();
     const file = dossierFile(item.id, item.battle?.y ?? item.kit?.year ?? 0);
@@ -236,7 +274,7 @@ if (!process.env.SKIP_DOSSIERS) {
     const total = DOSSIER_SECTIONS.map((k) => dossier[k] || "").join("").length;
     console.log(`  dossier ${wroteDossiers}: ${item.battle.name}, ${total} chars -> ${file}`);
     writeFileSync(feedPath, JSON.stringify(feed, null, 2) + "\n");
-  }
+  });
 }
 
 console.log(`bulk fill: ${wroteBriefs} brief(s), ${wroteDossiers} dossier(s)`);
