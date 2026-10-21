@@ -34052,6 +34052,84 @@
         "portrait": "portraits/egyptianspear.jpg"
       },
       "dossierUrl": "dossiers/989-2e0260b3fd.json"
+    },
+    {
+      "id": "657-唐滅西突厥之戰",
+      "added": "2026-10-21T10:31:59.641Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 81,
+        "lat": 43.5
+      },
+      "battle": {
+        "y": 657,
+        "m": 1,
+        "name": "唐滅西突厥之戰",
+        "theater": "伊犁河谷",
+        "brief": "《戰爭列表》所載唐滅西突厥之戰，始於唐高宗顯慶二年正月；唐軍在伊犁河谷擊敗阿史那賀魯所部，使西突厥汗國覆亡。裝備資料另列亞述長矛（Assyrian spear），其年代遠早於本場戰役，並非唐軍實際列裝。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      }
+    },
+    {
+      "id": "660-唐與契丹、奚等之戰",
+      "added": "2026-10-21T10:31:59.642Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 120.45,
+        "lat": 41.57
+      },
+      "battle": {
+        "y": 660,
+        "m": 8,
+        "name": "唐與契丹、奚等之戰",
+        "theater": "遼東營州（今遼寧朝陽一帶）",
+        "brief": "唐與契丹、奚等之戰始於唐高宗顯慶五年八月，契丹、奚犯邊後，唐軍奉命在遼東營州一帶迎擊，戰事涉及營州及周邊邊地。裝備對照為羅馬弩砲Scorpio，於公元前五十年列裝，是羅馬陸軍的投射兵器，但並非唐軍裝備。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      }
+    },
+    {
+      "id": "666-唐滅高句麗之戰",
+      "added": "2026-10-21T10:31:59.643Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 125.75,
+        "lat": 39.03
+      },
+      "battle": {
+        "y": 666,
+        "m": 1,
+        "name": "唐滅高句麗之戰",
+        "theater": "平壤城",
+        "brief": "唐滅高句麗之戰是唐朝與新羅聯合對高句麗發動的戰爭，戰役涵蓋遼東、遼西及平壤地區，經持續進攻後攻陷平壤，終結高句麗政權。唐軍步兵配備秦弩這款正式型號為Chinese crossbow的弩機兵器；秦弩於公元前二百年已列裝，年代遠早於本場戰事。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      }
     }
   ]
 }
