@@ -3115,7 +3115,8 @@
         "layer": "land",
         "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
         "portrait": "portraits/matchlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1838-d1649c49b6.json"
     },
     {
       "id": "1838-阿魯斯圖克戰爭",
@@ -3141,7 +3142,8 @@
         "layer": "land",
         "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
         "portrait": "portraits/matchlock.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1838-faad88e866.json"
     },
     {
       "id": "1839-烏拉圭內戰",
@@ -3167,7 +3169,8 @@
         "layer": "land",
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
         "portrait": "portraits/wheellockpistol.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1839-57fe330ee2.json"
     },
     {
       "id": "1839-第一次英阿戰爭",
@@ -3274,7 +3277,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1848-5f8756b6ae.json"
     },
     {
       "id": "1848-德意志1848年革命",
@@ -3300,7 +3304,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1848-31d1eecf01.json"
     },
     {
       "id": "1848-意大利1848年革命",
@@ -3326,7 +3331,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1848-57d5778ec0.json"
     },
     {
       "id": "1839-第二次土埃戰爭",
@@ -3352,7 +3358,382 @@
         "layer": "land",
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
         "portrait": "portraits/wheellockpistol.jpg"
+      },
+      "dossierUrl": "dossiers/1839-a6e6017772.json"
+    },
+    {
+      "id": "1837-下加拿大叛亂",
+      "added": "2026-10-21T04:56:31.176Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -73.89,
+        "lat": 45.56
+      },
+      "battle": {
+        "y": 1837,
+        "m": 11,
+        "name": "下加拿大叛亂",
+        "theater": "里歇利耶河谷與蒙特利爾",
+        "brief": "一八三七年十一月起，下加拿大愛國者起事，先在聖丹尼擊敗政府軍，隨後在聖夏爾與聖厄斯達什連遭挫敗。十二月十四日聖厄斯達什之戰，英軍以砲火燒毀教堂與莊宅，陳尼爾當陣亡，愛國者武力在里歇利耶河谷崩解。一八三八年春再度起事，入秋轉為跨境入侵，十一月平定。野砲自始至終是英方決定勝負的火力。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      },
+      "dossierUrl": "dossiers/1837-a10560a32e.json"
+    },
+    {
+      "id": "1838-摩門戰爭",
+      "added": "2026-10-21T04:56:31.178Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -93.98,
+        "lat": 39.28
+      },
+      "battle": {
+        "y": 1838,
+        "m": 6,
+        "name": "摩門戰爭",
+        "theater": "密蘇里州西北部傑克遜郡",
+        "brief": "一八三八年六月，密蘇里州長頒布行政令驅逐州內摩門居民，八月六日克魯克德河、八月十日哈恩磨坊兩戰揭開槍聲，社群九月被逐出州境。卡面這支一六〇〇年的西班牙長槍，十七世紀末已被燧發步槍取代，到一八三八年只餘民兵操典中的象徵長矛，戰場上殺傷敵手的是燧發滑膛槍與獵槍。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
       }
+    },
+    {
+      "id": "1839-蜂蜜戰爭",
+      "added": "2026-10-21T04:56:31.190Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -93.46,
+        "lat": 40.58
+      },
+      "battle": {
+        "y": 1839,
+        "m": 7,
+        "name": "蜂蜜戰爭",
+        "theater": "愛荷華與密蘇里邊界",
+        "brief": "一八三九年夏，密蘇里州卡霍卡的稅吏越境到今愛荷華州收稅，被持草叉的居民趕走，傳說他們為抵稅砍了三棵蜂樹；克拉克縣警長被愛荷華方面拘留，兩州民兵在邊界上對峙，一發子彈未發。卡面輪發手槍屬民兵祖傳的那一代，真正的武器是乾草叉、犁刀與六尺長的鐵片劍。最後由聯邦最高法院定界。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      },
+      "dossierUrl": "dossiers/1839-b0847a19ee.json"
+    },
+    {
+      "id": "1841-森巴戰爭",
+      "added": "2026-10-21T04:56:31.192Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 81.47,
+        "lat": 30.68
+      },
+      "battle": {
+        "y": 1841,
+        "m": 5,
+        "name": "森巴戰爭",
+        "theater": "西藏阿里與拉達克",
+        "brief": "一八四一年五月，錫克帝國屬下森巴（多格拉）將領左拉瓦爾·辛格以朝拜為名，率七千餘人分三路入阿里；藏軍封馬攸木山口、奪回補仁宗，十二月於瑪旁雍錯南岸雪中設伏，斬左拉瓦爾。卡面雷管步槍是一八四〇年法國的後膛新槍，此戰線上並未出現，交鋒靠火繩槍、長矛與劈山砲。最後以楚舒爾條約劃界收場。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1841-dfa157c93c.json"
+    },
+    {
+      "id": "1846-美墨戰爭",
+      "added": "2026-10-21T04:56:31.194Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -99.13,
+        "lat": 23.74
+      },
+      "battle": {
+        "y": 1846,
+        "m": 4,
+        "name": "美墨戰爭",
+        "theater": "得克薩斯至墨西哥城",
+        "brief": "一八四六年四月得克薩斯與墨西哥在德薩爾特河開火，一八四八年《瓜達盧佩·伊達爾戈條約》割走加利福尼亞等土地。戰事自河畔打到墨西哥城，穿越高原與山嶺。卡面雷管步槍是美軍與墨西哥線列步兵的共同制式槍械，射程延長使遠距離接觸不可迴避，也改變了兩軍的隊形與射程爭論。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1846-791080bb2b.json"
+    },
+    {
+      "id": "1847-分離同盟戰爭",
+      "added": "2026-10-21T04:56:31.196Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 8.3,
+        "lat": 47.05
+      },
+      "battle": {
+        "y": 1847,
+        "m": 11,
+        "name": "分離同盟戰爭",
+        "theater": "瑞士中部琉森州與瓦萊州",
+        "brief": "一八四七年十一月下旬，聯邦議會的軍隊越過琉森州邊界，二十六天之內便把「分離同盟」七個天主教州壓垮，琉森城隨即陷落。卡面雷管步槍在聯邦軍的德語各州部隊中已是主力兵器，分離同盟一方的士兵多數仍用舊式燧發步槍與獵槍，火槍與火砲的數量差距先於教條分歧決定了戰局。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1847-52c0fa5e1f.json"
+    },
+    {
+      "id": "1848-匈牙利民族解放戰爭",
+      "added": "2026-10-21T04:56:31.198Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 19.6,
+        "lat": 47.8
+      },
+      "battle": {
+        "y": 1848,
+        "m": 4,
+        "name": "匈牙利民族解放戰爭",
+        "theater": "匈牙利中部佩奇州一帶",
+        "brief": "一八四八年三月起，匈牙利王國的改革議會與哈布斯堡朝廷決裂，四月維也納調來的帝國軍開進佩奇州，戰爭從佩奇打到蒂薩河、再打到特梅什堡。卡面雷管步槍在哈布斯堡帝國軍中早已是制式裝備，革命軍則靠舊式火繩槍、獵槍與走私的雷管槍拼湊，後來自製的雷管步槍成為守軍的主要火力，決定性差距仍舊出在炮兵與後勤。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1848-法國二月革命",
+      "added": "2026-10-21T04:56:31.206Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 2.35,
+        "lat": 48.86
+      },
+      "battle": {
+        "y": 1848,
+        "m": 2,
+        "name": "法國二月革命",
+        "theater": "巴黎市區與近郊兵營",
+        "brief": "一八四八年二月，巴黎國民國民衛隊與街壘武裝先後跟王朝軍隊交火，二月廿四日杜伊勒里宮被衝破，路易·菲利浦出逃，共和政府當夜在市政廳宣告成立。工人武裝三月在聖安東尼區築起街壘，四月選舉建立第二共和國，六月工業界再起而遭軍方槍決。兩邊的骨幹都是雷管步槍。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1848-8bbe10d5f0.json"
+    },
+    {
+      "id": "1848-瓦拉幾亞1848年革命",
+      "added": "2026-10-21T04:56:31.210Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 26.1,
+        "lat": 44.43
+      },
+      "battle": {
+        "y": 1848,
+        "m": 6,
+        "name": "瓦拉幾亞1848年革命",
+        "theater": "布加勒斯特城區與瓦拉幾亞南部",
+        "brief": "一八四八年六月，瓦拉幾亞青年軍官在布加勒斯特的私人宅邸中聚會，朗讀以比利時憲法為藍本的革命憲章，首都民兵隨即與親王衛隊在城內及城郊丘陵交火，逼親王退位並成立革命議會。七月南部農民起義擴散，八月之後鄂圖曼與俄羅斯聯軍南下，九月下旬聯軍入城，議會在十一月解散，代表向親王宣誓效忠。民兵手中的雷管步槍在街壘上撐了半年。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1848-d948b89bdf.json"
+    },
+    {
+      "id": "1848-第一次意大利獨立戰爭",
+      "added": "2026-10-21T04:56:31.212Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 9.19,
+        "lat": 45.46
+      },
+      "battle": {
+        "y": 1848,
+        "m": 3,
+        "name": "第一次意大利獨立戰爭",
+        "theater": "米蘭、倫巴第與威尼托戰線",
+        "brief": "一八四八年三月廿三日米蘭起義揭開「米蘭五日」，奧地利守軍退守倫巴第各要塞；四月薩丁王國出兵迎戰，五月廿九日庫爾塔托內一役大學學生志願隊被拉德茨基擊潰，八月薩爾拉斯科停戰割讓倫巴第。一八四九年法國介入、羅馬共和國覆滅，威尼斯亦在圍攻中投降，整場戰爭以奧地利收復米蘭、威尼斯與羅馬告終。交戰兩軍的骨幹槍械都是雷管步槍。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1848-1d8e1405e5.json"
+    },
+    {
+      "id": "1848-第一次石勒蘇益格戰爭",
+      "added": "2026-10-21T04:56:31.215Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 9.67,
+        "lat": 54.28
+      },
+      "battle": {
+        "y": 1848,
+        "m": 3,
+        "name": "第一次石勒蘇益格戰爭",
+        "theater": "石勒蘇益格與艾德河防線",
+        "brief": "一八四八年三月，聯邦執行軍自荷爾斯泰因南下，廿四日於倫茨堡一線與丹麥守軍相撞未果；石勒蘇益格起義軍在哈德斯萊夫奪城，七月廿五日伊斯特戰役被比隆擊敗而全軍瓦解。德國援軍與志願兵在弗里德里西亞與弗里德里希港屢攻不下，八月十四日馬爾默停戰把艾德河防線凍結，戰事拖成一八五一年。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1848-第二次英國錫克戰爭",
+      "added": "2026-10-21T04:56:31.217Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 74.11,
+        "lat": 31.62
+      },
+      "battle": {
+        "y": 1848,
+        "m": 6,
+        "name": "第二次英國錫克戰爭",
+        "theater": "旁遮普蘇特利傑河谷與拉合爾",
+        "brief": "一八四八年六月起，東印度公司要求錫克宮廷交出邊防軍隊，遭拒後開火。英軍自費羅茲普爾沿蘇特利傑河東岸推進，錫克軍退守拉合爾，奇利安瓦拉、阿里瓦爾與巴欣三戰之後，一八四九年三月二十九日以《拉合爾條約》收場。卡面雷管步槍是英軍步兵的制式槍械，底火不受冬晨濃霧影響，正是旁遮普會戰得以在霧中交火的前提。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1848-87722d2337.json"
+    },
+    {
+      "id": "1853-捻軍起義",
+      "added": "2026-10-21T04:56:31.220Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.13,
+        "lat": 34.4
+      },
+      "battle": {
+        "y": 1853,
+        "m": 8,
+        "name": "捻軍起義",
+        "theater": "豫東夏邑與皖北蘇北",
+        "brief": "一八五三年八月張樂行在河南夏邑聚眾起事，捻軍乘太平軍北伐之勢在豫東、皖北、蘇北坐大，同治四年僧格林沁在渦陽高樓寨全軍覆沒，同治七年賴文成、張宗禹相繼戰死，捻軍才被平定；兩軍槍械仍限鳥槍抬槎，線膛砲要待淮軍引進洋砲後，才在最後剿捻戰役中見到射程優勢。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1854-堪薩斯內戰",
+      "added": "2026-10-21T04:56:31.222Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -95.2,
+        "lat": 39.31
+      },
+      "battle": {
+        "y": 1854,
+        "m": 3,
+        "name": "堪薩斯內戰",
+        "theater": "堪薩斯領地東部與密蘇里邊境",
+        "brief": "一八五四年三月起，密蘇里邊境武裝與自由州移民在堪薩斯領地互相開火，投票站、渡口與托皮卡一帶的村落都成了戰場。親奴派靠騎兵與州界人脈，自由州派靠民兵連與銳利步槍自保。卡面雷管步槍代表的雷管技術，正是兩邊步槍口徑換代時最被爭議的一環。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1854-7aaa0b4fe9.json"
     }
   ]
 }
