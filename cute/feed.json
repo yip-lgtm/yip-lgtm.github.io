@@ -4763,7 +4763,8 @@
         "layer": "land",
         "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
         "portrait": "portraits/gatling.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1896-14a57ad0ff.json"
     },
     {
       "id": "1883-中法戰爭",
@@ -4789,7 +4790,8 @@
         "layer": "land",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1883-5690a2678e.json"
     },
     {
       "id": "1899-美菲戰爭",
@@ -4814,7 +4816,8 @@
         "nation": "de",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1899-f4aa51449e.json"
     },
     {
       "id": "1813-癸酉之變",
@@ -4971,6 +4974,435 @@
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
       }
+    },
+    {
+      "id": "1618-三十年戰爭",
+      "added": "2026-10-21T05:16:46.588Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 14.33,
+        "lat": 50.08
+      },
+      "battle": {
+        "y": 1618,
+        "m": 5,
+        "name": "三十年戰爭",
+        "theater": "波希米亞與易北河戰線",
+        "brief": "一六一八年五月二十三日布拉格擲窗事件掀開三十年戰爭，波希米亞王冠戰之後，萊茵、易北河與北德戰線相繼轉動。西班牙大方陣的長槍兵是全軍骨幹，火槍隊退到槍陣後方裝填再頂回前線，兩者交替掩護撐住陣腳。瑞典人改用輕炮與線形縱深破解槍陣，到一六四三年洛雷一役，這支方陣連同它的長槍正式崩解。"
+      },
+      "kit": {
+        "name": "長槍",
+        "designation": "Pike",
+        "year": 1600,
+        "nation": "es",
+        "layer": "land",
+        "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
+        "portrait": "portraits/pike.jpg"
+      },
+      "dossierUrl": "dossiers/1618-613c83c894.json"
+    },
+    {
+      "id": "1672-法荷戰爭",
+      "added": "2026-10-21T05:16:46.643Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 5.98,
+        "lat": 51.98
+      },
+      "battle": {
+        "y": 1672,
+        "m": 6,
+        "name": "法荷戰爭",
+        "theater": "荷蘭共和國西部與萊茵下游",
+        "brief": "一六七二年，法王路易十四率大軍越萊茵河攻入荷蘭共和國，六月十二日自奈美根附近渡河，七月二十七日奧德納爾德淪陷、八月十六日格羅寧根淪陷，年底烏得勒支亦失，荷蘭遂稱「災難年」。火繩槍銃此時已退出野戰序列，只餘西班牙大方陣的火繩槍手與殖民地民兵仍在使用。"
+      },
+      "kit": {
+        "name": "火繩槍銃",
+        "designation": "Arquebus",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
+        "portrait": "portraits/arquebus.jpg"
+      },
+      "dossierUrl": "dossiers/1672-f51215a73c.json"
+    },
+    {
+      "id": "1754-七年戰爭",
+      "added": "2026-10-21T05:16:46.644Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -71.21,
+        "lat": 46.81
+      },
+      "battle": {
+        "y": 1754,
+        "m": 5,
+        "name": "七年戰爭",
+        "theater": "魁北克市郊與聖勞倫斯河下游",
+        "brief": "七年戰爭自一七五四年北美的俄亥俄河谷衝突起，到一七六三年《巴黎條約》落幕，是第一場真正全球性的戰爭。英軍以燧發滑膛步槍的線性齊射在魁北克市郊的亞伯拉罕平原上擊垮法軍，奪下整個法屬北美；同一件武器也出現在印度普拉西、普魯士歐陸與加勒比海的戰場上。"
+      },
+      "kit": {
+        "name": "燧發槍",
+        "designation": "Flintlock musket",
+        "year": 1710,
+        "nation": "uk",
+        "layer": "land",
+        "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
+        "portrait": "portraits/flintlock.jpg"
+      },
+      "dossierUrl": "dossiers/1754-2b1de94ebf.json"
+    },
+    {
+      "id": "1860-第一次塔臘納基戰爭",
+      "added": "2026-10-21T05:16:46.709Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -174.06,
+        "lat": -39.06
+      },
+      "battle": {
+        "y": 1860,
+        "m": 3,
+        "name": "第一次塔臘納基戰爭",
+        "theater": "塔臘納基惠塔拉與新普利茅斯",
+        "brief": "一八六〇年三月，紐西蘭北島塔臘納基，總督布朗不顧毛利首領反對仍買下六百英畝土地，兩軍在 Te Kohia 與 Waireka 交火，一八六一年三月停火。卡面加特林機槍同年才在美國做出原型，兩年後才取得專利；塔臘納基真正壓制塹壕的仍是臼砲、火箭與恩菲尔德步槍。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1860-96d63f9b47.json"
+    },
+    {
+      "id": "1864-第一次長州征討",
+      "added": "2026-10-21T05:16:46.717Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 131.47,
+        "lat": 34.19
+      },
+      "battle": {
+        "y": 1864,
+        "m": 8,
+        "name": "第一次長州征討",
+        "theater": "山口萩城與關門海峽一線",
+        "brief": "一八六四年京都火拼之後，朝廷下勅命討伐長州，幕府自三十五藩調兵十五萬，兵分五道直指山口，卻全未接戰便以切腹斬首收場。卡面這艘一八六二年英國鐵甲艦並未參戰，它代表同年九月下關海峽一役的新世代火力：十七艘木殼軍艦拆掉長州砲台，讓幕府敢屯兵山口，也讓西鄉隆盛在十二月渡海入長府議和。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1864-bb987cd98b.json"
+    },
+    {
+      "id": "1874-紅河戰爭",
+      "added": "2026-10-21T05:16:46.725Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -101.15,
+        "lat": 36.03
+      },
+      "battle": {
+        "y": 1874,
+        "m": 6,
+        "name": "紅河戰爭",
+        "theater": "德克薩斯潘漢德與斯泰克平原",
+        "brief": "一八七四年至七五年，美軍在德克薩斯潘漢德草原向南部平原聯盟發動追擊，摧毀其營地、奪走馬匹與皮貨，最終在帕洛杜羅峽谷攻破對方最後的冬季宿營。騎兵縱隊靠快馬與車隊維持機動，加特林機槍則只在營地夜襲與據點防守時發揮火力，追不上連日奔襲的行程。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1874-f9a3da2dbf.json"
+    },
+    {
+      "id": "1875-太魯閣之役",
+      "added": "2026-10-21T05:16:46.725Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 121.4,
+        "lat": 24.05
+      },
+      "battle": {
+        "y": 1875,
+        "m": 1,
+        "name": "太魯閣之役",
+        "theater": "花蓮新城與三棧溪流域",
+        "brief": "一八七五年初，福建陸路提督羅大春以代理兵備道身分沿後山北路開闢蘇花古道，屯兵花蓮新城，與太魯閣族在碉堡線上反覆交鋒。清軍以線膛前裝野戰砲的射程壓制峽谷狙擊，番眾退入山嶺，戰事延續至光緒二年，最後以設城與招撫收束。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1875-670ee59dce.json"
+    },
+    {
+      "id": "1876-秋月之亂",
+      "added": "2026-10-21T05:16:46.728Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.69,
+        "lat": 33.47
+      },
+      "battle": {
+        "y": 1876,
+        "m": 10,
+        "name": "秋月之亂",
+        "theater": "福岡縣秋月至豐津一帶",
+        "brief": "一八七六年十月二十七日，舊秋月藩士宮崎車之助、今村百八郎等約四百人舉兵，響應三日前熊本的神風連之亂，在明元寺殺害縣警官穗波半太郎；二十九日北進豐津，遭小倉駐屯的熊本鎮台步兵第十四連隊擊潰，戰死十七人，隊伍旋即瓦解。同週的熊本，線膛砲所在的砲兵營正是被叛軍一度奪取的目標。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1878-第二次英阿戰爭",
+      "added": "2026-10-21T05:16:46.729Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 65.71,
+        "lat": 31.63
+      },
+      "battle": {
+        "y": 1878,
+        "m": 2,
+        "name": "第二次英阿戰爭",
+        "theater": "喀布爾—坎大哈山道",
+        "brief": "一八七八年英軍三路入侵阿富汗，攻入喀布爾、逼簽甘達馬克條約；一八七九至八〇年再戰，羅伯茨自喀布爾急行軍三百英里，於坎大哈擊敗穆罕默德汗。整場戰爭在內陸展開，卡面這艘一八六二年式鐵甲艦未曾現身，卻是英國造船工業與航運的後盾；地面火力改由九點四五吋前裝線膛重砲與海軍旅的七磅砲承擔。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      }
+    },
+    {
+      "id": "1879-硝石戰爭",
+      "added": "2026-10-21T05:16:46.731Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -70.4,
+        "lat": -23.65
+      },
+      "battle": {
+        "y": 1879,
+        "m": 2,
+        "name": "硝石戰爭",
+        "theater": "阿塔卡馬沙漠至秘魯中部海岸",
+        "brief": "一八七九年智利以稅務爭端出兵安托法加斯塔，三月對玻利維亞、四月對秘魯宣戰，戰線由阿塔卡馬沙漠推到利馬外圍。美國一八六〇年定型的加特林機槍在兩邊都上陣：智利在塔克納配兩挺，盟軍有六挺，秘魯裝甲艦主桅頂也架一挺。塔克納一役智利繳獲五挺加特林；決定戰局的仍是制海權與補給線。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1879-22eb2b520e.json"
+    },
+    {
+      "id": "1881-馬赫迪戰爭",
+      "added": "2026-10-21T05:16:46.731Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 32.53,
+        "lat": 15.5
+      },
+      "battle": {
+        "y": 1881,
+        "m": 9,
+        "name": "馬赫迪戰爭",
+        "theater": "蘇丹喀土穆與尼羅河東岸",
+        "brief": "一八八一年馬赫迪在蘇丹宣布起事，英埃聯軍在十八年裡三次進攻喀土穆。一八八五年救援遠征隊把六管加特林機槍帶到埃爾泰布與塔邁，用連發火力掩護第二十團的刺刀衝鋒，最終仍沒能救出被圍的戈登。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1881-71c753a8bc.json"
+    },
+    {
+      "id": "1885-第三次英緬戰爭",
+      "added": "2026-10-21T05:16:46.733Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 96.08,
+        "lat": 21.98
+      },
+      "battle": {
+        "y": 1885,
+        "m": 5,
+        "name": "第三次英緬戰爭",
+        "theater": "伊洛瓦底江中上游與曼德勒",
+        "brief": "一八八五年五月紐昂揚事件後，英軍八月向王廷提出進駐曼德勒的最後通牒，十一月沿伊洛瓦底江直取王都，二十三日於錫唐河敗退，二十九日曼德勒淪陷，一八八六年五月國王被俘，上緬甸遂被兼併。英軍野戰砲兵已全面改用後膛裝填鋼砲，前裝野砲僅餘備役，緬軍銅砲仍在城防寺塔上作戰。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1885-2ba39585e5.json"
+    },
+    {
+      "id": "1894-第二次馬達加斯加戰爭",
+      "added": "2026-10-21T05:16:46.734Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 47.51,
+        "lat": -18.88
+      },
+      "battle": {
+        "y": 1894,
+        "m": 12,
+        "name": "第二次馬達加斯加戰爭",
+        "theater": "安塔那那利佛與貝齊博卡河谷",
+        "brief": "一八九四年十二月法軍分艦隊攻佔東岸要港圖阿馬西納，第二次法馬戰爭正式開打；一八九五年遠征軍自西岸馬哈贊加沿貝齊博卡河深入高原，法軍的雷管後膛步槍射程遠勝梅里納的舊式火槍隊，首都安塔那那利佛於九月底陷落，王室當場簽下保護國條約。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1894-第四次阿散蒂戰爭",
+      "added": "2026-10-21T05:16:46.735Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -1.62,
+        "lat": 6.69
+      },
+      "battle": {
+        "y": 1894,
+        "m": 1,
+        "name": "第四次阿散蒂戰爭",
+        "theater": "黃金海岸至庫馬西走廊",
+        "brief": "一八九四年一月，英軍遠征軍沿新鋪嘅公路直逼阿散蒂王都庫馬西，破城而入並將全城縱火焚燒，四月追入北方擒獲阿散蒂王科菲・卡里卡里，黃金凳亦落入英方手中。呢場仗全喺內陸打，鐵甲艦冇到過西非；但英方退到射程之外用砲火壓制、唔碰城牆嘅做法，正正就係鐵甲艦年代落低嚟嘅戰爭邏輯。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1894-5733b58b14.json"
+    },
+    {
+      "id": "1896-英桑戰爭",
+      "added": "2026-10-21T05:16:46.735Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 39.2,
+        "lat": -6.16
+      },
+      "battle": {
+        "y": 1896,
+        "m": 8,
+        "name": "英桑戰爭",
+        "theater": "桑給巴爾城海濱王宮",
+        "brief": "一八九六年八月二十七日，桑給巴爾蘇丹拒絕英國最後通牒，英軍以巡洋艦與砲艇自海上炮擊桑給巴爾城海濱王宮，四十分鐘即告結束。卡面鐵甲艦生於一八六二年——那年它首次實戰，並在漢普頓路德灣互撼；到一八九六年，鐵甲艦已退出英國海軍名冊，擔任火力的是它的鋼骨後代。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1896-34a113827a.json"
+    },
+    {
+      "id": "1899-第二次波耳戰爭",
+      "added": "2026-10-21T05:16:46.736Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 28.22,
+        "lat": -25.74
+      },
+      "battle": {
+        "y": 1899,
+        "m": 10,
+        "name": "第二次波耳戰爭",
+        "theater": "南非德蘭士瓦與奧蘭治自由邦",
+        "brief": "一八九九年十月起，英國聯同殖民地部隊同南非德蘭士瓦及奧蘭治自由邦兩個波耳共和國交戰，戰線涵蓋納塔爾與德蘭士瓦高原，歷時近三年，以維勒尼京和約收場。加特林機槍喺呢場戰爭只剩少量隨英軍工程兵與裝甲列車服役，以六管人力轉動提供固定據點嘅近距離火力，主導權已經交畀水冷式皮帶餵彈重機槍。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1899-b5f35a9538.json"
     }
   ]
 }
