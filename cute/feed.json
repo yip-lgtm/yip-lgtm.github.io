@@ -34130,6 +34130,32 @@
         "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/gongnu.jpg"
       }
+    },
+    {
+      "id": "764-邠州之戰",
+      "added": "2026-10-21T10:35:20.219Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.14,
+        "lat": 35.19
+      },
+      "battle": {
+        "y": 764,
+        "m": 1,
+        "name": "邠州之戰",
+        "theater": "關中",
+        "brief": "本列表所列的邠州之戰，是唐朝與吐蕃在邠州交鋒的邊境戰事；吐蕃軍進逼關中，唐軍依城固守並反擊，迫使來犯之軍退回。從裝備紀年看，亞述長矛（Assyrian spear）於西元前九百年已列裝，屬陸軍步兵使用的長柄刺擊兵器，其服役年代明顯早於本戰。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      }
     }
   ]
 }
