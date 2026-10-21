@@ -1995,7 +1995,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1821-0515c5f4af.json"
     },
     {
       "id": "1803-第三次反法同盟",
@@ -2152,7 +2153,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1807-f0b447f14c.json"
     },
     {
       "id": "1840-第一次鴉片戰爭",
@@ -2391,7 +2393,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1807-f393c2731c.json"
     },
     {
       "id": "1807-英土戰爭(1807年-1812年)",
@@ -2417,7 +2420,8 @@
         "layer": "land",
         "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
         "portrait": "portraits/pike.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1807-a18072d748.json"
     },
     {
       "id": "1808-丹瑞戰爭",
@@ -2463,7 +2467,8 @@
         "layer": "land",
         "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
         "portrait": "portraits/arquebus.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1808-a36f3f9175.json"
     },
     {
       "id": "1809-玻利維亞獨立戰爭",
@@ -2489,7 +2494,8 @@
         "layer": "land",
         "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
         "portrait": "portraits/fieldgun.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1809-981a693138.json"
     },
     {
       "id": "1809-秘魯獨立戰爭",
@@ -31478,7 +31484,8 @@
         "layer": "land",
         "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
         "portrait": "portraits/scutum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/610-78c77e963e.json"
     },
     {
       "id": "614-楊公卿起義",
@@ -31504,7 +31511,8 @@
         "layer": "land",
         "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
         "portrait": "portraits/dory.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/614-cc2e6caa18.json"
     },
     {
       "id": "615-張起緒起義",
@@ -31530,7 +31538,8 @@
         "layer": "land",
         "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
         "portrait": "portraits/scutum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/615-b15af86647.json"
     },
     {
       "id": "615-楊仲緒起義",
@@ -31637,7 +31646,8 @@
         "layer": "land",
         "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
         "portrait": "portraits/hoplite.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/616-a7b885a3b1.json"
     },
     {
       "id": "617-張善安起義",
@@ -31798,7 +31808,8 @@
         "layer": "land",
         "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
         "portrait": "portraits/legionary.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/618-10c6369a9f.json"
     },
     {
       "id": "618-竇建德攻幽州之戰",
@@ -31826,6 +31837,249 @@
         "portrait": "portraits/hoplite.jpg"
       },
       "dossierUrl": "dossiers/618-99e74a1faf.json"
+    },
+    {
+      "id": "433-漢中之戰",
+      "added": "2026-10-21T10:00:51.769Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 107.03,
+        "lat": 33.07
+      },
+      "battle": {
+        "y": 433,
+        "m": 7,
+        "name": "漢中之戰",
+        "theater": "秦嶺漢中與隴西南仇池",
+        "brief": "元嘉十年（433年）夏秋，北魏太武帝拓跋燾在掃平柔然、迫降北燕之後轉兵西南：先取仇池、逼降漢中守軍，再迫赫連夏主赫連定出長安。定走隴西，為吐谷渾所擒送平城，大夏遂亡。卡面的希臘重步兵並未上陣，它代表盾牌相接、互相遮蔽的方陣原理，而秦嶺谷道恰使方陣所需的正面寬度無從施展。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/433-0d89942ed2.json"
+    },
+    {
+      "id": "580-始州之戰",
+      "added": "2026-10-21T10:00:51.830Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 105.98,
+        "lat": 31.56
+      },
+      "battle": {
+        "y": 580,
+        "m": 9,
+        "name": "始州之戰",
+        "theater": "閬中始州·嘉陵江上游",
+        "brief": "北周大象二年，益州人李嚴聚眾為亂、據成都，叛軍蔓延梁益二州。宣帝宇文邕以隨國公楊堅為行軍總管入蜀，兵鋒直指嘉陵江上游的州治始州，即今四川閬中。城頭弩砲壓住城下攻城者，援軍到位後反客為主，叛軍主力潰散，李嚴西走，蜀地重歸朝廷，亦為隋文帝代周建隋積下的一步。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/580-57ac4f439e.json"
+    },
+    {
+      "id": "611-劉霸道起義",
+      "added": "2026-10-21T10:00:51.881Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 117.7,
+        "lat": 37.1
+      },
+      "battle": {
+        "y": 611,
+        "m": 5,
+        "name": "劉霸道起義",
+        "theater": "山東濟北郡鄒平長白山",
+        "brief": "隋大業七年（611年），齊州鄒平人劉霸道殺牛起事，旬日聚眾數千，敗於王薄後退保長白山，眾至數萬反隸其下；後攻鄒、范二縣，大破泰山郡守陳馳官軍。九年會竇建德於樂安郡，遂附夏軍受封宋公。卡面秦弩屬戰國形制，與本役相隔八百餘年，不會現於山東；義軍以鄉民刀矛弓弩應戰，隋軍以郡兵結陣圍剿。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/611-ada889db47.json"
+    },
+    {
+      "id": "613-孟海公起義",
+      "added": "2026-10-21T10:00:51.888Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.79,
+        "lat": 35.99
+      },
+      "battle": {
+        "y": 613,
+        "m": 10,
+        "name": "孟海公起義",
+        "theater": "山東濟北郡陽谷一帶",
+        "brief": "大業九年（613），隋煬帝第二次征高句麗、括戶加派之際，濟北郡人孟海公聚眾起兵，自號「黑社帥」，眾至數萬，轉掠齊州、濟北縣邑，與竇建德、張金稱等河北起義遙相呼應，終為郡兵與追討騎兵所破。卡面羅馬方陣盾非此役器物；對應的是隋軍長槊結陣之盾與起義軍自備的柴刀竹槊。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/613-dabc6422bc.json"
+    },
+    {
+      "id": "613-李德逸起義",
+      "added": "2026-10-21T10:00:51.892Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 116.75,
+        "lat": 37.36
+      },
+      "battle": {
+        "y": 613,
+        "m": 1,
+        "name": "李德逸起義",
+        "theater": "山東平原郡安德縣一帶",
+        "brief": "大業九年（613）正月，平原郡安德縣人李德逸聚眾數萬，沿用劉霸道「阿舅」名號起事，劫掠山東郡縣，郡兵不能制；隋廷正傾師東征高句麗，山東丁役最重。卡面的秦弩屬戰國末至漢初工藝，與本役相隔八百餘年，不在現場；隋軍與起義方真正上手的仍是蹶張弩、步弩與守城床弩，正合弩機存力、以守代攻的老路數。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/613-db0c08c42d.json"
+    },
+    {
+      "id": "613-白瑜娑起義",
+      "added": "2026-10-21T10:00:51.895Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.23,
+        "lat": 37.93
+      },
+      "battle": {
+        "y": 613,
+        "m": 1,
+        "name": "白瑜娑起義",
+        "theater": "寧夏靈武郡",
+        "brief": "大業九年（613）正月，隋煬帝下詔徵天下兵集涿郡、募民為驍果之際，靈武賊帥白瑜娑劫掠牧馬，北連突厥，隴右多被其患，朝廷稱之「奴賊」。卡面斯巴達長矛屬公元前八世紀希臘工藝，與本役相隔逾千年，不在此役現場；隋軍步卒用鐵矛長槊與環首刀，叛眾以遊騎劫掠為主。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/613-4ca721ba1c.json"
+    },
+    {
+      "id": "613-隋平楊玄感之戰",
+      "added": "2026-10-21T10:00:51.899Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.55,
+        "lat": 35.67
+      },
+      "battle": {
+        "y": 613,
+        "m": 3,
+        "name": "隋平楊玄感之戰",
+        "theater": "河南黎陽至洛陽",
+        "brief": "大業九年三月，隋煬帝百萬大軍東征高句麗，畿輔空虛，天下饑荒。楊玄感於黎陽舉兵，眾至數萬，沿官道西進猛攻洛陽不下；隋將宇文述率精騎五千自涿郡南下，追至谷城破之，玄感與諸弟盡歿。卡面羅馬方陣盾雖非隋制，「盾緣相咬成面」的原理可對照隋軍步盾結陣與起義軍有盾無攻城器的窘境。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/613-e4a79f432e.json"
+    },
+    {
+      "id": "615-龍門之戰",
+      "added": "2026-10-21T10:00:51.915Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 110.98,
+        "lat": 35.63
+      },
+      "battle": {
+        "y": 615,
+        "m": 4,
+        "name": "龍門之戰",
+        "theater": "晉南絳州龍門禹門渡",
+        "brief": "大業十一年（615）四月，詔以衛尉少卿李淵為山西、河東撫慰大使，承製黶陟選補郡縣文武官，發河東兵討捕群盜。李淵行至龍門，擊賤帥母端兒破之，龍門至絳州一線重歸官軍。卡面的斯巴達長矛屬希臘重裝步兵方陣，與此役相隔一千四百餘年；隋軍近身用長矛、馬槊與環首刀，以弓弩掩護騎兵。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/615-4918f100e4.json"
+    },
+    {
+      "id": "617-突厥攻擾晉陽之戰",
+      "added": "2026-10-21T10:00:51.934Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.55,
+        "lat": 37.87
+      },
+      "battle": {
+        "y": 617,
+        "m": 12,
+        "name": "突厥攻擾晉陽之戰",
+        "theater": "晉陽（太原）與汾水北岸",
+        "brief": "大業十三年（617）冬，劉武周與劉文靜謀反，遣使結東突厥，引精騎與郡兵進攻晉陽。突厥騎兵擾掠城郊而不能拔城，隋太原留守李淵遣騎出擊，相持數日，突厥引去，晉陽得全。卡面希臘重步兵出自公元前五世紀的方陣戰法，借它標示重步兵以裝備換集體生存的傳統，與突厥輕騎的機動作戰成對照。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/617-77a36e6ea4.json"
     }
   ]
 }
