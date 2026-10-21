@@ -14091,7 +14091,8 @@
         "year": -3200,
         "nation": "it",
         "layer": "land",
-        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。"
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
       },
       "dossierUrl": "dossiers/-1444-70b02a042a.json"
     },
@@ -14497,7 +14498,8 @@
         "layer": "land",
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1236-5ab9870995.json"
     },
     {
       "id": "1240-乞瓦之戰",
@@ -14514,6 +14516,432 @@
         "name": "乞瓦之戰",
         "theater": "基輔城與第聶伯河右岸",
         "brief": "1240年12月6日，拔都的蒙古軍渡第聶伯河合圍基輔，白宦者愛德海督率攻城器械猛攻木柵土牆。城破後蒙古軍以油膏灌城縱火，連燒三日。這種以石油為膏的燃燒劑用法與拜占庭的希臘火同屬一門，卻頭一次大規模用於陸上攻城。基輔就此陷落，羅斯政治重心移向弗拉基米爾。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1240-8ee7cfe58a.json"
+    },
+    {
+      "id": "-149-第三次布匿戰爭",
+      "added": "2026-10-21T07:06:11.875Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 10.32,
+        "lat": 36.85
+      },
+      "battle": {
+        "y": -149,
+        "m": 6,
+        "name": "第三次布匿戰爭",
+        "theater": "迦太基城與近海",
+        "brief": "公元前149年，羅馬以迦太基違約攻擊努米底亞為由，渡海包圍北非迦太基城；前146年破城而入，巷戰數日，城市焚燒、居民販為奴隸。卡面的秦弩屬先秦中國兵器，地中海世界並無此制式：守城一方靠弓與石弩、配重投射器壓制攻城者，羅馬則以土壘進逼，兩者在守牆投射器上功能相對。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      }
+    },
+    {
+      "id": "-206-楚漢戰爭",
+      "added": "2026-10-21T07:06:11.889Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 108.71,
+        "lat": 34.33
+      },
+      "battle": {
+        "y": -206,
+        "m": 10,
+        "name": "楚漢戰爭",
+        "theater": "關中、中原與楚地戰線",
+        "brief": "前206年劉邦先入關中，秦王子嬰降；項羽分封諸侯、楚漢反目，前205年漢軍出漢中定三秦，經井陘、潍水諸戰，至前202年垓下合圍楚軍，項羽自刎烏江。卡面斯巴達長矛屬希臘方陣兵器，與此役相隔約六百年，未曾出現；當時近身用鐵矛戈戟與環首刀劍，遠戰倚賴弓弩，另有車兵與騎兵。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/-206-74a781146c.json"
+    },
+    {
+      "id": "-2400-第二次烏瑪獨立戰爭",
+      "added": "2026-10-21T07:06:11.907Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 45.7,
+        "lat": 31.15
+      },
+      "battle": {
+        "y": -2400,
+        "m": 4,
+        "name": "第二次烏瑪獨立戰爭",
+        "theater": "蘇美爾南部拉格什與烏瑪",
+        "brief": "約公元前2400年，蘇美爾的烏瑪城邦在第一次抗爭失敗後再度挑釁：其君伊爾改動拉格什的界渠、拔除界碑，恩特梅納遂聯合烏魯克出兵將其打敗，並以重新劃界與盟誓收場，是已知最早的城邦邊界戰爭之一。卡面是早王朝時期的埃及長矛，即與此役同時的近東通行銅矛形制。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/-2400-eac1cc9007.json"
+    },
+    {
+      "id": "-2600-斯尼夫魯的行動",
+      "added": "2026-10-21T07:06:11.909Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 33.6,
+        "lat": 28.9
+      },
+      "battle": {
+        "y": -2600,
+        "m": 7,
+        "name": "斯尼夫魯的行動",
+        "theater": "努比亞與西奈半島瓦迪馬哈拉",
+        "brief": "第三王朝法老斯尼夫魯在位第十三年，率王身近衛與各州徵召兵沿尼羅河北上，討伐第一瀑布以南的努比亞部族，同時在東沙漠與西奈半島瓦迪馬哈拉開採銅礦、追擊西部沙漠的提耶呼奴游群。瓦迪馬哈拉的第十三年銘刻與薩卡拉王太子陵的編年殘片，是埃及最早有確切年號可考的遠征記錄；卡面這柄埃及長矛，正是這批隊伍手中的標準步兵兵器。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/-2600-5d27690911.json"
+    },
+    {
+      "id": "-431-伯羅奔尼撒戰爭",
+      "added": "2026-10-21T07:06:11.919Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 23.73,
+        "lat": 37.98
+      },
+      "battle": {
+        "y": -431,
+        "m": 4,
+        "name": "伯羅奔尼撒戰爭",
+        "theater": "雅典城邦與伯羅奔尼撒半島",
+        "brief": "公元前431年雅典聯盟與斯巴達聯盟開戰，歷二十七年，公元前404年雅典投降。陸戰靠重步兵方陣，海戰靠三列槍戰船；卡面這支兩米長、槍尾帶銅套的斯巴達長矛正是方陣核心，公元前425年斯巴達重步兵在斯法克特里亞島灘頭覆滅，公元前405年伊奧斯波塔米海戰後雅典被圍至斷糧。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      }
+    },
+    {
+      "id": "-480-波斯第二次入侵希臘",
+      "added": "2026-10-21T07:06:11.921Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 22.96,
+        "lat": 38.79
+      },
+      "battle": {
+        "y": -480,
+        "m": 4,
+        "name": "波斯第二次入侵希臘",
+        "theater": "塞薩利、溫泉關與阿提卡",
+        "brief": "480 年薛西斯一世率波斯大軍渡海峽西征，溫泉關與阿提米西姆之後，海軍敗於薩拉米斯，陸軍翌年崩於普拉提亞。卡面亞述長弓屬已亡亞述的角木筋複合弓，前 612 年經米底傳入波斯，成為波斯遠射主力，也正是全軍推進的節奏所在。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      },
+      "dossierUrl": "dossiers/-480-bc8d6e06b2.json"
+    },
+    {
+      "id": "-480-第一次西西里戰爭",
+      "added": "2026-10-21T07:06:11.924Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.23,
+        "lat": 38.08
+      },
+      "battle": {
+        "y": -480,
+        "m": 7,
+        "name": "第一次西西里戰爭",
+        "theater": "西西里島北岸希梅拉",
+        "brief": "公元前480年夏，迦太基將軍哈米爾卡率遠征軍在西西里島北岸希梅拉上岸；敘拉古的革隆與阿克拉加斯的提隆聯軍在城北平原迎敵。迦太基海軍先在港外覆滅，陸戰中哈米爾卡大敗，僅以數艘船隻逃回。卡面月牙劍在埃及退出戰役數百年，西西里重步兵握的仍是直身短劍、矛與大盾。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      }
+    },
+    {
+      "id": "1236-蒙古第二次西征",
+      "added": "2026-10-21T07:06:12.000Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 20.45,
+        "lat": 46.15
+      },
+      "battle": {
+        "y": 1236,
+        "m": 8,
+        "name": "蒙古第二次西征",
+        "theater": "匈牙利大平原與紹約河畔",
+        "brief": "1237年12月梁贖陷落，1238年錫季河戰役殺大公尤里二世，1240年12月基輔陷落，1241年4月萊格尼察與穆希兩役重創波蘭、匈牙利聯軍，蒙古軍冬渡多瑙河攻布達，追貝拉四世至亞得里亞海，1242年3月全軍回撤。卡面拜占庭希臘火並未隨軍西來，戰場上燃燒的是南宋火矢與投石機火彈。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      }
+    },
+    {
+      "id": "1243-余玠防蜀之戰",
+      "added": "2026-10-21T07:06:12.005Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.31,
+        "lat": 29.98
+      },
+      "battle": {
+        "y": 1243,
+        "m": 3,
+        "name": "余玠防蜀之戰",
+        "theater": "重慶山城與合州釣魚城",
+        "brief": "嘉熙六年（1242）末，宋廷命余玠兼四川宣撫使出鎮四川，1243年春入蜀，駐重慶以拒蒙古。成都、嘉定先後淪陷，蜀中諸軍各自為政，余玠改採依山築城、儲糧屯田的守禦方針，遣孟珙建議在嘉陵江與涪江匯流處築釣魚城。蒙古攻城用砲石、雲梯，宋方不與爭攻城之器，以山城弓弩與地勢固守。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1243-e91632a1fc.json"
+    },
+    {
+      "id": "1253-蒙哥攻宋之戰",
+      "added": "2026-10-21T07:06:12.007Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 102.24,
+        "lat": 26.66
+      },
+      "battle": {
+        "y": 1253,
+        "m": 10,
+        "name": "蒙哥攻宋之戰",
+        "theater": "川南會州與金沙江前線",
+        "brief": "蒙哥攻宋之戰起於1253年。忽必烈自忒剌分三路南下，以革囊木筏渡金沙江，十二月入大理；東路抄合、也只烈經茂州抵會州，攻拔川南要點，與雲南迂迴策應。蒙古攻城以配重投石車作長距火力，配楯車雲梯逼近宋軍山城。戰役延至1259年，蒙哥汗卒於釣魚城。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1253-9b567c5b9b.json"
+    },
+    {
+      "id": "1256-旭烈兀西征",
+      "added": "2026-10-21T07:06:12.009Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 48.88,
+        "lat": 36.44
+      },
+      "battle": {
+        "y": 1256,
+        "m": 11,
+        "name": "旭烈兀西征",
+        "theater": "伊朗高原阿拉穆特山谷",
+        "brief": "1256年11月，旭烈兀分兵翻越阿拉穆特山脈合圍梅蒙迪茲，投石機連日砲擊後逼降伊瑪目魯克努丁·庫爾沙，魯斯巴河谷四十餘堡奉令開城，阿拉穆特守將穆巴里茲亦依令出降，尼札里伊斯瑪儀派就此淪亡。攻城序列中弩手與投石機並用，弩在城頭之爭居功至要，野戰則仍以蒙古弓為主力。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1256-123bf203de.json"
+    },
+    {
+      "id": "1257-蒙古攻安南之戰",
+      "added": "2026-10-21T07:06:12.011Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 105.85,
+        "lat": 21.03
+      },
+      "battle": {
+        "y": 1257,
+        "m": 12,
+        "name": "蒙古攻安南之戰",
+        "theater": "昇龍都與平厲原、洮江沿岸",
+        "brief": "元憲宗七年（1257）冬，都元帥兀良哈台自雲南率兵三萬南下，十二月十二日陷平厲原，陳軍步象騎混陣不敵，國都昇龍失守；元軍破城而居九日，因暑熱缺糧撤軍，十二月二十四日陳太宗乘樓船於東步頭反擊，弩箭自舟船齊發，迫其退歸化寨。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
+    },
+    {
+      "id": "1274-嘉定之戰",
+      "added": "2026-10-21T07:06:12.015Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 103.77,
+        "lat": 29.55
+      },
+      "battle": {
+        "y": 1274,
+        "m": 12,
+        "name": "嘉定之戰",
+        "theater": "川南嘉定府岷江流域",
+        "brief": "1274年冬，元軍西蜀都元帥也速帶兒領水陸大軍順岷江而下，配重投石車等攻城砲具隨軍待命，渡江築浮橋、築寨合圍嘉定府城；宋安撫使昝萬壽據三龜、九頂山死守，1275年六月初一以四城降元。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1274-7e4ed75398.json"
+    },
+    {
+      "id": "1275-丁家洲之戰",
+      "added": "2026-10-21T07:06:12.017Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.83,
+        "lat": 31.03
+      },
+      "battle": {
+        "y": 1275,
+        "m": 3,
+        "name": "丁家洲之戰",
+        "theater": "安徽銅陵池州段長江丁家洲",
+        "brief": "咸淳元年（1275）三月，元丞相伯顏自池州順流而進，突擊駐紮銅陵丁家洲的南宋大軍。元軍造載薪柴的大筏佯作火攻，以兩岸巨砲、床弩配合騎兵與戰船同時發動，擊潰賈似道所部十三萬精兵，長江下游自此失守；配重投石車一類遠程拋射機，正是這套岸射火力的技術同源。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1275-048641b17f.json"
+    },
+    {
+      "id": "1275-常州之戰",
+      "added": "2026-10-21T07:06:12.021Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.97,
+        "lat": 31.78
+      },
+      "battle": {
+        "y": 1275,
+        "m": 10,
+        "name": "常州之戰",
+        "theater": "常州城與江南運河下游",
+        "brief": "至元十二年（1275）十月，伯顏統元軍抵鎮江，隨即進攻扼住江南運河水道的常州城；宋軍據城死守，屢挫元軍攻城器械，至十一月城破，守軍全滅。城頭密集佈防的弩手是宋軍唯一能越過女牆壓制進攻者的手段，機械張弦換來射程與穿透，代價則是裝填遲緩，無力封住被轟塌的缺口。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      }
+    },
+    {
+      "id": "1276-靜江之戰",
+      "added": "2026-10-21T07:06:12.024Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 110.29,
+        "lat": 25.27
+      },
+      "battle": {
+        "y": 1276,
+        "m": 11,
+        "name": "靜江之戰",
+        "theater": "廣西靜江府桂林城",
+        "brief": "至元十三年(1276)十一月,元軍自湖廣南下兵臨靜江(今廣西桂林),攻城月餘而城破,守將馬雄力戰被執不屈而死,廣西全境遂平。卡面希臘火本身並未到過這條戰線,但同族技術——猛火油製成的油膏瓶與火藥火砲——正是宋軍城頭與元軍攻城都倚重的燃燒裝備。"
       },
       "kit": {
         "name": "希臘火",
