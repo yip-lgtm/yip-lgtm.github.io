@@ -27967,7 +27967,8 @@
         "layer": "land",
         "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
         "portrait": "portraits/scutum.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/650-6977f0c380.json"
     },
     {
       "id": "677-對努恩·烏卓爾·查克的戰爭",
@@ -28047,7 +28048,8 @@
         "layer": "land",
         "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
         "portrait": "portraits/assyrianbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/739-931f17d71b.json"
     },
     {
       "id": "746-阿巴斯革命",
@@ -28073,7 +28075,8 @@
         "layer": "land",
         "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
         "portrait": "portraits/scorpio.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/746-a27f16d315.json"
     },
     {
       "id": "801-維州之戰",
@@ -28180,7 +28183,8 @@
         "layer": "land",
         "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
         "portrait": "portraits/dory.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/975-717e7c7e31.json"
     },
     {
       "id": "980-瓦橋關之戰",
@@ -28235,6 +28239,382 @@
         "portrait": "portraits/xiaochongnu.jpg"
       },
       "dossierUrl": "dossiers/986-aea723f46c.json"
+    },
+    {
+      "id": "660-唐滅百濟之戰",
+      "added": "2026-10-21T09:04:53.864Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 126.6,
+        "lat": 36.9
+      },
+      "battle": {
+        "y": 660,
+        "m": 3,
+        "name": "唐滅百濟之戰",
+        "theater": "漢江下游熊津",
+        "brief": "唐高宗顯慶五年，唐軍以契苾何力、楊武通率步騎自北方南下，劉仁願率戰艦自萊州浮海東下，海陸兩路夾擊百濟王城熊津。弩是這場戰役的核心：攻城一方的弩陣把百濟守軍壓在牆頭，守城的弩手則居高射覆江面，663 年白江江一役唐新羅聯軍更以發火弩燒擊倭國舟隊，百濟國祚就此終結。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/660-5d88932668.json"
+    },
+    {
+      "id": "673-穆斯林征服河中地區",
+      "added": "2026-10-21T09:04:53.869Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 66.97,
+        "lat": 39.65
+      },
+      "battle": {
+        "y": 673,
+        "m": 9,
+        "name": "穆斯林征服河中地區",
+        "theater": "河中：阿姆河與錫爾河之間",
+        "brief": "673年秋，烏拜德·阿倫·齊亞德接任呼羅珊總督，翌春渡阿姆河攻布哈拉，迫其繳百萬銀迪拉姆；此役拉成數十年征戰，終以751年怛羅斯之役收尾。卡面羅馬短劍標示短刺兵刃的老底子：東羅馬的近身裝備經敘利亞線流入新軍，盾緣與刺突節奏仍留在攻城與巷戰的骨子裡。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/673-200f01111a.json"
+    },
+    {
+      "id": "715-法蘭克內戰",
+      "added": "2026-10-21T09:04:53.881Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 2.3,
+        "lat": 49.89
+      },
+      "battle": {
+        "y": 715,
+        "m": 5,
+        "name": "法蘭克內戰",
+        "theater": "紐斯特里亞盆地與亞眠戰場",
+        "brief": "七一五年墨洛溫內戰：丕平二世死後，阿達爾特魯德攝政，幼王提奧德里克四世與奧斯特拉西亞宮相查理·馬泰爾爭權；紐斯特里亞貴族拉加納爾德起兵，勾連薩克森與弗里西人，戰火延至亞眠。卡面的羅馬弩砲是扭力式攻城機具，715年已失傳七百年，編年史未記攻城弩砲；定局靠營壘封鎖、河川阻斷與亞眠之戰。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/715-94fa2397d7.json"
+    },
+    {
+      "id": "720-隼人叛亂",
+      "added": "2026-10-21T09:04:53.886Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.52,
+        "lat": 33.52
+      },
+      "battle": {
+        "y": 720,
+        "m": 7,
+        "name": "隼人叛亂",
+        "theater": "筑前國太宰府與南九州",
+        "brief": "720年末至721年，隼人首領間人勇率眾夜襲筑前國太宰府，殺傷官人、掠走兵器，律令朝廷集兵討平。卡面的秦連弩是漢代可連踏而發的中國弩，與本役相隔九百年，並未出現在戰場上：守軍用的是單發唐式和弩與角弓；連弩在此象徵守方本該以壓制火力固守城池，卻被奇襲打亂的防務邏輯。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
+    },
+    {
+      "id": "764-藤原仲麻呂之亂",
+      "added": "2026-10-21T09:04:53.905Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 135.79,
+        "lat": 34.88
+      },
+      "battle": {
+        "y": 764,
+        "m": 9,
+        "name": "藤原仲麻呂之亂",
+        "theater": "藤原京（山城國）",
+        "brief": "天平神護八年九月，藤原仲麻呂舉兵佔領平城京，孝謙天皇出奔伊勢神宮；朝廷自七道徵發十四萬餘兵，於九月二十八日夜襲藤原京，叛軍潰散，首腦縛赴木津川沈氾。卡面羅馬重步兵並未參戰——相距七百餘年；但八世紀日本以弓為主的兵陣同樣靠步卒頂住前線，軍制則是徵兵而非常備軍團。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/764-495c8a93d7.json"
+    },
+    {
+      "id": "793-蓋斯-亞馬尼戰爭",
+      "added": "2026-10-21T09:04:53.911Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 61,
+        "lat": 36.5
+      },
+      "battle": {
+        "y": 793,
+        "m": 6,
+        "name": "蓋斯-亞馬尼戰爭",
+        "theater": "呼羅珊總督區（波斯東北部）",
+        "brief": "793年，哈里發哈倫·拉希德任命哈希姆系的阿布·達伍德·哈立德·本·易卜拉欣出任呼羅珊總督，觸發本地蓋斯系與亞馬尼系阿拉伯部族的正面衝突。這位總督要削弱亞馬尼頭人對省政的壟斷，四年戰事後於796年陣亡，總督區一度全面叛亂。卡面埃及月牙劍早出本役約二千三百年，只餘弧刃祖型地位；陣上實用者為阿拉伯直身雙刃劍、彎刀、長矛與複合弓。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      }
+    },
+    {
+      "id": "835-甘露之變",
+      "added": "2026-10-21T09:04:53.917Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.29
+      },
+      "battle": {
+        "y": 835,
+        "m": 11,
+        "name": "甘露之變",
+        "theater": "長安大明宮禁中與御苑",
+        "brief": "太和九年（835）十一月，宰相李訓與鄭注以「甘露降於御苑石榴樹」為由，把唐文宗與百官召入大明宮禁中，企圖趁典禮埋伏神策軍行刺，事敗，黨羽盡誅。卡面羅馬標槍屬帝國軍團的投槍，形制早於大唐數百年，不可能出現在長安宮廷；當夜真正用得上的，是禁軍手邊的刀、槊、弩與火炬。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/835-bf16d2b0fa.json"
+    },
+    {
+      "id": "854-霍姆斯起義",
+      "added": "2026-10-21T09:04:53.922Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.16,
+        "lat": 32.65
+      },
+      "battle": {
+        "y": 854,
+        "m": 9,
+        "name": "霍姆斯起義",
+        "theater": "北非納富薩山霍姆斯",
+        "brief": "公元854年，伊巴德派在北非納富薩山區的霍姆斯城舉兵反抗阿格拉布王朝。阿格拉布軍自蓋爾特海沿岸集結，圍攻依岩而建的霍姆斯堡寨；羅馬扭力式投石機的技術譜系，正是圍城中使用來砸擊城牆與塔樓的攻城器械原型。圍城以守軍潰退、城池陷落告終，餘眾退入山區與澤爾巴島。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/854-fc23a51fe1.json"
+    },
+    {
+      "id": "883-唐奪長安之戰",
+      "added": "2026-10-21T09:04:53.930Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.94,
+        "lat": 34.34
+      },
+      "battle": {
+        "y": 883,
+        "m": 11,
+        "name": "唐奪長安之戰",
+        "theater": "長安城與城東渭橋",
+        "brief": "乾符四年十一月，沙陀節度使李克用引河東精騎自河中南下，圍逼長安；大齊守將尚讓出城迎戰，唐騎乘勢破之，黃巢焚城夜走，李克用入城。攻城時唐軍備有發石車、雲梯、撞車等器械，投石機用於壓制城頭與摧毀木柵，惟此役制勝關鍵在騎兵奇襲與守軍自潰。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/883-7752f6134f.json"
+    },
+    {
+      "id": "950-郭威滅後漢之戰",
+      "added": "2026-10-21T09:04:53.940Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.31,
+        "lat": 34.8
+      },
+      "battle": {
+        "y": 950,
+        "m": 11,
+        "name": "郭威滅後漢之戰",
+        "theater": "大梁、鄴城與澶州",
+        "brief": "乾祐三年冬，樞密使郭威據鄴都河北兵柄，隱帝密詔加害，遂先發制人南下；大梁禁軍在劉子陂崩潰，帝出亡被弒，郭威入城廢劉贇，翌年改元廣順建後周。此役以譁變破城，非持久攻圍，投石機未及大用；然契丹圍內丘、太原倚砲石死守，攻城利器已見於戰局兩端。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/950-400b69d766.json"
+    },
+    {
+      "id": "955-秦鳳之戰",
+      "added": "2026-10-21T09:04:53.940Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 105.72,
+        "lat": 34.58
+      },
+      "battle": {
+        "y": 955,
+        "m": 10,
+        "name": "秦鳳之戰",
+        "theater": "隴右秦鳳階成四州",
+        "brief": "顯德二年（955）秋末冬初，後蜀遣大將劉仁贊率眾侵入秦、階、成三州，與邊州叛軍合勢，後周世宗柴榮下詔討之，趙匡胤與諸軍自渭州西進，轉戰隴右山道，前後取階、鳳、成、秦諸州鎮，蜀軍退出隴右。卡面的斯巴達長矛並不在這條山道上：一千七百年後的隴右，靠的是唐式長槊、楯車盾牆與床子弩，而不是希臘方陣的木槍。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/955-425463a62a.json"
+    },
+    {
+      "id": "960-陳橋兵變",
+      "added": "2026-10-21T09:04:53.941Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.76,
+        "lat": 35.01
+      },
+      "battle": {
+        "y": 960,
+        "m": 1,
+        "name": "陳橋兵變",
+        "theater": "陳橋驛（河南封丘）",
+        "brief": "顯德七年正月初四，後周北征大軍行至汴京六十里外的陳橋驛，宿營而黃旗已起。殿前都點檢趙匡胤被軍士以黃袍加身，諸將羅拜，回師入汴，迫恭帝退位，北宋開國。此役不聞一矢之發，卻終結了五代十國的藩鎮割據，開出重文輕武的格局。卡面羅馬弩砲並未隨軍而至，其後裔床弩與砲車是北宋禁軍的攻城骨幹。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/960-4651af18f9.json"
+    },
+    {
+      "id": "964-宋滅後蜀之戰",
+      "added": "2026-10-21T09:04:53.945Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 104.07,
+        "lat": 30.57
+      },
+      "battle": {
+        "y": 964,
+        "m": 11,
+        "name": "宋滅後蜀之戰",
+        "theater": "成都外郭與劍門道",
+        "brief": "乾德元年冬，宋太祖議定取蜀，同年十一月崩，太宗即位後以王全斌為招討使、曹彬為行軍都虞候，太平興國元年正月自鳳翔出陽平關，分兩路趨成都，二月破成都外郭，孟昶奉表出降，後蜀亡。卡面秦連弩代表的是守城一方用連發弩機把攻城隊形壓在牆外的傳統；而這一役真正決定戰果的，是分進合擊與兩個月之內的機動速度。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      },
+      "dossierUrl": "dossiers/964-fd9963e489.json"
+    },
+    {
+      "id": "970-宋滅南漢之戰",
+      "added": "2026-10-21T09:04:53.946Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.26,
+        "lat": 23.13
+      },
+      "battle": {
+        "y": 970,
+        "m": 9,
+        "name": "宋滅南漢之戰",
+        "theater": "賀州至廣州五嶺道",
+        "brief": "開寶三年（970）九月，宋太祖以潘美為賀州道行營兵馬都部署，尹崇珂副之，率潭、朗、道諸州兵南下討南漢。半年之間連取富、賀、昭、桂、連、韶諸州，開寶四年二月破馬迳木柵，辛未劉鋹素服出降於白田。卡面的秦弩在此役是決定性遠程兵器：南漢以弩手居高守城，宋軍則盡索軍中勁弩射散象陣。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/970-0e0cc0bca3.json"
     }
   ]
 }
