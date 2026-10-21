@@ -3754,8 +3754,8 @@
         "y": 1848,
         "m": 1,
         "name": "西西里1848年革命",
-        "theater": "巴勒莫與墨西拿戰線",
-        "brief": "一八四八年一月十二日，巴勒莫民眾在羅西利諾·皮洛與朱塞佩·拉·馬薩率領下起事，奪取海濱兵工廠與海上城堡，翌日總委員會宣告波旁王朝在島上失效；全島先後有百餘個城鎮響應，三月召開西西里議會並另立王國。波旁軍退守墨西拿稜堡，於一八四八年九月以遠征軍攻回全島，次年五月十五日復陷巴勒莫。雷管步槍在城區街壘與鄉村散射中交鋒，射程拉長改變了攻守節奏。"
+        "theater": "巴勒莫市區與港口防線",
+        "brief": "一八四八年一月九日晚，巴勒莫歌劇院觀眾在演出中要求憲法，翌日群眾湧入王宮與軍械庫，繳獲數千支火繩步槍，國民武裝由此而生；一八四九年法軍在歐迪諾率領下自墨西拿登陸，圍攻巴勒莫，莫萊長堤與海堡於五月二十四日陷落。雷管步槍在海霧中仍能擊發，攻城射擊的距離因此拉長。"
       },
       "kit": {
         "name": "雷管步槍",
@@ -5188,7 +5188,8 @@
         "layer": "land",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1876-70a0cbf098.json"
     },
     {
       "id": "1878-第二次英阿戰爭",
@@ -5214,7 +5215,8 @@
         "layer": "sea",
         "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
         "portrait": "portraits/ironclad.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1878-a671fc7639.json"
     },
     {
       "id": "1879-硝石戰爭",
@@ -5321,7 +5323,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1894-ea61078cd8.json"
     },
     {
       "id": "1894-第四次阿散蒂戰爭",
@@ -5403,6 +5406,325 @@
         "portrait": "portraits/gatling.jpg"
       },
       "dossierUrl": "dossiers/1899-b5f35a9538.json"
+    },
+    {
+      "id": "1512-第四次莫斯科-立陶宛戰爭",
+      "added": "2026-10-21T05:21:56.000Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 31.2,
+        "lat": 54.65
+      },
+      "battle": {
+        "y": 1512,
+        "m": 7,
+        "name": "第四次莫斯科-立陶宛戰爭",
+        "theater": "斯摩棱斯克土地與奧爾沙河谷",
+        "brief": "一五一二年內訌迫使立陶宛大公西吉斯蒙德一世重整軍權，聯軍於同年夏深入斯摩棱斯克土地，九月八日在奧爾沙擊潰莫斯科野戰主力，一五一三年秋再圍斯摩棱斯克，至一五一四年二月城池陷落，第四次莫斯科-立陶宛戰爭以此收場。全軍火力仍以火繩步槍為主，日耳曼傭兵輕騎與大公近衛卻已開始試用輪發手槍，此槍無須點火繩，雨雪天候亦可射擊，是歐洲騎兵首次在馬上擁有與步槍手相當的反擊能力。"
+      },
+      "kit": {
+        "name": "輪發手槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
+        "portrait": "portraits/wheellockpistol.jpg"
+      },
+      "dossierUrl": "dossiers/1512-2f3a580453.json"
+    },
+    {
+      "id": "1585-英西戰爭",
+      "added": "2026-10-21T05:21:56.003Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 2.38,
+        "lat": 51.03
+      },
+      "battle": {
+        "y": 1585,
+        "m": 4,
+        "name": "英西戰爭",
+        "theater": "法蘭德斯與加勒比海戰線",
+        "brief": "一五八五年四月霍金斯率私掠船隊橫渡大西洋劫奪西班牙寶船，英西戰爭自此開打；一五八八年西班牙無敵艦隊在英吉利海峽折戟，戰事轉入低地國家的長期消耗。陸上方面西班牙大方陣以野砲為火砲骨幹，攻守都離不開那幾門十二磅砲，荷蘭人則靠反砲兵與築壘回敬。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      }
+    },
+    {
+      "id": "1740-奧地利王位繼承戰爭",
+      "added": "2026-10-21T05:21:56.007Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 17.05,
+        "lat": 50.28
+      },
+      "battle": {
+        "y": 1740,
+        "m": 12,
+        "name": "奧地利王位繼承戰爭",
+        "theater": "西里西亞、摩拉維亞與佛蘭德斯",
+        "brief": "一七四〇年十月查理六世病逝，奧地利王位繼承權成為歐洲爭端的核心；腓特烈二世於十二月率軍越境西里西亞，一七四一年莫爾維茨與一七四二年霍恩弗里德貝格的兩次會戰，把西里西亞變成普魯士的領土。輪發手槍在火槍與刺刀主導的時代已退居軍官與近衛的佩槍，成為軍階與榮譽的標記，而非戰場上的火力。"
+      },
+      "kit": {
+        "name": "輪發槍",
+        "designation": "Wheellock pistol",
+        "year": 1500,
+        "nation": "es",
+        "layer": "land",
+        "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
+        "portrait": "portraits/wheellock.jpg"
+      },
+      "dossierUrl": "dossiers/1740-497e876c5f.json"
+    },
+    {
+      "id": "1861-馬來亞第一次拿律戰爭",
+      "added": "2026-10-21T05:21:56.067Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 100.73,
+        "lat": 4.85
+      },
+      "battle": {
+        "y": 1861,
+        "m": 7,
+        "name": "馬來亞第一次拿律戰爭",
+        "theater": "霹靂州拉律錫礦區",
+        "brief": "一八六一年七月，霹靂拉律錫礦區因礦場水渠控制權起衝突，海山黨把義興黨逐出吉連巴魯，海峽殖民地總督卡文納以蘇丹名義賠付一萬七千四百四十七元了事，拉律四戰由此起頭。卡面線膛砲在一八六一年尚未上陣，它要到一八七五年英軍再戰拿律時，才隨野戰砲與火箭出現在拿律河上游。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1861-535119a2aa.json"
+    },
+    {
+      "id": "1874-石門戰爭",
+      "added": "2026-10-21T05:21:56.083Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 120.6,
+        "lat": 22.55
+      },
+      "battle": {
+        "y": 1874,
+        "m": 5,
+        "name": "石門戰爭",
+        "theater": "屏東枋寮石門與恆春半島",
+        "brief": "一八七四年五月，日本以懲罰排灣族、保護琉球漁民為名，遣征番使西鄉從道率兵三千六百餘人渡海攻臺灣南部。艦隊以英國船廠建造的鐵甲艦日向、榛名為主力，掩護大軍自恆春楓港登陸，九月進抵枋寮石門，攻破清軍與番社聯防的陣地，逼近恆春。戰事未決而清廷議和，日軍十月撤出臺灣。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1874-ba38224fa8.json"
+    },
+    {
+      "id": "1877-西南戰爭",
+      "added": "2026-10-21T05:21:56.089Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.74,
+        "lat": 32.79
+      },
+      "battle": {
+        "y": 1877,
+        "m": 1,
+        "name": "西南戰爭",
+        "theater": "熊本平原田原坂與鹿兒島城山",
+        "brief": "1877年1月29日，鹿兒島私學校徒夜襲草牟田火藥庫奪取彈藥，二月十五日西鄉隆盛率一萬三千人出發西上，二月二十一日進抵熊本城下，圍困熊本鎮台。政府軍自博多與海路北上，雙方在菊池川流域的高瀨與田原坂反覆爭奪；官軍以四斤山砲支援，3月20日突破田原坂防線，四月解放熊本城，九月二十四日西鄉於城山自刃，此役遂終。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1877-達固湖灣戰爭",
+      "added": "2026-10-21T05:21:56.091Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 121.6,
+        "lat": 24
+      },
+      "battle": {
+        "y": 1877,
+        "m": 9,
+        "name": "達固湖灣戰爭",
+        "theater": "奇萊平原達固湖灣與加禮宛社",
+        "brief": "光緒年間清廷推行開山撫番，兵線推抵奇萊平原。一八七七年冬，臺灣總兵吳光亮在卑南、水尾一線佈下前哨，翌年總兵孫開華率擢勝軍、鎮海中營等兩千餘人乘輪船抵花蓮港，先以火攻燒穿達固湖灣的刺竹林，再分兵夾擊加禮宛社，奇萊平原上最堅固的兩處堡壘相繼失守。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1881-法國入侵突尼斯",
+      "added": "2026-10-21T05:21:56.095Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 10.18,
+        "lat": 36.8
+      },
+      "battle": {
+        "y": 1881,
+        "m": 5,
+        "name": "法國入侵突尼斯",
+        "theater": "突尼斯城、比斯克拉灣與斯法克斯",
+        "brief": "一八八一年五月，法軍在突尼斯城登陸，貝伊同日簽下《巴爾多條約》，突尼斯自此淪為法國保護國；海上的事由比斯克拉灣的砲戰與加貝斯的封鎖包辦。卡面鐵甲艦生於一八六二年——英國那一代木殼包鐵的巨艦同年才在漢普頓路德灣互撼；真正在突尼斯灣開火的是法國的平鐵甲砲艇與老式巡洋艦，鐵甲艦的血緣走到這裡已是末代。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
+        "portrait": "portraits/ironclad.jpg"
+      }
+    },
+    {
+      "id": "1885-塞保戰爭",
+      "added": "2026-10-21T05:21:56.099Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.7,
+        "lat": 22.28
+      },
+      "battle": {
+        "y": 1885,
+        "m": 8,
+        "name": "塞保戰爭",
+        "theater": "越南北部與中越邊境",
+        "brief": "一八八四年八月到一八八五年四月，中法戰爭在越南北部與中越邊境全面展開。馮子材守鎮南關，劉永福率黑旗軍據諒山，北黎與紙橋兩役中法軍都用上人力轉動的加特林機槍，六管齊射的射速把叢林與村落間的近距離交火改成機槍對機槍的角力；三月順化陷落後法軍全線收兵。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1885-0452054fb1.json"
+    },
+    {
+      "id": "1895-古巴獨立戰爭",
+      "added": "2026-10-21T05:21:56.104Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -84.95,
+        "lat": 21.87
+      },
+      "battle": {
+        "y": 1895,
+        "m": 2,
+        "name": "古巴獨立戰爭",
+        "theater": "古巴西部皮那爾里奧省查克拉科斯特",
+        "brief": "一八九五年二月二十三日，馬塞奧與克羅姆貝特率三十餘人自西部海角登陸，掀開古巴獨立戰爭。西班牙殖民軍以七〇毫米線膛野戰砲為砲兵骨幹，沿公路據點用曲射砲火封鎖鄉間；起義軍則以散兵游擊與地方武裝在內陸周旋，雙方在皮那爾里奧省查克拉科斯特一帶拉鋸三年。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1895-90940c32d1.json"
+    },
+    {
+      "id": "1895-第一次義衣戰爭",
+      "added": "2026-10-21T05:21:56.106Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 38.9,
+        "lat": 14.17
+      },
+      "battle": {
+        "y": 1895,
+        "m": 9,
+        "name": "第一次義衣戰爭",
+        "theater": "提格雷高原與阿杜瓦",
+        "brief": "一八九五年九月義大利自厄立特里亞攻入提格雷，遠征軍直指阿杜瓦；翌年三月一日，曼涅里克二世集結十萬以上大軍，義軍四旅一萬七千七百人、五十六門砲在縱隊分散後全軍崩潰，退回海岸。歐洲雷管步槍在高原晨霧裡射程仍遠，卻敵不住密集縱隊的近身衝鋒與快速砲火。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1898-美西戰爭",
+      "added": "2026-10-21T05:21:56.110Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -75.82,
+        "lat": 20.02
+      },
+      "battle": {
+        "y": 1898,
+        "m": 4,
+        "name": "美西戰爭",
+        "theater": "古巴聖地牙哥與馬尼拉灣",
+        "brief": "一八九八年四月下旬美國對西班牙宣戰，五月至七月戰火同時燒到古巴聖地牙哥、馬尼拉灣同波多黎各。西班牙守軍以法製雷管步槍配後膛槍固守山頭，同美軍的春田步槍對射；聖地牙哥一役西班牙軍投降，古巴同菲律賓隨後易手。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1898-7439cbb91b.json"
     }
   ]
 }
