@@ -13169,7 +13169,8 @@
         "layer": "land",
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-1437-6d53c880b4.json"
     },
     {
       "id": "-1700-巴比倫進攻海地王朝",
@@ -13303,7 +13304,8 @@
         "layer": "land",
         "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
         "portrait": "portraits/assyrianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-334-c6a72751d5.json"
     },
     {
       "id": "-58-高盧戰爭",
@@ -13545,7 +13547,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1239-99a05d720d.json"
     },
     {
       "id": "1253-蒙古滅大理之戰",
@@ -13733,7 +13736,8 @@
         "layer": "land",
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1277-c1cf420fa8.json"
     }
   ]
 }
