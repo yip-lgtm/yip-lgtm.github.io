@@ -6157,7 +6157,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1115-2db098ec22.json"
     },
     {
       "id": "1120-方臘起義",
@@ -6318,7 +6319,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1041-0adb31040c.json"
     },
     {
       "id": "1127-宋金川陝爭奪戰",
@@ -6344,7 +6346,8 @@
         "layer": "land",
         "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
         "portrait": "portraits/crossbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1127-b71c034cc5.json"
     },
     {
       "id": "1821-帕達里戰爭",
@@ -6500,6 +6503,32 @@
         "layer": "land",
         "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
         "portrait": "portraits/arquebus.jpg"
+      }
+    },
+    {
+      "id": "1130-富平之戰",
+      "added": "2026-10-21T05:47:23.696Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 109.18,
+        "lat": 34.75
+      },
+      "battle": {
+        "y": 1130,
+        "m": 9,
+        "name": "富平之戰",
+        "theater": "關中平原耀州至富平",
+        "brief": "紹興元年（一一三〇年），張浚集涇原、熙河、環慶、秦鳳、永興五路步騎十八萬反攻陝西，八月發檄文，九月進抵關中富平。金將完顏宗弼、完顏婁室以騎兵據沼澤，宋軍弓弩雖多卻無處展開，九月二十四日會戰大潰。金人由此盡取陝西五路，宋軍只保和尚原等數處關隘，弓弩守城得力而野戰失靈的教訓亦留下。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
       }
     }
   ]
