@@ -2431,6 +2431,81 @@
         "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
         "portrait": "portraits/arquebus.jpg"
       }
+    },
+    {
+      "id": "1808-芬蘭戰爭",
+      "added": "2026-10-21T03:16:05.396Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1808,
+        "m": 2,
+        "name": "芬蘭戰爭",
+        "theater": "芬蘭南部與波羅的海東岸",
+        "brief": "芬蘭戰爭是中文維基「戰爭列表」收錄的北歐衝突。1808年，俄羅斯帝國向瑞典王國控制的芬蘭發動戰爭，戰事涉及南部沿海、堡壘爭奪與冬季作戰。本條所用裝備為火繩槍銃（Arquebus），其列裝年代為1550年。"
+      },
+      "kit": {
+        "name": "火繩槍銃",
+        "designation": "Arquebus",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
+        "portrait": "portraits/arquebus.jpg"
+      }
+    },
+    {
+      "id": "1809-玻利維亞獨立戰爭",
+      "added": "2026-10-21T03:07:19.454Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -68.15,
+        "lat": -16.5
+      },
+      "battle": {
+        "y": 1809,
+        "m": 5,
+        "name": "玻利維亞獨立戰爭",
+        "theater": "拉巴斯",
+        "brief": "《中文維基戰爭列表》所列的玻利維亞獨立戰爭，於一八〇九年五月在拉巴斯爆發早期革命，隨後戰事擴至上秘魯及安第斯其他地區。西班牙殖民軍所用裝備的正式型號為野砲（Field gun），隸屬陸軍砲兵體系並支援前線作戰。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      }
+    },
+    {
+      "id": "1809-秘魯獨立戰爭",
+      "added": "2026-10-21T03:09:32.224Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -75.15,
+        "lat": -13.16
+      },
+      "battle": {
+        "y": 1809,
+        "m": 8,
+        "name": "秘魯獨立戰爭",
+        "theater": "阿亞庫喬",
+        "brief": "一八〇九年八月，秘魯獨立戰爭在阿亞庫喬一帶交戰，當地獨立派與西班牙王軍對抗。這一時期的陸軍以野砲（Field gun）實施火力支援；這款自十六世紀中葉已列裝的野戰火砲，配置於砲兵單位，負責遠程射擊，並可隨部隊轉用於不同前線。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      }
     }
   ]
 }
