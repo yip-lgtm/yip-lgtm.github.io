@@ -1860,7 +1860,8 @@
         "layer": "land",
         "history": "霹靂砲位於宋代遠程火力體系，以爆炸作用攻擊城防、人員與器材，通常配置於攻城或守城陣列，與弓弩及砲石相互配合。",
         "portrait": "portraits/feed-3a9531.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1004-98d9943f77.json"
     },
     {
       "id": "-1194-特洛伊戰爭",
@@ -2249,6 +2250,32 @@
         "nation": "de",
         "layer": "land",
         "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1853-克里米亞戰爭",
+      "added": "2026-10-21T01:33:57.942Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 34.4,
+        "lat": 45.3
+      },
+      "battle": {
+        "y": 1853,
+        "m": 10,
+        "name": "克里米亞戰爭",
+        "theater": "克里米亞半島",
+        "brief": "克里米亞戰爭是黑海地區的一場重大武裝衝突，參戰聯軍與俄國、鄂圖曼帝國在克里米亞半島及塞瓦斯托波爾等地交戰。線膛砲（Muzzle-loading field gun）於一八五零年列裝，是德國陸軍野戰砲兵使用的正式型號，戰爭中承擔地面火力支援任務。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲在德國陸軍體系中屬於野戰砲兵，作為步兵作戰時的火力支援裝置，與其他砲兵單位共同構成地面攻勢與防禦力量。",
         "portrait": "portraits/muzzleloader.jpg"
       }
     }
