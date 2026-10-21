@@ -8961,6 +8961,55 @@
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
       }
+    },
+    {
+      "id": "1700-大北方戰爭",
+      "added": "2026-10-21T06:10:28.972Z",
+      "span": "p16",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 27.75,
+        "lat": 58.19
+      },
+      "battle": {
+        "y": 1700,
+        "m": 11,
+        "name": "大北方戰爭",
+        "theater": "納爾瓦",
+        "brief": "大北方戰爭於1700年在波羅的海東岸展開，俄羅斯與瑞典軍隊在納爾瓦形成初期代表性交鋒。本輪指定的野砲（Field gun，1550年）屬西班牙陸軍野戰炮兵，於1700年前已列入野戰裝備，與步兵協同配置並提供陣地火力支援。"
+      },
+      "kit": {
+        "name": "野砲",
+        "designation": "Field gun",
+        "year": 1550,
+        "nation": "es",
+        "layer": "land",
+        "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
+        "portrait": "portraits/fieldgun.jpg"
+      }
+    },
+    {
+      "id": "1895-乙未戰爭",
+      "added": "2026-10-21T06:10:21.130Z",
+      "span": "p19",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1895,
+        "m": 1,
+        "name": "乙未戰爭",
+        "theater": "威海衛",
+        "brief": "乙未戰爭是中文維基「戰爭列表」所列的一八九五年戰爭。威海衛一役中，日軍圍攻北洋海軍陸路要塞，清軍依託海岸砲台與城防抵抗。交戰雙方地面部隊亦配用十九世紀已服役的雷管步槍（Percussion rifle）。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
+        "portrait": "portraits/percussion.jpg"
+      }
     }
   ]
 }
