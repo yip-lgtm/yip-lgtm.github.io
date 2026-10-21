@@ -27913,7 +27913,8 @@
         "layer": "land",
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/868-c747a9273b.json"
     },
     {
       "id": "878-黃巢南下福州之戰",
@@ -27941,6 +27942,299 @@
         "portrait": "portraits/pilum.jpg"
       },
       "dossierUrl": "dossiers/878-a18e5dbc33.json"
+    },
+    {
+      "id": "650-第二次蒂卡爾-卡拉克穆爾戰爭",
+      "added": "2026-10-21T09:02:50.370Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -89.62,
+        "lat": 17.22
+      },
+      "battle": {
+        "y": 650,
+        "m": 1,
+        "name": "第二次蒂卡爾-卡拉克穆爾戰爭",
+        "theater": "佩滕盆地蒂卡爾至卡拉克穆爾",
+        "brief": "公元650年，卡拉克穆爾王卡爾通·希克斯大軍沿佩滕盆地堤道攻入蒂卡爾，此事刻在公元751年立起的31號碑上，是瑪雅石刻中極罕見的敗績記錄。卡面那面羅馬方陣盾並未隨軍而至；瑪雅戰士靠棉甲、木盾與投矛器，扮演了盾牆在同一場攻城裡的角色。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      }
+    },
+    {
+      "id": "677-對努恩·烏卓爾·查克的戰爭",
+      "added": "2026-10-21T09:02:50.379Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -89.62,
+        "lat": 17.22
+      },
+      "battle": {
+        "y": 677,
+        "m": 12,
+        "name": "對努恩·烏卓爾·查克的戰爭",
+        "theater": "佩滕湖區與佩滕巴通河谷",
+        "brief": "公元677年，卡拉克穆爾聯同多斯皮拉斯大軍攻入佩滕湖畔的都城蒂卡爾，國王努恩·烏卓爾·查克退守敗北；679年他反攻多斯皮拉斯又遭挫敗，戰事以多斯皮拉斯立碑記功收場。卡面的秦連弩從未到過中美洲，此役的投射主力是擲矛器配木矛，近戰靠嵌黑曜石刃的木劍，攻城用木梯與火攻。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      },
+      "dossierUrl": "dossiers/677-34b3bfd0f0.json"
+    },
+    {
+      "id": "680-第九次「星際大戰」（第五次卡拉科爾-納蘭霍戰爭)）",
+      "added": "2026-10-21T09:02:50.384Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -89.11,
+        "lat": 16.55
+      },
+      "battle": {
+        "y": 680,
+        "m": 12,
+        "name": "第九次「星際大戰」（第五次卡拉科爾-納蘭霍戰爭)）",
+        "theater": "瓦卡台地南緣與查基布爾河谷",
+        "brief": "公元六八○年冬，科潘河谷納蘭霍在六三六年焚城之後重新立國，首次自己站到進攻位置：聯軍沿查基布爾古道翻上瓦卡台地，攻入卡拉科爾「天宮」一線，焚其倉房、奪其玉座與偶像，把六三六年欠下的星戰義務一次清掉。科林斯青銅盔從未現於中美洲，它在此標示「看不見左右、只能靠隊形活」的裝束難題。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/680-4873ea890d.json"
+    },
+    {
+      "id": "739-柏柏人起義",
+      "added": "2026-10-21T09:02:50.400Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 10.18,
+        "lat": 36.8
+      },
+      "battle": {
+        "y": 739,
+        "m": 5,
+        "name": "柏柏人起義",
+        "theater": "突尼斯城郊（伊夫里基耶）",
+        "brief": "七三九年五月，馬格里布與伊夫里基耶的柏柏爾部族起兵反叛倭馬亞哈里發國，首領梅薩拉統兵推進，阿布·雅齊德以先知身份號召，叛軍攻入突尼斯並圍城；安達盧斯亦聞風響應，直至穆薩·伊本·努薩爾在瓜達萊特河擊潰叛軍。卡面所配亞述長弓並非當年文物，而是角木複合反曲弓的源流，其形制仍延用於七三九年的北非弓兵。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      }
+    },
+    {
+      "id": "746-阿巴斯革命",
+      "added": "2026-10-21T09:02:50.405Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 47.8,
+        "lat": 32.3
+      },
+      "battle": {
+        "y": 746,
+        "m": 6,
+        "name": "阿巴斯革命",
+        "theater": "呼羅珊木魯夫至伊拉克札卜河",
+        "brief": "公元746年起，阿拔斯派在呼羅珊木魯夫舉起黑旗，四年間由東向西席捲伊拉克，最終在札卜河擊潰末代哈里發馬萬二世。卡面羅馬弩砲早已不存於世，但它在攻城與壓制密集隊形上的任務，則由阿拔斯軍的配重投石機與弩砲交給一批從波斯、拜占庭學來的工匠完成。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      }
+    },
+    {
+      "id": "801-維州之戰",
+      "added": "2026-10-21T09:02:50.421Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 103.4,
+        "lat": 31.55
+      },
+      "battle": {
+        "y": 801,
+        "m": 7,
+        "name": "維州之戰",
+        "theater": "劍南道維州松州一線",
+        "brief": "貞元十七年七月起，劍南節度使韋皋奉詔以二萬眾分九路出川，與吐蕃爭奪維州、松州一線山地；次年正月，吐蕃內大相論莽熱率十萬眾解圍，於險隘中伏被擒。卡面的科林斯青銅盔屬公元前七世紀希臘工藝，與本役相隔逾一千四百年，並未出現在川西戰場，它在此標記的是全正面遮蔽視野、逼使士卒靠隊形求生的重甲原理。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/801-769e3e0681.json"
+    },
+    {
+      "id": "880-信州之戰",
+      "added": "2026-10-21T09:02:50.429Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.97,
+        "lat": 28.45
+      },
+      "battle": {
+        "y": 880,
+        "m": 5,
+        "name": "信州之戰",
+        "theater": "江西信州上饒",
+        "brief": "廣明元年五月，黃巢屯兵信州，瘟疫，淮南節度使高駈部將張璘乘勢猛攻。黃巢偽意向高駈乞降，誘使高駈撤回昭義、感化、義武諸道援兵，斷絕往來、宣戰。決戰中張璘被殺，淮南精銳盡毀，黃巢打通北渡長江之路。卡上羅馬重步兵雖不在此戰，軍團之制足為對照：重裝不足恃，兵源與補給才是根本。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/880-c670af9a72.json"
+    },
+    {
+      "id": "917-幽州之戰",
+      "added": "2026-10-21T09:02:50.435Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 116.4,
+        "lat": 39.9
+      },
+      "battle": {
+        "y": 917,
+        "m": 3,
+        "name": "幽州之戰",
+        "theater": "北京幽州城及易州山道",
+        "brief": "後梁貞明三年、晉天祐十四年、契丹神冊二年三月至八月，契丹主耶律阿保機率大軍南下，圍攻幽州近二百日；晉王李存勖遣周德威、李嗣源、李存審、閻寶等分道馳援，八月於易州山道大破契丹，解幽州之圍。卡面亞述長矛為短柄長刃鐵鏃之祖型，本役中正是契丹騎兵長矛與晉軍拒馬所承襲的那一類長兵。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/917-caa3209877.json"
+    },
+    {
+      "id": "975-秦淮河之戰",
+      "added": "2026-10-21T09:02:50.441Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.78,
+        "lat": 32.04
+      },
+      "battle": {
+        "y": 975,
+        "m": 1,
+        "name": "秦淮河之戰",
+        "theater": "金陵城東秦淮河口",
+        "brief": "開寶八年正月十七日，宋軍在金陵城東秦淮河口強行渡河，擊潰南唐背城而列的水陸十餘萬大軍，再破其溯流奪采石浮橋之師；李漢瓊以蘆葦實艦作火船，順風攻破水寨。南唐十餘萬兵馬盡喪，此役直接引出十月皖口之戰與十一月城破。卡面那件斯巴達長矛從未東來，決定勝負的仍是舟楫、浮梁與火船。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      }
+    },
+    {
+      "id": "980-瓦橋關之戰",
+      "added": "2026-10-21T09:02:50.447Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.05,
+        "lat": 38.95
+      },
+      "battle": {
+        "y": 980,
+        "m": 10,
+        "name": "瓦橋關之戰",
+        "theater": "河北雄州瓦橋關與易水南岸",
+        "brief": "乾亨二年（980）冬，遼景宗耶律賢親征南下，圍宋邊關瓦橋關（今河北雄縣西南），破關陣斬守將張師，渡易水追宋軍至莫州境內。卡面的羅馬弩砲並不在此戰場，它所代表的扭力蓄力、單發重箭技術，在關城上是宋軍的床弩與蹶張弓，在攻城一方則是靠人馬硬攻的遼軍。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/980-e6058c4575.json"
+    },
+    {
+      "id": "986-岐溝關之戰",
+      "added": "2026-10-21T09:02:50.454Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.75,
+        "lat": 39.34
+      },
+      "battle": {
+        "y": 986,
+        "m": 5,
+        "name": "岐溝關之戰",
+        "theater": "涿州西南岐溝關巨馬河畔",
+        "brief": "雍熙三年（986）五月，宋太宗北伐的東路軍在攻下涿州後被耶律休哥切斷糧道，軍中爭功再攻涿州，撤退時遭騎兵追上，於岐溝關全軍潰敗。卡面的秦連弩代表弩機蓄力、足踏連發的傳統：當年宋軍手上是步弩與神臂弓，弓弩齊射仍擋不住追擊與斷糧，決定勝負的其實是糧秣、體力與行伍。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      },
+      "dossierUrl": "dossiers/986-aea723f46c.json"
     }
   ]
 }
