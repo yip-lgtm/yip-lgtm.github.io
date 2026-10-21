@@ -18250,7 +18250,8 @@
         "layer": "land",
         "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
         "portrait": "portraits/assyrianbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-111-bc7e7fe80e.json"
     },
     {
       "id": "-135-羅馬奴隸起義",
@@ -18276,7 +18277,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/xiaochongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-135-e11024dcf5.json"
     },
     {
       "id": "-162-遊牧民族入侵巴克特里亞",
@@ -18300,7 +18302,8 @@
         "year": -700,
         "nation": "it",
         "layer": "land",
-        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。"
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
       },
       "dossierUrl": "dossiers/-162-479f4bc0bb.json"
     },
@@ -18328,7 +18331,8 @@
         "layer": "land",
         "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
         "portrait": "portraits/egyptianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-1770-4e248e481f.json"
     },
     {
       "id": "-179-達爾達尼亞-巴斯塔尼戰爭",
@@ -18354,7 +18358,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/xiaochongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-179-bfea7f85a5.json"
     },
     {
       "id": "-200-第二次馬其頓戰爭",
@@ -18380,7 +18385,8 @@
         "layer": "land",
         "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
         "portrait": "portraits/assyrianbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-200-4b6aa74bcc.json"
     },
     {
       "id": "-209-項梁起兵反秦",
@@ -18486,7 +18492,8 @@
         "layer": "land",
         "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
         "portrait": "portraits/assyrianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-222-4cd1378f4e.json"
     },
     {
       "id": "-226-第一次進攻燕國",
@@ -18726,8 +18733,10 @@
         "year": -700,
         "nation": "it",
         "layer": "land",
-        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。"
-      }
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      },
+      "dossierUrl": "dossiers/-460-7f0f6ac344.json"
     },
     {
       "id": "-484-巴比倫對波斯的起義",
@@ -18834,7 +18843,8 @@
         "layer": "land",
         "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
         "portrait": "portraits/hoplite.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-55-e3be52bea5.json"
     },
     {
       "id": "-595-第一次神聖戰爭",
@@ -18860,7 +18870,8 @@
         "layer": "land",
         "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
         "portrait": "portraits/corinthian.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-595-acbb0975f3.json"
     },
     {
       "id": "-87-亞美尼亞-安息戰爭",
@@ -18886,7 +18897,8 @@
         "layer": "land",
         "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
         "portrait": "portraits/assyrianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-87-6073d74c47.json"
     },
     {
       "id": "268-納伊蘇斯戰役",
@@ -18939,7 +18951,8 @@
         "layer": "land",
         "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
         "portrait": "portraits/gladius.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/272-4f6c154eb0.json"
     },
     {
       "id": "306-君士坦丁大帝與馬克森提烏斯的戰爭",
@@ -18965,7 +18978,8 @@
         "layer": "land",
         "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
         "portrait": "portraits/corinthian.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/306-ccd85b51ac.json"
     },
     {
       "id": "367-大陰謀",
@@ -18991,7 +19005,8 @@
         "layer": "land",
         "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
         "portrait": "portraits/egyptianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/367-7207ee4b54.json"
     },
     {
       "id": "395-亞拉里克一世的征服",
@@ -19044,6 +19059,544 @@
         "layer": "land",
         "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
         "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/406-3dd022e1d0.json"
+    },
+    {
+      "id": "-104-第二次西西里奴隸起義",
+      "added": "2026-10-21T07:44:01.342Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 14.77,
+        "lat": 38.14
+      },
+      "battle": {
+        "y": -104,
+        "m": 6,
+        "name": "第二次西西里奴隸起義",
+        "theater": "西西里北部哈拉埃薩與埃里克斯山",
+        "brief": "公元前104年，西西里島北部哈拉埃薩周邊大莊園的牧奴起事，首領克雷翁自稱王、迦太基裔前雇兵特里豐任統帥，義軍席捲莊園與礦區。羅馬總督奧雷斯特斯調兵圍剿，誘捕二首領送回敘拉古處死，餘眾約二萬人被轉賣。卡面秦連弩為東亞連發弩機，從未進入地中海，此處借它說明以連射火力壓住攻城者的器械邏輯。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
+    },
+    {
+      "id": "-109-漢滅衛氏朝鮮之戰",
+      "added": "2026-10-21T07:44:01.347Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 125.8,
+        "lat": 39
+      },
+      "battle": {
+        "y": -109,
+        "m": 7,
+        "name": "漢滅衛氏朝鮮之戰",
+        "theater": "朝鮮半島北部浿水、玄菟一線",
+        "brief": "前109年，衛氏朝鮮攻入玄菟、殺害漢使，漢武帝遣樓船將軍楊僕、左將軍衛奇率五萬人自齊國渡海反攻；水軍失利後改走陸路，攻破浿水沿岸諸城，殺大將左渠盜，迫國王負芻出降，翌年置樂浪等四郡。卡面亞述長矛屬前900年前的兩河兵器，不在此役現場；朝鮮用弓、矛、盾與銅戈，漢軍用弩、鐵矛與樓船。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/-109-13ce61d1d7.json"
+    },
+    {
+      "id": "-123-羅馬征服巴利阿里群島",
+      "added": "2026-10-21T07:44:01.353Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 2.65,
+        "lat": 39.57
+      },
+      "battle": {
+        "y": -123,
+        "m": 3,
+        "name": "羅馬征服巴利阿里群島",
+        "theater": "馬略卡島與梅諾卡島",
+        "brief": "公元前三二三年，羅馬將領昆圖斯・凱基利烏斯・梅特盧斯奉命渡海征討巴利阿里群島，島上以投石著稱的部族在山丘上以石彈擊潰前一年羅馬艦隊。梅特盧斯改以包圍、攻城器械與石頭投射術反制，前一二一年攻下帕爾馬，梅諾卡守軍退入洞窟。卡面這具羅馬扭力式投石機即攻城器械的代表。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/-123-24760aad06.json"
+    },
+    {
+      "id": "-170-歐克拉提德一世的篡位",
+      "added": "2026-10-21T07:44:01.385Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 66.9,
+        "lat": 36.76
+      },
+      "battle": {
+        "y": -170,
+        "m": 4,
+        "name": "歐克拉提德一世的篡位",
+        "theater": "巴克特里亞王都巴克特拉",
+        "brief": "前171年，巴克特里亞王國首都巴克特拉發生宮廷政變：歐提德模斯王朝末主德米特里一世被一名塞種騎兵刺殺，狄奧多圖斯王族後裔歐克拉提德一世被軍隊推上王位。巴軍以希臘式方陣與守城投射兵器為骨幹，單臂扭力式投石機是當時攻城守城的標準重武器，城牆射位與城門爭奪決定了篡位成敗。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/-170-7ce87c9b8e.json"
+    },
+    {
+      "id": "-191-羅馬-塞琉古戰爭",
+      "added": "2026-10-21T07:44:01.398Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 27.43,
+        "lat": 38.6
+      },
+      "battle": {
+        "y": -191,
+        "m": 9,
+        "name": "羅馬-塞琉古戰爭",
+        "theater": "安納托利亞瑪格尼西亞",
+        "brief": "公元前191年秋，羅馬以安條克三世進攻色雷斯為由宣戰，戰端先由愛奧尼亞海上的羅馬分艦隊打開；前189年冬瑪格尼西亞會戰，執政官西庇阿聯同帕加馬王歐曼尼斯破塞琉古方陣與戰象，翌年訂阿帕米亞和約。卡面亞述長矛屬亞述軍的短柄鐵鏃矛，早於本役近千年；當年對陣的是皮魯姆投槍與薩里沙長槍。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/-191-a1420a00d0.json"
+    },
+    {
+      "id": "-205-克里特戰爭",
+      "added": "2026-10-21T07:44:01.410Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 28.08,
+        "lat": 36.09
+      },
+      "battle": {
+        "y": -205,
+        "m": 5,
+        "name": "克里特戰爭",
+        "theater": "克里特島與羅得島",
+        "brief": "公元前205年，埃及托勒密三世指羅得海軍劫掠克里特，率六十艘戰船渡海入克里特，掃平島內並圍困林多斯城；前201年羅得海軍於以弗所外海擊潰埃及艦隊解圍。卡面的埃及月牙劍是前1500年前後的青銅古物，此役僅為王朝儀仗，前線實用 machaira 彎刀、長矛與僱傭射手。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/-205-eddc4e1816.json"
+    },
+    {
+      "id": "-29-坎塔布里戰爭",
+      "added": "2026-10-21T07:44:01.457Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -3.81,
+        "lat": 43.45
+      },
+      "battle": {
+        "y": -29,
+        "m": 3,
+        "name": "坎塔布里戰爭",
+        "theater": "桑坦德灣與坎塔布里山區",
+        "brief": "前29年起，羅馬在伊比利亞北部對抗最後一批獨立的山地部族，戰火由桑坦德灣的造船營燒到貝爾諾里奧山巔，前19年以最後山寨陷落收場。卡面的羅馬方陣盾是這場戰爭真正的勝負手：它讓羅馬步兵在投射物密集的山地裡靠盾牆頂住坎塔布里人的拋石與標槍，再以短程突擊逐點拔掉山堡。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/-29-b8959517f1.json"
+    },
+    {
+      "id": "-44-西西里叛亂",
+      "added": "2026-10-21T07:44:01.605Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.56,
+        "lat": 37.58
+      },
+      "battle": {
+        "y": -44,
+        "m": 3,
+        "name": "西西里叛亂",
+        "theater": "西西里西北部恩泰拉與山區",
+        "brief": "公元前44年，凱撒遇刺後局勢崩解之際，西西里島西部奴隸在恩泰拉舉事，阿耳忒彌多洛斯與特洛伊洛斯自稱「宣告者」，殺死元老院使者，席捲墨西拿與森圖里佩，到前43年被安東尼平定。卡面的斯巴達長矛屬公元前800年前的希臘方陣兵器，指向島上希臘城市民兵手中長矛的源頭。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/-44-798b72fc75.json"
+    },
+    {
+      "id": "-625-呂底亞-米利都戰爭",
+      "added": "2026-10-21T07:44:01.683Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 27.84,
+        "lat": 38.92
+      },
+      "battle": {
+        "y": -625,
+        "m": 4,
+        "name": "呂底亞-米利都戰爭",
+        "theater": "呂底亞泰亞提拉城郊",
+        "brief": "公元前628年春，米底王阿斯提亞吉在位第十一年，呂底亞王阿呂阿忒斯舉兵攻米利都，圍城十一年；前625年西密里安騎兵夜襲營地，泰亞提拉之戰勝呂底亞，王中傷次年不治。卡面亞述長弓，即此役西密里安馬上弓箭手所用的近東複合弓形製。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      },
+      "dossierUrl": "dossiers/-625-cb667f5434.json"
+    },
+    {
+      "id": "-73-第三次奴隸戰爭",
+      "added": "2026-10-21T07:44:01.696Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 15.05,
+        "lat": 40.55
+      },
+      "battle": {
+        "y": -73,
+        "m": 9,
+        "name": "第三次奴隸戰爭",
+        "theater": "維蘇威火山至布拉提烏姆",
+        "brief": "公元前73年拉提姆的角鬥士學校爆發逃亡，前73至前71年色雷斯奴隸斯巴達克斯在維蘇威火山起兵，擊敗大法官與執政官所部，最終戰死於布拉提烏姆。卡面的羅馬短劍是共和國軍團的制式冷兵器，也是義軍繳獲後迅速成建制裝備的關鍵軍械。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      }
+    },
+    {
+      "id": "-74-第三次米特拉達梯戰爭",
+      "added": "2026-10-21T07:44:01.742Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 41.85,
+        "lat": 38.25
+      },
+      "battle": {
+        "y": -74,
+        "m": 5,
+        "name": "第三次米特拉達梯戰爭",
+        "theater": "卡帕多細亞提格拉諾刻達",
+        "brief": "公元前74年，龐提翁王米特拉達梯六世越過哈里斯河侵入比提尼亞行省，第三次米特拉達梯戰爭爆發；盧庫路斯接掌遠征，前69年九月在卡帕多細亞的提格拉諾刻達，以軍團重步兵配合色雷斯與高盧騎兵擊敗梯格拉斯大帝的亞美尼亞聯軍。卡面羅馬重步兵即本役中堅，重盾短劍之外，勝負仍繫於兵源與補給。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/-74-2471fb1152.json"
+    },
+    {
+      "id": "-87-屋大維戰爭",
+      "added": "2026-10-21T07:44:01.750Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 20.77,
+        "lat": 38.95
+      },
+      "battle": {
+        "y": -87,
+        "m": 1,
+        "name": "屋大維戰爭",
+        "theater": "亞克興海灣至亞歷山大港",
+        "brief": "年份欄記作前87年，與史實交戰年份有出入：實際戰事起於前43年第二次三頭同盟的分裂，終於前31年亞克興海戰與前30年亞歷山大城破。卡面的埃及月牙劍此時已退為王宮庫房的禮器，屬於被征服的埃及一方，而非征服者手上的短劍。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/-87-ed60a447ca.json"
+    },
+    {
+      "id": "17-赤眉軍起義",
+      "added": "2026-10-21T07:44:01.949Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.09,
+        "lat": 36.2
+      },
+      "battle": {
+        "y": 17,
+        "m": 8,
+        "name": "赤眉軍起義",
+        "theater": "泰山、琅邪至關中",
+        "brief": "公元17年（天鳳四年）秋，新莽末年饑荒蔓延，泰山、琅邪的赤眉眾揭竿而起，樊俊、董封各聚數萬人，與汝南劉縉、北海王匡、宗室劉玄所舉之兵互相應和，後合兵入洛陽、叩長安。赤眉另立宗室劉盆子為帝，帶著流民入關，縱火焚燒宮室；劉秀、鄧禹、吳漢等追之，公元27年赤眉主力在宜陽、湖城一線崩潰，餘眾東走陳留、沛國而散。卡面秦弩未必隨軍而至，但新莽軍與赤眉手中的弩，正是東漢初年攻守兩端同樣倚重的一件兵器。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/17-8f5ef3d4e2.json"
+    },
+    {
+      "id": "208-赤壁之戰",
+      "added": "2026-10-21T07:44:02.161Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.88,
+        "lat": 29.72
+      },
+      "battle": {
+        "y": 208,
+        "m": 11,
+        "name": "赤壁之戰",
+        "theater": "赤壁烏林（湖北赤壁市）",
+        "brief": "建安十三年冬，曹操大軍南下，舟艦首尾相接泊在長江北岸烏林，與隔江的孫劉聯軍相持。黃蓋詐降，十艘蒙衝斗艦載薪灌油、趁東南風衝入曹營，火烈風猛，燒盡北船。卡面羅馬短劍未曾踏上長江，但它那套持盾掩護、以刺突收官的近戰邏輯，正是漢軍環首刀配大盾在火攻後短兵相接時的寫照。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/208-6c54135844.json"
+    },
+    {
+      "id": "244-曹魏與高句麗的戰爭",
+      "added": "2026-10-21T07:44:02.163Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 123.17,
+        "lat": 41.27
+      },
+      "battle": {
+        "y": 244,
+        "m": 2,
+        "name": "曹魏與高句麗的戰爭",
+        "theater": "遼東襄平、玄菽一線",
+        "brief": "正始五年（244）二月，曹叡詔司馬懿、毌丘儉率步騎四萬伐高句麗，渡遼水進逼玄菽、襄平，逼得高句麗遣使請和受封；正始六年再舉五萬大軍深入，卻因糧盡遇雪、士卒飢病而潰退，死者數千。卡面科林斯青銅盔代表重裝步兵與甲騎的頭面防護——全正面開眼，視野最窄，戴盔者只能靠隊形活命。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/244-5a3a6a0b8b.json"
+    },
+    {
+      "id": "426-征服科潘與基里瓜",
+      "added": "2026-10-21T07:44:02.175Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -89.15,
+        "lat": 14.07
+      },
+      "battle": {
+        "y": 426,
+        "m": 10,
+        "name": "征服科潘與基里瓜",
+        "theater": "科潘河谷與基里瓜谷地",
+        "brief": "西元426年，蒂卡爾在瑪雅曆法九〇年輪換點（9.0.0.0.0）發動「星戰」，跨越佩滕雨林向南方進攻科潘與基里瓜，兩座城邦一度淪為附庸。戰役由祭司定出星象時日，國王與戰首統兵，貴族率美洲虎戰士隨行。卡面的埃及矛雖與瑪雅無關，但它代表的直刺桿兵，正是遠征隊伍的主要近戰裝備。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/426-3763021311.json"
+    },
+    {
+      "id": "484-蘇赫拉的嚈噠戰役",
+      "added": "2026-10-21T07:44:02.180Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 40.38,
+        "lat": 40.44
+      },
+      "battle": {
+        "y": 484,
+        "m": 8,
+        "name": "蘇赫拉的嚈噠戰役",
+        "theater": "小亞細亞東北的蘇赫拉要塞一帶",
+        "brief": "公元484年，嚈噠聯盟越過高加索襲擊卡帕多細亞與亞美尼亞邊境，軍事總監阿爾巴齊烏斯率約一萬人據守蘇赫拉要塞前的河谷隘道。匈軍假退誘戰，羅馬按兵不動，待其強攻才以盾列與兩翼騎兵反擊，攻破營壘。卡面科林斯青銅盔的全正面開眼設計，五世紀已退場，其功能由羅馬脊狀鐵盔與匈人鍍金面具接續。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/484-9ff7568f14.json"
+    },
+    {
+      "id": "50-伊比利亞-亞美尼亞戰爭",
+      "added": "2026-10-21T07:44:02.184Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.72,
+        "lat": 40.12
+      },
+      "battle": {
+        "y": 50,
+        "m": 1,
+        "name": "伊比利亞-亞美尼亞戰爭",
+        "theater": "高加索南麓加爾尼堡",
+        "brief": "公元五十年起，高加索南麓的伊比利亞王國與亞美尼亞王國為王位繼承與山隘控制大打出手，五十一年拉達米斯托斯圍攻加爾尼堡最為激烈。卡面的斯巴達長矛屬公元前八世紀的希臘方陣工藝，與本役相隔八百五十餘年，不會出現在堡下；當年刺擊用的是伊比利亞的馬其頓式長矛與羅馬軍團的短柄投槍。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/50-5ed3ec662a.json"
+    },
+    {
+      "id": "550-拔婆跋摩一世",
+      "added": "2026-10-21T07:44:02.188Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 104.75,
+        "lat": 11.55
+      },
+      "battle": {
+        "y": 550,
+        "m": 1,
+        "name": "拔婆跋摩一世",
+        "theater": "扶南王都桔井與湄公河口",
+        "brief": "公元550年，湄公河下游的扶南王國由拔婆跋摩一世統治。本戰漢文記載有限，可確定者為：扶南以象兵與舟師在王都桔井以下的河道及海口，與控制海峽的林邑系政權爭奪航路與朝貢通道；同年王都接待南印度僧人真諦，旋遣使北上，獻象並以王女與陳朝結姻。卡面的科林斯青銅盔屬公元前七世紀的希臘產物，與此戰無涉。"
+      },
+      "kit": {
+        "name": "科林斯青銅盔",
+        "designation": "Corinthian helmet",
+        "year": -650,
+        "nation": "gr",
+        "layer": "land",
+        "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
+        "portrait": "portraits/corinthian.jpg"
+      },
+      "dossierUrl": "dossiers/550-e349004794.json"
+    },
+    {
+      "id": "572-北周滅北齊之戰",
+      "added": "2026-10-21T07:44:02.191Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.62,
+        "lat": 36.35
+      },
+      "battle": {
+        "y": 572,
+        "m": 11,
+        "name": "北周滅北齊之戰",
+        "theater": "平陽、汾水與鄴城戰線",
+        "brief": "建德元年冬起，北周二十萬眾圍平陽，拉開歷時五年的滅齊之戰；建德四年斛律光戰歿汾水，齊軍精騎崩散；建德五年正月大軍入鄴，齊後主出奔青州被擒，北齊亡國。卡面羅馬短劍是公元前一世紀的羅馬佩劍，五七二年的中原並無此器，只作對照。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
       }
     }
   ]
