@@ -33192,7 +33192,8 @@
         "layer": "land",
         "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
         "portrait": "portraits/corinthian.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/624-d4359f0168.json"
     },
     {
       "id": "684-武則天平李敬業之戰",
@@ -33460,7 +33461,8 @@
         "layer": "land",
         "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
         "portrait": "portraits/onager.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/907-3eedbf72ed.json"
     },
     {
       "id": "910-柏鄉之戰",
@@ -33513,7 +33515,8 @@
         "layer": "land",
         "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
         "portrait": "portraits/hoplite.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/923-466ab0dce5.json"
     },
     {
       "id": "925-後唐滅前蜀之戰",
@@ -33566,7 +33569,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/gongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/936-20c4e0c2ed.json"
     },
     {
       "id": "954-高平之戰",
@@ -33727,7 +33731,8 @@
         "layer": "land",
         "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
         "portrait": "portraits/xiaochongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/980-c8d83123a8.json"
     },
     {
       "id": "986-代州之戰",
@@ -33831,6 +33836,221 @@
         "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
         "portrait": "portraits/egyptianspear.jpg"
       }
+    },
+    {
+      "id": "714-灤水谷之戰",
+      "added": "2026-10-21T10:24:37.058Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.16,
+        "lat": 39.71
+      },
+      "battle": {
+        "y": 714,
+        "m": 7,
+        "name": "灤水谷之戰",
+        "theater": "河北昌黎灤水谷",
+        "brief": "開元二年（714）夏秋之交，契丹首領大祚榮率部眾自營州方向南下寇邊。唐以幽州長史兼安東都護薛耽為主將，據灤水谷兩側險隘設伏，步兵持長矛、拒馬列於谷口，弩手居高齊射覆蓋出入之路，待契丹騎兵入谷難以展開，遂合擊兩翼、斷其歸路，斬首數千級。卡面這件埃及長矛早了三千年，是長柄刺擊兵器的祖型；唐軍與之對應者，正是槊、長矛與可擲出的標槊。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      }
+    },
+    {
+      "id": "755-滎陽之戰",
+      "added": "2026-10-21T10:24:37.080Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.35,
+        "lat": 34.83
+      },
+      "battle": {
+        "y": 755,
+        "m": 12,
+        "name": "滎陽之戰",
+        "theater": "河南道洛陽東境滎陽城",
+        "brief": "天寶十四載（755）十二月，安史叛將崔乾祐率精騎攻滎陽，雍丘令張巡與睢陽刺史許遠合兵六千八百人據城死守，焚其木樓、夜襲營寨，斬首千餘級，圍十餘日不能下，終因糧盡退保睢陽。卡面的希臘重步兵從未到過此處：方陣的互相遮蔽，在這座孤城裡換成了城牆、箭雨與共食。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/755-bf1b7ae559.json"
+    },
+    {
+      "id": "938-白藤江之戰",
+      "added": "2026-10-21T10:24:37.146Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.2,
+        "lat": 21.5
+      },
+      "battle": {
+        "y": 938,
+        "m": 12,
+        "name": "白藤江之戰",
+        "theater": "北寧白藤江河口",
+        "brief": "白藤江之戰係南漢王劉弘操率水軍進攻交趾，同靜海軍吳權喺白藤江一戰。吳權預先喺江底暗埋尖樁，誘敵大船入伏，退潮時敵舟擱淺被刺穿，劉弘操與過半士卒當場戰死。卡面嘅希臘重步兵並無參戰，只係用嚟對照方陣紀律；真正扭轉戰局嘅係木樁、潮汐同舟師。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/938-1a6bfb50b8.json"
+    },
+    {
+      "id": "956-紫金山之戰",
+      "added": "2026-10-21T10:24:37.154Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.85,
+        "lat": 32.6
+      },
+      "battle": {
+        "y": 956,
+        "m": 3,
+        "name": "紫金山之戰",
+        "theater": "淮河南岸壽縣紫金山",
+        "brief": "顯德三年（956）秋起，周世宗柴榮再征淮南，戰線壓到淮河南岸壽縣紫金山。南唐齊王李景達的援軍在此連營十餘座，與被圍的壽州遙相呼應，並掘地道數十里輸糧。後周以趙匡胤為先鋒奪寨斷其甬道，翌年四月攻破本寨，五萬援軍潰散。卡面斯巴達長矛是「長兵結陣」的象徵，此役決勝的卻是弩、浮橋與水軍。"
+      },
+      "kit": {
+        "name": "斯巴達長矛",
+        "designation": "Dory",
+        "year": -800,
+        "nation": "gr",
+        "layer": "land",
+        "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
+        "portrait": "portraits/dory.jpg"
+      },
+      "dossierUrl": "dossiers/956-6fbaeafaeb.json"
+    },
+    {
+      "id": "970-韶州之戰",
+      "added": "2026-10-21T10:24:37.165Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.6,
+        "lat": 24.8
+      },
+      "battle": {
+        "y": 970,
+        "m": 12,
+        "name": "韶州之戰",
+        "theater": "廣東韶州蓬華峰",
+        "brief": "開寶三年（970）十二月，宋軍主帥潘美長驅至韶州，南漢都統李承渥以十餘萬眾屯蓬華峰下，教象為陣，每象載十數人以壯軍威。潘美不與象陣硬撼，盡索軍中勁弩齊射，象受驚奔踶反踩本陣，宋軍乘勢大敗南漢。此役倚重者正是弩機：亞述長弓的複合角弓在中原早成陳跡，弩才是宋代壓制巨獸的實際手段。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      },
+      "dossierUrl": "dossiers/970-261492eb0f.json"
+    },
+    {
+      "id": "974-宋滅南唐之戰",
+      "added": "2026-10-21T10:24:37.165Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.79,
+        "lat": 32.06
+      },
+      "battle": {
+        "y": 974,
+        "m": 10,
+        "name": "宋滅南唐之戰",
+        "theater": "金陵城與長江下游江防",
+        "brief": "開寶七年九月，宋太祖以李煜拒絕入朝為由，下詔命曹彬率水陸軍十萬討南唐；十月出師荊南，連取鄂州、江州、池州、太平州，並依樊若水之策在石牌口結竹為浮橋，渡江直抵金陵。開寶八年二月十七日城破，李煜出降，南唐亡。卡面埃及長矛並未隨軍東來，其形制所對應的，正是此役中結陣拒騎、守城壓制的長矛步卒。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/974-b1c570a53b.json"
+    },
+    {
+      "id": "979-宋滅北漢之戰",
+      "added": "2026-10-21T10:24:37.168Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.55,
+        "lat": 37.87
+      },
+      "battle": {
+        "y": 979,
+        "m": 2,
+        "name": "宋滅北漢之戰",
+        "theater": "山西太原晉陽城",
+        "brief": "太平興國四年二月，宋太宗趙光義御駕親征北漢，軍隊自晉陽出發，先在柏谷擊破契丹援軍，再進逼太原，築圍斷糧、穿地道、施攻城器，五月迫劉繼元出降，北漢亡。卡面羅馬短劍不會出現在河東戰場，但宋軍近戰所用的環首直刀與刀盾配合，正是與它同屬刺突型短兵刃的同類器物。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/979-5f9fca2b82.json"
+    },
+    {
+      "id": "989-徐河之戰",
+      "added": "2026-10-21T10:24:37.178Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 115.65,
+        "lat": 39.18
+      },
+      "battle": {
+        "y": 989,
+        "m": 6,
+        "name": "徐河之戰",
+        "theater": "河北徐水唐河一帶",
+        "brief": "端拱二年（989）六月，遼將耶律休哥率精銳數萬騎入寇，圖襲遂城宋威虜軍；宋廷命李繼隆率鎮定大軍護送軍糧數千乘北上。尹繼倫部千餘人巡塞上遇之，遼軍不擊而直撲糧隊；尹繼倫乘夜銜枚追至徐河城北，待遼軍會食，短兵突擊，殺其大將，耶律休哥負臂遁走。卡面埃及長矛為青銅守城之矛，不在此役現場。"
+      },
+      "kit": {
+        "name": "埃及長矛",
+        "designation": "Egyptian spear",
+        "year": -3200,
+        "nation": "it",
+        "layer": "land",
+        "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
+        "portrait": "portraits/egyptianspear.jpg"
+      },
+      "dossierUrl": "dossiers/989-2e0260b3fd.json"
     }
   ]
 }
