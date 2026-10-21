@@ -29,18 +29,29 @@ const NATIONS = "us 或 uk 或 de 或 ussr 或 jp 或 fr 或 it 或 cn 或 se �
  * written at least once the writer starts a second pass and re-examines a
  * battle with a different kit -- which is what the feed is for.
  */
-export function pickWar(index, feed) {
-  const taken = new Set((feed.items ?? []).map((it) => it.battle?.name).filter(Boolean));
+export function pickWar(index, feed, extraTaken = new Set()) {
+  // A war is taken when its CARD is on the site, and a card is identified by
+  // its id. Two wars can share a name and still be two cards: 757-太原之戰
+  // and 1125-太原之戰 are different battles, and the older one was never
+  // written. Counting by name hid it, and the picker ran out of wars.
+  const takenIds = new Set((feed.items ?? []).map((it) => it.id).filter(Boolean));
+  for (const id of extraTaken) takenIds.add(id);
+  const idOf = (w) => `${w.y}-${w.name}`.replace(/\s+/g, "").slice(0, 32);
   const span = SPANS[(feed.items?.length ?? 0) % SPANS.length];
-  let pool = index.wars.filter((w) => w.span === span.id && !taken.has(w.name));
+  let pool = index.wars.filter((w) => w.span === span.id && !takenIds.has(idOf(w)));
   for (const s of SPANS) {
     if (pool.length) break;
-    pool = index.wars.filter((w) => w.span === s.id && !taken.has(w.name));
+    pool = index.wars.filter((w) => w.span === s.id && !takenIds.has(idOf(w)));
   }
   if (pool.length) return { war: pool[0], repeat: false };
+  // Nothing unwritten is left. A second card for a war that already has one
+  // is only allowed with a different id, otherwise the feed ends up with
+  // dozens of copies of the same card.
+  const spare = index.wars.filter((w) => !takenIds.has(idOf(w)));
+  if (spare.length) return { war: spare[0], repeat: true };
   const all = index.wars;
   if (!all.length) return null;
-  return { war: all[(feed.items?.length ?? 0) % all.length], repeat: true };
+  return { war: all[(feed.items?.length ?? 0) % all.length], repeat: false };
 }
 
 /**

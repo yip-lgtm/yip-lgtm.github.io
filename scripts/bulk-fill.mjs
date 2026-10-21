@@ -154,11 +154,18 @@ let wroteDossiers = 0;
 let stopped = "";
 
 const wars = [];
+// Each pick is reserved, so one run writes 40 DIFFERENT wars. Before, the
+// picker read the same feed every time and handed out the same war 40
+// times: the run wrote one card and the other 39 were the same card again.
+const reserved = new Set();
 for (let n = 0; n < LIMITS.briefs; n++) {
-  const picked = pickWar(index, feed);
+  const picked = pickWar(index, feed, reserved);
   if (!picked) break;
   const { war, repeat } = picked;
-  const taken = (feed.items ?? []).some((it) => it.battle?.name === war.name);
+  const id = `${war.y}-${war.name}`.replace(/\s+/g, "").slice(0, 32);
+  if (reserved.has(id)) continue;
+  reserved.add(id);
+  const taken = (feed.items ?? []).some((it) => it.id === id);
   if (taken && !repeat) continue;
   wars.push({ war, repeat });
 }
@@ -221,6 +228,13 @@ await pool(wars, WORKERS, async ({ war, repeat }) => {
     return;
   }
   feed.items = feed.items ?? [];
+  // One card per war id. A second pass over a war is only allowed when the
+  // id is still free: the feed once ended up with 34 copies of the same
+  // card, and the card grid showed all of them.
+  if (feed.items.some((it) => it.id === item.id)) {
+    console.error(`  ${item.id} 已經喺 feed 度，唔重複加`);
+    return;
+  }
   feed.items.push(item);
   wroteBriefs++;
   console.log(`  brief ${wroteBriefs}: ${war.name} (${war.y}, ${war.span}) -> ${item.kit.name}`);
