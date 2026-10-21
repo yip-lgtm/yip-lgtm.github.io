@@ -2154,7 +2154,7 @@
    "pen": 20,
    "armor": 8,
    "history": "一人半高的木牆，立在弩手前面。攻城方的最後一段距離靠它頂住。",
-   "portrait": null
+   "portrait": "portraits/pavise.jpg"
   },
   {
    "id": "poleaxe",
@@ -2168,7 +2168,7 @@
    "pen": 20,
    "armor": 8,
    "history": "頂端有刃、側面有鉤的長柄兵器。穿甲靠鉤，砍腿靠刃。",
-   "portrait": null
+   "portrait": "portraits/poleaxe.jpg"
   },
   {
    "id": "daneaxe",
@@ -2182,7 +2182,7 @@
    "pen": 20,
    "armor": 8,
    "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
-   "portrait": null
+   "portrait": "portraits/daneaxe.jpg"
   },
   {
    "id": "handcannon",
@@ -2196,7 +2196,7 @@
    "pen": 20,
    "armor": 8,
    "history": "第一支能重複使用的火器。它改變了城牆的價錢，也改變了守軍的膽量。",
-   "portrait": null
+   "portrait": "portraits/handcannon.jpg"
   },
   {
    "id": "shenbi",
@@ -2210,7 +2210,7 @@
    "pen": 20,
    "armor": 8,
    "history": "以絞弦張臂的強弩，一發穿重甲。宋的邊軍靠它守住了自己的邊界。",
-   "portrait": null
+   "portrait": "portraits/shenbi.jpg"
   },
   {
    "id": "contostephano",
