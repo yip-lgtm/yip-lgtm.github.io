@@ -6626,7 +6626,8 @@
         "layer": "land",
         "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
         "portrait": "portraits/wheellockpistol.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1828-5c1fec3ad8.json"
     },
     {
       "id": "1830-法國入侵阿爾及利亞",
@@ -8971,7 +8972,8 @@
         "layer": "land",
         "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1845-678154564b.json"
     },
     {
       "id": "1700-大北方戰爭",
@@ -10419,7 +10421,8 @@
         "layer": "land",
         "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
         "portrait": "portraits/hoplite.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/-48-45568f4636.json"
     },
     {
       "id": "1213-成吉思汗三路攻金之戰",
@@ -10445,7 +10448,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1213-12409b320b.json"
     },
     {
       "id": "1220-不花剌之戰",
@@ -10471,7 +10475,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1220-44c47e451a.json"
     },
     {
       "id": "1221-塔里寒之戰",
@@ -10497,7 +10502,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1221-163fb421da.json"
     },
     {
       "id": "1256-蒙古攻四川之戰",
@@ -10523,7 +10529,8 @@
         "layer": "land",
         "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1256-5471a7b266.json"
     },
     {
       "id": "1260-忽必烈與阿里不哥之戰",
@@ -10547,8 +10554,10 @@
         "year": 1100,
         "nation": "uk",
         "layer": "land",
-        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。"
-      }
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1260-125d9e3646.json"
     },
     {
       "id": "1274-沙陽、新城之戰",
@@ -10574,7 +10583,8 @@
         "layer": "land",
         "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
         "portrait": "portraits/greekfire.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1274-e15d0e1d06.json"
     },
     {
       "id": "6-巴托斯之戰",
@@ -10600,7 +10610,8 @@
         "layer": "land",
         "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
         "portrait": "portraits/legionary.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/6-c371753f66.json"
     },
     {
       "id": "720-巴什穆爾叛亂",
@@ -10626,7 +10637,8 @@
         "layer": "land",
         "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
         "portrait": "portraits/legionary.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/720-2532058afb.json"
     },
     {
       "id": "743-賈索·錢·卡維爾一世征服瓦卡",
@@ -10652,7 +10664,8 @@
         "layer": "land",
         "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
         "portrait": "portraits/khopesh.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/743-e9d363e8ca.json"
     },
     {
       "id": "762-762–763年阿里德起義",
@@ -10705,7 +10718,8 @@
         "layer": "land",
         "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
         "portrait": "portraits/assyrianspear.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/793-946e3c80b2.json"
     },
     {
       "id": "830-羅斯人對帕夫拉戈尼亞的遠征",
@@ -10733,6 +10747,649 @@
         "portrait": "portraits/scutum.jpg"
       },
       "dossierUrl": "dossiers/830-32e6115460.json"
+    },
+    {
+      "id": "-83-第二次米特拉達梯戰爭",
+      "added": "2026-10-21T06:27:56.730Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 35.49,
+        "lat": 38.73
+      },
+      "battle": {
+        "y": -83,
+        "m": 4,
+        "name": "第二次米特拉達梯戰爭",
+        "theater": "小亞細亞、奇里乞亞與希臘",
+        "brief": "西元前八十八年，羅馬執政官蘇拉接手對本都王米特拉達梯六世的戰事，在奇里乞亞、卡帕多西亞與希臘連戰：提格拉河之戰破了提格拉涅斯與米氏的聯軍，希臘方面又自比雷埃夫斯登陸奪回雅典。卡面的羅馬方陣盾是這場戰役的骨幹——凸面長方盾沿盾緣咬合成牆，正是它頂住龐提亞的卡爾基斯方陣。"
+      },
+      "kit": {
+        "name": "羅馬方陣盾",
+        "designation": "Scutum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
+        "portrait": "portraits/scutum.jpg"
+      },
+      "dossierUrl": "dossiers/-83-6dfb061f6a.json"
+    },
+    {
+      "id": "1161-德順軍之戰",
+      "added": "2026-10-21T06:27:56.766Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.1,
+        "lat": 35.68
+      },
+      "battle": {
+        "y": 1161,
+        "m": 9,
+        "name": "德順軍之戰",
+        "theater": "陝西鳳翔至寧夏德順軍",
+        "brief": "金主完顏亮正隆六年分四道南下犯宋，西路軍副都統制張中彦率騎兵五千自鳳翔趨大散關。四川宣撫使吳璘夜襲寶雞渭河橋頭寨得手，進收秦、隴、洮三州，大散關再歸宋有，兩軍在和尚原一線以火箭火砲隔塹相拒。年底完顏亮兵敗采石被部將所殺，金軍全線潰退；明年三月吳挺於瓦亭、吳璘於德順軍連敗金軍，收環、蘭、會、熙諸州。孝宗即位和議在即，遂詔罷德順軍還軍河池，十三州重歸金朝。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      }
+    },
+    {
+      "id": "1163-符離之戰",
+      "added": "2026-10-21T06:27:56.769Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.9,
+        "lat": 34.2
+      },
+      "battle": {
+        "y": 1163,
+        "m": 1,
+        "name": "符離之戰",
+        "theater": "宿州符離縣汴水畔",
+        "brief": "隆興元年（一一六三）正月，宋樞密院事張浚率軍渡淮，魏勝鋒先至符離，圍城攻擊；金主完顏元宗遣完顏宗弼率精騎救援，一夜襲破宋營，宋軍遂潰。符離扼汴水、淮水之交，兩軍皆欲先得之。卡面那件配重投石車是攻城一方最吃重的器械：長臂甩石，擊碎城牆與屋頂，逼守軍棄守城頭。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1163-52a84c698a.json"
+    },
+    {
+      "id": "1204-納忽昏山-不黑都兒麻之戰",
+      "added": "2026-10-21T06:27:56.774Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 109,
+        "lat": 40.7
+      },
+      "battle": {
+        "y": 1204,
+        "m": 6,
+        "name": "納忽昏山-不黑都兒麻之戰",
+        "theater": "河套北緣納忽昏山",
+        "brief": "泰和四年（1204）夏，蒙古偏師自陰山北麓南下，逼近金之河東邊外；金河東經略司調兵赴納忽昏山拒守，兩軍在山口內外相持數日。金軍以步卒倚山壘、弓弩封住谷口，蒙古騎兵以環射與佯攻牽制，終以糧水不繼退走。此役是蒙金邊戰的前哨，卡面十字弩正是金軍封隘、壓制坡面騎兵的手段。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1204-5b73cfae89.json"
+    },
+    {
+      "id": "1206-韓侂胄攻金之戰",
+      "added": "2026-10-21T06:27:56.777Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.02,
+        "lat": 33.6
+      },
+      "battle": {
+        "y": 1206,
+        "m": 3,
+        "name": "韓侂胄攻金之戰",
+        "theater": "江淮兩淮楚州泗州前線",
+        "brief": "開禧二年（1206）正月，金使入宋議和、割地不成，宋廷發兵三路北伐：韓侂胄自將出兩淮，吳獵出蜀口，京東一路策應。兩淮大軍北進至泗、楚一線即遇金騎反推，淮西軍潰於前線，北伐遂罷。卡面的希臘火一類燃燒噴射器具，在宋廷的水軍與攻城序列中以猛火油櫃的形式延續，具體施放細節史無明文。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1206-7d2bc25fac.json"
+    },
+    {
+      "id": "1217-蒙古攻西遼之戰",
+      "added": "2026-10-21T06:27:56.782Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.27,
+        "lat": 38.47
+      },
+      "battle": {
+        "y": 1217,
+        "m": 3,
+        "name": "蒙古攻西遼之戰",
+        "theater": "興慶府、河西走廊與河套",
+        "brief": "1216年秋至1217年，成吉思汗在掃平乃蠻、蔑兒乞後進攻西夏：騎兵自河套出發直指興慶府，又沿河西走廊掃蕩甘、肅、沙三州，逼西夏割地納貢、開關通行，為1219年西征花剌子模鋪路。這一役裏弩的兩面顯齊——西夏以神臂弓立於城堞，蒙古以弩手在填壕架梯時提供定點齊射，而野戰推進仍只能靠角弓與馬匹。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1217-0faad7816b.json"
+    },
+    {
+      "id": "1234-宋元戰爭",
+      "added": "2026-10-21T06:27:56.787Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.12,
+        "lat": 32.05
+      },
+      "battle": {
+        "y": 1234,
+        "m": 7,
+        "name": "宋元戰爭",
+        "theater": "襄樊漢水與廣東崖山",
+        "brief": "端平元年（1234）宋師北伐收三京不成，蒙古自端平二年起全面南侵，戰火由四川、荊襄延至江淮與廣南海面，至祥興二年（1279）崖山收官。卡面的希臘火在此戰線上對應宋廷名籍中的猛火油，屬火攻器材，與砲石、火藥同列，專司焚燒攻城器械與敵舟帆篷；其配製早已失傳，實戰規模無從核實。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1234-7bf739af0f.json"
+    },
+    {
+      "id": "1238-廬州之戰",
+      "added": "2026-10-21T06:27:56.788Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 117.28,
+        "lat": 31.86
+      },
+      "battle": {
+        "y": 1238,
+        "m": 11,
+        "name": "廬州之戰",
+        "theater": "淮西廬州（合肥）",
+        "brief": "宋嘉熙二年（1238）十一月，蒙古軍進攻淮西重鎮廬州，宋淮西兵與荊襄兵合勢赴援。趙葵督中軍扼城，孟珙遣精兵夜襲蒙古營寨、焚其積聚，大軍乘亂出城夾擊，蒙古軍退走十餘里，宋軍追奔數十里。城頭與追擊途中，宋軍以神臂弓、踏張弩齊射壓制蒙古騎兵，弩機張弦雖慢，仍是遠射的骨幹。"
+      },
+      "kit": {
+        "name": "十字弩",
+        "designation": "Crossbow",
+        "year": 1100,
+        "nation": "uk",
+        "layer": "land",
+        "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
+        "portrait": "portraits/crossbow.jpg"
+      },
+      "dossierUrl": "dossiers/1238-094b8c90e6.json"
+    },
+    {
+      "id": "1244-壽春之戰",
+      "added": "2026-10-21T06:27:56.790Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.79,
+        "lat": 32.58
+      },
+      "battle": {
+        "y": 1244,
+        "m": 12,
+        "name": "壽春之戰",
+        "theater": "淮南西路壽春府淮河南岸",
+        "brief": "淳祐四年（1244）冬，蒙古軍進攻淮南西路壽春府，南宋遣趙葵、孟珙分率兩淮與荊襄之兵北援，於壽春城下展開攻營與反攻之戰，宋軍奪壘破敵、追奔數十里，斬獲以萬計，淮南門戶為之一安。卡面希臘火屬拜占庭七世紀的噴射燃燒劑，此役未見其用，僅能對照蒙古攻城所用的火藥火油。"
+      },
+      "kit": {
+        "name": "希臘火",
+        "designation": "Greek fire",
+        "year": 670,
+        "nation": "it",
+        "layer": "land",
+        "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
+        "portrait": "portraits/greekfire.jpg"
+      },
+      "dossierUrl": "dossiers/1244-4b5ff44b51.json"
+    },
+    {
+      "id": "1275-揚州之戰",
+      "added": "2026-10-21T06:27:56.795Z",
+      "span": "p11",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 119.41,
+        "lat": 32.4
+      },
+      "battle": {
+        "y": 1275,
+        "m": 11,
+        "name": "揚州之戰",
+        "theater": "江蘇揚州蜀岡城與運河鹽場",
+        "brief": "至元十二年(1275)冬,伯顏率元軍順江而下,圍困宋淮南重鎮揚州,築夾城、列砲,決運河水以淹城西鹽場,至次年正月城破,李庭芝戰歿、張世賢被擒不降。卡面配重投石車正對應圍城序列中以長臂重錘拋石擊城的攻城砲,與撞竿、箭車同列,決定城頭與城垛的存亡。"
+      },
+      "kit": {
+        "name": "配重投石車",
+        "designation": "Trebuchet",
+        "year": 1100,
+        "nation": "it",
+        "layer": "land",
+        "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
+        "portrait": "portraits/trebuchet.jpg"
+      },
+      "dossierUrl": "dossiers/1275-a041250367.json"
+    },
+    {
+      "id": "40-馬援征嶺南之戰",
+      "added": "2026-10-21T06:27:56.910Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 105.85,
+        "lat": 21.03
+      },
+      "battle": {
+        "y": 40,
+        "m": 9,
+        "name": "馬援征嶺南之戰",
+        "theater": "交趾、鬱林間的嶺南山地",
+        "brief": "建武十六年秋，交趾校尉李贄與陳濤起兵反漢，殺太守，鬱林、桂林諸郡兵隨之響應。詔以伏波將軍馬援將兵南下，溯湘江、漓江入鬱林，再沿水路直抵交趾，翌年擒斬首謀，復置郡縣與屯田。卡面的希臘重步兵不在嶺南，它點出的是同一道理：盾牆能擋住衝鋒，靠的是成陣而非個人。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
+        "portrait": "portraits/hoplite.jpg"
+      },
+      "dossierUrl": "dossiers/40-6edff7da68.json"
+    },
+    {
+      "id": "567-沌口之戰",
+      "added": "2026-10-21T06:27:56.920Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 114.24,
+        "lat": 30.55
+      },
+      "battle": {
+        "y": 567,
+        "m": 1,
+        "name": "沌口之戰",
+        "theater": "漢水下游沌口",
+        "brief": "公元567年（北魏神龜三年、陳光大元年），北魏大將楊大眼率二十萬眾南伐，陳朝宿將侯瑱率湘州兵北援，戰於長江與漢水交會的沌口，陳軍大破魏軍，斬首數萬級，魏軍北退。卡面的羅馬弩砲屬公元前一世紀的扭力器械，與本役相隔六百餘年，其「一發一矢」的原理在同期中國以床弩、弩車延續。"
+      },
+      "kit": {
+        "name": "羅馬弩砲",
+        "designation": "Scorpio",
+        "year": -50,
+        "nation": "it",
+        "layer": "land",
+        "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
+        "portrait": "portraits/scorpio.jpg"
+      },
+      "dossierUrl": "dossiers/567-0fdf39b030.json"
+    },
+    {
+      "id": "572-北周統一北方",
+      "added": "2026-10-21T06:27:56.920Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.49,
+        "lat": 36.31
+      },
+      "battle": {
+        "y": 572,
+        "m": 2,
+        "name": "北周統一北方",
+        "theater": "晉陽、平陽與鄴城戰線",
+        "brief": "五七二年起，北周在宇文邕親政之後與北齊在晉陽、平陽一線開戰，先取平陽，再兩路進逼，於汾水擊破齊軍；五七七年大軍東下，攻破鄴城，北齊後主出奔青州被斬，北方重歸一統。卡面的羅馬標槍早在數百年前退出歐洲軍中，此處只作對照。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      },
+      "dossierUrl": "dossiers/572-8bf00160f2.json"
+    },
+    {
+      "id": "58-赫蒙杜里-查蒂戰爭",
+      "added": "2026-10-21T06:27:56.924Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 10.2,
+        "lat": 51.2
+      },
+      "battle": {
+        "y": 58,
+        "m": 5,
+        "name": "赫蒙杜里-查蒂戰爭",
+        "theater": "易北河上游與韋拉河谷地",
+        "brief": "公元58年前後，查蒂人與赫蒙杜里人在易北河上游與黑森高地之間打了一場沒有決戰的邊境消耗戰，唯一出處是塔西佗《日耳曼尼亞》第四十三章。卡面的埃及月牙劍是前1500年前後的青銅柴刀，較本役早了三個半千年，它是對照件：本役真正在場的是日耳曼部族的鐵短劍、木盾與短矛。"
+      },
+      "kit": {
+        "name": "埃及月牙劍",
+        "designation": "Khopesh",
+        "year": -1500,
+        "nation": "it",
+        "layer": "land",
+        "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
+        "portrait": "portraits/khopesh.jpg"
+      },
+      "dossierUrl": "dossiers/58-2898495c72.json"
+    },
+    {
+      "id": "580-利州之戰",
+      "added": "2026-10-21T06:27:56.926Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 105.84,
+        "lat": 32.43
+      },
+      "battle": {
+        "y": 580,
+        "m": 9,
+        "name": "利州之戰",
+        "theater": "蜀道北段利州白水江谷地",
+        "brief": "太建十一年（580）秋，陳朝趁北周主力南調豫東攻睢陽，遣蜀軍自閬中、昭化北上，進攻蜀道北門利州（治今廣元）。北周守軍據城死守，城頭弩砲與連發弩壓制攻城步卒，陳軍攻之不克而退。卡面秦連弩屬弩機源流，與本役現場的漢弩一系連弩不同形制，並非現場實物。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      }
+    },
+    {
+      "id": "580-楊堅平王謙之戰",
+      "added": "2026-10-21T06:27:56.929Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 112.55,
+        "lat": 37.87
+      },
+      "battle": {
+        "y": 580,
+        "m": 12,
+        "name": "楊堅平王謙之戰",
+        "theater": "晉北並州治太原",
+        "brief": "北周大象二年（580）冬，并州總管王謙乘楊堅專政、諸將蠢動之際起兵於太原，關中宿衛與關東州兵奉詔討之，韋師、韋冲、韋世康分道出師；開皇二年（582）春，叛軍五萬眾在并州地界被擊破，斬首萬餘級、俘其將趙乞兒，餘眾四散，王謙困守太原而終。此役掃清北周宿將最後一股成建制武裝，楊堅自此得以專力南下滅陳。"
+      },
+      "kit": {
+        "name": "亞述長弓",
+        "designation": "Assyrian bow",
+        "year": -700,
+        "nation": "it",
+        "layer": "land",
+        "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
+        "portrait": "portraits/assyrianbow.jpg"
+      }
+    },
+    {
+      "id": "580-鄴城之戰",
+      "added": "2026-10-21T06:27:56.932Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.61,
+        "lat": 36.31
+      },
+      "battle": {
+        "y": 580,
+        "m": 4,
+        "name": "鄴城之戰",
+        "theater": "河北鄴城漳水西岸",
+        "brief": "大象二年（五八〇年）四月，北周柱國尉遲迥在鄴城聚眾反隋，隋文帝以丞相王誼為行軍元帥、幷州總管韋雲起率精騎為先驅，攻城拔城，一月之內鄴城易主。卡面的亞述長矛是短柄長刃、套筒可換柄的刺擊兵器，在隋軍體系中對位的是步兵的矛與槊，與弓弩、砲石、撞車、雲梯同列，本身不決定戰果。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏈。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/580-11505b3109.json"
+    },
+    {
+      "id": "582-甑山、溳口之戰",
+      "added": "2026-10-21T06:27:56.936Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 118.3,
+        "lat": 33.1
+      },
+      "battle": {
+        "y": 582,
+        "m": 11,
+        "name": "甑山、溳口之戰",
+        "theater": "江淮溳口甑山一線",
+        "brief": "開皇二年（582）十一月，隋文帝乘陳宣帝新喪，遣晉王楊廣掛名行軍元帥，率諸王諸軍號稱五十一萬，自六合沿淮河北進；陳廷遣都督袁君正等拒守溳口一線，隋軍進逼甑山，陳軍大敗，死者以萬計。卡面這件秦連弩，正是此役中進攻方用來壓制渡口守軍、守城方用來封鎖淮岸的器械。"
+      },
+      "kit": {
+        "name": "秦連弩",
+        "designation": "Repeating crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/xiaochongnu.jpg"
+      },
+      "dossierUrl": "dossiers/582-25db089033.json"
+    },
+    {
+      "id": "583-沙缽略與阿波之戰",
+      "added": "2026-10-21T06:27:56.939Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/戰爭列表",
+      "place": {
+        "lng": 102.8,
+        "lat": 47.4
+      },
+      "battle": {
+        "y": 583,
+        "m": 4,
+        "name": "沙缽略與阿波之戰",
+        "theater": "蒙古高原杭愛山至河西邊境",
+        "brief": "開皇三年（583）四月，突厥沙缽略可汗在白道被隋軍擊敗，控弦四十萬的東面大汗與西面小可汗阿波決裂。阿波因遣使入朝被同族視為背叛，牙帳被襲、母親被殺，遂西投達頭乞兵十萬反攻，兩可汗內戰自此打開。卡面投石機為羅馬絞盤拋石機，並不在此役現場。"
+      },
+      "kit": {
+        "name": "投石機",
+        "designation": "Onager",
+        "year": -250,
+        "nation": "it",
+        "layer": "land",
+        "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
+        "portrait": "portraits/onager.jpg"
+      },
+      "dossierUrl": "dossiers/583-22368dcad8.json"
+    },
+    {
+      "id": "583-隋滅高寶寧之戰",
+      "added": "2026-10-21T06:27:56.940Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.28,
+        "lat": 31.86
+      },
+      "battle": {
+        "y": 583,
+        "m": 10,
+        "name": "隋滅高寶寧之戰",
+        "theater": "合肥巢湖江北前線",
+        "brief": "開皇三年（583）冬，隋文帝分道伐陳，陳將高寶寧所部在合肥、巢湖一線的江北前線拒戰，兵敗被擒，所守城邑為隋軍所據。此役未能渡江，卻替隋在淮南整備漕運、造船積穀，開啟往後六年的滅陳工程。卡面亞述長矛並非此戰裝備，只作對照：短柄長刃的近身刺擊原理，正是隋軍步卒長矛與陳軍槊陣共通之處。"
+      },
+      "kit": {
+        "name": "亞述長矛",
+        "designation": "Assyrian spear",
+        "year": -900,
+        "nation": "it",
+        "layer": "land",
+        "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
+        "portrait": "portraits/assyrianspear.jpg"
+      },
+      "dossierUrl": "dossiers/583-f4f6a33829.json"
+    },
+    {
+      "id": "585-隋助沙缽略可汗擊阿波可汗之戰",
+      "added": "2026-10-21T06:27:56.943Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 102.63,
+        "lat": 37.93
+      },
+      "battle": {
+        "y": 585,
+        "m": 12,
+        "name": "隋助沙缽略可汗擊阿波可汗之戰",
+        "theater": "河西走廊中段涼州至吐谷渾腹地",
+        "brief": "開皇五年冬，吐谷渾別帥阿波可汗寇涼州，東部沙缽略可汗兵敗降隋願為鄉導。隋遣上柱國韋沖、襄州總管韋世康出師，參贊陳樹用誘敵設伏之策，開皇六年在吐谷渾腹地大破之。卡面那件羅馬標槍在河西並無蹤跡，只能與本役靠嚮導、伏兵同糧道取勝的做法對照。"
+      },
+      "kit": {
+        "name": "羅馬標槍",
+        "designation": "Pilum",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
+        "portrait": "portraits/pilum.jpg"
+      }
+    },
+    {
+      "id": "69-巴達維起義",
+      "added": "2026-10-21T06:27:56.948Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 5.86,
+        "lat": 51.84
+      },
+      "battle": {
+        "y": 69,
+        "m": 1,
+        "name": "巴達維起義",
+        "theater": "萊茵河下游與巴達維",
+        "brief": "公元69年五帝之年，下萊茵的巴達維協助軍倒戈，叛軍夜襲韋特拉營地、泅渡萊茵，最後被維佩蒂安自西班牙調來的軍團與工程兵封死在巴達維城。卡面羅馬重步兵象徵帝國真正的底子：兵源與補給線，最後取勝的不是甲胄，而是渡河權、圍城工事與糧秣。"
+      },
+      "kit": {
+        "name": "羅馬重步兵",
+        "designation": "Legionary",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
+        "portrait": "portraits/legionary.jpg"
+      },
+      "dossierUrl": "dossiers/69-ff19323c7f.json"
+    },
+    {
+      "id": "736-賈索·錢·卡維爾一世征服卡拉克穆爾",
+      "added": "2026-10-21T06:27:56.949Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -89.75,
+        "lat": 19.93
+      },
+      "battle": {
+        "y": 736,
+        "m": 12,
+        "name": "賈索·錢·卡維爾一世征服卡拉克穆爾",
+        "theater": "佩滕-坎佩切低地",
+        "brief": "公元736年，卡拉克穆爾的蛇王朝在佩滕—坎佩切低地對蒂卡爾及普克諸邦打出決定性一仗：蒂卡爾的敗績見於743年豎立的31號石碑，烏克斯特佩通的紀念碑亦在七三〇年代末停工。卡面的希臘重步兵屬古典地中海的方陣裝備，未曾出現在瑪雅戰場，與之功能相當的是佩槍的獵豹武士與擲矛手。"
+      },
+      "kit": {
+        "name": "希臘重步兵",
+        "designation": "Hoplite",
+        "year": -500,
+        "nation": "gr",
+        "layer": "land",
+        "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。"
+      },
+      "dossierUrl": "dossiers/736-402370b29e.json"
+    },
+    {
+      "id": "854-交趾之戰",
+      "added": "2026-10-21T06:27:56.953Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 105.85,
+        "lat": 21.03
+      },
+      "battle": {
+        "y": 854,
+        "m": 5,
+        "name": "交趾之戰",
+        "theater": "安南都護府交趾龍編城",
+        "brief": "大中八年（854），南詔王世隆遣將自雲南沿紅河南下，攻陷唐朝安南都護府治所龍編城，該州自此淪入南詔統治。唐軍把弩手列於城垣與壘柵之後，居高拒南詔象兵與步卒；秦弩正是守方的主要遠射兵器，一張一發，壓住攻城者接近牆根的節奏。城破之後唐廷未能即時收復，直到咸通年間高驪收復愛州、驩州。"
+      },
+      "kit": {
+        "name": "秦弩",
+        "designation": "Chinese crossbow",
+        "year": -200,
+        "nation": "cn",
+        "layer": "land",
+        "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
+        "portrait": "portraits/gongnu.jpg"
+      },
+      "dossierUrl": "dossiers/854-eeb04fda6a.json"
     }
   ]
 }
