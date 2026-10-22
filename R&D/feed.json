@@ -1,0 +1,83 @@
+{
+ "generated_utc": "2026-10-22-17",
+ "reports": [
+  {
+   "stamp": "2026-10-22-17",
+   "title_zh": "美國職業熱害防護：聯邦執法强度與熱死亡負擔的落差",
+   "title_en": "US Occupational Heat Protection: The Gap Between Federal Enforcement and Measured Heat Mortality",
+   "url": "/R&D/reports/2026-10-22-17.html",
+   "cjk": 769,
+   "bytes": 8056,
+   "sources": 10,
+   "gate_pass": true
+  },
+  {
+   "stamp": "2026-10-22-16",
+   "title_zh": "科研哨兵報告｜2026-10-22 16:00 UTC",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-22-16.html",
+   "cjk": 783,
+   "bytes": 4499,
+   "sources": 3,
+   "gate_pass": false
+  },
+  {
+   "stamp": "2026-10-22-15",
+   "title_zh": "主題",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-22-15.html",
+   "cjk": 2444,
+   "bytes": 28225,
+   "sources": 28,
+   "gate_pass": false
+  },
+  {
+   "stamp": "2026-10-22-14",
+   "title_zh": "科研哨兵報告｜2026-10-22 14:00 UTC",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-22-14.html",
+   "cjk": 1576,
+   "bytes": 10396,
+   "sources": 0,
+   "gate_pass": false
+  }
+ ],
+ "knowledge": [
+  {
+   "slug": "01-secondary-foundation",
+   "title": "01 中學／高中工程基礎與升學銜接",
+   "url": "/R&D/knowledge/01-secondary-foundation.html",
+   "bytes": 51546
+  },
+  {
+   "slug": "02-subdegree-certificate",
+   "title": "02 副學士／高級文憑／證書 + 資歷架構層級",
+   "url": "/R&D/knowledge/02-subdegree-certificate.html",
+   "bytes": 43393
+  },
+  {
+   "slug": "03a-bachelors-civil-mech-elec",
+   "title": "03a 學士三大分支：Civil / Mechanical / Electrical（工程學士）",
+   "url": "/R&D/knowledge/03a-bachelors-civil-mech-elec.html",
+   "bytes": 43504
+  },
+  {
+   "slug": "04-postgraduate-research",
+   "title": "04 碩士／博士：研究生教育層級（Postgraduate / Research Degrees）",
+   "url": "/R&D/knowledge/04-postgraduate-research.html",
+   "bytes": 25506
+  },
+  {
+   "slug": "energy-retail-price-affordability",
+   "title": "領域筆記：電力零售價格與家庭負擔 (Retail Power Prices & Household Affordability)",
+   "url": "/R&D/knowledge/energy-retail-price-affordability.html",
+   "bytes": 2723
+  },
+  {
+   "slug": "occupational-heat-health-burden",
+   "title": "領域筆記：職業熱害防護與健康負擔落差 (Occupational Heat Protection & Health Burden Gap)",
+   "url": "/R&D/knowledge/occupational-heat-health-burden.html",
+   "bytes": 3437
+  }
+ ]
+}
