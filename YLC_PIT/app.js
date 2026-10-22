@@ -145,25 +145,26 @@ function render() {
   }
   html += "</div></section>";
 
-  html += '<section class="band"><h3>NFC pits · triangle · top aligned · downslope A-B-C-D-E</h3><div class="tri">';
-  html += '<div class="heads">';
+  html += '<section class="band"><h3>NFC pits · 124 · columns = Row · rows downslope A-B-C-D-E</h3><div class="tri">';
+  html += '<div class="heads"><div></div>';
   COLS.forEach(function (col) {
-    html += '<div class="head">R' + col.row + "<br>" + col.n + "</div>";
+    html += '<div class="head">' + col.row + "</div>";
   });
-  html += "</div><div class=\"grid\">";
+  html += "</div>";
   const max = 10;
   for (let r = 0; r < max; r++) {
+    html += '<div class="grid"><div class="rlabel">' + LETTERS[r % 5] + "</div>";
     COLS.forEach(function (col, ci) {
       const pit = PITS.filter(function (p) { return p.col === ci && p.stack === r; })[0];
       if (!pit || !show(pit)) {
         html += '<div class="empty"></div>';
         return;
       }
-      const m = meta(pit.id);
-      html += cellBtn(pit, pit.marker, m.note ? m.note.slice(0, 6) : "");
+      html += cellBtn(pit, pit.marker, "");
     });
+    html += "</div>";
   }
-  html += "</div></div></section>";
+  html += "</div></section>";
   document.getElementById("plan").innerHTML = html;
   document.querySelectorAll("[data-open]").forEach(function (el) {
     el.onclick = function () { edit(el.getAttribute("data-open")); };
