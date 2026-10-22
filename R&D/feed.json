@@ -4,11 +4,11 @@
   {
    "stamp": "2026-10-22-20",
    "title_zh": "同樣是抗生素失效：兒童抗藥性死亡減逾半、老年人增逾八成",
-   "title_en": "When Drug Failure Splits by Age: AMR Deaths Halved in Children, Up Over 80% in the Elderly",
+   "title_en": "When Drug Failure Splits by Age: AMR Deaths Halved in Children, Up 80% in the Elderly",
    "url": "/R&D/reports/2026-10-22-20.html",
-   "cjk": 1083,
-   "bytes": 10138,
-   "sources": 9,
+   "cjk": 996,
+   "bytes": 8950,
+   "sources": 8,
    "gate_pass": false
   },
   {
@@ -86,6 +86,12 @@
    "title": "04 碩士／博士：研究生教育層級（Postgraduate / Research Degrees）",
    "url": "/R&D/knowledge/04-postgraduate-research.html",
    "bytes": 25506
+  },
+  {
+   "slug": "amr-burden-age-divergence",
+   "title": "領域筆記：抗藥性死亡負擔的年齡分化與治理槓桿 (AMR Burden Age Divergence & Governance Levers)",
+   "url": "/R&D/knowledge/amr-burden-age-divergence.html",
+   "bytes": 4625
   },
   {
    "slug": "energy-retail-price-affordability",
