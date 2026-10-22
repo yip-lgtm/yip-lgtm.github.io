@@ -189,6 +189,10 @@
   "minieballrifle": "portraits/minieball.jpg",
   "winchestermodel1873": "portraits/winchester.jpg",
   "enfieldrifle": "portraits/enfieldrifle.jpg",
-  "berdanrifle": "portraits/berdan.jpg"
+  "berdanrifle": "portraits/berdan.jpg",
+  "sharpsrifle": "portraits/sharps.jpg",
+  "breechloadingcannon": "portraits/breechcannon.jpg",
+  "steamironclad": "portraits/steamship.jpg",
+  "torpedoboat": "portraits/torpedoboat.jpg"
  }
 }

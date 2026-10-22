@@ -2448,7 +2448,7 @@
    "pen": 20,
    "armor": 8,
    "history": "後膛、落膛、偏心擊發。它在南部合眾國的騎兵手上打出過三百發一分鐘。",
-   "portrait": null
+   "portrait": "portraits/sharps.jpg"
   },
   {
    "id": "breechcannon",
@@ -2462,7 +2462,7 @@
    "pen": 20,
    "armor": 8,
    "history": "螺式後膛讓砲位不必整門退回去。射程和射速一起進步，砲兵開始比步兵先到。",
-   "portrait": null
+   "portrait": "portraits/breechcannon.jpg"
   },
   {
    "id": "steamship",
@@ -2476,7 +2476,7 @@
    "pen": 20,
    "armor": 8,
    "history": "蒸汽機加鐵甲。战舰第一次不靠帆吃風，港口裡的煤比海上的風更決定戰局。",
-   "portrait": null
+   "portrait": "portraits/steamship.jpg"
   },
   {
    "id": "torpedoboat",
@@ -2490,7 +2490,7 @@
    "pen": 20,
    "armor": 8,
    "history": "小船帶著一枚雷衝進大艦的肚子。戰列艦的價格第一次被一種沒有装甲的東西威脅。",
-   "portrait": null
+   "portrait": "portraits/torpedoboat.jpg"
   }
  ]
 }
