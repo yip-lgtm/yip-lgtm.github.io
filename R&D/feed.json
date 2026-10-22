@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-22-18",
+ "generated_utc": "2026-10-22-19",
  "reports": [
+  {
+   "stamp": "2026-10-22-19",
+   "title_zh": "標題：半熟料水泥為何仍有同等強度：煅燒黏土與石灰石的協同機制",
+   "title_en": "Why half-clinker cement keeps its strength: the synergy of calcined clay and limestone",
+   "url": "/R&D/reports/2026-10-22-19.html",
+   "cjk": 612,
+   "bytes": 7964,
+   "sources": 18,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-22-18",
    "title_zh": "測試報告 — 發佈管道端到端驗證",
