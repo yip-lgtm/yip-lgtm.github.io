@@ -34744,7 +34744,8 @@
         "layer": "land",
         "history": "秦連弩是唐軍弩兵裝備中的連續發射型弩機，編入步軍或守城部隊，負責遠距壓制、封鎖射界，並支援城防與反擊。",
         "portrait": "portraits/xiaochongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/757-fe1d938b09.json"
     },
     {
       "id": "982-宋夏戰爭",
