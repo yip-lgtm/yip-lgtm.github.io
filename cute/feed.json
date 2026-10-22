@@ -34824,7 +34824,8 @@
         "layer": "land",
         "history": "配重投石車屬於攻城體系中的遠程拋射兵器，通常部署於圍城陣線或防線後方，以石彈打擊城牆、塔樓及集結部隊，支援地面部隊推進。",
         "portrait": "portraits/trebuchet.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1236-5d54fdf245.json"
     },
     {
       "id": "956-六合之戰",
