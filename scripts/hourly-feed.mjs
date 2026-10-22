@@ -80,27 +80,33 @@ const portraitIndex = loadPortraitIndex(readFileSync, [
   new URL("../public/portrait-index.json", import.meta.url),
 ]);
 
-const taken = new Set(feed.items.map((it) => it.battle?.name).filter(Boolean));
+// A war is taken when its CARD is on the site, and a card is identified by
+// its id. Two wars can share a name and still be two cards: 757-太原之戰
+// and 1125-太原之戰 are different battles. Counting by name hid those, the
+// index looked exhausted, and the second pass wrote the same card again.
+const warId = (w) => `${w.y}-${w.name}`.replace(/\s+/g, "").slice(0, 32);
+const takenIds = new Set(feed.items.map((it) => it.id).filter(Boolean));
 const span = SPANS[feed.items.length % SPANS.length];
 // The round-robin span may already be used up -- the 1900-onward lists are
 // short and the writer gets through them in a week. Fall through to the next
 // span that still has an unwritten war rather than giving up.
-let pool = index.wars.filter((w) => w.span === span.id && !taken.has(w.name));
+let pool = index.wars.filter((w) => w.span === span.id && !takenIds.has(warId(w)));
 for (const s of SPANS) {
   if (pool.length) break;
-  pool = index.wars.filter((w) => w.span === s.id && !taken.has(w.name));
+  pool = index.wars.filter((w) => w.span === s.id && !takenIds.has(warId(w)));
 }
-// Every war in the index has been written at least once. Start a second pass:
-// the same battle can be re-examined with a different kit, which is what the
-// feed is for ("每小時考證"). Without this the job died with "war index
-// exhausted" and the feed stopped growing.
+// Every war in the index has a card already. A second pass is only allowed
+// for a war whose id is still free, otherwise the feed ends up with copies
+// of the same card: it once held 35 of them.
 const repeat = pool.length === 0;
-if (repeat) console.error("war index exhausted -- starting a second pass over the index");
-const war = repeat ? index.wars[feed.items.length % index.wars.length] : pool[0];
+if (repeat) console.error("war index exhausted -- looking for a war without a card");
+const spare = repeat ? index.wars.filter((w) => !takenIds.has(warId(w))) : [];
+const war = repeat ? spare[0] : pool[0];
 if (!war) {
-  console.error("war index exhausted and the index is empty");
-  process.exit(1);
+  console.error("every war in the index already has a card -- nothing to write");
+  process.exit(0);
 }
+if (repeat) console.error(`  second pass: ${war.name} (${war.y}) has no card of its own yet`);
 console.error(`  war: ${war.name} (${war.y}, span ${war.span})`);
 
 const libraryKit = pickKit(war, library, (feed.items?.length ?? 0), portraitIndex);
@@ -294,6 +300,11 @@ if (!parsed) {
   }
   console.error(`no campaign written for ${war.name}: ${lastError} — will retry next hour`);
   process.exit(1);
+}
+// One card per war id. A duplicate would show up twice in the card grid.
+if (feed.items.some((it) => it.id === parsed.id)) {
+  console.error(`${parsed.id} is already on the feed -- not adding it again`);
+  process.exit(0);
 }
 feed.items.push(parsed);
 writeFileSync(out, JSON.stringify(feed, null, 2) + "\n");
