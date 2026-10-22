@@ -3,278 +3,222 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YLC Layout Plan — pits + soil nails</title>
+<title>YLC 格仔圖 · 124 pits + 26 nails</title>
 <style>
-:root {
-  --bg:#0e141b; --panel:#17202b; --panel2:#223044; --line:#314155;
-  --text:#e8eef6; --muted:#8ea0b5; --accent:#3d8bfd;
-  --a:#3d8bfd; --c:#2ea043; --e:#d29922; --b:#a371f7; --d:#f85149;
-}
+:root{--bg:#0e141b;--panel:#17202b;--line:#314155;--text:#e8eef6;--muted:#8ea0b5;--accent:#3d8bfd}
 *{box-sizing:border-box}
 body{margin:0;font-family:"Segoe UI","Noto Sans TC",system-ui,sans-serif;background:var(--bg);color:var(--text)}
-header{position:sticky;top:0;z-index:20;background:rgba(14,20,27,.94);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
-h1{margin:0;font-size:17px} h1 span{color:var(--muted);font-weight:500;font-size:12px;margin-left:8px}
-.stats,.toolbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-.chip{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-size:12px;color:var(--muted)}
+header{position:sticky;top:0;z-index:20;background:rgba(14,20,27,.96);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+h1{margin:0;font-size:16px} h1 span{color:var(--muted);font-weight:500;font-size:12px;margin-left:6px}
+.row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.chip{background:#223044;border:1px solid var(--line);border-radius:999px;padding:3px 8px;font-size:12px;color:var(--muted)}
 .chip b{color:var(--text)}
-button,select,input{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px}
+button,select,input{background:#223044;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px}
 button{cursor:pointer} button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-main{padding:14px 16px 36px}
-.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:10px}
-.sw{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px}
-.plan{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto}
-.band{margin-bottom:16px}
-.band h3{margin:0 0 8px;font-size:13px;color:var(--muted);font-weight:600}
-.sn-row,.pit-row{display:flex;gap:6px;align-items:flex-start;margin-bottom:6px}
-.lbl{width:54px;flex:0 0 54px;font-size:12px;color:var(--muted);padding-top:14px}
+main{padding:12px 14px 32px}
+.legend{font-size:12px;color:var(--muted);margin-bottom:10px;display:flex;gap:10px;flex-wrap:wrap}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block;vertical-align:-2px;margin-right:4px}
+.band{margin-bottom:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
+.band h3{margin:0 0 8px;font-size:13px;color:var(--muted)}
+.line{display:flex;gap:6px;align-items:flex-start;margin-bottom:6px}
+.lbl{width:72px;flex:0 0 72px;font-size:12px;color:var(--muted);padding-top:10px}
 .cells{display:flex;flex-wrap:wrap;gap:5px}
-.cell{width:68px;min-height:48px;border-radius:8px;border:1px solid var(--line);background:#121a24;padding:5px 6px;cursor:pointer;text-align:left;position:relative}
-.cell:hover{border-color:var(--accent)}
+.cell{width:78px;min-height:58px;border-radius:8px;border:1px solid var(--line);background:#121a24;padding:5px 6px;cursor:pointer;text-align:left;position:relative}
+.cell:hover{outline:2px solid var(--accent)}
 .cell .mk{font-weight:700;font-size:13px}
-.cell .sub{font-size:10px;color:var(--muted)}
-.cell.has::after{content:"";position:absolute;top:4px;right:4px;width:6px;height:6px;border-radius:50%;background:#58a6ff}
-.nail{background:#1c2836}
-.letter-A{box-shadow:inset 3px 0 0 var(--a)}
-.letter-C{box-shadow:inset 3px 0 0 var(--c)}
-.letter-E{box-shadow:inset 3px 0 0 var(--e)}
-.letter-B{box-shadow:inset 3px 0 0 var(--b)}
-.letter-D{box-shadow:inset 3px 0 0 var(--d)}
-.st-none{color:var(--muted)} .st-exc{color:#79c0ff} .st-nfc{color:#56d364} .st-done{color:#3fb950}
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:flex-start;justify-content:center;z-index:40;padding:20px 12px;overflow:auto}
-.overlay.open{display:flex}
-.card{width:min(860px,100%);background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
-.card h2{margin:0 0 4px} .subline{color:var(--muted);font-size:13px;margin-bottom:12px}
+.cell .sub{font-size:10px;color:var(--muted);line-height:1.2}
+.cell.has::after{content:"";position:absolute;top:4px;right:4px;width:7px;height:7px;border-radius:50%;background:#58a6ff}
+.none{background:#121a24} .exc{background:#16324f} .nfc{background:#163828} .done{background:#14532d}
+.letter-A{box-shadow:inset 3px 0 0 #3d8bfd} .letter-C{box-shadow:inset 3px 0 0 #2ea043}
+.letter-E{box-shadow:inset 3px 0 0 #d29922} .letter-B{box-shadow:inset 3px 0 0 #a371f7}
+.letter-D{box-shadow:inset 3px 0 0 #f85149} .nail{box-shadow:inset 3px 0 0 #f0b429}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;z-index:40;overflow:auto;padding:18px 10px}
+.overlay.open{display:block}
+.card{width:min(880px,100%);margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}.cell{width:70px}}
 label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
 .field{margin-bottom:10px}
 .photos{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.photos img{width:120px;height:90px;object-fit:cover;border-radius:8px;border:1px solid var(--line);cursor:pointer}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.photos figure{margin:0;width:130px}
+.photos img{width:130px;height:96px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.photos button{margin-top:4px;width:100%}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .note{font-size:12px;color:var(--muted);margin-top:8px}
-footer{color:var(--muted);font-size:12px;padding:0 16px 20px}
 </style>
 </head>
 <body>
 <header>
-  <h1>Yuet Lai Court · Layout Plan <span>11NW-A/C16 · 124 pits + 26 soil nails</span></h1>
-  <div class="stats" id="stats"></div>
-  <div class="toolbar">
-    <input id="q" type="search" placeholder="搜尋 R21 / 1A / A-1">
+  <h1>YLC 格仔圖 <span>124 pits + 26 soil nails · 點格編輯／上載</span></h1>
+  <div class="row" id="stats"></div>
+  <div class="row">
+    <input id="q" type="search" placeholder="搜尋 1A / A-1 / R21">
     <select id="filter">
       <option value="">全部</option>
       <option value="pit">只看坑</option>
       <option value="nail">只看土釘</option>
       <option value="none">未開始</option>
       <option value="exc">已開挖</option>
-      <option value="nfc">已灌 NFC</option>
+      <option value="nfc">已灌／已裝</option>
       <option value="done">已核實</option>
     </select>
-    <button id="exportBtn">匯出 JSON</button>
-    <button id="importBtn">匯入 JSON</button>
+    <button id="exportBtn">匯出</button>
+    <button id="importBtn">匯入</button>
     <input id="importFile" type="file" accept="application/json" hidden>
   </div>
 </header>
 <main>
   <div class="legend">
-    <span><i class="sw" style="background:var(--a)"></i>A</span>
-    <span><i class="sw" style="background:var(--c)"></i>C</span>
-    <span><i class="sw" style="background:var(--e)"></i>E</span>
-    <span><i class="sw" style="background:var(--b)"></i>B</span>
-    <span><i class="sw" style="background:var(--d)"></i>D</span>
-    <span>藍點 = 已有相片 · 次序 A→C→E→B→D · 土釘 A/B/C 在坡腳</span>
+    <span><i class="sw none" style="border:1px solid #314155"></i>未開始</span>
+    <span><i class="sw exc"></i>已開挖</span>
+    <span><i class="sw nfc"></i>已灌／已裝</span>
+    <span><i class="sw done"></i>已核實</span>
+    <span>藍點 = 已上載相片 · 左色條 A/C/E/B/D</span>
   </div>
-  <div class="plan" id="plan"></div>
+  <div id="plan"></div>
 </main>
-<footer>平面示意，不是測量圖。點坑或土釘開獨立頁。相片存在此瀏覽器，換裝置前請匯出 JSON。</footer>
 <div class="overlay" id="overlay"><div class="card" id="card"></div></div>
 <script>
-const SEQUENCE = {
-  21:["1A","1A","1C","1C","1E","1E","1B","1B","1D","1D"],
-  22:["2A","2A","2C","2C","2E","2E","2B","2B","2D","2D"],
-  23:["3A","3A","3C","3C","3E","3E","3B","3B","3D","3D"],
-  24:["4A","4A","4C","4C","4E","4E","4B","4B","4D","4D"],
-  31:["1A","1A","1C","1C","1E","1B","1D","1D"],
-  32:["2A","2A","2C","2C","2E","2B","2D","2D"],
-  33:["3A","3A","3C","3E","3B","3B","3D"],
-  34:["4A","4A","4C","4E","4B","4B","4D"],
-  41:["1A","1A","1C","1E","1B","1B","1D"],
-  42:["2A","2A","2C","2E","2B","2D"],
-  43:["3A","3A","3C","3E","3B","3D"],
-  44:["4A","4C","4E","4B","4D"],
-  51:["1A","1C","1E","1B","1D"],
-  52:["2A","2C","2E","2B","2D"],
-  53:["3A","3C","3B","3D"],
-  54:["4A","4C","4B","4D"],
-  61:["1A","1C","1B"],
-  62:["2A","2C","2B"],
-  63:["3A","3B"],
-  64:["4A","4B"],
-  71:["1A"],
-  72:["2A"]
+const SEQUENCE={
+ 21:["1A","1A","1C","1C","1E","1E","1B","1B","1D","1D"],
+ 22:["2A","2A","2C","2C","2E","2E","2B","2B","2D","2D"],
+ 23:["3A","3A","3C","3C","3E","3E","3B","3B","3D","3D"],
+ 24:["4A","4A","4C","4C","4E","4E","4B","4B","4D","4D"],
+ 31:["1A","1A","1C","1C","1E","1B","1D","1D"],
+ 32:["2A","2A","2C","2C","2E","2B","2D","2D"],
+ 33:["3A","3A","3C","3E","3B","3B","3D"],
+ 34:["4A","4A","4C","4E","4B","4B","4D"],
+ 41:["1A","1A","1C","1E","1B","1B","1D"],
+ 42:["2A","2A","2C","2E","2B","2D"],
+ 43:["3A","3A","3C","3E","3B","3D"],
+ 44:["4A","4C","4E","4B","4D"],
+ 51:["1A","1C","1E","1B","1D"],
+ 52:["2A","2C","2E","2B","2D"],
+ 53:["3A","3C","3B","3D"],
+ 54:["4A","4C","4B","4D"],
+ 61:["1A","1C","1B"],
+ 62:["2A","2C","2B"],
+ 63:["3A","3B"],
+ 64:["4A","4B"],
+ 71:["1A"],
+ 72:["2A"]
 };
-const BANDS = [
-  ["NFC pits · Row 21–24", [21,22,23,24]],
-  ["NFC pits · Row 31–34", [31,32,33,34]],
-  ["NFC pits · Row 41–44", [41,42,43,44]],
-  ["NFC pits · Row 51–54", [51,52,53,54]],
-  ["NFC pits · Row 61–64", [61,62,63,64]],
-  ["NFC pits · Row 71–72", [71,72]]
-];
-const NAILS = [];
-function addNails(row, n, elevs, len) {
-  for (let i = 1; i <= n; i++) {
-    const angle = i <= n - 3 ? 0 : [10,15,25][i - (n - 2)];
-    NAILS.push({
-      id: row + "-" + i, kind: "nail", row, no: i,
-      elev: elevs[i-1], length: len, angle, dia: 150, bar: 40, load: 256.3, socket: 2
-    });
-  }
-}
-addNails("A", 8, [48.0,48.0,47.5,47.5,47.5,47.0,47.0,47.0], 11.2);
-addNails("B", 9, [46.0,46.0,45.5,45.5,45.5,45.0,45.0,45.0,45.0], 10.2);
-addNails("C", 9, [45.0,45.0,43.5,43.5,43.5,43.0,43.0,43.0,43.0], 9.2);
-
-const PITS = [];
-const seen = {};
-for (const row of Object.keys(SEQUENCE).map(Number)) {
-  SEQUENCE[row].forEach((mk, i) => {
-    const key = row + "-" + mk;
-    seen[key] = (seen[key] || 0) + 1;
-    PITS.push({ id: "R" + row + "-" + mk + "-" + seen[key], kind: "pit", row, marker: mk, letter: mk.slice(-1), seq: i + 1, n: seen[key] });
-  });
-}
-const ALL = [...PITS, ...NAILS];
-const STATUS = [{v:"none",t:"未開始"},{v:"exc",t:"已開挖"},{v:"nfc",t:"已灌/已裝"},{v:"done",t:"已核實"}];
-
-function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open("ylc-pits",1);r.onupgradeneeded=()=>{const db=r.result;if(!db.objectStoreNames.contains("meta"))db.createObjectStore("meta");if(!db.objectStoreNames.contains("photos"))db.createObjectStore("photos")};r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
-function idbGet(store,key){return openDB().then(db=>new Promise((res,rej)=>{const tx=db.transaction(store,"readonly");const q=tx.objectStore(store).get(key);q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)}))}
-function idbSet(store,key,val){return openDB().then(db=>new Promise((res,rej)=>{const tx=db.transaction(store,"readwrite");tx.objectStore(store).put(val,key);tx.oncomplete=()=>res();tx.onerror=()=>rej(tx.error)}))}
-function idbAll(store){return openDB().then(db=>new Promise((res,rej)=>{const tx=db.transaction(store,"readonly");const q=tx.objectStore(store).getAll();const keys=tx.objectStore(store).getAllKeys();q.onsuccess=()=>{keys.onsuccess=()=>{const out={};keys.result.forEach((k,i)=>out[k]=q.result[i]);res(out)}};q.onerror=()=>rej(q.error)}))}
-
-let META = {};
-let PHOTO_KEYS = new Set();
-function metaOf(id){return META[id]||{status:"none",excavate:"",nfc:"",note:"",photos:[]}}
-
-function cellHTML(item){
-  const m = metaOf(item.id);
-  const st = STATUS.find(s=>s.v===m.status)||STATUS[0];
-  const photo = (m.photos&&m.photos.length)||PHOTO_KEYS.has(item.id);
-  if(item.kind==="nail"){
-    return `<button class="cell nail ${photo?"has":""}" data-id="${item.id}"><div class="mk">${item.id}</div><div class="sub">${item.elev} mPD</div><div class="sub st-${m.status}">${st.t}</div></button>`;
-  }
-  return `<button class="cell letter-${item.letter} ${photo?"has":""}" data-id="${item.id}"><div class="mk">${item.marker}</div><div class="sub">${item.id}</div><div class="sub st-${m.status}">${st.t}</div></button>`;
-}
-function match(item){
-  const q = document.getElementById("q").value.trim().toLowerCase();
-  const f = document.getElementById("filter").value;
-  const m = metaOf(item.id);
-  if(f==="pit" && item.kind!=="pit") return false;
-  if(f==="nail" && item.kind!=="nail") return false;
-  if(["none","exc","nfc","done"].includes(f) && m.status!==f) return false;
-  if(q && !(item.id+" "+(item.marker||"")+" "+item.row).toLowerCase().includes(q)) return false;
+const BANDS=[["Row 21–24",[21,22,23,24]],["Row 31–34",[31,32,33,34]],["Row 41–44",[41,42,43,44]],["Row 51–54",[51,52,53,54]],["Row 61–64",[61,62,63,64]],["Row 71–72",[71,72]]];
+const NAILS=[];
+function addNails(row,n,elevs,len){for(let i=1;i<=n;i++){const angle=i<=n-3?0:[10,15,25][i-(n-2)];NAILS.push({id:row+"-"+i,kind:"nail",row,no:i,elev:elevs[i-1],length:len,angle,dia:150,bar:40,load:256.3,socket:2})}}
+addNails("A",8,[48,48,47.5,47.5,47.5,47,47,47],11.2);
+addNails("B",9,[46,46,45.5,45.5,45.5,45,45,45,45],10.2);
+addNails("C",9,[45,45,43.5,43.5,43.5,43,43,43,43],9.2);
+const PITS=[]; const seen={};
+for(const row of Object.keys(SEQUENCE).map(Number)) SEQUENCE[row].forEach((mk,i)=>{const k=row+"-"+mk; seen[k]=(seen[k]||0)+1; PITS.push({id:"R"+row+"-"+mk+"-"+seen[k],kind:"pit",row,marker:mk,letter:mk.slice(-1),seq:i+1,n:seen[k]})});
+const ALL=[...PITS,...NAILS];
+const STATUS=[{v:"none",t:"未開始"},{v:"exc",t:"已開挖"},{v:"nfc",t:"已灌／已裝"},{v:"done",t:"已核實"}];
+function db(){return new Promise((res,rej)=>{const r=indexedDB.open("ylc-grid",1);r.onupgradeneeded=()=>{const d=r.result;if(!d.objectStoreNames.contains("meta"))d.createObjectStore("meta");if(!d.objectStoreNames.contains("photos"))d.createObjectStore("photos")};r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
+function get(store,key){return db().then(d=>new Promise((res,rej)=>{const q=d.transaction(store).objectStore(store).get(key);q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)}))}
+function put(store,key,val){return db().then(d=>new Promise((res,rej)=>{const tx=d.transaction(store,"readwrite");tx.objectStore(store).put(val,key);tx.oncomplete=()=>res();tx.onerror=()=>rej(tx.error)}))}
+function all(store){return db().then(d=>new Promise((res,rej)=>{const tx=d.transaction(store);const q=tx.objectStore(store).getAll();const k=tx.objectStore(store).getAllKeys();q.onsuccess=()=>{k.onsuccess=()=>{const o={};k.result.forEach((id,i)=>o[id]=q.result[i]);res(o)}};q.onerror=()=>rej(q.error)}))}
+let META={}, PHOTOS={};
+const meta=id=>META[id]||{status:"none",excavate:"",nfc:"",note:""};
+function show(item){
+  const q=document.getElementById("q").value.trim().toLowerCase();
+  const f=document.getElementById("filter").value;
+  const m=meta(item.id);
+  if(f==="pit"&&item.kind!=="pit")return false;
+  if(f==="nail"&&item.kind!=="nail")return false;
+  if(["none","exc","nfc","done"].includes(f)&&m.status!==f)return false;
+  if(q&&!(item.id+" "+(item.marker||"")+" "+item.row).toLowerCase().includes(q))return false;
   return true;
 }
-function render(){
-  const plan = document.getElementById("plan");
-  let c = {none:0,exc:0,nfc:0,done:0,photo:0};
-  for(const item of ALL){
-    const m = metaOf(item.id);
-    c[m.status]=(c[m.status]||0)+1;
-    if((m.photos&&m.photos.length)||PHOTO_KEYS.has(item.id)) c.photo++;
-  }
-  document.getElementById("stats").innerHTML =
-    `<span class="chip">坑 <b>${PITS.length}</b></span><span class="chip">土釘 <b>${NAILS.length}</b></span>`+
-    `<span class="chip">未開始 <b>${c.none||0}</b></span><span class="chip">已開挖 <b>${c.exc||0}</b></span>`+
-    `<span class="chip">已灌/已裝 <b>${c.nfc||0}</b></span><span class="chip">已核實 <b>${c.done||0}</b></span>`+
-    `<span class="chip">有相 <b>${c.photo}</b></span>`;
-
-  let html = `<section class="band"><h3>Soil nails · Row A / B / C（26）· Ø150 · 20° · Y40 · 設計拉力 256.3 kN</h3>`;
-  for(const row of ["A","B","C"]){
-    const nails = NAILS.filter(n=>n.row===row).filter(match);
-    html += `<div class="sn-row"><div class="lbl">Row ${row}<br>${row==="A"?"11.2 m":row==="B"?"10.2 m":"9.2 m"}</div><div class="cells">`;
-    html += nails.map(cellHTML).join("") || `<span class="sub">無符合篩選</span>`;
-    html += `</div></div>`;
-  }
-  html += `</section>`;
-  for(const [title, rows] of BANDS){
-    html += `<section class="band"><h3>${title}</h3>`;
-    for(const row of rows){
-      const pits = PITS.filter(p=>p.row===row).filter(match);
-      html += `<div class="pit-row"><div class="lbl">Row ${row}<br>${SEQUENCE[row].length}</div><div class="cells">`;
-      html += pits.map(cellHTML).join("") || `<span class="sub">無符合篩選</span>`;
-      html += `</div></div>`;
-    }
-    html += `</section>`;
-  }
-  plan.innerHTML = html;
-  plan.querySelectorAll(".cell").forEach(el=>el.onclick=()=>openItem(el.dataset.id));
+function cell(item){
+  const m=meta(item.id);
+  const st=STATUS.find(s=>s.v===m.status)||STATUS[0];
+  const has=(PHOTOS[item.id]||[]).length;
+  const cls=item.kind==="nail"?"nail":"letter-"+item.letter;
+  const top=item.kind==="nail"?item.id:item.marker;
+  const mid=item.kind==="nail"?item.elev+" mPD":item.id;
+  return `<button class="cell ${cls} ${m.status} ${has?"has":""}" data-id="${item.id}"><div class="mk">${top}</div><div class="sub">${mid}</div><div class="sub">${st.t}${has?" · "+has+"相":""}</div></button>`;
 }
-
-async function openItem(id){
-  const item = ALL.find(x=>x.id===id);
-  if(!item) return;
-  location.hash = id;
-  const m = metaOf(id);
-  const photos = (await idbGet("photos", id).catch(()=>[])) || [];
-  const extra = item.kind==="nail"
-    ? `Row ${item.row} · 高程 ${item.elev} mPD · 傾角 ${item.angle}° · 長度 ${item.length} m · 孔徑 ${item.dia} mm · 鋼棒 ${item.bar} mm · 入岩 ${item.socket} m`
-    : `Row ${item.row} · marker ${item.marker} · 該行第 ${item.seq} 個`;
-  document.getElementById("card").innerHTML = `
-    <h2>${item.id}</h2>
-    <div class="subline">${item.kind==="nail"?"Soil nail":"NFC pit"} · ${extra}</div>
+function render(){
+  const c={none:0,exc:0,nfc:0,done:0,photo:0};
+  ALL.forEach(it=>{const m=meta(it.id);c[m.status]=(c[m.status]||0)+1;if((PHOTOS[it.id]||[]).length)c.photo++});
+  document.getElementById("stats").innerHTML=`<span class="chip">坑 <b>${PITS.length}</b></span><span class="chip">釘 <b>${NAILS.length}</b></span><span class="chip">未開始 <b>${c.none||0}</b></span><span class="chip">已開挖 <b>${c.exc||0}</b></span><span class="chip">已灌/裝 <b>${c.nfc||0}</b></span><span class="chip">已核實 <b>${c.done||0}</b></span><span class="chip">有相 <b>${c.photo}</b></span>`;
+  let html=`<section class="band"><h3>Soil nails · 26 · A 11.2 m / B 10.2 m / C 9.2 m · Ø150 · 20° · Y40 · 256.3 kN</h3>`;
+  for(const row of ["A","B","C"]){
+    html+=`<div class="line"><div class="lbl">Row ${row}<br>${NAILS.filter(n=>n.row===row).length} 支</div><div class="cells">${NAILS.filter(n=>n.row===row&&show(n)).map(cell).join("")||"<span class=sub>無</span>"}</div></div>`;
+  }
+  html+=`</section>`;
+  for(const [title,rows] of BANDS){
+    html+=`<section class="band"><h3>NFC pits · ${title}</h3>`;
+    for(const row of rows){
+      const pits=PITS.filter(p=>p.row===row&&show(p));
+      html+=`<div class="line"><div class="lbl">Row ${row}<br>${SEQUENCE[row].length} 坑</div><div class="cells">${pits.map(cell).join("")||"<span class=sub>無</span>"}</div></div>`;
+    }
+    html+=`</section>`;
+  }
+  document.getElementById("plan").innerHTML=html;
+  document.querySelectorAll(".cell").forEach(el=>el.onclick=()=>edit(el.dataset.id));
+}
+async function edit(id){
+  const item=ALL.find(x=>x.id===id); if(!item) return;
+  location.hash=id;
+  const m=meta(id);
+  const photos=PHOTOS[id]||[];
+  const info=item.kind==="nail"?`高程 ${item.elev} mPD · ${item.angle}° · ${item.length} m · Ø${item.dia} · Y${item.bar} · 入岩 ${item.socket} m`:`Row ${item.row} · ${item.marker} · 該行第 ${item.seq}`;
+  document.getElementById("card").innerHTML=`
+    <h2 style="margin:0 0 4px">${item.id}</h2>
+    <div style="color:var(--muted);font-size:13px;margin-bottom:12px">${item.kind==="nail"?"Soil nail":"NFC pit"} · ${info}</div>
     <div class="grid2">
       <div class="field"><label>狀態</label><select id="f-status">${STATUS.map(s=>`<option value="${s.v}" ${s.v===m.status?"selected":""}>${s.t}</option>`).join("")}</select></div>
-      <div class="field"><label>${item.kind==="nail"?"開鑽日期":"開挖日期"}</label><input id="f-exc" type="date" value="${m.excavate||""}"></div>
+      <div class="field"><label>${item.kind==="nail"?"開鑽":"開挖"}日期</label><input id="f-exc" type="date" value="${m.excavate||""}"></div>
       <div class="field"><label>${item.kind==="nail"?"灌漿完成":"NFC 完成"}</label><input id="f-nfc" type="date" value="${m.nfc||""}"></div>
-      <div class="field"><label>備註</label><input id="f-note" type="text" value="${(m.note||"").replace(/"/g,""")}"></div>
+      <div class="field"><label>備註</label><input id="f-note" type="text" value="${(m.note||"").replace(/"/g,""")}" placeholder="天氣、工程師確認、鄰坑…"></div>
     </div>
-    <div class="field"><label>相片</label><input id="f-photo" type="file" accept="image/*" multiple><div class="photos" id="photoBox"></div></div>
-    <div class="actions"><button class="primary" id="saveBtn">儲存</button><button id="fileBtn">下載此項 HTML</button><button id="closeBtn">關閉</button></div>
-    <div class="note">獨立網址：${location.origin}${location.pathname}#${id}</div>`;
-  const box = document.getElementById("photoBox");
+    <div class="field"><label>上載相片（可多張）</label><input id="f-photo" type="file" accept="image/*" multiple><div class="photos" id="photoBox"></div></div>
+    <div class="actions"><button class="primary" id="saveBtn">儲存</button><button id="dlBtn">下載此格 HTML</button><button id="closeBtn">關閉</button></div>
+    <div class="note">此格獨立網址 ${location.origin}${location.pathname}#${id} · 相片存在此瀏覽器</div>`;
+  const box=document.getElementById("photoBox");
   photos.forEach((src,i)=>{
-    const img=document.createElement("img"); img.src=src; img.title="點擊移除";
-    img.onclick=async()=>{photos.splice(i,1); await idbSet("photos",id,photos); openItem(id)};
-    box.appendChild(img);
+    const fig=document.createElement("figure");
+    fig.innerHTML=`<img src="${src}"><button type="button">移除</button>`;
+    fig.querySelector("button").onclick=async()=>{photos.splice(i,1);PHOTOS[id]=photos;await put("photos",id,photos);edit(id)};
+    box.appendChild(fig);
   });
   document.getElementById("f-photo").onchange=async e=>{
-    for(const file of e.target.files) photos.push(await fileToData(file));
-    await idbSet("photos",id,photos); PHOTO_KEYS.add(id); openItem(id);
+    for(const f of e.target.files) photos.push(await read(f));
+    PHOTOS[id]=photos; await put("photos",id,photos); edit(id);
   };
   document.getElementById("saveBtn").onclick=async()=>{
-    META[id]={status:document.getElementById("f-status").value,excavate:document.getElementById("f-exc").value,nfc:document.getElementById("f-nfc").value,note:document.getElementById("f-note").value,photos:photos.length?[photos.length]:[]};
-    await idbSet("meta","all",META);
+    META[id]={status:document.getElementById("f-status").value,excavate:document.getElementById("f-exc").value,nfc:document.getElementById("f-nfc").value,note:document.getElementById("f-note").value};
+    await put("meta","all",META);
     document.getElementById("overlay").classList.remove("open");
     render();
   };
-  document.getElementById("fileBtn").onclick=()=>downloadFile(item, META[id]||m, photos);
-  document.getElementById("closeBtn").onclick=()=>{document.getElementById("overlay").classList.remove("open"); history.replaceState(null,"",location.pathname)};
+  document.getElementById("dlBtn").onclick=()=>{
+    const html=`<!DOCTYPE html><meta charset="UTF-8"><title>${item.id}</title><body style="font-family:sans-serif;max-width:720px;margin:24px auto"><h1>${item.id}</h1><p>${info}</p><p>狀態：${(STATUS.find(s=>s.v===m.status)||{}).t}</p><p>${m.excavate||"—"} / ${m.nfc||"—"}</p><p>${m.note||""}</p>${photos.map(s=>`<img src="${s}" style="max-width:100%">`).join("")}</body>`;
+    const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([html],{type:"text/html"}));a.download=item.id+".html";a.click();
+  };
+  document.getElementById("closeBtn").onclick=()=>{document.getElementById("overlay").classList.remove("open");history.replaceState(null,"",location.pathname)};
   document.getElementById("overlay").classList.add("open");
 }
-function fileToData(file){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(file)})}
-function downloadFile(item,m,photos){
-  const html=`<!DOCTYPE html><html lang="zh-Hant"><meta charset="UTF-8"><title>${item.id}</title><body style="font-family:sans-serif;max-width:720px;margin:24px auto"><h1>${item.id}</h1><p>${item.kind} · Yuet Lai Court 11NW-A/C16</p><p>狀態：${(STATUS.find(s=>s.v===m.status)||{}).t||"—"}</p><p>日期：${m.excavate||"—"} / ${m.nfc||"—"}</p><p>${m.note||""}</p>${(photos||[]).map(s=>`<img src="${s}" style="max-width:100%">`).join("")}</body></html>`;
-  const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([html],{type:"text/html"})); a.download=item.id+".html"; a.click();
-}
+function read(f){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(f)})}
 document.getElementById("q").oninput=render;
 document.getElementById("filter").onchange=render;
 document.getElementById("overlay").onclick=e=>{if(e.target.id==="overlay")document.getElementById("overlay").classList.remove("open")};
 document.getElementById("exportBtn").onclick=async()=>{
-  const photos=await idbAll("photos").catch(()=>({}));
   const a=document.createElement("a");
-  a.href=URL.createObjectURL(new Blob([JSON.stringify({meta:META,photos,exported:new Date().toISOString()})],{type:"application/json"}));
-  a.download="YLC-layout-"+new Date().toISOString().slice(0,10)+".json"; a.click();
+  a.href=URL.createObjectURL(new Blob([JSON.stringify({meta:META,photos:PHOTOS,exported:new Date().toISOString()})],{type:"application/json"}));
+  a.download="YLC-grid-"+new Date().toISOString().slice(0,10)+".json";a.click();
 };
 document.getElementById("importBtn").onclick=()=>document.getElementById("importFile").click();
 document.getElementById("importFile").onchange=async e=>{
   const data=JSON.parse(await e.target.files[0].text());
-  META=data.meta||{}; await idbSet("meta","all",META);
-  if(data.photos) for(const [k,v] of Object.entries(data.photos)) await idbSet("photos",k,v);
-  PHOTO_KEYS=new Set(Object.keys(data.photos||{})); render();
+  META=data.meta||{}; PHOTOS=data.photos||{};
+  await put("meta","all",META);
+  for(const [k,v] of Object.entries(PHOTOS)) await put("photos",k,v);
+  render();
 };
 render();
-idbGet("meta","all").then(v=>{META=v||{}; return idbAll("photos")}).then(ph=>{PHOTO_KEYS=new Set(Object.keys(ph||{})); render(); const h=location.hash.replace("#",""); if(h&&ALL.some(x=>x.id===h)) openItem(h)}).catch(()=>{});
+Promise.all([get("meta","all"),all("photos")]).then(([m,p])=>{META=m||{};PHOTOS=p||{};render();const h=location.hash.slice(1);if(h&&ALL.some(x=>x.id===h))edit(h)}).catch(()=>{});
 </script>
 </body>
 </html>
