@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YLC Pit Programme — 11NW-A/C16</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --line: #2e3d52;
+  --text: #e7eef7;
+  --muted: #8ea0b5;
+  --accent: #3d8bfd;
+  --ok: #2ea043;
+  --warn: #d29922;
+  --bad: #f85149;
+  --info: #58a6ff;
+  --a: #3d8bfd;
+  --c: #2ea043;
+  --e: #d29922;
+  --b: #a371f7;
+  --d: #f85149;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans TC", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(15,20,25,.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 18px;
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+}
+h1 { margin: 0; font-size: 18px; font-weight: 650; }
+h1 span { color: var(--muted); font-weight: 500; font-size: 13px; margin-left: 8px; }
+.stats { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip {
+  background: var(--panel2); border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px 10px; font-size: 12px; color: var(--muted);
+}
+.chip b { color: var(--text); }
+.toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+button, .btn {
+  background: var(--panel2); color: var(--text); border: 1px solid var(--line);
+  border-radius: 8px; padding: 7px 12px; font-size: 13px; cursor: pointer;
+}
+button:hover, .btn:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+input[type="search"], select, input[type="date"], input[type="text"], textarea {
+  background: var(--panel); color: var(--text); border: 1px solid var(--line);
+  border-radius: 8px; padding: 7px 10px; font-size: 13px;
+}
+main { padding: 16px 18px 40px; }
+.legend { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; font-size: 12px; color: var(--muted); }
+.swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; margin-right: 4px; }
+.row-block { margin-bottom: 14px; }
+.row-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin: 0 0 6px; font-size: 13px; color: var(--muted);
+}
+.row-head b { color: var(--text); font-size: 14px; }
+.pits {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.pit {
+  width: 72px; min-height: 52px;
+  border-radius: 8px; border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 6px 6px 4px;
+  cursor: pointer; text-align: left;
+  position: relative;
+}
+.pit:hover { border-color: var(--accent); transform: translateY(-1px); }
+.pit .mk { font-weight: 700; font-size: 13px; }
+.pit .id { font-size: 10px; color: var(--muted); }
+.pit .st { font-size: 10px; margin-top: 2px; }
+.pit.has-photo::after {
+  content: ""; position: absolute; top: 4px; right: 4px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--info);
+}
+.st-none { color: var(--muted); }
+.st-exc { color: #79c0ff; }
+.st-nfc { color: #56d364; }
+.st-done { color: #3fb950; }
+.letter-A { box-shadow: inset 3px 0 0 var(--a); }
+.letter-C { box-shadow: inset 3px 0 0 var(--c); }
+.letter-E { box-shadow: inset 3px 0 0 var(--e); }
+.letter-B { box-shadow: inset 3px 0 0 var(--b); }
+.letter-D { box-shadow: inset 3px 0 0 var(--d); }
+.overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.55);
+  display: none; align-items: flex-start; justify-content: center;
+  z-index: 40; padding: 24px 12px; overflow: auto;
+}
+.overlay.open { display: flex; }
+.card {
+  width: min(860px, 100%);
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 14px; padding: 18px;
+}
+.card h2 { margin: 0 0 4px; font-size: 20px; }
+.card .sub { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.field { margin-bottom: 10px; }
+.photos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.photos img { width: 120px; height: 90px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); cursor: pointer; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.note { font-size: 12px; color: var(--muted); margin-top: 8px; }
+footer { color: var(--muted); font-size: 12px; padding: 0 18px 24px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Yuet Lai Court · NFC Pit Programme <span>11NW-A/C16 · 124 pits</span></h1>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="搜尋 Row / 1A / R21">
+    <select id="filter">
+      <option value="">全部狀態</option>
+      <option value="none">未開始</option>
+      <option value="exc">已開挖</option>
+      <option value="nfc">已灌 NFC</option>
+      <option value="done">已核實</option>
+    </select>
+    <button id="exportBtn">匯出 JSON</button>
+    <button id="importBtn">匯入 JSON</button>
+    <input id="importFile" type="file" accept="application/json" hidden>
+  </div>
+</header>
+<main>
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--a)"></i>A</span>
+    <span><i class="swatch" style="background:var(--c)"></i>C</span>
+    <span><i class="swatch" style="background:var(--e)"></i>E</span>
+    <span><i class="swatch" style="background:var(--b)"></i>B</span>
+    <span><i class="swatch" style="background:var(--d)"></i>D</span>
+    <span>藍點 = 已有相片 · 次序 A→C→E→B→D · 鄰坑隔一日</span>
+  </div>
+  <div id="board"></div>
+</main>
+<footer>DH-YLC-01 坑接坑換填可視化。相片與紀錄存在此瀏覽器（IndexedDB），換裝置請匯出 JSON。每個坑有獨立網址 #R21-1A-1。</footer>
+
+<div class="overlay" id="overlay">
+  <div class="card" id="card"></div>
+</div>
+
+<script>
+const SEQUENCE = {
+  21: ["1A","1A","1C","1C","1E","1E","1B","1B","1D","1D"],
+  22: ["2A","2A","2C","2C","2E","2E","2B","2B","2D","2D"],
+  23: ["3A","3A","3C","3C","3E","3E","3B","3B","3D","3D"],
+  24: ["4A","4A","4C","4C","4E","4E","4B","4B","4D","4D"],
+  31: ["1A","1A","1C","1C","1E","1B","1D","1D"],
+  32: ["2A","2A","2C","2C","2E","2B","2D","2D"],
+  33: ["3A","3A","3C","3E","3B","3B","3D"],
+  34: ["4A","4A","4C","4E","4B","4B","4D"],
+  41: ["1A","1A","1C","1E","1B","1B","1D"],
+  42: ["2A","2A","2C","2E","2B","2D"],
+  43: ["3A","3A","3C","3E","3B","3D"],
+  44: ["4A","4C","4E","4B","4D"],
+  51: ["1A","1C","1E","1B","1D"],
+  52: ["2A","2C","2E","2B","2D"],
+  53: ["3A","3C","3B","3D"],
+  54: ["4A","4C","4B","4D"],
+  61: ["1A","1C","1B"],
+  62: ["2A","2C","2B"],
+  63: ["3A","3B"],
+  64: ["4A","4B"],
+  71: ["1A"],
+  72: ["2A"]
+};
+
+const ROWS = Object.keys(SEQUENCE).map(Number);
+const PITS = [];
+const seen = {};
+for (const row of ROWS) {
+  SEQUENCE[row].forEach((mk, i) => {
+    const letter = mk.slice(-1);
+    const key = row + "-" + mk;
+    seen[key] = (seen[key] || 0) + 1;
+    const id = "R" + row + "-" + mk + "-" + seen[key];
+    PITS.push({ id, row, marker: mk, letter, seq: i + 1, n: seen[key] });
+  });
+}
+if (PITS.length !== 124) console.warn("pit count", PITS.length);
+
+const STATUS = [
+  { v: "none", t: "未開始" },
+  { v: "exc", t: "已開挖" },
+  { v: "nfc", t: "已灌 NFC" },
+  { v: "done", t: "已核實" }
+];
+
+function openDB() {
+  return new Promise((res, rej) => {
+    const r = indexedDB.open("ylc-pits", 1);
+    r.onupgradeneeded = () => {
+      const db = r.result;
+      if (!db.objectStoreNames.contains("meta")) db.createObjectStore("meta");
+      if (!db.objectStoreNames.contains("photos")) db.createObjectStore("photos");
+    };
+    r.onsuccess = () => res(r.result);
+    r.onerror = () => rej(r.error);
+  });
+}
+function idbGet(store, key) {
+  return openDB().then(db => new Promise((res, rej) => {
+    const tx = db.transaction(store, "readonly");
+    const q = tx.objectStore(store).get(key);
+    q.onsuccess = () => res(q.result);
+    q.onerror = () => rej(q.error);
+  }));
+}
+function idbSet(store, key, val) {
+  return openDB().then(db => new Promise((res, rej) => {
+    const tx = db.transaction(store, "readwrite");
+    tx.objectStore(store).put(val, key);
+    tx.oncomplete = () => res();
+    tx.onerror = () => rej(tx.error);
+  }));
+}
+function idbAll(store) {
+  return openDB().then(db => new Promise((res, rej) => {
+    const tx = db.transaction(store, "readonly");
+    const q = tx.objectStore(store).getAll();
+    const keys = tx.objectStore(store).getAllKeys();
+    q.onsuccess = () => {
+      keys.onsuccess = () => {
+        const out = {};
+        keys.result.forEach((k, i) => out[k] = q.result[i]);
+        res(out);
+      };
+    };
+    q.onerror = () => rej(q.error);
+  }));
+}
+
+let META = {};
+let PHOTO_KEYS = new Set();
+
+async function loadAll() {
+  META = (await idbGet("meta", "all")) || {};
+  const photos = await idbAll("photos");
+  PHOTO_KEYS = new Set(Object.keys(photos));
+}
+
+function metaOf(id) {
+  return META[id] || { status: "none", excavate: "", nfc: "", note: "", photos: [] };
+}
+
+function render() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const f = document.getElementById("filter").value;
+  const board = document.getElementById("board");
+  board.innerHTML = "";
+  let counts = { none: 0, exc: 0, nfc: 0, done: 0, photo: 0 };
+  for (const p of PITS) {
+    const m = metaOf(p.id);
+    counts[m.status] = (counts[m.status] || 0) + 1;
+    if ((m.photos && m.photos.length) || PHOTO_KEYS.has(p.id)) counts.photo++;
+  }
+  document.getElementById("stats").innerHTML =
+    `<span class="chip">總數 <b>124</b></span>` +
+    `<span class="chip">未開始 <b>${counts.none||0}</b></span>` +
+    `<span class="chip">已開挖 <b>${counts.exc||0}</b></span>` +
+    `<span class="chip">已灌 <b>${counts.nfc||0}</b></span>` +
+    `<span class="chip">已核實 <b>${counts.done||0}</b></span>` +
+    `<span class="chip">有相 <b>${counts.photo}</b></span>`;
+
+  for (const row of ROWS) {
+    const pits = PITS.filter(p => p.row === row).filter(p => {
+      const m = metaOf(p.id);
+      if (f && m.status !== f) return false;
+      if (q && !(p.id + p.marker + p.row).toLowerCase().includes(q)) return false;
+      return true;
+    });
+    if (!pits.length) continue;
+    const block = document.createElement("section");
+    block.className = "row-block";
+    const done = PITS.filter(p => p.row === row && metaOf(p.id).status === "done").length;
+    const total = SEQUENCE[row].length;
+    block.innerHTML = `<div class="row-head"><b>Row ${row}</b><span>${done}/${total}</span></div>`;
+    const wrap = document.createElement("div");
+    wrap.className = "pits";
+    for (const p of pits) {
+      const m = metaOf(p.id);
+      const el = document.createElement("button");
+      el.className = `pit letter-${p.letter}` + ((m.photos && m.photos.length) ? " has-photo" : "");
+      const st = STATUS.find(s => s.v === m.status) || STATUS[0];
+      el.innerHTML = `<div class="mk">${p.marker}</div><div class="id">${p.id}</div><div class="st st-${m.status}">${st.t}</div>`;
+      el.onclick = () => openPit(p.id);
+      wrap.appendChild(el);
+    }
+    block.appendChild(wrap);
+    board.appendChild(block);
+  }
+}
+
+async function openPit(id) {
+  const p = PITS.find(x => x.id === id);
+  if (!p) return;
+  location.hash = id;
+  const m = metaOf(id);
+  const photos = (await idbGet("photos", id)) || [];
+  const card = document.getElementById("card");
+  card.innerHTML = `
+    <h2>${p.id}</h2>
+    <div class="sub">Row ${p.row} · marker ${p.marker} · 該行第 ${p.seq} 個 · 同標記第 ${p.n} 個</div>
+    <div class="grid2">
+      <div class="field"><label>狀態</label>
+        <select id="f-status">${STATUS.map(s => `<option value="${s.v}" ${s.v===m.status?"selected":""}>${s.t}</option>`).join("")}</select>
+      </div>
+      <div class="field"><label>開挖日期</label><input id="f-exc" type="date" value="${m.excavate||""}"></div>
+      <div class="field"><label>NFC 完成日期</label><input id="f-nfc" type="date" value="${m.nfc||""}"></div>
+      <div class="field"><label>備註</label><input id="f-note" type="text" value="${(m.note||"").replace(/"/g,""")}" placeholder="天氣、鄰坑、工程師確認…"></div>
+    </div>
+    <div class="field">
+      <label>相片</label>
+      <input id="f-photo" type="file" accept="image/*" multiple>
+      <div class="photos" id="photoBox"></div>
+    </div>
+    <div class="actions">
+      <button class="primary" id="saveBtn">儲存</button>
+      <button id="fileBtn">下載此坑 HTML</button>
+      <button id="closeBtn">關閉</button>
+    </div>
+    <div class="note">獨立網址：${location.origin}${location.pathname}#${id}　相片只存在此瀏覽器。</div>
+  `;
+  const box = document.getElementById("photoBox");
+  photos.forEach((src, i) => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.title = "點擊移除";
+    img.onclick = async () => {
+      photos.splice(i, 1);
+      await idbSet("photos", id, photos);
+      openPit(id);
+    };
+    box.appendChild(img);
+  });
+  document.getElementById("f-photo").onchange = async (e) => {
+    const files = [...e.target.files];
+    for (const file of files) {
+      const data = await fileToData(file);
+      photos.push(data);
+    }
+    await idbSet("photos", id, photos);
+    PHOTO_KEYS.add(id);
+    openPit(id);
+  };
+  document.getElementById("saveBtn").onclick = async () => {
+    META[id] = {
+      status: document.getElementById("f-status").value,
+      excavate: document.getElementById("f-exc").value,
+      nfc: document.getElementById("f-nfc").value,
+      note: document.getElementById("f-note").value,
+      photos: photos.length ? [photos.length] : []
+    };
+    await idbSet("meta", "all", META);
+    document.getElementById("overlay").classList.remove("open");
+    render();
+  };
+  document.getElementById("fileBtn").onclick = () => downloadPitFile(p, META[id] || m, photos);
+  document.getElementById("closeBtn").onclick = () => {
+    document.getElementById("overlay").classList.remove("open");
+    history.replaceState(null, "", location.pathname);
+  };
+  document.getElementById("overlay").classList.add("open");
+}
+
+function fileToData(file) {
+  return new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = () => res(r.result);
+    r.onerror = rej;
+    r.readAsDataURL(file);
+  });
+}
+
+function downloadPitFile(p, m, photos) {
+  const html = `<!DOCTYPE html><html lang="zh-Hant"><meta charset="UTF-8"><title>${p.id}</title>
+  <body style="font-family:sans-serif;max-width:720px;margin:24px auto;padding:0 16px">
+  <h1>${p.id}</h1>
+  <p>Row ${p.row} · ${p.marker} · Yuet Lai Court 11NW-A/C16</p>
+  <p>狀態：${(STATUS.find(s=>s.v===m.status)||{}).t||m.status||"—"}</p>
+  <p>開挖：${m.excavate||"—"}　NFC：${m.nfc||"—"}</p>
+  <p>備註：${m.note||"—"}</p>
+  ${(photos||[]).map(src => `<img src="${src}" style="max-width:100%;margin:8px 0">`).join("")}
+  </body></html>`;
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([html], { type: "text/html" }));
+  a.download = p.id + ".html";
+  a.click();
+}
+
+document.getElementById("q").oninput = render;
+document.getElementById("filter").onchange = render;
+document.getElementById("overlay").onclick = (e) => {
+  if (e.target.id === "overlay") {
+    document.getElementById("overlay").classList.remove("open");
+  }
+};
+document.getElementById("exportBtn").onclick = async () => {
+  const photos = await idbAll("photos");
+  const blob = new Blob([JSON.stringify({ meta: META, photos, exported: new Date().toISOString() })], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "YLC-pits-" + new Date().toISOString().slice(0,10) + ".json";
+  a.click();
+};
+document.getElementById("importBtn").onclick = () => document.getElementById("importFile").click();
+document.getElementById("importFile").onchange = async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const data = JSON.parse(await file.text());
+  META = data.meta || {};
+  await idbSet("meta", "all", META);
+  if (data.photos) {
+    for (const [k, v] of Object.entries(data.photos)) await idbSet("photos", k, v);
+  }
+  await loadAll();
+  render();
+};
+
+loadAll().then(() => {
+  render();
+  const h = location.hash.replace("#", "");
+  if (h && PITS.some(p => p.id === h)) openPit(h);
+});
+</script>
+</body>
+</html>
