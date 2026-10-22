@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YLC 格仔圖 · 124 pits + 26 nails</title>
+<title>YLC grid 124+26</title>
 <style>
 :root{--bg:#0e141b;--panel:#17202b;--line:#314155;--text:#e8eef6;--muted:#8ea0b5;--accent:#3d8bfd}
 *{box-sizing:border-box}
@@ -16,14 +16,13 @@ h1{margin:0;font-size:16px} h1 span{color:var(--muted);font-weight:500;font-size
 button,select,input{background:#223044;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px}
 button{cursor:pointer} button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 main{padding:12px 14px 32px}
-.legend{font-size:12px;color:var(--muted);margin-bottom:10px;display:flex;gap:10px;flex-wrap:wrap}
-.sw{width:12px;height:12px;border-radius:3px;display:inline-block;vertical-align:-2px;margin-right:4px}
+.legend{font-size:12px;color:var(--muted);margin-bottom:10px}
 .band{margin-bottom:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
 .band h3{margin:0 0 8px;font-size:13px;color:var(--muted)}
 .line{display:flex;gap:6px;align-items:flex-start;margin-bottom:6px}
 .lbl{width:72px;flex:0 0 72px;font-size:12px;color:var(--muted);padding-top:10px}
 .cells{display:flex;flex-wrap:wrap;gap:5px}
-.cell{width:78px;min-height:58px;border-radius:8px;border:1px solid var(--line);background:#121a24;padding:5px 6px;cursor:pointer;text-align:left;position:relative}
+.cell{width:78px;min-height:58px;border-radius:8px;border:1px solid var(--line);background:#121a24;padding:5px 6px;cursor:pointer;text-align:left;position:relative;color:var(--text)}
 .cell:hover{outline:2px solid var(--accent)}
 .cell .mk{font-weight:700;font-size:13px}
 .cell .sub{font-size:10px;color:var(--muted);line-height:1.2}
@@ -42,183 +41,35 @@ label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
 .photos{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .photos figure{margin:0;width:130px}
 .photos img{width:130px;height:96px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
-.photos button{margin-top:4px;width:100%}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .note{font-size:12px;color:var(--muted);margin-top:8px}
 </style>
 </head>
 <body>
 <header>
-  <h1>YLC 格仔圖 <span>124 pits + 26 soil nails · 點格編輯／上載</span></h1>
+  <h1>YLC grid <span>124 pits + 26 soil nails</span></h1>
   <div class="row" id="stats"></div>
   <div class="row">
-    <input id="q" type="search" placeholder="搜尋 1A / A-1 / R21">
+    <input id="q" type="search" placeholder="search 1A / A-1 / R21">
     <select id="filter">
-      <option value="">全部</option>
-      <option value="pit">只看坑</option>
-      <option value="nail">只看土釘</option>
-      <option value="none">未開始</option>
-      <option value="exc">已開挖</option>
-      <option value="nfc">已灌／已裝</option>
-      <option value="done">已核實</option>
+      <option value="">all</option>
+      <option value="pit">pits</option>
+      <option value="nail">nails</option>
+      <option value="none">not started</option>
+      <option value="exc">excavated</option>
+      <option value="nfc">filled</option>
+      <option value="done">verified</option>
     </select>
-    <button id="exportBtn">匯出</button>
-    <button id="importBtn">匯入</button>
+    <button id="exportBtn">export</button>
+    <button id="importBtn">import</button>
     <input id="importFile" type="file" accept="application/json" hidden>
   </div>
 </header>
 <main>
-  <div class="legend">
-    <span><i class="sw none" style="border:1px solid #314155"></i>未開始</span>
-    <span><i class="sw exc"></i>已開挖</span>
-    <span><i class="sw nfc"></i>已灌／已裝</span>
-    <span><i class="sw done"></i>已核實</span>
-    <span>藍點 = 已上載相片 · 左色條 A/C/E/B/D</span>
-  </div>
-  <div id="plan"></div>
+  <div class="legend">grey not started / blue excavated / green filled / dark green verified / blue dot = photo</div>
+  <div id="plan">loading...</div>
 </main>
 <div class="overlay" id="overlay"><div class="card" id="card"></div></div>
-<script>
-const SEQUENCE={
- 21:["1A","1A","1C","1C","1E","1E","1B","1B","1D","1D"],
- 22:["2A","2A","2C","2C","2E","2E","2B","2B","2D","2D"],
- 23:["3A","3A","3C","3C","3E","3E","3B","3B","3D","3D"],
- 24:["4A","4A","4C","4C","4E","4E","4B","4B","4D","4D"],
- 31:["1A","1A","1C","1C","1E","1B","1D","1D"],
- 32:["2A","2A","2C","2C","2E","2B","2D","2D"],
- 33:["3A","3A","3C","3E","3B","3B","3D"],
- 34:["4A","4A","4C","4E","4B","4B","4D"],
- 41:["1A","1A","1C","1E","1B","1B","1D"],
- 42:["2A","2A","2C","2E","2B","2D"],
- 43:["3A","3A","3C","3E","3B","3D"],
- 44:["4A","4C","4E","4B","4D"],
- 51:["1A","1C","1E","1B","1D"],
- 52:["2A","2C","2E","2B","2D"],
- 53:["3A","3C","3B","3D"],
- 54:["4A","4C","4B","4D"],
- 61:["1A","1C","1B"],
- 62:["2A","2C","2B"],
- 63:["3A","3B"],
- 64:["4A","4B"],
- 71:["1A"],
- 72:["2A"]
-};
-const BANDS=[["Row 21–24",[21,22,23,24]],["Row 31–34",[31,32,33,34]],["Row 41–44",[41,42,43,44]],["Row 51–54",[51,52,53,54]],["Row 61–64",[61,62,63,64]],["Row 71–72",[71,72]]];
-const NAILS=[];
-function addNails(row,n,elevs,len){for(let i=1;i<=n;i++){const angle=i<=n-3?0:[10,15,25][i-(n-2)];NAILS.push({id:row+"-"+i,kind:"nail",row,no:i,elev:elevs[i-1],length:len,angle,dia:150,bar:40,load:256.3,socket:2})}}
-addNails("A",8,[48,48,47.5,47.5,47.5,47,47,47],11.2);
-addNails("B",9,[46,46,45.5,45.5,45.5,45,45,45,45],10.2);
-addNails("C",9,[45,45,43.5,43.5,43.5,43,43,43,43],9.2);
-const PITS=[]; const seen={};
-for(const row of Object.keys(SEQUENCE).map(Number)) SEQUENCE[row].forEach((mk,i)=>{const k=row+"-"+mk; seen[k]=(seen[k]||0)+1; PITS.push({id:"R"+row+"-"+mk+"-"+seen[k],kind:"pit",row,marker:mk,letter:mk.slice(-1),seq:i+1,n:seen[k]})});
-const ALL=[...PITS,...NAILS];
-const STATUS=[{v:"none",t:"未開始"},{v:"exc",t:"已開挖"},{v:"nfc",t:"已灌／已裝"},{v:"done",t:"已核實"}];
-function db(){return new Promise((res,rej)=>{const r=indexedDB.open("ylc-grid",1);r.onupgradeneeded=()=>{const d=r.result;if(!d.objectStoreNames.contains("meta"))d.createObjectStore("meta");if(!d.objectStoreNames.contains("photos"))d.createObjectStore("photos")};r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
-function get(store,key){return db().then(d=>new Promise((res,rej)=>{const q=d.transaction(store).objectStore(store).get(key);q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)}))}
-function put(store,key,val){return db().then(d=>new Promise((res,rej)=>{const tx=d.transaction(store,"readwrite");tx.objectStore(store).put(val,key);tx.oncomplete=()=>res();tx.onerror=()=>rej(tx.error)}))}
-function all(store){return db().then(d=>new Promise((res,rej)=>{const tx=d.transaction(store);const q=tx.objectStore(store).getAll();const k=tx.objectStore(store).getAllKeys();q.onsuccess=()=>{k.onsuccess=()=>{const o={};k.result.forEach((id,i)=>o[id]=q.result[i]);res(o)}};q.onerror=()=>rej(q.error)}))}
-let META={}, PHOTOS={};
-const meta=id=>META[id]||{status:"none",excavate:"",nfc:"",note:""};
-function show(item){
-  const q=document.getElementById("q").value.trim().toLowerCase();
-  const f=document.getElementById("filter").value;
-  const m=meta(item.id);
-  if(f==="pit"&&item.kind!=="pit")return false;
-  if(f==="nail"&&item.kind!=="nail")return false;
-  if(["none","exc","nfc","done"].includes(f)&&m.status!==f)return false;
-  if(q&&!(item.id+" "+(item.marker||"")+" "+item.row).toLowerCase().includes(q))return false;
-  return true;
-}
-function cell(item){
-  const m=meta(item.id);
-  const st=STATUS.find(s=>s.v===m.status)||STATUS[0];
-  const has=(PHOTOS[item.id]||[]).length;
-  const cls=item.kind==="nail"?"nail":"letter-"+item.letter;
-  const top=item.kind==="nail"?item.id:item.marker;
-  const mid=item.kind==="nail"?item.elev+" mPD":item.id;
-  return `<button class="cell ${cls} ${m.status} ${has?"has":""}" data-id="${item.id}"><div class="mk">${top}</div><div class="sub">${mid}</div><div class="sub">${st.t}${has?" · "+has+"相":""}</div></button>`;
-}
-function render(){
-  const c={none:0,exc:0,nfc:0,done:0,photo:0};
-  ALL.forEach(it=>{const m=meta(it.id);c[m.status]=(c[m.status]||0)+1;if((PHOTOS[it.id]||[]).length)c.photo++});
-  document.getElementById("stats").innerHTML=`<span class="chip">坑 <b>${PITS.length}</b></span><span class="chip">釘 <b>${NAILS.length}</b></span><span class="chip">未開始 <b>${c.none||0}</b></span><span class="chip">已開挖 <b>${c.exc||0}</b></span><span class="chip">已灌/裝 <b>${c.nfc||0}</b></span><span class="chip">已核實 <b>${c.done||0}</b></span><span class="chip">有相 <b>${c.photo}</b></span>`;
-  let html=`<section class="band"><h3>Soil nails · 26 · A 11.2 m / B 10.2 m / C 9.2 m · Ø150 · 20° · Y40 · 256.3 kN</h3>`;
-  for(const row of ["A","B","C"]){
-    html+=`<div class="line"><div class="lbl">Row ${row}<br>${NAILS.filter(n=>n.row===row).length} 支</div><div class="cells">${NAILS.filter(n=>n.row===row&&show(n)).map(cell).join("")||"<span class=sub>無</span>"}</div></div>`;
-  }
-  html+=`</section>`;
-  for(const [title,rows] of BANDS){
-    html+=`<section class="band"><h3>NFC pits · ${title}</h3>`;
-    for(const row of rows){
-      const pits=PITS.filter(p=>p.row===row&&show(p));
-      html+=`<div class="line"><div class="lbl">Row ${row}<br>${SEQUENCE[row].length} 坑</div><div class="cells">${pits.map(cell).join("")||"<span class=sub>無</span>"}</div></div>`;
-    }
-    html+=`</section>`;
-  }
-  document.getElementById("plan").innerHTML=html;
-  document.querySelectorAll(".cell").forEach(el=>el.onclick=()=>edit(el.dataset.id));
-}
-async function edit(id){
-  const item=ALL.find(x=>x.id===id); if(!item) return;
-  location.hash=id;
-  const m=meta(id);
-  const photos=PHOTOS[id]||[];
-  const info=item.kind==="nail"?`高程 ${item.elev} mPD · ${item.angle}° · ${item.length} m · Ø${item.dia} · Y${item.bar} · 入岩 ${item.socket} m`:`Row ${item.row} · ${item.marker} · 該行第 ${item.seq}`;
-  document.getElementById("card").innerHTML=`
-    <h2 style="margin:0 0 4px">${item.id}</h2>
-    <div style="color:var(--muted);font-size:13px;margin-bottom:12px">${item.kind==="nail"?"Soil nail":"NFC pit"} · ${info}</div>
-    <div class="grid2">
-      <div class="field"><label>狀態</label><select id="f-status">${STATUS.map(s=>`<option value="${s.v}" ${s.v===m.status?"selected":""}>${s.t}</option>`).join("")}</select></div>
-      <div class="field"><label>${item.kind==="nail"?"開鑽":"開挖"}日期</label><input id="f-exc" type="date" value="${m.excavate||""}"></div>
-      <div class="field"><label>${item.kind==="nail"?"灌漿完成":"NFC 完成"}</label><input id="f-nfc" type="date" value="${m.nfc||""}"></div>
-      <div class="field"><label>備註</label><input id="f-note" type="text" value="${(m.note||"").replace(/"/g,""")}" placeholder="天氣、工程師確認、鄰坑…"></div>
-    </div>
-    <div class="field"><label>上載相片（可多張）</label><input id="f-photo" type="file" accept="image/*" multiple><div class="photos" id="photoBox"></div></div>
-    <div class="actions"><button class="primary" id="saveBtn">儲存</button><button id="dlBtn">下載此格 HTML</button><button id="closeBtn">關閉</button></div>
-    <div class="note">此格獨立網址 ${location.origin}${location.pathname}#${id} · 相片存在此瀏覽器</div>`;
-  const box=document.getElementById("photoBox");
-  photos.forEach((src,i)=>{
-    const fig=document.createElement("figure");
-    fig.innerHTML=`<img src="${src}"><button type="button">移除</button>`;
-    fig.querySelector("button").onclick=async()=>{photos.splice(i,1);PHOTOS[id]=photos;await put("photos",id,photos);edit(id)};
-    box.appendChild(fig);
-  });
-  document.getElementById("f-photo").onchange=async e=>{
-    for(const f of e.target.files) photos.push(await read(f));
-    PHOTOS[id]=photos; await put("photos",id,photos); edit(id);
-  };
-  document.getElementById("saveBtn").onclick=async()=>{
-    META[id]={status:document.getElementById("f-status").value,excavate:document.getElementById("f-exc").value,nfc:document.getElementById("f-nfc").value,note:document.getElementById("f-note").value};
-    await put("meta","all",META);
-    document.getElementById("overlay").classList.remove("open");
-    render();
-  };
-  document.getElementById("dlBtn").onclick=()=>{
-    const html=`<!DOCTYPE html><meta charset="UTF-8"><title>${item.id}</title><body style="font-family:sans-serif;max-width:720px;margin:24px auto"><h1>${item.id}</h1><p>${info}</p><p>狀態：${(STATUS.find(s=>s.v===m.status)||{}).t}</p><p>${m.excavate||"—"} / ${m.nfc||"—"}</p><p>${m.note||""}</p>${photos.map(s=>`<img src="${s}" style="max-width:100%">`).join("")}</body>`;
-    const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([html],{type:"text/html"}));a.download=item.id+".html";a.click();
-  };
-  document.getElementById("closeBtn").onclick=()=>{document.getElementById("overlay").classList.remove("open");history.replaceState(null,"",location.pathname)};
-  document.getElementById("overlay").classList.add("open");
-}
-function read(f){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(f)})}
-document.getElementById("q").oninput=render;
-document.getElementById("filter").onchange=render;
-document.getElementById("overlay").onclick=e=>{if(e.target.id==="overlay")document.getElementById("overlay").classList.remove("open")};
-document.getElementById("exportBtn").onclick=async()=>{
-  const a=document.createElement("a");
-  a.href=URL.createObjectURL(new Blob([JSON.stringify({meta:META,photos:PHOTOS,exported:new Date().toISOString()})],{type:"application/json"}));
-  a.download="YLC-grid-"+new Date().toISOString().slice(0,10)+".json";a.click();
-};
-document.getElementById("importBtn").onclick=()=>document.getElementById("importFile").click();
-document.getElementById("importFile").onchange=async e=>{
-  const data=JSON.parse(await e.target.files[0].text());
-  META=data.meta||{}; PHOTOS=data.photos||{};
-  await put("meta","all",META);
-  for(const [k,v] of Object.entries(PHOTOS)) await put("photos",k,v);
-  render();
-};
-render();
-Promise.all([get("meta","all"),all("photos")]).then(([m,p])=>{META=m||{};PHOTOS=p||{};render();const h=location.hash.slice(1);if(h&&ALL.some(x=>x.id===h))edit(h)}).catch(()=>{});
-</script>
+<script src="app.js"></script>
 </body>
 </html>
