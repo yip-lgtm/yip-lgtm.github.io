@@ -34797,7 +34797,8 @@
         "layer": "land",
         "history": "亞述長弓是亞述軍隊制式的步兵遠射弓，與箭矢、箭袋及盾牌配套，主要供前排步兵在接戰前拋射，也可由車上射手與城防部隊使用。",
         "portrait": "portraits/assyrianbow.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/622-08428929b3.json"
     },
     {
       "id": "1236-江陵之戰",
@@ -34849,7 +34850,8 @@
         "layer": "land",
         "history": "秦連弩是秦軍步卒的弩類裝備，以重複弩機進行連續射擊，屬軍隊遠程火力的一環，並可與弓兵及城防火力協同。",
         "portrait": "portraits/xiaochongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/956-378d9e3afe.json"
     }
   ]
 }
