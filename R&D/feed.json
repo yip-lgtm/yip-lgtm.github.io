@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-22-19",
+ "generated_utc": "2026-10-22-20",
  "reports": [
+  {
+   "stamp": "2026-10-22-20",
+   "title_zh": "同樣是抗生素失效：兒童抗藥性死亡 30 年腰斬、老年人近倍增",
+   "title_en": "When Drug Failure Splits by Age: AMR Deaths Halved in Children, Nearly Doubled in the Elderly",
+   "url": "/R&D/reports/2026-10-22-20.html",
+   "cjk": 1029,
+   "bytes": 9479,
+   "sources": 8,
+   "gate_pass": false
+  },
   {
    "stamp": "2026-10-22-19",
    "title_zh": "標題：半熟料水泥為何仍有同等強度：煅燒黏土與石灰石的協同機制",
