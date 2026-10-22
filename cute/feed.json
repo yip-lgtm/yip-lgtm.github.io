@@ -34854,6 +34854,33 @@
         "portrait": "portraits/xiaochongnu.jpg"
       },
       "dossierUrl": "dossiers/956-378d9e3afe.json"
+    },
+    {
+      "id": "784-河中之戰",
+      "added": "2026-10-22T07:28:43.473Z",
+      "span": "p01",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 110.98,
+        "lat": 35.1
+      },
+      "battle": {
+        "y": 784,
+        "m": 1,
+        "name": "河中之戰",
+        "theater": "河中蒲州及長春宮前線",
+        "brief": "唐德宗建中四年涇原兵變，節度使李懷光因受猜忌而反出河中。貞元元年，馬燧說降晉、隰、慈三州，陶城一戰摧其前鋒，又單騎至長春宮城下說降徐庭光，河中諸將相繼出降，李懷光自縊。卡面這柄羅馬短劍不在此役現場：它代表以刺突破盾的短兵路線，唐軍則靠環首直刃刀、槍陣與弩砲，勝負落在斷糧與攻心。"
+      },
+      "kit": {
+        "name": "羅馬短劍",
+        "designation": "Gladius",
+        "year": -100,
+        "nation": "it",
+        "layer": "land",
+        "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
+        "portrait": "portraits/gladius.jpg"
+      },
+      "dossierUrl": "dossiers/784-7439856ee8.json"
     }
   ]
 }
