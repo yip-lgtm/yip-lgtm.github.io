@@ -55,7 +55,7 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <div class="wrap">
 <p class="kicker">KNOWLEDGE / 章節</p>
 <h1>領域筆記：電力零售價格與家庭負擔 (Retail Power Prices &amp; Household Affordability)</h1>
-<p class="meta">2723 bytes · 3 個小節</p>
+<p class="meta">5050 bytes · 4 個小節</p>
 <div class="rule"></div>
 <h1>領域筆記：電力零售價格與家庭負擔 (Retail Power Prices &amp; Household Affordability)</h1>
 <p>首次寫入：2026-10-22 16:00 UTC</p>
@@ -103,6 +103,39 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <li>無 EIA 對零售賬單節省的官方量化</li>
 <li>VPP 效果全部為模型推算，無實測驗證</li>
 </ul>
+<h2>2026-10-22 19:52 用戶評分反饋（合格，非滿分）與新增要求</h2>
+<p>用戶對 16:00 這份報告評「合格」，指出四個不足：</p>
+<ol>
+<li>核心發現偏數字羅列，<strong>缺少「為什麼住宅漲幅跑贏商用與工業」的機制解釋</strong>。</li>
+<li>VPP 的 56 美元節省<strong>完全依賴 Brattle 模型假設</strong>（performance payment 均值 75 美元/kW-年、</li>
+</ol>
+<p>規模 10 GW→35 GW、系統峰值減 4%），<strong>缺乏敏感度分析或替代情境</strong>。</p>
+<ol>
+<li>潛在影響幾乎全是【推論】，<strong>缺少更具體的傳導路徑或州級案例</strong>。</li>
+<li>與前一份電池儲能報告主題相近，新穎度稍弱。</li>
+</ol>
+<h3>待補：住宅漲幅跑贏商用／工業的機制線索（下次必須驗證）</h3>
+<p>候選機制（尚未由一手來源證實，僅為方向）：</p>
+<ul>
+<li>費率結構差異：住宅用電量低但分表/連接費等固定費用佔比高 → 單價上漲傳導更直接。</li>
+<li>住宅多為分時電價（TOU）且時段價差被拉大；商用／工業多用可中斷大用戶合約與電價指數條款。</li>
+<li>燃料成本傳導時滯差異：住宅合約調價頻率較高（快），商用／工業用長期指數或年度合約（慢）。</li>
+<li>分布式能源／電網固定成本分攤：電網投資大、受益人分散 → 住宅帳單含更多分攤份額。</li>
+</ul>
+<p>→ 驗證方法：EIA Form 861 各州平均零售電價（分 sector）+ 州公用事業委員會費率案卷（utility rate case）</p>
+<p>的 fuel cost adjustment 條款 + LBNL 各州報告分段。</p>
+<p>→ 若無一手數據支持，明確寫「未找到可引用的一手解釋」，不砌理由。</p>
+<h3>待補：Brattle VPP 模型的敏感度／替代情境（下次必須做）</h3>
+<p>至少算三個替代情境（用同一公式 +98 / −56 美元 對照）：</p>
+<ul>
+<li>performance payment 下限（如 50 美元/kW-年）與上限（如 100 美元/kW-年）。</li>
+<li>規模停在 10 GW（不成長到 35 GW）時的家庭帳單淨效果。</li>
+<li>峰值減幅只有 2%（而非 4%）時效果。</li>
+</ul>
+<p>→ 目標：說明「56 美元」在什麼假設範圍內成立、什麼範圍內翻正。</p>
+<h3>待補：具體州級案例</h3>
+<p>優先查：加州（2025 年住宅電價全美最高之一，CPUC 費率案卷）、夏威夷（最高電價、燃料調整機制）、</p>
+<p>佛州/德州（批發電價與零售脫鉗、power-on-charge）。每個案例要有可核查數字。</p>
 <div class="rule"></div>
 <p><a href="/R&amp;D/knowledge/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回知識庫</a></p>
 <p class="meta" style="margin-top:30px">自動建置於 2026-10-22-19 UTC · 來源：research-sentinel/knowledge/sections/energy-retail-price-affordability.md</p>
