@@ -12,16 +12,6 @@
    "gate_pass": true
   },
   {
-   "stamp": "2026-10-22-18",
-   "title_zh": "測試報告 — 發佈管道端到端驗證",
-   "title_en": "Test Report - End-to-End Publish Pipeline Verification",
-   "url": "/R&D/reports/2026-10-22-18.html",
-   "cjk": 62,
-   "bytes": 467,
-   "sources": 1,
-   "gate_pass": false
-  },
-  {
    "stamp": "2026-10-22-17",
    "title_zh": "美國職業熱害防護：聯邦執法强度與熱死亡負擔的落差",
    "title_en": "US Occupational Heat Protection: The Gap Between Federal Enforcement and Measured Heat Mortality",
