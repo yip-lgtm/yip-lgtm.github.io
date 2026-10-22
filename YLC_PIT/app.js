@@ -134,14 +134,15 @@ function render() {
     '<span class="chip">已核實 <b>' + (c.done || 0) + "</b></span>" +
     '<span class="chip">有相 <b>' + c.photo + "</b></span>";
 
-  let html = '<section class="band"><h3>Soil nails 26 · toe side · A 11.2 m / B 10.2 m / C 9.2 m</h3><div class="nailbox">';
-  ["A", "B", "C"].forEach(function (row) {
-    html += '<div class="nrow"><div class="nlbl">Row ' + row + "</div>";
-    NAILS.filter(function (n) { return n.row === row && show(n); }).forEach(function (n) {
+  let html = '<section class="band"><h3>Soil nails · left of pits · C / B / A down the slope</h3><div class="nailgrid">';
+  html += '<div class="nhead">C</div><div class="nhead">B</div><div class="nhead">A</div>';
+  for (let i = 1; i <= 9; i++) {
+    ["C", "B", "A"].forEach(function (row) {
+      const n = NAILS.filter(function (x) { return x.row === row && x.no === i; })[0];
+      if (!n || !show(n)) { html += '<div class="empty"></div>'; return; }
       html += cellBtn(n, n.id, n.elev);
     });
-    html += "</div>";
-  });
+  }
   html += "</div></section>";
 
   html += '<section class="band"><h3>NFC pits · triangle · top aligned · downslope A-B-C-D-E</h3><div class="tri">';
