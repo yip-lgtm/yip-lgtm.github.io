@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YLC grid 124+26</title>
+<title>YLC triangle 124+26</title>
 <style>
 :root{--bg:#0e141b;--panel:#17202b;--line:#314155;--text:#e8eef6;--muted:#8ea0b5;--accent:#3d8bfd}
 *{box-sizing:border-box}
@@ -22,7 +22,14 @@ main{padding:12px 14px 32px}
 .line{display:flex;gap:6px;align-items:flex-start;margin-bottom:6px}
 .lbl{width:72px;flex:0 0 72px;font-size:12px;color:var(--muted);padding-top:10px}
 .cells{display:flex;flex-wrap:wrap;gap:5px}
-.cell{width:78px;min-height:58px;border-radius:8px;border:1px solid var(--line);background:#121a24;padding:5px 6px;cursor:pointer;text-align:left;position:relative;color:var(--text)}
+.tri{overflow:auto}
+.heads,.grid{display:grid;grid-template-columns:repeat(22,54px);gap:3px}
+.head{font-size:10px;color:var(--muted);text-align:center}
+.empty{width:54px;height:42px}
+.cell{width:54px;min-height:42px;padding:3px 4px;border-radius:6px;border:1px solid var(--line);background:#121a24;cursor:pointer;text-align:center;position:relative;color:var(--text)}
+.nrow{display:flex;gap:4px;align-items:center;margin-bottom:4px}
+.nlbl{width:48px;font-size:12px;color:var(--muted)}
+.nailbox{overflow:auto}
 .cell:hover{outline:2px solid var(--accent)}
 .cell .mk{font-weight:700;font-size:13px}
 .cell .sub{font-size:10px;color:var(--muted);line-height:1.2}
@@ -47,7 +54,7 @@ label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
 </head>
 <body>
 <header>
-  <h1>YLC grid <span>124 pits + 26 soil nails</span></h1>
+  <h1>YLC triangle <span>124 pits + 26 nails · pattern</span></h1>
   <div class="row" id="stats"></div>
   <div class="row">
     <input id="q" type="search" placeholder="search 1A / A-1 / R21">

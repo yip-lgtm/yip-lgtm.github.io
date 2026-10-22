@@ -1,60 +1,44 @@
-const SEQUENCE = {
-  21: ["1A","1A","1C","1C","1E","1E","1B","1B","1D","1D"],
-  22: ["2A","2A","2C","2C","2E","2E","2B","2B","2D","2D"],
-  23: ["3A","3A","3C","3C","3E","3E","3B","3B","3D","3D"],
-  24: ["4A","4A","4C","4C","4E","4E","4B","4B","4D","4D"],
-  31: ["1A","1A","1C","1C","1E","1B","1D","1D"],
-  32: ["2A","2A","2C","2C","2E","2B","2D","2D"],
-  33: ["3A","3A","3C","3E","3B","3B","3D"],
-  34: ["4A","4A","4C","4E","4B","4B","4D"],
-  41: ["1A","1A","1C","1E","1B","1B","1D"],
-  42: ["2A","2A","2C","2E","2B","2D"],
-  43: ["3A","3A","3C","3E","3B","3D"],
-  44: ["4A","4C","4E","4B","4D"],
-  51: ["1A","1C","1E","1B","1D"],
-  52: ["2A","2C","2E","2B","2D"],
-  53: ["3A","3C","3B","3D"],
-  54: ["4A","4C","4B","4D"],
-  61: ["1A","1C","1B"],
-  62: ["2A","2C","2B"],
-  63: ["3A","3B"],
-  64: ["4A","4B"],
-  71: ["1A"],
-  72: ["2A"]
-};
-const BANDS = [
-  ["Row 21-24", [21,22,23,24]],
-  ["Row 31-34", [31,32,33,34]],
-  ["Row 41-44", [41,42,43,44]],
-  ["Row 51-54", [51,52,53,54]],
-  ["Row 61-64", [61,62,63,64]],
-  ["Row 71-72", [71,72]]
+const LETTERS = ["A", "B", "C", "D", "E"];
+const COLS = [
+  { row: 21, n: 10, p: 1 }, { row: 22, n: 10, p: 2 }, { row: 23, n: 10, p: 3 }, { row: 24, n: 10, p: 4 },
+  { row: 31, n: 8, p: 1 }, { row: 32, n: 8, p: 2 }, { row: 33, n: 7, p: 3 }, { row: 34, n: 7, p: 4 },
+  { row: 41, n: 7, p: 1 }, { row: 42, n: 6, p: 2 }, { row: 43, n: 6, p: 3 }, { row: 44, n: 5, p: 4 },
+  { row: 51, n: 5, p: 1 }, { row: 52, n: 5, p: 2 }, { row: 53, n: 4, p: 3 }, { row: 54, n: 4, p: 4 },
+  { row: 61, n: 3, p: 1 }, { row: 62, n: 3, p: 2 }, { row: 63, n: 2, p: 3 }, { row: 64, n: 2, p: 4 },
+  { row: 71, n: 1, p: 1 }, { row: 72, n: 1, p: 2 }
 ];
 const NAILS = [];
 function addNails(row, n, elevs, len) {
   for (let i = 1; i <= n; i++) {
     const angle = i <= n - 3 ? 0 : [10, 15, 25][i - (n - 2)];
-    NAILS.push({ id: row + "-" + i, kind: "nail", row: row, no: i, elev: elevs[i - 1], length: len, angle: angle, dia: 150, bar: 40, load: 256.3, socket: 2 });
+    NAILS.push({ id: row + "-" + i, kind: "nail", row: row, no: i, elev: elevs[i - 1], length: len, angle: angle });
   }
 }
 addNails("A", 8, [48, 48, 47.5, 47.5, 47.5, 47, 47, 47], 11.2);
 addNails("B", 9, [46, 46, 45.5, 45.5, 45.5, 45, 45, 45, 45], 10.2);
 addNails("C", 9, [45, 45, 43.5, 43.5, 43.5, 43, 43, 43, 43], 9.2);
+
 const PITS = [];
 const seen = {};
-Object.keys(SEQUENCE).map(Number).forEach(function (row) {
-  SEQUENCE[row].forEach(function (mk, i) {
-    const k = row + "-" + mk;
-    seen[k] = (seen[k] || 0) + 1;
-    PITS.push({ id: "R" + row + "-" + mk + "-" + seen[k], kind: "pit", row: row, marker: mk, letter: mk.slice(-1), seq: i + 1, n: seen[k] });
-  });
+COLS.forEach(function (col, ci) {
+  for (let i = 0; i < col.n; i++) {
+    const letter = LETTERS[i % 5];
+    const mk = col.p + letter;
+    const key = col.row + "-" + mk;
+    seen[key] = (seen[key] || 0) + 1;
+    PITS.push({
+      id: "R" + col.row + "-" + mk + "-" + seen[key],
+      kind: "pit", row: col.row, marker: mk, letter: letter,
+      col: ci, stack: i, n: seen[key]
+    });
+  }
 });
 const ALL = PITS.concat(NAILS);
 const STATUS = [
-  { v: "none", t: "not started" },
-  { v: "exc", t: "excavated" },
-  { v: "nfc", t: "filled" },
-  { v: "done", t: "verified" }
+  { v: "none", t: "未開始" },
+  { v: "exc", t: "已開挖" },
+  { v: "nfc", t: "已灌" },
+  { v: "done", t: "已核實" }
 ];
 function esc(s) {
   return String(s || "").split("&").join("&" + "amp;").split('"').join("&" + "quot;").split("<").join("&" + "lt;");
@@ -120,15 +104,6 @@ function show(item) {
   if (q && (item.id + " " + (item.marker || "") + " " + item.row).toLowerCase().indexOf(q) < 0) return false;
   return true;
 }
-function cell(item) {
-  const m = meta(item.id);
-  const st = STATUS.filter(function (s) { return s.v === m.status; })[0] || STATUS[0];
-  const has = (PHOTOS[item.id] || []).length;
-  const cls = item.kind === "nail" ? "nail" : "letter-" + item.letter;
-  const top = item.kind === "nail" ? item.id : item.marker;
-  const mid = item.kind === "nail" ? item.elev + " mPD" : item.id;
-  return '<button class="cell ' + cls + " " + m.status + (has ? " has" : "") + '" data-id="' + item.id + '"><div class="mk">' + top + '</div><div class="sub">' + mid + '</div><div class="sub">' + st.t + (has ? " / " + has + " photo" : "") + "</div></button>";
-}
 function render() {
   const c = { none: 0, exc: 0, nfc: 0, done: 0, photo: 0 };
   ALL.forEach(function (it) {
@@ -137,27 +112,48 @@ function render() {
     if ((PHOTOS[it.id] || []).length) c.photo++;
   });
   document.getElementById("stats").innerHTML =
-    '<span class="chip">pits <b>' + PITS.length + "</b></span>" +
-    '<span class="chip">nails <b>' + NAILS.length + "</b></span>" +
-    '<span class="chip">none <b>' + (c.none || 0) + "</b></span>" +
-    '<span class="chip">exc <b>' + (c.exc || 0) + "</b></span>" +
-    '<span class="chip">filled <b>' + (c.nfc || 0) + "</b></span>" +
-    '<span class="chip">done <b>' + (c.done || 0) + "</b></span>" +
-    '<span class="chip">photo <b>' + c.photo + "</b></span>";
-  let html = '<section class="band"><h3>Soil nails 26 · A 11.2 m / B 10.2 m / C 9.2 m · dia 150 · 20 deg · Y40 · 256.3 kN</h3>';
+    '<span class="chip">坑 <b>' + PITS.length + "</b></span>" +
+    '<span class="chip">釘 <b>' + NAILS.length + "</b></span>" +
+    '<span class="chip">未開始 <b>' + (c.none || 0) + "</b></span>" +
+    '<span class="chip">已開挖 <b>' + (c.exc || 0) + "</b></span>" +
+    '<span class="chip">已灌 <b>' + (c.nfc || 0) + "</b></span>" +
+    '<span class="chip">已核實 <b>' + (c.done || 0) + "</b></span>" +
+    '<span class="chip">有相 <b>' + c.photo + "</b></span>";
+
+  let html = '<section class="band"><h3>Soil nails 26 · toe side · A 11.2 m / B 10.2 m / C 9.2 m</h3><div class="nailbox">';
   ["A", "B", "C"].forEach(function (row) {
-    const list = NAILS.filter(function (n) { return n.row === row && show(n); });
-    html += '<div class="line"><div class="lbl">Row ' + row + "<br>" + NAILS.filter(function (n) { return n.row === row; }).length + '</div><div class="cells">' + (list.map(cell).join("") || "-") + "</div></div>";
-  });
-  html += "</section>";
-  BANDS.forEach(function (band) {
-    html += '<section class="band"><h3>NFC pits · ' + band[0] + "</h3>";
-    band[1].forEach(function (row) {
-      const pits = PITS.filter(function (p) { return p.row === row && show(p); });
-      html += '<div class="line"><div class="lbl">Row ' + row + "<br>" + SEQUENCE[row].length + '</div><div class="cells">' + (pits.map(cell).join("") || "-") + "</div></div>";
+    html += '<div class="nrow"><div class="nlbl">Row ' + row + "</div>";
+    NAILS.filter(function (n) { return n.row === row && show(n); }).forEach(function (n) {
+      const m = meta(n.id);
+      const st = STATUS.filter(function (s) { return s.v === m.status; })[0] || STATUS[0];
+      const has = (PHOTOS[n.id] || []).length;
+      html += '<button class="cell nail ' + m.status + (has ? " has" : "") + '" data-id="' + n.id + '"><div class="mk">' + n.id + '</div><div class="sub">' + n.elev + "</div><div class=\"sub\">" + st.t + "</div></button>";
     });
-    html += "</section>";
+    html += "</div>";
   });
+  html += "</div></section>";
+
+  html += '<section class="band"><h3>NFC pits · triangle · top aligned · downslope A-B-C-D-E</h3><div class="tri">';
+  html += '<div class="heads">';
+  COLS.forEach(function (col) {
+    html += '<div class="head">R' + col.row + "<br>" + col.n + "</div>";
+  });
+  html += "</div><div class=\"grid\">";
+  const max = 10;
+  for (let r = 0; r < max; r++) {
+    COLS.forEach(function (col, ci) {
+      const pit = PITS.filter(function (p) { return p.col === ci && p.stack === r; })[0];
+      if (!pit || !show(pit)) {
+        html += '<div class="empty"></div>';
+        return;
+      }
+      const m = meta(pit.id);
+      const st = STATUS.filter(function (s) { return s.v === m.status; })[0] || STATUS[0];
+      const has = (PHOTOS[pit.id] || []).length;
+      html += '<button class="cell letter-' + pit.letter + " " + m.status + (has ? " has" : "") + '" data-id="' + pit.id + '"><div class="mk">' + pit.marker + '</div><div class="sub">' + st.t + "</div></button>";
+    });
+  }
+  html += "</div></div></section>";
   document.getElementById("plan").innerHTML = html;
   document.querySelectorAll(".cell").forEach(function (el) {
     el.onclick = function () { edit(el.getAttribute("data-id")); };
@@ -170,8 +166,8 @@ function edit(id) {
   const m = meta(id);
   const photos = PHOTOS[id] || [];
   const info = item.kind === "nail"
-    ? "elev " + item.elev + " mPD / " + item.angle + " deg / " + item.length + " m / dia " + item.dia + " / Y" + item.bar
-    : "Row " + item.row + " / " + item.marker + " / no." + item.seq;
+    ? "elev " + item.elev + " mPD / " + item.angle + " deg / " + item.length + " m"
+    : "Row " + item.row + " / " + item.marker + " / stack " + (item.stack + 1);
   const opts = STATUS.map(function (s) {
     return '<option value="' + s.v + '"' + (s.v === m.status ? " selected" : "") + ">" + s.t + "</option>";
   }).join("");
@@ -179,21 +175,21 @@ function edit(id) {
     "<h2>" + item.id + "</h2>" +
     '<div class="note">' + (item.kind === "nail" ? "Soil nail" : "NFC pit") + " · " + info + "</div>" +
     '<div class="grid2">' +
-    '<div class="field"><label>status</label><select id="f-status">' + opts + "</select></div>" +
-    '<div class="field"><label>start date</label><input id="f-exc" type="date" value="' + (m.excavate || "") + '"></div>' +
-    '<div class="field"><label>finish date</label><input id="f-nfc" type="date" value="' + (m.nfc || "") + '"></div>' +
-    '<div class="field"><label>note</label><input id="f-note" type="text" value="' + esc(m.note) + '"></div>' +
+    '<div class="field"><label>狀態</label><select id="f-status">' + opts + "</select></div>" +
+    '<div class="field"><label>開始日期</label><input id="f-exc" type="date" value="' + (m.excavate || "") + '"></div>' +
+    '<div class="field"><label>完成日期</label><input id="f-nfc" type="date" value="' + (m.nfc || "") + '"></div>' +
+    '<div class="field"><label>備註</label><input id="f-note" type="text" value="' + esc(m.note) + '"></div>' +
     "</div>" +
-    '<div class="field"><label>upload photos</label><input id="f-photo" type="file" accept="image/*" multiple><div class="photos" id="photoBox"></div></div>' +
-    '<div class="actions"><button class="primary" id="saveBtn">save</button><button id="dlBtn">download html</button><button id="closeBtn">close</button></div>' +
-    '<div class="note">#' + id + " · photos stay in this browser</div>";
+    '<div class="field"><label>上載相片</label><input id="f-photo" type="file" accept="image/*" multiple><div class="photos" id="photoBox"></div></div>' +
+    '<div class="actions"><button class="primary" id="saveBtn">儲存</button><button id="dlBtn">下載 HTML</button><button id="closeBtn">關閉</button></div>' +
+    '<div class="note">#' + id + "</div>";
   const box = document.getElementById("photoBox");
   photos.forEach(function (src, i) {
     const fig = document.createElement("figure");
     const img = document.createElement("img");
     img.src = src;
     const btn = document.createElement("button");
-    btn.textContent = "remove";
+    btn.textContent = "移除";
     btn.onclick = function () {
       photos.splice(i, 1);
       PHOTOS[id] = photos;
@@ -224,7 +220,7 @@ function edit(id) {
     });
   };
   document.getElementById("dlBtn").onclick = function () {
-    const html = "<!DOCTYPE html><meta charset=UTF-8><title>" + item.id + "</title><body><h1>" + item.id + "</h1><p>" + info + "</p><p>" + (m.note || "") + "</p>" + photos.map(function (s) { return '<img src="' + s + '" style="max-width:100%">'; }).join("") + "</body>";
+    const html = "<!DOCTYPE html><meta charset=UTF-8><title>" + item.id + "</title><body><h1>" + item.id + "</h1><p>" + info + "</p>" + photos.map(function (s) { return '<img src="' + s + '" style="max-width:100%">'; }).join("") + "</body>";
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([html], { type: "text/html" }));
     a.download = item.id + ".html";
@@ -251,7 +247,7 @@ document.getElementById("overlay").onclick = function (e) {
 };
 document.getElementById("exportBtn").onclick = function () {
   const a = document.createElement("a");
-  a.href = URL.createObjectURL(new Blob([JSON.stringify({ meta: META, photos: PHOTOS, exported: new Date().toISOString() })], { type: "application/json" }));
+  a.href = URL.createObjectURL(new Blob([JSON.stringify({ meta: META, photos: PHOTOS })], { type: "application/json" }));
   a.download = "YLC-grid.json";
   a.click();
 };
@@ -264,8 +260,7 @@ document.getElementById("importFile").onchange = function (e) {
     META = data.meta || {};
     PHOTOS = data.photos || {};
     put("meta", "all", META).then(function () {
-      const jobs = Object.keys(PHOTOS).map(function (k) { return put("photos", k, PHOTOS[k]); });
-      return Promise.all(jobs);
+      return Promise.all(Object.keys(PHOTOS).map(function (k) { return put("photos", k, PHOTOS[k]); }));
     }).then(render);
   });
 };
