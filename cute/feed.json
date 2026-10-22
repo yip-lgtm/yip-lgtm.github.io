@@ -34744,7 +34744,8 @@
         "layer": "land",
         "history": "秦連弩屬弩兵的遠射裝備，編入步軍作戰體系，負責持續投射箭矢，通常與弓兵協同行動，壓制敵方陣線並支援前鋒。",
         "portrait": "portraits/xiaochongnu.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/974-86f8d1128b.json"
     },
     {
       "id": "757-太原之戰",
