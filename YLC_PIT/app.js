@@ -1,6 +1,6 @@
 const LETTERS = ["A", "B", "C", "D", "E"];
 const COLS = [
-  { row: 21, n: 10, p: 1 }, { row: 22, n: 10, p: 2 }, { row: 23, n: 10, p: 3 }, { row: 24, n: 10, p: 4 },
+  { row: 21, n: 11, p: 1 }, { row: 22, n: 10, p: 2 }, { row: 23, n: 10, p: 3 }, { row: 24, n: 10, p: 4 },
   { row: 31, n: 8, p: 1 }, { row: 32, n: 8, p: 2 }, { row: 33, n: 7, p: 3 }, { row: 34, n: 7, p: 4 },
   { row: 41, n: 7, p: 1 }, { row: 42, n: 6, p: 2 }, { row: 43, n: 6, p: 3 }, { row: 44, n: 5, p: 4 },
   { row: 51, n: 5, p: 1 }, { row: 52, n: 5, p: 2 }, { row: 53, n: 4, p: 3 }, { row: 54, n: 4, p: 4 },
@@ -151,7 +151,7 @@ function render() {
     html += '<div class="head">' + col.row + "</div>";
   });
   html += "</div>";
-  const max = 10;
+  const max = 11;
   for (let r = 0; r < max; r++) {
     html += '<div class="grid"><div class="rlabel">' + LETTERS[r % 5] + "</div>";
     COLS.forEach(function (col, ci) {
