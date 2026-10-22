@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-22-20",
+ "generated_utc": "2026-10-22-21",
  "reports": [
+  {
+   "stamp": "2026-10-22-21",
+   "title_zh": "鈣鈦礦—矽堆疊太陽能：10 年保固與 25 年融資假設的落差",
+   "title_en": "Perovskite–Silicon Tandem PV: A 10-Year Module Warranty Against a 25-Year Financing Benchmark",
+   "url": "/R&D/reports/2026-10-22-21.html",
+   "cjk": 923,
+   "bytes": 10234,
+   "sources": 7,
+   "gate_pass": false
+  },
   {
    "stamp": "2026-10-22-20",
    "title_zh": "同樣是抗生素失效：兒童抗藥性死亡減逾半、老年人增逾八成",
