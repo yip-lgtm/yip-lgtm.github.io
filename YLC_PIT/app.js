@@ -91,7 +91,22 @@ function allStore(store) {
     });
   });
 }
-let META = {};
+function loadMeta() {
+  try { return JSON.parse(localStorage.getItem("ylc-meta") || "{}"); } catch (e) { return {}; }
+}
+function saveMeta() {
+  try {
+    localStorage.setItem("ylc-meta", JSON.stringify(META));
+    const el = document.getElementById("saved");
+    if (el) el.textContent = "已儲存";
+    return true;
+  } catch (e) {
+    const el = document.getElementById("saved");
+    if (el) el.textContent = "儲存失敗";
+    return false;
+  }
+}
+let META = loadMeta();
 let PHOTOS = {};
 function meta(id) { return META[id] || { status: "none", excavate: "", nfc: "", note: "" }; }
 function show(item) {
@@ -166,18 +181,21 @@ function render() {
   }
   html += "</div></section>";
   document.getElementById("plan").innerHTML = html;
-  document.querySelectorAll("[data-open]").forEach(function (el) {
-    el.onclick = function () { edit(el.getAttribute("data-open")); };
+  document.querySelectorAll(".cell").forEach(function (el) {
+    el.onclick = function (ev) {
+      if (ev.target.tagName === "SELECT") return;
+      edit(el.getAttribute("data-id"));
+    };
   });
   document.querySelectorAll("[data-status]").forEach(function (el) {
-    el.onchange = function () {
+    el.onchange = function (ev) {
+      ev.stopPropagation();
       const id = el.getAttribute("data-status");
       const cur = meta(id);
       META[id] = { status: el.value, excavate: cur.excavate || "", nfc: cur.nfc || "", note: cur.note || "" };
-      put("meta", "all", META).then(function () {
-        document.getElementById("saved").textContent = "已儲存 " + id;
-        render();
-      });
+      saveMeta();
+      put("meta", "all", META).catch(function () {});
+      render();
     };
   });
 }
@@ -236,10 +254,11 @@ function edit(id) {
       nfc: document.getElementById("f-nfc").value,
       note: document.getElementById("f-note").value
     };
-    put("meta", "all", META).then(function () {
-      document.getElementById("overlay").classList.remove("open");
-      render();
-    });
+    saveMeta();
+    put("meta", "all", META).catch(function () {});
+    document.getElementById("overlay").classList.remove("open");
+    document.getElementById("saved").textContent = "已儲存 " + id;
+    render();
   };
   document.getElementById("dlBtn").onclick = function () {
     const html = "<!DOCTYPE html><meta charset=UTF-8><title>" + item.id + "</title><body><h1>" + item.id + "</h1><p>" + info + "</p>" + photos.map(function (s) { return '<img src="' + s + '" style="max-width:100%">'; }).join("") + "</body>";
@@ -281,15 +300,16 @@ document.getElementById("importFile").onchange = function (e) {
     const data = JSON.parse(text);
     META = data.meta || {};
     PHOTOS = data.photos || {};
-    put("meta", "all", META).then(function () {
-      return Promise.all(Object.keys(PHOTOS).map(function (k) { return put("photos", k, PHOTOS[k]); }));
-    }).then(render);
+    saveMeta();
+    put("meta", "all", META).catch(function () {});
+    Promise.all(Object.keys(PHOTOS).map(function (k) { return put("photos", k, PHOTOS[k]); })).then(render);
   });
 };
 render();
 Promise.all([get("meta", "all").catch(function () { return {}; }), allStore("photos").catch(function () { return {}; })]).then(function (pair) {
-  META = pair[0] || {};
+  if (!Object.keys(META).length && pair[0]) META = pair[0];
   PHOTOS = pair[1] || {};
+  saveMeta();
   render();
   const h = location.hash.slice(1);
   if (h && ALL.some(function (x) { return x.id === h; })) edit(h);

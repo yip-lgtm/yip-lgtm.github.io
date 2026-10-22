@@ -27,8 +27,8 @@ main{padding:12px 14px 32px}
 .head,.rlabel{font-size:10px;color:var(--muted);text-align:center;height:18px;line-height:18px}
 .rlabel{height:46px;line-height:46px;font-weight:700}
 .empty{width:52px;height:46px}
-.cell{width:52px;height:46px;min-height:46px;padding:2px;border-radius:4px;border:1px solid var(--line);background:#121a24;text-align:center;position:relative;color:var(--text);overflow:hidden}
-.cell select{width:100%;margin:0;padding:0;font-size:9px;height:14px;background:#0e141b;color:var(--text);border:1px solid var(--line);border-radius:3px}
+.cell{width:52px;height:52px;min-height:52px;padding:2px;border-radius:4px;border:1px solid var(--line);background:#121a24;text-align:center;position:relative;color:var(--text);overflow:hidden;cursor:pointer}
+.cell select{width:100%;margin:0;padding:0;font-size:11px;height:18px;background:#0e141b;color:var(--text);border:1px solid var(--line);border-radius:3px}
 .cell .mk{font-weight:700;font-size:12px;line-height:14px;cursor:pointer}
 .cell .sub{display:none}
 .nailgrid{display:grid;grid-template-columns:54px 54px 54px;gap:3px;width:max-content}
@@ -78,10 +78,10 @@ label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
   </div>
 </header>
 <main>
-  <div class="legend">點編號開編輯／上載相片。格子上的選單直接改狀態，會自動儲存。<span class="saved" id="saved"></span></div>
+  <div class="legend">點格開編輯。底下選單改狀態，會即時儲存（這部瀏覽器）。<span class="saved" id="saved"></span></div>
   <div id="plan">loading...</div>
 </main>
 <div class="overlay" id="overlay"><div class="card" id="card"></div></div>
-<script src="app.js?v=6"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>
