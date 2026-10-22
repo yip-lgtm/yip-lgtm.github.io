@@ -104,6 +104,20 @@ function show(item) {
   if (q && (item.id + " " + (item.marker || "") + " " + item.row).toLowerCase().indexOf(q) < 0) return false;
   return true;
 }
+function opts(cur) {
+  return STATUS.map(function (s) {
+    return '<option value="' + s.v + '"' + (s.v === cur ? " selected" : "") + ">" + s.t + "</option>";
+  }).join("");
+}
+function cellBtn(item, top, mid) {
+  const m = meta(item.id);
+  const has = (PHOTOS[item.id] || []).length;
+  const cls = item.kind === "nail" ? "nail" : "letter-" + item.letter;
+  return '<div class="cell ' + cls + " " + m.status + (has ? " has" : "") + '" data-id="' + item.id + '">' +
+    '<div class="mk" data-open="' + item.id + '">' + top + "</div>" +
+    '<div class="sub">' + mid + "</div>" +
+    '<select data-status="' + item.id + '">' + opts(m.status) + "</select></div>";
+}
 function render() {
   const c = { none: 0, exc: 0, nfc: 0, done: 0, photo: 0 };
   ALL.forEach(function (it) {
@@ -124,10 +138,7 @@ function render() {
   ["A", "B", "C"].forEach(function (row) {
     html += '<div class="nrow"><div class="nlbl">Row ' + row + "</div>";
     NAILS.filter(function (n) { return n.row === row && show(n); }).forEach(function (n) {
-      const m = meta(n.id);
-      const st = STATUS.filter(function (s) { return s.v === m.status; })[0] || STATUS[0];
-      const has = (PHOTOS[n.id] || []).length;
-      html += '<button class="cell nail ' + m.status + (has ? " has" : "") + '" data-id="' + n.id + '"><div class="mk">' + n.id + '</div><div class="sub">' + n.elev + "</div><div class=\"sub\">" + st.t + "</div></button>";
+      html += cellBtn(n, n.id, n.elev);
     });
     html += "</div>";
   });
@@ -148,15 +159,24 @@ function render() {
         return;
       }
       const m = meta(pit.id);
-      const st = STATUS.filter(function (s) { return s.v === m.status; })[0] || STATUS[0];
-      const has = (PHOTOS[pit.id] || []).length;
-      html += '<button class="cell letter-' + pit.letter + " " + m.status + (has ? " has" : "") + '" data-id="' + pit.id + '"><div class="mk">' + pit.marker + '</div><div class="sub">' + st.t + "</div></button>";
+      html += cellBtn(pit, pit.marker, m.note ? m.note.slice(0, 6) : "");
     });
   }
   html += "</div></div></section>";
   document.getElementById("plan").innerHTML = html;
-  document.querySelectorAll(".cell").forEach(function (el) {
-    el.onclick = function () { edit(el.getAttribute("data-id")); };
+  document.querySelectorAll("[data-open]").forEach(function (el) {
+    el.onclick = function () { edit(el.getAttribute("data-open")); };
+  });
+  document.querySelectorAll("[data-status]").forEach(function (el) {
+    el.onchange = function () {
+      const id = el.getAttribute("data-status");
+      const cur = meta(id);
+      META[id] = { status: el.value, excavate: cur.excavate || "", nfc: cur.nfc || "", note: cur.note || "" };
+      put("meta", "all", META).then(function () {
+        document.getElementById("saved").textContent = "已儲存 " + id;
+        render();
+      });
+    };
   });
 }
 function edit(id) {

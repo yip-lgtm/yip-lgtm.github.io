@@ -49,7 +49,9 @@ label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
 .photos figure{margin:0;width:130px}
 .photos img{width:130px;height:96px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-.note{font-size:12px;color:var(--muted);margin-top:8px}
+.cell select{width:100%;margin-top:2px;padding:1px 2px;font-size:10px;background:#0e141b;color:var(--text);border:1px solid var(--line);border-radius:4px}
+.cell .mk{cursor:pointer}
+.saved{font-size:12px;color:#56d364}
 </style>
 </head>
 <body>
@@ -73,7 +75,7 @@ label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
   </div>
 </header>
 <main>
-  <div class="legend">grey not started / blue excavated / green filled / dark green verified / blue dot = photo</div>
+  <div class="legend">點編號開編輯／上載相片。格子上的選單直接改狀態，會自動儲存。<span class="saved" id="saved"></span></div>
   <div id="plan">loading...</div>
 </main>
 <div class="overlay" id="overlay"><div class="card" id="card"></div></div>
