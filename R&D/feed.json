@@ -39,7 +39,7 @@
    "cjk": 798,
    "bytes": 8414,
    "sources": 7,
-   "gate_pass": false
+   "gate_pass": true
   },
   {
    "stamp": "2026-10-23-10",
@@ -59,7 +59,7 @@
    "cjk": 870,
    "bytes": 8682,
    "sources": 5,
-   "gate_pass": false
+   "gate_pass": true
   },
   {
    "stamp": "2026-10-23-08",
@@ -79,7 +79,7 @@
    "cjk": 635,
    "bytes": 7937,
    "sources": 7,
-   "gate_pass": false
+   "gate_pass": true
   },
   {
    "stamp": "2026-10-23-04",
@@ -109,7 +109,7 @@
    "cjk": 571,
    "bytes": 5575,
    "sources": 2,
-   "gate_pass": false
+   "gate_pass": true
   },
   {
    "stamp": "2026-10-23-00",
@@ -129,7 +129,7 @@
    "cjk": 981,
    "bytes": 8972,
    "sources": 6,
-   "gate_pass": false
+   "gate_pass": true
   },
   {
    "stamp": "2026-10-22-21",
@@ -139,7 +139,7 @@
    "cjk": 832,
    "bytes": 8957,
    "sources": 7,
-   "gate_pass": false
+   "gate_pass": true
   },
   {
    "stamp": "2026-10-22-20",
@@ -179,27 +179,7 @@
    "cjk": 783,
    "bytes": 4499,
    "sources": 3,
-   "gate_pass": false
-  },
-  {
-   "stamp": "2026-10-22-15",
-   "title_zh": "主題",
-   "title_en": "",
-   "url": "/R&D/reports/2026-10-22-15.html",
-   "cjk": 2444,
-   "bytes": 28225,
-   "sources": 28,
-   "gate_pass": false
-  },
-  {
-   "stamp": "2026-10-22-14",
-   "title_zh": "工程教育路徑知識庫 — 研究生層級（碩士／博士）與學士分支的學分制度對照",
-   "title_en": "Engineering education pathway — graduate tier (master's/doctoral) vs undergraduate branch credit structures",
-   "url": "/R&D/reports/2026-10-22-14.html",
-   "cjk": 1576,
-   "bytes": 10396,
-   "sources": 0,
-   "gate_pass": false
+   "gate_pass": true
   }
  ],
  "knowledge": [
