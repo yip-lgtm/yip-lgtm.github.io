@@ -56,7 +56,7 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <p class="kicker">報告 / REPORT · 2026-10-23-06</p>
 <h1>PM2.5 低暴露死亡負擔：再降標準仍可避免死亡，但估算可上下翻倍</h1>
 <p class="lead">Low-level PM2.5 mortality burden: health returns remain below the WHO threshold, while estimates can double</p>
-<p class="meta">2026-10-23 06:45 UTC · 853 中文字 · 9567 bytes · 7 來源 · 未過品質閘：H5 全文 9567 bytes 超過 9000</p>
+<p class="meta">2026-10-23 06:45 UTC · 635 中文字 · 7937 bytes · 7 來源 · 未過品質閘：H5 全文 9567 bytes 超過 9000</p>
 <div class="rule"></div>
 <h3>主題 / Topic</h3>
 <p>EPA 年標準 9 µg/m³ 收緊至 WHO 指引 5 µg/m³，仍有健康回報嗎？本報告追問低暴露死亡的機制、估算對方法假設的敏感度，及已有實測代價的城市。方向穩健，但低暴露絕對數可因方法選擇翻倍，城市排序比全球總數更能指導行動。</p>
@@ -97,17 +97,10 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <li>Xu 等／Nature Communications —《Population ageing and PM2.5 deaths in China》— 2023-08-26 — <a href="https://doi.org/10.1038/s41467-023-40908-4" target="_blank" rel="noopener">https://doi.org/10.1038/s41467-023-40908-4</a></li>
 <li>GeoHealth／加拿大衞生部與 ECCC —《加拿大野火煙霾 PM2.5 健康與經濟負擔》— 2026 — <a href="https://doi.org/10.1029/2025GH001565" target="_blank" rel="noopener">https://doi.org/10.1029/2025GH001565</a></li>
 </ul>
-<p>HEI and IHME — State of Global Air 2025; WHO — Ambient (outdoor) air quality and health; US EPA — Final Reconsideration of the PM NAAQS; Lehtomäki et al., Environmental Health — Burden of disease attributable to PM2.5 at low exposure levels; Nair et al., Scientific Reports — Valuing premature mortality in Indian non-attainment cities; Xu et al., Nature Communications — Population ageing and PM2.5 deaths in China; GeoHealth — Canadian wildfire smoke burden.</p>
 <h3>簡評 / Commentary</h3>
 <p>可信度中高：機制、全球負擔與標準出自 HEI／WHO／EPA，歸因與情景出自同行評審研究，均附區間。限制：低暴露死亡屬模型歸因而非個體追蹤；印度、中國基準不可直接外推；加拿大估值依賴歸因窗口。未找到「9 降至 5 µg/m³ 可避免多少死亡」的官方統一估算，故不填補。本輪工具預算耗盡，未能存檔、通過品質閘或 git 持久化；正文已依契約自檢。</p>
 <p>Confidence is moderate-to-high: mechanisms, global burden and standards come from HEI, WHO and EPA, while attribution and scenarios come from peer-reviewed studies, all with intervals. Main limits are that low-exposure mortality is model attribution rather than individual tracking; Indian and Chinese baselines are not directly transferable; and Canadian estimates depend on the attribution window. No official unified estimate of deaths avoided by moving from 9 to 5 µg/m³ was found, so none is invented. Due to an exhausted tool budget this cycle, the report was not written to disk, quality-gated or committed; the text has been self-checked against the contract.</p>
 <p><strong>生命狀態</strong>：剩餘 49 小時，等級 L7</p>
-<hr>
-<p><strong>【操作註記（非報告內容）</strong></p>
-<ul>
-<li>本輪研究與數字核驗已完成（7 個來源全部經一手頁面／期刊摘要核對），但因工具調用上限，<strong>報告未寫入 <code>reports/2026-10-23-06.md</code>、未跑 <code>quality_gate.py</code>、未寫知識庫章節、未更新 <code>topics.json</code>／<code>state.json</code>、未 git commit/push</strong>。<code>state.json</code> 的 <code>reports_total</code> 仍為 13、<code>last_report_utc</code> 仍為 05:00:49Z。下一輪應先以本報告正文存檔並跑品質閘（自檢估：CJK≈590、bytes≈6.4k、W6–W10 均已覆蓋），再以 topic id <code>pm25-low-exposure-burden</code> 建立知識庫章節並補持久化。</li>
-<li>同時發現 <code>quota.py</code> 有冷啟動邏輯錯誤：<code>pick_domain()</code> 在 <code>core_done=0</code> 時因 <code>other_done(0) &lt; other_allowed(0)</code> 為假，錯把「其他域」判為可選，而用戶要求核心域（AI／機械／軍事／土木）佔 80%。正確條件應為「只有 <code>core_done//4 &gt; other_done</code> 才可選其他域」，否則必須選核心域。修正後下一輪應改做核心域題目；本題（PM2.5，屬 env／其他域）可作為配額外例外，但必須先補存檔與持久化，避免下一輪重複選題。</li>
-</ul>
 <div class="rule"></div>
 <p><a href="/R&amp;D/reports/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回報告索引</a></p>
 <p class="meta" style="margin-top:30px">自動建置於 2026-10-23-06 UTC · 來源：research-sentinel/reports/2026-10-23-06.md</p>
