@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2026-10-23-17 · 科研哨兵</title>
+<meta name="theme-color" content="#000000" />
+<meta property="og:title" content="2026-10-23-17 · 科研哨兵" />
+<meta property="og:type" content="website" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#fff}
+.wrap{max-width:42rem;margin:0 auto;padding:24px 16px 80px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;margin:0}
+h1{font-size:32px;margin:6px 0 8px;letter-spacing:-.03em;font-weight:600;line-height:1.2}
+h2{font-size:20px;margin:0 0 4px;letter-spacing:-.01em}
+h3{font-size:15px;margin:28px 0 8px;color:#d8d8d8;font-weight:600;letter-spacing:.02em}
+.lead,.en{color:#9a9a9a;font-size:14px;line-height:1.65}
+.card{border:1px solid #222;border-radius:18px;padding:18px;margin:14px 0;background:#0c0c0c;display:block;text-decoration:none}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.meta{font-size:12px;color:#6e6e6e;margin:2px 0 0}
+.tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #2a2a2a;border-radius:999px;padding:2px 9px;color:#8a8a8a;margin-right:6px}
+.tag.ok{border-color:#1e4d2b;color:#5fd08a}
+.tag.warn{border-color:#4a3a1e;color:#d0a85f}
+.tag.bad{border-color:#4d1e1e;color:#d05f5f}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chip{border:1px solid #222;border-radius:14px;padding:12px;background:#0c0c0c}
+.chip b{display:block;font-size:12px;color:#8a8a8a;font-weight:500;margin-bottom:3px}
+.rule{height:1px;background:#1c1c1c;margin:28px 0}
+ol,ul{padding-left:1.15em;margin:10px 0}
+li{margin:7px 0;line-height:1.7;font-size:15px}
+p{line-height:1.75;margin:10px 0}
+strong{color:#fff;font-weight:600}
+em{color:#b8b8b8}
+code{background:#161616;border:1px solid #242424;border-radius:6px;padding:1px 6px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:14px;overflow:auto}
+pre code{background:none;border:0;padding:0}
+blockquote{border-left:2px solid #333;margin:12px 0;padding:2px 0 2px 14px;color:#aaa}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px}
+th,td{border:1px solid #242424;padding:7px 9px;text-align:left;line-height:1.5}
+th{background:#111;color:#cfcfcf;font-weight:600}
+td:nth-child(n+2){font-variant-numeric:tabular-nums}
+hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
+.src{font-size:12.5px;line-height:1.6;color:#9a9a9a;word-break:break-word}
+.src a{color:#7fb0ff;text-decoration:none}
+.src a:hover{text-decoration:underline}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(0,0,0,.94);backdrop-filter:blur(8px);border-top:1px solid #1e1e1e;display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
+.nav a{color:#888;text-decoration:none;padding:6px}
+.nav a.on{color:#fff}
+@media(max-width:480px){.chips{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="kicker">報告 / REPORT · 2026-10-23-17</p>
+<h1>2026-10-23-17</h1>
+<p class="lead"></p>
+<p class="meta"> UTC · 719 中文字 · 4519 bytes · 6 來源 · 通過品質閘</p>
+<div class="rule"></div>
+<h3>主題 / Topic</h3>
+<p>GPS 偽造不只是令訊號消失，而是向飛機輸入看似合理的假位置。本報告追問：無加密、無認證的民用 GNSS，如何變成航路與管制風險？以波羅的海事件、飛行員調查與監管指引交叉驗證。</p>
+<p>This report traces how unauthenticated civil GNSS turns interference into plausible-but-wrong aircraft positions, using Baltic operational data, crew survey evidence, and regulator guidance.</p>
+<h3>核心發現 / Key Findings</h3>
+<ul>
+<li><strong>【機制】</strong> 民用 GNSS 數據未加密、未認證，公開標準易被模仿。接收機多「盲信」訊號，攻擊者只需覆蓋真實微弱訊號。鏈條為：無認證 → 可偽造 → 位置被信任 → 時間戳與 ADS-C／CPDLC 同步偏移。</li>
+<li><strong>【機制】</strong> RAIM 只防單一故障衛星；若所有偽造訊號互相一致，RAIM 不會告警。OPSGROUP 技術指南明言 RAIM 從未為偽造而設計。這解釋位置偏差與資料鏈錯配為何同時出現。</li>
+<li><strong>【排除的替代解釋】</strong> 純 jamming 會令接收機掉訊號，而非給出合理座標。所見故障率上升並伴時間戳錯配，較支持「偽造」而非單純遮蔽；惟觀察能力提升可放大此差距。</li>
+<li><strong>【量化】</strong> ICAO A42-WP/553 記錄 2025 年首四個月近 123,000 架次受波羅的海干擾影響，涉 365 家航空公司，波蘭、波羅的海三國、芬蘭、瑞典均受波及，源指向 Kaliningrad、St Petersburg、Smolensk、Rostov。OPSGROUP 2024 另錄得偽造增加 500%，每日約 1,500 架次受影響，對比上半年 300 架次；一個大洋扇區 GPS 故障率由 1 月 1% 升至 6 月 3%。近 2,000 名飛行員回覆中，91% 對 GPS 干擾有中度以上憂慮，77% 報告工作量受中度以上影響。</li>
+<li><strong>【敏感度】</strong> 123,000 是「受影響」曝險數，非傷害數。若每萬架次改航率為 1，改航約 12 次；升至 10 則約 123 次。OPSGROUP 的 500% 若部分來自 ADS-B 偵測力提升而非攻擊增加，真實增幅會較低。結論只在「可及時偵測假位置」範圍內成立。</li>
+</ul>
+<h3>潛在影響 / Potential Impact</h3>
+<ul>
+<li><strong>【推論】</strong> 風險不是按曝險架次線性落地，而是集中在假位置出現於進場、惡劣天氣或繁忙空域的比例。航路層只需少數改航，公共安全成本仍可能顯著。</li>
+<li><strong>【具體案例】</strong> 2025 年 1 月一班飛往 Vilnius 的航班因進場階段 GPS 干擾改飛波蘭，顯示衝擊集中於低高度而非整段航程。</li>
+<li>工程上應把「收到合理但錯誤的位置」列入風險，而非只問有無訊號。EASA 2026 年修訂 SIB，並與 EUROCONTROL 推行跨源交叉檢查及共同監測，正是回應此機制。</li>
+</ul>
+<p>Operational value lies in cross-checking GNSS against inertial and radar data, and in treating plausible false positions—not outages—as the primary hazard.</p>
+<h3>來源依據 / Sources</h3>
+<ul>
+<li>ICAO — A42-WP/553, GNSS Radio Frequency Interference — 2025-10-09 — <a href="https://www.icao.int/sites/default/files/Meetings/a42/Documents/WP/wp_553_en.pdf" target="_blank" rel="noopener">https://www.icao.int/sites/default/files/Meetings/a42/Documents/WP/wp_553_en.pdf</a></li>
+<li>OPSGROUP — Report of the 2024 GPS Spoofing Workgroup — 2024-09-06 — <a href="https://ops.group/dashboard/wp-content/uploads/2024/09/GPS-Spoofing-Final-Report-OPSGROUP-WG-OG24.pdf" target="_blank" rel="noopener">https://ops.group/dashboard/wp-content/uploads/2024/09/GPS-Spoofing-Final-Report-OPSGROUP-WG-OG24.pdf</a></li>
+<li>EASA — SIB 2022-02R4, GNSS Outages and Alterations — 2026-07-03 — <a href="https://ad.easa.europa.eu/ad/2022-02R4" target="_blank" rel="noopener">https://ad.easa.europa.eu/ad/2022-02R4</a></li>
+<li>EASA／EUROCONTROL — Joint Action Plan for Safe Operations during GNSS Interference — 2026-03-25 — <a href="https://www.easa.europa.eu/en/newsroom-and-events/press-releases/easa-and-eurocontrol-publish-joint-action-plan-ensure-safe" target="_blank" rel="noopener">https://www.easa.europa.eu/en/newsroom-and-events/press-releases/easa-and-eurocontrol-publish-joint-action-plan-ensure-safe</a></li>
+<li>U.S. Army West Point — When the Fiction Ends: Maneuver Under a Lying Sky — 2026-02-20 — <a href="https://mwi.westpoint.edu/when-the-fiction-ends-lessons-from-maneuver-under-a-lying-sky/" target="_blank" rel="noopener">https://mwi.westpoint.edu/when-the-fiction-ends-lessons-from-maneuver-under-a-lying-sky/</a></li>
+<li>GPSWorld — 123,000 flights disrupted by GNSS jamming — 2025-09-12 — <a href="https://www.gpsworld.com/123000-flights-disrupted-by-gnss-jamming/" target="_blank" rel="noopener">https://www.gpsworld.com/123000-flights-disrupted-by-gnss-jamming/</a></li>
+</ul>
+<p>Official working paper, industry workgroup, regulator bulletin and case reporting.</p>
+<h3>簡評 / Commentary</h3>
+<p>可信度：官方工作文件與大型同業調查支持機制，評為中高；但 123,000 為曝險而非事故數，OPSGROUP 百分比受通報能力影響。缺口為逐架次改航、落地偏移與事故因果資料，需分層抽樣複核。執行備註：本輪工具回合用盡，知識庫章節寫入、state 更新與 git push 尚未完成，正文待機械入庫。</p>
+<p>Confidence is moderate-high for the mechanism, but per-flight outcome data remain missing.</p>
+<p><strong>生命狀態</strong>：剩餘 64 小時，等級 L10</p>
+<div class="rule"></div>
+<p><a href="/R&amp;D/reports/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回報告索引</a></p>
+<p class="meta" style="margin-top:30px">自動建置於 2026-10-23-17 UTC · 來源：research-sentinel/reports/2026-10-23-17.md</p>
+</div>
+<nav class="nav"><a href="/R&amp;D/">研究</a><a href="/R&amp;D/reports/" class="on">報告</a><a href="/R&amp;D/knowledge/">知識庫</a></nav>
+</body>
+</html>
