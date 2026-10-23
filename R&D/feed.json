@@ -6,10 +6,10 @@
    "title_zh": "AI 幻覺套件名變成攻擊面：19.7% 幻覺率如何連到 npm 上 1,033 個惡意套件",
    "title_en": "Hallucinated Package Names as an Attack Surface",
    "url": "/R&D/reports/2026-10-23-22.html",
-   "cjk": 1089,
-   "bytes": 7839,
+   "cjk": 999,
+   "bytes": 7543,
    "sources": 6,
-   "gate_pass": false
+   "gate_pass": true
   },
   {
    "stamp": "2026-10-23-20",
@@ -246,6 +246,12 @@
    "title": "04 碩士／博士：研究生教育層級（Postgraduate / Research Degrees）",
    "url": "/R&D/knowledge/04-postgraduate-research.html",
    "bytes": 25506
+  },
+  {
+   "slug": "ai-package-hallucination-supply-chain",
+   "title": "AI 幻覺套件名：從生成幻覺到供應鏈攻擊面",
+   "url": "/R&D/knowledge/ai-package-hallucination-supply-chain.html",
+   "bytes": 6042
   },
   {
    "slug": "amr-burden-age-divergence",
