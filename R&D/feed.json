@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-23-04",
+ "generated_utc": "2026-10-23-06",
  "reports": [
+  {
+   "stamp": "2026-10-23-06",
+   "title_zh": "PM2.5 低暴露死亡負擔：再降標準仍可避免死亡，但估算可上下翻倍",
+   "title_en": "Low-level PM2.5 mortality burden: health returns remain below the WHO threshold, while estimates can double",
+   "url": "/R&D/reports/2026-10-23-06.html",
+   "cjk": 853,
+   "bytes": 9567,
+   "sources": 7,
+   "gate_pass": false
+  },
   {
    "stamp": "2026-10-23-04",
    "title_zh": "鹹水唔止難飲：海岸鹽化點樣將安全飲用水變成健康暴露",
