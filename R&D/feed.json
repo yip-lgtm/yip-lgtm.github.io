@@ -3,11 +3,11 @@
  "reports": [
   {
    "stamp": "2026-10-23-22",
-   "title_zh": "AI 幻覺套件名變成攻擊面：從 19.7% 幻覺率到 npm 上逾千個惡意套件",
+   "title_zh": "AI 幻覺套件名變成攻擊面：19.7% 幻覺率如何連到 npm 上 1,033 個惡意套件",
    "title_en": "Hallucinated Package Names as an Attack Surface",
    "url": "/R&D/reports/2026-10-23-22.html",
-   "cjk": 1055,
-   "bytes": 7834,
+   "cjk": 1089,
+   "bytes": 7839,
    "sources": 6,
    "gate_pass": false
   },
