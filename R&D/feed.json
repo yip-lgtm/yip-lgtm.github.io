@@ -6,8 +6,8 @@
    "title_zh": "鹹水唔止難飲：海岸鹽化點樣將安全飲用水變成健康暴露",
    "title_en": "Salty water is not just unpalatable: how coastal salinization turns \"safe\" drinking water into a health exposure",
    "url": "/R&D/reports/2026-10-23-04.html",
-   "cjk": 760,
-   "bytes": 8553,
+   "cjk": 738,
+   "bytes": 8365,
    "sources": 7,
    "gate_pass": true
   },
@@ -152,6 +152,12 @@
    "title": "領域筆記：抗藥性死亡負擔的年齡分化與治理槓桿 (AMR Burden Age Divergence & Governance Levers)",
    "url": "/R&D/knowledge/amr-burden-age-divergence.html",
    "bytes": 4625
+  },
+  {
+   "slug": "coastal-bangladesh-salinity-health",
+   "title": "領域筆記：海岸孟加拉飲用水鹽度的健康—經濟傳導鏈 (Coastal Bangladesh: Salinity as a Health Exposure)",
+   "url": "/R&D/knowledge/coastal-bangladesh-salinity-health.html",
+   "bytes": 5542
   },
   {
    "slug": "energy-retail-price-affordability",
