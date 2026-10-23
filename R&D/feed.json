@@ -7,9 +7,9 @@
    "title_en": "",
    "url": "/R&D/reports/2026-10-23-02.html",
    "cjk": 1000,
-   "bytes": 9076,
+   "bytes": 8998,
    "sources": 10,
-   "gate_pass": false
+   "gate_pass": true
   },
   {
    "stamp": "2026-10-23-01",
@@ -156,6 +156,12 @@
    "bytes": 5374
   },
   {
+   "slug": "malaria-vaccine-mortality-mechanism",
+   "title": "領域筆記：瘧疾疫苗的效力—死亡落差機制 (Malaria Vaccine: Efficacy vs Mortality Gap)",
+   "url": "/R&D/knowledge/malaria-vaccine-mortality-mechanism.html",
+   "bytes": 5715
+  },
+  {
    "slug": "nitrogen-nue-loss-reduction",
    "title": "領域筆記：氮效率（NUE）——減氮增產的機制、外部成本與可規模化邊界 (Nitrogen Use Efficiency: Less Fertiliser, More Yield)",
    "url": "/R&D/knowledge/nitrogen-nue-loss-reduction.html",
@@ -172,6 +178,12 @@
    "title": "領域筆記：鈣鈦礦—矽堆疊太陽能的 LCOE 門檻與保固／融資年限落差 (Perovskite–Silicon Tandem: LCOE Threshold vs Warranty & Financing Tenor)",
    "url": "/R&D/knowledge/perovskite-tandem-lcoe-warranty.html",
    "bytes": 5464
+  },
+  {
+   "slug": "pfas-drinking-water-mcl",
+   "title": "領域筆記：PFAS 飲用水 MCL 的受監測人口與成本量級 (PFAS Drinking-Water MCL: Monitored Population and Cost Scale)",
+   "url": "/R&D/knowledge/pfas-drinking-water-mcl.html",
+   "bytes": 3455
   }
  ]
 }
