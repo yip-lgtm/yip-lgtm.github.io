@@ -16,8 +16,8 @@
    "title_zh": "",
    "title_en": "",
    "url": "/R&D/reports/2026-10-23-01.html",
-   "cjk": 564,
-   "bytes": 5508,
+   "cjk": 571,
+   "bytes": 5575,
    "sources": 2,
    "gate_pass": false
   },
@@ -150,10 +150,28 @@
    "bytes": 5050
   },
   {
+   "slug": "hearing-cognition-risk-stratified",
+   "title": "領域筆記：助聽干預與認知（總體陰性 vs 風險分層有效） (Hearing Intervention & Cognition: Overall Null vs Risk-Stratified Effect)",
+   "url": "/R&D/knowledge/hearing-cognition-risk-stratified.html",
+   "bytes": 5374
+  },
+  {
+   "slug": "nitrogen-nue-loss-reduction",
+   "title": "領域筆記：氮效率（NUE）——減氮增產的機制、外部成本與可規模化邊界 (Nitrogen Use Efficiency: Less Fertiliser, More Yield)",
+   "url": "/R&D/knowledge/nitrogen-nue-loss-reduction.html",
+   "bytes": 5300
+  },
+  {
    "slug": "occupational-heat-health-burden",
    "title": "領域筆記：職業熱害防護與健康負擔落差 (Occupational Heat Protection & Health Burden Gap)",
    "url": "/R&D/knowledge/occupational-heat-health-burden.html",
    "bytes": 3437
+  },
+  {
+   "slug": "perovskite-tandem-lcoe-warranty",
+   "title": "領域筆記：鈣鈦礦—矽堆疊太陽能的 LCOE 門檻與保固／融資年限落差 (Perovskite–Silicon Tandem: LCOE Threshold vs Warranty & Financing Tenor)",
+   "url": "/R&D/knowledge/perovskite-tandem-lcoe-warranty.html",
+   "bytes": 5464
   }
  ]
 }
