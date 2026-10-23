@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-23-06",
+ "generated_utc": "2026-10-23-08",
  "reports": [
+  {
+   "stamp": "2026-10-23-08",
+   "title_zh": "AI 數據中心會把電網推入「低品質」區間嗎？參數、諧波與住宅火災的量化鏈",
+   "title_en": "Can AI Data Centers Push the Grid into a Low-Quality Band? Quantifying Parameter Growth, Harmonics and Residential Fire Risk",
+   "url": "/R&D/reports/2026-10-23-08.html",
+   "cjk": 752,
+   "bytes": 7767,
+   "sources": 4,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-23-06",
    "title_zh": "PM2.5 低暴露死亡負擔：再降標準仍可避免死亡，但估算可上下翻倍",
