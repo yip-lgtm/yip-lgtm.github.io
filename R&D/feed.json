@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-00",
+ "generated_utc": "2026-10-24-01",
  "reports": [
+  {
+   "stamp": "2026-10-24-01",
+   "title_zh": "",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-24-01.html",
+   "cjk": 811,
+   "bytes": 4974,
+   "sources": 5,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-24-00",
    "title_zh": "同一個 RCM 數值，背後可能差 3.4 倍現場壽命",
