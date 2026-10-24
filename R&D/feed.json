@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-14",
+ "generated_utc": "2026-10-24-15",
  "reports": [
+  {
+   "stamp": "2026-10-24-15",
+   "title_zh": "",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-24-15.html",
+   "cjk": 954,
+   "bytes": 4888,
+   "sources": 4,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-24-14",
    "title_zh": "高氯酸鹽：EPA 說「不構成公共健康疑慮」卻被迫設上限，軍方自有的 24 ppb 觸發值會被怎樣改寫",
