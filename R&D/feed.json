@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-12",
+ "generated_utc": "2026-10-24-13",
  "reports": [
+  {
+   "stamp": "2026-10-24-13",
+   "title_zh": "美軍航煤規格如何鎖死 SAF 混掺上限",
+   "title_en": "How the US Military Fuel Spec Caps SAF Blending",
+   "url": "/R&D/reports/2026-10-24-13.html",
+   "cjk": 853,
+   "bytes": 7053,
+   "sources": 8,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-24-12",
    "title_zh": "機床油霧「合規」但工人仍然發病：5 與 0.5 mg/m³ 之間的 10 倍落差",
