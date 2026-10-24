@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-04",
+ "generated_utc": "2026-10-24-05",
  "reports": [
+  {
+   "stamp": "2026-10-24-05",
+   "title_zh": "",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-24-05.html",
+   "cjk": 719,
+   "bytes": 6328,
+   "sources": 8,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-24-04",
    "title_zh": "AI 生成代碼「更不安全」？三個掃描器、三個答案",
