@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-20",
+ "generated_utc": "2026-10-24-21",
  "reports": [
+  {
+   "stamp": "2026-10-24-21",
+   "title_zh": "美軍燃燒坑新規則為何仍失守：從制度缺口到 1% 風險情境",
+   "title_en": "Why New Burn Pit Rules Still Fail: From Policy Gap to a 1% Risk Scenario",
+   "url": "/R&D/reports/2026-10-24-21.html",
+   "cjk": 564,
+   "bytes": 4097,
+   "sources": 7,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-24-20",
    "title_zh": "",
