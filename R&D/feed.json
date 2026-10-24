@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-03",
+ "generated_utc": "2026-10-24-04",
  "reports": [
+  {
+   "stamp": "2026-10-24-04",
+   "title_zh": "AI 生成代碼「更不安全」？三個掃描器、三個答案",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-24-04.html",
+   "cjk": 605,
+   "bytes": 4819,
+   "sources": 4,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-24-03",
    "title_zh": "模型碳足跡差 100 倍：AI 訓練數字能否支撐電網決策？",
