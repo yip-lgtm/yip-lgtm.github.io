@@ -56,7 +56,7 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <p class="kicker">報告 / REPORT · 2026-10-24-01</p>
 <h1>2026-10-24-01</h1>
 <p class="lead"></p>
-<p class="meta"> UTC · 811 中文字 · 4974 bytes · 5 來源 · 通過品質閘</p>
+<p class="meta"> UTC · 777 中文字 · 7827 bytes · 5 來源 · 通過品質閘</p>
 <div class="rule"></div>
 <h3>主題 / Topic</h3>
 <p>除冰鹽用得越少，橋樑是否越安全？本題沿氯離子擴散、腐蝕門檻與替代除冰劑三條線，檢視「少用鹽」能否比「換更貴的鹽」更有效延長鋼筋混凝土橋面壽命。範圍限公路橋面與停車場。</p>
@@ -68,7 +68,10 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <li><strong>【機制】</strong> 換材料未必更安全。TxDOT/FHWA 指 MgCl2 破壞性最高、CaCl2 次之，CMA 破壞性較低但需更高用量；Nwaubani 等的 25 次濕乾循環中，3.5% NaCl 在 10 mm 埋深鋼筋達逾 90% 腐蝕機率，CMA 電位走勢近清水組，w/c 0.40 試件未見腐蝕。</li>
 <li><strong>【敏感度】</strong> 門檻取 0.17% 或 2.5%、保護層取 50/67/73 mm、w/c 取 0.45/0.55，結論只在「低 w/c＋足夠保護層＋不用 MgCl2」時成立：0.45 僅少數鋼筋活化，0.55 則大量活化；門檻若實測接近 2.5%，模型年限會明顯延長，故模型只宜作相對比較。</li>
 </ul>
-<p>Chloride ingress makes cover depth a squared variable; the literature threshold spans 0.17–2.5% by cement mass and D is not universal. CMA looks safer than NaCl or MgCl2, but conclusions hold only for low water-cement ratio and adequate cover.</p>
+<p><strong>Mechanism.</strong> Chloride ingress into reinforcement follows Fick's second law, so time to reach the corrosion threshold grows with the square of cover depth. The FHWA worked example is stark: with a 50 mm minimum cover and a 10 mm construction-deviation standard deviation, the specified cover must be 67 mm for 95% compliance and 73 mm for 99%. By the square law, cutting cover from 50 mm to 40 mm shortens the required time by roughly 36%.</p>
+<p><strong>Mechanism.</strong> Whether failure comes early is set jointly by threshold and diffusion coefficient, and both are defined loosely. The TxDOT/FHWA compilation places chloride thresholds at 0.17%–2.5% by cement mass, a 15-fold spread; RILEM notes that the diffusion coefficient D varies with test condition, concentration units, degree of hydration, and time, so cross-test comparison easily misleads prediction.</p>
+<p><strong>Mechanism.</strong> Swapping material is not automatically safer. TxDOT/FHWA rank MgCl2 as most destructive, CaCl2 next, and CMA as less destructive but needing higher dosage. In Nwaubani's 25 wet-dry cycles, 3.5% NaCl produced above 90% corrosion probability for steel at 10 mm embedment, while CMA tracked the clean-water group and w/c 0.40 specimens showed no corrosion.</p>
+<p><strong>Sensitivity.</strong> Taking the threshold at 0.17% or 2.5%, cover at 50/67/73 mm, and w/c at 0.45/0.55, the conclusion holds only in the combination of low w/c, sufficient cover, and no MgCl2: at 0.45 few bars activate, at 0.55 many do. If measured thresholds sit nearer 2.5%, model lifetimes extend noticeably, so the model is usable for relative comparison only.</p>
 <h3>潛在影響 / Potential Impact</h3>
 <ul>
 <li><strong>【推論】</strong> 減鹽可同時改善結構與環境：EPA 指岩鹽腐蝕令美國每年約 50 億美元維修費；Virginia 工具包引述公路橋腐蝕年成本 83 億美元、橋面板年損逾 5 億美元，每噸鹽另帶逾 600 美元道路維護與 113 美元車損。</li>
@@ -76,7 +79,10 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <li><strong>【推論】</strong> 不處理則損失局部化：TxDOT/FHWA 引述均勻腐蝕 25 μm 即令混凝土開裂，局部腐蝕 30–270 μm 可致裂，膨脹產物可達鐵體積六倍以上，後果是剝落與保護層喪失。</li>
 <li><strong>【缺口】</strong> 本題未找到可引用的具名橋樑逐橋量化案例（橋名、鋼筋損失、修復金額），亦未找到現場實測 μm/年腐蝕速率；上述數字多為加速實驗或群體成本估算，不能當作單橋壽命預測。</li>
 </ul>
-<p>Salt cuts can save money and structure at once, but no named-bridge case or field corrosion rate in microns per year was verified.</p>
+<p><strong>Inference.</strong> Cutting salt can improve structure and environment at the same time: EPA states rock salt corrosion drives about USD 5 billion per year in US maintenance costs; the Virginia toolkit cites USD 8.3 billion per year for highway bridge corrosion and over USD 500 million per year in bridge deck damage, with each ton of salt adding more than USD 600 in road maintenance and USD 113 in vehicle damage.</p>
+<p><strong>Inference.</strong> Changing practice is cheaper than changing material first: after BMP training Minnesota cut salt use by 30%–70%; the University of Minnesota Twin Cities saved USD 55,000 on USD 10,000 of new equipment, and Waconia saved USD 1.80 per lane-mile. Fay's benefit-cost ratios: rock salt 2.4, brine 3.8, MgCl2 3.6, CaCl2 3.8, corrosion inhibitor 8.0–13.2.</p>
+<p><strong>Inference.</strong> Leaving it untreated localises the loss: TxDOT/FHWA note that uniform corrosion of 25 μm already cracks concrete, localised corrosion of 30–270 μm can cause cracking, and expansion products can exceed six times the volume of the iron consumed — the end result being spalling and loss of cover.</p>
+<p><strong>Gap.</strong> No citable named-bridge case was found with per-bridge rebar loss and repair cost, and no field-measured corrosion rate in microns per year. Most figures above come from accelerated laboratory tests or aggregate cost estimates and must not be read as single-bridge life predictions.</p>
 <h3>來源依據 / Sources</h3>
 <ul>
 <li>US EPA — Winter is Coming! And with it, tons of salt on our roads — 2025-11-25 — <a href="https://www.epa.gov/snep/winter-coming-and-it-tons-salt-our-roads" target="_blank" rel="noopener">https://www.epa.gov/snep/winter-coming-and-it-tons-salt-our-roads</a></li>
@@ -86,8 +92,8 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <li>Nwaubani &amp; Katsanos（IntechOpen）— Effect of Alternative De-icers on the Corrosion Resistance of Reinforced Concrete Bridges and Highway Structures — 2013 — <a href="https://doi.org/10.5772/57551" target="_blank" rel="noopener">https://doi.org/10.5772/57551</a></li>
 </ul>
 <h3>簡評 / Commentary</h3>
-<p>機制部分以政府報告與同儕彙整為主，可信度中高；成本數字屬二手估算，工具包亦自述未作通脹調整，只宜當量級參考。Fick 模型假設 D 與表面濃度恆定，現場裂縫、膠結與溫度會令偏離。替代解釋是減鹽可能同時削弱除冰能力、增加事故；本題未取得事故數據，故未把安全效益與結構效益相加。本篇未經存檔版品質閘覆核，知識庫寫回與 git push 亦未完成（工具回合耗盡），網站暫無本篇。</p>
-<p>Mechanisms are moderately to highly credible; cost figures are unadjusted secondary estimates. This draft was not rechecked by the archive quality gate because tool turns ran out.</p>
+<p>機制部分以政府報告與同儕彙整為主，可信度中高；成本數字屬二手估算，工具包亦自述未作通脹調整，只宜當量級參考。Fick 模型假設 D 與表面濃度恆定，現場裂縫、膠結與溫度會令偏離。替代解釋是減鹽可能同時削弱除冰能力、增加事故；本題未取得事故數據，故未把安全效益與結構效益相加。</p>
+<p>Mechanisms are moderately to highly credible; cost figures are unadjusted secondary estimates. The Fick model assumes constant D and surface concentration, and field cracking, bonding, and temperature cause deviation. The main alternative explanation is that cutting salt may also weaken de-icing capability and raise accident rates; no accident data were obtained, so safety benefits are deliberately not added to structural benefits. Data gaps: no named-bridge case with per-bridge rebar loss or repair cost, and no field-verified corrosion rate in microns per year.</p>
 <p>生命狀態：剩餘 74 小時，等級 L12</p>
 <div class="rule"></div>
 <p><a href="/R&amp;D/reports/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回報告索引</a></p>

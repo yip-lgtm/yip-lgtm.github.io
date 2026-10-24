@@ -6,8 +6,8 @@
    "title_zh": "",
    "title_en": "",
    "url": "/R&D/reports/2026-10-24-01.html",
-   "cjk": 811,
-   "bytes": 4974,
+   "cjk": 777,
+   "bytes": 7827,
    "sources": 5,
    "gate_pass": true
   },
@@ -16,8 +16,8 @@
    "title_zh": "同一個 RCM 數值，背後可能差 3.4 倍現場壽命",
    "title_en": "The Same RCM Number Can Hide a 3.4× Field-Durability Gap",
    "url": "/R&D/reports/2026-10-24-00.html",
-   "cjk": 599,
-   "bytes": 3520,
+   "cjk": 620,
+   "bytes": 6558,
    "sources": 5,
    "gate_pass": true
   },
@@ -278,6 +278,12 @@
    "bytes": 25506
   },
   {
+   "slug": "ai-hallucinated-package-attack-surface",
+   "title": "AI 幻覺套件名作為供應鏈攻擊面",
+   "url": "/R&D/knowledge/ai-hallucinated-package-attack-surface.html",
+   "bytes": 1103
+  },
+  {
    "slug": "ai-package-hallucination-supply-chain",
    "title": "AI 幻覺套件名：從生成幻覺到供應鏈攻擊面",
    "url": "/R&D/knowledge/ai-package-hallucination-supply-chain.html",
@@ -290,10 +296,22 @@
    "bytes": 4625
   },
   {
+   "slug": "city-landslide-alert-thresholds",
+   "title": "城市山泥傾瀉預警門檻：雨量 vs 城市",
+   "url": "/R&D/knowledge/city-landslide-alert-thresholds.html",
+   "bytes": 1256
+  },
+  {
    "slug": "coastal-bangladesh-salinity-health",
    "title": "領域筆記：海岸孟加拉飲用水鹽度的健康—經濟傳導鏈 (Coastal Bangladesh: Salinity as a Health Exposure)",
    "url": "/R&D/knowledge/coastal-bangladesh-salinity-health.html",
    "bytes": 5542
+  },
+  {
+   "slug": "deicing-salt-bridge-safety",
+   "title": "除冰鹽用得越少，橋樑是否越安全",
+   "url": "/R&D/knowledge/deicing-salt-bridge-safety.html",
+   "bytes": 2196
   },
   {
    "slug": "energy-retail-price-affordability",
@@ -342,6 +360,12 @@
    "title": "領域筆記：PFAS 飲用水 MCL 的受監測人口與成本量級 (PFAS Drinking-Water MCL: Monitored Population and Cost Scale)",
    "url": "/R&D/knowledge/pfas-drinking-water-mcl.html",
    "bytes": 3455
+  },
+  {
+   "slug": "rcm-field-durability-gap",
+   "title": "同一個 RCM 數值背後可能差 3.4 倍現場壽命",
+   "url": "/R&D/knowledge/rcm-field-durability-gap.html",
+   "bytes": 2005
   },
   {
    "slug": "urban-landslide-thresholds-engineering-vs-climate",
