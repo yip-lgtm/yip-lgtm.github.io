@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>領域筆記：AI 編碼工具的開發者生產力實驗（Developer Productivity Field Experiments） · 知識庫</title>
+<meta name="theme-color" content="#000000" />
+<meta property="og:title" content="領域筆記：AI 編碼工具的開發者生產力實驗（Developer Productivity Field Experiments） · 知識庫" />
+<meta property="og:type" content="website" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#fff}
+.wrap{max-width:42rem;margin:0 auto;padding:24px 16px 80px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;margin:0}
+h1{font-size:32px;margin:6px 0 8px;letter-spacing:-.03em;font-weight:600;line-height:1.2}
+h2{font-size:20px;margin:0 0 4px;letter-spacing:-.01em}
+h3{font-size:15px;margin:28px 0 8px;color:#d8d8d8;font-weight:600;letter-spacing:.02em}
+.lead,.en{color:#9a9a9a;font-size:14px;line-height:1.65}
+.card{border:1px solid #222;border-radius:18px;padding:18px;margin:14px 0;background:#0c0c0c;display:block;text-decoration:none}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.meta{font-size:12px;color:#6e6e6e;margin:2px 0 0}
+.tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #2a2a2a;border-radius:999px;padding:2px 9px;color:#8a8a8a;margin-right:6px}
+.tag.ok{border-color:#1e4d2b;color:#5fd08a}
+.tag.warn{border-color:#4a3a1e;color:#d0a85f}
+.tag.bad{border-color:#4d1e1e;color:#d05f5f}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chip{border:1px solid #222;border-radius:14px;padding:12px;background:#0c0c0c}
+.chip b{display:block;font-size:12px;color:#8a8a8a;font-weight:500;margin-bottom:3px}
+.rule{height:1px;background:#1c1c1c;margin:28px 0}
+ol,ul{padding-left:1.15em;margin:10px 0}
+li{margin:7px 0;line-height:1.7;font-size:15px}
+p{line-height:1.75;margin:10px 0}
+strong{color:#fff;font-weight:600}
+em{color:#b8b8b8}
+code{background:#161616;border:1px solid #242424;border-radius:6px;padding:1px 6px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:14px;overflow:auto}
+pre code{background:none;border:0;padding:0}
+blockquote{border-left:2px solid #333;margin:12px 0;padding:2px 0 2px 14px;color:#aaa}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px}
+th,td{border:1px solid #242424;padding:7px 9px;text-align:left;line-height:1.5}
+th{background:#111;color:#cfcfcf;font-weight:600}
+td:nth-child(n+2){font-variant-numeric:tabular-nums}
+hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
+.src{font-size:12.5px;line-height:1.6;color:#9a9a9a;word-break:break-word}
+.src a{color:#7fb0ff;text-decoration:none}
+.src a:hover{text-decoration:underline}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(0,0,0,.94);backdrop-filter:blur(8px);border-top:1px solid #1e1e1e;display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
+.nav a{color:#888;text-decoration:none;padding:6px}
+.nav a.on{color:#fff}
+@media(max-width:480px){.chips{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="kicker">KNOWLEDGE / 章節</p>
+<h1>領域筆記：AI 編碼工具的開發者生產力實驗（Developer Productivity Field Experiments）</h1>
+<p class="meta">4119 bytes · 3 個小節</p>
+<div class="rule"></div>
+<h1>領域筆記：AI 編碼工具的開發者生產力實驗（Developer Productivity Field Experiments）</h1>
+<p>首次寫入：2026-10-24 07:08 UTC</p>
+<p>主題 id：<code>ai-dev-productivity-rct-divergence</code></p>
+<p>狀態：building</p>
+<h2>已驗證核心事實（附來源）</h2>
+<h3>METR 第一輪（任務級 RCT，2025-02 至 2025-06 前沿模型）</h3>
+<ul>
+<li>16 名有經驗的開源開發者、246 項任務；允許用 AI 時完成時間 <strong>延長 19%</strong>（95% CI <strong>+2% 至 +39%</strong>）</li>
+<li>開發者事前預期省 <strong>24%</strong> 時間、經濟學專家預期 <strong>39%</strong>、ML 專家預期 <strong>38%</strong>；事後開發者自估省 <strong>20%</strong></li>
+<li>工具：Cursor Pro + Claude 3.5/3.7 Sonnet；開發者對倉庫平均有 <strong>5 年</strong> 經驗</li>
+<li><a href="https://arxiv.org/abs/2507.09089" target="_blank" rel="noopener">https://arxiv.org/abs/2507.09089</a> （arXiv:2507.09089v2, 2025-07-25）</li>
+</ul>
+<h3>METR 第二輪（設計變更，2026-02-24 公布）</h3>
+<ul>
+<li>2025-08 起新實驗：<strong>57 名開發者、143 個倉庫、800+ 項任務</strong>（10 名原班 + 47 名新招）</li>
+<li>原班人馬估加速 <strong>-18%</strong>（CI <strong>-38% 至 +9%</strong>）；新招者 <strong>-4%</strong>（CI <strong>-15% 至 +9%</strong>）→ 兩區間均含零</li>
+<li>工具轉向 agentic（Claude Code、Codex 等）</li>
+<li><strong>選擇偏誤來源</strong>：報酬由 $150/hr 降至 $50/hr；<strong>30%–50% 開發者刻意不提交「無 AI 就不想做」的任務</strong>；</li>
+</ul>
+<p>開發者愈來愈多拒絕參與；agentic 工具並行使用令 time-spent 量度不可靠；任務型態被替代；兩條件品質不同</p>
+<ul>
+<li>METR 自稱「非常弱的證據」，並認為估計很可能是<strong>下限</strong></li>
+<li><a href="https://metr.org/blog/2026-02-24-uplift-update/" target="_blank" rel="noopener">https://metr.org/blog/2026-02-24-uplift-update/</a> （METR, 2026-02-24）</li>
+</ul>
+<h3>Cui 等人三場現場實驗（企業端，2026-02-27 已同行評審）</h3>
+<ul>
+<li>《Management Science》線上刊登；DOI <strong>10.1287/mnsc.2025.00535</strong>；DOI 已核實作者 6 人</li>
+<li>場所：<strong>微軟、埃森哲、匿名《財富》百強企業</strong>；<strong>4,867 名開發者</strong></li>
+<li>完成任務數 <strong>+26.08%</strong>（標準誤 <strong>10.3%</strong>）；作者稱經驗較少者採用率與收益都較高</li>
+<li>作者自述「each experiment is noisy and results vary across experiments」</li>
+<li>隨機化：微軟一半按團隊、一半按個人；埃森哲按個人；匿名百強按團隊（432 團隊分 6 週分批開放）</li>
+<li><a href="https://doi.org/10.1287/mnsc.2025.00535" target="_blank" rel="noopener">https://doi.org/10.1287/mnsc.2025.00535</a></li>
+<li><a href="https://www.socialscienceregistry.org/trials/14530" target="_blank" rel="noopener">https://www.socialscienceregistry.org/trials/14530</a> （AEARCTR-0014530）</li>
+</ul>
+<h3>機制：生成快 ≠ 任務快（METR 第一輪量度）</h3>
+<ul>
+<li>開發者只接受 <strong>少於 44%</strong> 的 AI 產出（建議接受率）；多數需大改</li>
+<li>審閱與清理佔總時間 <strong>9%</strong></li>
+<li>倉庫平均 <strong>10 年</strong>、逾 <strong>110 萬行</strong>程式碼；AI 缺的是隱性脈絡（tacit context）</li>
+<li>瓶頸在<strong>驗證</strong>而非生成 → 總時間上升</li>
+</ul>
+<h2>口徑陷阱</h2>
+<ul>
+<li><strong>量度對象不同</strong>：METR 量「每項任務耗時」，Cui 等人量「已完成任務數」→ 兩者可同時成立，唔係互相矛盾</li>
+<li><strong>CI 不可反推</strong>：Cui 等人摘要只給標準誤 10.3%，<strong>無信賴區間、無 p 值</strong>可核實；唔好自行推算 95% CI</li>
+<li><strong>arXiv ID 陷阱</strong>：<code>arXiv:2501.15028</code> 係另一篇完全無關嘅論文（自我診斷偏誤）；Cui 等人論文<strong>唔在 arXiv</strong>，</li>
+</ul>
+<p>引用必須用 DOI 10.1287/mnsc.2025.00535 或 SSRN 10.2139/ssrn.4945566</p>
+<ul>
+<li><strong>全文封鎖</strong>：INFORMS/SSRN 被 Cloudflare 阻擋，只能核實出版商摘要、Crossref、Semantic Scholar、AEA RCT Registry 內容</li>
+<li><strong>「加快 20%」是開發者自述</strong>，唔係實測；METR 明確指自述估計「can be quite unreliable」</li>
+<li><strong>敏感性</strong>：METR 兩輪區間均覆蓋「無可檢出差異」；Cui 等人的增益跨實驗差異大，兩邊都只在特定假設範圍內成立</li>
+</ul>
+<h2>未解缺口</h2>
+<ul>
+<li>未能核實 Cui 等人的<strong>分企業效果</strong>（微軟 vs 埃森哲 vs 匿名百強）與其信賴區間</li>
+<li>未能核實其<strong>採用率百分比</strong>與逐週變化；registry 只確認 adoption 被列為主要結果端點</li>
+<li>未能核實 Cui 等人有無<strong>感知增益 vs 實測落差</strong>的量化分析，以及其外部效度陳述</li>
+<li><strong>缺</strong>：同一批開發者、同樣任務下 AI 與非 AI 的可比<strong>成本</strong>數據</li>
+<li>METR 第二輪的分組分析檢定力不足，作者自述不可據此定案</li>
+<li>所有數字屬 <strong>2026 年 2 月快照</strong>，模型前沿與工具生態已再變動</li>
+</ul>
+<div class="rule"></div>
+<p><a href="/R&amp;D/knowledge/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回知識庫</a></p>
+<p class="meta" style="margin-top:30px">自動建置於 2026-10-24-07 UTC · 來源：research-sentinel/knowledge/sections/ai-dev-productivity-rct-divergence.md</p>
+</div>
+<nav class="nav"><a href="/R&amp;D/">研究</a><a href="/R&amp;D/reports/">報告</a><a href="/R&amp;D/knowledge/" class="on">知識庫</a></nav>
+</body>
+</html>

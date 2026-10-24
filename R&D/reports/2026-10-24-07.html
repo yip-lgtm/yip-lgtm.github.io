@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI 編碼工具到底有冇加快開發者？兩份隨機對照實驗的相反答案 · 科研哨兵</title>
+<meta name="theme-color" content="#000000" />
+<meta property="og:title" content="AI 編碼工具到底有冇加快開發者？兩份隨機對照實驗的相反答案 · 科研哨兵" />
+<meta property="og:type" content="website" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#fff}
+.wrap{max-width:42rem;margin:0 auto;padding:24px 16px 80px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;margin:0}
+h1{font-size:32px;margin:6px 0 8px;letter-spacing:-.03em;font-weight:600;line-height:1.2}
+h2{font-size:20px;margin:0 0 4px;letter-spacing:-.01em}
+h3{font-size:15px;margin:28px 0 8px;color:#d8d8d8;font-weight:600;letter-spacing:.02em}
+.lead,.en{color:#9a9a9a;font-size:14px;line-height:1.65}
+.card{border:1px solid #222;border-radius:18px;padding:18px;margin:14px 0;background:#0c0c0c;display:block;text-decoration:none}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.meta{font-size:12px;color:#6e6e6e;margin:2px 0 0}
+.tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #2a2a2a;border-radius:999px;padding:2px 9px;color:#8a8a8a;margin-right:6px}
+.tag.ok{border-color:#1e4d2b;color:#5fd08a}
+.tag.warn{border-color:#4a3a1e;color:#d0a85f}
+.tag.bad{border-color:#4d1e1e;color:#d05f5f}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chip{border:1px solid #222;border-radius:14px;padding:12px;background:#0c0c0c}
+.chip b{display:block;font-size:12px;color:#8a8a8a;font-weight:500;margin-bottom:3px}
+.rule{height:1px;background:#1c1c1c;margin:28px 0}
+ol,ul{padding-left:1.15em;margin:10px 0}
+li{margin:7px 0;line-height:1.7;font-size:15px}
+p{line-height:1.75;margin:10px 0}
+strong{color:#fff;font-weight:600}
+em{color:#b8b8b8}
+code{background:#161616;border:1px solid #242424;border-radius:6px;padding:1px 6px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:14px;overflow:auto}
+pre code{background:none;border:0;padding:0}
+blockquote{border-left:2px solid #333;margin:12px 0;padding:2px 0 2px 14px;color:#aaa}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px}
+th,td{border:1px solid #242424;padding:7px 9px;text-align:left;line-height:1.5}
+th{background:#111;color:#cfcfcf;font-weight:600}
+td:nth-child(n+2){font-variant-numeric:tabular-nums}
+hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
+.src{font-size:12.5px;line-height:1.6;color:#9a9a9a;word-break:break-word}
+.src a{color:#7fb0ff;text-decoration:none}
+.src a:hover{text-decoration:underline}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(0,0,0,.94);backdrop-filter:blur(8px);border-top:1px solid #1e1e1e;display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
+.nav a{color:#888;text-decoration:none;padding:6px}
+.nav a.on{color:#fff}
+@media(max-width:480px){.chips{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="kicker">報告 / REPORT · 2026-10-24-07</p>
+<h1>AI 編碼工具到底有冇加快開發者？兩份隨機對照實驗的相反答案</h1>
+<p class="lead">Do AI Coding Tools Actually Speed Up Developers? Two RCTs, Opposite Answers</p>
+<p class="meta">2026-10-24 07:08 UTC · 912 中文字 · 8512 bytes · 4 來源 · 未評</p>
+<div class="rule"></div>
+<h3>主題 / Topic</h3>
+<p>AI 編碼工具究竟有冇令開發者更快？兩個最大規模的隨機對照實驗答案相反：METR 任務級試驗（16 名開發者、246 項任務，允許用 AI 時完成時間反慢 19%）與 Cui 等人在微軟、埃森哲及匿名《財富》百強企業的三場現場實驗（4,867 名開發者，完成任務數增 26.08%）。本報告比較兩者，追問差距來自模型能力、任務情境，還是量度方法。</p>
+<p>Do AI coding tools speed up developers? Two large randomized field experiments disagree: METR's task-level trial (16 developers, 246 tasks; 19% slower with AI) versus Cui et al.'s three field experiments at Microsoft, Accenture and an anonymous Fortune 100 firm (4,867 developers; completed tasks up 26.08%). We ask whether the gap is model capability, task setting, or measurement.</p>
+<h3>核心發現 / Key Findings</h3>
+<ul>
+<li><strong>【事實】</strong> METR 隨機對照試驗：16 名有經驗的開源開發者、246 項任務，允許用 AI 時完成時間延長 19%（95% CI +2% 至 +39%）。開發者事前預期省 24% 時間，事後自估省 20%。</li>
+</ul>
+<p>EN: METR RCT: 16 experienced open-source developers, 246 tasks; allowing AI lengthened completion time by 19% (95% CI +2% to +39%). Developers forecast a 24% saving, later estimated 20%.</p>
+<ul>
+<li><strong>【事實】</strong> 2026 年 2 月 METR 改用較新 agentic 工具重做（57 名開發者、143 個倉庫、800+ 項任務）：原班人馬加速 -18%（CI -38% 至 +9%），新招者 -4%（CI -15% 至 +9%），兩區間都含零。同期 30–50% 開發者刻意不提交「無 AI 就不想做」的任務。</li>
+</ul>
+<p>EN: METR's February 2026 re-run with newer agentic tools (57 developers, 143 repos, 800+ tasks): speedup -18% for the original subset (CI -38% to +9%), -4% for new recruits (CI -15% to +9%); both intervals include zero. Meanwhile 30-50% of developers withheld tasks they would not do without AI.</p>
+<ul>
+<li><strong>【事實】</strong> Cui 等人的三場現場實驗 2026-02-27 刊登於《Management Science》：4,867 名開發者，完成任務數增 26.08%（標準誤 10.3%）。作者稱經驗較少者採用率與收益都較高，並自述每場實驗都很噪。</li>
+</ul>
+<p>EN: Cui et al.'s three field experiments appeared in Management Science on 2026-02-27: 4,867 developers, completed tasks up 26.08% (SE 10.3%). The authors report less experienced developers gained more, and call each experiment noisy.</p>
+<ul>
+<li><strong>【機制】</strong> 生成快不等於任務快：開發者只接受少於 44% 的 AI 產出，多數要大改，審閱與清理佔 9% 時間；倉庫平均 10 年、逾 110 萬行程式碼，AI 缺的是隱性脈絡。瓶頸在驗證，不在生成。</li>
+</ul>
+<p>EN: Fast generation is not fast tasks: developers accepted under 44% of AI outputs, most needed heavy cleanup, and review plus cleanup took 9% of time; repos average 10 years and 1.1M+ lines, so AI lacks tacit context. The bottleneck is verification, not generation.</p>
+<ul>
+<li><strong>【替代解釋】</strong> 若主因只是模型不夠強，換上 2025 年底 agentic 工具後負效應應持續，但估計已由 -19% 移向 0。兩研究量度對象不同——METR 量每項任務耗時，Cui 等人量已完成任務數，可同時成立。</li>
+</ul>
+<p>EN: Ruled-out alternative: if weak models were the only cause, the negative effect should persist with late-2025 agentic tools, yet the estimate moved from -19% toward zero. The studies measure time per task versus tasks completed, so both can hold at once.</p>
+<ul>
+<li><strong>【敏感度】</strong> METR 兩輪區間（+2%…+39%、-38%…+9%）都覆蓋「無可檢出差異」，故「AI 明顯拖慢資深開發者」只在窄區間成立；Cui 等人的 26.08% 標準誤 10.3%、跨實驗差異大，增益只在特定任務型態下成立。</li>
+</ul>
+<p>EN: Sensitivity: both METR intervals (+2%…+39% and -38%…+9%) cover "no detectable difference", so "AI clearly slows seniors" holds only narrowly; Cui et al.'s 26.08% carries SE 10.3% and large cross-experiment variation, so the gain holds only for particular task mixes.</p>
+<h3>潛在影響 / Potential Impact</h3>
+<ul>
+<li><strong>【事實】</strong> 證據基礎只有兩個樣本：企業端 4,867 名開發者，與 METR 的 57 名開發者、800+ 項任務。因任務型態不同，「+26%」與「無可檢出差異」並不矛盾。</li>
+</ul>
+<p>EN: The evidence base is two samples: 4,867 developers in enterprises and METR's 57 developers over 800+ tasks. Different task mixes mean a 26% gain and a null result are not contradictory.</p>
+<ul>
+<li><strong>【推論】</strong> 採購 ROI：若照 26.08% 任務增益入帳，而實際是資深開發者維護十年級倉庫，偏離最多可達 26 個百分點；METR 的無可檢出加速宜作下界。</li>
+</ul>
+<p>EN: Procurement ROI: booking a 26.08% task-count gain while the real setting is senior developers on decade-old code can overstate by up to 26 percentage points; METR's undetectable gain is a safer lower bound.</p>
+<ul>
+<li><strong>【推論】</strong> 具體案例：微軟與埃森哲在日常業務中隨機授權 Copilot（埃森哲按個人，匿名百強把 432 個團隊分 6 週分批開放）。同類授權擴展到維護成熟倉庫的資深團隊，最可能出現任務數持平而缺陷修補週期延長。</li>
+</ul>
+<p>EN: Concrete case: Microsoft and Accenture randomized Copilot access inside normal business (individual at Accenture; 432 teams at the Fortune 100 firm released over 6 weeks). Extending that to senior teams on mature codebases would most plausibly hold task counts flat while lengthening defect-fix cycles.</p>
+<ul>
+<li><strong>【推論】</strong> 勞動市場與政策：開發者預期（-24%）與實測（+19%）之間約 43 個百分點落差，代表以「用 AI 即有 20% 增益」為前提的培訓、績效考核或人力決策會系統性誤判資深工程師工作量。</li>
+</ul>
+<p>EN: Labour market and policy: a ~43-point gap between developers' forecasts (-24%) and measured results (+19%) means training, performance review or headcount decisions premised on a 20% AI gain will misjudge senior engineers' workload.</p>
+<h3>來源依據 / Sources</h3>
+<ul>
+<li>METR — Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity（arXiv:2507.09089v2）— 2025-07-25 — <a href="https://arxiv.org/abs/2507.09089" target="_blank" rel="noopener">https://arxiv.org/abs/2507.09089</a></li>
+<li>METR — We are Changing our Developer Productivity Experiment Design — 2026-02-24 — <a href="https://metr.org/blog/2026-02-24-uplift-update/" target="_blank" rel="noopener">https://metr.org/blog/2026-02-24-uplift-update/</a></li>
+<li>Cui, Demirer, Jaffe, Musolff, Peng, Salz — The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers,《Management Science》— 2026-02-27 — <a href="https://doi.org/10.1287/mnsc.2025.00535" target="_blank" rel="noopener">https://doi.org/10.1287/mnsc.2025.00535</a></li>
+<li>AEA RCT Registry — AEARCTR-0014530（Copilot 現場實驗登記）— <a href="https://www.socialscienceregistry.org/trials/14530" target="_blank" rel="noopener">https://www.socialscienceregistry.org/trials/14530</a></li>
+</ul>
+<p>English: METR — Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity (arXiv:2507.09089v2, July 2025); METR — We are Changing our Developer Productivity Experiment Design (February 2026); Cui et al. — The Effects of Generative AI on High-Skilled Work, Management Science (online February 2026); AEA RCT Registry AEARCTR-0014530. URLs appear once, above.</p>
+<h3>簡評 / Commentary</h3>
+<p>可信度：METR 兩輪皆隨機但樣本細（16 與 57 人），2026 年一輪區間已含零，作者稱為「非常弱的證據」並認為很可能是下限——屬自我糾正，應作披露而非結論。Cui 等人樣本大得多，但作者自述跨實驗差異大，且全文受出版商封鎖，本報告只引用摘要可核對數字，未能核實分企業效果與其信賴區間。缺口：兩份研究的任務型態不可直接換算；本題未找到同一批開發者、同樣任務下 AI 與非 AI 的可比成本數據。數字屬 2026 年 2 月快照。</p>
+<p>Confidence: both METR rounds are randomized but small, the 2026 interval spans zero, and METR calls it very weak evidence and probably a lower bound — disclosure, not a conclusion. Cui et al. has far more participants but the authors call each experiment noisy, and the full text is paywalled, so only abstract-verifiable numbers are used; per-company effects and their intervals remain unverified. Gap: task mixes are not convertible between studies, and no comparable cost-per-task data was found for the same developers on the same tasks. Figures are a February 2026 snapshot.</p>
+<p><strong>生命狀態</strong>：剩餘 94 小時，等級 L16</p>
+<p>（Lifespan: 94 hours left, level L16）</p>
+<div class="rule"></div>
+<p><a href="/R&amp;D/reports/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回報告索引</a></p>
+<p class="meta" style="margin-top:30px">自動建置於 2026-10-24-07 UTC · 來源：research-sentinel/reports/2026-10-24-07.md</p>
+</div>
+<nav class="nav"><a href="/R&amp;D/">研究</a><a href="/R&amp;D/reports/" class="on">報告</a><a href="/R&amp;D/knowledge/">知識庫</a></nav>
+</body>
+</html>

@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-05",
+ "generated_utc": "2026-10-24-07",
  "reports": [
+  {
+   "stamp": "2026-10-24-07",
+   "title_zh": "AI 編碼工具到底有冇加快開發者？兩份隨機對照實驗的相反答案",
+   "title_en": "Do AI Coding Tools Actually Speed Up Developers? Two RCTs, Opposite Answers",
+   "url": "/R&D/reports/2026-10-24-07.html",
+   "cjk": 912,
+   "bytes": 8512,
+   "sources": 4,
+   "gate_pass": false
+  },
   {
    "stamp": "2026-10-24-05",
    "title_zh": "",
@@ -306,6 +316,12 @@
    "title": "04 碩士／博士：研究生教育層級（Postgraduate / Research Degrees）",
    "url": "/R&D/knowledge/04-postgraduate-research.html",
    "bytes": 25506
+  },
+  {
+   "slug": "ai-dev-productivity-rct-divergence",
+   "title": "領域筆記：AI 編碼工具的開發者生產力實驗（Developer Productivity Field Experiments）",
+   "url": "/R&D/knowledge/ai-dev-productivity-rct-divergence.html",
+   "bytes": 4119
   },
   {
    "slug": "ai-hallucinated-package-attack-surface",
