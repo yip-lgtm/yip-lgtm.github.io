@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-01",
+ "generated_utc": "2026-10-24-03",
  "reports": [
+  {
+   "stamp": "2026-10-24-03",
+   "title_zh": "模型碳足跡差 100 倍：AI 訓練數字能否支撐電網決策？",
+   "title_en": "Model Carbon Footprints Differ 100×: Can AI Training Numbers Support Grid Decisions?",
+   "url": "/R&D/reports/2026-10-24-03.html",
+   "cjk": 790,
+   "bytes": 5119,
+   "sources": 8,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-24-01",
    "title_zh": "",
