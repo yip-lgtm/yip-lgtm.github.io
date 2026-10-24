@@ -6,8 +6,8 @@
    "title_zh": "機床油霧「合規」但工人仍然發病：5 與 0.5 mg/m³ 之間的 10 倍落差",
    "title_en": "Compliant but Ill: The 10-Fold Gap Between 5 and 0.5 mg/m3 for Machine Mist",
    "url": "/R&D/reports/2026-10-24-12.html",
-   "cjk": 1052,
-   "bytes": 9188,
+   "cjk": 997,
+   "bytes": 8893,
    "sources": 8,
    "gate_pass": false
   },
@@ -406,6 +406,12 @@
    "title": "領域筆記：瘧疾疫苗的效力—死亡落差機制 (Malaria Vaccine: Efficacy vs Mortality Gap)",
    "url": "/R&D/knowledge/malaria-vaccine-mortality-mechanism.html",
    "bytes": 5715
+  },
+  {
+   "slug": "metalworking-fluid-mist-oel-gap",
+   "title": "金屬切削液油霧：暴露限值落差與工程控制（metalworking-fluid-mist-oel-gap）",
+   "url": "/R&D/knowledge/metalworking-fluid-mist-oel-gap.html",
+   "bytes": 6085
   },
   {
    "slug": "military-child-lead-housing",
