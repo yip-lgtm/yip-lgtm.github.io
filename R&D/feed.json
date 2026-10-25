@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-25-17",
+ "generated_utc": "2026-10-25-18",
  "reports": [
+  {
+   "stamp": "2026-10-25-18",
+   "title_zh": "美軍固體火箭與炸藥設施曾把高氯酸鹽釋放到基地地下水井，最高达每公升 18.1 毫克。麻州 MCL 為 2 ppb，相差逾 9 萬倍。本報告回答三個問題：污染如何形成、為何長期脫離飲水監管、修復要付出多大工程代價。健康證據只作外推，不當作基地居民已受損的證明。",
+   "title_en": "Military rocket and munitions sites released perchlorate into base groundwater, peaking at 181 mg/L against Massachusetts' 2 ppb limit. This report examines how the plume formed, why drinking-water oversight lagged, and what remediation cost in engineering terms.",
+   "url": "/R&D/reports/2026-10-25-18.html",
+   "cjk": 932,
+   "bytes": 6478,
+   "sources": 8,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-25-17",
    "title_zh": "過氯酸銨推進劑曾污染美軍多座基地地下水，但聯邦飲用水標準遲至 2026 年才重啟制定。本報告回答：科學證據已支持甚麼風險，而軍方清理與聯邦規則為何長期脫節？",
