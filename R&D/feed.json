@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-25-07",
+ "generated_utc": "2026-10-25-10",
  "reports": [
+  {
+   "stamp": "2026-10-25-10",
+   "title_zh": "",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-25-10.html",
+   "cjk": 662,
+   "bytes": 3233,
+   "sources": 5,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-25-07",
    "title_zh": "峰值超壓以外：重複低強度爆炸的腦健康劑量與監測缺口",
