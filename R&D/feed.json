@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-24-22",
+ "generated_utc": "2026-10-25-02",
  "reports": [
+  {
+   "stamp": "2026-10-25-02",
+   "title_zh": "",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-25-02.html",
+   "cjk": 636,
+   "bytes": 5597,
+   "sources": 2,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-24-22",
    "title_zh": "禁用含 PFAS 泡沫後，美軍基地污染為何仍在遷移？",
