@@ -6,9 +6,19 @@
    "title_zh": "",
    "title_en": "",
    "url": "/R&D/reports/2026-10-25-10.html",
-   "cjk": 662,
-   "bytes": 3233,
+   "cjk": 638,
+   "bytes": 6221,
    "sources": 5,
+   "gate_pass": true
+  },
+  {
+   "stamp": "2026-10-25-08",
+   "title_zh": "",
+   "title_en": "",
+   "url": "/R&D/reports/2026-10-25-08.html",
+   "cjk": 512,
+   "bytes": 5289,
+   "sources": 6,
    "gate_pass": true
   },
   {
