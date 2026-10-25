@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-25-14",
+ "generated_utc": "2026-10-25-15",
  "reports": [
+  {
+   "stamp": "2026-10-25-15",
+   "title_zh": "船殼污損會同時增加水阻與油耗，但海軍通常要到油耗帳單和航速下降才察覺。本報告量化一艘主力驅逐艦在「無污損」與「典型污損」之間的年度成本差距，並檢驗主動清洗（自主爬壁機器人）是否回本。",
+   "title_en": "Hull Fouling on Warships: What Does a 10.3% Resistance Penalty Cost per Year?",
+   "url": "/R&D/reports/2026-10-25-15.html",
+   "cjk": 998,
+   "bytes": 4701,
+   "sources": 3,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-25-14",
    "title_zh": "Titan 內爆後，深海載具安全可拆成兩個可量化問題：壓力殼能否被獨立檢驗，救援能否趕上 96 小時。本文以美海軍所有、WHOI 營運的 Alvin 從 4,500 米升至 6,500 米的認證作工程對照，找出美國民用深潛監管的缺口。",
