@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-10-26-20",
+ "generated_utc": "2026-10-27-17",
  "reports": [
+  {
+   "stamp": "2026-10-27-17",
+   "title_zh": "重啟退役核電廠平過新建，但真正樽頸係電網接入權",
+   "title_en": "Nuclear restart costs less per kW than new build, but interconnection rights are the real bottleneck",
+   "url": "/R&D/reports/2026-10-27-17.html",
+   "cjk": 890,
+   "bytes": 5346,
+   "sources": 8,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-10-26-20",
    "title_zh": "地雷、未爆彈與爆炸性殘餘物（ERW）的清除成本，主要由搜尋面積決定。全球15國疑似區的實物命中率不足3%。機械化的價值在「縮減要搜的面」，不在單次探測。本題只量化一條鏈：每公頃成本、速度與民生損失。",
