@@ -548,6 +548,18 @@
    "bytes": 25506
   },
   {
+   "slug": "ai-code-sa-scanner-divergence",
+   "title": "AI 生成代碼嘅靜態掃描器安全分數分歧",
+   "url": "/R&D/knowledge/ai-code-sa-scanner-divergence.html",
+   "bytes": 2182
+  },
+  {
+   "slug": "ai-datacentre-grid-power-quality",
+   "title": "AI 數據中心會把電網推入「低品質」區間嗎？參數、諧波與住宅火災的量化鏈",
+   "url": "/R&D/knowledge/ai-datacentre-grid-power-quality.html",
+   "bytes": 2030
+  },
+  {
    "slug": "ai-dev-productivity-rct-divergence",
    "title": "領域筆記：AI 編碼工具的開發者生產力實驗（Developer Productivity Field Experiments）",
    "url": "/R&D/knowledge/ai-dev-productivity-rct-divergence.html",
@@ -566,10 +578,46 @@
    "bytes": 6042
   },
   {
+   "slug": "ai-training-energy-carbon-estimates",
+   "title": "AI 訓練能耗與碳排估算口徑落差",
+   "url": "/R&D/knowledge/ai-training-energy-carbon-estimates.html",
+   "bytes": 2084
+  },
+  {
+   "slug": "ammonium-perchlorate-mcl-thyroid",
+   "title": "高氯酸銨飲用水 MCL 選項與甲狀腺風險門檻",
+   "url": "/R&D/knowledge/ammonium-perchlorate-mcl-thyroid.html",
+   "bytes": 2531
+  },
+  {
    "slug": "amr-burden-age-divergence",
    "title": "領域筆記：抗藥性死亡負擔的年齡分化與治理槓桿 (AMR Burden Age Divergence & Governance Levers)",
    "url": "/R&D/knowledge/amr-burden-age-divergence.html",
    "bytes": 4625
+  },
+  {
+   "slug": "antivehicle-mine-farmland-safety",
+   "title": "反車載地雷與農機耕作安全落差",
+   "url": "/R&D/knowledge/antivehicle-mine-farmland-safety.html",
+   "bytes": 2179
+  },
+  {
+   "slug": "antivehicle-mine-survivability",
+   "title": "同一枚反車載地雷點解有人只傷有人死",
+   "url": "/R&D/knowledge/antivehicle-mine-survivability.html",
+   "bytes": 2368
+  },
+  {
+   "slug": "arctic-permafrost-military-foundations",
+   "title": "北極軍事基地凍土融化嘅基礎設施風險",
+   "url": "/R&D/knowledge/arctic-permafrost-military-foundations.html",
+   "bytes": 1888
+  },
+  {
+   "slug": "burn-pit-compliance-gap",
+   "title": "美軍燃燒坑規則收緊後仍有人受損嘅制度缺口",
+   "url": "/R&D/knowledge/burn-pit-compliance-gap.html",
+   "bytes": 2004
   },
   {
    "slug": "city-landslide-alert-thresholds",
@@ -584,10 +632,28 @@
    "bytes": 5542
   },
   {
+   "slug": "copper-price-supply-mechanism",
+   "title": "銅價逼近歷史高位：礦場事故、加工費倒掛與硫酸短缺的價格機制",
+   "url": "/R&D/knowledge/copper-price-supply-mechanism.html",
+   "bytes": 1832
+  },
+  {
+   "slug": "deep-submergence-hull-certification",
+   "title": "深潛載具壓力殼獨立檢驗與 96 小時救援",
+   "url": "/R&D/knowledge/deep-submergence-hull-certification.html",
+   "bytes": 1931
+  },
+  {
    "slug": "deicing-salt-bridge-safety",
    "title": "除冰鹽用得越少，橋樑是否越安全",
    "url": "/R&D/knowledge/deicing-salt-bridge-safety.html",
    "bytes": 2196
+  },
+  {
+   "slug": "demining-funding-output-concentration",
+   "title": "排雷資金縮減與清除面積跌幅唔對稱",
+   "url": "/R&D/knowledge/demining-funding-output-concentration.html",
+   "bytes": 1873
   },
   {
    "slug": "energy-retail-price-affordability",
@@ -602,10 +668,46 @@
    "bytes": 5396
   },
   {
+   "slug": "ev-charging-transformer-ageing",
+   "title": "午夜後充電會更快燒老配電變壓器",
+   "url": "/R&D/knowledge/ev-charging-transformer-ageing.html",
+   "bytes": 2802
+  },
+  {
+   "slug": "ev-tyre-wear-non-exhaust-pm",
+   "title": "電動車煞車減磨與輪胎增磨對非排氣 PM 的淨效應",
+   "url": "/R&D/knowledge/ev-tyre-wear-non-exhaust-pm.html",
+   "bytes": 1624
+  },
+  {
+   "slug": "gnss-spoofing-civil-aviation",
+   "title": "民用 GNSS 偽造如何變成航路與管制風險",
+   "url": "/R&D/knowledge/gnss-spoofing-civil-aviation.html",
+   "bytes": 2383
+  },
+  {
    "slug": "hearing-cognition-risk-stratified",
    "title": "領域筆記：助聽干預與認知（總體陰性 vs 風險分層有效） (Hearing Intervention & Cognition: Overall Null vs Risk-Stratified Effect)",
    "url": "/R&D/knowledge/hearing-cognition-risk-stratified.html",
    "bytes": 5374
+  },
+  {
+   "slug": "industrial-robot-nonroutine-injury",
+   "title": "工業機器人非正常狀態傷亡集中與官方統計低估",
+   "url": "/R&D/knowledge/industrial-robot-nonroutine-injury.html",
+   "bytes": 1949
+  },
+  {
+   "slug": "low-carbon-cement-lc3",
+   "title": "熟料減半低碳水泥（煅燒黏土—石灰石協同）",
+   "url": "/R&D/knowledge/low-carbon-cement-lc3.html",
+   "bytes": 2390
+  },
+  {
+   "slug": "low-intensity-blast-cumulative-dose",
+   "title": "低強度爆炸訓練嘅累計劑量與腦健康",
+   "url": "/R&D/knowledge/low-intensity-blast-cumulative-dose.html",
+   "bytes": 2303
   },
   {
    "slug": "malaria-vaccine-mortality-mechanism",
@@ -626,6 +728,30 @@
    "bytes": 3048
   },
   {
+   "slug": "military-pfas-foam-phaseout-gap",
+   "title": "美軍 PFAS 泡沫禁令嘅終止污染與替代物遷移",
+   "url": "/R&D/knowledge/military-pfas-foam-phaseout-gap.html",
+   "bytes": 1825
+  },
+  {
+   "slug": "military-training-dust",
+   "title": "沙漠軍用訓練場揚塵：碾壓、濕度與車次取捨",
+   "url": "/R&D/knowledge/military-training-dust.html",
+   "bytes": 1875
+  },
+  {
+   "slug": "naval-hull-fouling-fuel-cost",
+   "title": "海軍船殼污損嘅水阻與油耗成本落差",
+   "url": "/R&D/knowledge/naval-hull-fouling-fuel-cost.html",
+   "bytes": 2356
+  },
+  {
+   "slug": "nij-44mm-backface-deformation",
+   "title": "NIJ 44 mm 背形變形合格與軀幹內臟傷",
+   "url": "/R&D/knowledge/nij-44mm-backface-deformation.html",
+   "bytes": 1525
+  },
+  {
    "slug": "nitrogen-nue-loss-reduction",
    "title": "領域筆記：氮效率（NUE）——減氮增產的機制、外部成本與可規模化邊界 (Nitrogen Use Efficiency: Less Fertiliser, More Yield)",
    "url": "/R&D/knowledge/nitrogen-nue-loss-reduction.html",
@@ -636,6 +762,30 @@
    "title": "領域筆記：職業熱害防護與健康負擔落差 (Occupational Heat Protection & Health Burden Gap)",
    "url": "/R&D/knowledge/occupational-heat-health-burden.html",
    "bytes": 3437
+  },
+  {
+   "slug": "offshore-wind-monopile-cathodic-protection",
+   "title": "海上風電單樁陰極保護：塗層升級省 79.8% 陽極，能否「順便」降低氫脆風險？",
+   "url": "/R&D/knowledge/offshore-wind-monopile-cathodic-protection.html",
+   "bytes": 3075
+  },
+  {
+   "slug": "perchlorate-groundwater-remediation",
+   "title": "高氯酸鹽基地地下水污染嘅形成與修復代價",
+   "url": "/R&D/knowledge/perchlorate-groundwater-remediation.html",
+   "bytes": 2348
+  },
+  {
+   "slug": "perchlorate-military-groundwater-detachment",
+   "title": "過氯酸銨基地地下水污染與聯邦規則脫節",
+   "url": "/R&D/knowledge/perchlorate-military-groundwater-detachment.html",
+   "bytes": 2233
+  },
+  {
+   "slug": "perchlorate-national-mcl-conflict",
+   "title": "高氯酸鹽：EPA 擬議規則與健康風險嘅矛盾",
+   "url": "/R&D/knowledge/perchlorate-national-mcl-conflict.html",
+   "bytes": 2770
   },
   {
    "slug": "perovskite-tandem-lcoe-warranty",
@@ -650,10 +800,58 @@
    "bytes": 3455
   },
   {
+   "slug": "pm25-low-exposure-mortality-burden",
+   "title": "PM2.5 低暴露死亡負擔：再降標準仍可避免死亡，但估算可上下翻倍",
+   "url": "/R&D/knowledge/pm25-low-exposure-mortality-burden.html",
+   "bytes": 3102
+  },
+  {
+   "slug": "push-pull-g-force-indisposition",
+   "title": "負 G 轉正 G 嘅飛行員短暫失能邊界",
+   "url": "/R&D/knowledge/push-pull-g-force-indisposition.html",
+   "bytes": 1913
+  },
+  {
    "slug": "rcm-field-durability-gap",
    "title": "同一個 RCM 數值背後可能差 3.4 倍現場壽命",
    "url": "/R&D/knowledge/rcm-field-durability-gap.html",
    "bytes": 2005
+  },
+  {
+   "slug": "saf-fuel-specification-limit",
+   "title": "可持續航空燃料：燃料規格先撞到引擎",
+   "url": "/R&D/knowledge/saf-fuel-specification-limit.html",
+   "bytes": 1995
+  },
+  {
+   "slug": "san-joaquin-subsidence-flood-levee",
+   "title": "聖喬昆谷地陷：地下水超抽轉防洪與輸水危機",
+   "url": "/R&D/knowledge/san-joaquin-subsidence-flood-levee.html",
+   "bytes": 2021
+  },
+  {
+   "slug": "sepsis-ai-model-outcome-benefit",
+   "title": "專有敗血症 AI 模型能否改善病人結果",
+   "url": "/R&D/knowledge/sepsis-ai-model-outcome-benefit.html",
+   "bytes": 1721
+  },
+  {
+   "slug": "tungsten-vs-uranium-armor-penetration",
+   "title": "美軍穿甲彈由鈾合金轉鎢合金嘅代價",
+   "url": "/R&D/knowledge/tungsten-vs-uranium-armor-penetration.html",
+   "bytes": 1749
+  },
+  {
+   "slug": "underbody-blast-foot-injury",
+   "title": "車底爆震傷及足部嘅證據鏈",
+   "url": "/R&D/knowledge/underbody-blast-foot-injury.html",
+   "bytes": 1480
+  },
+  {
+   "slug": "undersea-munitions-bivalve-bioaccumulation",
+   "title": "海底廢彈場內爆炸物嘅貽貝累積路徑",
+   "url": "/R&D/knowledge/undersea-munitions-bivalve-bioaccumulation.html",
+   "bytes": 2072
   },
   {
    "slug": "urban-landslide-thresholds-engineering-vs-climate",

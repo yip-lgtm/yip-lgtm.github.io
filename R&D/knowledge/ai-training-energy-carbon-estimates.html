@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI 訓練能耗與碳排估算口徑落差 · 知識庫</title>
+<meta name="theme-color" content="#000000" />
+<meta property="og:title" content="AI 訓練能耗與碳排估算口徑落差 · 知識庫" />
+<meta property="og:type" content="website" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#fff}
+.wrap{max-width:42rem;margin:0 auto;padding:24px 16px 80px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;margin:0}
+h1{font-size:32px;margin:6px 0 8px;letter-spacing:-.03em;font-weight:600;line-height:1.2}
+h2{font-size:20px;margin:0 0 4px;letter-spacing:-.01em}
+h3{font-size:15px;margin:28px 0 8px;color:#d8d8d8;font-weight:600;letter-spacing:.02em}
+.lead,.en{color:#9a9a9a;font-size:14px;line-height:1.65}
+.card{border:1px solid #222;border-radius:18px;padding:18px;margin:14px 0;background:#0c0c0c;display:block;text-decoration:none}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.meta{font-size:12px;color:#6e6e6e;margin:2px 0 0}
+.tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #2a2a2a;border-radius:999px;padding:2px 9px;color:#8a8a8a;margin-right:6px}
+.tag.ok{border-color:#1e4d2b;color:#5fd08a}
+.tag.warn{border-color:#4a3a1e;color:#d0a85f}
+.tag.bad{border-color:#4d1e1e;color:#d05f5f}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chip{border:1px solid #222;border-radius:14px;padding:12px;background:#0c0c0c}
+.chip b{display:block;font-size:12px;color:#8a8a8a;font-weight:500;margin-bottom:3px}
+.rule{height:1px;background:#1c1c1c;margin:28px 0}
+ol,ul{padding-left:1.15em;margin:10px 0}
+li{margin:7px 0;line-height:1.7;font-size:15px}
+p{line-height:1.75;margin:10px 0}
+strong{color:#fff;font-weight:600}
+em{color:#b8b8b8}
+code{background:#161616;border:1px solid #242424;border-radius:6px;padding:1px 6px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:14px;overflow:auto}
+pre code{background:none;border:0;padding:0}
+blockquote{border-left:2px solid #333;margin:12px 0;padding:2px 0 2px 14px;color:#aaa}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px}
+th,td{border:1px solid #242424;padding:7px 9px;text-align:left;line-height:1.5}
+th{background:#111;color:#cfcfcf;font-weight:600}
+td:nth-child(n+2){font-variant-numeric:tabular-nums}
+hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
+.src{font-size:12.5px;line-height:1.6;color:#9a9a9a;word-break:break-word}
+.src a{color:#7fb0ff;text-decoration:none}
+.src a:hover{text-decoration:underline}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(0,0,0,.94);backdrop-filter:blur(8px);border-top:1px solid #1e1e1e;display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
+.nav a{color:#888;text-decoration:none;padding:6px}
+.nav a.on{color:#fff}
+@media(max-width:480px){.chips{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="kicker">KNOWLEDGE / 章節</p>
+<h1>AI 訓練能耗與碳排估算口徑落差</h1>
+<p class="meta">2084 bytes · 4 個小節</p>
+<div class="rule"></div>
+<h1>AI 訓練能耗與碳排估算口徑落差</h1>
+<p>領域：ai ｜ 主題 slug：<code>ai-training-energy-carbon-estimates</code> ｜ 對應報告：<code>2026-10-24-03</code></p>
+<h2>核心事實</h2>
+<ul>
+<li><strong>【機制】</strong> 額定功率乘時數必然高估。TDP 是峰值，訓練時加速器利用率與批大小決定實耗。8 張 H100 節點實測最高 8.4 kW，比額定 10.2 kW 低 18%；批次由 512 升到 4096，總能耗由 123 降至 30 kWh。</li>
+<li><strong>【機制】</strong> 同一場訓練可合法給出兩個數。Llama 4 以市場法申報 0 噸 CO2e，地域法申報 1,999 噸；BLOOM 只計動態功耗為 24.7 噸，計入設備製造後為 50.5 噸。差異來自定義，不是誤差。</li>
+<li><strong>【量化】</strong> Patterson 等發現模型、數據中心與處理器選擇可令碳排相差 100 至 1000 倍；同一國家不同地點的低碳電力比例亦可差 5 至 10 倍。</li>
+<li><strong>【替代解釋】</strong> 數據中心需求上升不等於 AI 上升。IEA 指加速伺服器只佔伺服器用電 24%，愛爾蘭 CSO 按電表計數，數據中心 2023 年佔全國計費用電 21%，並非 AI 專屬。</li>
+<li><strong>【敏感度】</strong> 三個替代情境：以額定值推算，H100 節點功率比實測高約 21%；改用實測功率兼市場法，Llama 4 排放記 0，政策結論由「需減排」翻成「已達標」；只按 IEA 總量推算，AI 在數據中心負載中仍屬少數。結論只在同時披露口徑與利用率時成立；批次小或負載低時偏差可放大。</li>
+</ul>
+<h2>量化鏈與口徑</h2>
+<ul>
+<li>來源數：8；報告篇幅：5077 bytes / 778 中文字。</li>
+<li>本章節由 <code>sync_state.py</code> 從報告正文抽取，用作防重複登記與知識索引；</li>
+</ul>
+<p>細節以存檔版報告正文為準（<code>reports/2026-10-24-03.md</code>）。</p>
+<h2>誠實邊界</h2>
+<p>本條目由自動抽取生成，<strong>未經獨立重新查證</strong>；引用前必須回讀存檔版報告正文與原始來源。報告自述嘅缺口（見簡評段）在此原樣保留，唔會被稀釋成更強嘅斷言。</p>
+<h2>相關條目</h2>
+<ul>
+<li>知識庫索引：<code>knowledge/INDEX.md</code></li>
+<li>主題登記：<code>knowledge/topics.json</code> → <code>ai-training-energy-carbon-estimates</code></li>
+</ul>
+<div class="rule"></div>
+<p><a href="/R&amp;D/knowledge/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回知識庫</a></p>
+<p class="meta" style="margin-top:30px">自動建置於 2026-10-26-20 UTC · 來源：research-sentinel/knowledge/sections/ai-training-energy-carbon-estimates.md</p>
+</div>
+<nav class="nav"><a href="/R&amp;D/">研究</a><a href="/R&amp;D/reports/">報告</a><a href="/R&amp;D/knowledge/" class="on">知識庫</a></nav>
+</body>
+</html>
