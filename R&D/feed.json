@@ -594,6 +594,12 @@
    "bytes": 2084
   },
   {
+   "slug": "am-fatigue-surface-vs-porosity",
+   "title": "3D 列印金屬件疲勞失效：表面粗糙度 vs 內部孔隙，HIP 與表面精加工挽回多少壽命？",
+   "url": "/R&D/knowledge/am-fatigue-surface-vs-porosity.html",
+   "bytes": 1535
+  },
+  {
    "slug": "ammonium-perchlorate-mcl-thyroid",
    "title": "高氯酸銨飲用水 MCL 選項與甲狀腺風險門檻",
    "url": "/R&D/knowledge/ammonium-perchlorate-mcl-thyroid.html",
@@ -664,6 +670,24 @@
    "title": "排雷資金縮減與清除面積跌幅唔對稱",
    "url": "/R&D/knowledge/demining-funding-output-concentration.html",
    "bytes": 1873
+  },
+  {
+   "slug": "edu-bachelor-branches",
+   "title": "學士三大分支（Civil/Mechanical/Electrical）學分制度",
+   "url": "/R&D/knowledge/edu-bachelor-branches.html",
+   "bytes": 1018
+  },
+  {
+   "slug": "edu-graduate-levels",
+   "title": "碩士／博士層級（英美港三地）",
+   "url": "/R&D/knowledge/edu-graduate-levels.html",
+   "bytes": 1135
+  },
+  {
+   "slug": "edu-path-overview",
+   "title": "工程教育路徑總覽",
+   "url": "/R&D/knowledge/edu-path-overview.html",
+   "bytes": 1018
   },
   {
    "slug": "energy-retail-price-affordability",
@@ -766,6 +790,18 @@
    "title": "領域筆記：氮效率（NUE）——減氮增產的機制、外部成本與可規模化邊界 (Nitrogen Use Efficiency: Less Fertiliser, More Yield)",
    "url": "/R&D/knowledge/nitrogen-nue-loss-reduction.html",
    "bytes": 5300
+  },
+  {
+   "slug": "nuclear-restart-interconnection-bottleneck",
+   "title": "退役核電廠重啟 vs 新建：接網權先係樽頸",
+   "url": "/R&D/knowledge/nuclear-restart-interconnection-bottleneck.html",
+   "bytes": 2507
+  },
+  {
+   "slug": "ob-od-perchlorate-drinking-water",
+   "title": "美軍露天燃燒／引爆與高氯酸鹽飲用水傳導",
+   "url": "/R&D/knowledge/ob-od-perchlorate-drinking-water.html",
+   "bytes": 924
   },
   {
    "slug": "occupational-heat-health-burden",
