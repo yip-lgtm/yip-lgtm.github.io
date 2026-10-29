@@ -1,10 +1,11 @@
 name: bulk-fill
 on:
-  # The war index holds every conflict the source lists document, and the
-  # hourly job writes one campaign an hour. The bulk job writes as many as
-  # the plan allows, so a backlog does not take a year to drain.
+  # The war index holds every conflict the source lists document. The site
+  # grows three cards a day: one batch in the morning, the rest of the day
+  # left alone. The job used to run every hour and write forty cards a run,
+  # which filled the pool in a day and then had nothing to write.
   schedule:
-    - cron: "7 * * * *"
+    - cron: "7 3 * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -27,9 +28,10 @@ jobs:
       - name: Write campaigns and dossiers
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
-          BULK_LIMIT: "40"
-          DOSSIER_LIMIT: "40"
-          BULK_WORKERS: "8"
+          # Three a day, each with its own bilingual full text.
+          BULK_LIMIT: "3"
+          DOSSIER_LIMIT: "3"
+          BULK_WORKERS: "3"
         run: node scripts/bulk-fill.mjs
       - name: Commit
         run: |

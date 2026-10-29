@@ -200,7 +200,7 @@ footer{max-width:820px;margin:26px auto 0;color:var(--sub);font-size:12px;line-h
   <a href="cards.html">→ 卡牌全覽</a>
 </div>
 ${body}
-<footer>共 ${list.length} 日有更新。立繪由 steel-and-will 每半小時生成、即時發佈；簡述與中英全文由頁面倉每小时補上。<br>立繪 1152×1728，中英全文門檻 1200 字。</footer>
+<footer>共 ${list.length} 日有更新。立繪由 steel-and-will 每半小時生成、即時發佈；簡述與中英全文由頁面倉每日補三張。<br>立繪 1152×1728，中英全文門檻 1200 字。</footer>
 </div></body></html>`;
 
 const out = resolve(ROOT, "cute/record.html");

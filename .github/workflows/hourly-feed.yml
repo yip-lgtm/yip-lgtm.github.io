@@ -1,7 +1,9 @@
 name: hourly-feed
 on:
-  schedule:
-    - cron: "15 * * * *"
+  # The site grows three cards a day now, and the bulk-fill job writes them.
+  # This job used to add one campaign an hour on top of it, which was forty
+  # times the wanted pace. It stays for manual runs (workflow_dispatch) and
+  # for the backfill it does; the schedule is off.
   workflow_dispatch:
 permissions:
   contents: write
