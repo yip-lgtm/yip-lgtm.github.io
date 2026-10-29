@@ -34881,6 +34881,86 @@
         "portrait": "portraits/gladius.jpg"
       },
       "dossierUrl": "dossiers/784-7439856ee8.json"
+    },
+    {
+      "id": "1900-八國聯軍戰爭",
+      "added": "2026-10-29T20:09:03.984Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.78,
+        "lat": 38.98
+      },
+      "battle": {
+        "y": 1900,
+        "m": 6,
+        "name": "八國聯軍戰爭",
+        "theater": "天津大沽口",
+        "brief": "八國聯軍戰爭於1900年爆發，聯軍在北京與天津一帶進行圍攻，大沽口攻防尤為關鍵。英國皇家海軍投入鐵甲艦（Ironclad，1862年），以重裝甲與大口徑火炮執行海上封鎖、護航及沿岸火力支援，象徵遠洋主力艦在戰役中的作用。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是英國皇家海軍遠洋戰鬥力量的核心裝甲艦種，負責護航、封鎖與岸轟，並為後續主力艦的海上控制提供基礎。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1900-5b13f44daa.json"
+    },
+    {
+      "id": "1900-英國-索馬里戰爭",
+      "added": "2026-10-29T20:09:46.609Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 45.12,
+        "lat": 10.18
+      },
+      "battle": {
+        "y": 1900,
+        "m": 1,
+        "name": "英國-索馬里戰爭",
+        "theater": "英屬索馬利蘭北部薩那格地區",
+        "brief": "1900年的英國-索馬里戰爭，發生於英國控制下的英屬索馬利蘭北部，英軍與索馬里反抗武裝在此進行據點攻防、巡邏追擊與補給線爭奪。英軍遠征部隊使用的美國加特林機槍（Gatling gun）於1860年正式服役，作為遠距直射及持續火力支援武器。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍在美國陸軍體系中屬團級支援火力，早期配屬步兵團的武器單位，用於對敵隊列施壓並提供持續射擊能力。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1900-de3c10430e.json"
+    },
+    {
+      "id": "1902-沙特阿拉伯統一戰爭",
+      "added": "2026-10-29T20:09:47.676Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 45,
+        "lat": 24
+      },
+      "battle": {
+        "y": 1902,
+        "m": 9,
+        "name": "沙特阿拉伯統一戰爭",
+        "theater": "阿拉伯半島",
+        "brief": "沙特阿拉伯統一戰爭始於1902年，戰事遍及阿拉伯半島的內志與希賈茲，阿卜杜勒阿齊茲率領部眾逐步奪取利雅得及希賈茲要地，推動沙特政權擴張。英軍的恩菲爾德步槍（Enfield rifle）於1858年列裝，是當時制式步槍，可支援步兵線列作戰與中遠距程射擊。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "恩菲爾德步槍是英國陸軍的制式栓動後膛步槍，列為標準步兵武器，負責中遠距程射擊，並構成19世紀末至20世紀初英軍步兵裝備體系的核心。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      }
     }
   ]
 }
