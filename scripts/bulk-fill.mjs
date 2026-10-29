@@ -262,7 +262,10 @@ await pool(wars, WORKERS, async ({ war, repeat }, slot = 0) => {
 
 if (!process.env.SKIP_DOSSIERS) {
   const pending = [];
-  const dossierBudget = Math.max(0, LIMITS.dossiers - addedToday);
+  // The dossier allowance is its own: a day whose first run only managed two
+  // cards still needs a full text for the card that failed, and the pick
+  // finds the cards that have none.
+  const dossierBudget = LIMITS.dossiers;
   // The pick has to skip what it already took: the file is only written when
   // the batch is done, so the same card was picked three times and the three
   // full texts all landed in one file.
