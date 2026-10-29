@@ -10,7 +10,7 @@
 //   cute/feed.json          a new item  -> 簡述; new item carrying a dossier -> 全文
 //   cute/daily.json         changed      -> 每日頁
 import { execFileSync } from "node:child_process";
-import { writeFileSync } from "node:fs";
+import { writeFileSync, readFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -105,10 +105,32 @@ const live = readAt("HEAD", "cute/feed.json");
 const liveById = new Map((live?.items ?? []).map((i) => [i.id, i]));
 const liveDossiers = new Map();
 for (const i of live?.items ?? []) {
-  if (i.dossier?.countries) {
-    liveDossiers.set(i.battle?.name, SECT.reduce((a, k) => a + (i.dossier[k] || "").length, 0));
+  // The full text is a file of its own now: the feed row only points at it
+  // with dossierUrl. Reading the old inline field alone made every row on
+  // the page read as "已移除" while the wars were all still on the site.
+  let doc = i.dossier ?? null;
+  if (!doc?.countries && i.dossierUrl) {
+    try {
+      doc = JSON.parse(readFileSync(resolve(ROOT, "cute", i.dossierUrl), "utf8"));
+    } catch {}
   }
+  if (!doc?.countries) continue;
+  liveDossiers.set(i.battle?.name, SECT.reduce((a, k) => a + (doc[k] || "").length, 0));
 }
+// The 1900-onward scenario wars are not cards in the feed: the history
+// screen reads them from their own index. Without this the record page
+// called every one of them removed.
+try {
+  const idx = JSON.parse(readFileSync(resolve(ROOT, "cute/history-dossiers.json"), "utf8"));
+  for (const [name, url] of Object.entries(idx)) {
+    if (liveDossiers.has(name)) continue;
+    try {
+      const doc = JSON.parse(readFileSync(resolve(ROOT, "cute", url), "utf8"));
+      if (!doc?.countries) continue;
+      liveDossiers.set(name, SECT.reduce((a, k) => a + (doc[k] || "").length, 0));
+    } catch {}
+  }
+} catch {}
 for (const d of days.values()) for (const x of d.dossiers) {
   const now = liveDossiers.get(x.name);
   x.state = now == null ? "removed" : now === x.chars ? "" : "rewritten";
