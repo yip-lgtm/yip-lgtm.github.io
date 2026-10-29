@@ -1,11 +1,11 @@
 name: bulk-fill
 on:
   # The war index holds every conflict the source lists document. The site
-  # grows three cards a day: one batch in the morning, the rest of the day
-  # left alone. The job used to run every hour and write forty cards a run,
-  # which filled the pool in a day and then had nothing to write.
+  # grows three cards a day: the script counts what it already added today
+  # and only writes what is left of the three. It runs hourly so a day whose
+  # quota window was closed can still catch up on a later run.
   schedule:
-    - cron: "7 3 * * *"
+    - cron: "7 * * * *"
   workflow_dispatch:
 permissions:
   contents: write

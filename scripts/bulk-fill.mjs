@@ -132,8 +132,9 @@ async function pool(items, workers, task) {
     while (next < items.length) {
       if (quotaStop) break;
       const item = items[next++];
+      const slot = next - 1;
       try {
-        await task(item);
+        await task(item, slot);
       } catch (err) {
         const message = err instanceof Error ? err.message : String(err);
         if (QUOTA.test(message)) {
@@ -148,6 +149,22 @@ async function pool(items, workers, task) {
 }
 
 const LIMITS = { briefs: Number(process.env.BULK_LIMIT || 20), dossiers: Number(process.env.DOSSIER_LIMIT || 20) };
+
+// The site grows three cards a day. The job runs more often than that, so a
+// day whose quota window was closed can still catch up: what is left of the
+// day's three is written on the next run.
+const TZ = "Asia/Shanghai";
+const dayKey = (iso) => {
+  try { return new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(new Date(iso)); } catch { return ""; }
+};
+const today = dayKey(new Date().toISOString());
+const addedToday = (feed.items ?? []).filter((it) => dayKey(it.added) === today).length;
+const budget = Math.max(0, LIMITS.briefs - addedToday);
+if (!budget) {
+  console.log(`今日已經加咗 ${addedToday} 張（${today}），唔再加。`);
+  process.exit(0);
+}
+console.log(`今日已加 ${addedToday} 張，今日仲可以加 ${budget} 張`);
 const WORKERS = Number(process.env.BULK_WORKERS || 6);
 let wroteBriefs = 0;
 let wroteDossiers = 0;
@@ -158,7 +175,7 @@ const wars = [];
 // picker read the same feed every time and handed out the same war 40
 // times: the run wrote one card and the other 39 were the same card again.
 const reserved = new Set();
-for (let n = 0; n < LIMITS.briefs; n++) {
+for (let n = 0; n < budget; n++) {
   const picked = pickWar(index, feed, reserved);
   if (!picked) break;
   const { war, repeat } = picked;
@@ -169,10 +186,12 @@ for (let n = 0; n < LIMITS.briefs; n++) {
   if (taken && !repeat) continue;
   wars.push({ war, repeat });
 }
-await pool(wars, WORKERS, async ({ war, repeat }) => {
+await pool(wars, WORKERS, async ({ war, repeat }, slot = 0) => {
   let item;
   try {
-    const libraryKit = pickKit(war, library, (feed.items?.length ?? 0), portraitIndex);
+    // Each card of the day gets its own weapon: the same index for the whole
+    // batch gave every card of a run the same one.
+    const libraryKit = pickKit(war, library, (feed.items?.length ?? 0) + slot, portraitIndex);
     const raw = await ask(
       briefPrompt(war, libraryKit),
       "只用繁體中文。最後只留一個 JSON 物件。不要長篇推理，直接輸出答案。",
@@ -243,14 +262,21 @@ await pool(wars, WORKERS, async ({ war, repeat }) => {
 
 if (!process.env.SKIP_DOSSIERS) {
   const pending = [];
-  for (let n = 0; n < LIMITS.dossiers; n++) {
+  const dossierBudget = Math.max(0, LIMITS.dossiers - addedToday);
+  // The pick has to skip what it already took: the file is only written when
+  // the batch is done, so the same card was picked three times and the three
+  // full texts all landed in one file.
+  const taken = new Set();
+  for (let n = 0; n < dossierBudget; n++) {
     const item = (feed.items ?? []).find((it) => {
       if (!it.battle?.name) return false;
+      if (taken.has(it.id)) return false;
       if (it.dossier?.countries) return false;
       const file = dossierFile(it.id, it.battle?.y ?? it.kit?.year ?? 0);
       return !existsSync(join(dir, file));
     });
     if (!item) break;
+    taken.add(item.id);
     pending.push(item);
   }
   await pool(pending, Math.max(1, Math.min(WORKERS, 4)), async (item) => {
