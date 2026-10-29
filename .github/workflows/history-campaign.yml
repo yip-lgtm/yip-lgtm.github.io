@@ -46,6 +46,8 @@ jobs:
         # fails, and the campaign keeps the brief it has until the next run.
         continue-on-error: true
         run: node scripts/history-campaign.mjs
+      - name: Sweep back to traditional Chinese
+        run: node scripts/fix-trad.mjs cute
       - name: Commit
         run: |
           git config user.name "yip-lgtm"
