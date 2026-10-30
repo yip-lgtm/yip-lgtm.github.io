@@ -10,8 +10,7 @@
    "kind": "infantry",
    "year": -3200,
    "span": "p01",
-   "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。",
-   "agent": "bg-egyptianspear"
+   "history": "早王朝時期的長矛，銅或青銅矛頭綁在木杆上。埃及人用它守城垣，後來也用它收復失地。"
   },
   {
    "id": "khopesh",
@@ -22,8 +21,7 @@
    "kind": "infantry",
    "year": -1500,
    "span": "p01",
-   "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。",
-   "agent": "bg-khopesh"
+   "history": "外彎的單刃劍，砍下去不用拔。它比直劍更早出現在埃及人的手上。"
   },
   {
    "id": "assyrianspear",
@@ -34,8 +32,7 @@
    "kind": "infantry",
    "year": -900,
    "span": "p01",
-   "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。",
-   "agent": "bg-assyrianspear"
+   "history": "短柄、長刃，配著鐵鏃。亞述人把它和弓、鐵器綁在一起，兩河流域的城一個接一個陷落。"
   },
   {
    "id": "dory",
@@ -46,8 +43,7 @@
    "kind": "infantry",
    "year": -800,
    "span": "p01",
-   "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。",
-   "agent": "bg-dory"
+   "history": "兩米長的木槍，槍尾帶銅套。方陣裡它比劍更早決定誰站得住。"
   },
   {
    "id": "assyrianbow",
@@ -58,8 +54,7 @@
    "kind": "infantry",
    "year": -700,
    "span": "p01",
-   "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。",
-   "agent": "bg-assyrianbow"
+   "history": "亞述人靠弓和鐵的組合征服兩河流域。弓兵在車上射，車兵靠弓兵開路。"
   },
   {
    "id": "corinthian",
@@ -70,8 +65,7 @@
    "kind": "infantry",
    "year": -650,
    "span": "p01",
-   "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。",
-   "agent": "bg-corinthian"
+   "history": "全正面開眼的青銅盔。看得見的代價是：戴它的人只能靠隊形活。"
   },
   {
    "id": "hoplite",
@@ -82,8 +76,7 @@
    "kind": "infantry",
    "year": -500,
    "span": "p01",
-   "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。",
-   "agent": "bg-hoplite"
+   "history": "方陣的重心不是個人，是互相遮蔽。盾牌接在一起時，一支軍隊的正面比一個人結實。"
   },
   {
    "id": "onager",
@@ -94,8 +87,7 @@
    "kind": "artillery",
    "year": -250,
    "span": "p01",
-   "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。",
-   "agent": "bg-onager"
+   "history": "把絞盤的勢能換成一塊石頭。攻城從此有了可以計算的破壞力。"
   },
   {
    "id": "xiaochongnu",
@@ -106,8 +98,7 @@
    "kind": "infantry",
    "year": -200,
    "span": "p01",
-   "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。",
-   "agent": "bg-xiaochongnu"
+   "history": "弩機把拉力存起來，一踩一發。守城的一方靠它把攻城的人壓在牆外。"
   },
   {
    "id": "gongnu",
@@ -118,8 +109,7 @@
    "kind": "infantry",
    "year": -200,
    "span": "p01",
-   "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。",
-   "agent": "bg-gongnu"
+   "history": "弩機把拉力存起來，射速遠勝拉弓。守城的一方靠它把攻城的人壓在牆外。"
   },
   {
    "id": "scutum",
@@ -130,8 +120,7 @@
    "kind": "infantry",
    "year": -100,
    "span": "p01",
-   "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。",
-   "agent": "bg-scutum"
+   "history": "凸面的長方盾。羅馬的防線靠盾緣咬住盾緣，不是靠盾牌多厚。"
   },
   {
    "id": "pilum",
@@ -142,8 +131,7 @@
    "kind": "infantry",
    "year": -100,
    "span": "p01",
-   "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。",
-   "agent": "bg-pilum"
+   "history": "半米長的投槍，槍幹中空。捅穿盾之後就折斷，敵人只能帶著半截槍退回掩體。"
   },
   {
    "id": "legionary",
@@ -154,8 +142,7 @@
    "kind": "infantry",
    "year": -100,
    "span": "p01",
-   "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。",
-   "agent": "bg-legionary"
+   "history": "分段鎧甲配重盾。羅馬的戰力靠的是補充兵源與補給線，不是靠重裝。"
   },
   {
    "id": "gladius",
@@ -166,8 +153,7 @@
    "kind": "infantry",
    "year": -100,
    "span": "p01",
-   "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。",
-   "agent": "bg-gladius"
+   "history": "刺劍不是用來揮砍的。短兵相接靠的是盾的邊緣和刺突的節奏。"
   },
   {
    "id": "scorpio",
@@ -178,8 +164,7 @@
    "kind": "artillery",
    "year": -50,
    "span": "p01",
-   "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。",
-   "agent": "bg-scorpio"
+   "history": "扭力弩砲，一發一具箭。羅馬用它拆掉希臘的城牆，也拆掉了希臘的城邦體系。"
   },
   {
    "id": "greekfire",
@@ -190,8 +175,7 @@
    "kind": "artillery",
    "year": 670,
    "span": "p11",
-   "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。",
-   "agent": "bg-greekfire"
+   "history": "配在銅管裡的燃燒劑。配方是帝國的機密，配方和船一起沉了。"
   },
   {
    "id": "lombardshield",
@@ -202,8 +186,7 @@
    "kind": "infantry",
    "year": 1000,
    "span": "p11",
-   "history": "又長又窄的騎士盾，能遮住整個身體，也能讓騎兵把盾固定在臂上。",
-   "agent": "bg-lombardshield"
+   "history": "又長又窄的騎士盾，能遮住整個身體，也能讓騎兵把盾固定在臂上。"
   },
   {
    "id": "daneaxe",
@@ -214,8 +197,7 @@
    "kind": "infantry",
    "year": 1050,
    "span": "p11",
-   "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。",
-   "agent": "bg-daneaxe"
+   "history": "刃很長，斧面窄。北歐的船隊帶著它，也帶著它上岸。"
   },
   {
    "id": "contostephano",
@@ -226,8 +208,7 @@
    "kind": "infantry",
    "year": 1100,
    "span": "p11",
-   "history": "帝國的騎兵用它的頸甲，槍身短而重，衝鋒靠的不是速度而是馬的重量。",
-   "agent": "bg-contostephano"
+   "history": "帝國的騎兵用它的頸甲，槍身短而重，衝鋒靠的不是速度而是馬的重量。"
   },
   {
    "id": "crossbow",
@@ -238,8 +219,7 @@
    "kind": "infantry",
    "year": 1100,
    "span": "p11",
-   "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。",
-   "agent": "bg-crossbow"
+   "history": "弩把射速交給了機械，代價是裝填慢。城牆上它比長弓可靠，野戰裡它比長弓脆弱。"
   },
   {
    "id": "trebuchet",
@@ -250,8 +230,7 @@
    "kind": "artillery",
    "year": 1100,
    "span": "p11",
-   "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。",
-   "agent": "bg-trebuchet"
+   "history": "長臂配重把石頭甩過城牆。工程比攻城武器更早決定勝負。"
   },
   {
    "id": "shenbi",
@@ -262,8 +241,7 @@
    "kind": "artillery",
    "year": 1130,
    "span": "p11",
-   "history": "以絞弦張臂的強弩，一發穿重甲。宋的邊軍靠它守住了自己的邊界。",
-   "agent": "bg-shenbi"
+   "history": "以絞弦張臂的強弩，一發穿重甲。宋的邊軍靠它守住了自己的邊界。"
   },
   {
    "id": "springald",
@@ -274,8 +252,7 @@
    "kind": "artillery",
    "year": 1200,
    "span": "p11",
-   "history": "把扭力儲在絞盤裡的攻城弩。攻城方第一次有了能打穿城門的東西。",
-   "agent": "bg-springald"
+   "history": "把扭力儲在絞盤裡的攻城弩。攻城方第一次有了能打穿城門的東西。"
   },
   {
    "id": "handcannon",
@@ -286,8 +263,7 @@
    "kind": "infantry",
    "year": 1250,
    "span": "p11",
-   "history": "第一支能重複使用的火器。它改變了城牆的價錢，也改變了守軍的膽量。",
-   "agent": "bg-handcannon"
+   "history": "第一支能重複使用的火器。它改變了城牆的價錢，也改變了守軍的膽量。"
   },
   {
    "id": "longbow",
@@ -298,8 +274,7 @@
    "kind": "infantry",
    "year": 1350,
    "span": "p11",
-   "history": "英格蘭的箭袋比法國的騎兵便宜。弓手的訓練要一整年，徵召卻只要一天。",
-   "agent": "bg-longbow"
+   "history": "英格蘭的箭袋比法國的騎兵便宜。弓手的訓練要一整年，徵召卻只要一天。"
   },
   {
    "id": "pavise",
@@ -310,8 +285,7 @@
    "kind": "infantry",
    "year": 1400,
    "span": "p11",
-   "history": "一人半高的木牆，立在弩手前面。攻城方的最後一段距離靠它頂住。",
-   "agent": "bg-pavise"
+   "history": "一人半高的木牆，立在弩手前面。攻城方的最後一段距離靠它頂住。"
   },
   {
    "id": "huolongpao",
@@ -322,8 +296,7 @@
    "kind": "artillery",
    "year": 1400,
    "span": "p11",
-   "history": "竹筒與鐵砲身。它把火藥從爆炸品變成了射程內的火力。",
-   "agent": "bg-huolongpao"
+   "history": "竹筒與鐵砲身。它把火藥從爆炸品變成了射程內的火力。"
   },
   {
    "id": "poleaxe",
@@ -334,8 +307,7 @@
    "kind": "infantry",
    "year": 1450,
    "span": "p11",
-   "history": "頂端有刃、側面有鉤的長柄兵器。穿甲靠鉤，砍腿靠刃。",
-   "agent": "bg-poleaxe"
+   "history": "頂端有刃、側面有鉤的長柄兵器。穿甲靠鉤，砍腿靠刃。"
   },
   {
    "id": "wheellockpistol",
@@ -346,8 +318,7 @@
    "kind": "infantry",
    "year": 1500,
    "span": "p16",
-   "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。",
-   "agent": "bg-wheellockpistol"
+   "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與近衛。"
   },
   {
    "id": "wheellock",
@@ -358,8 +329,7 @@
    "kind": "infantry",
    "year": 1500,
    "span": "p16",
-   "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。",
-   "agent": "bg-wheellock"
+   "history": "最早的後膛手槍。機械太貴，只給火槍隊的軍官與衛兵。"
   },
   {
    "id": "matchlock",
@@ -370,8 +340,7 @@
    "kind": "infantry",
    "year": 1520,
    "span": "p16",
-   "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。",
-   "agent": "bg-matchlock"
+   "history": "火繩槍要點火、要瞄、要排隊。方陣把這些弱點變成了整齊的彈幕。"
   },
   {
    "id": "tercioshield",
@@ -382,8 +351,7 @@
    "kind": "infantry",
    "year": 1530,
    "span": "p16",
-   "history": "一面方盾撐住一整排人。無敵兵團的方陣靠它，也靠後面那排火繩槍。",
-   "agent": "bg-tercioshield"
+   "history": "一面方盾撐住一整排人。無敵兵團的方陣靠它，也靠後面那排火繩槍。"
   },
   {
    "id": "cuirassst",
@@ -394,8 +362,7 @@
    "kind": "infantry",
    "year": 1530,
    "span": "p16",
-   "history": "鍛鐵的胸甲讓步槍變成冷兵器。馬爾康·波佐多的改變比任何一場戰役都快。",
-   "agent": "bg-cuirassst"
+   "history": "鍛鐵的胸甲讓步槍變成冷兵器。馬爾康·波佐多的改變比任何一場戰役都快。"
   },
   {
    "id": "tanegashima",
@@ -406,8 +373,7 @@
    "kind": "infantry",
    "year": 1543,
    "span": "p16",
-   "history": "葡萄牙人帶到種子島的一支火繩槍，幾個月內就造出了幾萬支。",
-   "agent": "bg-tanegashima"
+   "history": "葡萄牙人帶到種子島的一支火繩槍，幾個月內就造出了幾萬支。"
   },
   {
    "id": "swisspike",
@@ -418,8 +384,7 @@
    "kind": "infantry",
    "year": 1550,
    "span": "p16",
-   "history": "長槍密集如林，後面才是火槍。瑞士人靠它僱傭自己去打仗。",
-   "agent": "bg-swisspike"
+   "history": "長槍密集如林，後面才是火槍。瑞士人靠它僱傭自己去打仗。"
   },
   {
    "id": "arquebus",
@@ -430,8 +395,7 @@
    "kind": "infantry",
    "year": 1550,
    "span": "p16",
-   "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。",
-   "agent": "bg-arquebus"
+   "history": "比步槍輕的長槍。西班牙人帶著它上船，也帶著它進了美洲。"
   },
   {
    "id": "fieldgun",
@@ -442,8 +406,7 @@
    "kind": "artillery",
    "year": 1550,
    "span": "p16",
-   "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。",
-   "agent": "bg-fieldgun"
+   "history": "能拆成幾件馬車拉走的砲。它讓野戰第一次有了可以計算的砲火。"
   },
   {
    "id": "navalculverin",
@@ -454,8 +417,7 @@
    "kind": "artillery",
    "year": 1600,
    "span": "p16",
-   "history": "能打穿船板的長身管砲。它的重心決定了船能裝多少門，也決定了船能走多遠。",
-   "agent": "bg-navalculverin"
+   "history": "能打穿船板的長身管砲。它的重心決定了船能裝多少門，也決定了船能走多遠。"
   },
   {
    "id": "pike",
@@ -466,8 +428,7 @@
    "kind": "infantry",
    "year": 1600,
    "span": "p16",
-   "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。",
-   "agent": "bg-pike"
+   "history": "方陣的長矛讓火槍隊站在後面。密西西比之後，長矛和火槍一起站住了。"
   },
   {
    "id": "manofwar",
@@ -478,8 +439,7 @@
    "kind": "battleship",
    "year": 1650,
    "span": "p16",
-   "history": "一艘船上的炮比一整座要塞還多。風、帆和火炮的計算從此綁在一起。",
-   "agent": "bg-manofwar"
+   "history": "一艘船上的炮比一整座要塞還多。風、帆和火炮的計算從此綁在一起。"
   },
   {
    "id": "ottomanmusket",
@@ -490,8 +450,7 @@
    "kind": "infantry",
    "year": 1700,
    "span": "p16",
-   "history": "帝國的兵廠自己造的火槍。蘇丹的軍隊用歐洲的技術，用自己的爐子。",
-   "agent": "bg-ottomanmusket"
+   "history": "帝國的兵廠自己造的火槍。蘇丹的軍隊用歐洲的技術，用自己的爐子。"
   },
   {
    "id": "flintlock",
@@ -502,8 +461,7 @@
    "kind": "infantry",
    "year": 1710,
    "span": "p16",
-   "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。",
-   "agent": "bg-flintlock"
+   "history": "擊錘打火比火繩穩。線性列陣的射速和精度都靠它撐著。"
   },
   {
    "id": "bayonet",
@@ -514,8 +472,7 @@
    "kind": "infantry",
    "year": 1760,
    "span": "p16",
-   "history": "插在火槍上的短刀。它讓火槍兵在裝填的間隙裡仍然算得上一名士兵。",
-   "agent": "bg-bayonet"
+   "history": "插在火槍上的短刀。它讓火槍兵在裝填的間隙裡仍然算得上一名士兵。"
   },
   {
    "id": "percussion",
@@ -526,8 +483,7 @@
    "kind": "infantry",
    "year": 1840,
    "span": "p19",
-   "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。",
-   "agent": "bg-percussion"
+   "history": "雷管取代火燧之後，底火在霧裡也打得響。射程變長，隊形就散了。"
   },
   {
    "id": "minieball",
@@ -538,8 +494,7 @@
    "kind": "infantry",
    "year": 1849,
    "span": "p19",
-   "history": "圓錐形爆炸彈配膛線步槍。射程翻了幾倍，野戰隊形從此再回不去。",
-   "agent": "bg-minieball"
+   "history": "圓錐形爆炸彈配膛線步槍。射程翻了幾倍，野戰隊形從此再回不去。"
   },
   {
    "id": "muzzleloader",
@@ -550,8 +505,7 @@
    "kind": "artillery",
    "year": 1850,
    "span": "p19",
-   "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。",
-   "agent": "bg-muzzleloader"
+   "history": "線膛讓同樣的藥量走得更遠。砲兵第一次可以在射程上贏步兵。"
   },
   {
    "id": "enfieldrifle",
@@ -562,8 +516,7 @@
    "kind": "infantry",
    "year": 1858,
    "span": "p19",
-   "history": "英軍的制式步槍。克里米亞的教訓是：射程和後膛比勇敢更早決定勝負。",
-   "agent": "bg-enfieldrifle"
+   "history": "英軍的制式步槍。克里米亞的教訓是：射程和後膛比勇敢更早決定勝負。"
   },
   {
    "id": "gatling",
@@ -574,8 +527,7 @@
    "kind": "artillery",
    "year": 1860,
    "span": "p19",
-   "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。",
-   "agent": "bg-gatling"
+   "history": "六根管子用人力轉動。它的後坐力分散在六次上，所以能壓住一個師。"
   },
   {
    "id": "ironclad",
@@ -586,8 +538,7 @@
    "kind": "battleship",
    "year": 1862,
    "span": "p19",
-   "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。",
-   "agent": "bg-ironclad"
+   "history": "木殼外面包了鐵。裝甲第一次比砲更難對付，砲塔的設計從此繞著它轉。"
   },
   {
    "id": "sharps",
@@ -598,8 +549,7 @@
    "kind": "infantry",
    "year": 1865,
    "span": "p19",
-   "history": "後膛、落膛、偏心擊發。它在南部合眾國的騎兵手上打出過三百發一分鐘。",
-   "agent": "bg-sharps"
+   "history": "後膛、落膛、偏心擊發。它在南部合眾國的騎兵手上打出過三百發一分鐘。"
   },
   {
    "id": "steamship",
@@ -610,8 +560,7 @@
    "kind": "battleship",
    "year": 1865,
    "span": "p19",
-   "history": "蒸汽機加鐵甲。戰艦第一次不靠帆吃風，港口裡的煤比海上的風更決定戰局。",
-   "agent": "bg-steamship"
+   "history": "蒸汽機加鐵甲。戰艦第一次不靠帆吃風，港口裡的煤比海上的風更決定戰局。"
   },
   {
    "id": "berdan",
@@ -622,8 +571,7 @@
    "kind": "infantry",
    "year": 1866,
    "span": "p19",
-   "history": "別丹式步槍，帶鋼製襯套。它是俄國後膛槍的第一次嘗試，也是第一次失敗。",
-   "agent": "bg-berdan"
+   "history": "別丹式步槍，帶鋼製襯套。它是俄國後膛槍的第一次嘗試，也是第一次失敗。"
   },
   {
    "id": "breechcannon",
@@ -634,8 +582,7 @@
    "kind": "artillery",
    "year": 1870,
    "span": "p19",
-   "history": "螺式後膛讓砲位不必整門退回去。射程和射速一起進步，砲兵開始比步兵先到。",
-   "agent": "bg-breechcannon"
+   "history": "螺式後膛讓砲位不必整門退回去。射程和射速一起進步，砲兵開始比步兵先到。"
   },
   {
    "id": "winchester",
@@ -646,8 +593,7 @@
    "kind": "infantry",
    "year": 1873,
    "span": "p19",
-   "history": "槍管後膛與壓下槓桿的擊發。它便宜到西部每個牧人都買得起。",
-   "agent": "bg-winchester"
+   "history": "槍管後膛與壓下槓桿的擊發。它便宜到西部每個牧人都買得起。"
   },
   {
    "id": "torpedoboat",
@@ -658,8 +604,7 @@
    "kind": "destroyer",
    "year": 1877,
    "span": "p19",
-   "history": "小船帶著一枚雷衝進大艦的肚子。戰列艦的價格第一次被一種沒有裝甲的東西威脅。",
-   "agent": "bg-torpedoboat"
+   "history": "小船帶著一枚雷衝進大艦的肚子。戰列艦的價格第一次被一種沒有裝甲的東西威脅。"
   }
  ]
 }
