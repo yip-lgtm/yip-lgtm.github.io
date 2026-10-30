@@ -34962,6 +34962,86 @@
         "portrait": "portraits/enfieldrifle.jpg"
       },
       "dossierUrl": "dossiers/1902-d633b1db07.json"
+    },
+    {
+      "id": "1990-圖阿雷格叛亂(1990年-1995年)",
+      "added": "2026-10-30T16:41:06.066Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -3,
+        "lat": 16.77
+      },
+      "battle": {
+        "y": 1990,
+        "m": 3,
+        "name": "圖阿雷格叛亂 (1990年-1995年)",
+        "theater": "馬利北部蒂姆巴克圖地區",
+        "brief": "圖阿雷格叛亂於1990年3月在馬利北部爆發，圖阿雷格武裝與馬利政府軍交戰，衝突延續至1995年。同期海軍裝備中的 Torpedo boat 於1877年已在英國海軍服役，屬早期快速水面兵力，適合沿岸警戒、追擊與反艦任務，是近海防衛體系的一部分。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "Torpedo boat 是英國海軍早期魚雷作戰艇種，1877年投入近海與港口防衛，以高速執行警戒、攔截及反艦任務，屬於早期海軍快速反水面的作戰兵力。",
+        "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1990-5a04c435f0.json"
+    },
+    {
+      "id": "1990-盧旺達內戰",
+      "added": "2026-10-30T16:41:09.947Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30.06,
+        "lat": -1.94
+      },
+      "battle": {
+        "y": 1990,
+        "m": 10,
+        "name": "盧旺達內戰",
+        "theater": "基加利",
+        "brief": "一九九〇年十月，盧旺達內戰爆發，首都基加利的政治與軍事局勢迅速惡化，政府軍與反政府武裝在盧旺達境內交火。依據戰爭列表，事件歸為「盧旺達內戰」。參戰方使用的惠氏步槍（Winchester Model 1873）正式型號自一八七三年起服役，符合一九九〇年或以前的裝備限制。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍是美國早期陸軍採用的制式後膛步槍，以槓桿式重複射擊機構與單排彈倉供彈，主要配給步兵執行一般遠射任務，在栓動步槍普及後逐步退居次要地位。",
+        "portrait": "portraits/winchester.jpg"
+      }
+    },
+    {
+      "id": "1990-伊拉克入侵科威特",
+      "added": "2026-10-30T16:41:10.504Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 47.98,
+        "lat": 29.37
+      },
+      "battle": {
+        "y": 1990,
+        "m": 8,
+        "name": "伊拉克入侵科威特",
+        "theater": "科威特",
+        "brief": "一九九〇年八月，伊拉克軍隊越過邊境並迅速控制科威特，占據南部通往海灣的通道，海灣局勢隨之升溫。線膛砲（Muzzle-loading field gun）屬十九世紀中期德國諸邦陸軍的野戰砲兵裝置，配置於營、旅級砲兵隊，以不同口徑支撐步兵正面作戰，亦可用於圍城時的包圍射擊。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲在一八五〇年前後的德國諸邦軍隊中，編入陸軍野戰砲兵，作為步兵營的直射支援火力，亦隸屬旅級指揮，參與野外會戰與攻城。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1990-e9c323eb6d.json"
     }
   ]
 }
