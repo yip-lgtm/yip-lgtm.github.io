@@ -35043,6 +35043,86 @@
         "portrait": "portraits/muzzleloader.jpg"
       },
       "dossierUrl": "dossiers/1990-e9c323eb6d.json"
+    },
+    {
+      "id": "1904-日俄戰爭",
+      "added": "2026-10-31T19:56:02.150Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 121.25,
+        "lat": 38.87
+      },
+      "battle": {
+        "y": 1904,
+        "m": 9,
+        "name": "日俄戰爭",
+        "theater": "旅順",
+        "brief": "日俄戰爭中的旅順之戰，緣起於俄日帝國在遠東與滿洲的競爭，日軍於一九〇四年包圍並攻取俄軍要塞。此役俄軍步兵及後備單位仍保有別丹步槍；別丹步槍早在一八六六年便正式列裝，是日俄戰爭前既有的俄制裝備。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍於一八六六年成為俄軍制式步槍，配發步兵連，負責一般步兵射擊；其後雖逐步被新式步槍取代，仍退居俄軍後備與防衛裝備之列。",
+        "portrait": "portraits/berdan.jpg"
+      },
+      "dossierUrl": "dossiers/1904-5c970321d5.json"
+    },
+    {
+      "id": "1903-英藏戰爭",
+      "added": "2026-10-31T19:56:09.263Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 97.18,
+        "lat": 31.14
+      },
+      "battle": {
+        "y": 1903,
+        "m": 10,
+        "name": "英藏戰爭",
+        "theater": "西藏昌都",
+        "brief": "1903年英藏戰爭中，英國遠征軍由印度進入西藏，於昌都一帶與藏軍交鋒。英軍野戰部隊配備德製婆塞德後膛砲（Breech-loading cannon，1870年），以其射速與曲射能力提供前線支援，協助占據昌都；戰事其後向拉薩方向延伸，並於1904年迫使藏方議和。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲是德國陸軍炮兵體系的重型後膛火砲，主要隸屬野戰炮兵，負責提供間接曲射火力，並在部隊推進、守備與攻堅時支援步兵作戰。",
+        "portrait": "portraits/breechcannon.jpg"
+      }
+    },
+    {
+      "id": "1905-俄國革命",
+      "added": "2026-10-31T19:56:11.527Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30.32,
+        "lat": 59.94
+      },
+      "battle": {
+        "y": 1905,
+        "m": 1,
+        "name": "俄國革命",
+        "theater": "聖彼得堡",
+        "brief": "1905年俄國革命自聖彼得堡工人示威及帝國軍隊鎮壓開始，隨後罷工、抗議與地方起義擴展至俄國各地。此時俄軍主力已轉向栓動步槍；較早的美國陸軍正式型號 Sharps rifle（施拿甫步槍）於1865年列裝，屬後膛單發步槍。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍是美國陸軍於南北戰爭末期列裝的制式後膛單發步槍，主要供步兵射擊，並曾供遠程射手採用；隨栓動步槍普及，逐漸退居替補地位。",
+        "portrait": "portraits/sharps.jpg"
+      },
+      "dossierUrl": "dossiers/1905-b26311113c.json"
     }
   ]
 }
