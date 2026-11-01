@@ -35095,7 +35095,8 @@
         "layer": "land",
         "history": "婆塞德後膛砲是德國陸軍炮兵體系的重型後膛火砲，主要隸屬野戰炮兵，負責提供間接曲射火力，並在部隊推進、守備與攻堅時支援步兵作戰。",
         "portrait": "portraits/breechcannon.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1903-10be6dbedb.json"
     },
     {
       "id": "1905-俄國革命",
