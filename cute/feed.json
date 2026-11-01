@@ -35124,6 +35124,87 @@
         "portrait": "portraits/sharps.jpg"
       },
       "dossierUrl": "dossiers/1905-b26311113c.json"
+    },
+    {
+      "id": "1911-義土戰爭",
+      "added": "2026-11-01T18:53:04.238Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.19,
+        "lat": 32.89
+      },
+      "battle": {
+        "y": 1911,
+        "m": 9,
+        "name": "義土戰爭",
+        "theater": "的黎波里塔尼亞",
+        "brief": "義土戰爭於1911年9月由義大利王國向鄂圖曼帝國宣戰而爆發，主要戰事發生於利比亞的黎波里塔尼亞與昔蘭尼加。義軍投入近代步兵、砲兵及騎兵，並以沿海據點與後勤航線支撐進攻；加特林機槍（Gatling gun）早在1860年已列裝，可提供持續的直射火力。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍自1860年起列入美國陸軍裝備，作為固定式重機槍部署於港口、要塞及野戰陣地，以高速連射提供遠程火力壓制。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1911-2a7866dcdf.json"
+    },
+    {
+      "id": "1905-波斯立憲革命",
+      "added": "2026-11-01T18:53:07.273Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 51.39,
+        "lat": 35.69
+      },
+      "battle": {
+        "y": 1905,
+        "m": 12,
+        "name": "波斯立憲革命",
+        "theater": "德黑蘭",
+        "brief": "波斯立憲革命於1905年在德黑蘭興起，改革派要求召開民選議會、制定憲法並限制國王專權，穆罕默德沙阿一度拒絕並召回改革派支持者，促成全國性反對浪潮。英國海軍於1865年已列裝蒸汽鐵甲艦（Steam ironclad），顯示當時海上兵力現代化背景。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦以蒸汽機推進並配備鐵甲防護，屬英國海軍的海上主力艦艇類別，承接風帆戰艦並為後來蒸汽主力艦奠定基礎。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/1905-3d2f9cc869.json"
+    },
+    {
+      "id": "1910-墨西哥革命",
+      "added": "2026-11-01T18:53:25.396Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -101,
+        "lat": 22
+      },
+      "battle": {
+        "y": 1910,
+        "m": 11,
+        "name": "墨西哥革命",
+        "theater": "墨西哥中部",
+        "brief": "《中文維基戰爭列表》所列的墨西哥革命始於1910年11月，弗朗西斯科·馬德羅以《聖路易斯計畫》號召推翻波菲爾·迪亞斯政府，戰事由墨西哥中部向各地擴展。英國Warrior級鐵甲艦HMS Warrior於1862年列裝，是蒸汽輪機搭配鐵甲的遠洋主力艦。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是英國皇家海軍以厚重裝甲和蒸汽輪機構成的主力遠洋戰艦，負責護衛本土、殖民地航線及海上貿易。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1910-727b910b4a.json"
     }
   ]
 }
