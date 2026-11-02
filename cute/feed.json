@@ -35205,6 +35205,85 @@
         "portrait": "portraits/ironclad.jpg"
       },
       "dossierUrl": "dossiers/1910-727b910b4a.json"
+    },
+    {
+      "id": "1953-古巴革命",
+      "added": "2026-11-02T20:44:29.659Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -79.5,
+        "lat": 21.5
+      },
+      "battle": {
+        "y": 1953,
+        "m": 1,
+        "name": "古巴革命",
+        "theater": "古巴",
+        "brief": "古巴革命始於一九五三年，是推翻巴蒂斯塔統治並延續至一九五九年的武裝衝突，戰事遍及古巴各地。這場鬥爭的早期武器仍帶有十九世紀制式輕武器的特徵，雷管步槍（Percussion rifle）於一八四〇年列裝，反映交戰各方裝備世代並存。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管步槍屬於十九世紀步兵制式輕武器體系，作為前膛槍械用於一般射擊，並納入部隊標準配發與訓練。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1950-朝鮮戰爭",
+      "added": "2026-11-02T20:44:38.195Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 127,
+        "lat": 38
+      },
+      "battle": {
+        "y": 1950,
+        "m": 6,
+        "name": "朝鮮戰爭",
+        "theater": "朝鮮半島三八線一帶",
+        "brief": "朝鮮戰爭於1950年6月在朝鮮半島爆發，交戰以三八線南北為主要戰區，英國陸軍等聯合國部隊與朝鮮人民軍對抗。英國陸軍配備的恩菲爾德步槍（Enfield rifle）早在1858年已列入服役，屬於當時步兵班制式單兵火器，負責支撐地面步兵作戰，並構成步兵班的重要射擊武器。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "恩菲爾德步槍是英國陸軍步兵班的制式步槍，位於連隊步兵武器系統核心，提供單兵射擊火力，並由步兵射手操作。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      },
+      "dossierUrl": "dossiers/1950-3730e17635.json"
+    },
+    {
+      "id": "1952-茅茅起義",
+      "added": "2026-11-02T20:44:56.569Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 37,
+        "lat": -0.4
+      },
+      "battle": {
+        "y": 1952,
+        "m": 10,
+        "name": "茅茅起義",
+        "theater": "肯亞中央高地",
+        "brief": "茅茅起義是1952年起發生於肯亞、針對英國殖民統治的武裝衝突，英方於同年宣布進入緊急狀態。條目所列線膛砲（Muzzle-loading field gun）於1850年列裝，屬德系早期野戰火砲類型，年代遠早於本場衝突，並非起義方專用裝備；這項早期裝備只供年代與軍隊體系對照。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲（Muzzle-loading field gun）在德國早期野戰砲兵體系中，主要提供軍隊隨行火力，是地面部隊編制內用於整體火砲支援的裝備之一。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
     }
   ]
 }
