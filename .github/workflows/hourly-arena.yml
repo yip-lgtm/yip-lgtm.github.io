@@ -1,0 +1,31 @@
+name: hourly-arena
+on:
+  schedule:
+    - cron: "25 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cute-arena-writers
+  cancel-in-progress: false
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: New mutual roast chat
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          ARENA_OUT: cute/arena.json
+        run: node scripts/hourly-arena.mjs
+      - name: Commit arena only
+        run: |
+          git config user.name "yip-lgtm"
+          git config user.email "258986088+yip-lgtm@users.noreply.github.com"
+          git add cute/arena.json
+          git diff --staged --quiet || git commit -m "Hourly pen-war chat."
+          git pull --rebase --autostash origin main
+          git push
