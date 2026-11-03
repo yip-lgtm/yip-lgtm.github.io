@@ -6,8 +6,8 @@
    "title_zh": "把氯換走能救幾多人？飲用水消毒副產物的劑量鏈、可歸因病例與轉換代價",
    "title_en": "Switching away from chlorine: the DBP dose-response chain, attributable cases and the cost of the switch",
    "url": "/R&D/reports/2026-11-03-21.html",
-   "cjk": 974,
-   "bytes": 10437,
+   "cjk": 894,
+   "bytes": 8980,
    "sources": 9,
    "gate_pass": false
   },
@@ -710,6 +710,12 @@
    "title": "排雷資金縮減與清除面積跌幅唔對稱",
    "url": "/R&D/knowledge/demining-funding-output-concentration.html",
    "bytes": 1873
+  },
+  {
+   "slug": "drinking-water-dbp-bladder-cancer-attributable",
+   "title": "飲用水消毒副產物（DBP）：劑量鏈、可歸因病例與換消毒劑的代價",
+   "url": "/R&D/knowledge/drinking-water-dbp-bladder-cancer-attributable.html",
+   "bytes": 5703
   },
   {
    "slug": "edu-bachelor-branches",
