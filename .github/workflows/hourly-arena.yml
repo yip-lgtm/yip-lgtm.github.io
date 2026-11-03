@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: "25 * * * *"
   workflow_dispatch:
+  workflow_run:
+    workflows: ["history-campaign"]
+    types: [completed]
 permissions:
   contents: write
 concurrency:
