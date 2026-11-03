@@ -35230,7 +35230,8 @@
         "layer": "land",
         "history": "雷管步槍屬於十九世紀步兵制式輕武器體系，作為前膛槍械用於一般射擊，並納入部隊標準配發與訓練。",
         "portrait": "portraits/percussion.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1953-45360106d6.json"
     },
     {
       "id": "1950-朝鮮戰爭",
