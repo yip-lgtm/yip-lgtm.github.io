@@ -35285,6 +35285,85 @@
         "history": "線膛砲（Muzzle-loading field gun）在德國早期野戰砲兵體系中，主要提供軍隊隨行火力，是地面部隊編制內用於整體火砲支援的裝備之一。",
         "portrait": "portraits/muzzleloader.jpg"
       }
+    },
+    {
+      "id": "1913-二次革命",
+      "added": "2026-11-04T06:07:17.543Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 115.89,
+        "lat": 28.68
+      },
+      "battle": {
+        "y": 1913,
+        "m": 7,
+        "name": "二次革命",
+        "theater": "江西南昌",
+        "brief": "二次革命於一九一三年在江西、湖南等地爆發，江西都督李烈鈞宣布獨立後，討袁軍與北洋軍在南昌及沿江一線交戰。北洋軍使用的德造婆塞德後膛砲（Breech-loading cannon）於一八七〇年列裝，配置於砲兵單位以支援步兵作戰，並承擔火力支援與陣地攻擊任務。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲屬於德國陸軍地面作戰體系的火砲裝備，主要配置於野戰砲兵單位，以火力支援步兵推進、封鎖道路，並在攻城作戰中攻擊敵方陣地。",
+        "portrait": "portraits/breechcannon.jpg"
+      },
+      "dossierUrl": "dossiers/1913-cec964084b.json"
+    },
+    {
+      "id": "1912-第一次巴爾干戰爭",
+      "added": "2026-11-04T06:07:20.805Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 22.94,
+        "lat": 40.64
+      },
+      "battle": {
+        "y": 1912,
+        "m": 10,
+        "name": "第一次巴爾干戰爭",
+        "theater": "薩洛尼卡與馬其頓戰線",
+        "brief": "第一次巴爾干戰爭於1912年10月爆發，巴爾干聯盟在馬其頓與色雷斯戰線進攻鄂圖曼帝國，戰事延續至12月。聯盟由保加利亞、塞爾維亞、希臘及蒙內哥羅組成。鄂圖曼軍隊使用惠氏步槍（Winchester Model 1873），此槍於1873年正式列裝，是當時已服役的槓桿式後膛步槍。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍是美軍於1873年列裝的槓桿式後膛步槍，屬早期制式步兵武器；鄂圖曼軍隊亦採用此型，將其納入陸軍步槍系統。",
+        "portrait": "portraits/winchester.jpg"
+      }
+    },
+    {
+      "id": "1911-辛亥革命",
+      "added": "2026-11-04T06:07:21.790Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.31,
+        "lat": 30.52
+      },
+      "battle": {
+        "y": 1911,
+        "m": 10,
+        "name": "辛亥革命",
+        "theater": "武昌",
+        "brief": "辛亥革命於一九一一年十月十日在武昌爆發起義，各省陸續宣布獨立或響應革命，清廷統治根基迅速動搖。英國皇家海軍於一八七七年列裝Thornycroft 27節型魚雷艇，HMS Viper為其代表，專門執行高速近海反艦與魚雷突擊任務，是英國早期海上突擊兵力。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇編入英國皇家海軍水面艦隊，定位為近海快速反艦與巡邏力，以輕型水面艦艇承擔突擊任務，隸屬沿岸防衛與艦隊支援體系。",
+        "portrait": "portraits/torpedoboat.jpg"
+      }
     }
   ]
 }
