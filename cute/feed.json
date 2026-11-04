@@ -35365,6 +35365,86 @@
         "layer": "sea",
         "history": "魚雷艇編入英國皇家海軍水面艦隊，定位為近海快速反艦與巡邏力，以輕型水面艦艇承擔突擊任務，隸屬沿岸防衛與艦隊支援體系。",
         "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1911-a1a418ce0a.json"
+    },
+    {
+      "id": "1917-愛沙尼亞解放戰爭",
+      "added": "2026-11-04T21:17:25.716Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 25,
+        "lat": 58.67
+      },
+      "battle": {
+        "y": 1917,
+        "m": 11,
+        "name": "愛沙尼亞解放戰爭",
+        "theater": "愛沙尼亞",
+        "brief": "愛沙尼亞解放戰爭始於一九一七年十一月，愛沙尼亞軍隊與德國占領當局及後來進入的蘇俄部隊在愛沙尼亞境內作戰，戰線亦延伸至鄰近海域與島嶼。英國海軍 Steam ironclad 蒸汽鐵甲艦是當年已列裝的海軍裝備，呈現蒸汽動力裝甲艦的時代背景。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "Steam ironclad 蒸汽鐵甲艦在英國海軍體系中屬蒸汽動力裝甲艦種，憑藉重武裝與裝甲防護擔任艦隊警戒、海上封鎖及沿岸防衛。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/1917-acf09bad76.json"
+    },
+    {
+      "id": "1917-俄國革命",
+      "added": "2026-11-04T21:17:28.211Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30.31,
+        "lat": 59.94
+      },
+      "battle": {
+        "y": 1917,
+        "m": 3,
+        "name": "俄國革命",
+        "theater": "彼得格勒",
+        "brief": "1917年3月，俄國革命首先在彼得格勒爆發，帝國軍隊、臨時政府與革命武裝在城市及各地形成公開衝突。戰事包含街壘、砲擊與兵變；1865年正式列裝的施拿甫步槍（Sharps rifle）曾屬美軍制式步槍，以單發後膛機構提供遠程精射，並用於步兵與守備單位。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍是美軍制式步槍系列的一員，採單發後膛結構，主要配備於步兵單位，負責遠距精確射擊與要點守備，並曾供西部邊防單位使用。",
+        "portrait": "portraits/sharps.jpg"
+      }
+    },
+    {
+      "id": "1913-第二次巴爾干戰爭",
+      "added": "2026-11-04T21:17:53.150Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 21.8,
+        "lat": 41.6
+      },
+      "battle": {
+        "y": 1913,
+        "m": 6,
+        "name": "第二次巴爾干戰爭",
+        "theater": "馬其頓戰線",
+        "brief": "第二次巴爾干戰爭於1913年6月爆發，保加利亞與塞爾維亞、希臘、門塔內哥及羅馬尼亞聯軍交戰，戰線集中於馬其頓與色雷斯；保加利亞軍曾使用別丹步槍（Berdan rifle），此型步槍於1866年即已列裝。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是俄羅斯帝國陸軍的制式步槍，配發於步兵與後備部隊，後來仍見於蘇聯軍方的舊式裝備體系。",
+        "portrait": "portraits/berdan.jpg"
       }
     }
   ]
