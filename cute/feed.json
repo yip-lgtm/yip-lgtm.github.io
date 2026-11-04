@@ -35284,7 +35284,8 @@
         "layer": "land",
         "history": "線膛砲（Muzzle-loading field gun）在德國早期野戰砲兵體系中，主要提供軍隊隨行火力，是地面部隊編制內用於整體火砲支援的裝備之一。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1952-588855acb5.json"
     },
     {
       "id": "1913-二次革命",
