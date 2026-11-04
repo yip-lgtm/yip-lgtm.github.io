@@ -80,6 +80,9 @@ h1, h2, h3, p { margin: 0; }
   border-bottom: 1px solid var(--line);
   padding-bottom: 16px;
 }
+.toc { margin: 8px 0 0; padding-left: 22px; }
+.toc li { margin: 6px 0; }
+.toc a { color: var(--teal); font-weight: 650; }
 .eyebrow {
   letter-spacing: 0.14em;
   text-transform: uppercase;
