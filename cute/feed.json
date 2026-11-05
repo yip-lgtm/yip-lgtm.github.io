@@ -35419,7 +35419,8 @@
         "layer": "land",
         "history": "施拿甫步槍是美軍制式步槍系列的一員，採單發後膛結構，主要配備於步兵單位，負責遠距精確射擊與要點守備，並曾供西部邊防單位使用。",
         "portrait": "portraits/sharps.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1917-2f6a685e6c.json"
     },
     {
       "id": "1913-第二次巴爾干戰爭",
