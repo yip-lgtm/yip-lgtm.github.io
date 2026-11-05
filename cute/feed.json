@@ -35448,6 +35448,87 @@
         "portrait": "portraits/berdan.jpg"
       },
       "dossierUrl": "dossiers/1913-5746c81971.json"
+    },
+    {
+      "id": "1918-大波蘭起義",
+      "added": "2026-11-05T18:41:45.527Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 16.93,
+        "lat": 52.41
+      },
+      "battle": {
+        "y": 1918,
+        "m": 12,
+        "name": "大波蘭起義",
+        "theater": "大波蘭（波茲南地區）",
+        "brief": "大波蘭起義於1918年12月在德國占領下的波茲南及大波蘭地區爆發，波蘭居民與國民軍反抗德國統治。起義方使用包括英國Enfield rifle（恩菲爾德步槍）在內的武器；此型號自1858年列裝，屬當時英軍步兵制式步槍。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "恩菲爾德步槍自1858年起作為英國陸軍制式步槍，配置於步兵班排，構成步兵分隊的主要火力，並長期擔任英軍步兵主力武器。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      },
+      "dossierUrl": "dossiers/1918-4b080f9c0f.json"
+    },
+    {
+      "id": "1917-第一次護法戰爭",
+      "added": "2026-11-05T18:41:53.009Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.26,
+        "lat": 23.13
+      },
+      "battle": {
+        "y": 1917,
+        "m": 6,
+        "name": "第一次護法戰爭",
+        "theater": "廣州",
+        "brief": "中文維基戰爭列表所列的第一次護法戰爭，由1917年北京府院之爭與張勳復辟引發，護法一方在廣州成立軍政府，並與北洋軍閥軍隊交戰。英國海軍1862年已列裝的Ironclad鐵甲艦，是重裝甲水面艦艇的重要類型，可用於海上封鎖與岸防支援。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是英國皇家海軍的重裝甲水面艦艇類型，1862年已列裝，置於海軍主力序列，主要承擔遠海巡弋、海上封鎖與岸防支援任務，並參與艦隊作戰。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1917-e8a9876a3e.json"
+    },
+    {
+      "id": "1918-協約國武裝干涉俄國內戰",
+      "added": "2026-11-05T18:42:37.677Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 40.54,
+        "lat": 64.54
+      },
+      "battle": {
+        "y": 1918,
+        "m": 3,
+        "name": "協約國武裝干涉俄國內戰",
+        "theater": "北俄阿爾漢格爾斯克戰線",
+        "brief": "協約國武裝干涉俄國內戰始於1918年，英、法、日、美等國在北俄港口、南俄航線與高加索等地支援白軍，與布爾什維克政權交戰；阿爾漢格爾斯克是北俄介入與補給的重要港口。美軍同期陸軍裝備中，1860年服役的加特林機槍（Gatling gun）屬固定與要點防衛火力。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍是美國陸軍早期制式速射武器，1860年列裝，常置於固定陣位、要塞或車載平台，負責對遠距離目標提供持續火力支援。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1918-c22790638e.json"
     }
   ]
 }
