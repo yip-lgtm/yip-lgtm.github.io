@@ -35529,6 +35529,84 @@
         "portrait": "portraits/gatling.jpg"
       },
       "dossierUrl": "dossiers/1918-c22790638e.json"
+    },
+    {
+      "id": "1918-立陶宛獨立戰爭",
+      "added": "2026-11-06T21:28:36.785Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 25.28,
+        "lat": 54.69
+      },
+      "battle": {
+        "y": 1918,
+        "m": 2,
+        "name": "立陶宛獨立戰爭",
+        "theater": "立陶宛",
+        "brief": "立陶宛獨立戰爭是維基戰爭列表所列的獨立衝突，1918年立陶宛宣布獨立後，波蘭與白俄等勢力先後介入，戰事延續至國家地位確立。1840年已列裝法軍的雷管步槍（Percussion rifle）屬制式步兵武器，符合此時地面作戰的裝備年代。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管步槍（Percussion rifle）在1840年列裝法軍後，屬陸軍步兵制式槍械，主要供步兵執行中遠距離射擊，構成法軍地面部隊的基礎步兵火力。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1918-波烏戰爭",
+      "added": "2026-11-06T21:28:45.139Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 24,
+        "lat": 49.5
+      },
+      "battle": {
+        "y": 1918,
+        "m": 11,
+        "name": "波烏戰爭",
+        "theater": "東加利西亞",
+        "brief": "波烏戰爭於1918年11月在東加利西亞爆發，波蘭軍與西烏克蘭人民共和國軍為爭奪當地控制權交戰，戰線延伸至利沃夫周邊。線膛砲（Muzzle-loading field gun）是德軍於1850年列裝的正式型號，屬野戰砲兵，負責在陸戰中支援步兵作戰，並為地面部隊提供火力支援。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲自1850年起納入德國陸軍野戰砲兵序列，屬於地面火力體系的支援武器，主要配合步兵部隊作戰，並參與前線砲兵部署。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1918-阿塞拜疆-亞美尼亞戰爭",
+      "added": "2026-11-06T21:29:25.529Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 46,
+        "lat": 39.5
+      },
+      "battle": {
+        "y": 1918,
+        "m": 2,
+        "name": "阿塞拜疆-亞美尼亞戰爭",
+        "theater": "南高加索",
+        "brief": "阿塞拜疆-亞美尼亞戰爭於1918年在外高加索爆發，阿塞拜疆民主共和國與亞美尼亞方面的武裝在納戈爾諾-卡拉巴赫及贊格祖爾一帶交戰。同期英國海軍已列裝魚雷艇（Torpedo boat，1877年），其角色是快速近海襲擊，供偵察、追擊與海上攔截。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇在英國皇家海軍體系中屬輕型近海快速襲擊艦艇，負責前沿偵察、追擊敵艦與巡邏高危海域，並可掩護登陸或協助主力艦隊作戰。",
+        "portrait": "portraits/torpedoboat.jpg"
+      }
     }
   ]
 }
