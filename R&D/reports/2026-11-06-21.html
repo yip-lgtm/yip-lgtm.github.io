@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI 內容回灌訓練集：崩潰門檻、修正法與一個已量化的臨界點 · 科研哨兵</title>
+<meta name="theme-color" content="#000000" />
+<meta property="og:title" content="AI 內容回灌訓練集：崩潰門檻、修正法與一個已量化的臨界點 · 科研哨兵" />
+<meta property="og:type" content="website" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#fff}
+.wrap{max-width:42rem;margin:0 auto;padding:24px 16px 80px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;margin:0}
+h1{font-size:32px;margin:6px 0 8px;letter-spacing:-.03em;font-weight:600;line-height:1.2}
+h2{font-size:20px;margin:0 0 4px;letter-spacing:-.01em}
+h3{font-size:15px;margin:28px 0 8px;color:#d8d8d8;font-weight:600;letter-spacing:.02em}
+.lead,.en{color:#9a9a9a;font-size:14px;line-height:1.65}
+.card{border:1px solid #222;border-radius:18px;padding:18px;margin:14px 0;background:#0c0c0c;display:block;text-decoration:none}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.meta{font-size:12px;color:#6e6e6e;margin:2px 0 0}
+.tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #2a2a2a;border-radius:999px;padding:2px 9px;color:#8a8a8a;margin-right:6px}
+.tag.ok{border-color:#1e4d2b;color:#5fd08a}
+.tag.warn{border-color:#4a3a1e;color:#d0a85f}
+.tag.bad{border-color:#4d1e1e;color:#d05f5f}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chip{border:1px solid #222;border-radius:14px;padding:12px;background:#0c0c0c}
+.chip b{display:block;font-size:12px;color:#8a8a8a;font-weight:500;margin-bottom:3px}
+.rule{height:1px;background:#1c1c1c;margin:28px 0}
+ol,ul{padding-left:1.15em;margin:10px 0}
+li{margin:7px 0;line-height:1.7;font-size:15px}
+p{line-height:1.75;margin:10px 0}
+strong{color:#fff;font-weight:600}
+em{color:#b8b8b8}
+code{background:#161616;border:1px solid #242424;border-radius:6px;padding:1px 6px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:14px;overflow:auto}
+pre code{background:none;border:0;padding:0}
+blockquote{border-left:2px solid #333;margin:12px 0;padding:2px 0 2px 14px;color:#aaa}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px}
+th,td{border:1px solid #242424;padding:7px 9px;text-align:left;line-height:1.5}
+th{background:#111;color:#cfcfcf;font-weight:600}
+td:nth-child(n+2){font-variant-numeric:tabular-nums}
+hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
+.src{font-size:12.5px;line-height:1.6;color:#9a9a9a;word-break:break-word}
+.src a{color:#7fb0ff;text-decoration:none}
+.src a:hover{text-decoration:underline}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(0,0,0,.94);backdrop-filter:blur(8px);border-top:1px solid #1e1e1e;display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
+.nav a{color:#888;text-decoration:none;padding:6px}
+.nav a.on{color:#fff}
+@media(max-width:480px){.chips{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="kicker">報告 / REPORT · 2026-11-06-21</p>
+<h1>AI 內容回灌訓練集：崩潰門檻、修正法與一個已量化的臨界點</h1>
+<p class="lead">When AI Text Feeds Back Into Training: Collapse Thresholds, Fixes, and a Measured Tipping Point</p>
+<p class="meta">2026-11-06 21:00 UTC · 1060 中文字 · 8232 bytes · 6 來源 · 未評</p>
+<div class="rule"></div>
+<h3>主題 / Topic</h3>
+<p>本報告回答：AI 生成的文字回到網絡、再被用來訓練下一代模型，會否愈學愈笨？答案不是必然，而是有可量化的門檻與條件——崩潰與否取決於真實資料有沒有被保留，以及一個比例臨界點。本文給出同場景對照的實驗數字、崩潰的因果鏈，以及對資訊生態與算力開支的直接代價。</p>
+<p>This report asks whether AI-generated text returning to the web and then training the next model generation makes models progressively dumber. The answer is conditional, with measurable thresholds: collapse depends on whether real data is preserved and on a ratio tipping point. It gives same-setting experimental numbers, the causal chain, and the direct cost to the information ecosystem and to compute budgets.</p>
+<h3>核心發現 / Key Findings</h3>
+<ul>
+<li><strong>【機制】崩潰先吃掉尾巴，不是先令模型全面變笨</strong>：低概率事件因取樣機率低而最先消失——某狀態機率 q ≤ 1/M（樣本量 M）時期望出現 qM &lt; 1 次，取樣後原分佈支撐集收縮，模型於是自信重複主流，稀有但真實的知識最先沒了。替代解釋已排除：不是首輪合成資料品質差（改變第一輪訓練量，各代曲線無質變），也不是模型變大就修好（更大模型反而放大崩潰）。</li>
+</ul>
+<p>Collapse removes the tails first rather than making models uniformly dumber: a state with probability q ≤ 1/M is expected qM &lt; 1 times, so sampling shrinks the support and rare-but-true knowledge vanishes first. Alternative explanations are excluded — not a bad first synthetic dataset, and bigger models do not fix it.</p>
+<ul>
+<li><strong>【量化】保留真實資料可完全避免崩潰，同場景對照是 −0.07 對 +0.58</strong>：Gerstgrasser 等在 GPT-2 (9M) 測試，第 1 代交叉熵 1.82；第 4 代累加真實與合成資料為 1.74（−0.07），改成純合成替換則 2.39（+0.58），第 10 代替換升至 2.91（+1.09）；Llama-2 (126M) 為 1.71 → 1.59 對 2.23。取樣溫度 0.3 時第 10 代替換達 9.85（+8.04），遠甚於溫度 1。同一結論在擴散模型（GEOM-Drugs，下抽 4 萬構象）與 VAE 影像生成上成立。</li>
+</ul>
+<p>Keeping real data avoids collapse entirely: GPT-2 (9M) cross-entropy 1.82 at t=1, then 1.74 (accumulate) versus 2.39 (replace) at t=4 and 2.91 at t=10; at temperature 0.3 the t=10 replacement reaches 9.85.</p>
+<ul>
+<li><strong>【量化】崩潰不需要大量合成資料，1% 已鎖死 scaling law</strong>：Dohmatob 等證明合成資料只佔訓練集 1% 時，更大數據集不再提升性能；其隨機投影近似下更大模型會放大崩潰。現實更急：Pangram Labs 測得 2026 年 6 月網絡語料 27.5% token 被判為 AI 生成（兩年前 10.1%），8 月升至 31.1%。</li>
+</ul>
+<p>Collapse needs no flood of synthetic data: 1% of the corpus is enough to stop larger datasets from helping, and larger models can amplify it. In the wild, Pangram Labs measures 27.5% of June 2026 web tokens as AI-generated, up from 10.1% two years earlier and 31.1% by August.</p>
+<ul>
+<li><strong>【敏感度】門檻隨人類預算、取樣溫度與評估方式移動，結論有明確範圍</strong>：WildAI 預訓練 800 個模型（19.9M–973M 參數）顯示，數據饑餓模型加 AI token 初期降低人類文本損失但效益迅速飽和並反轉為傷害，人類預算充足者則幾乎立刻變差；在 22.3% AI 比例的混合驗證集上，95.5% 的有害實驗看起來正常。結論成立於「真實資料被替換」且任務依賴稀有知識；保留真實資料時結論翻正。</li>
+</ul>
+<p>The threshold moves with human budget, sampling temperature and evaluation design: across 800 models, AI tokens reverse from benefit to harm for data-starved models, and on a mixed validation set at 22.3% AI share, 95.5% of harmful runs look normal.</p>
+<h3>潛在影響 / Potential Impact</h3>
+<ul>
+<li><strong>【推論】合成內容正在變成算力稅</strong>：以 2026 年 8 月 31.1% 的 AI 比例，直接用未過濾網絡語料訓練要 1.6 倍算力才追得上只用人類子集（20 tokens/param），差距隨人類預算擴大；按預測比例，2027 與 2028 年底將升至 2.1 倍與 3.0 倍。</li>
+</ul>
+<p>Synthetic text is becoming a compute tax: at August 2026's 31.1% AI share, training on unfiltered web text needs 1.6× the compute of training on its human subset, rising to 2.1× and 3.0× by the ends of 2027 and 2028.</p>
+<ul>
+<li><strong>具體案例：WildAI 審計顯示現有品質過濾正在放大污染</strong>：Pangram Labs 公開 83B token 語料、800 個模型與程式碼（github.com/pangramlabs/WildAI）；審計發現 FineWeb 讓 AI 文件以 2.3 倍機率入選，DCLM 流程更達 9.8 倍，故建議人類與 AI 文本分開驗證。</li>
+</ul>
+<p>A concrete case: Pangram Labs released the 83B-token WildAI corpus and all 800 models; FineWeb keeps AI documents 2.3× as often as human ones and DCLM 9.8×.</p>
+<ul>
+<li><strong>具體案例：高風險語境的深偽多數無標籤</strong>：跨 Instagram、TikTok、X、YouTube 審計（10,722 帖、500 帖專家標註、控制上傳 10 款工具）發現，系統性風險語境中專家認定的深偽只有 33% 帶平台自動標籤，中位觀看量 16 萬次；帶標準 AI 溯源訊號的上傳只有 61% 被標籤，平台常在事後移除訊號。</li>
+</ul>
+<p>A concrete case: across Instagram, TikTok, X and YouTube, only 33% of expert-identified deepfakes in systemic-risk contexts carried a platform-applied AI label, at a median 160,000 views.</p>
+<ul>
+<li><strong>【推論】損失落在稀有但要緊的那一端</strong>：罕見疾病、邊界工況、少數語言文獻正落在被移除的尾部；開源社群亦受直接衝擊——294 個倉庫、逾 200 萬個 PR/issue 的時間序列分析顯示，一次性貢獻者的合併率相對反事實下跌 18.18%。</li>
+</ul>
+<p>The loss lands on the rare-but-important: rare diseases, edge-case conditions and minority-language literature sit in the tail that collapse removes; one-time open-source contributors' merge rates fell 18.18% against the counterfactual.</p>
+<h3>來源依據 / Sources</h3>
+<ul>
+<li>Nature（Shumailov 等）— AI models collapse when trained on recursively generated data — 2024-07-24 — <a href="https://www.nature.com/articles/s41586-024-07566-y" target="_blank" rel="noopener">https://www.nature.com/articles/s41586-024-07566-y</a></li>
+<li>arXiv（Gerstgrasser 等）— Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data — 2024-04-29 — <a href="https://arxiv.org/abs/2404.01413" target="_blank" rel="noopener">https://arxiv.org/abs/2404.01413</a></li>
+<li>arXiv（Dohmatob 等）— Strong Model Collapse — 2024-10-08 — <a href="https://arxiv.org/abs/2410.04840" target="_blank" rel="noopener">https://arxiv.org/abs/2410.04840</a></li>
+<li>arXiv（Russell 等，Pangram Labs）— How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text — 2026-09-30 — <a href="https://arxiv.org/abs/2609.40295" target="_blank" rel="noopener">https://arxiv.org/abs/2609.40295</a></li>
+<li>arXiv（Afroz 等）— AI Slop is DDoSing Open Source — 2026-07-04 — <a href="https://arxiv.org/abs/2607.04003" target="_blank" rel="noopener">https://arxiv.org/abs/2607.04003</a></li>
+<li>arXiv（Rijsbosch 等）— Drowning in AI Slop: How Social Media Platforms Label AI and Deepfake Content — 2026-09-29 — <a href="https://arxiv.org/abs/2609.38571" target="_blank" rel="noopener">https://arxiv.org/abs/2609.38571</a></li>
+</ul>
+<h3>簡評 / Commentary</h3>
+<p>可信度：高。三個獨立團隊在各自設定下重現「尾巴先消失」，Nature 論文經同行評審並有 2025-03-21 作者更正；WildAI 與兩份審計屬預印本，數字應視為待複核。爭議點在「崩潰是否不可避免」：2024 年後的累加與原點存檔結果顯示可逆，但 WildAI 顯示真實網絡的混合污染更難靠過濾解決。本題未找到針對醫療或科學檢索等高風險下游的崩潰量化實測，該缺口未以推測填補。下一步應追蹤公開語料的 AI 比例與過濾器選項。</p>
+<p>Confidence is high on the core mechanism: three independent groups reproduce tail-first loss, and the Nature paper is peer reviewed with a published author correction. The WildAI study and both audits are preprints and should be treated as unreplicated. The contested point is whether collapse is inevitable, since accumulation and origin-archive results post-2024 show it is avoidable, while wild-web contamination is harder to filter. No quantified collapse measurement for high-stakes downstream systems was found, and no guess is substituted for it.</p>
+<div class="rule"></div>
+<p><a href="/R&amp;D/reports/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回報告索引</a></p>
+<p class="meta" style="margin-top:30px">自動建置於 2026-11-06-21 UTC · 來源：research-sentinel/reports/2026-11-06-21.md</p>
+</div>
+<nav class="nav"><a href="/R&amp;D/">研究</a><a href="/R&amp;D/reports/" class="on">報告</a><a href="/R&amp;D/knowledge/">知識庫</a></nav>
+</body>
+</html>

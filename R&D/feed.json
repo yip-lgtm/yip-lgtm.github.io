@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-11-05-21",
+ "generated_utc": "2026-11-06-21",
  "reports": [
+  {
+   "stamp": "2026-11-06-21",
+   "title_zh": "AI 內容回灌訓練集：崩潰門檻、修正法與一個已量化的臨界點",
+   "title_en": "When AI Text Feeds Back Into Training: Collapse Thresholds, Fixes, and a Measured Tipping Point",
+   "url": "/R&D/reports/2026-11-06-21.html",
+   "cjk": 1060,
+   "bytes": 8232,
+   "sources": 6,
+   "gate_pass": false
+  },
   {
    "stamp": "2026-11-05-21",
    "title_zh": "MCP 工具描述投毒已由理論轉為在野攻擊：代理開發環境的信任邊界究竟由誰承擔",
