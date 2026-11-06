@@ -3,11 +3,11 @@
  "reports": [
   {
    "stamp": "2026-11-06-21",
-   "title_zh": "AI 內容回灌訓練集：崩潰門檻、修正法與一個已量化的臨界點",
-   "title_en": "When AI Text Feeds Back Into Training: Collapse Thresholds, Fixes, and a Measured Tipping Point",
+   "title_zh": "AI 內容回灌訓練集：崩潰門檻與一個已量化的臨界點",
+   "title_en": "AI Text Feeding Back Into Training: Collapse Thresholds and a Measured Tipping Point",
    "url": "/R&D/reports/2026-11-06-21.html",
-   "cjk": 1060,
-   "bytes": 8232,
+   "cjk": 1037,
+   "bytes": 7742,
    "sources": 6,
    "gate_pass": false
   },
