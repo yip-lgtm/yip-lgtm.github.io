@@ -4,10 +4,10 @@
   {
    "stamp": "2026-11-05-21",
    "title_zh": "MCP 工具描述投毒已由理論轉為在野攻擊：代理開發環境的信任邊界究竟由誰承擔",
-   "title_en": "MCP Tool Poisoning Is Now an Operational Attack: Who Actually Owns the Agent Trust Boundary?",
+   "title_en": "MCP Tool Poisoning Is Now an Operational Attack: Who Owns the Agent Trust Boundary?",
    "url": "/R&D/reports/2026-11-05-21.html",
-   "cjk": 995,
-   "bytes": 8466,
+   "cjk": 996,
+   "bytes": 8346,
    "sources": 10,
    "gate_pass": true
   },
