@@ -6,8 +6,8 @@
    "title_zh": "AI 內容回灌訓練集：崩潰門檻與一個已量化的臨界點",
    "title_en": "AI Text Feeding Back Into Training: Collapse Thresholds and a Measured Tipping Point",
    "url": "/R&D/reports/2026-11-06-21.html",
-   "cjk": 1037,
-   "bytes": 7742,
+   "cjk": 1000,
+   "bytes": 7629,
    "sources": 6,
    "gate_pass": false
   },
@@ -640,6 +640,12 @@
    "title": "AI 幻覺套件名作為供應鏈攻擊面",
    "url": "/R&D/knowledge/ai-hallucinated-package-attack-surface.html",
    "bytes": 1103
+  },
+  {
+   "slug": "ai-model-collapse-synthetic-data",
+   "title": "模型崩壞與合成資料回灌：門檻、機制與量化代價",
+   "url": "/R&D/knowledge/ai-model-collapse-synthetic-data.html",
+   "bytes": 5723
   },
   {
    "slug": "ai-package-hallucination-supply-chain",

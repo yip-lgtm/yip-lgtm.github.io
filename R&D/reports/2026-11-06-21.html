@@ -56,18 +56,18 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <p class="kicker">報告 / REPORT · 2026-11-06-21</p>
 <h1>AI 內容回灌訓練集：崩潰門檻與一個已量化的臨界點</h1>
 <p class="lead">AI Text Feeding Back Into Training: Collapse Thresholds and a Measured Tipping Point</p>
-<p class="meta">2026-11-06 21:00 UTC · 1037 中文字 · 7742 bytes · 6 來源 · 未評</p>
+<p class="meta">2026-11-06 21:00 UTC · 1000 中文字 · 7629 bytes · 6 來源 · 未評</p>
 <div class="rule"></div>
 <h3>主題 / Topic</h3>
-<p>AI 生成的文字回到網絡、再被用來訓練下一代模型，會否愈學愈笨？答案不是必然，而是有可量化的條件：崩潰與否取決於真實資料有沒有被保留，以及一個比例臨界點。本文給出同場景對照的實驗數字、崩潰的因果鏈，及其對資訊生態與算力開支的直接代價。</p>
+<p>AI 生成的文字回到網絡、再用來訓練下一代模型，會否愈學愈笨？答案不是必然：崩潰與否取決於真實資料有沒有被保留，以及一個比例臨界點。本文給出同場景對照數字、崩潰因果鏈，及對算力開支與資訊生態的直接代價。</p>
 <p>Does AI text returning to the web and then training the next generation make models dumber? Not inevitably: collapse depends on whether real data is preserved and on a ratio threshold. Below are same-setting numbers, the causal chain, and the cost to compute budgets and the information ecosystem.</p>
 <h3>核心發現 / Key Findings</h3>
 <ul>
-<li><strong>【機制】崩潰先吃掉尾巴，不是先令模型全面變笨</strong>：低概率事件因取樣機率低而最先消失——某狀態機率 q ≤ 1/M（樣本量 M）時期望出現次數 qM ≤ 1，即多數情況抽不中；取樣後原分佈支撐集收縮，模型於是自信重複主流，稀有但真實的知識最先沒了。替代解釋已排除：不是首輪合成資料品質差（改變第一輪訓練量，各代曲線無質變），也不是模型變大就修好（更大模型反而放大崩潰）。</li>
+<li><strong>【機制】崩潰先吃掉尾巴，不是先令模型全面變笨</strong>：低概率事件因取樣機率低而最先消失——某狀態機率 q ≤ 1/M（樣本量 M）時期望出現次數 qM ≤ 1，多數情況抽不中；取樣後分佈支撐集收縮，模型自信重複主流，稀有但真實的知識最先沒了。替代解釋已排除：不是首輪合成資料品質差（改第一輪訓練量，各代曲線無質變），也不是模型變大就修好（更大模型反而放大崩潰）。</li>
 </ul>
 <p>Collapse removes the tails first, not overall capability: a state with probability q ≤ 1/M is expected qM ≤ 1 times, so sampling shrinks the support and rare-but-true knowledge vanishes first. Not a bad first synthetic dataset, and bigger models do not fix it.</p>
 <ul>
-<li><strong>【量化】保留真實資料可完全避免崩潰，同場景對照是 −0.07 對 +0.58</strong>：Gerstgrasser 等在 GPT-2 (9M) 測試，第 1 代交叉熵 1.82；第 4 代累加真實與合成資料為 1.74（−0.07），改成純合成替換則 2.39（+0.58），第 10 代替換升至 2.91（+1.09）；Llama-2 (126M) 為 1.71 → 1.59 對 2.23。取樣溫度 0.3 時第 10 代替換達 9.85（+8.04），遠甚於溫度 1。同一結論在擴散模型（GEOM-Drugs，下抽 4 萬構象）上成立。</li>
+<li><strong>【量化】保留真實資料可完全避免崩潰，同場景對照是 −0.07 對 +0.58</strong>：Gerstgrasser 等在 GPT-2 (9M) 測試，第 1 代交叉熵 1.82；第 4 代累加真實與合成資料為 1.74（−0.07），改成純合成替換則 2.39（+0.58），第 10 代替換升至 2.91（+1.09）；Llama-2 (126M) 為 1.71 → 1.59 對 2.23。取樣溫度 0.3 時第 10 代替換達 9.85（+8.04），遠甚於溫度 1。同一結論在擴散模型（GEOM-Drugs，下抽 4 萬構象）成立。</li>
 </ul>
 <p>Keeping real data avoids collapse: GPT-2 (9M) cross-entropy 1.82 at t=1, then 1.74 (accumulate) versus 2.39 (replace) at t=4 and 2.91 at t=10; at temperature 0.3 the t=10 replacement reaches 9.85.</p>
 <ul>
@@ -75,24 +75,24 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 </ul>
 <p>Collapse needs no flood of synthetic data: 1% of the corpus is enough to stop larger datasets from helping, and bigger models can amplify it. In the wild, 27.5% of June 2026 web tokens were AI-generated, up from 10.1% two years earlier.</p>
 <ul>
-<li><strong>【敏感度】門檻隨人類預算、取樣溫度與評估方式移動，結論有明確範圍</strong>：WildAI 預訓練 800 個模型（19.9M–973M 參數）顯示，數據饑餓模型加 AI token 初期降低人類文本損失但效益迅速飽和並反轉為傷害；人類預算充足者則幾乎立刻變差。在 22.3% AI 比例的混合驗證集上，95.5% 的有害實驗看起來正常。結論成立於「真實資料被替換」且任務依賴稀有知識；保留真實資料時結論翻正。</li>
+<li><strong>【敏感度】門檻隨人類預算、取樣溫度與評估方式移動，結論有明確範圍</strong>：WildAI 預訓練 800 個模型（19.9M–973M 參數）顯示，數據饑餓模型加 AI token 初期降低人類文本損失但效益迅速飽和並反轉為傷害；人類預算充足者幾乎立刻變差。在 22.3% AI 比例的混合驗證集上，95.5% 的有害實驗看起來正常。結論成立於「真實資料被替換」且任務依賴稀有知識；保留真實資料時結論翻正。</li>
 </ul>
 <p>The threshold moves with human budget, sampling temperature and evaluation design: across 800 models AI tokens reverse from benefit to harm, and on a mixed validation set at 22.3% AI share, 95.5% of harmful runs look normal.</p>
 <h3>潛在影響 / Potential Impact</h3>
 <ul>
-<li><strong>【推論】合成內容正在變成算力稅</strong>：以 2026 年 8 月 31.1% 的 AI 比例，直接用未過濾網絡語料訓練要 1.6 倍算力才追得上只用人類子集（20 tokens/param），差距隨人類預算擴大；按預測比例，2027 與 2028 年底將升至 2.1 倍與 3.0 倍。</li>
+<li><strong>【推論】合成內容正在變成算力稅</strong>：以 2026 年 8 月 31.1% 的 AI 比例，直接用未過濾網絡語料訓練要 1.6 倍算力才追得上只用人類子集（20 tokens/param），差距隨人類預算擴大；按預測比例，2027、2028 年底升至 2.1 倍與 3.0 倍。</li>
 </ul>
 <p>Synthetic text is becoming a compute tax: at August 2026's 31.1% AI share, training on unfiltered web text needs 1.6× the compute of training on its human subset, rising to 3.0× by 2028.</p>
 <ul>
-<li><strong>具體案例：現有品質過濾正在放大污染</strong>：Pangram Labs 公開 83B token 語料與 800 個模型；審計發現 FineWeb 讓 AI 文件以 2.3 倍機率入選，DCLM 流程更達 9.8 倍，故建議人類與 AI 文本分開驗證。</li>
+<li><strong>具體案例：現有品質過濾正在放大污染</strong>：Pangram Labs 公開 83B token 語料與 800 個模型；審計發現 FineWeb 讓 AI 文件以 2.3 倍機率入選，DCLM 達 9.8 倍，故建議人類與 AI 文本分開驗證。</li>
 </ul>
 <p>A concrete case: Pangram Labs released the 83B-token WildAI corpus and 800 models; FineWeb keeps AI documents 2.3× as often as human ones, DCLM 9.8×.</p>
 <ul>
-<li><strong>具體案例：高風險語境的深偽多數無標籤</strong>：跨 Instagram、TikTok、X、YouTube 審計（10,722 帖、500 帖專家標註、控制上傳 10 款工具）發現，系統性風險語境中專家認定的深偽只有 33% 帶平台自動標籤，中位觀看量 16 萬次；帶標準 AI 溯源訊號的上傳只有 61% 被標籤，平台常在事後移除訊號。</li>
+<li><strong>具體案例：高風險語境的深偽多數無標籤</strong>：跨 Instagram、TikTok、X、YouTube 審計（10,722 帖、500 帖專家標註、控制上傳 10 款工具）發現，系統性風險語境中專家認定的深偽只有 33% 帶平台自動標籤，中位觀看量 16 萬次；帶標準 AI 溯源訊號的上傳僅 61% 被標籤，平台常在事後移除訊號。</li>
 </ul>
 <p>A concrete case: across Instagram, TikTok, X and YouTube, only 33% of expert-identified deepfakes in systemic-risk contexts carried a platform-applied AI label, at a median 160,000 views.</p>
 <ul>
-<li><strong>【推論】損失落在稀有但要緊的那一端</strong>：罕見疾病、邊界工況、少數語言文獻正落在被移除的尾部；開源社群亦受直接衝擊——294 個倉庫、逾 200 萬個 PR/issue 的時間序列分析顯示，一次性貢獻者的合併率相對反事實下跌 18.18%。</li>
+<li><strong>【推論】損失落在稀有但要緊的那一端</strong>：罕見疾病、邊界工況、少數語言文獻正落在被移除的尾部；開源社群亦受衝擊——294 個倉庫、逾 200 萬個 PR/issue 的時間序列分析顯示，一次性貢獻者合併率相對反事實下跌 18.18%。</li>
 </ul>
 <p>The loss lands on the rare-but-important: rare diseases and minority-language literature sit in the removed tail; one-time open-source contributors' merge rates fell 18.18% against the counterfactual.</p>
 <h3>來源依據 / Sources</h3>
@@ -105,7 +105,7 @@ hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
 <li>arXiv（Rijsbosch 等）— Drowning in AI Slop: How Social Media Platforms Label AI and Deepfake Content — 2026-09-29 — <a href="https://arxiv.org/abs/2609.38571" target="_blank" rel="noopener">https://arxiv.org/abs/2609.38571</a></li>
 </ul>
 <h3>簡評 / Commentary</h3>
-<p>可信度：高。三個獨立團隊在各自設定下重現「尾巴先消失」，Nature 論文經同行評審並有 2025-03-21 作者更正；WildAI 與兩份審計屬預印本，數字應視為待複核。爭議點在「崩潰是否不可避免」：2024 年後的累加與原點存檔結果顯示可逆，但 WildAI 顯示真實網絡的混合污染更難靠過濾解決。本題未找到針對醫療或科學檢索等高風險下游的崩潰量化實測，該缺口未以推測填補。</p>
+<p>可信度：高。三個獨立團隊在各自設定下重現「尾巴先消失」，Nature 論文經同行評審並有 2025-03-21 作者更正；WildAI 與兩份審計屬預印本，數字待複核。爭議點在「崩潰是否不可避免」：2024 年後的累加與原點存檔結果顯示可逆，但 WildAI 顯示真實網絡混合污染更難靠過濾解決。本題未找到醫療或科學檢索等高風險下游的崩潰量化實測，該缺口未以推測填補。</p>
 <p>Confidence is high on the mechanism: three independent groups reproduce tail-first loss, and the Nature paper is peer reviewed with a published author correction. The WildAI study and both audits are preprints and should be treated as unreplicated. Whether collapse is inevitable remains contested — accumulation results show it is avoidable, while wild-web contamination is harder to filter. No quantified collapse measurement for high-stakes downstream systems was found, and no guess is substituted for it.</p>
 <p>生命狀態：剩餘 99 小時，等級 L17</p>
 <div class="rule"></div>
