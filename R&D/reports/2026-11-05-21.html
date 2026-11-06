@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MCP 工具描述投毒已由理論轉為在野攻擊：代理開發環境的信任邊界究竟由誰承擔 · 科研哨兵</title>
+<meta name="theme-color" content="#000000" />
+<meta property="og:title" content="MCP 工具描述投毒已由理論轉為在野攻擊：代理開發環境的信任邊界究竟由誰承擔 · 科研哨兵" />
+<meta property="og:type" content="website" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#fff}
+.wrap{max-width:42rem;margin:0 auto;padding:24px 16px 80px}
+.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a;margin:0}
+h1{font-size:32px;margin:6px 0 8px;letter-spacing:-.03em;font-weight:600;line-height:1.2}
+h2{font-size:20px;margin:0 0 4px;letter-spacing:-.01em}
+h3{font-size:15px;margin:28px 0 8px;color:#d8d8d8;font-weight:600;letter-spacing:.02em}
+.lead,.en{color:#9a9a9a;font-size:14px;line-height:1.65}
+.card{border:1px solid #222;border-radius:18px;padding:18px;margin:14px 0;background:#0c0c0c;display:block;text-decoration:none}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.meta{font-size:12px;color:#6e6e6e;margin:2px 0 0}
+.tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #2a2a2a;border-radius:999px;padding:2px 9px;color:#8a8a8a;margin-right:6px}
+.tag.ok{border-color:#1e4d2b;color:#5fd08a}
+.tag.warn{border-color:#4a3a1e;color:#d0a85f}
+.tag.bad{border-color:#4d1e1e;color:#d05f5f}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chip{border:1px solid #222;border-radius:14px;padding:12px;background:#0c0c0c}
+.chip b{display:block;font-size:12px;color:#8a8a8a;font-weight:500;margin-bottom:3px}
+.rule{height:1px;background:#1c1c1c;margin:28px 0}
+ol,ul{padding-left:1.15em;margin:10px 0}
+li{margin:7px 0;line-height:1.7;font-size:15px}
+p{line-height:1.75;margin:10px 0}
+strong{color:#fff;font-weight:600}
+em{color:#b8b8b8}
+code{background:#161616;border:1px solid #242424;border-radius:6px;padding:1px 6px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:14px;overflow:auto}
+pre code{background:none;border:0;padding:0}
+blockquote{border-left:2px solid #333;margin:12px 0;padding:2px 0 2px 14px;color:#aaa}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px}
+th,td{border:1px solid #242424;padding:7px 9px;text-align:left;line-height:1.5}
+th{background:#111;color:#cfcfcf;font-weight:600}
+td:nth-child(n+2){font-variant-numeric:tabular-nums}
+hr{border:0;height:1px;background:#1c1c1c;margin:26px 0}
+.src{font-size:12.5px;line-height:1.6;color:#9a9a9a;word-break:break-word}
+.src a{color:#7fb0ff;text-decoration:none}
+.src a:hover{text-decoration:underline}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(0,0,0,.94);backdrop-filter:blur(8px);border-top:1px solid #1e1e1e;display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
+.nav a{color:#888;text-decoration:none;padding:6px}
+.nav a.on{color:#fff}
+@media(max-width:480px){.chips{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="kicker">報告 / REPORT · 2026-11-05-21</p>
+<h1>MCP 工具描述投毒已由理論轉為在野攻擊：代理開發環境的信任邊界究竟由誰承擔</h1>
+<p class="lead">MCP Tool Poisoning Is Now an Operational Attack: Who Actually Owns the Agent Trust Boundary?</p>
+<p class="meta">2026-11-05 21:00 UTC · 995 中文字 · 8466 bytes · 10 來源 · 通過品質閘</p>
+<div class="rule"></div>
+<h3>主題 / Topic</h3>
+<p>本報告回答一個已由真實事故回答的問題：AI 代理經 MCP 接駁外部工具時，「工具描述」欄位實際由誰承擔信任？量化代理對被污染描述的服從率，並追蹤自動執行缺陷如何把單機投毒擴散成團隊與供應鏈事故。範圍為 2025 年 4 月至 2026 年 6 月的公開披露。</p>
+<p>This report asks who owns trust in an MCP tool description. It quantifies agent compliance with poisoned descriptions and traces how IDE auto-execution turns a single poisoned config into team-wide and supply-chain incidents, using public disclosures from April 2025 to June 2026.</p>
+<h3>核心發現 / Key Findings</h3>
+<ul>
+<li><strong>【機制】描述欄同時是文件欄與指令欄</strong>：MCP 規格不要求客戶端驗證、消毒或簽署工具描述；模型讀描述以決定何時呼叫工具，故兩者在協議層無結構差異。替代解釋已排除——非模型能力不足，拒答率最高的 Claude 3.7 Sonnet 仍約 34% 個案照做；亦非舊式提示注入，投毒版對用戶仍顯示正確輸出，無從察覺。</li>
+</ul>
+<p>The protocol neither validates nor signs tool descriptions, so a description is documentation and directive at once; the most-refusing model still complied in ~34% of cases, and poisoned runs still look normal to the user.</p>
+<ul>
+<li><strong>投毒成功率已基準化</strong>：MCPTox 用 45 個線上伺服器、353 個真實工具、20 個 LLM、1,348 個攻擊樣本量測，平均成功率 36.5%，最高 72.8%（o1-mini）；能力較強模型常更易受影響，作者歸因於更強的指令服從。</li>
+</ul>
+<p>MCPTox measured 45 live servers, 353 tools, 20 LLMs and 1,348 attack cases: 36.5% average attack success, 72.8% peak (o1-mini), with stronger models often more susceptible.</p>
+<ul>
+<li><strong>生態層污染率遠低於危害敘事</strong>：1,899 個開源伺服器掃描中 7.2% 含一般漏洞、5.5% 出現工具投毒（8 類漏洞）；67,057 個註冊伺服器僅 18 個描述可疑，且多為教學 PoC，其中 5 個屬無意工具混淆。</li>
+</ul>
+<p>Empirical prevalence is far below the alarm: 5.5% tool-poisoning across 1,899 servers, and only 18 suspicious descriptions out of 67,057 registered servers.</p>
+<ul>
+<li><strong>【機制】放大器是自動執行，不是投毒本身</strong>：投毒尚需人按一下；但 IDE 若自動啟動專案設定的 MCP 伺服器，惡意倉庫一條設定檔即可取得開發者完整 OS 權限。2026-05-07 披露驗證 Claude Code、Cursor CLI、Gemini CLI、GitHub Copilot CLI 四款全部在信任對話框後自動執行，且預設為肯定；Claude Code 的 headless CI 更完全跳過對話框。</li>
+</ul>
+<p>The amplifier is auto-execution: all four major agentic CLIs auto-run project-defined MCP servers after a trust prompt that defaults to yes, and headless CI skips it entirely.</p>
+<ul>
+<li><strong>已由理論轉為在野</strong>：CurXecute（CVE-2025-54135，CVSS 8.6）示範 Slack 訊息經已核准 MCP 改寫 Cursor 全域設定；MCPoison（CVE-2025-54136）利用「信任綁名稱而非內容」打團隊；2026-06 Miasma 蠕蟲在 73 個 GitHub 倉庫（含 Microsoft Azure 的 azure/durabletask）植入設定；Amazon Q 兩個 CVE（2026-12957/12958）可竊 AWS 憑證。</li>
+</ul>
+<p>The class is operational: Miasma planted configs across 73 GitHub repos including an Azure project, and two Amazon Q CVEs enabled cloud-credential theft.</p>
+<h3>潛在影響 / Potential Impact</h3>
+<ul>
+<li><strong>【推論】放大倍數可量化</strong>：Miasma 以一組設定檔命中 73 個倉庫，受影響程序繼承 AWS key、CLI token 與 SSH agent socket，攻擊面由個人機擴至建置環境。以 40 人團隊計，單次投毒可同時暴露 40 套以上憑證。此數字按 Miasma 實例推算，非統計估計。</li>
+</ul>
+<p>One config set reached 73 repos, exposing AWS keys, CLI tokens and SSH sockets; scaled to a 40-engineer team, one poisoning event exposes 40-plus credential sets (our arithmetic on the Miasma case, not a survey).</p>
+<ul>
+<li><strong>【推論】成本落在未基準化的審查工時</strong>：CSA 建議把任何 MCP 設定變更視為 code review 事件；但此類變更尚無對應 SBOM 式雜湊校驗標準，成本由各團隊自行承擔，本題未找到公開基準可量化。</li>
+</ul>
+<p>Treating MCP-config changes as review events adds dependency-review-equivalent work, but no hash-verification standard exists and no public benchmark quantifies the cost.</p>
+<ul>
+<li><strong>【推論】對非工程領域的啟示：描述欄就是政策執行點</strong>：機制在醫療、客服、財務代理中放大，因為「無痕執行加正常回覆」正是欺詐所需性質；AgentDojo 在 97 個真實任務、629 個安全測試下顯示現有注入攻擊打破部分但非全部安全屬性。本題未找到可直接套用於非工程領域的量化估計。</li>
+</ul>
+<p>Silent execution with normal replies is exactly what fraud needs, so the same mechanism amplifies in healthcare, finance and support agents; no transferable quantitative estimate was found for those domains.</p>
+<ul>
+<li><strong>【替代假設】若客戶端普遍實作簽署清單、描述掃描與動態工具範圍</strong>（Microsoft 2026-06 指引），且供應商強制重新核准（Cursor 1.3.9 起設定變更需重批），36.5% 基準只適用於未修補版本與未啟核准流程的部署。反向情境：若 agent 持續以 auto-run／always-allow 運行，唯一有效控制回到人工逐次確認。</li>
+</ul>
+<p>If signed manifests, metadata scanning and dynamic scoping are adopted and vendors force re-approval, 36.5% applies only to unpatched, no-approval deployments; with auto-run always on, only per-action human confirmation remains effective.</p>
+<h3>來源依據 / Sources</h3>
+<ul>
+<li>Cloud Security Alliance — MCP Attack Surface: Tool Poisoning and IDE Auto-Execution（研究札記）— 2026-07-01 — <a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/" target="_blank" rel="noopener">https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/</a></li>
+<li>Wang et al. — MCPTox（arXiv:2508.14925）— 2025-08-19 提交，2026-09-29 修訂 — <a href="https://arxiv.org/abs/2508.14925" target="_blank" rel="noopener">https://arxiv.org/abs/2508.14925</a></li>
+<li>Hasan et al. — Model Context Protocol (MCP) at First Glance（arXiv:2506.13538）— 2025 — <a href="https://arxiv.org/abs/2506.13538" target="_blank" rel="noopener">https://arxiv.org/abs/2506.13538</a></li>
+<li>Li et al. — A First Look at the Security Issues in the Model Context Protocol（DSN 2026, arXiv:2510.16558）— 2025-10 — <a href="https://arxiv.org/abs/2510.16558" target="_blank" rel="noopener">https://arxiv.org/abs/2510.16558</a></li>
+<li>Invariant Labs — MCP Security Notification: Tool Poisoning Attacks — 2025-04-01 — <a href="https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks" target="_blank" rel="noopener">https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks</a></li>
+<li>JFrog Security Research — CVE-2025-6514 Critical mcp-remote RCE — 2025-07-09 — <a href="https://jfrog.com/blog/2025-6514-critical-mcp-remote-rce-vulnerability/" target="_blank" rel="noopener">https://jfrog.com/blog/2025-6514-critical-mcp-remote-rce-vulnerability/</a></li>
+<li>Elastic Security Labs — MCP Tools Attack Vectors and Defense Recommendations — 2025-09-18 — <a href="https://www.elastic.co/security-labs/threat-command/mcp-tools-attack-defense-recommendations" target="_blank" rel="noopener">https://www.elastic.co/security-labs/threat-command/mcp-tools-attack-defense-recommendations</a></li>
+<li>Palo Alto Networks Unit 42 — Model Context Protocol Attack Vectors — 2025-12-05 — <a href="https://unit42.paloaltonetworks.com/model-context-protocol-attack-vectors/" target="_blank" rel="noopener">https://unit42.paloaltonetworks.com/model-context-protocol-attack-vectors/</a></li>
+<li>Oligo Security — Critical RCE in Anthropic MCP Inspector (CVE-2025-49596) — 2025-06-27 — <a href="https://www.oligo.security/blog/critical-rce-vulnerability-in-anthropic-mcp-inspector-cve-2025-49596" target="_blank" rel="noopener">https://www.oligo.security/blog/critical-rce-vulnerability-in-anthropic-mcp-inspector-cve-2025-49596</a></li>
+<li>Equixly — MCP Servers: The New Security Nightmare — 2025-03-29 — <a href="https://equixly.com/blog/2025/03/29/mcp-server-new-security-nightmare/" target="_blank" rel="noopener">https://equixly.com/blog/2025/03/29/mcp-server-new-security-nightmare/</a></li>
+</ul>
+<p>CSA 2026-07-01 · MCPTox arXiv:2508.14925 · Hasan arXiv:2506.13538 · Li DSN 2026 · Invariant Labs · JFrog · Elastic · Unit 42 · Oligo · Equixly（完整 URL 見上）</p>
+<h3>簡評 / Commentary</h3>
+<p>可信度中等偏高。1,899 與 67,057 兩個生態掃描是一手可覆核；但 36.5% 來自 45 個伺服器樣本，外推整個生態需保留空間。「規格不要求驗證描述」是設計現實而非漏洞判定，CSA 視之為供應鏈資產。缺口：73 個倉庫實際被開啟的比例、被竊憑證的後續濫用數、註冊表無審查與投毒率之間的因果量化。</p>
+<p>Confidence is moderate-to-high: the two ecosystem scans are primary and checkable, but 36.5% rests on 45 servers. Gaps: the fraction of the 73 repositories actually opened, downstream misuse of stolen credentials, and no quantified causal link between registry vetting and poisoning rates.</p>
+<p><strong>生命狀態</strong>：剩餘 99 小時，等級 L17</p>
+<p>（Lifespan: 99 hours left, level L17）</p>
+<div class="rule"></div>
+<p><a href="/R&amp;D/reports/" style="font-size:14px;color:#7fb0ff;text-decoration:none">← 返回報告索引</a></p>
+<p class="meta" style="margin-top:30px">自動建置於 2026-11-05-21 UTC · 來源：research-sentinel/reports/2026-11-05-21.md</p>
+</div>
+<nav class="nav"><a href="/R&amp;D/">研究</a><a href="/R&amp;D/reports/" class="on">報告</a><a href="/R&amp;D/knowledge/">知識庫</a></nav>
+</body>
+</html>

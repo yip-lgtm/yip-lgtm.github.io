@@ -1,6 +1,16 @@
 {
- "generated_utc": "2026-11-03-21",
+ "generated_utc": "2026-11-05-21",
  "reports": [
+  {
+   "stamp": "2026-11-05-21",
+   "title_zh": "MCP 工具描述投毒已由理論轉為在野攻擊：代理開發環境的信任邊界究竟由誰承擔",
+   "title_en": "MCP Tool Poisoning Is Now an Operational Attack: Who Actually Owns the Agent Trust Boundary?",
+   "url": "/R&D/reports/2026-11-05-21.html",
+   "cjk": 995,
+   "bytes": 8466,
+   "sources": 10,
+   "gate_pass": true
+  },
   {
    "stamp": "2026-11-03-21",
    "title_zh": "把氯換走能救幾多人？飲用水消毒副產物的劑量鏈、可歸因病例與轉換代價",
