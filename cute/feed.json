@@ -35608,7 +35608,8 @@
         "layer": "sea",
         "history": "魚雷艇在英國皇家海軍體系中屬輕型近海快速襲擊艦艇，負責前沿偵察、追擊敵艦與巡邏高危海域，並可掩護登陸或協助主力艦隊作戰。",
         "portrait": "portraits/torpedoboat.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1918-a3f9eff8df.json"
     }
   ]
 }
