@@ -35610,6 +35610,60 @@
         "portrait": "portraits/torpedoboat.jpg"
       },
       "dossierUrl": "dossiers/1918-a3f9eff8df.json"
+    },
+    {
+      "id": "1919-第二次希土戰爭",
+      "added": "2026-11-07T20:11:50.364Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 27.14,
+        "lat": 38.42
+      },
+      "battle": {
+        "y": 1919,
+        "m": 5,
+        "name": "第二次希土戰爭",
+        "theater": "伊茲密爾",
+        "brief": "本列表所列第二次希土戰爭始於1919年5月，以希臘軍隊在伊茲密爾登陸為起點，戰事隨其向安納托利亞西部推進而擴大。俄製別丹步槍（Berdan rifle）於1866年列裝，曾為俄國陸軍制式步槍，並在相關地面戰事中配備於步兵部隊。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍在1870年代成為俄國陸軍步兵的制式槍械，主要由步兵連配發；莫辛—納甘特步槍服役後，它仍留在後備與戰時補充體系，並見於蘇聯早期地面部隊。",
+        "portrait": "portraits/berdan.jpg"
+      },
+      "dossierUrl": "dossiers/1919-db9926b8cf.json"
+    },
+    {
+      "id": "1919-第三次英阿戰爭",
+      "added": "2026-11-07T20:12:47.705Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 69.18,
+        "lat": 34.53
+      },
+      "battle": {
+        "y": 1919,
+        "m": 5,
+        "name": "第三次英阿戰爭",
+        "theater": "阿富汗東部及喀布爾",
+        "brief": "第三次英阿戰爭於1919年5月由英屬印度聯軍進入阿富汗而展開，戰線集中於阿富汗東境、喀布爾及通往首都的道路，最終迫使阿富汗接受停戰安排。德國陸軍於1870年列裝的婆塞德後膛砲，正式型號為Breech-loading cannon，是當時野戰炮兵體系中的火炮裝備。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲在德國陸軍中屬於野戰炮兵，用來執行火力壓制與正面支援，並與步兵及後勤單位共同構成師級地面作戰體系。",
+        "portrait": "portraits/breechcannon.jpg"
+      },
+      "dossierUrl": "dossiers/1919-e973a1d72d.json"
     }
   ]
 }
