@@ -35581,7 +35581,8 @@
         "layer": "land",
         "history": "線膛砲自1850年起納入德國陸軍野戰砲兵序列，屬於地面火力體系的支援武器，主要配合步兵部隊作戰，並參與前線砲兵部署。",
         "portrait": "portraits/muzzleloader.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1918-335715673e.json"
     },
     {
       "id": "1918-阿塞拜疆-亞美尼亞戰爭",
