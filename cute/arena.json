@@ -3212,8 +3212,10 @@
    "date": "2026-11-02",
    "topic": {
     "id": "news",
-    "name": "新聞",
-    "brief": "今日講新聞：最新一場發生咗乜，誰贏咗邊場、輸咗幾多代價，數字講得最清楚。"
+    "name": "/news/ K-shaped economy is carrying a ticking time bomb into 2026",
+    "brief": "4chan /news/ 熱帖「K-shaped economy is carrying a ticking time bomb into 2026」· 2025-12-24。今日講新聞：最新一場發生咗乜，誰贏咗邊場、輸咗幾多代價，數字講得最清楚。 原帖 https://boards.4chan.org/news/thread/1468867",
+    "board": "news",
+    "thread": 1468867
    },
    "rounds": [
     {
@@ -3565,8 +3567,10 @@
    "date": "2026-11-03",
    "topic": {
     "id": "mil",
-    "name": "軍工",
-    "brief": "今日講軍工：造得出、推得走、補得返嘅先算國之重器。量產同工藝，唔係口號。"
+    "name": "/pol/ /ptg/ - PRESIDENT TRUMP GENERAL - NOW THAT'S FUNNY EDITION",
+    "brief": "4chan /pol/ 熱帖「/ptg/ - PRESIDENT TRUMP GENERAL - NOW THAT'S FUNNY EDITION」· 2026-11-04。今日講軍工：造得出、推得走、補得返嘅先算國之重器。量產同工藝，唔係口號。 原帖 https://boards.4chan.org/pol/thread/545617046",
+    "board": "pol",
+    "thread": 545617046
    },
    "rounds": [
     {
