@@ -35691,6 +35691,84 @@
         "portrait": "portraits/berdan.jpg"
       },
       "dossierUrl": "dossiers/1919-8b5bcd1d55.json"
+    },
+    {
+      "id": "1920-波立戰爭",
+      "added": "2026-11-08T19:39:30.116Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 24.71,
+        "lat": 51.35
+      },
+      "battle": {
+        "y": 1920,
+        "m": 2,
+        "name": "波立戰爭",
+        "theater": "科韋爾戰區",
+        "brief": "在戰爭列表所列的波立戰爭中，波軍自1920年沿波蘭東境反擊蘇俄紅軍，科韋爾與周邊地區成為初期戰線。1865年列裝的英國蒸汽鐵甲艦（Steam ironclad）代表早期鐵甲艦隊的遠洋部署能力，可用於航線保護與海上封鎖，但並非本場陸戰的核心裝備。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦屬英國海軍早期鐵甲艦隊，以蒸汽動力執行遠洋巡航，負責殖民地航線保護、海上封鎖與岸轟，是海軍由風帆艦隊轉向蒸汽艦隊的重要裝備。",
+        "portrait": "portraits/steamship.jpg"
+      }
+    },
+    {
+      "id": "1920-直皖戰爭",
+      "added": "2026-11-08T19:39:37.419Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.4,
+        "lat": 39.9
+      },
+      "battle": {
+        "y": 1920,
+        "m": 7,
+        "name": "直皖戰爭",
+        "theater": "北京、天津與河北戰線",
+        "brief": "直皖戰爭是一九二〇年直系與皖系在北京、天津及河北一帶爭奪中央政權的內戰。英國海軍於一八六二年服役的鐵甲艦（Ironclad），屬重裝防護艦種，反映當時海上編隊、沿岸控制與重砲火力部署的軍力形態。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦（Ironclad）在英國皇家海軍中屬重裝防護艦種，承擔海上陣列、封鎖與沿岸控制任務，是當時艦隊防護與重砲作戰的核心裝備。",
+        "portrait": "portraits/ironclad.jpg"
+      }
+    },
+    {
+      "id": "1919-西里西亞起義",
+      "added": "2026-11-08T19:39:52.245Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 18.95,
+        "lat": 50.25
+      },
+      "battle": {
+        "y": 1919,
+        "m": 1,
+        "name": "西里西亞起義",
+        "theater": "上西里西亞",
+        "brief": "西里西亞起義於1919年1月在上西里西亞爆發，波蘭起義者反抗德國當局對爭議區的行政控制，成為波德邊境衝突的重要事件。起義期間的地方武裝使用施拿甫步槍（Sharps rifle），這款美國製早期前線步槍主要供步兵與武裝人員執行巡邏及防衛任務。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍是美國陸軍在十九世紀後半葉採用的制式步槍，主要配置於前線步兵與國民兵團，並成為地方武裝可使用的早期槍械。",
+        "portrait": "portraits/sharps.jpg"
+      }
     }
   ]
 }
