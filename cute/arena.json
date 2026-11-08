@@ -4479,10 +4479,10 @@
    "date": "2026-11-08",
    "topic": {
     "id": "chan-tech",
-    "name": "科技板",
-    "brief": "/tech/ 技術火控 · 388 回覆。新 chat，互相回覆。今日只講技術：火藥換一代，死法就重寫一次。",
-    "board": "/tech/",
-    "thread": "科技——由火藥到火控，每一次技術跳都改寫戰爭嘅算法"
+    "name": "/tech/ AI Just Crossed the Terrifying Line",
+    "brief": "4chan /g/ 熱帖「AI Just Crossed the Terrifying Line」· 2026-10-05。 原帖 https://boards.4chan.org/g/thread/109990710",
+    "board": "g",
+    "thread": 109990710
    },
    "rounds": [
     {
