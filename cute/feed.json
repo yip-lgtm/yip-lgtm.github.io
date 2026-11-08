@@ -35689,7 +35689,8 @@
         "layer": "land",
         "history": "別丹步槍是俄系軍隊使用的栓動步槍，列入步兵分隊的小武器序列，作為普通步槍手的單兵武器，並非騎兵或炮兵裝備。",
         "portrait": "portraits/berdan.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1919-8b5bcd1d55.json"
     }
   ]
 }
