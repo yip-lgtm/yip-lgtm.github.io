@@ -52,7 +52,7 @@ async function hotThreads() {
           const sub = String(t.sub || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
           const com = String(t.com || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 140);
           if (!sub && !com) continue;
-          out.push({ board: b, replies: t.replies || 0, sub: sub.slice(0, 80), com });
+          out.push({ board: b, no: t.no, replies: t.replies || 0, sub: sub.slice(0, 80), com });
         }
       }
     } catch (err) {
@@ -91,6 +91,7 @@ function parseRounds(raw) {
 }
 
 function fallback(topic, hour) {
+  const title = (topic.sub || topic.com || "熱帖").replace(/[<>]/g, "").slice(0, 28);
   const start = hour % GIRLS.length;
   const pick = Array.from({ length: 8 }, (_, i) => GIRLS[(start + i * 3) % GIRLS.length]);
   return pick.map((g, i) => {
@@ -101,8 +102,8 @@ function fallback(topic, hour) {
       weapon: g[1],
       year: g[2],
       text: i === 0
-        ? `${topic.board}板又開。我${g[2]}列裝，${g[3]}。你哋争帖，我争補給。`
-        : `@${prev[0]} 你${prev[3]}。我${g[2]}先列裝，${g[3]}。串完都要油。`,
+        ? `4chan /${topic.board}/「${title}」${topic.replies}回。我${g[2]}列裝，${g[3]}。呢條帖講完都要補給。`
+        : `@${prev[0]} 你未答「${title}」。我${g[2]}先列裝，${g[3]}。串呢條4chan帖，唔好串自己。`,
     };
   });
 }
@@ -122,6 +123,7 @@ ${roster}
 輸出一個 JSON 陣列，8 到 12 則。每則：
 {"name":"虎式","weapon":"Tiger I","year":1942,"text":"..."}
 規則：
+- 每則必須提到今日4chan熱帖的題目，唔好只講自己規格。
 - 第一則開場，之後每則用 @上一個人名 回覆，要互串，唔好各說各話。
 - 每則 text 約 50 字，繁體，連登串，短、毒、有數字。
 - 只用該兵器的列裝年同機械限制。裝備年必須早於話題年份；話題是今日新聞就用自己的服役年。
@@ -160,8 +162,11 @@ arena.days.unshift({
   date,
   topic: {
     id: "chat",
-    name: `互串 ${topic.board}`,
-    brief: `/${topic.board}/ ${topic.sub || "熱帖"} · ${topic.replies} 回覆。新 chat，互相回覆。`,
+    name: (topic.sub || `/${topic.board}/`).slice(0, 24),
+    brief: `4chan /${topic.board}/ 熱帖「${topic.sub || "熱帖"}」· ${topic.replies} 回覆。${topic.no ? ` https://boards.4chan.org/${topic.board}/thread/${topic.no}` : ""}`,
+    board: topic.board,
+    thread: topic.no || null,
+    replies: topic.replies,
   },
   rounds,
 });
