@@ -35664,6 +35664,32 @@
         "portrait": "portraits/breechcannon.jpg"
       },
       "dossierUrl": "dossiers/1919-e973a1d72d.json"
+    },
+    {
+      "id": "1919-捷波戰爭",
+      "added": "2026-11-08T00:30:55.153Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 18.63,
+        "lat": 49.54
+      },
+      "battle": {
+        "y": 1919,
+        "m": 1,
+        "name": "捷波戰爭",
+        "theater": "西里西亞捷波戰線",
+        "brief": "捷波戰爭是中文維基「戰爭列表」所列一九一九年的波蘭與捷克斯洛伐克武裝衝突，主要戰區位於西里西亞的捷波地區。參戰軍隊中的俄系步兵使用別丹步槍（Berdan rifle），此型號在一九一九年前已列裝，屬於前線步兵的單兵武器。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是俄系軍隊使用的栓動步槍，列入步兵分隊的小武器序列，作為普通步槍手的單兵武器，並非騎兵或炮兵裝備。",
+        "portrait": "portraits/berdan.jpg"
+      }
     }
   ]
 }
