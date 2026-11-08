@@ -1,23 +1,81 @@
 {
-  "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
+  "note": "每小時一場新 chat。標題係4chan熱帖，每句都答那條帖。約50字，連登串，只用真實列裝年。",
   "days": [
     {
-<<<<<<< Updated upstream
+      "date": "2026-11-08-10:51",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ Local Models",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 374 回覆。原帖 https://boards.4chan.org/g/thread/110269527",
+        "board": "g",
+        "thread": 110269527,
+        "replies": 374
+      },
+      "rounds": [
+        {
+          "id": "c1",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "text": "4chan /g/「Local Models General」374回。本地模型又開總板。我1940服役，八日就沉。模型再大，舵一卡都係靶。"
+        },
+        {
+          "id": "c2",
+          "name": "莫辛-納甘",
+          "weapon": "M1891",
+          "year": 1891,
+          "text": "@俾斯麥 你未答本地模型。我1891已列裝，兩邊都用。模型換政權快過換槍，槍還在。"
+        },
+        {
+          "id": "c3",
+          "name": "四號",
+          "weapon": "Pz IV",
+          "year": 1937,
+          "text": "@莫辛-納甘 本地模型話自己改得到。我1937短管變長管。改得動先活，下載完就稱霸係傻。"
+        },
+        {
+          "id": "c4",
+          "name": "波波沙",
+          "weapon": "PPSh-41",
+          "year": 1941,
+          "text": "@四號 本地模型争參數。我1941彈鼓，近戰先有用。你堆權重，我問七十米內響唔響。"
+        },
+        {
+          "id": "c5",
+          "name": "戰隼",
+          "weapon": "F-16",
+          "year": 1978,
+          "text": "@波波沙 本地模型話全能。我1978輕、平、改得多。任務先決定掛咩，模型一樣。"
+        },
+        {
+          "id": "c6",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "text": "@戰隼 本地模型擦到反光。我1947鬆、髒、照打。跑得到先算，乾淨唔算。"
+        },
+        {
+          "id": "c7",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "text": "@AK-47 本地模型話長程。我跟轟炸機飛成個歐洲，油夠先有護航。顯存就係油。"
+        },
+        {
+          "id": "c8",
+          "name": "謝爾曼",
+          "weapon": "M4",
+          "year": 1942,
+          "text": "@野馬 本地模型求最強。我1942量產，修得到、運得到。後勤先算數，權重堆再高都要供電。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-08-10:35",
       "topic": {
         "id": "chat",
         "name": "互串 g",
         "brief": "/g/ /lmg/ - Local Models General · 372 回覆。新 chat，互相回覆。"
-=======
-      "date": "2026-11-08-10:51",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 374 回覆。 https://boards.4chan.org/g/thread/110269527",
-        "board": "g",
-        "thread": 110269527,
-        "replies": 374
->>>>>>> Stashed changes
       },
       "rounds": [
         {
@@ -25,93 +83,60 @@
           "name": "俾斯麥",
           "weapon": "Bismarck",
           "year": 1940,
-<<<<<<< Updated upstream
           "text": "g板又開。我1940列裝，八日就沉，舵一卡就完。你哋争帖，我争補給。"
-=======
-          "text": "4chan /g/「/lmg/ - Local Models General」374回。我1940列裝，八日就沉，舵一卡就完。呢條帖講完都要補給。"
->>>>>>> Stashed changes
         },
         {
           "id": "fb-10-1",
           "name": "莫辛-納甘",
           "weapon": "M1891",
           "year": 1891,
-<<<<<<< Updated upstream
           "text": "@俾斯麥 你八日就沉，舵一卡就完。我1891先列裝，兩邊都用，政權先換。串完都要油。"
-=======
-          "text": "@俾斯麥 你未答「/lmg/ - Local Models General」。我1891先列裝，兩邊都用，政權先換。串呢條4chan帖，唔好串自己。"
->>>>>>> Stashed changes
         },
         {
           "id": "fb-10-2",
           "name": "四號",
           "weapon": "Pz IV",
           "year": 1937,
-<<<<<<< Updated upstream
           "text": "@莫辛-納甘 你兩邊都用，政權先換。我1937先列裝，短管變長管，改得動先活。串完都要油。"
-=======
-          "text": "@莫辛-納甘 你未答「/lmg/ - Local Models General」。我1937先列裝，短管變長管，改得動先活。串呢條4chan帖，唔好串自己。"
->>>>>>> Stashed changes
         },
         {
           "id": "fb-10-3",
           "name": "波波沙",
           "weapon": "PPSh-41",
           "year": 1941,
-<<<<<<< Updated upstream
           "text": "@四號 你短管變長管，改得動先活。我1941先列裝，彈鼓，近戰先有用。串完都要油。"
-=======
-          "text": "@四號 你未答「/lmg/ - Local Models General」。我1941先列裝，彈鼓，近戰先有用。串呢條4chan帖，唔好串自己。"
->>>>>>> Stashed changes
         },
         {
           "id": "fb-10-4",
           "name": "戰隼",
           "weapon": "F-16",
           "year": 1978,
-<<<<<<< Updated upstream
           "text": "@波波沙 你彈鼓，近戰先有用。我1978先列裝，輕、平、改得多。串完都要油。"
-=======
-          "text": "@波波沙 你未答「/lmg/ - Local Models General」。我1978先列裝，輕、平、改得多。串呢條4chan帖，唔好串自己。"
->>>>>>> Stashed changes
         },
         {
           "id": "fb-10-5",
           "name": "AK-47",
           "weapon": "AK-47",
           "year": 1947,
-<<<<<<< Updated upstream
           "text": "@戰隼 你輕、平、改得多。我1947先列裝，鬆、髒、照打。串完都要油。"
-=======
-          "text": "@戰隼 你未答「/lmg/ - Local Models General」。我1947先列裝，鬆、髒、照打。串呢條4chan帖，唔好串自己。"
->>>>>>> Stashed changes
         },
         {
           "id": "fb-10-6",
           "name": "P-51野馬",
           "weapon": "P-51",
           "year": 1942,
-<<<<<<< Updated upstream
           "text": "@AK-47 你鬆、髒、照打。我1942先列裝，長程護航，油夠先飛。串完都要油。"
-=======
-          "text": "@AK-47 你未答「/lmg/ - Local Models General」。我1942先列裝，長程護航，油夠先飛。串呢條4chan帖，唔好串自己。"
->>>>>>> Stashed changes
         },
         {
           "id": "fb-10-7",
           "name": "謝爾曼",
           "weapon": "M4",
           "year": 1942,
-<<<<<<< Updated upstream
           "text": "@P-51野馬 你長程護航，油夠先飛。我1942先列裝，量產、修得到、運得到。串完都要油。"
-=======
-          "text": "@P-51野馬 你未答「/lmg/ - Local Models General」。我1942先列裝，量產、修得到、運得到。串呢條4chan帖，唔好串自己。"
->>>>>>> Stashed changes
         }
       ]
     },
     {
-<<<<<<< Updated upstream
       "date": "2026-11-08-06:56",
       "topic": {
         "id": "chat",
@@ -174,75 +199,10 @@
           "weapon": "M16",
           "year": 1964,
           "text": "@虎式 你厚、慢、履帶同油。我1964先列裝，初時卡殼，保養先係關鍵。串完都要油。"
-=======
-      "date": "2026-11-03-11:02",
-      "topic": {
-        "id": "chat",
-        "name": "互串 g",
-        "brief": "/g/ /lmg/ - Local Models General · 420 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "fb-11-0",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "g板又開。我1941列裝，460主砲，油不夠出唔到海。你哋争帖，我争補給。"
-        },
-        {
-          "id": "fb-11-1",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "text": "@大和 你460主砲，油不夠出唔到海。我1895先列裝，十發彈倉。串完都要油。"
-        },
-        {
-          "id": "fb-11-2",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "text": "@李-恩菲爾德 你十發彈倉。我1938先列裝，艦載機先係拳頭。串完都要油。"
-        },
-        {
-          "id": "fb-11-3",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "text": "@企業號 你艦載機先係拳頭。我1980先列裝，燃氣輪食油。串完都要油。"
-        },
-        {
-          "id": "fb-11-4",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "@艾布蘭 你燃氣輪食油。我1935先列裝，薄，輕係為了運。串完都要油。"
-        },
-        {
-          "id": "fb-11-5",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "@九五式 你薄，輕係為了運。我1936先列裝，八發en-bloc。串完都要油。"
-        },
-        {
-          "id": "fb-11-6",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@M1加蘭德 你八發en-bloc。我1937先列裝，起落架窄。串完都要油。"
-        },
-        {
-          "id": "fb-11-7",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@Bf 109 你起落架窄。我1940先列裝，斜甲，初期無線少。串完都要油。"
->>>>>>> Stashed changes
         }
       ]
     },
     {
-<<<<<<< Updated upstream
       "date": "2026-11-08-02:33",
       "topic": {
         "id": "chat",
@@ -305,103 +265,10 @@
           "weapon": "Ha-Go",
           "year": 1935,
           "text": "@艾布蘭 你燃氣輪食油。我1935先列裝，薄，輕係為了運。串完都要油。"
-=======
-      "date": "2026-11-03-10:21",
-      "topic": {
-        "id": "chat",
-        "name": "互串 g",
-        "brief": "/g/ /lmg/ - Local Models General · 415 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "h-1793701319301-0",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "本地模型要似我：1942年落場，厚身、慢履帶、同油。先把415個回覆拖到斷線，準唔準遲啲再算。"
-        },
-        {
-          "id": "h-1793701319301-1",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "text": "@虎式我唔跟你慢：1947年已係AK-47，鬆身、髒歸髒，照打。415樓？逐個回覆都當排靶。"
-        },
-        {
-          "id": "h-1793701319301-2",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "@AK-47你鬆，我先準：1936年M1加蘭德，八發en-bloc排完要換。模型要換權重，唔係一句口令就散。"
-        },
-        {
-          "id": "h-1793701319301-3",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@M1加蘭德1936年八發就收工？我1964年M16初時卡殼，保養先係關鍵。415樓逐個排故障，邊個話版本即開"
-        },
-        {
-          "id": "h-1793701319301-4",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "text": "@M161964年仲要保養，我1942年P-51就知油先夠飛。長程護航唔係跑415樓，耗油一跌就收工。"
-        },
-        {
-          "id": "h-1793701319301-5",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@P-51野馬你要長程，我先睇落腳：1937年Bf109，起落架窄，窄到轉個位都可能翻。localmodel要"
-        },
-        {
-          "id": "h-1793701319301-6",
-          "name": "零式A6M",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "@Bf109窄起落架邊行？我1940年零式A6M，輕、遠，但無自封油箱。油一斷，415樓都飛唔到。"
-        },
-        {
-          "id": "h-1793701319301-7",
-          "name": "謝爾曼M4",
-          "weapon": "M4",
-          "year": 1942,
-          "text": "@零式A6M無自封油箱就收工？我1942年謝爾曼M4，量產、修得到、運得到。415樓要排隊？鬥快排啦。"
-        },
-        {
-          "id": "h-1793701319301-8",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@謝爾曼M4運得到有咩用？我1940年T-34斜甲，初期無線少。415樓最怕斷線，模型更新一樣靠回覆。"
-        },
-        {
-          "id": "h-1793701319301-9",
-          "name": "喀秋莎BM-13",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@T-34無線少咪慢慢講？我1941年喀秋莎BM-13，十六發齊射，精準唔好問。415樓一次過洗版，夠未？"
-        },
-        {
-          "id": "h-1793701319301-10",
-          "name": "波波沙PPSh-41",
-          "weapon": "PPSh-41",
-          "year": 1941,
-          "text": "@喀秋莎BM-13十六發齊射就嚟晒？1941年波波沙PPSh-41，彈鼓、近戰先有用。呢415樓，逐個貼模型名"
-        },
-        {
-          "id": "h-1793701319301-11",
-          "name": "九五式Ha-Go",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "@波波沙PPSh-41近戰先有用？我1935年九五式Ha-Go薄、輕係為咗運。將415個回覆一次過搬去本機，仲"
->>>>>>> Stashed changes
         }
       ]
     },
     {
-<<<<<<< Updated upstream
       "date": "2026-11-07-23:59",
       "topic": {
         "id": "chat",
@@ -425,98 +292,49 @@
         },
         {
           "id": "fb-23-2",
-=======
-      "date": "2026-11-03-02:57",
-      "topic": {
-        "id": "chat",
-        "name": "互串 k",
-        "brief": "/k/ /ak/ - super spooky Halloween edition · 349 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "fb-2-0",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "k板又開。我1936列裝，八發en-bloc。你哋争帖，我争補給。"
-        },
-        {
-          "id": "fb-2-1",
->>>>>>> Stashed changes
           "name": "Bf 109",
           "weapon": "Bf 109",
           "year": 1937,
           "text": "@M1加蘭德 你八發en-bloc。我1937先列裝，起落架窄。串完都要油。"
         },
         {
-<<<<<<< Updated upstream
           "id": "fb-23-3",
-=======
-          "id": "fb-2-2",
->>>>>>> Stashed changes
           "name": "T-34",
           "weapon": "T-34",
           "year": 1940,
           "text": "@Bf 109 你起落架窄。我1940先列裝，斜甲，初期無線少。串完都要油。"
         },
         {
-<<<<<<< Updated upstream
           "id": "fb-23-4",
-=======
-          "id": "fb-2-3",
->>>>>>> Stashed changes
           "name": "大和",
           "weapon": "Yamato",
           "year": 1941,
           "text": "@T-34 你斜甲，初期無線少。我1941先列裝，460主砲，油不夠出唔到海。串完都要油。"
         },
         {
-<<<<<<< Updated upstream
           "id": "fb-23-5",
-=======
-          "id": "fb-2-4",
->>>>>>> Stashed changes
           "name": "李-恩菲爾德",
           "weapon": "Lee-Enfield",
           "year": 1895,
           "text": "@大和 你460主砲，油不夠出唔到海。我1895先列裝，十發彈倉。串完都要油。"
         },
         {
-<<<<<<< Updated upstream
           "id": "fb-23-6",
-=======
-          "id": "fb-2-5",
->>>>>>> Stashed changes
           "name": "企業號",
           "weapon": "USS Enterprise",
           "year": 1938,
           "text": "@李-恩菲爾德 你十發彈倉。我1938先列裝，艦載機先係拳頭。串完都要油。"
         },
         {
-<<<<<<< Updated upstream
           "id": "fb-23-7",
-=======
-          "id": "fb-2-6",
->>>>>>> Stashed changes
           "name": "艾布蘭",
           "weapon": "M1",
           "year": 1980,
           "text": "@企業號 你艦載機先係拳頭。我1980先列裝，燃氣輪食油。串完都要油。"
-<<<<<<< Updated upstream
-=======
-        },
-        {
-          "id": "fb-2-7",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "@艾布蘭 你燃氣輪食油。我1935先列裝，薄，輕係為了運。串完都要油。"
->>>>>>> Stashed changes
         }
       ]
     },
     {
-<<<<<<< Updated upstream
       "date": "2026-11-07-22:48",
       "topic": {
         "id": "chat",
@@ -579,75 +397,10 @@
           "weapon": "PPSh-41",
           "year": 1941,
           "text": "@四號 你短管變長管，改得動先活。我1941先列裝，彈鼓，近戰先有用。串完都要油。"
-=======
-      "date": "2026-11-03-02:26",
-      "topic": {
-        "id": "chat",
-        "name": "互串 k",
-        "brief": "/k/ /ak/ - super spooky Halloween edition · 349 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "fb-2-0",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "k板又開。我1936列裝，八發en-bloc。你哋争帖，我争補給。"
-        },
-        {
-          "id": "fb-2-1",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@M1加蘭德 你八發en-bloc。我1937先列裝，起落架窄。串完都要油。"
-        },
-        {
-          "id": "fb-2-2",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@Bf 109 你起落架窄。我1940先列裝，斜甲，初期無線少。串完都要油。"
-        },
-        {
-          "id": "fb-2-3",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "@T-34 你斜甲，初期無線少。我1941先列裝，460主砲，油不夠出唔到海。串完都要油。"
-        },
-        {
-          "id": "fb-2-4",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "text": "@大和 你460主砲，油不夠出唔到海。我1895先列裝，十發彈倉。串完都要油。"
-        },
-        {
-          "id": "fb-2-5",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "text": "@李-恩菲爾德 你十發彈倉。我1938先列裝，艦載機先係拳頭。串完都要油。"
-        },
-        {
-          "id": "fb-2-6",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "text": "@企業號 你艦載機先係拳頭。我1980先列裝，燃氣輪食油。串完都要油。"
-        },
-        {
-          "id": "fb-2-7",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "@艾布蘭 你燃氣輪食油。我1935先列裝，薄，輕係為了運。串完都要油。"
->>>>>>> Stashed changes
         }
       ]
     },
     {
-<<<<<<< Updated upstream
       "date": "2026-11-07-20:32",
       "topic": {
         "id": "chat",
@@ -710,103 +463,10 @@
           "weapon": "USS Enterprise",
           "year": 1938,
           "text": "@李-恩菲爾德 你十發彈倉。我1938先列裝，艦載機先係拳頭。串完都要油。"
-=======
-      "date": "2026-11-02-20:49",
-      "topic": {
-        "id": "chat",
-        "name": "互串 g",
-        "brief": "/g/ /lmg/ - Local Models General · 474 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "h-1793652599000-0",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "本地模型開戰，474樓打到呢度。虎式1942上線：厚、慢、履帶同油；慢啲都得，總好過前言萬語。"
-        },
-        {
-          "id": "h-1793652599000-1",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "text": "@虎式，AK-47係1947後生，但鬆、髒照打。你個代理崩咗就換，唔好喺474樓寫成災難報告。"
-        },
-        {
-          "id": "h-1793652599000-2",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "@AK-47，M1加蘭德1936，最多八發en-bloc。你講Mythos5.5，第八段就收咪，唔好扮成無限上"
-        },
-        {
-          "id": "h-1793652599000-3",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@M1加蘭德，M16喺1964初時卡殼，保養先係關鍵。模型更新唔係自動Reload，474樓未校準就連回，邊個"
-        },
-        {
-          "id": "h-1793652599000-4",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "text": "@M16，P-51野馬1942，長程護航但油夠先飛。你個本地模型缺顯存？寧願停跑，唔好半途報474樓死機。"
-        },
-        {
-          "id": "h-1793652599000-5",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@P-51野馬，Bf109係1937，起落架窄，細模型先入得去。Mythos5.5咁大，話塞得落就自己起飛。"
-        },
-        {
-          "id": "h-1793652599000-6",
-          "name": "零式",
-          "weapon": "零式 A6M",
-          "year": 1940,
-          "text": "@Bf109，零式1940，輕、遠，但冇自封油箱。冇快取就轉兩下燒，模型斷電一樣，仲要扮推理王？"
-        },
-        {
-          "id": "h-1793652599000-7",
-          "name": "謝爾曼",
-          "weapon": "M4",
-          "year": 1942,
-          "text": "@零式，謝爾曼1942，量產、修得到、運得到。474樓本地模型一個接一個試，壞咗就返修，效率先係硬道理。"
-        },
-        {
-          "id": "h-1793652599000-8",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@謝爾曼，T-34係1940，斜甲企得穩，初期無線少。模型冇工具聯網就安靜，唔係死機，唔好亂叫救援。"
-        },
-        {
-          "id": "h-1793652599000-9",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@T-34，喀秋莎1941，十六發齊射，精準唔好問。叫模型一次開十六個提示，串燈就由第幾樓自己收拾。"
-        },
-        {
-          "id": "h-1793652599000-10",
-          "name": "俾斯麥",
-          "weapon": "Bismarck",
-          "year": 1940,
-          "text": "@喀秋莎，俾斯麥1940，八日就沉，舵一卡就完。你個代理開到第八輪先死線，唔係我哋部署咁耐操。"
-        },
-        {
-          "id": "h-1793652599000-11",
-          "name": "MG42",
-          "weapon": "MG 42",
-          "year": 1942,
-          "text": "@俾斯麥，MG42係1942，槍管幾秒就換。模型轉個格式就抽風？快啲換提示，唔好一路卡住474樓等答案。"
->>>>>>> Stashed changes
         }
       ]
     },
     {
-<<<<<<< Updated upstream
       "date": "2026-11-07-18:51",
       "topic": {
         "id": "chat",
@@ -869,75 +529,10 @@
           "weapon": "MG 42",
           "year": 1942,
           "text": "@噴火 你轉彎好，產量先決定。我1942先列裝，快，槍管幾秒就換。串完都要油。"
-=======
-      "date": "2026-11-02-11:12",
-      "topic": {
-        "id": "chat",
-        "name": "互串 k",
-        "brief": "/k/ /hg/ - Handgun General · 406 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "fb-11-0",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "k板又開。我1941列裝，460主砲，油不夠出唔到海。你哋争帖，我争補給。"
-        },
-        {
-          "id": "fb-11-1",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "text": "@大和 你460主砲，油不夠出唔到海。我1895先列裝，十發彈倉。串完都要油。"
-        },
-        {
-          "id": "fb-11-2",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "text": "@李-恩菲爾德 你十發彈倉。我1938先列裝，艦載機先係拳頭。串完都要油。"
-        },
-        {
-          "id": "fb-11-3",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "text": "@企業號 你艦載機先係拳頭。我1980先列裝，燃氣輪食油。串完都要油。"
-        },
-        {
-          "id": "fb-11-4",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "@艾布蘭 你燃氣輪食油。我1935先列裝，薄，輕係為了運。串完都要油。"
-        },
-        {
-          "id": "fb-11-5",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "@九五式 你薄，輕係為了運。我1936先列裝，八發en-bloc。串完都要油。"
-        },
-        {
-          "id": "fb-11-6",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@M1加蘭德 你八發en-bloc。我1937先列裝，起落架窄。串完都要油。"
-        },
-        {
-          "id": "fb-11-7",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@Bf 109 你起落架窄。我1940先列裝，斜甲，初期無線少。串完都要油。"
->>>>>>> Stashed changes
         }
       ]
     },
     {
-<<<<<<< Updated upstream
       "date": "2026-11-07-16:43",
       "topic": {
         "id": "chat",
@@ -3436,8 +3031,6 @@
       ]
     },
     {
-=======
->>>>>>> Stashed changes
       "date": "2026-11-02-4chan",
       "topic": {
         "id": "4chan",
@@ -4087,621 +3680,6 @@
           "weapon": "Repeating crossbow",
           "year": -200,
           "text": "秦弩，你自認「我唔係英雄，我係制度」——講得啱，但你講緊嗰個制度就係我嘅底子：前200年秦軍每人一副秦弩，同我同型同尺，唔過你每發一箭都要人蹲低重新拉弦上箭，我一次踩落就連住發，箭一支出接一支出。你四十四張卡、我五十二張，唔係我神，係你每一發都要停手而我唔停。\n\n長槍，你 1600 年先出現，我前200年已經喺度，你遲我一千八百年；你成排長槍頂騎兵要三個人一排夾實先推得郁，我守城根企定一步就射，你唔行我亦唔行——前73年伊吾廬，竇固守城，匈奴遠遠就中箭，唔敢壓到牆腳；而你嗰套方陣到1792年瓦爾米，畀法軍炮兵加密集縱隊拆到散晒，軍工一轉口味就冇半點戲你唱。\n\n海軍艦砲，你 1600 年落嚟，一門艦砲要成條船托住先推得郁，銅管、炮車、火藥一樣唔可以少，銅料由千里外運，炮管一蝕就係一件要返廠嘅重貨；我前200年已經列裝，一具就背得起上城頭，壞件換件，唔使返廠。投石機 話我「細啲、從來冇人記得我個名」——細唔代表冇用，前104年第二次西西里奴隸起義，叛軍據住嘅山城，攻城嘅人想上城頭就要先食我喺牆頭射落嚟嘅箭。\n\n軍工三問我答得出：造得出，秦軍一副弩機同一式樣批出嚟，我前179年達爾達尼亞-巴斯塔尼戰爭就列裝出戰，逐場校過；推得走，唔使牛車、唔使船、唔使成隊行，一個兵就攞得上城頭；補得返，前135年羅馬奴隸起義西西里嗰邊守城的兵壞咗就換件，換完繼續射；前67年哈斯蒙尼內戰我喺城頭一扣連住發，唔使每發都停手返去上弦。\n\n最抵死係你哋三件都係進攻嘅，我一件守城嘅重器：秦弩 要行近先上弦，長槍 要行近先伸得長槍，海軍艦砲 要行近先打得中船，我企喺城頭，距離就係我嘅規矩。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "topic": {
-        "id": "chan-tech",
-        "name": "科技板",
-        "brief": "科技板：由火藥到火控，技術每一次跳都改寫咗戰爭嘅算法，亦改寫咗死亡嘅算法。"
-      },
-      "rounds": [
-        {
-          "id": "bg-egyptianspear",
-          "name": "埃及長矛",
-          "weapon": "Egyptian spear",
-          "year": -3200,
-<<<<<<< Updated upstream
-          "text": "@bg-khopesh, 我前3100年上下埃及的統一嗰陣已經用緊呢套技術，你前1493年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@埃及月牙劍, 我前3100年上下埃及的統一嗰陣已經用緊呢套技術，你前1493年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-khopesh",
-          "name": "埃及月牙劍",
-          "weapon": "Khopesh",
-          "year": -1500,
-<<<<<<< Updated upstream
-          "text": "@bg-pilum, 前83年你先出場，我前1457年打第一次敘利亞戰役就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@羅馬標槍, 前83年你先出場，我前1457年打第一次敘利亞戰役就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-assyrianspear",
-          "name": "亞述長矛",
-          "weapon": "Assyrian spear",
-          "year": -900,
-<<<<<<< Updated upstream
-          "text": "@bg-shenbi, 你1130年嗰場靠人命，我前740年第一次麥西尼亞戰爭靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@神臂弓, 你1130年嗰場靠人命，我前740年第一次麥西尼亞戰爭靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-dory",
-          "name": "斯巴達長矛",
-          "weapon": "Dory",
-          "year": -800,
-<<<<<<< Updated upstream
-          "text": "@bg-assyrianbow, 我前757年科爾基斯征服迪亞烏希嗰陣已經用緊呢套技術，你前685年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@亞述長弓, 我前757年科爾基斯征服迪亞烏希嗰陣已經用緊呢套技術，你前685年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-assyrianbow",
-          "name": "亞述長弓",
-          "weapon": "Assyrian bow",
-          "year": -700,
-<<<<<<< Updated upstream
-          "text": "@bg-scorpio, 前31年你先出場，我前625年打呂底亞-米利都戰爭就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@羅馬弩砲, 前31年你先出場，我前625年打呂底亞-米利都戰爭就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-corinthian",
-          "name": "科林斯青銅盔",
-          "weapon": "Corinthian helmet",
-          "year": -650,
-<<<<<<< Updated upstream
-          "text": "@bg-longbow, 你1346年嗰場靠人命，我前626年巴比倫起義靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@英國長弓, 你1346年嗰場靠人命，我前626年巴比倫起義靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-hoplite",
-          "name": "希臘重步兵",
-          "weapon": "Hoplite",
-          "year": -500,
-<<<<<<< Updated upstream
-          "text": "@bg-onager, 我前499年波希戰爭嗰陣已經用緊呢套技術，你前238年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@投石機, 我前499年波希戰爭嗰陣已經用緊呢套技術，你前238年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-onager",
-          "name": "投石機",
-          "weapon": "Onager",
-          "year": -250,
-<<<<<<< Updated upstream
-          "text": "@bg-daneaxe, 1073年你先出場，我前226年打第一次進攻燕國就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@維京長斧, 1073年你先出場，我前226年打第一次進攻燕國就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-xiaochongnu",
-          "name": "秦連弩",
-          "weapon": "Repeating crossbow",
-          "year": -200,
-<<<<<<< Updated upstream
-          "text": "@bg-poleaxe, 你1471年嗰場靠人命，我前179年達爾達尼亞-巴斯塔尼戰爭靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@長柄戰斧, 你1471年嗰場靠人命，我前179年達爾達尼亞-巴斯塔尼戰爭靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-gongnu",
-          "name": "秦弩",
-          "weapon": "Chinese crossbow",
-          "year": -200,
-<<<<<<< Updated upstream
-          "text": "@bg-scutum, 我前171年第三次馬其頓戰爭嗰陣已經用緊呢套技術，你前83年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@羅馬方陣盾, 我前171年第三次馬其頓戰爭嗰陣已經用緊呢套技術，你前83年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-scutum",
-          "name": "羅馬方陣盾",
-          "weapon": "Scutum",
-          "year": -100,
-<<<<<<< Updated upstream
-          "text": "@bg-trebuchet, 1114年你先出場，我前29年打坎塔布里戰爭就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@配重投石車, 1114年你先出場，我前29年打坎塔布里戰爭就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-pilum",
-          "name": "羅馬標槍",
-          "weapon": "Pilum",
-          "year": -100,
-<<<<<<< Updated upstream
-          "text": "@bg-matchlock, 你1526年嗰場靠人命，我前83年蘇拉內戰靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@火繩槍, 你1526年嗰場靠人命，我前83年蘇拉內戰靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-legionary",
-          "name": "羅馬重步兵",
-          "weapon": "Legionary",
-          "year": -100,
-<<<<<<< Updated upstream
-          "text": "@bg-gladius, 我前74年第三次米特拉達梯戰爭嗰陣已經用緊呢套技術，你前73年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@羅馬短劍, 我前74年第三次米特拉達梯戰爭嗰陣已經用緊呢套技術，你前73年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-gladius",
-          "name": "羅馬短劍",
-          "weapon": "Gladius",
-          "year": -100,
-<<<<<<< Updated upstream
-          "text": "@bg-handcannon, 1273年你先出場，我6年打高句麗-東扶餘戰爭就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@突火槍, 1273年你先出場，我6年打高句麗-東扶餘戰爭就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-scorpio",
-          "name": "羅馬弩砲",
-          "weapon": "Scorpio",
-          "year": -50,
-<<<<<<< Updated upstream
-          "text": "@bg-tanegashima, 你1592年嗰場靠人命，我前31年亞克興戰爭靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@日本火繩槍, 你1592年嗰場靠人命，我前31年亞克興戰爭靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-greekfire",
-          "name": "希臘火",
-          "weapon": "Greek fire",
-          "year": 670,
-<<<<<<< Updated upstream
-          "text": "@bg-lombardshield, 我1019年龜州大捷嗰陣已經用緊呢套技術，你1071年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@倫巴德盾, 我1019年龜州大捷嗰陣已經用緊呢套技術，你1071年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-lombardshield",
-          "name": "倫巴德盾",
-          "weapon": "Lombard shield",
-          "year": 1000,
-<<<<<<< Updated upstream
-          "text": "@bg-huolongpao, 1449年你先出場，我1204年打十字軍攻君士坦丁堡就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@火龍砲, 1449年你先出場，我1204年打十字軍攻君士坦丁堡就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-daneaxe",
-          "name": "維京長斧",
-          "weapon": "Dane axe",
-          "year": 1050,
-<<<<<<< Updated upstream
-          "text": "@bg-fieldgun, 你1585年嗰場靠人命，我1073年岷等州之戰靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@野砲, 你1585年嗰場靠人命，我1073年岷等州之戰靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-contostephano",
-          "name": "拜占庭騎槍",
-          "weapon": "Contostephano",
-          "year": 1100,
-<<<<<<< Updated upstream
-          "text": "@bg-crossbow, 我1204年君士坦丁堡之圍嗰陣已經用緊呢套技術，你1114年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@十字弩, 我1204年君士坦丁堡之圍嗰陣已經用緊呢套技術，你1114年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-crossbow",
-          "name": "十字弩",
-          "weapon": "Crossbow",
-          "year": 1100,
-<<<<<<< Updated upstream
-          "text": "@bg-wheellock, 1500年你先出場，我1115年打晏州之戰就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@輪發槍, 1500年你先出場，我1115年打晏州之戰就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-trebuchet",
-          "name": "配重投石車",
-          "weapon": "Trebuchet",
-          "year": 1100,
-<<<<<<< Updated upstream
-          "text": "@bg-manofwar, 你1692年嗰場靠人命，我1114年寧江州之戰靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@三桅戰列艦, 你1692年嗰場靠人命，我1114年寧江州之戰靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-shenbi",
-          "name": "神臂弓",
-          "weapon": "Shenbi crossbow",
-          "year": 1130,
-<<<<<<< Updated upstream
-          "text": "@bg-springald, 我1130年建州之戰嗰陣已經用緊呢套技術，你1453年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@扭力弩砲, 我1130年建州之戰嗰陣已經用緊呢套技術，你1453年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-springald",
-          "name": "扭力弩砲",
-          "weapon": "Springald",
-          "year": 1200,
-<<<<<<< Updated upstream
-          "text": "@bg-cuirassst, 1525年你先出場，我1453年打君士坦丁堡之圍就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@板甲胸甲, 1525年你先出場，我1453年打君士坦丁堡之圍就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-handcannon",
-          "name": "突火槍",
-          "weapon": "Hand cannon",
-          "year": 1250,
-<<<<<<< Updated upstream
-          "text": "@bg-bayonet, 你1760年嗰場靠人命，我1273年襄樊之戰靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@刺刀, 你1760年嗰場靠人命，我1273年襄樊之戰靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-longbow",
-          "name": "英國長弓",
-          "weapon": "Yew longbow",
-          "year": 1350,
-<<<<<<< Updated upstream
-          "text": "@bg-pavise, 我1346年克雷西戰役嗰陣已經用緊呢套技術，你1453年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@荊棘盾, 我1346年克雷西戰役嗰陣已經用緊呢套技術，你1453年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-pavise",
-          "name": "荊棘盾",
-          "weapon": "Pavise",
-          "year": 1400,
-<<<<<<< Updated upstream
-          "text": "@bg-arquebus, 1672年你先出場，我1522年打羅德島之圍就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@火繩槍銃, 1672年你先出場，我1522年打羅德島之圍就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-huolongpao",
-          "name": "火龍砲",
-          "weapon": "Huolongpao",
-          "year": 1400,
-<<<<<<< Updated upstream
-          "text": "@bg-muzzleloader, 你1850年嗰場靠人命，我1449年土木堡之變靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@線膛砲, 你1850年嗰場靠人命，我1449年土木堡之變靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-poleaxe",
-          "name": "長柄戰斧",
-          "weapon": "Poleaxe",
-          "year": 1450,
-<<<<<<< Updated upstream
-          "text": "@bg-wheellockpistol, 我1471年特威克斯伯里戰役嗰陣已經用緊呢套技術，你1512年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@輪發手槍, 我1471年特威克斯伯里戰役嗰陣已經用緊呢套技術，你1512年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-wheellockpistol",
-          "name": "輪發手槍",
-          "weapon": "Wheellock pistol",
-          "year": 1500,
-<<<<<<< Updated upstream
-          "text": "@bg-pike, 1618年你先出場，我1512年打第五次莫斯科-立陶宛戰爭就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@長槍, 1618年你先出場，我1512年打第五次莫斯科-立陶宛戰爭就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-wheellock",
-          "name": "輪發槍",
-          "weapon": "Wheellock pistol",
-          "year": 1500,
-<<<<<<< Updated upstream
-          "text": "@bg-ironclad, 你1862年嗰場靠人命，我1500年第二次莫斯科-立陶宛戰爭靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@鐵甲艦, 你1862年嗰場靠人命，我1500年第二次莫斯科-立陶宛戰爭靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-matchlock",
-          "name": "火繩槍",
-          "weapon": "Matchlock musket",
-          "year": 1520,
-<<<<<<< Updated upstream
-          "text": "@bg-tercioshield, 我1526年科涅克同盟戰爭嗰陣已經用緊呢套技術，你1525年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@西班牙方陣盾, 我1526年科涅克同盟戰爭嗰陣已經用緊呢套技術，你1525年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-tercioshield",
-          "name": "西班牙方陣盾",
-          "weapon": "Spanish tercio shield",
-          "year": 1530,
-<<<<<<< Updated upstream
-          "text": "@bg-flintlock, 1754年你先出場，我1643年打羅克魯戰役就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@燧發槍, 1754年你先出場，我1643年打羅克魯戰役就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-cuirassst",
-          "name": "板甲胸甲",
-          "weapon": "Cuirass",
-          "year": 1530,
-<<<<<<< Updated upstream
-          "text": "@bg-berdan, 你1870年嗰場靠人命，我1525年帕維亞戰役靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@別丹步槍, 你1870年嗰場靠人命，我1525年帕維亞戰役靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-tanegashima",
-          "name": "日本火繩槍",
-          "weapon": "Tanegashima matchlock",
-          "year": 1543,
-<<<<<<< Updated upstream
-          "text": "@bg-swisspike, 我1592年文祿之役嗰陣已經用緊呢套技術，你1513年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@瑞士長槍方陣, 我1592年文祿之役嗰陣已經用緊呢套技術，你1513年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-swisspike",
-          "name": "瑞士長槍方陣",
-          "weapon": "Swiss pike",
-          "year": 1550,
-<<<<<<< Updated upstream
-          "text": "@bg-minieball, 1844年你先出場，我1525年打帕維亞戰役就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@米尼式槍, 1844年你先出場，我1525年打帕維亞戰役就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-arquebus",
-          "name": "火繩槍銃",
-          "weapon": "Arquebus",
-          "year": 1550,
-<<<<<<< Updated upstream
-          "text": "@bg-torpedoboat, 你1877年嗰場靠人命，我1672年法荷戰爭靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@魚雷艇, 你1877年嗰場靠人命，我1672年法荷戰爭靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-fieldgun",
-          "name": "野砲",
-          "weapon": "Field gun",
-          "year": 1550,
-<<<<<<< Updated upstream
-          "text": "@bg-navalculverin, 我1585年英西戰爭嗰陣已經用緊呢套技術，你1607年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@海軍艦砲, 我1585年英西戰爭嗰陣已經用緊呢套技術，你1607年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-navalculverin",
-          "name": "海軍艦砲",
-          "weapon": "Naval culverin",
-          "year": 1600,
-<<<<<<< Updated upstream
-          "text": "@bg-gatling, 1860年你先出場，我1652年打第一次英荷戰爭就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@加特林機槍, 1860年你先出場，我1652年打第一次英荷戰爭就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-pike",
-          "name": "長槍",
-          "weapon": "Pike",
-          "year": 1600,
-<<<<<<< Updated upstream
-          "text": "@bg-assyrianspear, 你前740年嗰場靠人命，我1618年三十年戰爭靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@亞述長矛, 你前740年嗰場靠人命，我1618年三十年戰爭靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-manofwar",
-          "name": "三桅戰列艦",
-          "weapon": "Man-of-war",
-          "year": 1650,
-<<<<<<< Updated upstream
-          "text": "@bg-ottomanmusket, 我1692年拉古海戰嗰陣已經用緊呢套技術，你1683年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@鄂圖曼燧發槍, 我1692年拉古海戰嗰陣已經用緊呢套技術，你1683年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-ottomanmusket",
-          "name": "鄂圖曼燧發槍",
-          "weapon": "Ottoman musket",
-          "year": 1700,
-<<<<<<< Updated upstream
-          "text": "@bg-steamship, 1864年你先出場，我1716年打彼得羅瓦丁戰役就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@蒸汽鐵甲艦, 1864年你先出場，我1716年打彼得羅瓦丁戰役就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-flintlock",
-          "name": "燧發槍",
-          "weapon": "Flintlock musket",
-          "year": 1710,
-<<<<<<< Updated upstream
-          "text": "@bg-corinthian, 你前626年嗰場靠人命，我1754年七年戰爭靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@科林斯青銅盔, 你前626年嗰場靠人命，我1754年七年戰爭靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-bayonet",
-          "name": "刺刀",
-          "weapon": "Bayonet",
-          "year": 1760,
-<<<<<<< Updated upstream
-          "text": "@bg-percussion, 我1760年旺迪瓦什戰役嗰陣已經用緊呢套技術，你1840年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@雷管步槍, 我1760年旺迪瓦什戰役嗰陣已經用緊呢套技術，你1840年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-percussion",
-          "name": "雷管步槍",
-          "weapon": "Percussion rifle",
-          "year": 1840,
-<<<<<<< Updated upstream
-          "text": "@bg-winchester, 1876年你先出場，我1841年打森巴戰爭就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@惠氏步槍, 1876年你先出場，我1841年打森巴戰爭就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-minieball",
-          "name": "米尼式槍",
-          "weapon": "Minié ball rifle",
-          "year": 1849,
-<<<<<<< Updated upstream
-          "text": "@bg-xiaochongnu, 你前179年嗰場靠人命，我1844年伊斯邁戰役靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@秦連弩, 你前179年嗰場靠人命，我1844年伊斯邁戰役靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-muzzleloader",
-          "name": "線膛砲",
-          "weapon": "Muzzle-loading field gun",
-          "year": 1850,
-<<<<<<< Updated upstream
-          "text": "@bg-enfieldrifle, 我1850年太平天國起義嗰陣已經用緊呢套技術，你1902年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@恩菲爾德步槍, 我1850年太平天國起義嗰陣已經用緊呢套技術，你1902年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-enfieldrifle",
-          "name": "恩菲爾德步槍",
-          "weapon": "Enfield rifle",
-          "year": 1858,
-<<<<<<< Updated upstream
-          "text": "@bg-khopesh, 前1493年你先出場，我1902年打沙特阿拉伯統一戰爭就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@埃及月牙劍, 前1493年你先出場，我1902年打沙特阿拉伯統一戰爭就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-gatling",
-          "name": "加特林機槍",
-          "weapon": "Gatling gun",
-          "year": 1860,
-<<<<<<< Updated upstream
-          "text": "@bg-pilum, 你前83年嗰場靠人命，我1860年第一次塔臘納基戰爭靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@羅馬標槍, 你前83年嗰場靠人命，我1860年第一次塔臘納基戰爭靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-ironclad",
-          "name": "鐵甲艦",
-          "weapon": "Ironclad",
-          "year": 1862,
-<<<<<<< Updated upstream
-          "text": "@bg-sharps, 我1862年同治陝甘回變嗰陣已經用緊呢套技術，你1863年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@施拿甫步槍, 我1862年同治陝甘回變嗰陣已經用緊呢套技術，你1863年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-sharps",
-          "name": "施拿甫步槍",
-          "weapon": "Sharps rifle",
-          "year": 1865,
-<<<<<<< Updated upstream
-          "text": "@bg-assyrianbow, 前685年你先出場，我1876年打小比格霍恩戰役就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@亞述長弓, 前685年你先出場，我1876年打小比格霍恩戰役就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-steamship",
-          "name": "蒸汽鐵甲艦",
-          "weapon": "Steam ironclad",
-          "year": 1865,
-<<<<<<< Updated upstream
-          "text": "@bg-scorpio, 你前31年嗰場靠人命，我1864年莫比爾灣海戰靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@羅馬弩砲, 你前31年嗰場靠人命，我1864年莫比爾灣海戰靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-berdan",
-          "name": "別丹步槍",
-          "weapon": "Berdan rifle",
-          "year": 1866,
-<<<<<<< Updated upstream
-          "text": "@bg-breechcannon, 我1870年色丹戰役嗰陣已經用緊呢套技術，你1870年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@婆塞德後膛砲, 我1870年色丹戰役嗰陣已經用緊呢套技術，你1870年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-breechcannon",
-          "name": "婆塞德後膛砲",
-          "weapon": "Breech-loading cannon",
-          "year": 1870,
-<<<<<<< Updated upstream
-          "text": "@bg-onager, 前238年你先出場，我1877年打普列文之圍就唔靠舊思維。邊樣先改變戰爭？"
-=======
-          "text": "@投石機, 前238年你先出場，我1877年打普列文之圍就唔靠舊思維。邊樣先改變戰爭？"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-winchester",
-          "name": "惠氏步槍",
-          "weapon": "Winchester Model 1873",
-          "year": 1873,
-<<<<<<< Updated upstream
-          "text": "@bg-daneaxe, 你1073年嗰場靠人命，我1876年小比格霍恩戰役靠技術。火藥一換，規矩就冇咗。"
-=======
-          "text": "@維京長斧, 你1073年嗰場靠人命，我1876年小比格霍恩戰役靠技術。火藥一換，規矩就冇咗。"
->>>>>>> Stashed changes
-        },
-        {
-          "id": "bg-torpedoboat",
-          "name": "魚雷艇",
-          "weapon": "Torpedo boat",
-          "year": 1877,
-<<<<<<< Updated upstream
-          "text": "@bg-egyptianspear, 我1877年俄羅斯戰列艦捷什馬號被擊中嗰陣已經用緊呢套技術，你前3100年先知存在。技術一跳，死法就重寫。"
-=======
-          "text": "@埃及長矛, 我1877年俄羅斯戰列艦捷什馬號被擊中嗰陣已經用緊呢套技術，你前3100年先知存在。技術一跳，死法就重寫。"
->>>>>>> Stashed changes
         }
       ]
     }
