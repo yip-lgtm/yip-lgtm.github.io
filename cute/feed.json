@@ -35770,6 +35770,84 @@
         "history": "施拿甫步槍是美國陸軍在十九世紀後半葉採用的制式步槍，主要配置於前線步兵與國民兵團，並成為地方武裝可使用的早期槍械。",
         "portrait": "portraits/sharps.jpg"
       }
+    },
+    {
+      "id": "1991-1991年伊拉克起義",
+      "added": "2026-11-09T17:26:17.290Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.02,
+        "lat": 31.99
+      },
+      "battle": {
+        "y": 1991,
+        "m": 1,
+        "name": "1991年伊拉克起義",
+        "theater": "伊拉克南部",
+        "brief": "1991年伊拉克起義發生在海灣戰爭尾聲，伊拉克南部什葉派居民與退伍軍人反抗萨达姆政權，起義據點涉及納杰夫、卡爾巴拉與納西里亞等地，遭政府軍武力鎮壓。美軍當時已配備加特林機槍（Gatling gun），可由車載或固定式槍位提供近程火力。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍是美國陸軍用於近程持續壓制的旋轉多管武器，可裝於車載與固定槍位，憑高射速及彈幕形成打擊敵方步兵與輕型車輛的火力。",
+        "portrait": "portraits/gatling.jpg"
+      }
+    },
+    {
+      "id": "1991-克羅地亞戰爭",
+      "added": "2026-11-09T17:26:23.334Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 15.5,
+        "lat": 45.5
+      },
+      "battle": {
+        "y": 1991,
+        "m": 6,
+        "name": "克羅地亞戰爭",
+        "theater": "克羅地亞",
+        "brief": "克羅地亞戰爭始於1991年6月克羅地亞宣布獨立後，初期交戰涉及正規軍隊、準軍事組織與地方武裝之間的對抗，戰線遍及境內多個區域，並逐步擴展為長期戰爭。此處所列英國正式裝備型號Enfield rifle於1858年列裝，屬於更早的英國陸軍步兵武器序列。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "Enfield rifle位於英國陸軍的步兵武器序列，屬地面兵種裝備，主要配置予步兵及遠征部隊，承擔制式步槍在殖民地防衛與軍事行動中的角色。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      }
+    },
+    {
+      "id": "1991-十日戰爭",
+      "added": "2026-11-09T17:26:28.315Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 14.5,
+        "lat": 46.05
+      },
+      "battle": {
+        "y": 1991,
+        "m": 7,
+        "name": "十日戰爭",
+        "theater": "斯洛維尼亞",
+        "brief": "十日戰爭於1991年7月在斯洛維尼亞爆發，斯洛維尼亞地方防衛軍與南斯拉夫人民軍交戰，十日後斯洛維尼亞取得獨立。裝備方面，德國陸軍於1850年列裝線膛砲（Muzzle-loading field gun），屬當時野戰砲兵，用於火力支援。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲（Muzzle-loading field gun）是十九世紀中葉野戰砲兵的核心裝備，隸屬陸軍砲兵，負責隨軍支援步兵作戰，並以營、連等基層編制部署。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
     }
   ]
 }
