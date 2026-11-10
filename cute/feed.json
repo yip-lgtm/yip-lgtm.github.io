@@ -35797,7 +35797,8 @@
         "layer": "land",
         "history": "加特林機槍是美國陸軍用於近程持續壓制的旋轉多管武器，可裝於車載與固定槍位，憑高射速及彈幕形成打擊敵方步兵與輕型車輛的火力。",
         "portrait": "portraits/gatling.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1991-69e7cd005a.json"
     },
     {
       "id": "1991-克羅地亞戰爭",
@@ -35823,7 +35824,8 @@
         "layer": "land",
         "history": "Enfield rifle位於英國陸軍的步兵武器序列，屬地面兵種裝備，主要配置予步兵及遠征部隊，承擔制式步槍在殖民地防衛與軍事行動中的角色。",
         "portrait": "portraits/enfieldrifle.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1991-032980a8f7.json"
     },
     {
       "id": "1991-十日戰爭",
@@ -35849,6 +35851,82 @@
         "layer": "land",
         "history": "線膛砲（Muzzle-loading field gun）是十九世紀中葉野戰砲兵的核心裝備，隸屬陸軍砲兵，負責隨軍支援步兵作戰，並以營、連等基層編制部署。",
         "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1991-abd670b55f.json"
+    },
+    {
+      "id": "1920-第二次護法戰爭",
+      "added": "2026-11-10T17:44:48.455Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 113.26,
+        "lat": 23.13
+      },
+      "battle": {
+        "y": 1920,
+        "m": 6,
+        "name": "第二次護法戰爭",
+        "theater": "廣州",
+        "brief": "第二次護法戰爭於1920年在廣州護法軍政府與陳炯明勢力之間展開，波及廣東、廣西及福建等地的軍政對抗，是護法運動的後續衝突。英國海軍魚雷艇（Torpedo boat）於1877年列裝，作為早期近海快速兵力，配屬海軍編隊，負責警戒、追擊與側翼支援。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇（Torpedo boat）以高速小艇攜帶魚雷，隸屬英國海軍，主要執行近海警戒、追擊、快速突擊與側翼支援。",
+        "portrait": "portraits/torpedoboat.jpg"
+      }
+    },
+    {
+      "id": "1920-第一次粵桂戰爭",
+      "added": "2026-11-10T17:44:52.670Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1920,
+        "m": 6,
+        "name": "第一次粵桂戰爭",
+        "theater": "廣東與廣西",
+        "brief": "維基百科「戰爭列表」所列第一次粵桂戰爭，是1920年廣東與廣西軍閥勢力為爭奪區域主導權而爆發的交鋒。參戰軍隊沿用1840年已列裝的雷管步槍（Percussion rifle），反映當時軍隊仍以早期火藥槍械作為步兵裝備。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管步槍是法軍十九世紀中期採用的制式地面步槍，配置於步兵單位，作為日常訓練與作戰所用的一般槍械，構成當時軍隊步兵體系的核心裝備。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1920-里夫戰爭",
+      "added": "2026-11-10T17:45:13.070Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -3.9,
+        "lat": 35.25
+      },
+      "battle": {
+        "y": 1920,
+        "m": 1,
+        "name": "里夫戰爭",
+        "theater": "北摩洛哥里夫地區",
+        "brief": "里夫戰爭是西班牙殖民軍與摩洛哥北部里夫部族在1920年至1926年間發生的衝突，涉及殖民統治、地方武裝反抗及西班牙維持北非控制權的目標。里夫部族武裝曾配備惠氏步槍（Winchester Model 1873），此型自1873年起列裝，屬美國制式步槍，並體現殖民擴張與地方反抗。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍曾列入美國陸軍的制式步兵武器，編入步槍序列供部隊配發，是早期後膛步槍的代表型號。",
+        "portrait": "portraits/winchester.jpg"
       }
     }
   ]
