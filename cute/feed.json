@@ -35743,7 +35743,8 @@
         "layer": "sea",
         "history": "鐵甲艦（Ironclad）在英國皇家海軍中屬重裝防護艦種，承擔海上陣列、封鎖與沿岸控制任務，是當時艦隊防護與重砲作戰的核心裝備。",
         "portrait": "portraits/ironclad.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1920-240d69eac3.json"
     },
     {
       "id": "1919-西里西亞起義",
