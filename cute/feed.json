@@ -35931,6 +35931,86 @@
         "portrait": "portraits/winchester.jpg"
       },
       "dossierUrl": "dossiers/1920-38bc3b0917.json"
+    },
+    {
+      "id": "1921-第二次粵桂戰爭",
+      "added": "2026-11-12T02:56:11.709Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.32,
+        "lat": 22.82
+      },
+      "battle": {
+        "y": 1921,
+        "m": 7,
+        "name": "第二次粵桂戰爭",
+        "theater": "廣西梧州、柳州、桂林與南寧一帶",
+        "brief": "《中文維基戰爭列表》所載第二次粵桂戰爭於1921年7月展開，廣東軍與廣西軍在廣西境內爭奪控制權，戰事涉及梧州、柳州、桂林與南寧。交戰軍配備1870年已服役的婆塞德後膛砲（Breech-loading cannon），由砲兵提供火力支援。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲屬德國陸軍野戰砲兵裝備，與步兵協同，以曲射火力支援推進，並負責壓制火力點及攻擊堡壘。",
+        "portrait": "portraits/breechcannon.jpg"
+      },
+      "dossierUrl": "dossiers/1921-6c419c2393.json"
+    },
+    {
+      "id": "1922-愛爾蘭內戰",
+      "added": "2026-11-12T02:56:15.123Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -8,
+        "lat": 53
+      },
+      "battle": {
+        "y": 1922,
+        "m": 6,
+        "name": "愛爾蘭內戰",
+        "theater": "愛爾蘭",
+        "brief": "愛爾蘭內戰於1922年6月爆發，反對《英愛條約》的國民軍與支持條約的自由邦軍在愛爾蘭交戰，戰線涵蓋都柏林、科克及德羅赫達等地。別丹步槍（Berdan rifle）於1866年列裝，是蘇俄陸軍制式步槍，亦為愛爾蘭國民軍使用的步兵裝備。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍（Berdan rifle）是蘇俄陸軍的制式栓動步槍，配置於步兵分隊，負責提供主要射擊火力，屬地面部隊的標準制式武器。",
+        "portrait": "portraits/berdan.jpg"
+      }
+    },
+    {
+      "id": "1922-第一次直奉戰爭",
+      "added": "2026-11-12T02:56:58.980Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 123.43,
+        "lat": 41.8
+      },
+      "battle": {
+        "y": 1922,
+        "m": 4,
+        "name": "第一次直奉戰爭",
+        "theater": "奉天（今瀋陽）及遼寧中部",
+        "brief": "第一次直奉戰爭於1922年4月爆發，直系吳佩孚部與奉系張作霖部在奉天（今瀋陽）及遼寧一帶交戰，反映北京政府控制權與地方軍閥勢力之間的角力。戰爭相關武器包括美製施拿甫步槍（Sharps rifle），此型號於1865年列裝，屬早期後膛單發步槍，也是當時舊式槍械的代表之一。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍在美國陸軍體系中是早期步兵制式武器，1865年列裝後供步兵單位使用，後因槍械更新退出主力，改列後備與民兵裝備。",
+        "portrait": "portraits/sharps.jpg"
+      },
+      "dossierUrl": "dossiers/1922-6e9fa9ad55.json"
     }
   ]
 }
