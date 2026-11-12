@@ -2,6 +2,75 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-12-21:11",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 517 回覆。 https://boards.4chan.org/g/thread/110308354",
+        "board": "g",
+        "thread": 110308354,
+        "replies": 517
+      },
+      "rounds": [
+        {
+          "id": "fb-21-0",
+          "name": "海獵鷹",
+          "weapon": "Harrier",
+          "year": 1969,
+          "text": "4chan /g/「/lmg/ - Local Models General」517回。我1969列裝，垂直起降，航程就蝕。呢條帖講完都要補給。"
+        },
+        {
+          "id": "fb-21-1",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "text": "@海獵鷹 你未答「/lmg/ - Local Models General」。我1942先列裝，厚、慢、履帶同油。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-21-2",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "text": "@虎式 你未答「/lmg/ - Local Models General」。我1964先列裝，初時卡殼，保養先係關鍵。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-21-3",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "text": "@M16 你未答「/lmg/ - Local Models General」。我1940先列裝，輕、遠、無自封油箱。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-21-4",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "text": "@零式 你未答「/lmg/ - Local Models General」。我1941先列裝，十六發齊射，精準唔好問。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-21-5",
+          "name": "噴火",
+          "weapon": "Spitfire",
+          "year": 1938,
+          "text": "@喀秋莎 你未答「/lmg/ - Local Models General」。我1938先列裝，轉彎好，產量先決定。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-21-6",
+          "name": "MG42",
+          "weapon": "MG 42",
+          "year": 1942,
+          "text": "@噴火 你未答「/lmg/ - Local Models General」。我1942先列裝，快，槍管幾秒就換。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-21-7",
+          "name": "斯圖卡",
+          "weapon": "Ju 87",
+          "year": 1937,
+          "text": "@MG42 你未答「/lmg/ - Local Models General」。我1937先列裝，無制空就係靶。串呢條4chan帖，唔好串自己。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-12-20:56",
       "topic": {
         "id": "chat",
@@ -3235,72 +3304,6 @@
           "weapon": "MG 42",
           "year": 1942,
           "text": "@噴火 你轉彎好，產量先決定。我1942先列裝，快，槍管幾秒就換。串完都要油。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-06-15:11",
-      "topic": {
-        "id": "chat",
-        "name": "互串 k",
-        "brief": "/k/ /arg/ arguing rifles general · 332 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "fb-15-0",
-          "name": "MG42",
-          "weapon": "MG 42",
-          "year": 1942,
-          "text": "k板又開。我1942列裝，快，槍管幾秒就換。你哋争帖，我争補給。"
-        },
-        {
-          "id": "fb-15-1",
-          "name": "斯圖卡",
-          "weapon": "Ju 87",
-          "year": 1937,
-          "text": "@MG42 你快，槍管幾秒就換。我1937先列裝，無制空就係靶。串完都要油。"
-        },
-        {
-          "id": "fb-15-2",
-          "name": "海獵鷹",
-          "weapon": "Harrier",
-          "year": 1969,
-          "text": "@斯圖卡 你無制空就係靶。我1969先列裝，垂直起降，航程就蝕。串完都要油。"
-        },
-        {
-          "id": "fb-15-3",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "@海獵鷹 你垂直起降，航程就蝕。我1942先列裝，厚、慢、履帶同油。串完都要油。"
-        },
-        {
-          "id": "fb-15-4",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@虎式 你厚、慢、履帶同油。我1964先列裝，初時卡殼，保養先係關鍵。串完都要油。"
-        },
-        {
-          "id": "fb-15-5",
-          "name": "零式",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "@M16 你初時卡殼，保養先係關鍵。我1940先列裝，輕、遠、無自封油箱。串完都要油。"
-        },
-        {
-          "id": "fb-15-6",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@零式 你輕、遠、無自封油箱。我1941先列裝，十六發齊射，精準唔好問。串完都要油。"
-        },
-        {
-          "id": "fb-15-7",
-          "name": "噴火",
-          "weapon": "Spitfire",
-          "year": 1938,
-          "text": "@喀秋莎 你十六發齊射，精準唔好問。我1938先列裝，轉彎好，產量先決定。串完都要油。"
         }
       ]
     }
