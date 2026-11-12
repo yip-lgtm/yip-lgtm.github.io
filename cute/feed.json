@@ -36012,6 +36012,83 @@
         "portrait": "portraits/sharps.jpg"
       },
       "dossierUrl": "dossiers/1922-6e9fa9ad55.json"
+    },
+    {
+      "id": "1954-阿曼統一戰爭",
+      "added": "2026-11-12T18:51:48.081Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 56.4,
+        "lat": 23.2
+      },
+      "battle": {
+        "y": 1954,
+        "m": 1,
+        "name": "阿曼統一戰爭",
+        "theater": "阿曼北部傑貝爾阿赫達爾山區",
+        "brief": "阿曼統一戰爭於一九五四年起在阿曼內陸展開，內戰一方由伊瑪目穆罕默德領導，另一方為蘇丹賽義德，爭奪全國統治權，北部山區成為主要戰場。列表所附裝備是英國海軍鐵甲艦（Ironclad，1862年），其型號早於本衝突，並非宣稱該艦參戰。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是十九世紀英國海軍以鐵甲防護重炮平台、以蒸汽動力航行的裝甲戰艦，屬當時主力艦隊的海上火力核心。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1954-241d40f110.json"
+    },
+    {
+      "id": "1958-第一次鱈魚戰爭",
+      "added": "2026-11-12T18:52:08.431Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1958,
+        "m": 3,
+        "name": "第一次鱈魚戰爭",
+        "theater": "冰島沿岸及鄰近北大西洋",
+        "brief": "第一次鱈魚戰爭於1958年3月爆發，冰島因漁業管轄範圍與英國發生衝突，交鋒集中在冰島沿岸及附近北大西洋，英方與冰島海岸警衛隊多次對抗。Gatling gun（加特林機槍）並非本戰爭所用武器，但美國陸軍於1860年將其列裝，時間明顯早於本戰爭爆發之年。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍是美國陸軍早期制式的旋轉式多管機槍，配置於步兵支援與固定陣位，負責持續壓制及據點防禦；重型機槍普及後，主要轉作後方警戒。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1958-4627b96e12.json"
+    },
+    {
+      "id": "1953-老撾內戰",
+      "added": "2026-11-12T18:52:10.583Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 103,
+        "lat": 20
+      },
+      "battle": {
+        "y": 1953,
+        "m": 12,
+        "name": "老撾內戰",
+        "theater": "老撾中北部山區",
+        "brief": "本場衝突是一九五三年十二月開始的老撾內戰，寮國王政府軍與受北越支援的寮國共產武裝在北部及中部山區對抗。列表所列裝備中，正式型號為 Steam ironclad 的蒸汽鐵甲艦於一八六五年服役，屬英國皇家海軍的遠洋主力艦種，配有蒸汽輪機與鐵甲防護，並非本場地面作戰實際使用的武器。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦在英國皇家海軍體系中屬裝甲主力艦，以蒸汽輪機推進、以鐵甲防護艦體，承擔艦隊作戰、護航與海外駐防，屬十九世紀中葉機械化海軍的重要艦種。",
+        "portrait": "portraits/steamship.jpg"
+      }
     }
   ]
 }
