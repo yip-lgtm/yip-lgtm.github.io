@@ -2,6 +2,75 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-12-03:54",
+      "topic": {
+        "id": "chat",
+        "name": "/hg/ - Handgun General",
+        "brief": "4chan /k/ 熱帖「/hg/ - Handgun General」· 428 回覆。 https://boards.4chan.org/k/thread/65643423",
+        "board": "k",
+        "thread": 65643423,
+        "replies": 428
+      },
+      "rounds": [
+        {
+          "id": "fb-3-0",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "text": "4chan /k/「/hg/ - Handgun General」428回。我1964列裝，初時卡殼，保養先係關鍵。呢條帖講完都要補給。"
+        },
+        {
+          "id": "fb-3-1",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "text": "@M16 你未答「/hg/ - Handgun General」。我1940先列裝，輕、遠、無自封油箱。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-3-2",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "text": "@零式 你未答「/hg/ - Handgun General」。我1941先列裝，十六發齊射，精準唔好問。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-3-3",
+          "name": "噴火",
+          "weapon": "Spitfire",
+          "year": 1938,
+          "text": "@喀秋莎 你未答「/hg/ - Handgun General」。我1938先列裝，轉彎好，產量先決定。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-3-4",
+          "name": "MG42",
+          "weapon": "MG 42",
+          "year": 1942,
+          "text": "@噴火 你未答「/hg/ - Handgun General」。我1942先列裝，快，槍管幾秒就換。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-3-5",
+          "name": "斯圖卡",
+          "weapon": "Ju 87",
+          "year": 1937,
+          "text": "@MG42 你未答「/hg/ - Handgun General」。我1937先列裝，無制空就係靶。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-3-6",
+          "name": "海獵鷹",
+          "weapon": "Harrier",
+          "year": 1969,
+          "text": "@斯圖卡 你未答「/hg/ - Handgun General」。我1969先列裝，垂直起降，航程就蝕。串呢條4chan帖，唔好串自己。"
+        },
+        {
+          "id": "fb-3-7",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "text": "@海獵鷹 你未答「/hg/ - Handgun General」。我1942先列裝，厚、慢、履帶同油。串呢條4chan帖，唔好串自己。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-11-23:05",
       "topic": {
         "id": "chat",
@@ -3220,72 +3289,6 @@
           "weapon": "Harrier",
           "year": 1969,
           "text": "@斯圖卡 你無制空就係靶。我1969先列裝，垂直起降，航程就蝕。串完都要油。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-05-22:20",
-      "topic": {
-        "id": "chat",
-        "name": "互串 g",
-        "brief": "/g/ /lmg/ - Local Models General · 637 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "fb-22-0",
-          "name": "戰隼",
-          "weapon": "F-16",
-          "year": 1978,
-          "text": "g板又開。我1978列裝，輕、平、改得多。你哋争帖，我争補給。"
-        },
-        {
-          "id": "fb-22-1",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "text": "@戰隼 你輕、平、改得多。我1947先列裝，鬆、髒、照打。串完都要油。"
-        },
-        {
-          "id": "fb-22-2",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "text": "@AK-47 你鬆、髒、照打。我1942先列裝，長程護航，油夠先飛。串完都要油。"
-        },
-        {
-          "id": "fb-22-3",
-          "name": "謝爾曼",
-          "weapon": "M4",
-          "year": 1942,
-          "text": "@P-51野馬 你長程護航，油夠先飛。我1942先列裝，量產、修得到、運得到。串完都要油。"
-        },
-        {
-          "id": "fb-22-4",
-          "name": "俾斯麥",
-          "weapon": "Bismarck",
-          "year": 1940,
-          "text": "@謝爾曼 你量產、修得到、運得到。我1940先列裝，八日就沉，舵一卡就完。串完都要油。"
-        },
-        {
-          "id": "fb-22-5",
-          "name": "莫辛-納甘",
-          "weapon": "M1891",
-          "year": 1891,
-          "text": "@俾斯麥 你八日就沉，舵一卡就完。我1891先列裝，兩邊都用，政權先換。串完都要油。"
-        },
-        {
-          "id": "fb-22-6",
-          "name": "四號",
-          "weapon": "Pz IV",
-          "year": 1937,
-          "text": "@莫辛-納甘 你兩邊都用，政權先換。我1937先列裝，短管變長管，改得動先活。串完都要油。"
-        },
-        {
-          "id": "fb-22-7",
-          "name": "波波沙",
-          "weapon": "PPSh-41",
-          "year": 1941,
-          "text": "@四號 你短管變長管，改得動先活。我1941先列裝，彈鼓，近戰先有用。串完都要油。"
         }
       ]
     }
