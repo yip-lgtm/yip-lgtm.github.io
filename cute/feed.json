@@ -36090,6 +36090,86 @@
         "portrait": "portraits/steamship.jpg"
       },
       "dossierUrl": "dossiers/1953-d551b1b7c3.json"
+    },
+    {
+      "id": "1925-反奉戰爭",
+      "added": "2026-11-13T16:14:56.034Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 123.43,
+        "lat": 41.8
+      },
+      "battle": {
+        "y": 1925,
+        "m": 11,
+        "name": "反奉戰爭",
+        "theater": "奉天省",
+        "brief": "反奉戰爭是奉系將領郭松齡於一九二五年十一月起兵反抗張作霖的軍事衝突，戰場集中於奉天省，進軍方向直指瀋陽。當時地面部隊配備包括早在一八四〇年已列裝的法國 Percussion rifle（雷管步槍），用以支援步兵作戰。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管步槍是法國陸軍十九世紀中期配置於步兵單位的制式步槍，隸屬營內步兵排與連的地面火力，並非炮兵或航空裝備。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1924-第二次直奉戰爭",
+      "added": "2026-11-13T16:15:03.953Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 116.33,
+        "lat": 39.85
+      },
+      "battle": {
+        "y": 1924,
+        "m": 1,
+        "name": "第二次直奉戰爭",
+        "theater": "北京長辛店一帶",
+        "brief": "第二次直奉戰爭於1924年爆發，直隸與奉天兩軍在北京、天津及山海關一線交戰，最終奉軍攻入北京並控制天津。戰事年代所涉及的地面火力，可對照德軍陸軍的線膛砲，正式型號記為Muzzle-loading field gun，列裝於1850年，早於本場衝突。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲在德軍陸軍體系中屬野戰砲兵裝備，負責對地面目標提供直射火力支援，並納入步兵協同作戰的火力編組，層級為陸上軍用。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1924-1ce83867fc.json"
+    },
+    {
+      "id": "1924-江浙戰爭",
+      "added": "2026-11-13T16:15:16.228Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 120.5,
+        "lat": 30.5
+      },
+      "battle": {
+        "y": 1924,
+        "m": 10,
+        "name": "江浙戰爭",
+        "theater": "江浙地區",
+        "brief": "《戰爭列表》所列的江浙戰爭，是中國內戰中孫傳芳所率直系軍與盧永祥所率浙軍於1924年交戰的衝突，戰事集中於江蘇、浙江及上海一帶，地方割據與軍閥競爭因而加劇。英制Enfield rifle於1858年列裝，是英國陸軍制式步槍，也是當時中國軍隊常見的外來步槍。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "Enfield rifle是英國陸軍裝備於步兵單位的制式步槍，位於連級步兵射擊的核心，承擔遠距離與一般戰鬥的步槍任務。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      },
+      "dossierUrl": "dossiers/1924-f2e4251260.json"
     }
   ]
 }
