@@ -1710,7 +1710,7 @@
   },
   {
    "id": "type052d",
-   "name": "052D",
+   "name": "驅逐艦 052D",
    "designation": "Type 052D",
    "nation": "cn",
    "layer": "sea",
@@ -2491,6 +2491,76 @@
    "armor": 8,
    "history": "小船帶著一枚雷衝進大艦的肚子。戰列艦的價格第一次被一種沒有装甲的東西威脅。",
    "portrait": "portraits/torpedoboat.jpg"
+  },
+  {
+   "id": "flak88",
+   "name": "八八高砲",
+   "designation": "8.8 cm Flak 36",
+   "nation": "de",
+   "layer": "land",
+   "kind": "artillery",
+   "year": 1936,
+   "epithet": "",
+   "pen": 45,
+   "armor": 6,
+   "history": "高射炮當反戰車炮用。穿甲彈在戰爭頭兩年無所敵手，後來連重裝甲都打穿。",
+   "portrait": "portraits/flak88.jpg"
+  },
+  {
+   "id": "f4u",
+   "name": "海盜",
+   "designation": "F4U Corsair",
+   "nation": "us",
+   "layer": "air",
+   "kind": "fighter",
+   "year": 1941,
+   "epithet": "",
+   "pen": 40,
+   "armor": 12,
+   "history": "折翼機身配活塞引擎。1943 年才見真章，惡戰到機尾都換。",
+   "portrait": "portraits/f4u.jpg"
+  },
+  {
+   "id": "m3greasegun",
+   "name": "油脂槍",
+   "designation": "M3 Grease Gun",
+   "nation": "us",
+   "layer": "land",
+   "kind": "infantry",
+   "year": 1943,
+   "epithet": "",
+   "pen": 12,
+   "armor": 5,
+   "history": "美軍衝鋒槍。壓鑄機匣重到槍口下垂，多數戰役後期只用來自守。",
+   "portrait": "portraits/m3greasegun.jpg"
+  },
+  {
+   "id": "m60",
+   "name": "M60",
+   "designation": "M60 machine gun",
+   "nation": "us",
+   "layer": "land",
+   "kind": "infantry",
+   "year": 1960,
+   "epithet": "",
+   "pen": 30,
+   "armor": 6,
+   "history": "通用機槍。皮帶供彈，一箱打出去就見底，越戰後一直是步兵班的火力骨幹。",
+   "portrait": "portraits/m60.jpg"
+  },
+  {
+   "id": "f14",
+   "name": "雄貓",
+   "designation": "F-14 Tomcat",
+   "nation": "us",
+   "layer": "air",
+   "kind": "fighter",
+   "year": 1974,
+   "epithet": "",
+   "pen": 50,
+   "armor": 16,
+   "history": "雙尾變翼。海上攔截用，機體重到要靠彈射器離艦。",
+   "portrait": "portraits/f14.jpg"
   }
  ]
 }
