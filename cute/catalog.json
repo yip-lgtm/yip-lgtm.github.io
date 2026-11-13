@@ -2493,20 +2493,6 @@
    "portrait": "portraits/torpedoboat.jpg"
   },
   {
-   "id": "flak88",
-   "name": "八八高砲",
-   "designation": "8.8 cm Flak 36",
-   "nation": "de",
-   "layer": "land",
-   "kind": "artillery",
-   "year": 1936,
-   "epithet": "",
-   "pen": 45,
-   "armor": 6,
-   "history": "高射炮當反戰車炮用。穿甲彈在戰爭頭兩年無所敵手，後來連重裝甲都打穿。",
-   "portrait": "portraits/flak88.jpg"
-  },
-  {
    "id": "f4u",
    "name": "海盜",
    "designation": "F4U Corsair",
