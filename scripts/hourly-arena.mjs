@@ -98,6 +98,14 @@ function strip(s) {
   return String(s || "").replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
 }
 
+/** The roster, by name: the year and designation must match the name. */
+const BY_NAME = new Map(GIRLS.map((g) => [g[0], g]));
+/** Every catchphrase, and who owns it. */
+const TRAIT_OWNER = new Map();
+for (const [name, pool] of Object.entries(TRAITS)) {
+  for (const t of pool) if (!TRAIT_OWNER.has(t)) TRAIT_OWNER.set(t, name);
+}
+
 function parseRounds(raw) {
   const cleaned = strip(raw);
   const start = cleaned.indexOf("[");
@@ -107,14 +115,29 @@ function parseRounds(raw) {
     const arr = JSON.parse(cleaned.slice(start, end + 1));
     if (!Array.isArray(arr)) return null;
     const rounds = arr
-      .map((r, i) => ({
-        id: `h-${Date.now()}-${i}`,
-        name: String(r.name || "").slice(0, 20),
-        weapon: String(r.weapon || ""),
-        year: Number(r.year) || 0,
-        text: String(r.text || "").replace(/\s+/g, "").slice(0, 55),
-      }))
-      .filter((r) => r.name && r.text.length >= 12);
+      .map((r, i) => {
+        const name = String(r.name || "").trim().slice(0, 20);
+        const g = BY_NAME.get(name);
+        if (!g) return null; // not on the roster: drop it
+        let text = String(r.text || "").replace(/\s+/g, "").slice(0, 90);
+        // The model sometimes borrows another weapon's catchphrase, or gets
+        // the year wrong. The roster is the truth, so put it right.
+        for (const [trait, owner] of TRAIT_OWNER) {
+          if (owner === name) continue;
+          if (text.includes(trait)) {
+            const own = TRAITS[name] ?? [g[3]];
+            text = text.replace(trait, own[(i + text.length) % own.length]);
+          }
+        }
+        return {
+          id: `h-${Date.now()}-${i}`,
+          name,
+          weapon: g[1],
+          year: g[2],
+          text,
+        };
+      })
+      .filter((r) => r && r.text.length >= 12);
     return rounds.length >= 6 ? rounds.slice(0, 12) : null;
   } catch {
     return null;
