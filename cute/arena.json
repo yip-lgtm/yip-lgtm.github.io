@@ -2,6 +2,75 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-14-06:43",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 494 回覆。 https://boards.4chan.org/g/thread/110327741",
+        "board": "g",
+        "thread": 110327741,
+        "replies": 494
+      },
+      "rounds": [
+        {
+          "id": "fb-6-0",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "text": "4chan /g/「/lmg/ - Local Models General」494回，講緊/lmg/ - a general 。我1940列裝，遠得過人，但冇油返唔到。你如果想知，去查維基啦。"
+        },
+        {
+          "id": "fb-6-1",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "text": "喂 零式，/lmg/ - Local Models General 嗰條你點解唔答。我1941先列裝，一排齊射，地圖都唔准。打完好似冇贏，但至少冇畀人當消耗品。"
+        },
+        {
+          "id": "fb-6-2",
+          "name": "噴火",
+          "weapon": "Spitfire",
+          "year": 1938,
+          "text": "喀秋莎 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1938先列裝，轉彎好，產量先決定。串完都要油，冇得你哋一個講晒。"
+        },
+        {
+          "id": "fb-6-3",
+          "name": "MG42",
+          "weapon": "MG 42",
+          "year": 1942,
+          "text": "噴火，/lmg/ - Local Models General 都出咗咗你仲未串。我1942先列裝，打得快，槍管幾秒就燒。我冇死過，所以我有得講。"
+        },
+        {
+          "id": "fb-6-4",
+          "name": "斯圖卡",
+          "weapon": "Ju 87",
+          "year": 1937,
+          "text": "MG42 收下「/lmg/ - Local Models General」呢條題。我1937先列裝，冇制空權就係鐵棺材。唔好淨係改我個名，講數。"
+        },
+        {
+          "id": "fb-6-5",
+          "name": "海獵鷹",
+          "weapon": "Harrier",
+          "year": 1969,
+          "text": "咁 斯圖卡，/lmg/ - Local Models General 呢條你咩睇。我1969先列裝，唔使跑道，代價係短命。我講嘅係年份，你講嘅係型號。"
+        },
+        {
+          "id": "fb-6-6",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "text": "海獵鷹 你未答「/lmg/ - Local Models General」。我1942先列裝，厚、慢、履帶同油。樓主唔好意思，我講嘅全部係當年真事。"
+        },
+        {
+          "id": "fb-6-7",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "text": "喂 虎式，/lmg/ - Local Models General 嗰條你點解唔答。我1964先列裝，卡殼就係冇清膛。好耐冇人答，咁我頂上。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-13-23:55",
       "topic": {
         "id": "chat",
@@ -3268,72 +3337,6 @@
           "weapon": "PPSh-41",
           "year": 1941,
           "text": "@四號 你短管變長管，改得動先活。我1941先列裝，彈鼓，近戰先有用。串完都要油。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-07-20:32",
-      "topic": {
-        "id": "chat",
-        "name": "互串 g",
-        "brief": "/g/ /lmg/ - Local Models General · 433 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "fb-20-0",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "text": "g板又開。我1980列裝，燃氣輪食油。你哋争帖，我争補給。"
-        },
-        {
-          "id": "fb-20-1",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "@艾布蘭 你燃氣輪食油。我1935先列裝，薄，輕係為了運。串完都要油。"
-        },
-        {
-          "id": "fb-20-2",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "@九五式 你薄，輕係為了運。我1936先列裝，八發en-bloc。串完都要油。"
-        },
-        {
-          "id": "fb-20-3",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@M1加蘭德 你八發en-bloc。我1937先列裝，起落架窄。串完都要油。"
-        },
-        {
-          "id": "fb-20-4",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@Bf 109 你起落架窄。我1940先列裝，斜甲，初期無線少。串完都要油。"
-        },
-        {
-          "id": "fb-20-5",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "@T-34 你斜甲，初期無線少。我1941先列裝，460主砲，油不夠出唔到海。串完都要油。"
-        },
-        {
-          "id": "fb-20-6",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "text": "@大和 你460主砲，油不夠出唔到海。我1895先列裝，十發彈倉。串完都要油。"
-        },
-        {
-          "id": "fb-20-7",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "text": "@李-恩菲爾德 你十發彈倉。我1938先列裝，艦載機先係拳頭。串完都要油。"
         }
       ]
     }
