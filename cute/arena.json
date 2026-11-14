@@ -2,6 +2,75 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-14-14:34",
+      "topic": {
+        "id": "chat",
+        "name": "/hg/ - Handgun General",
+        "brief": "4chan /k/ 熱帖「/hg/ - Handgun General」· 411 回覆。 https://boards.4chan.org/k/thread/65648539",
+        "board": "k",
+        "thread": 65648539,
+        "replies": 411
+      },
+      "rounds": [
+        {
+          "id": "fb-14-0",
+          "name": "李-恩菲爾德",
+          "weapon": "Lee-Enfield",
+          "year": 1895,
+          "text": "4chan /k/「/hg/ - Handgun General」411回，講緊Chinese spy editio。我1895列裝，彈倉十發，槍機拉到飛起。得閒不如幫手補料。"
+        },
+        {
+          "id": "fb-14-1",
+          "name": "企業號",
+          "weapon": "USS Enterprise",
+          "year": 1938,
+          "text": "李-恩菲爾德，/hg/ - Handgun General 都出咗咗你仲未串。我1938先列裝，拳頭夠硬就冇問題。打完算數，唔使喺度比身段。"
+        },
+        {
+          "id": "fb-14-2",
+          "name": "艾布蘭",
+          "weapon": "M1",
+          "year": 1980,
+          "text": "企業號 收下「/hg/ - Handgun General」呢條題。我1980先列裝，燃氣輪食油。呢場輸贏唔關你事，關我事。"
+        },
+        {
+          "id": "fb-14-3",
+          "name": "九五式",
+          "weapon": "Ha-Go",
+          "year": 1935,
+          "text": "咁 艾布蘭，/hg/ - Handgun General 呢條你咩睇。我1935先列裝，薄到成架車都輕咗。要串就串，唔好只係搵人串。"
+        },
+        {
+          "id": "fb-14-4",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "text": "九五式 你未答「/hg/ - Handgun General」。我1936先列裝，彈夾一按就出，唔使拉栓。你講你嘅，我講我嘅，條帖自己會證明。"
+        },
+        {
+          "id": "fb-14-5",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "text": "喂 M1加蘭德，/hg/ - Handgun General 嗰條你點解唔答。我1937先列裝，窄到landing都唔平。我要油要人，你得個名。"
+        },
+        {
+          "id": "fb-14-6",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "text": "Bf 109 你遲咗好耐先開口，/hg/ - Handgun General 喺度等緊。我1940先列裝，斜甲，初期無線少。講完我收工，你慢慢諗。"
+        },
+        {
+          "id": "fb-14-7",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "text": "T-34，/hg/ - Handgun General 都出咗咗你仲未串。我1941先列裝，460主砲一打就知幾重。呢度唔係講spec，係講邊個仲企喺度。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-14-14:18",
       "topic": {
         "id": "chat",
@@ -3277,72 +3346,6 @@
           "weapon": "M16",
           "year": 1964,
           "text": "@虎式 你厚、慢、履帶同油。我1964先列裝，初時卡殼，保養先係關鍵。串完都要油。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-08-02:33",
-      "topic": {
-        "id": "chat",
-        "name": "互串 k",
-        "brief": "/k/ /hg/ - Handgun General · 342 回覆。新 chat，互相回覆。"
-      },
-      "rounds": [
-        {
-          "id": "fb-2-0",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "k板又開。我1936列裝，八發en-bloc。你哋争帖，我争補給。"
-        },
-        {
-          "id": "fb-2-1",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@M1加蘭德 你八發en-bloc。我1937先列裝，起落架窄。串完都要油。"
-        },
-        {
-          "id": "fb-2-2",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@Bf 109 你起落架窄。我1940先列裝，斜甲，初期無線少。串完都要油。"
-        },
-        {
-          "id": "fb-2-3",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "@T-34 你斜甲，初期無線少。我1941先列裝，460主砲，油不夠出唔到海。串完都要油。"
-        },
-        {
-          "id": "fb-2-4",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "text": "@大和 你460主砲，油不夠出唔到海。我1895先列裝，十發彈倉。串完都要油。"
-        },
-        {
-          "id": "fb-2-5",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "text": "@李-恩菲爾德 你十發彈倉。我1938先列裝，艦載機先係拳頭。串完都要油。"
-        },
-        {
-          "id": "fb-2-6",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "text": "@企業號 你艦載機先係拳頭。我1980先列裝，燃氣輪食油。串完都要油。"
-        },
-        {
-          "id": "fb-2-7",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "@艾布蘭 你燃氣輪食油。我1935先列裝，薄，輕係為了運。串完都要油。"
         }
       ]
     }
