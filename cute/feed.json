@@ -36171,6 +36171,85 @@
         "portrait": "portraits/enfieldrifle.jpg"
       },
       "dossierUrl": "dossiers/1924-f2e4251260.json"
+    },
+    {
+      "id": "1927-第一次國共內戰",
+      "added": "2026-11-14T17:57:12.386Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 121.47,
+        "lat": 31.23
+      },
+      "battle": {
+        "y": 1927,
+        "m": 4,
+        "name": "第一次國共內戰",
+        "theater": "上海",
+        "brief": "第一次國共內戰自1927年4月的上海清黨事件後展開，國民革命軍與共產黨武裝在華中、華南及江西等地逐步對抗。當時軍隊仍沿用近代砲兵裝備，1870年列裝的德製Breech-loading cannon屬後膛火砲，可用於野戰火力支援。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "Breech-loading cannon是德國陸軍近代化砲兵體系中的後膛火砲，1870年列裝，配置於野戰砲兵單位，負責以曲射火力支援地面作戰。",
+        "portrait": "portraits/breechcannon.jpg"
+      }
+    },
+    {
+      "id": "1927-寧漢戰爭",
+      "added": "2026-11-14T17:58:18.587Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.3,
+        "lat": 30.59
+      },
+      "battle": {
+        "y": 1927,
+        "m": 7,
+        "name": "寧漢戰爭",
+        "theater": "長江中游的武漢及鄂湘贛交會地帶",
+        "brief": "寧漢戰爭是1927年7月中國國民黨內部由蔣介石領導的南京國民政府與汪精衛領導的武漢國民政府，在北伐方針、黨政路線及軍隊指揮權上對立所引發的內戰，戰區集中於長江中游。當時地面配備包括已列裝的惠氏步槍（Winchester Model 1873）。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍是美國陸軍制式步槍，配備於步兵連與騎兵連的射手單位，隸屬分隊至連級編制，作為主要單兵槍械使用。",
+        "portrait": "portraits/winchester.jpg"
+      }
+    },
+    {
+      "id": "1925-國民政府東征",
+      "added": "2026-11-14T18:00:04.239Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 114.42,
+        "lat": 23.11
+      },
+      "battle": {
+        "y": 1925,
+        "m": 6,
+        "name": "國民政府東征",
+        "theater": "廣東惠州城周邊",
+        "brief": "1925年國民政府東征中，國民革命軍在廣東惠州與陳炯明部交戰，葉挺率領的第四軍獨立團參與惠州戰役，戰局由粵東向湖南延伸。英國海軍於1877年列裝的Torpedo boat則代表當時近海警戒與魚雷突擊的海上裝備。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "Torpedo boat是英國海軍早期魚雷艇，主要執行近海巡弋、沿岸警戒與魚雷突擊，憑藉高速小噸位打擊近岸小型艦艇，並支援封鎖與偵察。",
+        "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1925-5e1efbb114.json"
     }
   ]
 }
