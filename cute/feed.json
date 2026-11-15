@@ -36223,7 +36223,8 @@
         "layer": "land",
         "history": "惠氏步槍是美國陸軍制式步槍，配備於步兵連與騎兵連的射手單位，隸屬分隊至連級編制，作為主要單兵槍械使用。",
         "portrait": "portraits/winchester.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1927-e0b8c7c208.json"
     },
     {
       "id": "1925-國民政府東征",
