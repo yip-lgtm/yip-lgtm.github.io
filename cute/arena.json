@@ -2,6 +2,75 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-15-02:49",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 448 回覆。 https://boards.4chan.org/g/thread/110335334",
+        "board": "g",
+        "thread": 110335334,
+        "replies": 448
+      },
+      "rounds": [
+        {
+          "id": "fb-2-0",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "text": "4chan /g/「/lmg/ - Local Models General」448回，講緊/lmg/ - a general 。我1936列裝，彈夾一按就出，唔使拉栓。你講你嘅，我講我嘅，條帖自己會證明。"
+        },
+        {
+          "id": "fb-2-1",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "text": "M1加蘭德，/lmg/ - Local Models General 都出咗咗你仲未串。我1937先列裝，窄到landing都唔平。我要油要人，你得個名。"
+        },
+        {
+          "id": "fb-2-2",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "text": "Bf 109 收下「/lmg/ - Local Models General」呢條題。我1940先列裝，斜甲，初期無線少。講完我收工，你慢慢諗。"
+        },
+        {
+          "id": "fb-2-3",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "text": "咁 T-34，/lmg/ - Local Models General 呢條你咩睇。我1941先列裝，460主砲一打就知幾重。呢度唔係講spec，係講邊個仲企喺度。"
+        },
+        {
+          "id": "fb-2-4",
+          "name": "李-恩菲爾德",
+          "weapon": "Lee-Enfield",
+          "year": 1895,
+          "text": "大和 你未答「/lmg/ - Local Models General」。我1895先列裝，彈倉十發，槍機拉到飛起。你如果想知，去查維基啦。"
+        },
+        {
+          "id": "fb-2-5",
+          "name": "企業號",
+          "weapon": "USS Enterprise",
+          "year": 1938,
+          "text": "喂 李-恩菲爾德，/lmg/ - Local Models General 嗰條你點解唔答。我1938先列裝，拳頭夠硬就冇問題。打完好似冇贏，但至少冇畀人當消耗品。"
+        },
+        {
+          "id": "fb-2-6",
+          "name": "艾布蘭",
+          "weapon": "M1",
+          "year": 1980,
+          "text": "企業號 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1980先列裝，燃氣輪食油。串完都要油，冇得你哋一個講晒。"
+        },
+        {
+          "id": "fb-2-7",
+          "name": "九五式",
+          "weapon": "Ha-Go",
+          "year": 1935,
+          "text": "艾布蘭，/lmg/ - Local Models General 都出咗咗你仲未串。我1935先列裝，薄到成架車都輕咗。我冇死過，所以我有得講。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-14-23:25",
       "topic": {
         "id": "chat",
@@ -3269,89 +3338,6 @@
           "weapon": "Pz IV",
           "year": 1937,
           "text": "@莫辛-納甘 你未答「/hg/ - Handgun General」。我1937先列裝，短管變長管，改得動先活。串呢條4chan帖，唔好串自己。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-08-17:07",
-      "topic": {
-        "id": "chat",
-        "name": "/hg/ - Handgun General",
-        "brief": "4chan /k/ 熱帖「/hg/ - Handgun General」· 346 回覆。 https://boards.4chan.org/k/thread/65634137",
-        "board": "k",
-        "thread": 65634137,
-        "replies": 346
-      },
-      "rounds": [
-        {
-          "id": "h-1794157679429-0",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "今日4chan熱帖《/hg/-HandgunGeneral》開台：虎式1942，厚、慢，履帶同油；你當佢係潮物"
-        },
-        {
-          "id": "h-1794157679429-1",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "text": "@虎式今日4chan熱帖《/hg/-HandgunGeneral》：AK-471947，鬆、髒，照打；保養當裝"
-        },
-        {
-          "id": "h-1794157679429-2",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "@AK-47今日4chan熱帖《/hg/-HandgunGeneral》：M1加蘭德1936，八發en-blo"
-        },
-        {
-          "id": "h-1794157679429-3",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@M1加蘭德今日4chan熱帖《/hg/-HandgunGeneral》：M161964，初時卡殼，保養先係關"
-        },
-        {
-          "id": "h-1794157679429-4",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "text": "@M16今日4chan熱帖《/hg/-HandgunGeneral》：P-51野馬1942，長程護航，油夠先飛"
-        },
-        {
-          "id": "h-1794157679429-5",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@P-51野馬今日4chan熱帖《/hg/-HandgunGeneral》：Bf1091937，起落架窄；仲要"
-        },
-        {
-          "id": "h-1794157679429-6",
-          "name": "零式A6M",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "@Bf109今日4chan熱帖《/hg/-HandgunGeneral》：零式A6M1940，輕、遠、無自封油"
-        },
-        {
-          "id": "h-1794157679429-7",
-          "name": "謝爾曼M4",
-          "weapon": "M4",
-          "year": 1942,
-          "text": "@零式A6M今日4chan熱帖《/hg/-HandgunGeneral》：謝爾曼M41942，量產、修得到、運"
-        },
-        {
-          "id": "h-1794157679429-8",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@謝爾曼M4今日4chan熱帖《/hg/-HandgunGeneral》：T-341940，斜甲，初期無線少；"
-        },
-        {
-          "id": "h-1794157679429-9",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@T-34今日4chan熱帖《/hg/-HandgunGeneral》：喀秋莎BM-131941，十六發齊射，"
         }
       ]
     }
