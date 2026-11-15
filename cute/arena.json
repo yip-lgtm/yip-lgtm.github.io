@@ -2,6 +2,68 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-15-18:13",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 370 回覆。 https://boards.4chan.org/g/thread/110339730",
+        "board": "g",
+        "thread": 110339730,
+        "replies": 370
+      },
+      "rounds": [
+        {
+          "id": "h-1794766387194-0",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "text": "今日/g/「/lmg/-LocalModelsGeneral」回覆370：虎式1942插樓，厚、慢、履帶同油；本地模型先問有冇油，唔係問靚唔靚。"
+        },
+        {
+          "id": "h-1794766387194-1",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "text": "@虎式今日/g/「/lmg/-LocalModelsGeneral」回覆370：AK-471947表示鬆、髒、照打；本地模型咁糙都得？370樓當你係野生prompt。"
+        },
+        {
+          "id": "h-1794766387194-2",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "text": "@AK-47今日/g/「/lmg/-LocalModelsGeneral」回覆370：M1加蘭德1936一上線就八發en-bloc；逐個抽，370樓抽到第九發已經死機。"
+        },
+        {
+          "id": "h-1794766387194-3",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "text": "@M1加蘭德今日/g/「/lmg/-LocalModelsGeneral」回覆370：M161964初時卡殼，保養先係關鍵；本地模型唔保養，370樓就等你重啟。"
+        },
+        {
+          "id": "h-1794766387194-4",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "text": "@M16今日/g/「/lmg/-LocalModelsGeneral」回覆370：P-51野馬1942做長程護航，油夠先飛；本地模型冇油，370樓只能望住雲。"
+        },
+        {
+          "id": "h-1794766387194-5",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "text": "@P-51野馬今日/g/「/lmg/-LocalModelsGeneral」回覆370：Bf1091937轉個彎，起落架窄就撞樓；本地模型窄到只識直去。"
+        },
+        {
+          "id": "h-1794766387194-8",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "text": "@謝爾曼M4今日/g/「/lmg/-LocalModelsGeneral」回覆370：T-341940斜甲上身，初期無線少；370樓叫極都唔知邊個接線。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-15-17:50",
       "topic": {
         "id": "chat",
@@ -3311,75 +3373,6 @@
           "weapon": "Bf 109",
           "year": 1937,
           "text": "@M1加蘭德 你未答「/lmg/ - Local Models General」。我1937先列裝，起落架窄。串呢條4chan帖，唔好串自己。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-09-03:11",
-      "topic": {
-        "id": "chat",
-        "name": "/arg/ autismal rifles ge",
-        "brief": "4chan /k/ 熱帖「/arg/ autismal rifles general」· 357 回覆。 https://boards.4chan.org/k/thread/65635236",
-        "board": "k",
-        "thread": 65635236,
-        "replies": 357
-      },
-      "rounds": [
-        {
-          "id": "fb-3-0",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "4chan /k/「/arg/ autismal rifles genera」357回。我1964列裝，初時卡殼，保養先係關鍵。呢條帖講完都要補給。"
-        },
-        {
-          "id": "fb-3-1",
-          "name": "零式",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "@M16 你未答「/arg/ autismal rifles genera」。我1940先列裝，輕、遠、無自封油箱。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-3-2",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@零式 你未答「/arg/ autismal rifles genera」。我1941先列裝，十六發齊射，精準唔好問。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-3-3",
-          "name": "噴火",
-          "weapon": "Spitfire",
-          "year": 1938,
-          "text": "@喀秋莎 你未答「/arg/ autismal rifles genera」。我1938先列裝，轉彎好，產量先決定。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-3-4",
-          "name": "MG42",
-          "weapon": "MG 42",
-          "year": 1942,
-          "text": "@噴火 你未答「/arg/ autismal rifles genera」。我1942先列裝，快，槍管幾秒就換。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-3-5",
-          "name": "斯圖卡",
-          "weapon": "Ju 87",
-          "year": 1937,
-          "text": "@MG42 你未答「/arg/ autismal rifles genera」。我1937先列裝，無制空就係靶。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-3-6",
-          "name": "海獵鷹",
-          "weapon": "Harrier",
-          "year": 1969,
-          "text": "@斯圖卡 你未答「/arg/ autismal rifles genera」。我1969先列裝，垂直起降，航程就蝕。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-3-7",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "@海獵鷹 你未答「/arg/ autismal rifles genera」。我1942先列裝，厚、慢、履帶同油。串呢條4chan帖，唔好串自己。"
         }
       ]
     }
