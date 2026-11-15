@@ -36252,6 +36252,86 @@
         "portrait": "portraits/torpedoboat.jpg"
       },
       "dossierUrl": "dossiers/1925-5e1efbb114.json"
+    },
+    {
+      "id": "1929-蔣桂戰爭",
+      "added": "2026-11-15T17:40:45.372Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 108.32,
+        "lat": 22.82
+      },
+      "battle": {
+        "y": 1929,
+        "m": 1,
+        "name": "蔣桂戰爭",
+        "theater": "廣西",
+        "brief": "蔣桂戰爭是中華民國國民政府與廣西地方軍閥李宗仁、白崇禧新桂系之間爆發的內戰。一九二九年一月新桂系宣布反蔣，國民革命軍隨即自湖南出兵進攻廣西，雙方在桂北與南寧、桂林一帶交戰。此役是北伐之後中央與地方勢力爭奪中國主導權的重要衝突，最終以新桂系退回廣西、接受南京方面的編整而收場。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍是美國南北戰爭時期的後膛式步槍，1865年定裝量產，由克里斯蒂安·夏普斯設計。它採落紙殼後膛機與精準機械瞄具，是早期栓動後膛步槍的代表型號，長期擔任美軍制式步兵武器，也外銷多國並在十九世紀末的各地衝突中廣泛使用。",
+        "portrait": "portraits/sharps.jpg"
+      },
+      "dossierUrl": "dossiers/1929-24d56cdae6.json"
+    },
+    {
+      "id": "1929-中東路事件",
+      "added": "2026-11-15T17:40:59.314Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 117.45,
+        "lat": 49.6
+      },
+      "battle": {
+        "y": 1929,
+        "m": 9,
+        "name": "中東路事件",
+        "theater": "滿洲里中東鐵路沿線",
+        "brief": "一九二九年九月，中東路事件在中國東北爆發，蘇聯與中國地方當局因中東鐵路權益及沿線控制而交兵，是中文維基戰爭列表收錄的衝突。別丹步槍早於此事列裝，是俄軍栓動步槍傳統的代表，反映蘇軍地面輕武器的歷史承襲。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是俄軍在一八六六年採用的制式栓動步槍，屬早期步兵的單兵輕武器；蘇聯承接俄軍武裝體系時，仍保有這類槍械及其使用經驗。",
+        "portrait": "portraits/berdan.jpg"
+      }
+    },
+    {
+      "id": "1930-霧社事件",
+      "added": "2026-11-15T17:41:05.483Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 120.99,
+        "lat": 23.82
+      },
+      "battle": {
+        "y": 1930,
+        "m": 1,
+        "name": "霧社事件",
+        "theater": "臺灣中部霧社山區",
+        "brief": "霧社事件是中文維基「戰爭列表」收錄的1930年臺灣霧社山區衝突，屬原住民族反抗日本殖民統治的戰鬥；本條裝備為英國海軍正式型號 Steam ironclad 的蒸汽鐵甲艦，1865年開始列裝，採用蒸汽動力與鐵甲防護。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦是英國海軍早期以蒸汽動力取代風帆推進的重裝甲軍艦，位於主力艦層級，負責遠洋警戒、封鎖與兵力投射任務。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/1930-3e24f9228d.json"
     }
   ]
 }
