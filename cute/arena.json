@@ -2,6 +2,103 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-15-17:50",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 342 回覆。 https://boards.4chan.org/g/thread/110339730",
+        "board": "g",
+        "thread": 110339730,
+        "replies": 342
+      },
+      "rounds": [
+        {
+          "id": "h-1794765058449-0",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "text": "「/lmg/-LocalModelsGeneral」都342回覆啦？我厚身慢吞吞入嚟，履帶同油未問齊，邊個敢當樓主？"
+        },
+        {
+          "id": "h-1794765058449-1",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "text": "@虎式你慢吞吞，「/lmg/-LocalModelsGeneral」我先入：我47年鬆髒照打，AK-47邊個話唔得？"
+        },
+        {
+          "id": "h-1794765058449-2",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "text": "@AK-47唔好亂槍掃樓，「/lmg/-LocalModelsGeneral」我36年得八發en-bloc，逐發上彈最實際。"
+        },
+        {
+          "id": "h-1794765058449-3",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "text": "@M1加蘭德怕我卡殼咩？「/lmg/-LocalModelsGeneral」我64年初時真係會卡，保養先係關鍵。"
+        },
+        {
+          "id": "h-1794765058449-4",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "text": "@M16保養都救唔到冇油嘅機，「/lmg/-LocalModelsGeneral」我42年只做長程護航，油夠先飛得遠。"
+        },
+        {
+          "id": "h-1794765058449-5",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "text": "@P-51野馬飛得遠未必最神，「/lmg/-LocalModelsGeneral」我40年輕又遠，不過冇自封油箱就斷航。"
+        },
+        {
+          "id": "h-1794765058449-6",
+          "name": "謝爾曼",
+          "weapon": "M4",
+          "year": 1942,
+          "text": "@零式斷航你就冇得威，「/lmg/-LocalModelsGeneral」我42年靠量產，班組修得到、運得到先有話說。"
+        },
+        {
+          "id": "h-1794765058449-7",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "text": "@謝爾曼運到去都未算贏，「/lmg/-LocalModelsGeneral」我40年有斜甲，初期無線少，命令遲到就靠耐性。"
+        },
+        {
+          "id": "h-1794765058449-8",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "text": "@T-34等命令太慢？「/lmg/-LocalModelsGeneral」我41年一次16發齊射，準確唔好問，樓主先閃。"
+        },
+        {
+          "id": "h-1794765058449-9",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "text": "@喀秋莎16發就嚇人？「/lmg/-LocalModelsGeneral」我40年更衰，舵一卡就完，撐到第8日都照沉。"
+        },
+        {
+          "id": "h-1794765058449-10",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "text": "@俾斯麥至少你仲行過，「/lmg/-LocalModelsGeneral」我41年有460主砲，但油唔夠出唔到海。"
+        },
+        {
+          "id": "h-1794765058449-11",
+          "name": "MG42",
+          "weapon": "MG 42",
+          "year": 1942,
+          "text": "@大和出海都唔得就最冇面子，「/lmg/-LocalModelsGeneral」我42年槍管幾秒就換，快過你哋睇完342個回覆。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-15-11:33",
       "topic": {
         "id": "chat",
@@ -3283,75 +3380,6 @@
           "weapon": "Tiger I",
           "year": 1942,
           "text": "@海獵鷹 你未答「/arg/ autismal rifles genera」。我1942先列裝，厚、慢、履帶同油。串呢條4chan帖，唔好串自己。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-09-01:00",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 479 回覆。 https://boards.4chan.org/g/thread/110272867",
-        "board": "g",
-        "thread": 110272867,
-        "replies": 479
-      },
-      "rounds": [
-        {
-          "id": "fb-0-0",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "4chan /g/「/lmg/ - Local Models General」479回。我1942列裝，厚、慢、履帶同油。呢條帖講完都要補給。"
-        },
-        {
-          "id": "fb-0-1",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@虎式 你未答「/lmg/ - Local Models General」。我1964先列裝，初時卡殼，保養先係關鍵。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-0-2",
-          "name": "零式",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "@M16 你未答「/lmg/ - Local Models General」。我1940先列裝，輕、遠、無自封油箱。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-0-3",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@零式 你未答「/lmg/ - Local Models General」。我1941先列裝，十六發齊射，精準唔好問。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-0-4",
-          "name": "噴火",
-          "weapon": "Spitfire",
-          "year": 1938,
-          "text": "@喀秋莎 你未答「/lmg/ - Local Models General」。我1938先列裝，轉彎好，產量先決定。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-0-5",
-          "name": "MG42",
-          "weapon": "MG 42",
-          "year": 1942,
-          "text": "@噴火 你未答「/lmg/ - Local Models General」。我1942先列裝，快，槍管幾秒就換。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-0-6",
-          "name": "斯圖卡",
-          "weapon": "Ju 87",
-          "year": 1937,
-          "text": "@MG42 你未答「/lmg/ - Local Models General」。我1937先列裝，無制空就係靶。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-0-7",
-          "name": "海獵鷹",
-          "weapon": "Harrier",
-          "year": 1969,
-          "text": "@斯圖卡 你未答「/lmg/ - Local Models General」。我1969先列裝，垂直起降，航程就蝕。串呢條4chan帖，唔好串自己。"
         }
       ]
     }
