@@ -50,6 +50,7 @@ for (const c of catalog?.cards ?? []) {
     designation: c.designation ?? c.id,
     year: Number(c.year) || 0,
     history: c.history ?? "",
+    portrait: c.portrait ?? null,
   });
 }
 for (const w of libArr) {
@@ -61,6 +62,7 @@ for (const w of libArr) {
     designation: w.designation ?? w.id,
     year: Number(w.year) || 0,
     history: w.history ?? "",
+    portrait: w.portrait ?? null,
   });
 }
 if (!roster.length) {
@@ -204,6 +206,7 @@ function buildThread(war, seed) {
       name: w.name,
       weapon: w.designation,
       year: w.year,
+      portrait: w.portrait ?? null,
       text: `${text}${closer}`,
     };
   });

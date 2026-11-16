@@ -5,12 +5,28 @@
 // about 50 characters, sarcastic, and grounded in that kit's real service
 // year. Appends one day to cute/arena.json.
 import { readFileSync, writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+
+const HERE = dirname(fileURLToPath(import.meta.url));
 import { postJsonOrThrow } from "./minimax.mjs";
 
 const OUT = process.env.ARENA_OUT || "cute/arena.json";
 const key = process.env.MINIMAX_API_KEY || "";
 const base = (process.env.MINIMAX_BASE_URL || "https://api.minimax.io/v1").replace(/\/$/, "");
 const model = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash-Preview";
+
+/** The 立繪 of each weapon, so every post shows the girl that is speaking. */
+const PORTRAIT_BY_NAME = (() => {
+  try {
+    const cat = JSON.parse(readFileSync(resolve(HERE, "../cute/catalog.json"), "utf8"));
+    const map = new Map();
+    for (const c of cat.cards ?? []) if (c.portrait) map.set(c.name, c.portrait);
+    return map;
+  } catch {
+    return new Map();
+  }
+})();
 
 const GIRLS = [
   ["虎式", "Tiger I", 1942, "厚、慢、履帶同油"],
@@ -134,6 +150,7 @@ function parseRounds(raw) {
           name,
           weapon: g[1],
           year: g[2],
+          portrait: PORTRAIT_BY_NAME.get(name) ?? null,
           text,
         };
       })
@@ -196,6 +213,7 @@ function fallback(topic, hour) {
       name: g[0],
       weapon: g[1],
       year: g[2],
+      portrait: PORTRAIT_BY_NAME.get(g[0]) ?? null,
       text,
     };
   });
