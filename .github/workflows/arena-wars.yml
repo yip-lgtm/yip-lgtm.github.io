@@ -1,0 +1,29 @@
+name: arena-wars
+on:
+  schedule:
+    # 09:40 Asia/Shanghai: a new day of wars on the daily board.
+    - cron: "40 1 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cute-arena-wars
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Build the daily war board
+        run: node scripts/build-arena-wars.mjs 21
+      - name: Commit the war board
+        run: |
+          git config user.name "yip-lgtm"
+          git config user.email "258986088+yip-lgtm@users.noreply.github.com"
+          git add cute/arena-daily.json
+          git diff --staged --quiet || git commit -m "Daily war board."
+          git pull --rebase --autostash origin main
+          git push
