@@ -36333,6 +36333,59 @@
         "portrait": "portraits/steamship.jpg"
       },
       "dossierUrl": "dossiers/1930-3e24f9228d.json"
+    },
+    {
+      "id": "1931-哥倫比亞-秘魯戰爭",
+      "added": "2026-11-16T20:58:10.926Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -69.94,
+        "lat": -4.22
+      },
+      "battle": {
+        "y": 1931,
+        "m": 2,
+        "name": "哥倫比亞-秘魯戰爭",
+        "theater": "萊蒂西亞邊境戰場",
+        "brief": "中文維基「戰爭列表」所列的1931年哥倫比亞-秘魯戰爭，由哥倫比亞與秘魯在亞馬遜地區的邊界爭議引發，交戰主要集中於萊蒂西亞一帶。條目選列的Gatling gun加特林機槍於1860年列裝，是各國陸軍武器體系中用於火力支援的早期旋轉式重機槍。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "Gatling gun屬早期多管旋轉式重機槍，通常由炮組集中操作，配置於步兵營的火力支援點，以高射速提供壓制，並與輕機槍及火炮協同。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1931-2aefdcc122.json"
+    },
+    {
+      "id": "1932-大廈谷戰爭",
+      "added": "2026-11-16T20:59:23.404Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 80.52,
+        "lat": 29.87
+      },
+      "battle": {
+        "y": 1932,
+        "m": 4,
+        "name": "大廈谷戰爭",
+        "theater": "大廈谷藏印邊境",
+        "brief": "大廈谷戰爭於1932年4月在大廈谷及帕里一帶爆發，英屬印度遠征隊與中國軍隊共同面對西藏軍隊，衝突集中於邊境據點與山區陣地。英軍步兵體系中的恩菲爾德步槍（Enfield rifle）於1858年列裝，屬制式單兵步槍，負責射擊、警戒與伴隨步兵作戰，並為步兵分隊提供基礎火力。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "恩菲爾德步槍是英國陸軍早期制式步槍，配置於步兵連，負責單兵射擊、警戒及隨軍作戰，是步兵分隊的重要火力。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      }
     }
   ]
 }
