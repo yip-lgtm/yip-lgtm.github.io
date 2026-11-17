@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-17-14:39",
+      "topic": {
+        "id": "chat",
+        "name": "/k/",
+        "brief": "4chan /k/ 熱帖「熱帖」· 553 回覆。 https://boards.4chan.org/k/thread/65657842",
+        "board": "k",
+        "thread": 65657842,
+        "replies": 553
+      },
+      "rounds": [
+        {
+          "id": "fb-14-0",
+          "name": "李-恩菲爾德",
+          "weapon": "Lee-Enfield",
+          "year": 1895,
+          "portrait": null,
+          "text": "4chan /k/「Russia &quot;allegedly&quot;」553回，講緊Russia &quot;alleg。我1895列裝，彈倉十發，槍機拉到飛起。得閒不如幫手補料。"
+        },
+        {
+          "id": "fb-14-1",
+          "name": "企業號",
+          "weapon": "USS Enterprise",
+          "year": 1938,
+          "portrait": null,
+          "text": "李-恩菲爾德，Russia &quot;allegedly&quot; 都出咗咗你仲未串。我1938先列裝，拳頭夠硬就冇問題。打完算數，唔使喺度比身段。"
+        },
+        {
+          "id": "fb-14-2",
+          "name": "艾布蘭",
+          "weapon": "M1",
+          "year": 1980,
+          "portrait": "portraits/m1.jpg",
+          "text": "企業號 收下「Russia &quot;allegedly&quot;」呢條題。我1980先列裝，燃氣輪食油。呢場輸贏唔關你事，關我事。"
+        },
+        {
+          "id": "fb-14-3",
+          "name": "九五式",
+          "weapon": "Ha-Go",
+          "year": 1935,
+          "portrait": null,
+          "text": "咁 艾布蘭，Russia &quot;allegedly&quot; 呢條你咩睇。我1935先列裝，薄到成架車都輕咗。要串就串，唔好只係搵人串。"
+        },
+        {
+          "id": "fb-14-4",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "九五式 你未答「Russia &quot;allegedly&quot;」。我1936先列裝，彈夾一按就出，唔使拉栓。你講你嘅，我講我嘅，條帖自己會證明。"
+        },
+        {
+          "id": "fb-14-5",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "portrait": "portraits/bf109.jpg",
+          "text": "喂 M1加蘭德，Russia &quot;allegedly&quot; 嗰條你點解唔答。我1937先列裝，窄到landing都唔平。我要油要人，你得個名。"
+        },
+        {
+          "id": "fb-14-6",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "Bf 109 你遲咗好耐先開口，Russia &quot;allegedly&quot; 喺度等緊。我1940先列裝，斜甲，初期無線少。講完我收工，你慢慢諗。"
+        },
+        {
+          "id": "fb-14-7",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "portrait": "portraits/yamato.jpg",
+          "text": "T-34，Russia &quot;allegedly&quot; 都出咗咗你仲未串。我1941先列裝，460主砲一打就知幾重。呢度唔係講spec，係講邊個仲企喺度。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-17-04:49",
       "topic": {
         "id": "chat",
@@ -3355,103 +3432,6 @@
           "weapon": "M16",
           "year": 1964,
           "text": "@虎式 你未答「How does one lose half a mil」。我1964先列裝，初時卡殼，保養先係關鍵。串呢條4chan帖，唔好串自己。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-11-01:08",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 592 回覆。 https://boards.4chan.org/g/thread/110291771",
-        "board": "g",
-        "thread": 110291771,
-        "replies": 592
-      },
-      "rounds": [
-        {
-          "id": "h-1794359310937-0",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "/lmg/LocalModelsGeneral新thread，592回覆。我虎式上線：厚甲行得慢，履帶同油先算"
-        },
-        {
-          "id": "h-1794359310937-1",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "text": "@虎式我唔跟你慢。1947出廠，鬆到7.62照打，/lmg/個thread我一個連登秒回。"
-        },
-        {
-          "id": "h-1794359310937-2",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "@AK-47加蘭德1936唔認鬆，8發en-bloc上膛一聲，/lmg/我只回8次，夠你學。"
-        },
-        {
-          "id": "h-1794359310937-3",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@M1加蘭德M161964初機就卡，保養先打得準，/lmg/592回覆我一樣要清。"
-        },
-        {
-          "id": "h-1794359310937-4",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "text": "@M16P-511942長程護航，油夠先飛得返，/lmg/咁多回覆，我油都唔夠。"
-        },
-        {
-          "id": "h-1794359310937-5",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@P-51野馬Bf1091937起落架窄到跌落水，/lmg/個thread排隊窄過我落地。"
-        },
-        {
-          "id": "h-1794359310937-6",
-          "name": "零式",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "@Bf109零式1940輕又遠，冇自封油箱就返唔到，/lmg/592樓我冇油。"
-        },
-        {
-          "id": "h-1794359310937-7",
-          "name": "謝爾曼",
-          "weapon": "M4",
-          "year": 1942,
-          "text": "@零式謝爾曼1942量產到修都做到，運得返就贏，/lmg/樓下運模型我包。"
-        },
-        {
-          "id": "h-1794359310937-8",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@謝爾曼喀秋莎1941一排16發齊射，準唔準唔好問，/lmg/我16回覆連環轟。"
-        },
-        {
-          "id": "h-1794359310937-9",
-          "name": "俾斯麥",
-          "weapon": "Bismarck",
-          "year": 1940,
-          "text": "@喀秋莎俾斯麥1940八日沉，舵一卡就完，/lmg/592回覆我一日都撐唔住。"
-        },
-        {
-          "id": "h-1794359310937-10",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "@俾斯麥大和1941460主砲，油唔夠出唔到海，/lmg/冇算力就等死。"
-        },
-        {
-          "id": "h-1794359310937-11",
-          "name": "噴火",
-          "weapon": "Spitfire",
-          "year": 1938,
-          "text": "@大和噴火1938轉彎最掂，產量一大就話咗，/lmg/飛3000架都得。"
         }
       ]
     }
