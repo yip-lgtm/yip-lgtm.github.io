@@ -36441,6 +36441,33 @@
         "portrait": "portraits/torpedoboat.jpg"
       },
       "dossierUrl": "dossiers/1934-a337f706a8.json"
+    },
+    {
+      "id": "1931-制憲派戰爭",
+      "added": "2026-11-18T13:56:05.850Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -54,
+        "lat": -30.4
+      },
+      "battle": {
+        "y": 1931,
+        "m": 4,
+        "name": "制憲派戰爭",
+        "theater": "巴西南里奧格蘭德州",
+        "brief": "維基戰爭列表所載的1931年制憲派戰爭，發生於巴西南里奧格蘭德州，為地方制憲派武裝與聯邦政府軍之間的邊境衝突。英國海軍自1877年列裝的魚雷艇（Torpedo boat）是當時已服役的水面小艇裝備，用於近岸巡邏、警戒與魚雷突擊，可擔任沿海與河口警戒任務。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇為皇家海軍早期水面小艇分類，以快速接近敵艦並施放魚雷為主要任務，平時用於近岸巡邏、警戒與護航。",
+        "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1931-18c71ab554.json"
     }
   ]
 }
