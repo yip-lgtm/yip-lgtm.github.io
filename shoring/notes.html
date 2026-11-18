@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>a–g 詳解 | Shoring notes</title>
+<link rel="stylesheet" href="styles.css?v=5">
+<style>
+  .notes { max-width: 820px; margin: 0 auto; padding: 24px 20px 80px; }
+  .notes h1 { font-size: 28px; }
+  .notes h2 { margin: 28px 0 8px; font-size: 20px; }
+  .notes h3 { margin: 18px 0 6px; font-size: 16px; }
+  .notes p, .notes li { color: var(--muted); line-height: 1.6; }
+  .notes .zh { color: var(--ink); }
+  .notes .en { color: var(--muted); }
+  .notes code, .notes .eq { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+  .notes table { margin: 10px 0 16px; }
+  .notes a { color: var(--teal); }
+  .back { margin-bottom: 16px; }
+</style>
+</head>
+<body>
+<div class="notes">
+  <p class="back"><a href="./">← 返去計算頁 Back to calculator</a></p>
+  <p class="eyebrow">G2645 notes</p>
+  <h1>a–g、剪力、彎矩、Perry–Robertson 詳解</h1>
+  <p class="en">Bilingual notes for the signed sheet. Bottom channel 127×64×14.9 and top SHS 50×50×3.2.</p>
+
+  <h2>a. 剪力 | Shear</h2>
+  <p class="zh">剪力同支撐軸力同一個數。頂部 6.90 kN，底部 17.1 kN。</p>
+  <p class="en">Shear is the same number as the strut force. Top 6.90 kN, bottom 17.1 kN.</p>
+  <p class="zh">方管有效剪力面積：</p>
+  <p class="en">Effective shear area of the SHS:</p>
+  <div class="formula">A<sub>v</sub> = 2 t d = 2 × 3.2 × 40.4 = 258.56 mm²</div>
+  <p class="zh">剪力屈服係 p<sub>y</sub>/√3 = 0.577 p<sub>y</sub>。純剪力有一拉一壓，von Mises 把佢哋合成。</p>
+  <p class="en">Shear yield is p<sub>y</sub>/√3 = 0.577 p<sub>y</sub>. Pure shear is one tension and one compression; von Mises combines them.</p>
+  <div class="formula">P<sub>v</sub> = 0.577 × 275 × 258.56 / 1000 = 41.03 kN</div>
+  <div class="formula">6.90 &lt; 41.03，且 6.90 ≤ 0.6 × 41.03 = 24.6　低剪力 low shear, O.K.</div>
+  <p class="zh">6.90 點來：頂部土壓 14.8，圍令闊 0.45 m，跨度 1.46 m，兩端各一半，再乘 1.4。</p>
+  <p class="en">Where 6.90 comes from: top pressure 14.8, waling width 0.45 m, span 1.46 m, each end takes half, then × 1.4.</p>
+  <div class="formula">F<sub>vy</sub> = 14.8 × 0.45 × 1.46 / 2 × 1.4 = 6.9 kN</div>
+
+  <h2>b. 彎矩容量 | Moment capacity</h2>
+  <p class="zh">頂部 M<sub>y</sub> = 2.63 × 0.45 × 1.4 = 1.65 kNm。低剪力，容量用全值。</p>
+  <p class="en">Top M<sub>y</sub> = 2.63 × 0.45 × 1.4 = 1.65 kNm. Low shear, so capacity uses the full value.</p>
+  <div class="formula">M<sub>c</sub> = min(p<sub>y</sub> S, 1.2 p<sub>y</sub> Z) / 1000 = 2.84 kNm</div>
+  <div class="formula">1.65 ≤ 2.84　O.K.</div>
+  <p class="zh">印刷的 ρ = (−1 + 2F<sub>v</sub>/P<sub>v</sub>)² 係高剪力先用。而家低剪力，當 ρ = 1。</p>
+  <p class="en">The printed ρ = (−1 + 2F<sub>v</sub>/P<sub>v</sub>)² is for high shear. Here it is low shear, so take ρ = 1.</p>
+  <p class="zh">底部同樣：4.16 ≤ 5.03。</p>
+  <p class="en">Bottom is the same method: 4.16 ≤ 5.03.</p>
+
+  <h2>c. 屈曲抵抗 | Buckling resistance</h2>
+  <p class="zh">開口槽鋼受強軸彎，可以側向扭出。計算書假設無完全約束。但呢條彎矩係 M<sub>y</sub>，M<sub>x</sub> = 0，唔控制。</p>
+  <p class="en">An open channel bent about the strong axis can twist sideways. The sheet assumes no full restraint. But the moment here is M<sub>y</sub> and M<sub>x</sub> = 0, so it does not govern.</p>
+  <p class="zh">方管閉口，計算書寫 No Mb check required。</p>
+  <p class="en">For the closed SHS, the sheet says no M<sub>b</sub> check is required.</p>
+
+  <h2>d. 軸向壓應力 | Axial compressive stress</h2>
+  <p class="zh">手算只係 f<sub>c</sub> &lt; 275：唔會壓扁。軟件再睇長柱會唔會弓出。</p>
+  <p class="en">The hand check is only f<sub>c</sub> &lt; 275: it will not squash. The software then checks whether the long member bows out.</p>
+  <p class="zh">頂部方管：λ = 76.4，curve (a)，p<sub>c</sub> = 210.9，P<sub>c</sub> = 125 kN &gt; 6.9。</p>
+  <p class="en">Top SHS: λ = 76.4, curve (a), p<sub>c</sub> = 210.9, P<sub>c</sub> = 125 kN &gt; 6.9.</p>
+  <p class="zh">底部槽鋼：λ<sub>y</sub> = 77.7，curve (c)，p<sub>c</sub> = 165.8，P<sub>c</sub> = 315 kN &gt; 17.1。</p>
+  <p class="en">Bottom channel: λ<sub>y</sub> = 77.7, curve (c), p<sub>c</sub> = 165.8, P<sub>c</sub> = 315 kN &gt; 17.1.</p>
+
+  <h2>Perry–Robertson</h2>
+  <p class="zh">歐拉係完美直柱。Perry–Robertson 加一個初始彎 η，把 p<sub>y</sub> 同 p<sub>E</sub> 連成一條折減曲線，得出真實可用嘅 p<sub>c</sub>。</p>
+  <p class="en">Euler is a perfect straight column. Perry–Robertson adds an initial bow η, joins p<sub>y</sub> and p<sub>E</sub> into a reduced curve, and gives the usable p<sub>c</sub>.</p>
+  <div class="formula">p<sub>E</sub> = π² E / λ²</div>
+  <div class="formula">η = a (λ − λ<sub>0</sub>) / 1000</div>
+  <div class="formula">φ = [p<sub>y</sub> + (η+1) p<sub>E</sub>] / 2</div>
+  <div class="formula">p<sub>c</sub> = p<sub>E</sub> p<sub>y</sub> / [φ + √(φ² − p<sub>E</sub> p<sub>y</sub>)]</div>
+  <p class="zh">槽鋼用 curve (c)，a = 5.5。方管用 curve (a)，折減少啲。</p>
+  <p class="en">The channel uses curve (c), a = 5.5. The SHS uses curve (a), which reduces less.</p>
+
+  <h2>e. 局部容量 | Local capacity</h2>
+  <p class="zh">截面本身，壓同彎一齊，未計長柱屈曲。</p>
+  <p class="en">The cross-section itself, compression plus bending, before member buckling.</p>
+  <div class="formula">P/(A<sub>g</sub> p<sub>y</sub>) + M<sub>y</sub>/M<sub>cy</sub></div>
+  <p class="zh">頂部：0.04 + 0.58 = 0.62 ≤ 1。底部：0.03 + 0.83 = 0.86 ≤ 1。</p>
+  <p class="en">Top: 0.04 + 0.58 = 0.62 ≤ 1. Bottom: 0.03 + 0.83 = 0.86 ≤ 1.</p>
+
+  <h2>f. 整體屈曲 | Overall buckling</h2>
+  <p class="zh">長柱再加彎矩。軸力用 P<sub>c</sub>，唔用 A p<sub>y</sub>。</p>
+  <p class="en">Long member plus bending. Axial force uses P<sub>c</sub>, not A p<sub>y</sub>.</p>
+  <div class="formula">P/P<sub>c</sub> + m M<sub>y</sub>/M<sub>cy</sub></div>
+  <p class="zh">頂部：0.06 + 0.58 = 0.64 ≤ 1。底部：0.05 + 0.83 = 0.88 ≤ 1。</p>
+  <p class="en">Top: 0.06 + 0.58 = 0.64 ≤ 1. Bottom: 0.05 + 0.83 = 0.88 ≤ 1.</p>
+
+  <h2>g. 拉力加彎矩 | Tension with moments</h2>
+  <p class="zh">而家係壓力，T = 0。軟件仍然印出 M<sub>y</sub>/M<sub>cy</sub>。頂部 0.58，底部 0.83，都 ≤ 1。</p>
+  <p class="en">This member is in compression, so T = 0. The software still prints M<sub>y</sub>/M<sub>cy</sub>. Top 0.58, bottom 0.83, both ≤ 1.</p>
+
+  <h2>對照 | Side by side</h2>
+  <table>
+    <thead><tr><th>項 Item</th><th>一句</th><th>底部 Bottom</th><th>頂部 Top</th></tr></thead>
+    <tbody>
+      <tr><td>a</td><td>剪得斷唔斷</td><td>17.1 ≤ 185</td><td>6.90 ≤ 41</td></tr>
+      <tr><td>b</td><td>彎得斷唔斷</td><td>4.16 ≤ 5.03</td><td>1.65 ≤ 2.84</td></tr>
+      <tr><td>c</td><td>無約束會唔會側扭</td><td>M<sub>x</sub>=0</td><td>No M<sub>b</sub> check</td></tr>
+      <tr><td>d</td><td>長柱會唔會弓出</td><td>315 &gt; 17.1</td><td>125 &gt; 6.9</td></tr>
+      <tr><td>e</td><td>截面壓+彎</td><td>0.86 ≤ 1</td><td>0.62 ≤ 1</td></tr>
+      <tr><td>f</td><td>長柱再加彎</td><td>0.88 ≤ 1</td><td>0.64 ≤ 1</td></tr>
+      <tr><td>g</td><td>拉力加彎</td><td>0.83 ≤ 1</td><td>0.58 ≤ 1</td></tr>
+    </tbody>
+  </table>
+
+  <p class="back"><a href="./">← 返去計算頁 Back to calculator</a></p>
+</div>
+</body>
+</html>
