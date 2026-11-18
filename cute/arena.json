@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-18-22:07",
+      "topic": {
+        "id": "chat",
+        "name": "/k/",
+        "brief": "4chan /k/ 熱帖「熱帖」· 577 回覆。 https://boards.4chan.org/k/thread/65657842",
+        "board": "k",
+        "thread": 65657842,
+        "replies": 577
+      },
+      "rounds": [
+        {
+          "id": "fb-22-0",
+          "name": "戰隼",
+          "weapon": "F-16",
+          "year": 1978,
+          "portrait": "portraits/f16.jpg",
+          "text": "4chan /k/「Russia &quot;allegedly&quot;」577回，講緊Russia &quot;alleg。我1978列裝，飛得快，改得更快。你如果想知，去查維基啦。"
+        },
+        {
+          "id": "fb-22-1",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "portrait": "portraits/ak47.jpg",
+          "text": "咁 戰隼，Russia &quot;allegedly&quot; 呢條你咩睇。我1947先列裝，萬人海都照樣向前。打完好似冇贏，但至少冇畀人當消耗品。"
+        },
+        {
+          "id": "fb-22-2",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "portrait": null,
+          "text": "AK-47 你未答「Russia &quot;allegedly&quot;」。我1942先列裝，長程護航，油夠先飛。串完都要油，冇得你哋一個講晒。"
+        },
+        {
+          "id": "fb-22-3",
+          "name": "謝爾曼",
+          "weapon": "M4",
+          "year": 1942,
+          "portrait": "portraits/sherman.jpg",
+          "text": "喂 P-51野馬，Russia &quot;allegedly&quot; 嗰條你點解唔答。我1942先列裝，壞咗即修，唔等零件。我冇死過，所以我有得講。"
+        },
+        {
+          "id": "fb-22-4",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "portrait": "portraits/bismarck.jpg",
+          "text": "謝爾曼 你遲咗好耐先開口，Russia &quot;allegedly&quot; 喺度等緊。我1940先列裝，八日沉，撞唔撞得郁睇舵。唔好淨係改我個名，講數。"
+        },
+        {
+          "id": "fb-22-5",
+          "name": "莫辛-納甘",
+          "weapon": "M1891",
+          "year": 1891,
+          "portrait": null,
+          "text": "俾斯麥，Russia &quot;allegedly&quot; 都出咗咗你仲未串。我1891先列裝，萬國槍，戰場唔分國界。我講嘅係年份，你講嘅係型號。"
+        },
+        {
+          "id": "fb-22-6",
+          "name": "四號",
+          "weapon": "Pz IV",
+          "year": 1937,
+          "portrait": null,
+          "text": "莫辛-納甘 收下「Russia &quot;allegedly&quot;」呢條題。我1937先列裝，短管變長管，改得動先活。樓主唔好意思，我講嘅全部係當年真事。"
+        },
+        {
+          "id": "fb-22-7",
+          "name": "波波沙",
+          "weapon": "PPSh-41",
+          "year": 1941,
+          "portrait": "portraits/ppsh.jpg",
+          "text": "咁 四號，Russia &quot;allegedly&quot; 呢條你咩睇。我1941先列裝，彈鼓打得快，近身更加好。好耐冇人答，咁我頂上。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-18-21:37",
       "topic": {
         "id": "chat",
@@ -3427,75 +3504,6 @@
           "weapon": "Bismarck",
           "year": 1940,
           "text": "@謝爾曼 你未答「/hg/ - Handgun General」。我1940先列裝，八日就沉，舵一卡就完。串呢條4chan帖，唔好串自己。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-12-12:56",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 515 回覆。 https://boards.4chan.org/g/thread/110304258",
-        "board": "g",
-        "thread": 110304258,
-        "replies": 515
-      },
-      "rounds": [
-        {
-          "id": "fb-12-0",
-          "name": "噴火",
-          "weapon": "Spitfire",
-          "year": 1938,
-          "text": "4chan /g/「/lmg/ - Local Models General」515回。我1938列裝，轉彎好，產量先決定。呢條帖講完都要補給。"
-        },
-        {
-          "id": "fb-12-1",
-          "name": "MG42",
-          "weapon": "MG 42",
-          "year": 1942,
-          "text": "@噴火 你未答「/lmg/ - Local Models General」。我1942先列裝，快，槍管幾秒就換。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-12-2",
-          "name": "斯圖卡",
-          "weapon": "Ju 87",
-          "year": 1937,
-          "text": "@MG42 你未答「/lmg/ - Local Models General」。我1937先列裝，無制空就係靶。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-12-3",
-          "name": "海獵鷹",
-          "weapon": "Harrier",
-          "year": 1969,
-          "text": "@斯圖卡 你未答「/lmg/ - Local Models General」。我1969先列裝，垂直起降，航程就蝕。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-12-4",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "@海獵鷹 你未答「/lmg/ - Local Models General」。我1942先列裝，厚、慢、履帶同油。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-12-5",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@虎式 你未答「/lmg/ - Local Models General」。我1964先列裝，初時卡殼，保養先係關鍵。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-12-6",
-          "name": "零式",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "@M16 你未答「/lmg/ - Local Models General」。我1940先列裝，輕、遠、無自封油箱。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-12-7",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@零式 你未答「/lmg/ - Local Models General」。我1941先列裝，十六發齊射，精準唔好問。串呢條4chan帖，唔好串自己。"
         }
       ]
     }
