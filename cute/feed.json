@@ -36387,6 +36387,60 @@
         "portrait": "portraits/enfieldrifle.jpg"
       },
       "dossierUrl": "dossiers/1932-dfc00bc2ab.json"
+    },
+    {
+      "id": "1933-奧地利內戰",
+      "added": "2026-11-18T04:12:59.293Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 16.37,
+        "lat": 48.21
+      },
+      "battle": {
+        "y": 1933,
+        "m": 2,
+        "name": "奧地利內戰",
+        "theater": "維也納",
+        "brief": "奧地利內戰於1933年二月爆發，聯邦政府軍與社護團等反政府武裝在維也納及施蒂利亞交火，衝突延續至1934年。線膛砲（Muzzle-loading field gun，1850年）為德國陸軍沿用的野戰火炮型號，可與步兵協同作戰。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲是德國陸軍早期野戰砲兵的一類裝備，配置於步兵支隊以提供支援火力，並與其他野戰砲共同構成軍隊的砲兵層級。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1933-4a452cee31.json"
+    },
+    {
+      "id": "1934-沙特-也門戰爭",
+      "added": "2026-11-18T04:13:02.927Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 43.55,
+        "lat": 14.82
+      },
+      "battle": {
+        "y": 1934,
+        "m": 4,
+        "name": "沙特-也門戰爭",
+        "theater": "塔伊茲省霍塔地區",
+        "brief": "1934年沙特-也門戰爭以沙特軍進攻也門塔伊茲省霍塔前哨為起點，交戰主要發生在也門南部及鄰近阿拉伯半島沿海。英國皇家海軍魚雷艇（Torpedo boat，1877年）已於此前列裝，屬於以高速巡弋、偵察與魚雷突擊為主的海軍兵力。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇是英國皇家海軍用於海岸巡弋、偵察與快速突擊的小型水面兵力，1877年入列後，成為海軍魚雷作戰體系中執行高速任務的輔助艇隊。",
+        "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1934-a337f706a8.json"
     }
   ]
 }
