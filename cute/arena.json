@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-19-12:43",
+      "topic": {
+        "id": "chat",
+        "name": "Kerch Bridge Pounding: E",
+        "brief": "4chan /k/ 熱帖「Kerch Bridge Pounding: Episode Three」· 528 回覆。 https://boards.4chan.org/k/thread/65661867",
+        "board": "k",
+        "thread": 65661867,
+        "replies": 528
+      },
+      "rounds": [
+        {
+          "id": "fb-12-0",
+          "name": "噴火",
+          "weapon": "Spitfire",
+          "year": 1938,
+          "portrait": "portraits/spitfire.jpg",
+          "text": "4chan /k/「Kerch Bridge Pounding: Episo」528回，講緊Old thread reached。我1938列裝，轉彎好，產量先決定。講完我收工，你慢慢諗。"
+        },
+        {
+          "id": "fb-12-1",
+          "name": "MG42",
+          "weapon": "MG 42",
+          "year": 1942,
+          "portrait": null,
+          "text": "喂 噴火，Kerch Bridge Pounding: Episo 嗰條你點解唔答。我1942先列裝，打得快，槍管幾秒就燒。呢度唔係講spec，係講邊個仲企喺度。"
+        },
+        {
+          "id": "fb-12-2",
+          "name": "斯圖卡",
+          "weapon": "Ju 87",
+          "year": 1937,
+          "portrait": "portraits/stuka.jpg",
+          "text": "MG42 你遲咗好耐先開口，Kerch Bridge Pounding: Episo 喺度等緊。我1937先列裝，冇制空權就係鐵棺材。你如果想知，去查維基啦。"
+        },
+        {
+          "id": "fb-12-3",
+          "name": "海獵鷹",
+          "weapon": "Harrier",
+          "year": 1969,
+          "portrait": "portraits/harrier.jpg",
+          "text": "斯圖卡，Kerch Bridge Pounding: Episo 都出咗咗你仲未串。我1969先列裝，唔使跑道，代價係短命。打完好似冇贏，但至少冇畀人當消耗品。"
+        },
+        {
+          "id": "fb-12-4",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "portrait": "portraits/tiger.jpg",
+          "text": "海獵鷹 收下「Kerch Bridge Pounding: Episo」呢條題。我1942先列裝，厚、慢、履帶同油。串完都要油，冇得你哋一個講晒。"
+        },
+        {
+          "id": "fb-12-5",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "portrait": "portraits/m16.jpg",
+          "text": "咁 虎式，Kerch Bridge Pounding: Episo 呢條你咩睇。我1964先列裝，卡殼就係冇清膛。我冇死過，所以我有得講。"
+        },
+        {
+          "id": "fb-12-6",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "portrait": null,
+          "text": "M16 你未答「Kerch Bridge Pounding: Episo」。我1940先列裝，遠得過人，但冇油返唔到。唔好淨係改我個名，講數。"
+        },
+        {
+          "id": "fb-12-7",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "portrait": "portraits/katyusha.jpg",
+          "text": "喂 零式，Kerch Bridge Pounding: Episo 嗰條你點解唔答。我1941先列裝，一排齊射，地圖都唔准。我講嘅係年份，你講嘅係型號。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-19-03:41",
       "topic": {
         "id": "chat",
@@ -3451,75 +3528,6 @@
           "weapon": "F-16",
           "year": 1978,
           "text": "@波波沙 你未答「/hg/ - Handgun General」。我1978先列裝，輕、平、改得多。串呢條4chan帖，唔好串自己。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-12-21:11",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 517 回覆。 https://boards.4chan.org/g/thread/110308354",
-        "board": "g",
-        "thread": 110308354,
-        "replies": 517
-      },
-      "rounds": [
-        {
-          "id": "fb-21-0",
-          "name": "海獵鷹",
-          "weapon": "Harrier",
-          "year": 1969,
-          "text": "4chan /g/「/lmg/ - Local Models General」517回。我1969列裝，垂直起降，航程就蝕。呢條帖講完都要補給。"
-        },
-        {
-          "id": "fb-21-1",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "@海獵鷹 你未答「/lmg/ - Local Models General」。我1942先列裝，厚、慢、履帶同油。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-21-2",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@虎式 你未答「/lmg/ - Local Models General」。我1964先列裝，初時卡殼，保養先係關鍵。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-21-3",
-          "name": "零式",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "@M16 你未答「/lmg/ - Local Models General」。我1940先列裝，輕、遠、無自封油箱。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-21-4",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "@零式 你未答「/lmg/ - Local Models General」。我1941先列裝，十六發齊射，精準唔好問。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-21-5",
-          "name": "噴火",
-          "weapon": "Spitfire",
-          "year": 1938,
-          "text": "@喀秋莎 你未答「/lmg/ - Local Models General」。我1938先列裝，轉彎好，產量先決定。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-21-6",
-          "name": "MG42",
-          "weapon": "MG 42",
-          "year": 1942,
-          "text": "@噴火 你未答「/lmg/ - Local Models General」。我1942先列裝，快，槍管幾秒就換。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-21-7",
-          "name": "斯圖卡",
-          "weapon": "Ju 87",
-          "year": 1937,
-          "text": "@MG42 你未答「/lmg/ - Local Models General」。我1937先列裝，無制空就係靶。串呢條4chan帖，唔好串自己。"
         }
       ]
     }
