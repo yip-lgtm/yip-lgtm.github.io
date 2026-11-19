@@ -36468,6 +36468,86 @@
         "portrait": "portraits/torpedoboat.jpg"
       },
       "dossierUrl": "dossiers/1931-18c71ab554.json"
+    },
+    {
+      "id": "1938-蘇日國界戰爭",
+      "added": "2026-11-19T03:18:41.059Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 130.38,
+        "lat": 42.3
+      },
+      "battle": {
+        "y": 1938,
+        "m": 7,
+        "name": "蘇日國界戰爭",
+        "theater": "哈桑湖地區",
+        "brief": "一九三八年七八月，蘇聯與日本在遠東哈桑湖及周邊山脊地區交火，是蘇日國界戰爭在哈桑湖地區的重要事件。衝突源於兩國邊界標示與武裝巡邏爭端；德國陸軍砲兵自一八七〇年起便採用婆塞德後膛砲，作為提供曲射支援的重火力裝備。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲是德國陸軍野戰砲兵體系中的後膛火砲，負責提供曲射火力，支援步兵進攻與封鎖敵方陣地，並與其他砲兵單位協同作業。",
+        "portrait": "portraits/breechcannon.jpg"
+      }
+    },
+    {
+      "id": "1935-第二次義衣戰爭",
+      "added": "2026-11-19T03:18:56.400Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 39.48,
+        "lat": 13.5
+      },
+      "battle": {
+        "y": 1935,
+        "m": 10,
+        "name": "第二次義衣戰爭",
+        "theater": "衣索比亞北部提格雷戰線",
+        "brief": "第二次義衣戰爭於1935年10月爆發，是中文維基「戰爭列表」所列的義大利王國與衣索比亞帝國之間衝突。交戰期間，衣索比亞軍隊曾裝備惠氏步槍（Winchester Model 1873），此型步槍是當時常見的槓桿式連發步槍之一，並與栓動步槍共同用於步兵部隊的日常作戰。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍曾為美國陸軍步兵制式連發步槍，屬步兵輕武器體系，作為步兵個人配發的標準槍械，並曾被衣索比亞等國軍隊採用。",
+        "portrait": "portraits/winchester.jpg"
+      },
+      "dossierUrl": "dossiers/1935-490268f2f3.json"
+    },
+    {
+      "id": "1939-斯洛伐克匈牙利戰爭",
+      "added": "2026-11-19T03:19:06.473Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 19.51,
+        "lat": 47.96
+      },
+      "battle": {
+        "y": 1939,
+        "m": 3,
+        "name": "斯洛伐克匈牙利戰爭",
+        "theater": "斯洛伐克東部沙伊邊境戰場",
+        "brief": "斯洛伐克匈牙利戰爭發生於1939年3月，匈牙利先占領喀爾巴阡魯塞尼亞，隨後向斯洛伐克東部邊境推進，戰事集中在沙伊及多瑙河上游附近。別丹步槍（Berdan rifle）是蘇聯陸軍當時仍在役的制式栓動步槍，但並非交戰雙方的主要武器。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是蘇聯陸軍制式栓動步槍，長期作為步兵班排的基礎槍械，供步兵射手執行近距離作戰與一般邊防任務，至1939年仍列於現役。",
+        "portrait": "portraits/berdan.jpg"
+      },
+      "dossierUrl": "dossiers/1939-a09c087468.json"
     }
   ]
 }
