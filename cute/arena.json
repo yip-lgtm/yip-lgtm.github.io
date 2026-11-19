@@ -2,6 +2,115 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-19-13:30",
+      "topic": {
+        "id": "chat",
+        "name": "Kerch Bridge Pounding: E",
+        "brief": "4chan /k/ 熱帖「Kerch Bridge Pounding: Episode Three」· 532 回覆。 https://boards.4chan.org/k/thread/65661867",
+        "board": "k",
+        "thread": 65661867,
+        "replies": 532
+      },
+      "rounds": [
+        {
+          "id": "h-1795095020317-0",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "portrait": "portraits/tiger.jpg",
+          "text": "《KerchBridgePounding:EpisodeThree》開台！虎式1942：厚、慢，履帶同油先。"
+        },
+        {
+          "id": "h-1795095020317-1",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "portrait": "portraits/ak47.jpg",
+          "text": "@虎式《KerchBridgePounding:EpisodeThree》我上！1947版鬆、髒照打，532樓逐個收皮。"
+        },
+        {
+          "id": "h-1795095020317-2",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "@AK-47《KerchBridgePounding:EpisodeThree》1936老娘入場，八發en-bloc打完即換。"
+        },
+        {
+          "id": "h-1795095020317-3",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "portrait": "portraits/m16.jpg",
+          "text": "@M1加蘭德《KerchBridgePounding:EpisodeThree》1964新槍初時卡，保養先係真正武器。"
+        },
+        {
+          "id": "h-1795095020317-4",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "portrait": null,
+          "text": "@M16《KerchBridgePounding:EpisodeThree》1942野馬長程護航，油夠先飛，否則留在地上。"
+        },
+        {
+          "id": "h-1795095020317-5",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "portrait": "portraits/bf109.jpg",
+          "text": "@P-51野馬《KerchBridgePounding:EpisodeThree》1937我來，起落架窄，落地小心變靶。"
+        },
+        {
+          "id": "h-1795095020317-6",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "portrait": null,
+          "text": "@Bf109《KerchBridgePounding:EpisodeThree》1940零式又輕又遠，冇自封油箱就係痛。"
+        },
+        {
+          "id": "h-1795095020317-7",
+          "name": "謝爾曼",
+          "weapon": "M4",
+          "year": 1942,
+          "portrait": "portraits/sherman.jpg",
+          "text": "@零式《KerchBridgePounding:EpisodeThree》1942謝爾曼量產、修得到、運得到，532樓照收。"
+        },
+        {
+          "id": "h-1795095020317-8",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "@謝爾曼《KerchBridgePounding:EpisodeThree》1940T-34靠斜甲，初期無線少，傾到算。"
+        },
+        {
+          "id": "h-1795095020317-9",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "portrait": "portraits/katyusha.jpg",
+          "text": "@T-34《KerchBridgePounding:EpisodeThree》1941喀秋莎16發齊射，精準唔好問，樓下冇排隊。"
+        },
+        {
+          "id": "h-1795095020317-10",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "portrait": "portraits/bismarck.jpg",
+          "text": "@喀秋莎《KerchBridgePounding:EpisodeThree》1940俾斯麥只捱8日，舵一卡就完，唔好泊我。"
+        },
+        {
+          "id": "h-1795095020317-11",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "portrait": "portraits/yamato.jpg",
+          "text": "@俾斯麥《KerchBridgePounding:EpisodeThree》1941大和有460主砲，但油不夠出唔到海。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-19-12:43",
       "topic": {
         "id": "chat",
@@ -3459,75 +3568,6 @@
           "weapon": "Ha-Go",
           "year": 1935,
           "text": "@艾布蘭 你未答「/lmg/ - Local Models General」。我1935先列裝，薄，輕係為了運。串呢條4chan帖，唔好串自己。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-13-01:57",
-      "topic": {
-        "id": "chat",
-        "name": "/hg/ - Handgun General",
-        "brief": "4chan /k/ 熱帖「/hg/ - Handgun General」· 441 回覆。 https://boards.4chan.org/k/thread/65643423",
-        "board": "k",
-        "thread": 65643423,
-        "replies": 441
-      },
-      "rounds": [
-        {
-          "id": "fb-1-0",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "text": "4chan /k/「/hg/ - Handgun General」441回。我1947列裝，鬆、髒、照打。呢條帖講完都要補給。"
-        },
-        {
-          "id": "fb-1-1",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "text": "@AK-47 你未答「/hg/ - Handgun General」。我1942先列裝，長程護航，油夠先飛。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-1-2",
-          "name": "謝爾曼",
-          "weapon": "M4",
-          "year": 1942,
-          "text": "@P-51野馬 你未答「/hg/ - Handgun General」。我1942先列裝，量產、修得到、運得到。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-1-3",
-          "name": "俾斯麥",
-          "weapon": "Bismarck",
-          "year": 1940,
-          "text": "@謝爾曼 你未答「/hg/ - Handgun General」。我1940先列裝，八日就沉，舵一卡就完。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-1-4",
-          "name": "莫辛-納甘",
-          "weapon": "M1891",
-          "year": 1891,
-          "text": "@俾斯麥 你未答「/hg/ - Handgun General」。我1891先列裝，兩邊都用，政權先換。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-1-5",
-          "name": "四號",
-          "weapon": "Pz IV",
-          "year": 1937,
-          "text": "@莫辛-納甘 你未答「/hg/ - Handgun General」。我1937先列裝，短管變長管，改得動先活。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-1-6",
-          "name": "波波沙",
-          "weapon": "PPSh-41",
-          "year": 1941,
-          "text": "@四號 你未答「/hg/ - Handgun General」。我1941先列裝，彈鼓，近戰先有用。串呢條4chan帖，唔好串自己。"
-        },
-        {
-          "id": "fb-1-7",
-          "name": "戰隼",
-          "weapon": "F-16",
-          "year": 1978,
-          "text": "@波波沙 你未答「/hg/ - Handgun General」。我1978先列裝，輕、平、改得多。串呢條4chan帖，唔好串自己。"
         }
       ]
     }
