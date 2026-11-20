@@ -36549,6 +36549,86 @@
         "portrait": "portraits/berdan.jpg"
       },
       "dossierUrl": "dossiers/1939-a09c087468.json"
+    },
+    {
+      "id": "1960-危地馬拉內戰",
+      "added": "2026-11-20T03:05:36.068Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -90.22,
+        "lat": 15.78
+      },
+      "battle": {
+        "y": 1960,
+        "m": 11,
+        "name": "危地馬拉內戰",
+        "theater": "危地馬拉",
+        "brief": "危地馬拉內戰於1960年11月爆發，是這份戰爭列表所列、以危地馬拉全境為戰場的長期內部衝突。施拿甫步槍（Sharps rifle）自1865年開始服役，屬美製遠射程步槍，採用單發栓動結構，作為步兵個人肩射武器，其服役年代早於本衝突爆發時間。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍屬美國陸軍早期遠射程步槍系列，以單發栓動方式供步兵射手使用；它是步兵個人用肩射武器，負責中遠距離精準射擊，並非機關槍或砲兵裝備。",
+        "portrait": "portraits/sharps.jpg"
+      }
+    },
+    {
+      "id": "1961-厄立特里亞獨立戰爭",
+      "added": "2026-11-20T03:05:40.086Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 38.93,
+        "lat": 15.34
+      },
+      "battle": {
+        "y": 1961,
+        "m": 9,
+        "name": "厄立特里亞獨立戰爭",
+        "theater": "厄立特里亞北部與阿斯馬拉",
+        "brief": "厄立特里亞獨立戰爭於一九六一年九月展開，是厄立特里亞民族解放陣線反抗衣索比亞統治、爭取獨立的武裝衝突。英國海軍於一八六五年服役的蒸汽鐵甲艦（Steam ironclad）屬遠洋重裝甲艦種，在海軍體系中負責巡弋、封鎖與制海。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦是英國皇家海軍在一八六〇年代艦隊中的重裝甲主力艦種，憑藉裝甲與重砲執行遠洋巡弋、封鎖及制海任務。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/1961-aec21f4c22.json"
+    },
+    {
+      "id": "1961-尼加拉瓜內戰",
+      "added": "2026-11-20T03:06:12.771Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -85.2,
+        "lat": 12.8
+      },
+      "battle": {
+        "y": 1961,
+        "m": 12,
+        "name": "尼加拉瓜內戰",
+        "theater": "尼加拉瓜",
+        "brief": "尼加拉瓜內戰自一九六一年十二月起，由桑地諾民族解放陣線對抗索莫莎政府，延續至一九七九年政權更替。此役屬二十世紀中葉拉丁美洲反抗獨裁統治的內戰；英國海軍早於一九六一年已列裝鐵甲艦（Ironclad），代表蒸汽動力裝甲戰艦的海上兵力。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是英國皇家海軍早期裝甲蒸汽主力艦，配置於遠洋艦隊，擔任旗艦並執行巡邏、護航及海外駐防，屬當時海軍水面兵力的核心。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1961-b482438272.json"
     }
   ]
 }
