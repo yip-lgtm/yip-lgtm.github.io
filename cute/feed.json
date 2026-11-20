@@ -36630,6 +36630,86 @@
         "portrait": "portraits/ironclad.jpg"
       },
       "dossierUrl": "dossiers/1961-b482438272.json"
+    },
+    {
+      "id": "1941-英國伊拉克戰爭",
+      "added": "2026-11-20T20:03:40.974Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.37,
+        "lat": 33.31
+      },
+      "battle": {
+        "y": 1941,
+        "m": 5,
+        "name": "英國伊拉克戰爭",
+        "theater": "伊拉克",
+        "brief": "英國伊拉克戰爭是中文維基戰爭列表所列衝突，1941年4月至5月由英國發動並迅速取得控制。此前的英國獨立伊拉克已因石油利益與德義關係而分裂。戰役主要涉及伊拉克全境，以及巴格達、基爾庫克等城鎮。英軍裝備線膛砲（Muzzle-loading field gun），用於野戰砲兵與早期步兵支援。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲（Muzzle-loading field gun）屬於野戰砲兵與步兵支援火砲，採前裝式設計，以火藥推動彈丸攻擊地面目標。它是十九世紀野戰砲兵體系中的常見重火力裝備，並非本世紀才出現的型號。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1941-45fa125e24.json"
+    },
+    {
+      "id": "1941-厄秘戰爭",
+      "added": "2026-11-20T20:04:18.448Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -79.98,
+        "lat": -3.13
+      },
+      "battle": {
+        "y": 1941,
+        "m": 7,
+        "name": "厄秘戰爭",
+        "theater": "薩魯米亞戰線（厄瓜多爾南部）",
+        "brief": "1941年厄秘戰爭是厄瓜多爾與秘魯之間的邊境戰爭，秘魯軍隊越境後，戰線由薩魯米亞向安第斯山區內陸延伸，厄瓜多爾軍隊隨後投入反攻，戰事以里約議定書告一段落。厄瓜多爾地面部隊曾使用英國於1858年列裝的Enfield rifle（恩菲爾德步槍）。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "它是英國陸軍的制式步槍，由營、連所屬步兵分隊配發，擔任步兵班的主要射擊武器；厄瓜多爾軍隊也曾沿用此槍。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      },
+      "dossierUrl": "dossiers/1941-68f64da943.json"
+    },
+    {
+      "id": "1940-第二次泰法戰爭",
+      "added": "2026-11-20T20:05:12.454Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 100.45,
+        "lat": 18.48
+      },
+      "battle": {
+        "y": 1940,
+        "m": 11,
+        "name": "第二次泰法戰爭",
+        "theater": "泰國西北部帕府與那空一帶山區",
+        "brief": "中文維基《戰爭列表》所列第二次泰法戰爭於1940年11月爆發，泰國與維希法國在泰國西北部及法屬印度支那邊境交戰，衝突集中於山地邊防與據點爭奪。此條點名的裝備為加特林機槍（Gatling gun），1860年已列裝，是早期制式連發武器，但並非本場戰爭實際使用的主力裝備。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍是美國陸軍早期制式連發武器，配置於步兵分隊，負責持續火力支援，是近代機槍的重要先驅，在武器體系中具有承先啟後的地位。",
+        "portrait": "portraits/gatling.jpg"
+      }
     }
   ]
 }
