@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-20-13:11",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 541 回覆。 https://boards.4chan.org/g/thread/110377439",
+        "board": "g",
+        "thread": 110377439,
+        "replies": 541
+      },
+      "rounds": [
+        {
+          "id": "fb-13-0",
+          "name": "莫辛-納甘",
+          "weapon": "M1891",
+          "year": 1891,
+          "portrait": null,
+          "text": "4chan /g/「/lmg/ - Local Models General」541回，講緊/lmg/ - a general 。我1891列裝，子彈兩邊都用，換嘅係政府。要串就串，唔好只係搵人串。"
+        },
+        {
+          "id": "fb-13-1",
+          "name": "四號",
+          "weapon": "Pz IV",
+          "year": 1937,
+          "portrait": null,
+          "text": "莫辛-納甘 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1937先列裝，改裝改到最後死機。你講你嘅，我講我嘅，條帖自己會證明。"
+        },
+        {
+          "id": "fb-13-2",
+          "name": "波波沙",
+          "weapon": "PPSh-41",
+          "year": 1941,
+          "portrait": "portraits/ppsh.jpg",
+          "text": "四號，/lmg/ - Local Models General 都出咗咗你仲未串。我1941先列裝，細個但火力密。我要油要人，你得個名。"
+        },
+        {
+          "id": "fb-13-3",
+          "name": "戰隼",
+          "weapon": "F-16",
+          "year": 1978,
+          "portrait": "portraits/f16.jpg",
+          "text": "波波沙 收下「/lmg/ - Local Models General」呢條題。我1978先列裝，輕、平、改得多。講完我收工，你慢慢諗。"
+        },
+        {
+          "id": "fb-13-4",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "portrait": "portraits/ak47.jpg",
+          "text": "咁 戰隼，/lmg/ - Local Models General 呢條你咩睇。我1947先列裝，鬆到手都震，照打一樣準。呢度唔係講spec，係講邊個仲企喺度。"
+        },
+        {
+          "id": "fb-13-5",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "portrait": null,
+          "text": "AK-47 你未答「/lmg/ - Local Models General」。我1942先列裝，航程遠，炸彈跟得住。你如果想知，去查維基啦。"
+        },
+        {
+          "id": "fb-13-6",
+          "name": "謝爾曼",
+          "weapon": "M4",
+          "year": 1942,
+          "portrait": "portraits/sherman.jpg",
+          "text": "喂 P-51野馬，/lmg/ - Local Models General 嗰條你點解唔答。我1942先列裝，多到可以壞咗再換。打完好似冇贏，但至少冇畀人當消耗品。"
+        },
+        {
+          "id": "fb-13-7",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "portrait": "portraits/bismarck.jpg",
+          "text": "謝爾曼 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1940先列裝，八日就沉，舵一卡就完。串完都要油，冇得你哋一個講晒。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-20-10:47",
       "topic": {
         "id": "chat",
@@ -3539,75 +3616,6 @@
           "weapon": "MG 42",
           "year": 1942,
           "text": "喂 噴火，mpv 0.42.0 just dropped! 嗰條你點解唔答。我1942先列裝，打得快，槍管幾秒就燒。我冇死過，所以我有得講。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-13-17:52",
-      "topic": {
-        "id": "chat",
-        "name": "mpv 0.42.0 just dropped!",
-        "brief": "4chan /g/ 熱帖「mpv 0.42.0 just dropped!」· 321 回覆。 https://boards.4chan.org/g/thread/110248161",
-        "board": "g",
-        "thread": 110248161,
-        "replies": 321
-      },
-      "rounds": [
-        {
-          "id": "fb-17-0",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "text": "4chan /g/「mpv 0.42.0 just dropped!」321回，講緊Key highlights: &g。我1938列裝，冇飛機就冇牙。呢度唔係講spec，係講邊個仲企喺度。"
-        },
-        {
-          "id": "fb-17-1",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "text": "企業號 你未答「mpv 0.42.0 just dropped!」。我1980先列裝，推力夠，油唔夠就熄。你如果想知，去查維基啦。"
-        },
-        {
-          "id": "fb-17-2",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "喂 艾布蘭，mpv 0.42.0 just dropped! 嗰條你點解唔答。我1935先列裝，輕到運輸冇問題。打完好似冇贏，但至少冇畀人當消耗品。"
-        },
-        {
-          "id": "fb-17-3",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "九五式 你遲咗好耐先開口，mpv 0.42.0 just dropped! 喺度等緊。我1936先列裝，八發en-bloc。串完都要油，冇得你哋一個講晒。"
-        },
-        {
-          "id": "fb-17-4",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "M1加蘭德，mpv 0.42.0 just dropped! 都出咗咗你仲未串。我1937先列裝，落腳位窄得似企喺刀刃。我冇死過，所以我有得講。"
-        },
-        {
-          "id": "fb-17-5",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "Bf 109 收下「mpv 0.42.0 just dropped!」呢條題。我1940先列裝，斜甲跳得快，初期靠喊。唔好淨係改我個名，講數。"
-        },
-        {
-          "id": "fb-17-6",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "咁 T-34，mpv 0.42.0 just dropped! 呢條你咩睇。我1941先列裝，最重嗰隻，油最唔夠。我講嘅係年份，你講嘅係型號。"
-        },
-        {
-          "id": "fb-17-7",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "text": "大和 你未答「mpv 0.42.0 just dropped!」。我1895先列裝，十發彈倉。樓主唔好意思，我講嘅全部係當年真事。"
         }
       ]
     }
