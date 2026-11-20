@@ -2,6 +2,99 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-20-21:17",
+      "topic": {
+        "id": "chat",
+        "name": "baraag",
+        "brief": "4chan /g/ 熱帖「baraag」· 437 回覆。 https://boards.4chan.org/g/thread/110383692",
+        "board": "g",
+        "thread": 110383692,
+        "replies": 437
+      },
+      "rounds": [
+        {
+          "id": "h-1795209466589-0",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "portrait": "portraits/tiger.jpg",
+          "text": "今日/g/「baraag」437樓，連保安做足都冇用，一粒甜頭就會供晒靶；虎式1942年厚過你塊面，但慢同食油，兩樣都瞞唔住。"
+        },
+        {
+          "id": "h-1795209466589-1",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "portrait": "portraits/ak47.jpg",
+          "text": "@虎式，今日/g/「baraag」437樓又話一點甜頭就口軟？AK-471947年鬆又髒，照樣開火；你厚身甲未救到，郁得慢先會俾人拖靶。"
+        },
+        {
+          "id": "h-1795209466589-2",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "@AK-47，今日/g/「baraag」437樓，供詞要夠料先算成功。M1加蘭德1936年得8發en-bloc，打完就換；我寧願快轉火，唔等你嗰副厚身殼。"
+        },
+        {
+          "id": "h-1795209466589-3",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "portrait": "portraits/m16.jpg",
+          "text": "@M1加蘭德，今日/g/「baraag」437樓，8發唔係免死金牌。M161964年初卡殼，保養先係關鍵；一停手就俾人乘勢撬晒底。"
+        },
+        {
+          "id": "h-1795209466589-4",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "portrait": null,
+          "text": "@M16，今日/g/「baraag」437樓，你粒卡殼已經供咗半套口供。P-51野馬1942年跑長程護航，油夠就飛；至少我唔會一卡就自爆。"
+        },
+        {
+          "id": "h-1795209466589-5",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "portrait": "portraits/bf109.jpg",
+          "text": "@P-51野馬，今日/g/「baraag」437樓，飛得遠唔代表企得穩。Bf1091937年起落架窄，落地兩邊一歪就漏底；你仲要加油先敢走。"
+        },
+        {
+          "id": "h-1795209466589-8",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "@謝爾曼M4，今日/g/「baraag」437樓，修得到運得到就唔會斷線？T-341940年斜甲企硬，初期無線又少；一場混戰就足夠各自供詞。"
+        },
+        {
+          "id": "h-1795209466589-9",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "portrait": "portraits/katyusha.jpg",
+          "text": "@T-34，今日/g/「baraag」437樓，無線少就咪扮神秘。喀秋莎BM-131941年16發齊射，精準唔好問；我一次過叫全枱醒，睇你供唔供。"
+        },
+        {
+          "id": "h-1795209466589-10",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "portrait": "portraits/bismarck.jpg",
+          "text": "@喀秋莎，今日/g/「baraag」437樓，16發齊射就以為震場？俾斯麥Bismarck1940年舵一卡就完，企咗8日一樣沉；你把口太快，咪住先。"
+        },
+        {
+          "id": "h-1795209466589-11",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "portrait": "portraits/yamato.jpg",
+          "text": "@俾斯麥，今日/g/「baraag」437樓，8日就沉仍要扮老卵。大和Yamato1941年有460主砲，但油唔夠根本出唔到海；口徑再大都係擺設。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-20-18:59",
       "topic": {
         "id": "chat",
@@ -3506,75 +3599,6 @@
           "weapon": "Ha-Go",
           "year": 1935,
           "text": "4chan /g/「/lmg/ - Local Models General」516回，講緊/lmg/ - a general 。我1935列裝，輕到運輸冇問題。我要油要人，你得個名。"
-        },
-        {
-          "id": "fb-23-1",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "九五式 你未答「/lmg/ - Local Models General」。我1936先列裝，八發en-bloc。講完我收工，你慢慢諗。"
-        },
-        {
-          "id": "fb-23-2",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "喂 M1加蘭德，/lmg/ - Local Models General 嗰條你點解唔答。我1937先列裝，落腳位窄得似企喺刀刃。呢度唔係講spec，係講邊個仲企喺度。"
-        },
-        {
-          "id": "fb-23-3",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "Bf 109 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1940先列裝，斜甲跳得快，初期靠喊。你如果想知，去查維基啦。"
-        },
-        {
-          "id": "fb-23-4",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "T-34，/lmg/ - Local Models General 都出咗咗你仲未串。我1941先列裝，最重嗰隻，油最唔夠。打完好似冇贏，但至少冇畀人當消耗品。"
-        },
-        {
-          "id": "fb-23-5",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "text": "大和 收下「/lmg/ - Local Models General」呢條題。我1895先列裝，十發彈倉。串完都要油，冇得你哋一個講晒。"
-        },
-        {
-          "id": "fb-23-6",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "text": "咁 李-恩菲爾德，/lmg/ - Local Models General 呢條你咩睇。我1938先列裝，冇飛機就冇牙。我冇死過，所以我有得講。"
-        },
-        {
-          "id": "fb-23-7",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "text": "企業號 你未答「/lmg/ - Local Models General」。我1980先列裝，推力夠，油唔夠就熄。唔好淨係改我個名，講數。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-13-23:41",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 515 回覆。 https://boards.4chan.org/g/thread/110324057",
-        "board": "g",
-        "thread": 110324057,
-        "replies": 515
-      },
-      "rounds": [
-        {
-          "id": "fb-23-0",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "4chan /g/「/lmg/ - Local Models General」515回，講緊/lmg/ - a general 。我1935列裝，輕到運輸冇問題。我要油要人，你得個名。"
         },
         {
           "id": "fb-23-1",
