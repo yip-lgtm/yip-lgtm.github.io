@@ -36711,6 +36711,85 @@
         "portrait": "portraits/gatling.jpg"
       },
       "dossierUrl": "dossiers/1940-4046e17e68.json"
+    },
+    {
+      "id": "1944-三區革命",
+      "added": "2026-11-21T17:25:24.882Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106.31,
+        "lat": 10.32
+      },
+      "battle": {
+        "y": 1944,
+        "m": 1,
+        "name": "三區革命",
+        "theater": "越南南部貢公、永隆與檳椖三區",
+        "brief": "三區革命於1944年1月在越南南部的貢公、永隆與檳椖爆發，越南獨立同盟武裝攻擊法國殖民行政與治安據點，形成三地連動的抗爭，是該組織早期對法殖民統治的大規模行動。英國海軍於1877年列裝的Torpedo boat，是高速近海作戰小艇，主要用魚雷攻擊水面艦船，並執行追擊與警戒。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "Torpedo boat在英國海軍中屬小型高速水面作戰平台，配置於近岸部隊，以魚雷攻擊水面目標，並執行追擊、護航、巡邏與警戒任務。",
+        "portrait": "portraits/torpedoboat.jpg"
+      }
+    },
+    {
+      "id": "1941-英蘇入侵伊朗",
+      "added": "2026-11-21T17:25:44.014Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 53,
+        "lat": 32
+      },
+      "battle": {
+        "y": 1941,
+        "m": 8,
+        "name": "英蘇入侵伊朗",
+        "theater": "伊朗",
+        "brief": "英蘇入侵伊朗是第二次世界大戰期間的軍事行動；英國與蘇聯於1941年8月依協議進入伊朗，向德黑蘭與北部地區推進，迫使伊朗國王退位。條目選列的真實裝備是法國於1840年列裝的Percussion rifle；其正式型號歸屬前裝步槍類，並作為本條唯一的裝備說明。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "Percussion rifle在法國早期陸軍步槍體系中屬前裝步槍類，位於地面部隊的標準槍械索引，並作為本條唯一的陸軍裝備資料項。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1944-希腊內戰",
+      "added": "2026-11-21T17:26:09.030Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 22,
+        "lat": 39
+      },
+      "battle": {
+        "y": 1944,
+        "m": 1,
+        "name": "希腊內戰",
+        "theater": "希臘本土",
+        "brief": "1944年開始的希臘內戰以希臘本土為主要戰場，政府軍與反抗武裝在城市與鄉村持續交火。希臘軍隊曾沿用早期採購的Winchester Model 1873惠氏步槍；該型號自1873年服役，屬槓桿式連發步槍，適合步兵作戰，並曾配置於城鄉地區的步兵部隊。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "Winchester Model 1873是希臘軍隊早期引進的槓桿式連發步槍，1944年仍屬舊式步兵武器，與制式栓動步槍並存，並非當時最新的主力型號。",
+        "portrait": "portraits/winchester.jpg"
+      },
+      "dossierUrl": "dossiers/1944-287d48358f.json"
     }
   ]
 }
