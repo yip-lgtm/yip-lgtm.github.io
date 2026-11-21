@@ -36709,7 +36709,8 @@
         "layer": "land",
         "history": "加特林機槍是美國陸軍早期制式連發武器，配置於步兵分隊，負責持續火力支援，是近代機槍的重要先驅，在武器體系中具有承先啟後的地位。",
         "portrait": "portraits/gatling.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1940-4046e17e68.json"
     }
   ]
 }
