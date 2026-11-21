@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-21-18:07",
+      "topic": {
+        "id": "chat",
+        "name": "/vcg/ — Vibe-Coding Gene",
+        "brief": "4chan /g/ 熱帖「/vcg/ — Vibe-Coding General」· 352 回覆。 https://boards.4chan.org/g/thread/110388051",
+        "board": "g",
+        "thread": 110388051,
+        "replies": 352
+      },
+      "rounds": [
+        {
+          "id": "fb-18-0",
+          "name": "斯圖卡",
+          "weapon": "Ju 87",
+          "year": 1937,
+          "portrait": "portraits/stuka.jpg",
+          "text": "4chan /g/「/vcg/ — Vibe-Coding General」352回，講緊A general for vibe。我1937列裝，冇制空權就係鐵棺材。你講你嘅，我講我嘅，條帖自己會證明。"
+        },
+        {
+          "id": "fb-18-1",
+          "name": "海獵鷹",
+          "weapon": "Harrier",
+          "year": 1969,
+          "portrait": "portraits/harrier.jpg",
+          "text": "喂 斯圖卡，/vcg/ — Vibe-Coding General 嗰條你點解唔答。我1969先列裝，唔使跑道，代價係短命。我要油要人，你得個名。"
+        },
+        {
+          "id": "fb-18-2",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "portrait": "portraits/tiger.jpg",
+          "text": "海獵鷹 你遲咗好耐先開口，/vcg/ — Vibe-Coding General 喺度等緊。我1942先列裝，厚、慢、履帶同油。講完我收工，你慢慢諗。"
+        },
+        {
+          "id": "fb-18-3",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "portrait": "portraits/m16.jpg",
+          "text": "虎式，/vcg/ — Vibe-Coding General 都出咗咗你仲未串。我1964先列裝，卡殼就係冇清膛。呢度唔係講spec，係講邊個仲企喺度。"
+        },
+        {
+          "id": "fb-18-4",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "portrait": null,
+          "text": "M16 收下「/vcg/ — Vibe-Coding General」呢條題。我1940先列裝，遠得過人，但冇油返唔到。你如果想知，去查維基啦。"
+        },
+        {
+          "id": "fb-18-5",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "portrait": "portraits/katyusha.jpg",
+          "text": "咁 零式，/vcg/ — Vibe-Coding General 呢條你咩睇。我1941先列裝，一排齊射，地圖都唔准。打完好似冇贏，但至少冇畀人當消耗品。"
+        },
+        {
+          "id": "fb-18-6",
+          "name": "噴火",
+          "weapon": "Spitfire",
+          "year": 1938,
+          "portrait": "portraits/spitfire.jpg",
+          "text": "喀秋莎 你未答「/vcg/ — Vibe-Coding General」。我1938先列裝，轉彎好，產量先決定。串完都要油，冇得你哋一個講晒。"
+        },
+        {
+          "id": "fb-18-7",
+          "name": "MG42",
+          "weapon": "MG 42",
+          "year": 1942,
+          "portrait": null,
+          "text": "喂 噴火，/vcg/ — Vibe-Coding General 嗰條你點解唔答。我1942先列裝，打得快，槍管幾秒就燒。我冇死過，所以我有得講。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-21-16:59",
       "topic": {
         "id": "chat",
@@ -3570,75 +3647,6 @@
           "weapon": "PPSh-41",
           "year": 1941,
           "text": "4chan /g/「/lmg/ - Local Models General」532回，講緊/lmg/ - a general 。我1941列裝，細個但火力密。打完算數，唔使喺度比身段。"
-        },
-        {
-          "id": "fb-19-1",
-          "name": "戰隼",
-          "weapon": "F-16",
-          "year": 1978,
-          "text": "波波沙 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1978先列裝，輕、平、改得多。呢場輸贏唔關你事，關我事。"
-        },
-        {
-          "id": "fb-19-2",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "text": "戰隼，/lmg/ - Local Models General 都出咗咗你仲未串。我1947先列裝，鬆到手都震，照打一樣準。要串就串，唔好只係搵人串。"
-        },
-        {
-          "id": "fb-19-3",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "text": "AK-47 收下「/lmg/ - Local Models General」呢條題。我1942先列裝，航程遠，炸彈跟得住。你講你嘅，我講我嘅，條帖自己會證明。"
-        },
-        {
-          "id": "fb-19-4",
-          "name": "謝爾曼",
-          "weapon": "M4",
-          "year": 1942,
-          "text": "咁 P-51野馬，/lmg/ - Local Models General 呢條你咩睇。我1942先列裝，多到可以壞咗再換。我要油要人，你得個名。"
-        },
-        {
-          "id": "fb-19-5",
-          "name": "俾斯麥",
-          "weapon": "Bismarck",
-          "year": 1940,
-          "text": "謝爾曼 你未答「/lmg/ - Local Models General」。我1940先列裝，八日就沉，舵一卡就完。講完我收工，你慢慢諗。"
-        },
-        {
-          "id": "fb-19-6",
-          "name": "莫辛-納甘",
-          "weapon": "M1891",
-          "year": 1891,
-          "text": "喂 俾斯麥，/lmg/ - Local Models General 嗰條你點解唔答。我1891先列裝，子彈兩邊都用，換嘅係政府。呢度唔係講spec，係講邊個仲企喺度。"
-        },
-        {
-          "id": "fb-19-7",
-          "name": "四號",
-          "weapon": "Pz IV",
-          "year": 1937,
-          "text": "莫辛-納甘 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1937先列裝，改裝改到最後死機。你如果想知，去查維基啦。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-14-19:16",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 531 回覆。 https://boards.4chan.org/g/thread/110331423",
-        "board": "g",
-        "thread": 110331423,
-        "replies": 531
-      },
-      "rounds": [
-        {
-          "id": "fb-19-0",
-          "name": "波波沙",
-          "weapon": "PPSh-41",
-          "year": 1941,
-          "text": "4chan /g/「/lmg/ - Local Models General」531回，講緊/lmg/ - a general 。我1941列裝，細個但火力密。打完算數，唔使喺度比身段。"
         },
         {
           "id": "fb-19-1",
