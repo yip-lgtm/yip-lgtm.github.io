@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8">
+  <title>CSDI Slopes Map · Prototype</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body { margin:0; font-family: system-ui, sans-serif; }
+    #map { height: 100vh; }
+    .panel { position: absolute; top: 10px; left: 50px; z-index: 1000; background: rgba(255,255,255,0.95); padding: 10px 14px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.2); font-size: 14px; }
+    .panel input { margin: 4px 0; padding: 4px 8px; width: 180px; }
+    .panel button { padding: 4px 10px; margin-left: 4px; }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    CEDD Slopes sample · <a href="https://portal.csdi.gov.hk/" target="_blank">CSDI</a><br>
+    <input id="search" placeholder="輸入 SLOPE_NO 例如 10NE-A/C   36" />
+    <button onclick="searchSlope()">搜尋／高亮</button>
+    <button onclick="resetHighlight()">重置</button>
+    <br><a href="index.html">← 返回</a>
+  </div>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([22.34, 114.05], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+
+    let geoLayer = null;
+    let highlighted = null;
+
+    function defaultStyle() {
+      return { color: '#e67e22', weight: 2, fillColor: '#f39c12', fillOpacity: 0.35 };
+    }
+    function highlightStyle() {
+      return { color: '#c0392b', weight: 4, fillColor: '#e74c3c', fillOpacity: 0.7 };
+    }
+
+    function resetHighlight() {
+      if (highlighted && geoLayer) {
+        geoLayer.resetStyle(highlighted);
+        highlighted = null;
+      }
+    }
+
+    function searchSlope() {
+      const q = document.getElementById('search').value.trim();
+      if (!q || !geoLayer) return;
+      resetHighlight();
+      let found = null;
+      geoLayer.eachLayer(layer => {
+        const no = (layer.feature.properties.SLOPE_NO || '').trim();
+        if (no === q || no.includes(q)) {
+          found = layer;
+        }
+      });
+      if (found) {
+        found.setStyle(highlightStyle());
+        highlighted = found;
+        map.fitBounds(found.getBounds(), { padding: [40, 40], maxZoom: 17 });
+        found.openPopup();
+      } else {
+        alert('找不到：' + q);
+      }
+    }
+
+    fetch('data/slopes_sample.geojson')
+      .then(r => r.json())
+      .then(geojson => {
+        geoLayer = L.geoJSON(geojson, {
+          style: defaultStyle,
+          onEachFeature: (f, layer) => {
+            const p = f.properties || {};
+            const html = `
+              <b>${p.SLOPE_NO || 'N/A'}</b><br>
+              地區：${p.DISTRICT || '-'}<br>
+              位置：${p.LOCATION || '-'}<br>
+              維修責任：${p.MAINT_PART || '-'}<br>
+              高度：${p.OVERALL_HT != null ? p.OVERALL_HT + ' m' : '-'}<br>
+              角度：${p.OVERALL_AN != null ? p.OVERALL_AN + '°' : '-'}
+            `;
+            layer.bindPopup(html);
+          }
+        }).addTo(map);
+        if (geoLayer.getBounds().isValid()) map.fitBounds(geoLayer.getBounds(), { padding: [20, 20] });
+      })
+      .catch(err => {
+        console.error(err);
+        alert('Failed to load slopes_sample.geojson');
+      });
+
+    document.getElementById('search').addEventListener('keydown', e => {
+      if (e.key === 'Enter') searchSlope();
+    });
+  </script>
+</body>
+</html>
