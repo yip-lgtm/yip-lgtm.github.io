@@ -2,6 +2,115 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-22-07:06",
+      "topic": {
+        "id": "chat",
+        "name": "/g/",
+        "brief": "4chan /g/ 熱帖「熱帖」· 371 回覆。 https://boards.4chan.org/g/thread/110348442",
+        "board": "g",
+        "thread": 110348442,
+        "replies": 371
+      },
+      "rounds": [
+        {
+          "id": "h-1795331184789-0",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "portrait": "portraits/tiger.jpg",
+          "text": "「你係咪要嫁中國機械人？」我1942年入列，厚甲又慢，履帶食油；佢有面冇油，跟我行先啦。"
+        },
+        {
+          "id": "h-1795331184789-1",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "portrait": "portraits/ak47.jpg",
+          "text": "@虎式「你係咪要嫁中國機械人？」我1947年入列，鬆身骯髒照打；佢有手，我1947年一撳就響，夠實際啦。"
+        },
+        {
+          "id": "h-1795331184789-2",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "@AK-47「你係咪要嫁中國機械人？」我1936年入列，8發en-bloc；佢一撳就講愛，我1936年8發用完先講。"
+        },
+        {
+          "id": "h-1795331184789-3",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "portrait": "portraits/m16.jpg",
+          "text": "@M1加蘭德「你係咪要嫁中國機械人？」我1964年入列，初時卡殼，保養先得；佢有Wi-Fi，我1964年先要清下機匣。"
+        },
+        {
+          "id": "h-1795331184789-4",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "portrait": null,
+          "text": "@M16「你係咪要嫁中國機械人？」我1942年入列，長程護航，油夠先飛得；佢用電，我1942年成桶油當聘禮。"
+        },
+        {
+          "id": "h-1795331184789-5",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "portrait": null,
+          "text": "@P-51野馬「你係咪要嫁中國機械人？」我1940年入列，輕、遠，冇自封油箱；佢防漏，我1940年漏邊個知。"
+        },
+        {
+          "id": "h-1795331184789-6",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "@零式「你係咪要嫁中國機械人？」我1940年入列，斜甲硬，初期無線少；佢要GPS，我1940年靠人喊。"
+        },
+        {
+          "id": "h-1795331184789-7",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "portrait": "portraits/katyusha.jpg",
+          "text": "@T-34「你係咪要嫁中國機械人？」我1941年入列，16發齊射，精準唔好問；佢一次一個承諾，我1941年一次過16發。"
+        },
+        {
+          "id": "h-1795331184789-8",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "portrait": "portraits/bismarck.jpg",
+          "text": "@喀秋莎「你係咪要嫁中國機械人？」我1940年入列，8日就沉，舵一卡就完；佢話要長廝，我1940年得8日。"
+        },
+        {
+          "id": "h-1795331184789-9",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "portrait": "portraits/yamato.jpg",
+          "text": "@俾斯麥「你係咪要嫁中國機械人？」我1941年入列，460主砲，油不夠出唔到海；佢有引擎，我1941年得個油池陪嫁。"
+        },
+        {
+          "id": "h-1795331184789-10",
+          "name": "噴火",
+          "weapon": "Spitfire",
+          "year": 1938,
+          "portrait": "portraits/spitfire.jpg",
+          "text": "@大和「你係咪要嫁中國機械人？」我1938年入列，轉彎好，但產量先決定；佢一個，我1938年要排隊等。"
+        },
+        {
+          "id": "h-1795331184790-11",
+          "name": "MG42",
+          "weapon": "MG 42",
+          "year": 1942,
+          "portrait": null,
+          "text": "@噴火「你係咪要嫁中國機械人？」我1942年入列，射速快，槍管幾秒就換；佢冷靜，我1942年熱到換槍管。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-22-02:43",
       "topic": {
         "id": "chat",
@@ -3667,75 +3776,6 @@
           "weapon": "BM-13",
           "year": 1941,
           "text": "@T-34《/lmg/-LocalModelsGeneral》：1941十六發齊射，準度唔好問；本地模型一次過出，479樓食唔消。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-15-02:49",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 448 回覆。 https://boards.4chan.org/g/thread/110335334",
-        "board": "g",
-        "thread": 110335334,
-        "replies": 448
-      },
-      "rounds": [
-        {
-          "id": "fb-2-0",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "4chan /g/「/lmg/ - Local Models General」448回，講緊/lmg/ - a general 。我1936列裝，彈夾一按就出，唔使拉栓。你講你嘅，我講我嘅，條帖自己會證明。"
-        },
-        {
-          "id": "fb-2-1",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "M1加蘭德，/lmg/ - Local Models General 都出咗咗你仲未串。我1937先列裝，窄到landing都唔平。我要油要人，你得個名。"
-        },
-        {
-          "id": "fb-2-2",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "Bf 109 收下「/lmg/ - Local Models General」呢條題。我1940先列裝，斜甲，初期無線少。講完我收工，你慢慢諗。"
-        },
-        {
-          "id": "fb-2-3",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "text": "咁 T-34，/lmg/ - Local Models General 呢條你咩睇。我1941先列裝，460主砲一打就知幾重。呢度唔係講spec，係講邊個仲企喺度。"
-        },
-        {
-          "id": "fb-2-4",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "text": "大和 你未答「/lmg/ - Local Models General」。我1895先列裝，彈倉十發，槍機拉到飛起。你如果想知，去查維基啦。"
-        },
-        {
-          "id": "fb-2-5",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "text": "喂 李-恩菲爾德，/lmg/ - Local Models General 嗰條你點解唔答。我1938先列裝，拳頭夠硬就冇問題。打完好似冇贏，但至少冇畀人當消耗品。"
-        },
-        {
-          "id": "fb-2-6",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "text": "企業號 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1980先列裝，燃氣輪食油。串完都要油，冇得你哋一個講晒。"
-        },
-        {
-          "id": "fb-2-7",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "text": "艾布蘭，/lmg/ - Local Models General 都出咗咗你仲未串。我1935先列裝，薄到成架車都輕咗。我冇死過，所以我有得講。"
         }
       ]
     }
