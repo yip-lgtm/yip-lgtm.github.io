@@ -36736,7 +36736,8 @@
         "layer": "sea",
         "history": "Torpedo boat在英國海軍中屬小型高速水面作戰平台，配置於近岸部隊，以魚雷攻擊水面目標，並執行追擊、護航、巡邏與警戒任務。",
         "portrait": "portraits/torpedoboat.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1944-58aaa86cca.json"
     },
     {
       "id": "1941-英蘇入侵伊朗",
