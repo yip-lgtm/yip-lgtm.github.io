@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-22-23:52",
+      "topic": {
+        "id": "chat",
+        "name": "/vcg/ — Vibe-Coding Gene",
+        "brief": "4chan /g/ 熱帖「/vcg/ — Vibe-Coding General」· 350 回覆。 https://boards.4chan.org/g/thread/110398831",
+        "board": "g",
+        "thread": 110398831,
+        "replies": 350
+      },
+      "rounds": [
+        {
+          "id": "fb-23-0",
+          "name": "九五式",
+          "weapon": "Ha-Go",
+          "year": 1935,
+          "portrait": null,
+          "text": "4chan /g/「/vcg/ — Vibe-Coding General」350回，講緊A general for vibe。我1935列裝，輕到運輸冇問題。我要油要人，你得個名。"
+        },
+        {
+          "id": "fb-23-1",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "九五式 你未答「/vcg/ — Vibe-Coding General」。我1936先列裝，八發en-bloc。講完我收工，你慢慢諗。"
+        },
+        {
+          "id": "fb-23-2",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "portrait": "portraits/bf109.jpg",
+          "text": "喂 M1加蘭德，/vcg/ — Vibe-Coding General 嗰條你點解唔答。我1937先列裝，落腳位窄得似企喺刀刃。呢度唔係講spec，係講邊個仲企喺度。"
+        },
+        {
+          "id": "fb-23-3",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "Bf 109 你遲咗好耐先開口，/vcg/ — Vibe-Coding General 喺度等緊。我1940先列裝，斜甲跳得快，初期靠喊。你如果想知，去查維基啦。"
+        },
+        {
+          "id": "fb-23-4",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "portrait": "portraits/yamato.jpg",
+          "text": "T-34，/vcg/ — Vibe-Coding General 都出咗咗你仲未串。我1941先列裝，最重嗰隻，油最唔夠。打完好似冇贏，但至少冇畀人當消耗品。"
+        },
+        {
+          "id": "fb-23-5",
+          "name": "李-恩菲爾德",
+          "weapon": "Lee-Enfield",
+          "year": 1895,
+          "portrait": null,
+          "text": "大和 收下「/vcg/ — Vibe-Coding General」呢條題。我1895先列裝，十發彈倉。串完都要油，冇得你哋一個講晒。"
+        },
+        {
+          "id": "fb-23-6",
+          "name": "企業號",
+          "weapon": "USS Enterprise",
+          "year": 1938,
+          "portrait": null,
+          "text": "咁 李-恩菲爾德，/vcg/ — Vibe-Coding General 呢條你咩睇。我1938先列裝，冇飛機就冇牙。我冇死過，所以我有得講。"
+        },
+        {
+          "id": "fb-23-7",
+          "name": "艾布蘭",
+          "weapon": "M1",
+          "year": 1980,
+          "portrait": "portraits/m1.jpg",
+          "text": "企業號 你未答「/vcg/ — Vibe-Coding General」。我1980先列裝，推力夠，油唔夠就熄。唔好淨係改我個名，講數。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-22-21:54",
       "topic": {
         "id": "chat",
@@ -3704,68 +3781,6 @@
           "weapon": "PPSh-41",
           "year": 1941,
           "text": "咁 四號，/lmg/ - Local Models General 呢條你咩睇。我1941先列裝，彈鼓打得快，近身更加好。好耐冇人答，咁我頂上。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-15-18:13",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 370 回覆。 https://boards.4chan.org/g/thread/110339730",
-        "board": "g",
-        "thread": 110339730,
-        "replies": 370
-      },
-      "rounds": [
-        {
-          "id": "h-1794766387194-0",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "今日/g/「/lmg/-LocalModelsGeneral」回覆370：虎式1942插樓，厚、慢、履帶同油；本地模型先問有冇油，唔係問靚唔靚。"
-        },
-        {
-          "id": "h-1794766387194-1",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "text": "@虎式今日/g/「/lmg/-LocalModelsGeneral」回覆370：AK-471947表示鬆、髒、照打；本地模型咁糙都得？370樓當你係野生prompt。"
-        },
-        {
-          "id": "h-1794766387194-2",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "text": "@AK-47今日/g/「/lmg/-LocalModelsGeneral」回覆370：M1加蘭德1936一上線就八發en-bloc；逐個抽，370樓抽到第九發已經死機。"
-        },
-        {
-          "id": "h-1794766387194-3",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "@M1加蘭德今日/g/「/lmg/-LocalModelsGeneral」回覆370：M161964初時卡殼，保養先係關鍵；本地模型唔保養，370樓就等你重啟。"
-        },
-        {
-          "id": "h-1794766387194-4",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "text": "@M16今日/g/「/lmg/-LocalModelsGeneral」回覆370：P-51野馬1942做長程護航，油夠先飛；本地模型冇油，370樓只能望住雲。"
-        },
-        {
-          "id": "h-1794766387194-5",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "text": "@P-51野馬今日/g/「/lmg/-LocalModelsGeneral」回覆370：Bf1091937轉個彎，起落架窄就撞樓；本地模型窄到只識直去。"
-        },
-        {
-          "id": "h-1794766387194-8",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "text": "@謝爾曼M4今日/g/「/lmg/-LocalModelsGeneral」回覆370：T-341940斜甲上身，初期無線少；370樓叫極都唔知邊個接線。"
         }
       ]
     }
