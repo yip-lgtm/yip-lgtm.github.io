@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-23-20:37",
+      "topic": {
+        "id": "chat",
+        "name": "/vcg/ — Vibe-Coding Gene",
+        "brief": "4chan /g/ 熱帖「/vcg/ — Vibe-Coding General」· 331 回覆。 https://boards.4chan.org/g/thread/110405565",
+        "board": "g",
+        "thread": 110405565,
+        "replies": 331
+      },
+      "rounds": [
+        {
+          "id": "fb-20-0",
+          "name": "艾布蘭",
+          "weapon": "M1",
+          "year": 1980,
+          "portrait": "portraits/m1.jpg",
+          "text": "4chan /g/「/vcg/ — Vibe-Coding General」331回，講緊A general for vibe。我1980列裝，燃氣輪食油。樓主唔好意思，我講嘅全部係當年真事。"
+        },
+        {
+          "id": "fb-20-1",
+          "name": "九五式",
+          "weapon": "Ha-Go",
+          "year": 1935,
+          "portrait": null,
+          "text": "艾布蘭，/vcg/ — Vibe-Coding General 都出咗咗你仲未串。我1935先列裝，薄到成架車都輕咗。好耐冇人答，咁我頂上。"
+        },
+        {
+          "id": "fb-20-2",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "九五式 收下「/vcg/ — Vibe-Coding General」呢條題。我1936先列裝，彈夾一按就出，唔使拉栓。得閒不如幫手補料。"
+        },
+        {
+          "id": "fb-20-3",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "portrait": "portraits/bf109.jpg",
+          "text": "咁 M1加蘭德，/vcg/ — Vibe-Coding General 呢條你咩睇。我1937先列裝，窄到landing都唔平。打完算數，唔使喺度比身段。"
+        },
+        {
+          "id": "fb-20-4",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "Bf 109 你未答「/vcg/ — Vibe-Coding General」。我1940先列裝，斜甲，初期無線少。呢場輸贏唔關你事，關我事。"
+        },
+        {
+          "id": "fb-20-5",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "portrait": "portraits/yamato.jpg",
+          "text": "喂 T-34，/vcg/ — Vibe-Coding General 嗰條你點解唔答。我1941先列裝，460主砲一打就知幾重。要串就串，唔好只係搵人串。"
+        },
+        {
+          "id": "fb-20-6",
+          "name": "李-恩菲爾德",
+          "weapon": "Lee-Enfield",
+          "year": 1895,
+          "portrait": null,
+          "text": "大和 你遲咗好耐先開口，/vcg/ — Vibe-Coding General 喺度等緊。我1895先列裝，彈倉十發，槍機拉到飛起。你講你嘅，我講我嘅，條帖自己會證明。"
+        },
+        {
+          "id": "fb-20-7",
+          "name": "企業號",
+          "weapon": "USS Enterprise",
+          "year": 1938,
+          "portrait": null,
+          "text": "李-恩菲爾德，/vcg/ — Vibe-Coding General 都出咗咗你仲未串。我1938先列裝，拳頭夠硬就冇問題。我要油要人，你得個名。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-23-13:13",
       "topic": {
         "id": "chat",
@@ -3729,75 +3806,6 @@
           "year": 1942,
           "portrait": "portraits/sherman.jpg",
           "text": "咁 P-51野馬，/lmg/ - Local Models General 呢條你咩睇。我1942先列裝，壞咗即修，唔等零件。要串就串，唔好只係搵人串。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-16-03:30",
-      "topic": {
-        "id": "chat",
-        "name": "/hg/ - Handgun General",
-        "brief": "4chan /k/ 熱帖「/hg/ - Handgun General」· 368 回覆。 https://boards.4chan.org/k/thread/65652971",
-        "board": "k",
-        "thread": 65652971,
-        "replies": 368
-      },
-      "rounds": [
-        {
-          "id": "fb-3-0",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "text": "4chan /k/「/hg/ - Handgun General」368回，講緊Book Club Edition 。我1964列裝，保養到唔卡，先叫快。打完算數，唔使喺度比身段。"
-        },
-        {
-          "id": "fb-3-1",
-          "name": "零式",
-          "weapon": "A6M",
-          "year": 1940,
-          "text": "M16 收下「/hg/ - Handgun General」呢條題。我1940先列裝，輕、遠、無自封油箱。呢場輸贏唔關你事，關我事。"
-        },
-        {
-          "id": "fb-3-2",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "text": "咁 零式，/hg/ - Handgun General 呢條你咩睇。我1941先列裝，十六發一次過出去，唔準邊個食。要串就串，唔好只係搵人串。"
-        },
-        {
-          "id": "fb-3-3",
-          "name": "噴火",
-          "weapon": "Spitfire",
-          "year": 1938,
-          "text": "喀秋莎 你未答「/hg/ - Handgun General」。我1938先列裝，產量追得上就飛得掂。你講你嘅，我講我嘅，條帖自己會證明。"
-        },
-        {
-          "id": "fb-3-4",
-          "name": "MG42",
-          "weapon": "MG 42",
-          "year": 1942,
-          "text": "喂 噴火，/hg/ - Handgun General 嗰條你點解唔答。我1942先列裝，火力密到冇人敢企。我要油要人，你得個名。"
-        },
-        {
-          "id": "fb-3-5",
-          "name": "斯圖卡",
-          "weapon": "Ju 87",
-          "year": 1937,
-          "text": "MG42 你遲咗好耐先開口，/hg/ - Handgun General 喺度等緊。我1937先列裝，無制空就係靶。講完我收工，你慢慢諗。"
-        },
-        {
-          "id": "fb-3-6",
-          "name": "海獵鷹",
-          "weapon": "Harrier",
-          "year": 1969,
-          "text": "斯圖卡，/hg/ - Handgun General 都出咗咗你仲未串。我1969先列裝，升得起但飛唔遠。呢度唔係講spec，係講邊個仲企喺度。"
-        },
-        {
-          "id": "fb-3-7",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "text": "海獵鷹 收下「/hg/ - Handgun General」呢條題。我1942先列裝，重到拖都要人推。你如果想知，去查維基啦。"
         }
       ]
     }
