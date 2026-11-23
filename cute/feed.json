@@ -36792,6 +36792,86 @@
         "portrait": "portraits/winchester.jpg"
       },
       "dossierUrl": "dossiers/1944-287d48358f.json"
+    },
+    {
+      "id": "1962-北也門內戰",
+      "added": "2026-11-23T02:39:47.635Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.19,
+        "lat": 15.37
+      },
+      "battle": {
+        "y": 1962,
+        "m": 9,
+        "name": "北也門內戰",
+        "theater": "北也門",
+        "brief": "北也門內戰於1962年在北也門爆發，初期以薩那附近的王室軍與反抗勢力對抗為主，首都控制權成為爭奪核心，後續涉及政權更迭與國際介入。施拿甫步槍（Sharps rifle）於1865年正式服役，屬美國內戰時期的栓動步槍，其列裝年代早於本衝突，並非指其為主要交戰裝備。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍是美國陸軍在內戰時期採用的制式栓動步槍，主要配發步兵連與營級單位，構成部隊的基礎單兵火力，並非專用支援武器。",
+        "portrait": "portraits/sharps.jpg"
+      }
+    },
+    {
+      "id": "1944-拉普蘭戰爭",
+      "added": "2026-11-23T02:39:54.498Z",
+      "span": "wwi",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 25,
+        "lat": 67
+      },
+      "battle": {
+        "y": 1944,
+        "m": 9,
+        "name": "拉普蘭戰爭",
+        "theater": "芬蘭拉普蘭戰區",
+        "brief": "拉普蘭戰爭始於1944年9月，德國軍隊與芬蘭及蘇聯軍隊在芬蘭拉普蘭地區交戰，戰事延至1945年。戰中的德軍砲兵使用婆塞德後膛砲（Breech-loading cannon，1870年），這款早已列裝的後膛重砲在戰役中承擔火力支援與據點防衛任務，並支援部隊作戰。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲屬德軍後膛砲兵系統，是一八七〇年已列裝的舊式重砲，可用於野戰及要塞防禦，並在第二次世界大戰砲兵編制中提供曲射火力。",
+        "portrait": "portraits/breechcannon.jpg"
+      },
+      "dossierUrl": "dossiers/1944-df2ea5e2e4.json"
+    },
+    {
+      "id": "1961-豬灣事件",
+      "added": "2026-11-23T02:42:05.995Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -78.18,
+        "lat": 22.15
+      },
+      "battle": {
+        "y": 1961,
+        "m": 4,
+        "name": "豬灣事件",
+        "theater": "古巴豬灣",
+        "brief": "豬灣事件是1961年4月美國中央情報局支持流亡古巴武裝「旅團2506」在古巴豬灣登陸，並與古巴革命軍交戰的武裝衝突。行動結合空中突襲與岸灘進攻，因游擊隊後續火力及登陸支援中斷而失敗；戰場所用地面武器包括蘇制別丹步槍（Berdan rifle）。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是蘇聯陸軍早期採用的栓動式制式步槍，主要配發給步兵分隊，作為營連層級地面作戰中的直線射擊武器。",
+        "portrait": "portraits/berdan.jpg"
+      },
+      "dossierUrl": "dossiers/1961-f3d8ee427b.json"
     }
   ]
 }
