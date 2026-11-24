@@ -36952,7 +36952,8 @@
         "layer": "sea",
         "history": "蒸汽鐵甲艦是英國海軍以蒸汽動力與鐵甲防護構成的海上主力艦種，負責巡弋、封鎖與岸轟，是遠洋編隊中兼具防護與持續作戰能力的核心兵力。",
         "portrait": "portraits/steamship.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1963-4cf2010346.json"
     }
   ]
 }
