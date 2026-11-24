@@ -36954,6 +36954,86 @@
         "portrait": "portraits/steamship.jpg"
       },
       "dossierUrl": "dossiers/1963-4cf2010346.json"
+    },
+    {
+      "id": "1967-柬埔寨內戰",
+      "added": "2026-11-24T21:08:03.940Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 104.92,
+        "lat": 12.56
+      },
+      "battle": {
+        "y": 1967,
+        "m": 3,
+        "name": "柬埔寨內戰",
+        "theater": "柬埔寨",
+        "brief": "柬埔寨內戰於1967年3月爆發，衝突發生於柬埔寨境內，柬埔寨共產黨游擊隊與政府軍及南越部隊相互對抗。戰事結合游擊行動與正規作戰，雙方使用步兵武器、機槍及野戰砲兵；線膛砲（Muzzle-loading field gun）為十九世紀中葉已列裝的野戰火炮。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲（Muzzle-loading field gun）在德軍早期野戰炮兵體系中配置於步兵師或炮兵單位，以中程火力支援步兵攻勢與防禦，並配合部隊機動作戰。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1967-057ae4ca63.json"
+    },
+    {
+      "id": "1967-尼日利亞內戰",
+      "added": "2026-11-24T21:08:05.947Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 3.38,
+        "lat": 6.52
+      },
+      "battle": {
+        "y": 1967,
+        "m": 7,
+        "name": "尼日利亞內戰",
+        "theater": "拉各斯戰區",
+        "brief": "尼日利亞內戰於一九六七年七月爆發，聯邦軍與比夫拉武裝在拉各斯及周邊城鎮交火，初期局勢迅速擴及尼日利亞河谷，是冷戰時期西非的重要內戰。英軍制式恩菲爾德步槍（Enfield rifle）於一八五八年列裝，屬於英國陸軍的栓動步槍體系。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "恩菲爾德步槍（Enfield rifle）屬英國陸軍栓動步槍序列，以單發射擊提供步兵遠距火力，是英軍制式步兵武器體系中的一員。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      }
+    },
+    {
+      "id": "1968-埃以消耗戰爭",
+      "added": "2026-11-24T21:09:29.458Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 32.35,
+        "lat": 30.5
+      },
+      "battle": {
+        "y": 1968,
+        "m": 3,
+        "name": "埃以消耗戰爭",
+        "theater": "蘇伊士運河沿岸",
+        "brief": "埃以消耗戰爭於一九六八年三月爆發，埃及與以色列在蘇伊士運河及西奈前線互相攻擊，使邊界交火長期化。相關軍備中的法國雷管步槍（Percussion rifle）於一八四〇年服役，屬線列步兵用於中距離精確射擊的制式單兵火器。其瞄射與裝填動作均納入步兵日常訓練。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管步槍是法國陸軍線列步兵的制式單兵火器，配發於營內步兵分隊，負責中距離瞄射；其操作訓練與射擊紀律由連、營指揮體系掌握。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1968-4ffb1902dd.json"
     }
   ]
 }
