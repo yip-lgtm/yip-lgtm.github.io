@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-24-05:10",
+      "topic": {
+        "id": "chat",
+        "name": "Update on baraag case.",
+        "brief": "4chan /g/ 熱帖「Update on baraag case.」· 674 回覆。 https://boards.4chan.org/g/thread/110415320",
+        "board": "g",
+        "thread": 110415320,
+        "replies": 674
+      },
+      "rounds": [
+        {
+          "id": "fb-5-0",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "portrait": "portraits/bf109.jpg",
+          "text": "4chan /g/「Update on baraag case.」674回，講緊Someone on /trash/。我1937列裝，落腳位窄得似企喺刀刃。我冇死過，所以我有得講。"
+        },
+        {
+          "id": "fb-5-1",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "Bf 109 你未答「Update on baraag case.」。我1940先列裝，斜甲跳得快，初期靠喊。唔好淨係改我個名，講數。"
+        },
+        {
+          "id": "fb-5-2",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "portrait": "portraits/yamato.jpg",
+          "text": "喂 T-34，Update on baraag case. 嗰條你點解唔答。我1941先列裝，最重嗰隻，油最唔夠。我講嘅係年份，你講嘅係型號。"
+        },
+        {
+          "id": "fb-5-3",
+          "name": "李-恩菲爾德",
+          "weapon": "Lee-Enfield",
+          "year": 1895,
+          "portrait": null,
+          "text": "大和 你遲咗好耐先開口，Update on baraag case. 喺度等緊。我1895先列裝，十發彈倉。樓主唔好意思，我講嘅全部係當年真事。"
+        },
+        {
+          "id": "fb-5-4",
+          "name": "企業號",
+          "weapon": "USS Enterprise",
+          "year": 1938,
+          "portrait": null,
+          "text": "李-恩菲爾德，Update on baraag case. 都出咗咗你仲未串。我1938先列裝，冇飛機就冇牙。好耐冇人答，咁我頂上。"
+        },
+        {
+          "id": "fb-5-5",
+          "name": "艾布蘭",
+          "weapon": "M1",
+          "year": 1980,
+          "portrait": "portraits/m1.jpg",
+          "text": "企業號 收下「Update on baraag case.」呢條題。我1980先列裝，推力夠，油唔夠就熄。得閒不如幫手補料。"
+        },
+        {
+          "id": "fb-5-6",
+          "name": "九五式",
+          "weapon": "Ha-Go",
+          "year": 1935,
+          "portrait": null,
+          "text": "咁 艾布蘭，Update on baraag case. 呢條你咩睇。我1935先列裝，輕到運輸冇問題。打完算數，唔使喺度比身段。"
+        },
+        {
+          "id": "fb-5-7",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "九五式 你未答「Update on baraag case.」。我1936先列裝，八發en-bloc。呢場輸贏唔關你事，關我事。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-24-01:02",
       "topic": {
         "id": "chat",
@@ -3761,83 +3838,6 @@
           "year": 1941,
           "portrait": "portraits/katyusha.jpg",
           "text": "@T-34，/lmg/-LocalModelsGeneral562樓：我1941年列裝，16發齊射就完，精準唔好問，淨係得個音效。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-16-11:44",
-      "topic": {
-        "id": "chat",
-        "name": "/lmg/ - Local Models Gen",
-        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 562 回覆。 https://boards.4chan.org/g/thread/110344733",
-        "board": "g",
-        "thread": 110344733,
-        "replies": 562
-      },
-      "rounds": [
-        {
-          "id": "fb-11-0",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "portrait": "portraits/yamato.jpg",
-          "text": "4chan /g/「/lmg/ - Local Models General」562回，講緊/lmg/ - a general 。我1941列裝，最重嗰隻，油最唔夠。打完好似冇贏，但至少冇畀人當消耗品。"
-        },
-        {
-          "id": "fb-11-1",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "portrait": null,
-          "text": "大和 你未答「/lmg/ - Local Models General」。我1895先列裝，十發彈倉。串完都要油，冇得你哋一個講晒。"
-        },
-        {
-          "id": "fb-11-2",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "portrait": null,
-          "text": "喂 李-恩菲爾德，/lmg/ - Local Models General 嗰條你點解唔答。我1938先列裝，冇飛機就冇牙。我冇死過，所以我有得講。"
-        },
-        {
-          "id": "fb-11-3",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "portrait": "portraits/m1.jpg",
-          "text": "企業號 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1980先列裝，推力夠，油唔夠就熄。唔好淨係改我個名，講數。"
-        },
-        {
-          "id": "fb-11-4",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "portrait": null,
-          "text": "艾布蘭，/lmg/ - Local Models General 都出咗咗你仲未串。我1935先列裝，輕到運輸冇問題。我講嘅係年份，你講嘅係型號。"
-        },
-        {
-          "id": "fb-11-5",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "portrait": null,
-          "text": "九五式 收下「/lmg/ - Local Models General」呢條題。我1936先列裝，八發en-bloc。樓主唔好意思，我講嘅全部係當年真事。"
-        },
-        {
-          "id": "fb-11-6",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "portrait": "portraits/bf109.jpg",
-          "text": "咁 M1加蘭德，/lmg/ - Local Models General 呢條你咩睇。我1937先列裝，落腳位窄得似企喺刀刃。好耐冇人答，咁我頂上。"
-        },
-        {
-          "id": "fb-11-7",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "portrait": null,
-          "text": "Bf 109 你未答「/lmg/ - Local Models General」。我1940先列裝，斜甲跳得快，初期靠喊。得閒不如幫手補料。"
         }
       ]
     }
