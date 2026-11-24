@@ -36873,6 +36873,86 @@
         "portrait": "portraits/berdan.jpg"
       },
       "dossierUrl": "dossiers/1961-f3d8ee427b.json"
+    },
+    {
+      "id": "1964-莫桑比克獨立戰爭",
+      "added": "2026-11-24T00:46:44.933Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 35.52,
+        "lat": -18.67
+      },
+      "battle": {
+        "y": 1964,
+        "m": 9,
+        "name": "莫桑比克獨立戰爭",
+        "theater": "莫桑比克",
+        "brief": "莫桑比克獨立戰爭自1964年9月25日起爆發，葡屬殖民軍與莫桑比克民族解放陣線在前殖民地及內陸游擊區交戰，戰事延續至1974年。裝備方面，英國海軍於1862年服役的鐵甲艦（Ironclad）代表蒸汽鐵甲艦階段，並非本戰直接使用。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是英國皇家海軍十九世紀中葉重裝主力艦的類別，裝有蒸汽動力、鐵製防護與重型火炮，置於戰列艦編隊核心。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1964-35b972692a.json"
+    },
+    {
+      "id": "1966-納米比亞獨立戰爭",
+      "added": "2026-11-24T00:46:55.345Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 17.08,
+        "lat": -17.78
+      },
+      "battle": {
+        "y": 1966,
+        "m": 1,
+        "name": "納米比亞獨立戰爭",
+        "theater": "奧萬博蘭",
+        "brief": "納米比亞獨立戰爭始於1966年，西南非洲人民組織在奧萬博蘭地區以武裝鬥爭反抗南非殖民統治，行動其後擴及納米比亞全境，戰爭延續至1990年獨立。列舉的美軍加特林機槍（Gatling gun）於1860年已列裝，早於本戰爭開始，是美國陸軍武器體系中的旋轉式機槍。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍（Gatling gun）是美國陸軍早期採用的旋轉式機槍，可配置於固定陣位或車載武器位置，在陸軍火力體系中負責持續壓制與防衛。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1966-f1bec77e75.json"
+    },
+    {
+      "id": "1963-几內亞比紹獨立戰爭",
+      "added": "2026-11-24T00:46:57.641Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -15.2,
+        "lat": 11.8
+      },
+      "battle": {
+        "y": 1963,
+        "m": 1,
+        "name": "几內亞比紹獨立戰爭",
+        "theater": "葡屬幾內亞",
+        "brief": "中文維基《戰爭列表》所列的几內亞比紹獨立戰爭，於1963年1月由PAIGC在葡屬幾內亞發動武裝反抗，對抗葡萄牙殖民統治，成為該國爭取獨立的戰事。Steam ironclad是英國海軍於1865年服役的蒸汽鐵甲艦正式型號，屬較早期海上主力作戰艦種，負責遠洋部署、封鎖與火力支援。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦是英國海軍以蒸汽動力與鐵甲防護構成的海上主力艦種，負責巡弋、封鎖與岸轟，是遠洋編隊中兼具防護與持續作戰能力的核心兵力。",
+        "portrait": "portraits/steamship.jpg"
+      }
     }
   ]
 }
