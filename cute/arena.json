@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-26-13:15",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 441 回覆。 https://boards.4chan.org/g/thread/110437546",
+        "board": "g",
+        "thread": 110437546,
+        "replies": 441
+      },
+      "rounds": [
+        {
+          "id": "fb-13-0",
+          "name": "莫辛-納甘",
+          "weapon": "M1891",
+          "year": 1891,
+          "portrait": null,
+          "text": "4chan /g/「/lmg/ - Local Models General」441回，講緊/lmg/ - a general 。我1891列裝，子彈兩邊都用，換嘅係政府。要串就串，唔好只係搵人串。"
+        },
+        {
+          "id": "fb-13-1",
+          "name": "四號",
+          "weapon": "Pz IV",
+          "year": 1937,
+          "portrait": null,
+          "text": "莫辛-納甘 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1937先列裝，改裝改到最後死機。你講你嘅，我講我嘅，條帖自己會證明。"
+        },
+        {
+          "id": "fb-13-2",
+          "name": "波波沙",
+          "weapon": "PPSh-41",
+          "year": 1941,
+          "portrait": "portraits/ppsh.jpg",
+          "text": "四號，/lmg/ - Local Models General 都出咗咗你仲未串。我1941先列裝，細個但火力密。我要油要人，你得個名。"
+        },
+        {
+          "id": "fb-13-3",
+          "name": "戰隼",
+          "weapon": "F-16",
+          "year": 1978,
+          "portrait": "portraits/f16.jpg",
+          "text": "波波沙 收下「/lmg/ - Local Models General」呢條題。我1978先列裝，輕、平、改得多。講完我收工，你慢慢諗。"
+        },
+        {
+          "id": "fb-13-4",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "portrait": "portraits/ak47.jpg",
+          "text": "咁 戰隼，/lmg/ - Local Models General 呢條你咩睇。我1947先列裝，鬆到手都震，照打一樣準。呢度唔係講spec，係講邊個仲企喺度。"
+        },
+        {
+          "id": "fb-13-5",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "portrait": null,
+          "text": "AK-47 你未答「/lmg/ - Local Models General」。我1942先列裝，航程遠，炸彈跟得住。你如果想知，去查維基啦。"
+        },
+        {
+          "id": "fb-13-6",
+          "name": "謝爾曼",
+          "weapon": "M4",
+          "year": 1942,
+          "portrait": "portraits/sherman.jpg",
+          "text": "喂 P-51野馬，/lmg/ - Local Models General 嗰條你點解唔答。我1942先列裝，多到可以壞咗再換。打完好似冇贏，但至少冇畀人當消耗品。"
+        },
+        {
+          "id": "fb-13-7",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "portrait": "portraits/bismarck.jpg",
+          "text": "謝爾曼 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1940先列裝，八日就沉，舵一卡就完。串完都要油，冇得你哋一個講晒。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-26-08:36",
       "topic": {
         "id": "chat",
@@ -3745,83 +3822,6 @@
           "year": 1941,
           "portrait": "portraits/yamato.jpg",
           "text": "T-34，Russia &quot;allegedly&quot; 都出咗咗你仲未串。我1941先列裝，460主砲一打就知幾重。呢度唔係講spec，係講邊個仲企喺度。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-18-13:31",
-      "topic": {
-        "id": "chat",
-        "name": "/k/",
-        "brief": "4chan /k/ 熱帖「熱帖」· 576 回覆。 https://boards.4chan.org/k/thread/65657842",
-        "board": "k",
-        "thread": 65657842,
-        "replies": 576
-      },
-      "rounds": [
-        {
-          "id": "fb-13-0",
-          "name": "莫辛-納甘",
-          "weapon": "M1891",
-          "year": 1891,
-          "portrait": null,
-          "text": "4chan /k/「Russia &quot;allegedly&quot;」576回，講緊Russia &quot;alleg。我1891列裝，子彈兩邊都用，換嘅係政府。要串就串，唔好只係搵人串。"
-        },
-        {
-          "id": "fb-13-1",
-          "name": "四號",
-          "weapon": "Pz IV",
-          "year": 1937,
-          "portrait": null,
-          "text": "莫辛-納甘 你遲咗好耐先開口，Russia &quot;allegedly&quot; 喺度等緊。我1937先列裝，改裝改到最後死機。你講你嘅，我講我嘅，條帖自己會證明。"
-        },
-        {
-          "id": "fb-13-2",
-          "name": "波波沙",
-          "weapon": "PPSh-41",
-          "year": 1941,
-          "portrait": "portraits/ppsh.jpg",
-          "text": "四號，Russia &quot;allegedly&quot; 都出咗咗你仲未串。我1941先列裝，細個但火力密。我要油要人，你得個名。"
-        },
-        {
-          "id": "fb-13-3",
-          "name": "戰隼",
-          "weapon": "F-16",
-          "year": 1978,
-          "portrait": "portraits/f16.jpg",
-          "text": "波波沙 收下「Russia &quot;allegedly&quot;」呢條題。我1978先列裝，輕、平、改得多。講完我收工，你慢慢諗。"
-        },
-        {
-          "id": "fb-13-4",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "portrait": "portraits/ak47.jpg",
-          "text": "咁 戰隼，Russia &quot;allegedly&quot; 呢條你咩睇。我1947先列裝，鬆到手都震，照打一樣準。呢度唔係講spec，係講邊個仲企喺度。"
-        },
-        {
-          "id": "fb-13-5",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "portrait": null,
-          "text": "AK-47 你未答「Russia &quot;allegedly&quot;」。我1942先列裝，航程遠，炸彈跟得住。你如果想知，去查維基啦。"
-        },
-        {
-          "id": "fb-13-6",
-          "name": "謝爾曼",
-          "weapon": "M4",
-          "year": 1942,
-          "portrait": "portraits/sherman.jpg",
-          "text": "喂 P-51野馬，Russia &quot;allegedly&quot; 嗰條你點解唔答。我1942先列裝，多到可以壞咗再換。打完好似冇贏，但至少冇畀人當消耗品。"
-        },
-        {
-          "id": "fb-13-7",
-          "name": "俾斯麥",
-          "weapon": "Bismarck",
-          "year": 1940,
-          "portrait": "portraits/bismarck.jpg",
-          "text": "謝爾曼 你遲咗好耐先開口，Russia &quot;allegedly&quot; 喺度等緊。我1940先列裝，八日就沉，舵一卡就完。串完都要油，冇得你哋一個講晒。"
         }
       ]
     }
