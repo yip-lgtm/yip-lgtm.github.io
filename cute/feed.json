@@ -37035,6 +37035,83 @@
         "portrait": "portraits/percussion.jpg"
       },
       "dossierUrl": "dossiers/1968-4ffb1902dd.json"
+    },
+    {
+      "id": "1971-第三次印巴戰爭",
+      "added": "2026-11-26T00:15:12.215Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1971,
+        "m": 3,
+        "name": "第三次印巴戰爭",
+        "theater": "東巴基斯坦戰區",
+        "brief": "第三次印巴戰爭於一九七一年在印巴邊境爆發，東巴基斯坦戰區迅速出現軍事對抗，西線亦隨之升溫。惠氏步槍（Winchester Model 1873）於一八七三年開始服役，曾是美軍制式地面步槍，採用連發槍機，屬遠距程輕武器。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍是美軍早期制式地面步槍，配備連發槍機，主要用於中遠距程射擊，作為步兵與支援部隊的個人直射武器，而非車載或航空裝備。",
+        "portrait": "portraits/winchester.jpg"
+      },
+      "dossierUrl": "dossiers/1971-c39b1f40ab.json"
+    },
+    {
+      "id": "1972-第二次鱈魚戰爭",
+      "added": "2026-11-26T00:15:29.605Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -19,
+        "lat": 65
+      },
+      "battle": {
+        "y": 1972,
+        "m": 2,
+        "name": "第二次鱈魚戰爭",
+        "theater": "冰島近海與北大西洋漁場",
+        "brief": "第二次鱈魚戰爭是冰島與英國、西德等國在北大西洋就鱈魚漁場與海界劃界引發的海上對抗，衝突以皇家海軍護漁艦、警戒艦與北歐漁船的對峙及追逐為主，期間亦以婆塞德後膛砲（Breech-loading cannon，1870年）等艦載後膛火砲執行警告射擊與海上警戒。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲是十九世紀德國海軍沿岸與近海警戒船隻採用的後膛火砲，屬艦載岸防型別，負責近岸防禦與警告射擊，非主力艦砲。",
+        "portrait": "portraits/breechcannon.jpg"
+      },
+      "dossierUrl": "dossiers/1972-d33794d70f.json"
+    },
+    {
+      "id": "1969-足球戰爭",
+      "added": "2026-11-26T00:15:31.421Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -87.84,
+        "lat": 13.33
+      },
+      "battle": {
+        "y": 1969,
+        "m": 7,
+        "name": "足球戰爭",
+        "theater": "薩爾瓦多－宏都拉斯邊境拉烏尼翁地",
+        "brief": "足球戰爭是薩爾瓦多與宏都拉斯於1969年7月因世界盃資格賽衝突而引發的國際戰爭，交火由球場蔓延至邊境及城鎮，延續數日。英國海軍Torpedo boat（魚雷艇）自1877年列裝後，負責近岸巡邏、警戒與快速追擊，反映當時海軍對海上快速反應能力的重視。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "英國海軍把Torpedo boat納入近海與沿岸作戰體系，以高速、淺吃水和魚雷武器執行巡邏、追擊、警戒及封鎖任務，是海防力量中重要的高速海上反應單位。",
+        "portrait": "portraits/torpedoboat.jpg"
+      }
     }
   ]
 }
