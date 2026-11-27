@@ -37113,6 +37113,85 @@
         "portrait": "portraits/torpedoboat.jpg"
       },
       "dossierUrl": "dossiers/1969-0e3edc4682.json"
+    },
+    {
+      "id": "1991-格魯吉亞內戰",
+      "added": "2026-11-27T12:04:34.624Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 41.1,
+        "lat": 43.15
+      },
+      "battle": {
+        "y": 1991,
+        "m": 1,
+        "name": "格魯吉亞內戰",
+        "theater": "阿布哈茲亞",
+        "brief": "中文維基〈戰爭列表〉所列的格魯吉亞內戰始於1991年，主要戰區位於南高加索，格魯吉亞政府軍與阿布哈茲亞及南奧塞梯亞地方武裝交火。所列裝備為英國蒸汽鐵甲艦，正式型號Steam ironclad，1865年即已服役，並非使用1991年後才列裝的型號。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦屬英國早期海軍的鐵甲主力艦，以蒸汽動力納入艦隊核心，負責艦隊防務、護航與海上火力支撐。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/1991-593b95da48.json"
+    },
+    {
+      "id": "1991-塞拉利昂內戰",
+      "added": "2026-11-27T12:04:49.588Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -13.23,
+        "lat": 8.48
+      },
+      "battle": {
+        "y": 1991,
+        "m": 3,
+        "name": "塞拉利昂內戰",
+        "theater": "弗里敦",
+        "brief": "中文維基「戰爭列表」收錄的塞拉利昂內戰，於一九九一年三月由弗里敦軍事政變觸發，戰線其後延伸至塞拉利昂東部與南部。本條所列裝備為美國 Sharps rifle，服役年早於一九九一年，屬栓動後膛步槍，是當時美國陸軍步兵武器系統的一環。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "Sharps rifle 是美國陸軍十九世紀採用的制式肩射步槍，亦供騎兵、民兵與地方武裝使用，屬早期後膛步槍體系的代表型號。",
+        "portrait": "portraits/sharps.jpg"
+      }
+    },
+    {
+      "id": "1991-吉布地內戰",
+      "added": "2026-11-27T12:04:54.528Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 43.15,
+        "lat": 11.59
+      },
+      "battle": {
+        "y": 1991,
+        "m": 1,
+        "name": "吉布地內戰",
+        "theater": "吉布地首都迪吉比及周邊地區",
+        "brief": "中文維基《戰爭列表》所列的吉布地內戰，於1991年在吉布地爆發，延續至1994年，主要牽涉首都迪吉比的政府與反對派武裝。別丹步槍（Berdan rifle）於1866年正式列裝，是蘇聯地面步兵體系中早已服役的步槍型號，其服役時間早於本場衝突。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍在蘇聯地面步兵體系中屬早期制式步槍，配置於連、排級步兵分隊，位於基層單兵火力位置，並由射手及警戒單位配發。",
+        "portrait": "portraits/berdan.jpg"
+      }
     }
   ]
 }
