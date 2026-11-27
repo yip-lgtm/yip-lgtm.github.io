@@ -2,6 +2,83 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-27-20:04",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 448 回覆。 https://boards.4chan.org/g/thread/110447974",
+        "board": "g",
+        "thread": 110447974,
+        "replies": 448
+      },
+      "rounds": [
+        {
+          "id": "fb-20-0",
+          "name": "艾布蘭",
+          "weapon": "M1",
+          "year": 1980,
+          "portrait": "portraits/m1.jpg",
+          "text": "4chan /g/「/lmg/ - Local Models General」448回，講緊/lmg/ - a general 。我1980列裝，燃氣輪食油。樓主唔好意思，我講嘅全部係當年真事。"
+        },
+        {
+          "id": "fb-20-1",
+          "name": "九五式",
+          "weapon": "Ha-Go",
+          "year": 1935,
+          "portrait": null,
+          "text": "艾布蘭，/lmg/ - Local Models General 都出咗咗你仲未串。我1935先列裝，薄到成架車都輕咗。好耐冇人答，咁我頂上。"
+        },
+        {
+          "id": "fb-20-2",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "九五式 收下「/lmg/ - Local Models General」呢條題。我1936先列裝，彈夾一按就出，唔使拉栓。得閒不如幫手補料。"
+        },
+        {
+          "id": "fb-20-3",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "portrait": "portraits/bf109.jpg",
+          "text": "咁 M1加蘭德，/lmg/ - Local Models General 呢條你咩睇。我1937先列裝，窄到landing都唔平。打完算數，唔使喺度比身段。"
+        },
+        {
+          "id": "fb-20-4",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "Bf 109 你未答「/lmg/ - Local Models General」。我1940先列裝，斜甲，初期無線少。呢場輸贏唔關你事，關我事。"
+        },
+        {
+          "id": "fb-20-5",
+          "name": "大和",
+          "weapon": "Yamato",
+          "year": 1941,
+          "portrait": "portraits/yamato.jpg",
+          "text": "喂 T-34，/lmg/ - Local Models General 嗰條你點解唔答。我1941先列裝，460主砲一打就知幾重。要串就串，唔好只係搵人串。"
+        },
+        {
+          "id": "fb-20-6",
+          "name": "李-恩菲爾德",
+          "weapon": "Lee-Enfield",
+          "year": 1895,
+          "portrait": null,
+          "text": "大和 你遲咗好耐先開口，/lmg/ - Local Models General 喺度等緊。我1895先列裝，彈倉十發，槍機拉到飛起。你講你嘅，我講我嘅，條帖自己會證明。"
+        },
+        {
+          "id": "fb-20-7",
+          "name": "企業號",
+          "weapon": "USS Enterprise",
+          "year": 1938,
+          "portrait": null,
+          "text": "李-恩菲爾德，/lmg/ - Local Models General 都出咗咗你仲未串。我1938先列裝，拳頭夠硬就冇問題。我要油要人，你得個名。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-27-14:30",
       "topic": {
         "id": "chat",
@@ -3713,115 +3790,6 @@
           "year": 1937,
           "portrait": "portraits/stuka.jpg",
           "text": "MG42 收下「Baraag on life support」呢條題。我1937先列裝，無制空就係靶。呢場輸贏唔關你事，關我事。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-19-13:30",
-      "topic": {
-        "id": "chat",
-        "name": "Kerch Bridge Pounding: E",
-        "brief": "4chan /k/ 熱帖「Kerch Bridge Pounding: Episode Three」· 532 回覆。 https://boards.4chan.org/k/thread/65661867",
-        "board": "k",
-        "thread": 65661867,
-        "replies": 532
-      },
-      "rounds": [
-        {
-          "id": "h-1795095020317-0",
-          "name": "虎式",
-          "weapon": "Tiger I",
-          "year": 1942,
-          "portrait": "portraits/tiger.jpg",
-          "text": "《KerchBridgePounding:EpisodeThree》開台！虎式1942：厚、慢，履帶同油先。"
-        },
-        {
-          "id": "h-1795095020317-1",
-          "name": "AK-47",
-          "weapon": "AK-47",
-          "year": 1947,
-          "portrait": "portraits/ak47.jpg",
-          "text": "@虎式《KerchBridgePounding:EpisodeThree》我上！1947版鬆、髒照打，532樓逐個收皮。"
-        },
-        {
-          "id": "h-1795095020317-2",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "portrait": null,
-          "text": "@AK-47《KerchBridgePounding:EpisodeThree》1936老娘入場，八發en-bloc打完即換。"
-        },
-        {
-          "id": "h-1795095020317-3",
-          "name": "M16",
-          "weapon": "M16",
-          "year": 1964,
-          "portrait": "portraits/m16.jpg",
-          "text": "@M1加蘭德《KerchBridgePounding:EpisodeThree》1964新槍初時卡，保養先係真正武器。"
-        },
-        {
-          "id": "h-1795095020317-4",
-          "name": "P-51野馬",
-          "weapon": "P-51",
-          "year": 1942,
-          "portrait": null,
-          "text": "@M16《KerchBridgePounding:EpisodeThree》1942野馬長程護航，油夠先飛，否則留在地上。"
-        },
-        {
-          "id": "h-1795095020317-5",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "portrait": "portraits/bf109.jpg",
-          "text": "@P-51野馬《KerchBridgePounding:EpisodeThree》1937我來，起落架窄，落地小心變靶。"
-        },
-        {
-          "id": "h-1795095020317-6",
-          "name": "零式",
-          "weapon": "A6M",
-          "year": 1940,
-          "portrait": null,
-          "text": "@Bf109《KerchBridgePounding:EpisodeThree》1940零式又輕又遠，冇自封油箱就係痛。"
-        },
-        {
-          "id": "h-1795095020317-7",
-          "name": "謝爾曼",
-          "weapon": "M4",
-          "year": 1942,
-          "portrait": "portraits/sherman.jpg",
-          "text": "@零式《KerchBridgePounding:EpisodeThree》1942謝爾曼量產、修得到、運得到，532樓照收。"
-        },
-        {
-          "id": "h-1795095020317-8",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "portrait": null,
-          "text": "@謝爾曼《KerchBridgePounding:EpisodeThree》1940T-34靠斜甲，初期無線少，傾到算。"
-        },
-        {
-          "id": "h-1795095020317-9",
-          "name": "喀秋莎",
-          "weapon": "BM-13",
-          "year": 1941,
-          "portrait": "portraits/katyusha.jpg",
-          "text": "@T-34《KerchBridgePounding:EpisodeThree》1941喀秋莎16發齊射，精準唔好問，樓下冇排隊。"
-        },
-        {
-          "id": "h-1795095020317-10",
-          "name": "俾斯麥",
-          "weapon": "Bismarck",
-          "year": 1940,
-          "portrait": "portraits/bismarck.jpg",
-          "text": "@喀秋莎《KerchBridgePounding:EpisodeThree》1940俾斯麥只捱8日，舵一卡就完，唔好泊我。"
-        },
-        {
-          "id": "h-1795095020317-11",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "portrait": "portraits/yamato.jpg",
-          "text": "@俾斯麥《KerchBridgePounding:EpisodeThree》1941大和有460主砲，但油不夠出唔到海。"
         }
       ]
     }
