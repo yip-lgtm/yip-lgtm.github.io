@@ -37192,6 +37192,86 @@
         "layer": "land",
         "history": "別丹步槍在蘇聯地面步兵體系中屬早期制式步槍，配置於連、排級步兵分隊，位於基層單兵火力位置，並由射手及警戒單位配發。",
         "portrait": "portraits/berdan.jpg"
+      },
+      "dossierUrl": "dossiers/1991-ba5220c066.json"
+    },
+    {
+      "id": "1975-柬越戰爭",
+      "added": "2026-11-27T21:10:06.158Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 106,
+        "lat": 12.5
+      },
+      "battle": {
+        "y": 1975,
+        "m": 5,
+        "name": "柬越戰爭",
+        "theater": "柬埔寨東部與越南邊境",
+        "brief": "柬越戰爭於1975年5月在柬埔寨與越南之間展開，是民主柬埔寨方面與社會主義越南之間的持續軍事衝突。Gatling gun（加特林機槍）自1860年起列裝，是旋轉式地面火器，可在陸軍體系中提供多管齊射的高射速與持續火力。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍屬美國陸軍的旋轉式地面火器，配置於部隊與陣地火力支援，透過多管同時發射提供持續性火力。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1975-8b67cfed9a.json"
+    },
+    {
+      "id": "1974-土耳其入侵塞浦路斯",
+      "added": "2026-11-27T21:10:10.512Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 33.32,
+        "lat": 35.34
+      },
+      "battle": {
+        "y": 1974,
+        "m": 7,
+        "name": "土耳其入侵塞浦路斯",
+        "theater": "塞浦路斯北部",
+        "brief": "1974年7月，土耳其入侵塞浦路斯，土耳其軍隊先在北部凱雷尼亞地區登陸，隨後控制部分島嶼，衝突成為同年第二次行動的導火線。英國海軍於1862年列裝的Ironclad屬鐵甲蒸汽戰艦，以厚重裝甲保護艦體、承受砲火並搭載重砲，是當時艦隊的核心戰鬥平台。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是英國海軍十九世紀的主力裝甲蒸汽戰艦類型，以艦體裝甲抵禦砲火，並以舷側重砲進行遠程打擊，負責護衛與海上控制。",
+        "portrait": "portraits/ironclad.jpg"
+      }
+    },
+    {
+      "id": "1975-第三次鱈魚戰爭",
+      "added": "2026-11-27T21:11:01.378Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -22.5,
+        "lat": 64.5
+      },
+      "battle": {
+        "y": 1975,
+        "m": 10,
+        "name": "第三次鱈魚戰爭",
+        "theater": "冰島西部外海與北大西洋漁場",
+        "brief": "第三次鱈魚戰爭是冰島與英國自1975年起，因北大西洋漁業資源及捕魚權引發的系列海上衝突，主要涉及漁船攔截、扣押與海警對峙。英國早期陸軍曾採用的步槍為恩菲爾德步槍（Enfield rifle，1858年）。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "恩菲爾德步槍是英國陸軍採用的制式步槍，配置於步兵分隊，主要供射擊、警戒與一般野戰任務使用。",
+        "portrait": "portraits/enfieldrifle.jpg"
       }
     }
   ]
