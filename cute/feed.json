@@ -37275,6 +37275,1514 @@
         "portrait": "portraits/enfieldrifle.jpg"
       },
       "dossierUrl": "dossiers/1975-d31a7dbb04.json"
+    },
+    {
+      "id": "1977-莫桑比克內戰",
+      "added": "2026-11-28T15:23:51.310Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 33.05,
+        "lat": -18.67
+      },
+      "battle": {
+        "y": 1977,
+        "m": 10,
+        "name": "莫桑比克內戰",
+        "theater": "莫桑比克",
+        "brief": "莫桑比克內戰於1977年在莫桑比克爆發，源自獨立後中央政府與反抗武裝之間的權力鬥爭，戰事延續至1992年。英國海軍自1877年起以「Torpedo boat」作為沿岸快速打擊與魚雷攻擊平台，是當時海上兵力中負責高速機動的正式裝備類型。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇在英國皇家海軍體系中屬小型水面作戰平台，負責高速巡邏、魚雷攻擊與沿岸警戒，是海上兵力中兼顧機動與攻擊的正式裝備類型。",
+        "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1977-f69cb63148.json"
+    },
+    {
+      "id": "1977-歐加登戰爭",
+      "added": "2026-11-28T15:24:00.200Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 42.5,
+        "lat": 5.5
+      },
+      "battle": {
+        "y": 1977,
+        "m": 7,
+        "name": "歐加登戰爭",
+        "theater": "埃塞俄比亞東南部歐加登地區",
+        "brief": "歐加登戰爭於一九七七年七月爆發，埃塞俄比亞政府軍與索馬里軍隊在歐加登地區交鋒，邊境衝突其後擴大為正規地面戰爭。本條列舉的法軍制式雷管步槍（Percussion rifle）於一八四〇年列裝，是十九世紀步兵線列作戰使用的肩射長槍。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管步槍於一八四〇年列裝後，作為法國陸軍步兵單位的制式肩射長槍，位於步兵裝備序列的核心位置，主要承擔線列步兵的單兵射擊任務。",
+        "portrait": "portraits/percussion.jpg"
+      },
+      "dossierUrl": "dossiers/1977-35b9950f03.json"
+    },
+    {
+      "id": "1978-烏坦戰爭",
+      "added": "2026-11-28T15:24:04.371Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 31.98,
+        "lat": -1
+      },
+      "battle": {
+        "y": 1978,
+        "m": 10,
+        "name": "烏坦戰爭",
+        "theater": "卡加梅河與坦尚尼亞北部邊境",
+        "brief": "一九七八年十月，烏干達越過卡加梅河入侵坦尚尼亞，烏坦戰爭爆發；戰事集中於兩國邊境，後由坦尚尼亞反擊，迫使烏干達撤軍。惠氏步槍（Winchester Model 1873）於一八七三年正式列裝，屬重複使用的後膛步槍。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍屬美國陸軍制式武器體系中的個人步槍，採槍機閉鎖與金屬彈殼，可重複使用，並能讓步兵進行快速連續射擊。",
+        "portrait": "portraits/winchester.jpg"
+      },
+      "dossierUrl": "dossiers/1978-634ed1cd5c.json"
+    },
+    {
+      "id": "1979-兩山戰役",
+      "added": "2026-11-28T15:24:25.284Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 105.4,
+        "lat": 22.4
+      },
+      "battle": {
+        "y": 1979,
+        "m": 2,
+        "name": "兩山戰役",
+        "theater": "雲南河口至廣西崇左對越邊境",
+        "brief": "兩山戰役是中文維基《戰爭列表》所列的中越邊境衝突，1979年2月起由中國與越南在雲南、廣西對越一帶交戰，涵蓋邊境攻擊與後續對峙。Berdan rifle（別丹步槍）於1866年已列裝，年代早於1979年，但不是本役主要交戰裝備；此項只說明符合年份限制的裝備背景，並不作使用推定。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是蘇軍承接的制式步槍體系，主要置於步兵班組，提供步兵的通用射擊能力，並非裝甲、航空或海軍裝備。",
+        "portrait": "portraits/berdan.jpg"
+      },
+      "dossierUrl": "dossiers/1979-94802bd5d5.json"
+    },
+    {
+      "id": "1979-薩爾瓦多內戰",
+      "added": "2026-11-28T15:24:34.068Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -88.89,
+        "lat": 13.79
+      },
+      "battle": {
+        "y": 1979,
+        "m": 12,
+        "name": "薩爾瓦多內戰",
+        "theater": "薩爾瓦多",
+        "brief": "薩爾瓦多內戰於1979年在薩爾瓦多境內爆發，是冷戰後期中美洲的重要武裝衝突，涉及多個政治及軍事團體。英國海軍的蒸汽鐵甲艦Steam ironclad於1865年列裝，屬當時艦隊中的裝甲戰鬥艦類，早於本衝突，且並不代表實際參戰。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦是英國皇家海軍艦隊中的裝甲戰鬥艦類，正式型號Steam ironclad，1865年納入海軍序列，作為艦隊作戰主力承擔海上警戒與護衛任務。",
+        "portrait": "portraits/steamship.jpg"
+      }
+    },
+    {
+      "id": "1983-第二次蘇丹內戰",
+      "added": "2026-11-28T15:24:46.624Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 30,
+        "lat": 7
+      },
+      "battle": {
+        "y": 1983,
+        "m": 1,
+        "name": "第二次蘇丹內戰",
+        "theater": "蘇丹南部",
+        "brief": "第二次蘇丹內戰於1983年爆發，初期戰鬥主要發生在蘇丹南部的赤道州與上尼羅州，地方武裝對抗政府軍。同時期英國海軍已列裝1877年的Torpedo boat，可用於近岸巡邏、港口警戒及快速反應。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇在英國海軍體系中負責近岸警戒、港口防禦與快速巡邏，並可視任務協同驅逐艦或主力艦，補足大型艦艇的反應速度。",
+        "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1983-589d3c3cf5.json"
+    },
+    {
+      "id": "1975-西撒哈拉戰爭",
+      "added": "2026-11-28T15:24:55.884Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -13.22,
+        "lat": 27.67
+      },
+      "battle": {
+        "y": 1975,
+        "m": 3,
+        "name": "西撒哈拉戰爭",
+        "theater": "艾爾馬爾薩據點",
+        "brief": "西撒哈拉戰爭始於1975年，早期代表性事件是艾爾馬爾薩據點交火，波利薩里奧陣線曾襲擊西班牙守軍，事件發生於西班牙逐步撤出西撒哈拉之際。線膛砲（Muzzle-loading field gun）為1850年已服役的普魯士前裝野戰砲型號，編入陸軍野戰砲兵序列，負責野戰射擊支援。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲在十九世紀中期普魯士陸軍中列於前裝野戰砲兵序列，屬前線可隨軍機動的火力，負責支援步兵部隊，並承接砲兵作戰體系中的野戰任務。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1983-入侵格林納達",
+      "added": "2026-11-28T15:25:30.873Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -61.75,
+        "lat": 12.06
+      },
+      "battle": {
+        "y": 1983,
+        "m": 10,
+        "name": "入侵格林納達",
+        "theater": "格林納達聖喬治城及周邊",
+        "brief": "「入侵格林納達」是中文維基戰爭列表所列的1983年衝突。10月25日起，美國主導行動，在格林納達聖喬治城及周邊登陸，旨在撤離美國人員並推翻親蘇政府。所列Gatling gun於1860年推出，早期是固定岸防與艦載系統的重火力。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "Gatling gun是十九世紀多管旋轉式機槍的先驅設計，早期主要作為固定式地面或岸防武器，置於軍隊火力體系的支援位置，以連續射擊提供壓制並支援防禦。",
+        "portrait": "portraits/gatling.jpg"
+      }
+    },
+    {
+      "id": "1987-巴勒斯坦大起義",
+      "added": "2026-11-28T15:25:44.523Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 34.45,
+        "lat": 31.35
+      },
+      "battle": {
+        "y": 1987,
+        "m": 12,
+        "name": "巴勒斯坦大起義",
+        "theater": "加薩地帶",
+        "brief": "巴勒斯坦大起義於一九八七年十二月在加薩地帶興起，隨後擴展至約旦河西岸，形成反對以色列佔領的罷工、抗議與武裝抗爭；英國海軍的蒸汽鐵甲艦（Steam ironclad）於一八六五年列裝，屬遠洋戰艦與護航兵力。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦是英國海軍十九世紀中葉的主力遠洋戰艦，配備大口徑火砲，負責海上砲擊、封鎖與護航，並作為遠征艦隊的火力核心。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/1987-6efa553e2c.json"
+    },
+    {
+      "id": "1989-第一次利比里亞內戰",
+      "added": "2026-11-28T15:25:48.850Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -8.7,
+        "lat": 6.5
+      },
+      "battle": {
+        "y": 1989,
+        "m": 12,
+        "name": "第一次利比里亞內戰",
+        "theater": "尼姆巴郡",
+        "brief": "第一次利比里亞內戰於1989年12月由查爾斯·泰勒率領的民族解放陣線對抗政府軍，戰事最初集中於利比里亞東北部的尼姆巴郡，後擴及首都蒙羅維亞。歷史裝備對照為1860年已列裝的美製加特林機槍（Gatling gun），但其在本次內戰中的實際使用情形缺乏可靠紀錄。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍是美國陸軍早期制式連發重武器，由炮手操縱多管旋轉機構；重量與人工供彈限制使其主要置於固定陣位，負責據點火力壓制。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1989-e9578f4e85.json"
+    },
+    {
+      "id": "1991-索馬里內戰",
+      "added": "2026-11-28T15:26:17.257Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 45.32,
+        "lat": 2.04
+      },
+      "battle": {
+        "y": 1991,
+        "m": 1,
+        "name": "索馬里內戰",
+        "theater": "摩加迪沙",
+        "brief": "維基戰爭列表所列的索馬里內戰，自1991年起在索馬里爆發，中央政府與地方軍閥及反對派武裝爭奪權力，摩加迪沙與南部地區相繼成為主要交火區域。惠氏步槍（Winchester Model 1873）於1873年投入服役，屬於衝突相關地面武裝使用的早期步槍，可承擔步兵射擊任務。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍屬於地面力量中的早期步槍類，配置於基層步兵分隊，負責一般射擊與警戒任務；在索馬里衝突相關武裝中，其定位是個人及小隊層級的基礎槍械。",
+        "portrait": "portraits/winchester.jpg"
+      },
+      "dossierUrl": "dossiers/1991-b68a5f0f93.json"
+    },
+    {
+      "id": "1989-阿富汗內戰",
+      "added": "2026-11-28T15:26:26.719Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 70.21,
+        "lat": 34.43
+      },
+      "battle": {
+        "y": 1989,
+        "m": 3,
+        "name": "阿富汗內戰",
+        "theater": "阿富汗東部",
+        "brief": "阿富汗內戰於一九八九年在阿富汗東部展開，賈拉拉巴德成為政府軍與穆吉希丁武裝最初交鋒的重要據點，戰火其後蔓延至喀布爾。裝備欄所列線膛砲（Muzzle-loading field gun）是早於此事的野戰火砲型，可置於地面砲兵與據點攻防的歷史脈絡中理解。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲（Muzzle-loading field gun）屬德軍野戰砲兵體系，以曲射火力支援步兵、壓制堡壘與封鎖道路，通常由砲兵連或營負責指揮。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "1983-莫洛西亞-東德的對外戰爭",
+      "added": "2026-11-28T15:26:40.467Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": null,
+      "battle": {
+        "y": 1983,
+        "m": 1,
+        "name": "莫洛西亞-東德的對外戰爭",
+        "theater": "莫洛西亞",
+        "brief": "此戰為中文維基《戰爭列表》所載、1983年開始的對外衝突，交戰方為莫洛西亞與東德，戰域在莫洛西亞一帶的邊界地帶。步槍兵以單發後膛步槍執行警戒與掩護。惠氏步槍（Winchester Model 1873）於1873年列裝，屬早期制式步槍型號，在本戰中仍為步兵分隊的配備。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍是1873年推出的單發後膛步槍，長期充當美國陸軍與多國軍隊的制式步槍，屬早期槍械體系的代表型號，後續仍被各類邊疆與殖民地部隊沿用。",
+        "portrait": "portraits/winchester.jpg"
+      },
+      "dossierUrl": "dossiers/1983-16f59c332e.json"
+    },
+    {
+      "id": "1992-德涅斯特河沿岸戰爭",
+      "added": "2026-11-28T15:26:51.140Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 29.2,
+        "lat": 47.5
+      },
+      "battle": {
+        "y": 1992,
+        "m": 3,
+        "name": "德涅斯特河沿岸戰爭",
+        "theater": "德涅斯特河沿岸（摩爾多瓦）",
+        "brief": "德涅斯特河沿岸戰爭於1992年3月在摩爾多瓦爆發，交戰重心沿德涅斯特河與德涅斯特河畔地區展開。加特林機槍（Gatling gun）是美國陸軍於1860年已列裝的真實制式武器，屬機槍火力支援裝備；其服役年代雖早於本場衝突，此處僅作裝備對照，並非指其參與交火。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍在美國陸軍體系中屬於早期機槍類火力支援裝置，負責對地面目標提供壓制射擊，並可作為固定或車載武器使用。",
+        "portrait": "portraits/gatling.jpg"
+      }
+    },
+    {
+      "id": "1992-塔吉克斯坦內戰",
+      "added": "2026-11-28T15:26:52.723Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 68.78,
+        "lat": 38.56
+      },
+      "battle": {
+        "y": 1992,
+        "m": 5,
+        "name": "塔吉克斯坦內戰",
+        "theater": "杜尚別",
+        "brief": "塔吉克斯坦內戰於一九九二年五月在杜尚別爆發，聯邦政府軍與反對派武裝在城市及周邊交火，是蘇聯解體後中亞地區的一場內戰。英國海軍的正式型號「蒸汽鐵甲艦（Steam ironclad）」於一八六五年開始服役，屬於較此衝突早二十七年已納入裝備體系的海上艦型。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦是英國皇家海軍早期將蒸汽動力與鐵甲防護結合的海上作戰艦種，負責巡弋、封鎖與岸轟，並在艦隊中承擔主力遠洋及接舷作戰任務。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/1992-24501cadb9.json"
+    },
+    {
+      "id": "1986-豐田戰爭",
+      "added": "2026-11-28T15:26:53.074Z",
+      "span": "cold",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 18,
+        "lat": 23
+      },
+      "battle": {
+        "y": 1986,
+        "m": 1,
+        "name": "豐田戰爭",
+        "theater": "查德北部阿魯祖地帶",
+        "brief": "豐田戰爭是1986年開始的查德與利比亞邊境衝突，戰事主要集中於查德北部阿魯祖地帶，因戰場上大量使用豐田皮卡與輕型武裝車而得名。所列裝備為別丹步槍（Berdan rifle），於1866年列裝，屬栓動式地面步兵武器，主要供步兵部隊使用，早於本場衝突。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是俄羅斯帝國陸軍於1866年採用的栓動步槍，曾充當制式步兵武器，也是早期軍隊列裝及步兵訓練的標準槍械，後由蘇聯軍方延續使用相關型號。",
+        "portrait": "portraits/berdan.jpg"
+      }
+    },
+    {
+      "id": "1992-波斯尼亞戰爭",
+      "added": "2026-11-28T15:27:04.269Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 18.41,
+        "lat": 43.86
+      },
+      "battle": {
+        "y": 1992,
+        "m": 4,
+        "name": "波斯尼亞戰爭",
+        "theater": "塞拉耶佛戰線",
+        "brief": "波斯尼亞戰爭於一九九二年爆發，塞拉耶佛隨市區與外圍據點的爭奪形成長期戰線。此一線膛砲（Muzzle-loading field gun）屬十九世紀野戰炮兵裝備，位於營級火力支援與攻城部署之間，雖非波斯尼亞戰爭所用主力，仍是理解當時炮兵體系角色的真實歷史裝備。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲在十九世紀德意志諸邦陸軍中屬野戰炮兵，配置於步兵營或旅級支援，承擔隨軍支援與封鎖射擊，並非軍級攻城重砲。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1992-50558d8959.json"
+    },
+    {
+      "id": "1991-阿爾及利亞內戰",
+      "added": "2026-11-28T15:27:08.030Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 3.06,
+        "lat": 36.75
+      },
+      "battle": {
+        "y": 1991,
+        "m": 12,
+        "name": "阿爾及利亞內戰",
+        "theater": "阿爾及爾",
+        "brief": "阿爾及利亞內戰於1991年12月在阿爾及利亞爆發，阿爾及爾等地出現政府軍與武裝反對派的持續對抗。這場衝突以國家內部的政治、軍事分裂為背景；別丹步槍（Berdan rifle，1866年）則是俄羅斯帝國陸軍制式步槍，蘇聯時期仍沿用，並在1991年前已完成列裝。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是俄羅斯帝國陸軍的制式步槍，後由蘇聯軍隊沿用，配置於步兵連隊，作為標準步兵武器執行射擊任務。",
+        "portrait": "portraits/berdan.jpg"
+      },
+      "dossierUrl": "dossiers/1991-641ea15fd4.json"
+    },
+    {
+      "id": "1992-阿布哈茲戰爭",
+      "added": "2026-11-28T15:27:08.606Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 41.01,
+        "lat": 42.99
+      },
+      "battle": {
+        "y": 1992,
+        "m": 8,
+        "name": "阿布哈茲戰爭",
+        "theater": "阿布哈茲（蘇呼米）",
+        "brief": "阿布哈茲戰爭於1992年在高加索的阿布哈茲地區爆發，喬治亞政府軍與阿布哈茲武裝力量在蘇呼米及周邊山區交火。此衝突見於中文維基「戰爭列表」；英國海軍已於1877年列裝的魚雷艇（Torpedo boat），屬可用於沿岸警戒與快速反應的海上裝備。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇編入英國海軍海上巡邏兵力，專司沿岸警戒、快速追蹤可疑船隻，並執行近海反艦與快速反應任務。",
+        "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1992-7b721900a2.json"
+    },
+    {
+      "id": "1993-布隆迪內戰",
+      "added": "2026-11-28T15:27:12.831Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 29.87,
+        "lat": -3.37
+      },
+      "battle": {
+        "y": 1993,
+        "m": 10,
+        "name": "布隆迪內戰",
+        "theater": "布隆迪",
+        "brief": "布隆迪內戰始於一九九三年十月，總統梅爾基奧爾·恩達達耶遇刺後，軍方、胡圖族武裝與圖西族民兵在布隆迪境內形成交交局面。一八七〇年已列裝的德國陸軍婆塞德後膛砲（Breech-loading cannon），是其地面砲兵使用的正式型號。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲於一八七〇年列裝，置於德國陸軍地面砲兵序列，配置於部隊砲兵單位，負責早期野戰與攻城階段的火力支援。",
+        "portrait": "portraits/breechcannon.jpg"
+      },
+      "dossierUrl": "dossiers/1993-d902ac9eb3.json"
+    },
+    {
+      "id": "1996-阿富汗內戰(1996年–2001年)",
+      "added": "2026-11-28T15:27:27.745Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 66,
+        "lat": 34
+      },
+      "battle": {
+        "y": 1996,
+        "m": 9,
+        "name": "阿富汗內戰 (1996年–2001年)",
+        "theater": "阿富汗",
+        "brief": "阿富汗內戰（1996年–2001年）始於一九九六年九月塔利班攻占喀布爾，主要戰事遍及阿富汗各地，政府軍、塔利班與其後成立的北方聯盟先後交戰。雷管步槍（Percussion rifle）於一八四〇年列裝，屬十九世紀軍隊使用的制式步槍，早於本衝突逾一個半世紀。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管步槍是法軍在十九世紀中葉採用的制式步槍，屬單兵遠程武器，負責精確射擊，並為步兵小隊提供一般火力。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "1994-1994年也門內戰",
+      "added": "2026-11-28T15:27:36.739Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.21,
+        "lat": 15.37
+      },
+      "battle": {
+        "y": 1994,
+        "m": 5,
+        "name": "1994年也門內戰",
+        "theater": "薩那",
+        "brief": "《中文維基戰爭列表》所列的1994年也門內戰，戰鬥集中於也門首都薩那及其周邊，薩利赫政府軍與反對派武裝相互攻擊。施拿甫步槍（Sharps rifle）是美國陸軍曾採用的後膛單發線膛步槍，至1994年早已服役；惟未有可靠史料顯示其參與本場戰鬥。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍為美國陸軍採用的後膛單發線膛步槍，定位為步兵分隊的單兵步槍，由地面部隊士兵個人攜帶，屬制式步兵武器。",
+        "portrait": "portraits/sharps.jpg"
+      },
+      "dossierUrl": "dossiers/1994-3490899440.json"
+    },
+    {
+      "id": "1996-尼泊爾內戰",
+      "added": "2026-11-28T15:27:52.816Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 84.17,
+        "lat": 28.37
+      },
+      "battle": {
+        "y": 1996,
+        "m": 2,
+        "name": "尼泊爾內戰",
+        "theater": "尼泊爾羅爾帕縣",
+        "brief": "尼泊爾內戰於一九九六年在尼泊爾中西部山區爆發，起因包括地方治理、土地與政治不平等，毛主義游擊隊與政府及治安部隊的對抗並在鄉村形成長期游擊戰；鐵甲艦（Ironclad）是英國十九世紀蒸汽動力裝甲戰艦的正式型號，屬海上重型火力平台。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是英國皇家海軍十九世紀蒸汽動力艦隊中的裝甲戰艦類別，憑厚重船體與艦載火炮承擔海上火力骨幹。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1996-739459894b.json"
+    },
+    {
+      "id": "1997-1997年阿爾巴尼亞危機戰爭",
+      "added": "2026-11-28T15:28:24.907Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 20.25,
+        "lat": 40.12
+      },
+      "battle": {
+        "y": 1997,
+        "m": 3,
+        "name": "1997年阿爾巴尼亞危機戰爭",
+        "theater": "阿爾巴尼亞南部",
+        "brief": "1997年阿爾巴尼亞危機戰爭發生於阿爾巴尼亞南部，反政府武裝與政府軍在普羅戈羅、沃羅科沃及周邊道路交火，戰事延伸至內陸山地。雙方步兵在地面交鋒並使用步槍，惠氏步槍（Winchester Model 1873）早在1873年便已列裝，是當時仍可投入使用的早期制式武器。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍屬於美國陸軍的地面步兵武器體系，早期與騎兵及步兵編制搭配，並配給少量專職射手；十九世紀後期仍是軍方常備制式步槍，續用至二十世紀初。",
+        "portrait": "portraits/winchester.jpg"
+      }
+    },
+    {
+      "id": "1997-剛果共和國內戰",
+      "added": "2026-11-28T15:28:41.814Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 15.5,
+        "lat": -4.27
+      },
+      "battle": {
+        "y": 1997,
+        "m": 6,
+        "name": "剛果共和國內戰",
+        "theater": "布拉柴維爾",
+        "brief": "此條為戰爭列表所列、始於1997年6月的剛果共和國內戰，主要衝突集中於首都布拉柴維爾，並擴及剛果共和國西部的普爾省，交戰方包括政府軍與反對派民兵。裝備欄指定1866年列裝的別丹步槍（Berdan rifle），正式型號即 Berdan rifle，屬早期制式步槍。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是十九世紀俄軍的制式步槍，位於陸軍步兵單位的標準武器序列，作為一般步兵制式槍械，後來由新型步槍接替。",
+        "portrait": "portraits/berdan.jpg"
+      }
+    },
+    {
+      "id": "1998-乍得內戰(1998年-2002年)",
+      "added": "2026-11-28T15:29:22.479Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 17.5,
+        "lat": 11
+      },
+      "battle": {
+        "y": 1998,
+        "m": 4,
+        "name": "乍得內戰 (1998年-2002年)",
+        "theater": "乍得中南部戰區",
+        "brief": "中文維基「戰爭列表」所列的乍得內戰 (1998年-2002年) 自1998年4月展開，主要席捲乍得中南部，政府軍與反對派武裝爭奪城鎮及交通通道。以裝備服役年為判準，1998年以前已列裝的美製加特林機槍 (Gatling gun) 亦符合年代條件，屬早期制式連發地面火器。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍是美國陸軍早期制式的連發地面火器，由炮組操作，機關槍化後可提供較高持續火力，主要承擔固定或陣地支援任務，而非單兵輕機槍。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/1998-78d1f92b15.json"
+    },
+    {
+      "id": "1998-第二次剛果戰爭",
+      "added": "2026-11-28T15:29:40.086Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 28.5,
+        "lat": -2.5
+      },
+      "battle": {
+        "y": 1998,
+        "m": 8,
+        "name": "第二次剛果戰爭",
+        "theater": "剛果民主共和國基伍省",
+        "brief": "第二次剛果戰爭是中文維基「戰爭列表」所列的衝突，1998年8月因剛果民主共和國進攻基伍省而爆發，戰事其後延伸至盧安達、烏干達與布隆迪境內。線膛砲（Muzzle-loading field gun，1850年）是德國諸邦陸軍早已服役的野戰火砲正式型號，隸屬於陸軍砲兵。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲是十九世紀中葉德國諸邦陸軍野戰砲兵的制式火砲，配置於獨立砲兵編制，負責伴隨步兵、攻擊堡壘及支援會戰。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/1998-634d1830bc.json"
+    },
+    {
+      "id": "1999-卡基爾戰爭",
+      "added": "2026-11-28T15:29:54.487Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 76.13,
+        "lat": 34.55
+      },
+      "battle": {
+        "y": 1999,
+        "m": 5,
+        "name": "卡基爾戰爭",
+        "theater": "克什米爾卡基爾地區",
+        "brief": "卡基爾戰爭是1999年印度與巴基斯坦在克什米爾卡基爾地區爆發的高強度邊境衝突，主要爭奪山區據點與陣地控制。英國海軍的Torpedo boat（魚雷艇，1877年列裝）是典型的快速近海攻擊平台，承擔巡邏、護航、反水面及有限魚雷攻擊任務。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "英國海軍將Torpedo boat編入近海快速反應與警戒兵力，執行巡邏、護航、追擊及對水面目標發射魚雷的任務，並接受主力部隊的指揮與支援。",
+        "portrait": "portraits/torpedoboat.jpg"
+      },
+      "dossierUrl": "dossiers/1999-a52bdb36a4.json"
+    },
+    {
+      "id": "1998-1998年阿布哈茲戰爭",
+      "added": "2026-11-28T15:30:16.122Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 15.4,
+        "lat": -1.2
+      },
+      "battle": {
+        "y": 1998,
+        "m": 10,
+        "name": "1998年阿布哈茲戰爭",
+        "theater": "阿布哈茲（剛果共和國）",
+        "brief": "1998年阿布哈茲戰爭是1998年剛果地區衝突的一部分，戰事在阿布哈茲一帶展開，參戰者為政府軍與反對派武裝。同期海上力量仍以蒸汽鐵甲艦（Steam ironclad）為代表，如1865年服役的HMS Bellerophon，採蒸汽輪機動力、鐵質舷側與側向炮位。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦是英國海軍在1860年代確立的裝甲主力艦類型，以蒸汽輪機替代風帆、鐵甲包覆舷側並保留側向炮位，代表由風帆重炮艦向現代主力艦過渡的階段。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/1998-570adec6c5.json"
+    },
+    {
+      "id": "1999-第二次利比里亞內戰",
+      "added": "2026-11-28T15:30:16.537Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -17.44,
+        "lat": 6.31
+      },
+      "battle": {
+        "y": 1999,
+        "m": 7,
+        "name": "第二次利比里亞內戰",
+        "theater": "門羅維亞戰線",
+        "brief": "第二次利比里亞內戰於1999年在利比里亞爆發，首都門羅維亞及北部地區成為主要戰線，雙方由地方武裝、政府軍與外來支持力量交火。裝備方面，德國於1870年列裝的Breech-loading cannon是後膛野戰火砲，可用於陣地防衛與反裝甲火力支援。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲編入德國陸軍野戰砲隊，定位為中遠程直射支援火砲，通常由重砲單位掌握，負責壓制固定目標、支援步兵並執行反裝甲射擊。",
+        "portrait": "portraits/breechcannon.jpg"
+      }
+    },
+    {
+      "id": "1999-第二次車臣戰爭",
+      "added": "2026-11-28T15:30:24.682Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 45.68,
+        "lat": 43.31
+      },
+      "battle": {
+        "y": 1999,
+        "m": 8,
+        "name": "第二次車臣戰爭",
+        "theater": "車臣（格羅茲尼戰區）",
+        "brief": "第二次車臣戰爭是維基百科「戰爭列表」收錄的衝突，自1999年8月起在車臣境內展開，主要戰區包括格羅茲尼及周邊地區。俄羅斯聯邦軍隊與車臣武裝在此對抗，雙方使用步槍、機槍、火箭筒及裝甲車輛；其中一件已列裝的正式型號是施拿甫步槍（Sharps rifle），其服役年為1865年。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍是美國陸軍在19世紀步兵體系中的制式射手步槍，主要配給精射手與守備分隊，負責中遠距離精確射擊，並非全營通用制式武器。",
+        "portrait": "portraits/sharps.jpg"
+      },
+      "dossierUrl": "dossiers/1999-952429a32e.json"
+    },
+    {
+      "id": "1999-達吉斯坦戰爭",
+      "added": "2026-11-28T15:30:30.405Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 47.3,
+        "lat": 42
+      },
+      "battle": {
+        "y": 1999,
+        "m": 9,
+        "name": "達吉斯坦戰爭",
+        "theater": "北高加索",
+        "brief": "達吉斯坦戰爭於一九九九年九月在達吉斯坦共和國爆發，初始階段為俄羅斯聯邦軍與武裝團體間的戰事，亦被視為第二次車臣戰爭的開端。裝備項目所指的 Ironclad（鐵甲艦），是英國海軍十九世紀已列裝的戰鬥艦艇類別，歸入戰鬥艦隊序列。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "Ironclad 是英國皇家海軍十九世紀的鐵甲戰艦類別，置於戰鬥艦隊序列，承擔海上警戒、封鎖與遠洋部署，是當時海軍火力的重要構成。",
+        "portrait": "portraits/ironclad.jpg"
+      },
+      "dossierUrl": "dossiers/1999-6a48c07f58.json"
+    },
+    {
+      "id": "1996-第一次剛果戰爭",
+      "added": "2026-11-28T15:30:33.514Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 29.12,
+        "lat": -2.47
+      },
+      "battle": {
+        "y": 1996,
+        "m": 11,
+        "name": "第一次剛果戰爭",
+        "theater": "扎伊爾東部伊圖里省布尼亞周邊",
+        "brief": "第一次剛果戰爭於1996年在扎伊爾東部爆發，受烏干達支持的東部叛軍聯盟與扎伊爾政府軍交戰，戰線延伸至基伍與伊圖里地區。英國陸軍此前採行栓動制式步槍Enfield rifle，其於1858年列裝，屬步兵通用武器體系。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "Enfield rifle屬英國陸軍步兵武器體系的制式步槍，供營、連步兵單位的步槍手使用，負責中距離射擊，並與近戰武器及輕武器分工作業。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      },
+      "dossierUrl": "dossiers/1996-1685f7bb73.json"
+    },
+    {
+      "id": "2002-科特迪瓦革命戰爭",
+      "added": "2026-11-28T15:30:47.740Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -4.01,
+        "lat": 5.36
+      },
+      "battle": {
+        "y": 2002,
+        "m": 1,
+        "name": "科特迪瓦革命戰爭",
+        "theater": "科特迪瓦南部與阿比讓",
+        "brief": "科特迪瓦革命戰爭於2002年爆發，主要戰事集中於科特迪瓦南部與阿比讓，之後衝突向國內其他地區延伸。政府軍與多支武裝團體在城市及郊區交火，參戰方使用步槍等地面裝備；其中美製惠氏步槍（Winchester Model 1873）於1873年正式列裝，是早期軍用連發步槍的代表。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍是美國陸軍於1873年採用的制式步槍，配置於步兵與騎兵單位，作為邊疆駐軍的常備槍械，在軍隊體系中屬早期連發步槍。",
+        "portrait": "portraits/winchester.jpg"
+      }
+    },
+    {
+      "id": "2000-第二次巴勒斯坦大起義",
+      "added": "2026-11-28T15:30:52.295Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 35.21,
+        "lat": 31.77
+      },
+      "battle": {
+        "y": 2000,
+        "m": 9,
+        "name": "第二次巴勒斯坦大起義",
+        "theater": "耶路撒冷",
+        "brief": "第二次巴勒斯坦大起義於2000年9月在耶路撒冷爆發，之後擴展至約旦河西岸及加薩地帶，成為列表所列的巴勒斯坦武裝衝突。英國陸軍於1858年列裝的恩菲爾德步槍（Enfield rifle），是符合年代限制的標準步兵武器。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "恩菲爾德步槍（Enfield rifle）自1858年起列裝英國陸軍，作為步兵部隊的標準制式步槍，配發給野戰部隊使用，並構成英軍步兵武器體系的核心。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      },
+      "dossierUrl": "dossiers/2000-f292dc1a85.json"
+    },
+    {
+      "id": "2002-持久自由行動(非洲之角)",
+      "added": "2026-11-28T15:31:08.809Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.05,
+        "lat": 7.53
+      },
+      "battle": {
+        "y": 2002,
+        "m": 12,
+        "name": "持久自由行動 (非洲之角)",
+        "theater": "索馬利亞南部奧加登",
+        "brief": "持久自由行動非洲之角分支自 2002 年展開，美軍在索馬利亞南部與埃塞俄比亞邊境發動清剿，先掃蕩沙貝利河谷，再於奧加登塔克魯爾擊敗親阿爾蓋達民兵，阻止其與基地組織結盟，維護紅海航線；法國 Percussion rifle 雷管步槍 1840 年已列裝，為法軍線列制式步槍。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "法國 1840 年制式雷管步槍是 19 世紀中葉法軍線列步兵的制式火器，與線列騎兵卡賓槍區分，後由 1866 年 Chassepot 刺刀步槍取代。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "2004-也門什葉派起義",
+      "added": "2026-11-28T15:31:29.538Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 43.75,
+        "lat": 16.87
+      },
+      "battle": {
+        "y": 2004,
+        "m": 9,
+        "name": "也門什葉派起義",
+        "theater": "也門北部薩達省",
+        "brief": "也門什葉派起義於二〇〇四年九月在北部薩達省爆發，武裝人員與也門政府軍交火，主要活動區域位於也門西北部，後續戰事延伸至鄰近省份。條目所附裝備是一八五〇年服役的德國線膛砲（Muzzle-loading field gun），屬早期陸軍野戰砲兵使用的常規火力裝備。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲在十九世紀德國陸軍體系中隸屬野戰砲兵，配置於地面部隊，作為早期步兵作戰時的常規火力支援裝備。",
+        "portrait": "portraits/muzzleloader.jpg"
+      },
+      "dossierUrl": "dossiers/2004-a01e3db95f.json"
+    },
+    {
+      "id": "2004-2004年海地內戰",
+      "added": "2026-11-28T15:31:39.085Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -72.95,
+        "lat": 19.45
+      },
+      "battle": {
+        "y": 2004,
+        "m": 2,
+        "name": "2004年海地內戰",
+        "theater": "海地北部",
+        "brief": "2004年海地內戰為維基戰爭列表所列衝突，起於2004年2月海地北部的武裝起事。叛軍攻占戈納伊夫等城鎮，戰事擴展至太子港，政府軍與叛軍對峙，軍政秩序因而震盪。條目裝備為英國蒸汽鐵甲艦（Steam ironclad，1865年），是蒸汽動力與鐵甲防護並用的水面軍艦。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦在英國海軍體系中屬早期蒸汽動力水面戰艦，以蒸汽機提供航速、以鐵甲防護抵禦炮火，配置主砲與側舷火力，介於風帆主力艦與後來現代化主力艦之間。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/2004-cf25bc98b9.json"
+    },
+    {
+      "id": "2002-馬格里布叛亂",
+      "added": "2026-11-28T15:32:06.241Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -3.92,
+        "lat": 35.24
+      },
+      "battle": {
+        "y": 2002,
+        "m": 3,
+        "name": "馬格里布叛亂",
+        "theater": "摩洛哥北部里夫山區",
+        "brief": "馬格里布叛亂為2002年摩洛哥北部里夫地區爆發的反抗事件，居民與青年在阿爾侯塞馬等地示威，要求改善經濟與政治待遇，武警出動鎮壓。別丹步槍（Berdan rifle）為1866年列裝的栓動步槍，曾大量出口並為多國軍隊採用，屬本條目可對照的軍備型號。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍為俄羅斯帝國陸軍1866年採用的栓動步槍，替代前線步兵舊式火槍，成為帝國陸軍步兵制式武器，後經大量出口流傳多國軍隊。",
+        "portrait": "portraits/berdan.jpg"
+      },
+      "dossierUrl": "dossiers/2002-5cf7287f6d.json"
+    },
+    {
+      "id": "2004-中非內戰",
+      "added": "2026-11-28T15:32:14.028Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 18.56,
+        "lat": 4.36
+      },
+      "battle": {
+        "y": 2004,
+        "m": 3,
+        "name": "中非內戰",
+        "theater": "中非共和國",
+        "brief": "維基百科戰爭列表所列的中非內戰於2004年3月在中非共和國爆發，軍隊叛變與武裝衝突交錯，班吉及北部地區受到影響，地方安全與政府控制受到挑戰。加特林機槍（正式型號為Gatling gun）的服役年為1860年，早於本場衝突，是美國地面部隊曾列裝的真實機槍。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍屬美國陸軍早期制式重機槍，配置於步兵與火力支援單位，定位為持續射擊的壓制武器，屬地面作戰裝備體系。",
+        "portrait": "portraits/gatling.jpg"
+      },
+      "dossierUrl": "dossiers/2004-ff4352603a.json"
+    },
+    {
+      "id": "2006-索馬利亞戰事(2006年至2009年)",
+      "added": "2026-11-28T15:32:34.180Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 45.32,
+        "lat": 2.04
+      },
+      "battle": {
+        "y": 2006,
+        "m": 1,
+        "name": "索馬利亞戰事 (2006年至2009年)",
+        "theater": "摩加迪沙",
+        "brief": "索馬利亞戰事（2006年至2009年）主要發生於索馬利亞南部與摩加迪沙，過渡聯邦政府與反對武裝為控制首都、港口及國家政權而交戰。英國海軍的Steam ironclad於1865年列裝，是蒸汽動力鐵甲戰艦，屬早期遠洋艦隊骨幹。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "Steam ironclad於1865年服役於英國皇家海軍，定位為蒸汽動力鐵甲戰艦，負責遠洋兵力投射、護航與海上作戰。",
+        "portrait": "portraits/steamship.jpg"
+      },
+      "dossierUrl": "dossiers/2006-156da50605.json"
+    },
+    {
+      "id": "2006-墨西哥毒品戰爭",
+      "added": "2026-11-28T15:32:34.598Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": -106.5,
+        "lat": 28.5
+      },
+      "battle": {
+        "y": 2006,
+        "m": 12,
+        "name": "墨西哥毒品戰爭",
+        "theater": "墨西哥奇瓦瓦州",
+        "brief": "中文維基《戰爭列表》所列的墨西哥毒品戰爭始於2006年，主要在奇瓦瓦州等州份的城鄉與山區活動。加特林機槍於1860年定型，早期曾列裝美軍地面部隊，屬可連續射擊的旋轉多管重機槍，可用於支援步兵及壓制目標。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍在美軍早期地面火力體系中屬旋轉多管重機槍，主要任務是持續投射彈藥、支援步兵，並壓制固定目標與暴露火力點。",
+        "portrait": "portraits/gatling.jpg"
+      }
+    },
+    {
+      "id": "2008-泰柬邊境爭端",
+      "added": "2026-11-28T15:32:45.941Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 104.69,
+        "lat": 14.39
+      },
+      "battle": {
+        "y": 2008,
+        "m": 7,
+        "name": "泰柬邊境爭端",
+        "theater": "柏威夏寺與泰柬邊境",
+        "brief": "2008年7月，泰柬邊境爭端在柏威夏寺一帶升高，泰柬兩軍在邊境據點交火並造成局勢緊張；當時英國海軍已列裝魚雷艇（Torpedo boat），可執行近岸警戒、快速反應與海上拒止任務。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "魚雷艇在英國海軍體系中屬輕型水面作戰平台，主要承擔近岸巡邏、警戒護衛與快速反應任務。",
+        "portrait": "portraits/torpedoboat.jpg"
+      }
+    },
+    {
+      "id": "2004-巴基斯坦西北部戰爭",
+      "added": "2026-11-28T15:33:02.568Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 69.5,
+        "lat": 32.5
+      },
+      "battle": {
+        "y": 2004,
+        "m": 1,
+        "name": "巴基斯坦西北部戰爭",
+        "theater": "巴基斯坦西北部瓦里斯坦山區",
+        "brief": "巴基斯坦西北部戰爭於2004年1月展開，戰區位於巴基斯坦西北部山區，衝突涉及巴基斯坦軍方與武裝團體，南瓦里斯坦是早期行動的重要地區。惠氏步槍（Winchester Model 1873）於1873年列裝並配發美國陸軍，是槓桿式後膛步槍，屬其列裝年代地面部隊使用的制式武器。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "此槍於1873年列裝美國陸軍，作為槓桿式後膛步槍配發步兵與騎兵，置於當時地面部隊的制式武器體系中，主要承擔一般步騎兵射擊任務。",
+        "portrait": "portraits/winchester.jpg"
+      }
+    },
+    {
+      "id": "2006-第二次黎巴嫩戰爭",
+      "added": "2026-11-28T15:33:25.879Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 35.5,
+        "lat": 33.5
+      },
+      "battle": {
+        "y": 2006,
+        "m": 7,
+        "name": "第二次黎巴嫩戰爭",
+        "theater": "黎巴嫩南部",
+        "brief": "第二次黎巴嫩戰爭於2006年7月在黎巴嫩南部爆發，以色列與真主黨武裝交火，是中文維基戰爭列表收錄的衝突。俄製別丹步槍（Berdan rifle）於1866年列裝，曾為俄羅斯帝國陸軍制式步槍，並在蘇聯早期軍隊中沿用。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍自1866年起為俄羅斯帝國陸軍制式步槍，屬栓動步槍體系；蘇聯時期仍見於部分步兵單位，並保留於後備武器體系中。",
+        "portrait": "portraits/berdan.jpg"
+      }
+    },
+    {
+      "id": "2008-2008年—2009年加沙戰爭",
+      "added": "2026-11-28T15:33:28.881Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 34.47,
+        "lat": 31.5
+      },
+      "battle": {
+        "y": 2008,
+        "m": 12,
+        "name": "2008年—2009年加沙戰爭",
+        "theater": "加沙地帶",
+        "brief": "2008年—2009年加沙戰爭於2008年12月27日至2009年1月18日發生，以色列與哈馬斯在加沙地帶交戰，涉及地面進攻、炮擊與空襲。條目所附線膛砲（Muzzle-loading field gun）正式於1850年列裝，是十九世紀步兵部隊配屬的野戰火炮，屬早期炮兵體系。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲屬於十九世紀野戰炮兵體系，作為配屬步兵部隊的野戰火炮，主要用於對既定目標直接射擊，並提供反擊動員所需的火力。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "2008-第二次南奧塞梯戰爭",
+      "added": "2026-11-28T15:33:29.418Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 43.95,
+        "lat": 42.25
+      },
+      "battle": {
+        "y": 2008,
+        "m": 8,
+        "name": "第二次南奧塞梯戰爭",
+        "theater": "南奧塞梯",
+        "brief": "第二次南奧塞梯戰爭於2008年8月在南奧塞梯地區展開，涉及喬治亞與俄羅斯武裝。紀錄所附裝備為施拿甫步槍（Sharps rifle），其正式型號於1865年即已列裝，符合年份門檻；該槍並非此役交戰方的制式武器。"
+      },
+      "kit": {
+        "name": "施拿甫步槍",
+        "designation": "Sharps rifle",
+        "year": 1865,
+        "nation": "us",
+        "layer": "land",
+        "history": "施拿甫步槍屬於美軍前線步兵與騎兵單位的單發後膛步槍，主要配置給射手；1870年代起逐步由可連發步槍取代。",
+        "portrait": "portraits/sharps.jpg"
+      }
+    },
+    {
+      "id": "2011-也門革命",
+      "added": "2026-11-28T15:33:44.705Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.21,
+        "lat": 15.37
+      },
+      "battle": {
+        "y": 2011,
+        "m": 1,
+        "name": "也門革命",
+        "theater": "薩那",
+        "brief": "也門革命於二〇一一年一月在薩那爆發，民眾要求總統阿里·薩利赫下台，抗議擴散至亞丁、塔伊茲等城市，並引發軍警衝突與持續政治轉折。由於也門扼守紅海與亞丁灣航道，海上監視、護航及封鎖能力受到關注；英國海軍一八六二年服役的鐵甲艦（Ironclad）則代表裝甲蒸汽軍艦的海上主力架構。"
+      },
+      "kit": {
+        "name": "鐵甲艦",
+        "designation": "Ironclad",
+        "year": 1862,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "鐵甲艦是英國海軍以蒸汽動力驅動、裝甲防禦的海上主力，承擔遠洋巡航、護航與封鎖，反映海軍由木帆艦向鐵甲蒸汽艦轉型。",
+        "portrait": "portraits/ironclad.jpg"
+      }
+    },
+    {
+      "id": "2008-科摩羅民主行動",
+      "added": "2026-11-28T15:33:46.079Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.4,
+        "lat": -12.2
+      },
+      "battle": {
+        "y": 2008,
+        "m": 3,
+        "name": "科摩羅民主行動",
+        "theater": "科摩羅群島阿努瓦恩島",
+        "brief": "科摩羅民主行動發生於科摩羅群島的阿努瓦恩島，中央政府軍於二〇〇八年三月介入，迫使分離主義政府下台，使該島重新回到聯邦管轄；本文以一八七〇年已列裝的德國Breech-loading cannon（婆塞德後膛砲）為代表，說明其在早期後膛火炮體系中的地位。"
+      },
+      "kit": {
+        "name": "婆塞德後膛砲",
+        "designation": "Breech-loading cannon",
+        "year": 1870,
+        "nation": "de",
+        "layer": "land",
+        "history": "婆塞德後膛砲是德國在十九世紀後期火砲體系中由前裝轉向後膛射擊的代表，屬野戰與堡壘砲兵使用的陸軍重裝備，並成為後續火炮設計的重要基礎。",
+        "portrait": "portraits/breechcannon.jpg"
+      }
+    },
+    {
+      "id": "2011-敘利亞內戰",
+      "added": "2026-11-28T15:34:09.083Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 36.3,
+        "lat": 33.51
+      },
+      "battle": {
+        "y": 2011,
+        "m": 3,
+        "name": "敘利亞內戰",
+        "theater": "大馬士革",
+        "brief": "本項為中文維基「戰爭列表」所列、始於2011年的敘利亞內戰，戰場定位在首都大馬士革，故記為該年三月。裝備方面，英國陸軍於1858年列裝的Enfield rifle是當時制式步槍，配置於地面作戰的步兵單位，屬英軍標準單兵武器。"
+      },
+      "kit": {
+        "name": "恩菲爾德步槍",
+        "designation": "Enfield rifle",
+        "year": 1858,
+        "nation": "uk",
+        "layer": "land",
+        "history": "恩菲爾德步槍是英國陸軍的制式步槍，配置於營、連級步兵單位，作為步兵分隊的基本射擊武器，隸屬陸軍地面部隊。",
+        "portrait": "portraits/enfieldrifle.jpg"
+      }
+    },
+    {
+      "id": "2014-伊拉克北部內戰",
+      "added": "2026-11-28T15:34:38.955Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 43.13,
+        "lat": 36.34
+      },
+      "battle": {
+        "y": 2014,
+        "m": 6,
+        "name": "伊拉克北部內戰",
+        "theater": "摩蘇爾",
+        "brief": "2014年6月，伊斯蘭國攻占摩蘇爾，伊拉克政府軍撤離該市，戰事隨即向伊拉克北部其他地區擴展，伊拉克北部內戰由此升級。別丹步槍（Berdan rifle）是俄國及蘇聯陸軍在2014年以前即已列裝的正式型號，僅作同期裝備背景，不代表它實際參與了本輪戰鬥。"
+      },
+      "kit": {
+        "name": "別丹步槍",
+        "designation": "Berdan rifle",
+        "year": 1866,
+        "nation": "ussr",
+        "layer": "land",
+        "history": "別丹步槍是俄國陸軍於1866年採用的制式步槍，後來成為步兵部隊的標準武器，並由蘇聯軍隊沿用，長期與騎槍及軍刀共同配發。",
+        "portrait": "portraits/berdan.jpg"
+      }
+    },
+    {
+      "id": "2012-中非內戰",
+      "added": "2026-11-28T15:34:43.500Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 18.56,
+        "lat": 4.39
+      },
+      "battle": {
+        "y": 2012,
+        "m": 1,
+        "name": "中非內戰",
+        "theater": "中非共和國",
+        "brief": "中非內戰始於2012年12月，中非共和國塞萊卡武裝攻入首都班吉，與政府軍交火，戰事其後擴展至其他城市。雷管步槍（Percussion rifle）是法國於1840年已列裝的制式步槍，屬早期步兵的遠距射擊武器，並非本場衝突的主要現代裝備。"
+      },
+      "kit": {
+        "name": "雷管步槍",
+        "designation": "Percussion rifle",
+        "year": 1840,
+        "nation": "fr",
+        "layer": "land",
+        "history": "雷管步槍是法軍步兵的制式步槍，主要用於線列步兵作戰，負責中遠距射擊；在十九世紀步兵體系中，它是核心的單兵武器，與部隊編制及火力運用直接相連。",
+        "portrait": "portraits/percussion.jpg"
+      }
+    },
+    {
+      "id": "2020-2020年納戈爾諾-卡拉巴赫戰爭",
+      "added": "2026-11-28T15:34:55.421Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 46.75,
+        "lat": 39.82
+      },
+      "battle": {
+        "y": 2020,
+        "m": 9,
+        "name": "2020年納戈爾諾-卡拉巴赫戰爭",
+        "theater": "納戈爾諾-卡拉巴赫",
+        "brief": "《中文維基戰爭列表》收錄的2020年納戈爾諾-卡拉巴赫戰爭，發生於高加索南部的納戈爾諾-卡拉巴赫地區，是該列表中的武裝衝突。線膛砲（Muzzle-loading field gun）是德國陸軍於1850年列裝的野戰火砲，位於炮兵支援體系，負責提供營級火力。"
+      },
+      "kit": {
+        "name": "線膛砲",
+        "designation": "Muzzle-loading field gun",
+        "year": 1850,
+        "nation": "de",
+        "layer": "land",
+        "history": "線膛砲在德國陸軍炮兵體系中屬野戰火砲，配置於炮兵連及營級支援單位，以火砲射擊支援步兵推進、陣地固守與反擊。",
+        "portrait": "portraits/muzzleloader.jpg"
+      }
+    },
+    {
+      "id": "2015-2015年也門內戰",
+      "added": "2026-11-28T15:35:05.829Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 44.21,
+        "lat": 15.37
+      },
+      "battle": {
+        "y": 2015,
+        "m": 1,
+        "name": "2015年也門內戰",
+        "theater": "薩那",
+        "brief": "2015年也門內戰是也門政府軍、胡塞武裝與聯盟軍之間持續對抗的國內武裝衝突，首都薩那及周邊地區是重要戰線，西部塔伊茲等控制區亦持續交火。交戰涉及地面部隊與重武器；本條列舉的美國製加特林機槍（Gatling gun）於1860年列裝，屬於多管地面火力支援裝備。"
+      },
+      "kit": {
+        "name": "加特林機槍",
+        "designation": "Gatling gun",
+        "year": 1860,
+        "nation": "us",
+        "layer": "land",
+        "history": "加特林機槍在美國陸軍體系中屬於地面火力支援裝備，通常配置於固定陣地或車載平台，負責在戰術層面提供持續火力與壓制支援。",
+        "portrait": "portraits/gatling.jpg"
+      }
+    },
+    {
+      "id": "2020-提格雷戰爭",
+      "added": "2026-11-28T15:35:19.245Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 39.48,
+        "lat": 13.5
+      },
+      "battle": {
+        "y": 2020,
+        "m": 11,
+        "name": "提格雷戰爭",
+        "theater": "埃塞俄比亞提格雷地區",
+        "brief": "《中文維基戰爭列表》收錄的「提格雷戰爭」始於二〇二〇年十一月，是埃塞俄比亞政府與提格雷地區武裝之間的衝突。英國海軍魚雷艇 Torpedo boat 自一八七七年服役，屬海上兵力，主要用於近岸快速突擊與警戒。"
+      },
+      "kit": {
+        "name": "魚雷艇",
+        "designation": "Torpedo boat",
+        "year": 1877,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "英國海軍早期魚雷艇以高速近岸突襲為主，編入分艦與基地警戒體系，作為艦隊輔助兵力。",
+        "portrait": "portraits/torpedoboat.jpg"
+      }
+    },
+    {
+      "id": "2014-第二次利比亞內戰",
+      "added": "2026-11-28T15:35:53.763Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 13.19,
+        "lat": 32.89
+      },
+      "battle": {
+        "y": 2014,
+        "m": 6,
+        "name": "第二次利比亞內戰",
+        "theater": "的黎波里戰役",
+        "brief": "第二次利比亞內戰於2014年6月在利比亞北部爆發，的黎波里成為關鍵戰場，政府軍與伊斯蘭主義武裝為控制城市相互進攻。英國海軍的正式型號 Steam ironclad 是十九世紀中期已服役的裝甲主力蒸汽艦，配置艦載火炮，屬遠洋巡航與岸轟火力支援的海上重裝兵力。"
+      },
+      "kit": {
+        "name": "蒸汽鐵甲艦",
+        "designation": "Steam ironclad",
+        "year": 1865,
+        "nation": "uk",
+        "layer": "sea",
+        "history": "蒸汽鐵甲艦是英國皇家海軍早期裝甲主力艦的海上作戰類別，兼具蒸汽自航、裝甲防護與艦載火炮，負責遠洋巡航、封鎖及岸轟，並構成當時海軍編隊的重裝核心。",
+        "portrait": "portraits/steamship.jpg"
+      }
+    },
+    {
+      "id": "2012-雲柱行動",
+      "added": "2026-11-28T15:38:26.900Z",
+      "span": "now",
+      "source": "https://zh.wikipedia.org/wiki/战争列表",
+      "place": {
+        "lng": 34.47,
+        "lat": 31.5
+      },
+      "battle": {
+        "y": 2012,
+        "m": 11,
+        "name": "雲柱行動",
+        "theater": "加沙地帶",
+        "brief": "「雲柱行動」是2012年11月以色列在加沙地帶對哈馬斯武裝展開的軍事行動，主要打擊火箭發射裝置、地下隧道與指揮設施。Winchester Model 1873則是美國早期制式的槍機拉桿步槍，1873年開始列裝，其拉桿結構便於連續射擊，並曾出口，配用於多國軍警及武裝團體。"
+      },
+      "kit": {
+        "name": "惠氏步槍",
+        "designation": "Winchester Model 1873",
+        "year": 1873,
+        "nation": "us",
+        "layer": "land",
+        "history": "惠氏步槍是美國陸軍早期採用的槍機拉桿步槍，由騎兵與步兵單位使用，亦是美國外銷槍械的重要型號，長期見於多國軍警及武裝團體。",
+        "portrait": "portraits/winchester.jpg"
+      }
     }
   ]
 }
