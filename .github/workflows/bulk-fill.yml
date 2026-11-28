@@ -7,6 +7,15 @@ on:
   schedule:
     - cron: "7 * * * *"
   workflow_dispatch:
+    inputs:
+      bulk_limit:
+        description: "How many campaigns to write in this run (default 3)"
+        required: false
+        default: "3"
+      workers:
+        description: "How many campaigns to write in parallel (default 3)"
+        required: false
+        default: "3"
 permissions:
   contents: write
 # These three jobs all append to cute/feed.json. Two of them running at once
@@ -28,10 +37,11 @@ jobs:
       - name: Write campaigns and dossiers
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
-          # Three a day, each with its own bilingual full text.
-          BULK_LIMIT: "3"
-          DOSSIER_LIMIT: "3"
-          BULK_WORKERS: "3"
+          # Three a day, each with its own bilingual full text. A manual run
+          # can raise the limits to clear the backlog of unwritten wars.
+          BULK_LIMIT: ${{ inputs.bulk_limit || '3' }}
+          DOSSIER_LIMIT: ${{ inputs.bulk_limit || '3' }}
+          BULK_WORKERS: ${{ inputs.workers || '3' }}
         run: node scripts/bulk-fill.mjs
       - name: Sweep back to traditional Chinese
         run: node scripts/fix-trad.mjs cute
