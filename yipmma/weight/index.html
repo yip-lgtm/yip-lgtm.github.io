@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>outboxing stance · weight</title>
 <meta name="theme-color" content="#000000" />
-<script src="/yipmma/weight/block-minimax.js?v=mc51"></script>
+<script src="/yipmma/weight/block-minimax.js?v=mc52"></script>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif}
@@ -32,7 +32,7 @@ li{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-botto
 #report{white-space:pre-wrap;font-size:14px;line-height:1.7;margin-top:12px}
 nav{position:fixed;left:0;right:0;bottom:0;background:#000;border-top:1px solid #222;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:8px 0 14px;font-size:11px}
 nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
-.warn{color:#d7b56d;font-size:13px}.ok{color:#9dbf8a;font-size:13px}
+.warn{color:#d7b56d;font-size:13px;white-space:pre-wrap}.ok{color:#9dbf8a;font-size:13px}
 </style>
 </head>
 <body>
@@ -83,15 +83,17 @@ nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
   </div>
   <div class="card">
     <h2>分析 / 免費 model</h2>
-    <p class="muted">順序：Super → Gemma → Ling → Lightning。唔用 MiniMax，唔用 openrouter/free。選定咪隻失敗就自動跳下一隻。</p>
+    <p class="muted">而家用得：Ultra → Gemma 31B → Ling 3.2 → Lightning → ERNIE → Gemma 26B。選定失敗就自動跳下一隻。唔用 MiniMax。</p>
     <label>OpenRouter API key</label>
     <input id="key" type="password" autocomplete="off" placeholder="sk-or-…">
     <label>Free model</label>
     <select id="model">
-      <option value="nvidia/nemotron-3-super-120b-a12b:free">1 Nemotron 3 Super :free</option>
+      <option value="nvidia/nemotron-3-ultra-550b-a55b:free">1 Nemotron 3 Ultra :free</option>
       <option value="google/gemma-4-31b-it:free">2 Gemma 4 31B :free</option>
-      <option value="inclusionai/ling-3.0-flash-sante:free">3 Ling 3.0 Flash Sante :free</option>
+      <option value="inclusionai/ling-3.2-flash:free">3 Ling 3.2 Flash :free</option>
       <option value="nvidia/nemotron-3.5-lightning:free">4 Nemotron 3.5 Lightning :free</option>
+      <option value="baidu/ernie-5.5-flash-preview:free">5 ERNIE 5.5 Flash :free</option>
+      <option value="google/gemma-4-26b-a4b-it:free">6 Gemma 4 26B :free</option>
     </select>
     <button class="full" id="go">產生今日報告</button>
     <p class="warn" id="err"></p>
@@ -109,9 +111,9 @@ nav a{color:#888;text-decoration:none;padding:6px}nav a.on{color:#fff}
 <nav>
   <a href="/yipmma/?v=mc50">今日</a>
   <a href="/yipmma/week/?v=mc50">週期</a>
-  <a class="on" href="/yipmma/weight/?v=mc51">體重</a>
+  <a class="on" href="/yipmma/weight/?v=mc52">體重</a>
   <a href="/yipmma/session/?v=mc50">訓練</a>
 </nav>
-<script src="/yipmma/weight/app.js?v=mc51"></script>
+<script src="/yipmma/weight/app.js?v=mc52"></script>
 </body>
 </html>

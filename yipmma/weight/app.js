@@ -3,10 +3,12 @@
   var CHIPS = ["白飯半碗", "白切鴻", "蒸魚", "蛋兩隻", "豆漿", "香蕉", "雞胸", "豆腐", "菜心", "麥皮", "熱小米粥"];
   var meal = "午";
   var MODELS = [
-    "nvidia/nemotron-3-super-120b-a12b:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
     "google/gemma-4-31b-it:free",
-    "inclusionai/ling-3.0-flash-sante:free",
-    "nvidia/nemotron-3.5-lightning:free"
+    "inclusionai/ling-3.2-flash:free",
+    "nvidia/nemotron-3.5-lightning:free",
+    "baidu/ernie-5.5-flash-preview:free",
+    "google/gemma-4-26b-a4b-it:free"
   ];
   function hkDate() {
     return new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Hong_Kong" });
@@ -200,7 +202,7 @@
     if (!key) return { ok: true, text: localReport(d), via: "local" };
     var sys = "你是香港私教。繁中口語。" + d.heightCm + "cm 外圍拳擊。每日洛馬 10 + A-E 15。禁止帶氧熱身。五段：狀態(包 remark)、目標、飲食、9分鐘、訓練。守肌肉。";
     var models = orderModels();
-    var lastErr = "";
+    var errors = [];
     try {
       for (var mi = 0; mi < models.length; mi++) {
         var res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -211,9 +213,10 @@
         var j = await res.json();
         var text = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
         if (res.ok && text) return { ok: true, text: text.trim(), via: models[mi] };
-        lastErr = (j.error && (j.error.message || j.error.code)) || ("OpenRouter " + res.status + " " + models[mi]);
+        var msg = (j.error && (j.error.message || j.error.code)) || ("HTTP " + res.status);
+        errors.push(models[mi].split("/").pop() + ": " + msg);
       }
-      return { ok: false, error: lastErr || "all free models failed" };
+      return { ok: false, error: errors.join("\n") || "all free models failed" };
     } catch (e) {
       return { ok: true, text: localReport(d) + "\n\n(網路失敗)", via: "local" };
     }
