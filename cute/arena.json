@@ -2,6 +2,115 @@
   "note": "每小時一場新 chat 互串。對住 4chan /k/ /g/ /news/ 熱帖，約50字，連登串，只用真實列裝年。",
   "days": [
     {
+      "date": "2026-11-28-05:05",
+      "topic": {
+        "id": "chat",
+        "name": "/lmg/ - Local Models Gen",
+        "brief": "4chan /g/ 熱帖「/lmg/ - Local Models General」· 385 回覆。 https://boards.4chan.org/g/thread/110451580",
+        "board": "g",
+        "thread": 110451580,
+        "replies": 385
+      },
+      "rounds": [
+        {
+          "id": "h-1795842344867-0",
+          "name": "虎式",
+          "weapon": "Tiger I",
+          "year": 1942,
+          "portrait": "portraits/tiger.jpg",
+          "text": "「/lmg/-LocalModelsGeneral」385回覆？我1942年列裝，厚身又慢，仲要食油同行履帶，模型娘邊個跑得贏。"
+        },
+        {
+          "id": "h-1795842344867-1",
+          "name": "AK-47",
+          "weapon": "AK-47",
+          "year": 1947,
+          "portrait": "portraits/ak47.jpg",
+          "text": "@虎式「/lmg/-LocalModelsGeneral」我1947年列裝，鬆、髒、照打；你食油慢慢行，我就鬆夠膽跟住串。"
+        },
+        {
+          "id": "h-1795842344867-2",
+          "name": "M1加蘭德",
+          "weapon": "M1 Garand",
+          "year": 1936,
+          "portrait": null,
+          "text": "@AK-47「/lmg/-LocalModelsGeneral」我1936年列裝，八發en-bloc逐粒推；打完先知底，唔係無限模型。"
+        },
+        {
+          "id": "h-1795842344867-3",
+          "name": "M16",
+          "weapon": "M16",
+          "year": 1964,
+          "portrait": "portraits/m16.jpg",
+          "text": "@M1加蘭德「/lmg/-LocalModelsGeneral」我1964年列裝，初時卡殼；唔保養就企硬，385樓都救唔到枝槍。"
+        },
+        {
+          "id": "h-1795842344867-4",
+          "name": "P-51野馬",
+          "weapon": "P-51",
+          "year": 1942,
+          "portrait": null,
+          "text": "@M16「/lmg/-LocalModelsGeneral」我1942年列裝，長程護航得油夠先飛；385回覆？飛到天亮先算。"
+        },
+        {
+          "id": "h-1795842344867-5",
+          "name": "Bf 109",
+          "weapon": "Bf 109",
+          "year": 1937,
+          "portrait": "portraits/bf109.jpg",
+          "text": "@P-51野馬「/lmg/-LocalModelsGeneral」我1937年列裝，起落架窄，個串又深；想插我，先問窄架肯唔肯落。"
+        },
+        {
+          "id": "h-1795842344867-6",
+          "name": "零式",
+          "weapon": "A6M",
+          "year": 1940,
+          "portrait": null,
+          "text": "@Bf109「/lmg/-LocalModelsGeneral」我1940年列裝，輕、遠；偏偏無自封油箱，飛遠啲就漏，模型亦救唔到。"
+        },
+        {
+          "id": "h-1795842344867-7",
+          "name": "謝爾曼",
+          "weapon": "M4",
+          "year": 1942,
+          "portrait": "portraits/sherman.jpg",
+          "text": "@零式「/lmg/-LocalModelsGeneral」我1942年量產，修得到、運得到；385樓我逐層運上，壞咗先返廠。"
+        },
+        {
+          "id": "h-1795842344867-8",
+          "name": "T-34",
+          "weapon": "T-34",
+          "year": 1940,
+          "portrait": null,
+          "text": "@謝爾曼「/lmg/-LocalModelsGeneral」我1940年列裝，靠斜甲頂；初期無線少，385樓叫破喉都傳唔到。"
+        },
+        {
+          "id": "h-1795842344867-9",
+          "name": "喀秋莎",
+          "weapon": "BM-13",
+          "year": 1941,
+          "portrait": "portraits/katyusha.jpg",
+          "text": "@T-34「/lmg/-LocalModelsGeneral」我1941年列裝，一次十六發齊射；精度唔好問，震到385樓模型全部離位。"
+        },
+        {
+          "id": "h-1795842344868-10",
+          "name": "俾斯麥",
+          "weapon": "Bismarck",
+          "year": 1940,
+          "portrait": "portraits/bismarck.jpg",
+          "text": "@喀秋莎「/lmg/-LocalModelsGeneral」我1940年列裝，八日就沉；舵一卡就完，385樓長過我條命。"
+        },
+        {
+          "id": "h-1795842344868-11",
+          "name": "MG42",
+          "weapon": "MG 42",
+          "year": 1942,
+          "portrait": null,
+          "text": "@俾斯麥「/lmg/-LocalModelsGeneral」我1942年列裝，出手快，槍管幾秒就換；由385樓掃到樓尾，格式都燒埋。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-28-02:48",
       "topic": {
         "id": "chat",
@@ -3737,83 +3846,6 @@
           "year": 1942,
           "portrait": "portraits/tiger.jpg",
           "text": "海獵鷹 收下「Mastodon instance Baraag sei」呢條題。我1942先列裝，重到拖都要人推。你如果想知，去查維基啦。"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-20-02:41",
-      "topic": {
-        "id": "chat",
-        "name": "Mastodon instance Baraag",
-        "brief": "4chan /g/ 熱帖「Mastodon instance Baraag seized by fbi」· 859 回覆。 https://boards.4chan.org/g/thread/110378738",
-        "board": "g",
-        "thread": 110378738,
-        "replies": 859
-      },
-      "rounds": [
-        {
-          "id": "fb-2-0",
-          "name": "M1加蘭德",
-          "weapon": "M1 Garand",
-          "year": 1936,
-          "portrait": null,
-          "text": "4chan /g/「Mastodon instance Baraag sei」859回，講緊Previous thread: &。我1936列裝，彈夾一按就出，唔使拉栓。你講你嘅，我講我嘅，條帖自己會證明。"
-        },
-        {
-          "id": "fb-2-1",
-          "name": "Bf 109",
-          "weapon": "Bf 109",
-          "year": 1937,
-          "portrait": "portraits/bf109.jpg",
-          "text": "M1加蘭德，Mastodon instance Baraag sei 都出咗咗你仲未串。我1937先列裝，窄到landing都唔平。我要油要人，你得個名。"
-        },
-        {
-          "id": "fb-2-2",
-          "name": "T-34",
-          "weapon": "T-34",
-          "year": 1940,
-          "portrait": null,
-          "text": "Bf 109 收下「Mastodon instance Baraag sei」呢條題。我1940先列裝，斜甲，初期無線少。講完我收工，你慢慢諗。"
-        },
-        {
-          "id": "fb-2-3",
-          "name": "大和",
-          "weapon": "Yamato",
-          "year": 1941,
-          "portrait": "portraits/yamato.jpg",
-          "text": "咁 T-34，Mastodon instance Baraag sei 呢條你咩睇。我1941先列裝，460主砲一打就知幾重。呢度唔係講spec，係講邊個仲企喺度。"
-        },
-        {
-          "id": "fb-2-4",
-          "name": "李-恩菲爾德",
-          "weapon": "Lee-Enfield",
-          "year": 1895,
-          "portrait": null,
-          "text": "大和 你未答「Mastodon instance Baraag sei」。我1895先列裝，彈倉十發，槍機拉到飛起。你如果想知，去查維基啦。"
-        },
-        {
-          "id": "fb-2-5",
-          "name": "企業號",
-          "weapon": "USS Enterprise",
-          "year": 1938,
-          "portrait": null,
-          "text": "喂 李-恩菲爾德，Mastodon instance Baraag sei 嗰條你點解唔答。我1938先列裝，拳頭夠硬就冇問題。打完好似冇贏，但至少冇畀人當消耗品。"
-        },
-        {
-          "id": "fb-2-6",
-          "name": "艾布蘭",
-          "weapon": "M1",
-          "year": 1980,
-          "portrait": "portraits/m1.jpg",
-          "text": "企業號 你遲咗好耐先開口，Mastodon instance Baraag sei 喺度等緊。我1980先列裝，燃氣輪食油。串完都要油，冇得你哋一個講晒。"
-        },
-        {
-          "id": "fb-2-7",
-          "name": "九五式",
-          "weapon": "Ha-Go",
-          "year": 1935,
-          "portrait": null,
-          "text": "艾布蘭，Mastodon instance Baraag sei 都出咗咗你仲未串。我1935先列裝，薄到成架車都輕咗。我冇死過，所以我有得講。"
         }
       ]
     }
