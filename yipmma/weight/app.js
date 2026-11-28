@@ -2,6 +2,12 @@
   var MEALS = ["早", "午", "晚", "加"];
   var CHIPS = ["白飯半碗", "白切鴻", "蒸魚", "蛋兩隻", "豆漿", "香蕉", "雞胸", "豆腐", "菜心", "麥皮", "熱小米粥"];
   var meal = "午";
+  var MODELS = [
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "google/gemma-4-31b-it:free",
+    "inclusionai/ling-3.0-flash-sante:free",
+    "nvidia/nemotron-3.5-lightning:free"
+  ];
   function hkDate() {
     return new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Hong_Kong" });
   }
@@ -169,23 +175,31 @@
   function payload() {
     var s = st(), sc = latestScan(s) || {}, p = s.profile || {};
     var day = { Sun: "恢復", Mon: "滑步", Tue: "Pivot", Wed: "架勢", Thu: "環繞", Fri: "刺拳", Sat: "移動" }[wd()] || "";
-    return { date: hkDate(), weekday: wd(), todaySkill: day, heightCm: Number(document.getElementById("h").value || p.heightCm || 168), boxingTargetKg: Number(document.getElementById("t").value || p.targetKg || 54.5), scan: sc, lastKg: s.lastKg || sc.kg, foodsToday: todayFoods(s), journeyRemark: (s.remarks || {})[hkDate()] || document.getElementById("remark").value || "", lastRun: (s.runs || []).slice(-1)[0] || null, program: "每日 30 分：洛馬 15 + A-E 15。禁止帶氧熱身。" };
+    return { date: hkDate(), weekday: wd(), todaySkill: day, heightCm: Number(document.getElementById("h").value || p.heightCm || 168), boxingTargetKg: Number(document.getElementById("t").value || p.targetKg || 54.5), scan: sc, lastKg: s.lastKg || sc.kg, foodsToday: todayFoods(s), journeyRemark: (s.remarks || {})[hkDate()] || document.getElementById("remark").value || "", lastRun: (s.runs || []).slice(-1)[0] || null, program: "每日洛馬 10 + A-E 15。禁止帶氧熱身。" };
   }
   function localReport(d) {
     var kg = d.lastKg, tgt = d.boxingTargetKg;
     var foods = d.foodsToday.map(function (x) { return x.meal + x.text; }).join("、") || "未記食";
     var r = d.journeyRemark || "無 remark";
     var gap = kg && tgt ? (Number(kg) - Number(tgt)).toFixed(2) : "?";
-    return ["1) 而家狀態", kg ? "體重 " + kg + " kg，距目標 " + tgt + " kg 差 " + gap + " kg。" : "仍未入今日磅。", "Remark：" + r, "", "2) 目標", "外圍型守肌、慢落水。體脂低唔好猜飢。", "", "3) 飲食", "今日：" + foods + "。練完熱小米粥 + 蛋白。", "", "4) 9 分鐘考驗", d.lastRun ? "已有距離。只係分析。" : "本週測一次即可。", "", "5) 訓練", "今日：" + d.todaySkill + " · 洛馬 15 + A-E 15。超哥唔好帶氧。"].join("\n");
+    return ["1) 而家狀態", kg ? "體重 " + kg + " kg，距目標 " + tgt + " kg 差 " + gap + " kg。" : "仍未入今日磅。", "Remark：" + r, "", "2) 目標", "外圍型守肌、慢落水。體脂低唔好猜餓。", "", "3) 飲食", "今日：" + foods + "。練完熱小米粥 + 蛋白。", "", "4) 9 分鐘考驗", d.lastRun ? "已有距離。只係分析。" : "本週測一次即可。", "", "5) 訓練", "今日：" + d.todaySkill + " · 洛馬 10 + A-E 15。超哥唔好帶氧。"].join("\n");
+  }
+  function orderModels() {
+    var pick = (document.getElementById("model") && document.getElementById("model").value) || MODELS[0];
+    var list = MODELS.slice();
+    if (list.indexOf(pick) === -1) list.unshift(pick);
+    else {
+      list = list.filter(function (m) { return m !== pick; });
+      list.unshift(pick);
+    }
+    return list;
   }
   async function llm(d) {
     var key = (document.getElementById("key").value || localStorage.getItem("yipmma-openrouter-key") || "").trim();
     if (key) localStorage.setItem("yipmma-openrouter-key", key);
     if (!key) return { ok: true, text: localReport(d), via: "local" };
-    var sys = "你是香港私教。繁中口語。" + d.heightCm + "cm 外圍拳擊。每日洛馬 15 + A-E 15。禁止帶氧熱身。五段：狀態(包 remark)、目標、飲食、9分鐘、訓練。守肌肉。";
-    var models = ["nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-31b-it:free", "openrouter/free"];
-    var pick = (document.getElementById("model") && document.getElementById("model").value) || models[0];
-    if (models.indexOf(pick) === -1) models.unshift(pick);
+    var sys = "你是香港私教。繁中口語。" + d.heightCm + "cm 外圍拳擊。每日洛馬 10 + A-E 15。禁止帶氧熱身。五段：狀態(包 remark)、目標、飲食、9分鐘、訓練。守肌肉。";
+    var models = orderModels();
     var lastErr = "";
     try {
       for (var mi = 0; mi < models.length; mi++) {
@@ -197,7 +211,7 @@
         var j = await res.json();
         var text = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
         if (res.ok && text) return { ok: true, text: text.trim(), via: models[mi] };
-        lastErr = (j.error && j.error.message) || ("OpenRouter " + res.status + " " + models[mi]);
+        lastErr = (j.error && (j.error.message || j.error.code)) || ("OpenRouter " + res.status + " " + models[mi]);
       }
       return { ok: false, error: lastErr || "all free models failed" };
     } catch (e) {
