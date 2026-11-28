@@ -37246,7 +37246,8 @@
         "layer": "sea",
         "history": "鐵甲艦是英國海軍十九世紀的主力裝甲蒸汽戰艦類型，以艦體裝甲抵禦砲火，並以舷側重砲進行遠程打擊，負責護衛與海上控制。",
         "portrait": "portraits/ironclad.jpg"
-      }
+      },
+      "dossierUrl": "dossiers/1974-a723934d76.json"
     },
     {
       "id": "1975-第三次鱈魚戰爭",
